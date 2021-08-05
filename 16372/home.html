@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<main class="index-section">
+    <section class="home-section left">
+        <div class="home-box">
+            <h3 class="home-h">人流峰值统计图</h3>
+            <p class="chart-style" id="charts"></p>
+        </div>
+        <div class="home-box">
+            <h3 class="home-h">监控统计</h3>
+            <p class="chart-style" id="charts01"></p>
+
+        </div>
+    </section>
+    <div class="look-div">
+        <h3 class="look-top">实时抓拍</h3>
+        <ul class="look-ul">
+            <li><p><img src="img/my.jpg"></p>
+                <p>匹配度：92.1%</p></li>
+            <li><p><img src="img/my.jpg"></p>
+                <p>匹配度：92.1%</p></li>
+            <li><p><img src="img/my.jpg"></p>
+                <p>匹配度：92.1%</p></li>
+        </ul>
+    </div>
+    <section class="home-section-cen left" id="map">
+
+
+    </section>
+    <section class="home-section left">
+        <div class="home-box">
+            <h3 class="home-h">通知公告</h3>
+            <ul class="home-notice">
+                <li><a href="#">公司集体会议通知</a><span>2018-09-12</span> </li>
+                <li><a href="#">公司集体会议通知</a><span>2018-09-12</span> </li>
+                <li><a href="#">公司集体会议通知</a><span>2018-09-12</span> </li>
+                <li><a href="#">公司集体会议通知</a><span>2018-09-12</span> </li>
+                <li><a href="#">公司集体会议通知</a><span>2018-09-12</span> </li>
+                <li><a href="#">公司集体会议通知</a><span>2018-09-12</span> </li>
+                <li><a href="#">公司集体会议通知</a><span>2018-09-12</span> </li>
+                <li><a href="#">公司集体会议通知</a><span>2018-09-12</span> </li>
+            </ul>
+        </div>
+        <div class="home-box">
+            <h3 class="home-h">监控信息</h3>
+            <table class="home-table" border="1">
+                <thead><tr><th>图片</th><th>姓名</th><th>性别</th><th>匹配率</th></tr></thead>
+                <tbody>
+                <tr><td><img src="img/my.jpg"> </td><td>美女</td><td>女</td><td>89%</td></tr>
+                <tr><td><img src="img/my.jpg"> </td><td>美女</td><td>女</td><td>89%</td></tr>
+                <tr><td><img src="img/my.jpg"> </td><td>美女</td><td>女</td><td>89%</td></tr>
+                <tr><td><img src="img/my.jpg"> </td><td>美女</td><td>女</td><td>89%</td></tr>
+                <tr><td><img src="img/my.jpg"> </td><td>美女</td><td>女</td><td>89%</td></tr>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</main>
+<script src="js/jquery.min.js"></script>
+<script src="js/echarts.common.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=5ieMMexWmzB9jivTq6oCRX9j&callback"></script>
+<script src="js/home.js"></script>
+<script>
+    // 百度地图API功能
+    var map = new BMap.Map("map");    // 创建Map实例
+    map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
+    //添加地图类型控件
+    map.addControl(new BMap.MapTypeControl({
+        mapTypes:[
+            BMAP_NORMAL_MAP,
+            BMAP_HYBRID_MAP
+        ]}));
+    var mapStyle={
+        style:"dark"
+    };
+    map.setMapStyle(mapStyle);
+    map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+    map.enableScrollWheelZoom(true);
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+* {word-break:break-all;font-family:"Microsoft Yahei";-webkit-text-size-adjust:none;}/*"Microsoft Yahei",*/
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,div,a{margin:0;padding:0;}
+img{vertical-align:top; border:none;}
+body {margin:0;font-size:12px;color:#444; background:url(../images/bodybg.gif) repeat-x top;}
+form,input,select,textarea,td,th {font-size:12px;}
+ul li {list-style-type:none;}
+ol li {list-style-type:decimal;}
+ul,form {margin:0px;padding:0px;}
+a{text-decoration:none; color:#444; cursor:pointer; blr:expression(this.onFocus=this.blur()); outline:none;/*火狐*/}
+a:hover {color:#FF6600;}
+/* links */
+.wid1000{width:1000px; margin:0 auto;}
+.wid1014{width:1014px; margin:0 auto;}
+.f_l {float:left;}
+.f_r {float:right;}
+.c_b{clear:both;}
+.clear{clear:both;}
+.mt5{margin-top:5px;}
+.mt10{margin-top:10px;}
+.ari{font-family:arial;}
+.fs14{font-size:14px;}
+.mt14{margin-top:14px;}
+.mt_15{margin-top:15px;}
+.yell{color:#ef8100;}
+.t_r{text-align:right;}
+.t_c{text-align:center;}
+.fs20{font-size:20px !important;}
+
+.page{text-align:center; margin:15px auto; font-size:14px;}
+.page a{padding:2px 5px; display:inline-block; font-size:12px; margin:0 2px; font-size:14px;}
+.page a:hover{}
+.red{color:#F00;}
+.red{color:#F00;}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl {direction: rtl;}
+.jcarousel-skin-tango .jcarousel-clip-horizontal ,.jcarousel-skin-tango .jcarousel-container-horizontal,.jcarousel-skin-tango .jcarousel-item {width:  650px; height: 175px;}
+.jcarousel-skin-tango .jcarousel-container-horizontal { padding: 0 33px;}
+.jcarousel-skin-tango .jcarousel-clip {overflow: hidden;}
+.jcarousel-skin-tango .jcarousel-item {width: 120px;}
+.jcarousel-skin-tango .jcarousel-item-horizontal {margin-left: 0; margin-right:7px;_margin-right: 6px;}
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-item-horizontal {margin-left: 10px; margin-right: 0;}
+.jcarousel-skin-tango .jcarousel-item-placeholder {background: #fff; color: #000;}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal ,.jcarousel-skin-tango .jcarousel-prev-horizontal { top: 60px; right: 0; width: 27px; height: 58px; cursor: pointer; background: transparent url(../images/sc_right.gif) no-repeat 0 bottom;position: absolute;}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal { left: 0; right: auto; background: transparent url(../images/sc_left.gif) no-repeat 0 bottom;}
+.jcarousel-skin-tango .jcarousel-next-horizontal:hover ,.jcarousel-skin-tango .jcarousel-prev-horizontal:hover{ padding-top:1px;}

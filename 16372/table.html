@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格界面</title>
+    <link rel="stylesheet" href="js/bstable/css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/bstable/css/bootstrap-table.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<main class="index-section">
+    <header class="table-head">
+        <p><label>日期：</label><input type="date" class="input-find"><label>监测结果:</label><select class="input-find"><option>匹配成功</option><option>匹配失败</option></select><button class="find-but">查询</button></p>
+    </header>
+    <section>
+        <p class="table-top"><button class="button-base button-add" onclick="add()">新增</button><button class="button-base button-del">删除</button></p>
+        <table id="table" class="table-style"></table>
+    </section>
+</main>
+<script src="js/jquery.min.js"></script>
+<script src="js/bstable/js/bootstrap.min.js"></script>
+<script src="js/bstable/js/bootstrap-table.js"></script>
+<script src="js/bstable/js/bootstrap-table-zh-CN.min.js"></script>
+<script src="js/layer_v2.1/layer/layer.js"></script>
+<script src="js/table.js"></script>
+</body>
+</html>

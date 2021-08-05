@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="UTF-8">
+	<title>HTML5交互式登录注册页面模板 - </title>
+	<meta name="description" content="HTML5交互式注册登录切换jQuery特效代码，用户体验友好！" /> 
+	<meta name="keywords" content="HTML5,交互式,注册登录,切换,jQuery特效代码" />
+	<meta name="author" content="js代码" />
+	<meta name="Copyright" content="js代码" />
+	<link rel="stylesheet" href="css/dmaku.css">
+</head>
+<!--/************************************************************
+ *																*
+ * 						      							*
+ *                        							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+**************************************************************-->
+<body>
+<div class="cotn_principal">
+  <div class="cont_centrar">
+    <div class="cont_login">
+      <div class="cont_info_log_sign_up">
+        <div class="col_md_login">
+          <div class="cont_ba_opcitiy">
+            <h2>登录</h2>
+            <p>已有账号，直接登录！</p>
+            <button class="btn_login" onclick="cambiar_login()">登录</button>
+          </div>
+        </div>
+        <div class="col_md_sign_up">
+          <div class="cont_ba_opcitiy">
+            <h2>注册</h2>
+            <p>还没有账号？免费注册！</p>
+            <button class="btn_sign_up" onclick="cambiar_sign_up()">注册</button>
+          </div>
+        </div>
+      </div>
+      <div class="cont_back_info">
+        <div class="cont_img_back_grey"> <img src="images/po.jpg" alt="" /> </div>
+      </div>
+      <div class="cont_forms" >
+        <div class="cont_img_back_"> <img src="images/po.jpg" alt="" /> </div>
+        <div class="cont_form_login"> <a href="#" onclick="ocultar_login_sign_up()" >X</a>
+          <h2>登录</h2>
+          <input type="text" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <button class="btn_login" onclick="cambiar_login()">登录</button>
+        </div>
+        <div class="cont_form_sign_up"> <a href="#" onclick="ocultar_login_sign_up()">X</a>
+          <h2>注册</h2>
+          <input type="text" placeholder="Email" />
+          <input type="text" placeholder="User" />
+          <input type="password" placeholder="Password" />
+          <input type="password" placeholder="Confirm Password" />
+          <button class="btn_sign_up" onclick="cambiar_sign_up()">注册</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/dmaku.js"></script>
+</body>
+</body>
+</html>

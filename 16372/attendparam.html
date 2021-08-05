@@ -1,0 +1,179 @@
+
+<div class="row">
+	<div class="col-sm-12">
+		<div class="ibox float-e-margins">
+			<div class="ibox-title">
+				<h5>考勤设置</h5>
+			</div>
+			<div class="ibox-content">
+				<div class="row row-lg">
+					<div class="col-sm-12">
+						<div class="row">
+							<div class="col-lg-2 col-sm-3">
+								<div class="panel panel-default">
+									<div class="panel-heading">列表</div>
+									<div class="panel-body">
+										<#button name="宿舍考勤" icon="fa-chevron-right" clickFun="AttendParam.openDorm()"/>
+									</div>
+									<div class="panel-body">
+										<#button name="学生运动" icon="fa-chevron-right" clickFun="AttendParam.openMornRun()"/>
+									</div>
+									<div class="panel-body">
+										<#button name="常宅设置" icon="fa-chevron-right" clickFun="AttendParam.openInHome()"/>
+									</div>
+									<div class="panel-body">
+										<#button name="会议签到" icon="fa-chevron-right" clickFun="AttendParam.openMeet()"/>
+									</div>
+									<!--<div class="panel-body">
+										<#button name="上课考勤" icon="fa-chevron-right" clickFun="AttendParam.openContentBox('#stuAttend')"/>
+									</div>-->
+								</div>
+							</div>
+							<div class="col-lg-10 col-sm-9 content_box" id="dorm">
+								<div class="panel-heading">宿舍考勤</div>
+								<div class="top-div " style="padding: 5px"><input type="checkbox" checked><label class="top-lable">夏季考勤时间</label></div>
+								<input type="hidden" id="sId-s" name="sId-s"  />
+								<div class="top-div top-bg" style="padding: 5px;background-color: #d1dbe5">
+									<p><label>正常时间：</label><input type="text" id="sta01" style="width: 300px;height: 30px;border-radius: 3px;border: none"></p>
+									<p><label>晚归时间：</label><input type="text" id="sta02" style="width: 300px;height: 30px;border-radius: 3px;border: none"><#button name="允许晚归人员" icon="fa-forward" clickFun="AttendParam.openOkBackList()"/><#button name="允许未归人员" icon="fa-forward" clickFun="AttendParam.openNoList()"/></p>
+									<p><label>未归时间：</label><input type="text" id="sta03" style="width: 300px;height: 30px;border-radius: 3px;border: none"><#button name="允许早出人员" icon="fa-forward" clickFun="AttendParam.openEaOutList()"/></p>
+								</div>
+								<div class="top-div" style="padding: 5px"><input type="checkbox" checked><label class="top-lable">冬季考勤时间</label></div>
+								<input type="hidden" id="wId-s" name="wId-s"  />
+								<div class="top-div top-bg" style="padding: 5px;background-color: #d1dbe5">
+									<p><label>正常时间：</label><input type="text" id="sta01-d" style="width: 300px;height: 30px;border-radius: 3px;border: none"></p>
+									<p><label>晚归时间：</label><input type="text" id="sta02-d" style="width: 300px;height: 30px;border-radius: 3px;border: none"><#button name="允许晚归人员" icon="fa-forward" clickFun="AttendParam.openOkBackListd()"/><#button name="允许早出人员" icon="fa-forward" clickFun="AttendParam.openNoListd()"/></p>
+									<p><label>未归时间：</label><input type="text" id="sta03-d" style="width: 300px;height: 30px;border-radius: 3px;border: none"><#button name="允许早出人员" icon="fa-forward" clickFun="AttendParam.openEaOutListd()"/></p>
+								</div>
+								<p style="margin-top: 10px"><#button btnCss="danger" name="保存" id="cancel" icon="fa-ok"  clickFun="AttendParam.mornRunSubmit()"/></p>
+
+							</div>
+							<div class="col-lg-10 col-sm-9 content_box" id="mornrun" style="display: none">
+								<div class="panel-heading" style="font-weight:700">学生运动</div>
+								<div class="row" style="background-color:#d1dbe5">
+									<div style="font-weight:700">夏季考勤时间</div>
+									<input type="hidden" id="sId" name="sId"  />
+									<div class="col-sm-12">
+										<div class="col-sm-6">
+											<#input id="sMornRunDate" name="运动日期" type="text"/>
+										</div>
+									</div>
+									<div class="col-sm-12">
+										<div class="col-sm-6">
+											<#input id="sMornRunTime" name="运动时间" type="text"/>
+										</div>
+									</div>
+									<div class="col-sm-12">
+										<div class="col-sm-6">
+											<#input id="sReachNum" name="达标次数"/>
+										</div>
+										<div class="col-sm-6">
+											<span style="font-weight:700">次/月</span>
+										</div>
+									</div>
+									<div class="col-sm-12">
+										<div class="col-sm-6">
+											<#button name="允许不跑人员" icon="fa-forward" clickFun="MornRun.openSMornRunExcept()"/>
+										</div>
+									</div>
+								</div>
+								<div class="row" style="background-color:#d1dbe5;margin-top: 5px;">
+									<div style="font-weight:700">冬季考勤时间</div>
+									<input type="hidden" id="wId" name="sId"  />
+									<div class="col-sm-12">
+										<div class="col-sm-6">
+											<#input id="wMornRunDate" name="运动日期" type="text"/>
+										</div>
+									</div>
+									<div class="col-sm-12">
+										<div class="col-sm-6">
+											<#input id="wMornRunTime" name="运动时间" type="text"/>
+										</div>
+									</div>
+									<div class="col-sm-12">
+										<div class="col-sm-6">
+											<#input id="wReachNum" name="达标次数"/>
+										</div>
+										<div class="col-sm-6">
+											<span style="font-weight:700">次/月</span>
+										</div>
+									</div>
+									<div class="col-sm-12">
+										<div class="col-sm-6">
+											<#button name="允许不跑人员" icon="fa-forward" clickFun="MornRun.openWMornRunExcept()"/>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<#button btnCss="danger" name="保存" id="cancel" icon="fa-ok"  clickFun="MornRun.mornRunSubmit()"/>
+								</div>
+							</div>
+							<div class="col-lg-10 col-sm-9 content_box" id="inHome" style="display: none">
+								<div class="panel-heading">常宅设置</div>
+								<div class="top-div " style="padding: 5px"><input type="checkbox" checked><label class="top-lable">夏季时间</label></div>
+								<input type="hidden" id="sId-in" name="sId-s"  />
+								<div class="top-div top-bg" style="padding: 5px;background-color: #d1dbe5">
+									<p><label>周累计时间：</label>大于或等于<input type="text" id="week-tol" style="width: 100px;height: 30px;border-radius: 3px;border: 1px solid #CCCCCC;margin-top: 5px;text-align: center">天</p>
+									<p><label>月累计时间：</label>大于或等于<input type="text" id="mouth-tol" style="width: 100px;height: 30px;border-radius: 3px;border: 1px solid #CCCCCC;margin-top: 5px;text-align: center">天</p>
+									<p><label>学期累计时间：</label>大于或等于<input type="text" id="stu-tol" style="width: 100px;height: 30px;border-radius: 3px;border: 1px solid #CCCCCC;margin-top: 5px;text-align: center">天</p>
+									<div class="top-div" style="padding: 5px"><input type="checkbox" checked><label >冬季时间</label></div>
+									<input type="hidden" id="wId-in" name="wId-s"  />
+									<div class="top-div top-bg" style="padding: 5px;background-color: #d1dbe5">
+										<p><label>周累计时间：</label>大于或等于<input type="text" id="week-tol-w" style="width: 100px;height: 30px;border-radius: 3px;border: 1px solid #CCCCCC;margin-top: 5px;text-align: center">天</p>
+										<p><label>月累计时间：</label>大于或等于<input type="text" id="mouth-tol-w" style="width: 100px;height: 30px;border-radius: 3px;border: 1px solid #CCCCCC;margin-top: 5px;text-align: center">天</p>
+										<p><label>学期累计时间：</label>大于或等于<input type="text" id="stu-tol-w" style="width: 100px;height: 30px;border-radius: 3px;border: 1px solid #CCCCCC;margin-top: 5px;text-align: center">天</p>
+									</div>
+									<p style="margin-top: 10px"><#button btnCss="danger" name="保存" id="cancel" icon="fa-ok"  clickFun="InHomeParam.mornRunSubmit()"/></p>
+
+								</div>
+							</div>
+							<div class="col-lg-10 col-sm-9 content_box" id="meet" style="display: none">
+								<div class="panel-heading">会议签到</div>
+								<div class="top-div "style="padding: 5px"><input type="checkbox" id="meetState"><label class="top-lable">考勤时间</label></div>
+								<div class="top-div top-bg" style="padding: 5px;background-color: #d1dbe5">
+									<p><label >考勤时间：</label>
+										<span style="margin-right: 5px">会议开始前</span>
+										<input type="text" id="meetNormalStart" style="width: 80px;margin-right: 5px">
+										<span>分钟</span>
+										---
+										<input type="text" id="meetLastStart" style="width: 80px;margin-right: 5px">
+										<span style="margin-right: 5px">会议结束前</span>
+										<input type="text" id="meetNormalEnd" style="width: 80px;margin-right: 5px">
+										<span>分钟</span>
+										---
+										<input type="text" id="meetLastEnd" style="width: 80px;margin-right: 5px"></p>
+									<p style="margin-top: 10px">
+										<#button name="允许迟到人员" icon="fa-forward" clickFun="Meet.openLateExcept()"/>
+										<#button name="允许未到人员" icon="fa-forward" clickFun="Meet.openNoNExcept()"/>
+										<!--<#button name="允许早退人员" icon="fa-forward" clickFun="Meet.openEarlyExcept()"/>-->
+									</p>
+
+								</div>
+								<p style="margin-top: 10px">
+									<#button btnCss="danger" name="保存" id="cancel" icon="fa-ok"  clickFun="Meet.update()"/>
+							</div>
+							<!--上课考勤-->
+							<div class="col-lg-10 col-sm-9 content_box" id="stuAttend" style="display: none">
+								<div class="panel-heading" style="font-weight:700;">上课考勤</div>
+								<div class="top-div top-bg" style="padding: 5px;background-color: #d1dbe5">
+									<p style="margin-bottom: 100px">考勤时间:课表时间，无法设置</p>
+									<#button name="请假人员" icon="fa-forward" clickFun="StuClassAttendParam.openLeaveConfig(1)"/>
+								</div>
+								<!--
+								<div class="top-div" style="padding: 5px"><input type="checkbox" checked><label>冬季考勤时间</label></div>
+								<div class="top-div top-bg" style="padding: 5px;background-color: #d1dbe5">
+									<p>冬季考勤时间:课表时间，无法设置</p>
+									<#button name="请假人员" icon="fa-forward" clickFun="StuClassAttendParam.openLeaveConfig(2)"/>
+								</div>
+								<p style="margin-top: 10px"><#button btnCss="danger" name="保存" id="cancel" icon="fa-ok"  clickFun="StuClassAttendParam.submit()"/></p>
+								-->
+							</div>
+							<!--上课考勤END-->
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+ </div>

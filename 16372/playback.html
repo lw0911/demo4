@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/video.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/powerange.css" />
+    <style>
+        .p-sty{
+            padding: 5px;
+            background-color: transparent;
+            margin-top: 10px;
+            ;
+
+        }
+        .p-but{
+            padding: 5px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1d90f1;
+            color: #fff;
+            font-size: 12px;
+            float: right;
+            margin-right: 10px;
+        ;
+        }
+ .p-input{
+     padding: 5px;
+     border-radius: 5px;
+     width: 50%;
+ }
+        .p-labe{
+            color: #Fff;
+            margin-right: 5px;
+            width: 80px;
+            display: inline-block;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+<div class="index_video_camera" style="background-color: #092789" >
+    <div class="video_main" style="height: 564px">
+
+        <div class="video_01">
+            <div class="video_right" style="height: 524px;overflow: hidden">
+                <video autoplay="autoplay" loop="loop"  class="dataAllBorder02 video_cage" style="width: 100%;height: 524px">
+                    <source class="video" title="主监控位" src="video/test_mv02.mov"/>
+                </video>
+            </div>
+            <div class="video_left">
+                <h5>回放设置</h5>
+                <p class="p-sty"><span class="p-labe">选择时间:</span><input type="number" class="p-input"><span><button class="p-but">设置</button></span></p>
+                <p class="p-sty"><span class="p-labe">选择频率:</span><input type="number" class="p-input"><span><button class="p-but">设置</button></span></p>
+                <p class="p-sty"><span class="p-labe">设置一:</span><input type="date" class="p-input"><span><button class="p-but">设置</button></span></p>
+                <p class="p-sty"><span class="p-labe">设置二:</span><input type="range" class="p-input"><span><button class="p-but">设置</button></span></p>
+                <p class="p-sty"><span class="p-labe">设置三:</span><input type="radio" ><label style="color: #fff;margin-right: 5px">选择一</label><input type="radio" ><label style="color: #fff">选择二</label><span><button class="p-but">设置</button></span></p>
+            </div>
+            <div class="clear"></div>
+            <div class="video_bot">
+                <div class="video_bot_left l_left">
+                    <ul>
+                        <li><img src="img/01.png" /></li>
+                        <li><img src="img/02.png" /></li>
+                        <li><img src="img/03.png" /></li>
+                    </ul>
+                </div>
+                <div class="video_bot_middle l_left">
+                    <ul>
+                        <li><img src="img/15.png" /></li>
+                        <li class="began"></li>
+                        <li><img src="img/16.png" /></li>
+                        <li style="width: 120px; margin: 17px 0 0 43px;">
+                            <input type="text" class="js-check-click"/>
+                        </li>
+                    </ul>
+                </div>
+                <div class="video_bot_right r_right">
+                    <ul>
+                        <li style="margin-top: 6px"><img src="img/14.png" /></li>
+                        <li><img src="img/05.png" /></li>
+                        <li><img src="img/06.png" /></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/powerange.min.js"></script>
+<script type="text/javascript">
+    var clickInput = document.querySelector('.js-check-click');
+    initClickInput = new Powerange(clickInput, { start: 20 });
+</script>
+<script>
+    $(function(){
+
+        //        开关效果
+        var flag = true;
+        $(".began").click(function () {
+            if(flag){
+                $(this).removeClass("began");
+                $(this).addClass("began1");
+                flag = false;
+            }else {
+                $(this).addClass("began");
+                $(this).removeClass("began1");
+                flag = true;
+            }
+        });
+    })
+</script>
+</body>
+</html>

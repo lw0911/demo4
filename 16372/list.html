@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>菜单管理</title>
+    <link rel="stylesheet" href="js/jquery-treetable/css/jquery.treetable.css" />
+    <link rel="stylesheet" href="js/jquery-treetable/css/jquery.treetable.theme.default.css" />
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<main class="index-section">
+    <header class="table-head">
+        <p><label>名称：</label><input type="text" class="input-find"><label>选择类型:</label><select class="input-find"><option>选择一</option></select><button class="find-but">查询</button></p>
+    </header>
+    <section>
+        <table id="treetable" class="list-table">
+            <thead>
+            <tr>
+                <th>名称</th>
+                <th>上级目录</th>
+                <th>路径</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr data-tt-id='1'><td><span class='file'>首页</span></td><td>首页</td><td>home.html</td><td><a href="#">修改</a> </td></tr>
+            <tr data-tt-id='2'><td><span class='folder'>表格</span></td><td>表格管理</td><td>table.html</td><td><a href="#">修改</a> </td></tr>
+            <tr data-tt-id='2-1' data-tt-parent-id='2'><td><span class='folder'>表格一</span></td><td>表格</td><td>--</td><td><a href="#">修改</a> </td></tr>
+            <tr data-tt-id='2-1-1' data-tt-parent-id='2-1'><td><span class='file'>表格一子菜单</span></td><td>表格一</td><td>xxxx</td><td><a href="#">修改</a> </td></tr>
+            <tr data-tt-id='3'><td><span class='folder'>系统管理</span></td><td>根菜单</td><td>xxxxx</td><td><a href="#">修改</a> </td></tr>
+            <tr data-tt-id='3-1' data-tt-parent-id='3'><td><span class='file'>用户管理</span></td><td>系统菜单</td><td>user.html</td><td><a href="#">修改</a> </td></tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-treetable/jquery.treetable.js"></script>
+<script src="js/list.js"></script>
+</body>
+</html>

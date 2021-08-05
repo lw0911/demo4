@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>toolschool</title>
+    <link rel="stylesheet" href="js/bstable/css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/bstable/css/bootstrap-table.css">
+    <link href="css/chartStyle.css"  rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+<body class="body-div">
+<section class="all">
+    <div class="top-p"><label>选择类型：</label><select id="select" class="select-input"><option>按月</option><option>按周</option><option>按日</option></select></div>
+    <div class="chagen-div" >
+        <!--月年级-->
+        <div class="chang-con" style="opacity:1; z-index: 999;">
+            <article class="art-con4">
+                <div class="art-up chart-bg">
+                    <h4 class="art-h">本月监控人数</h4>
+                    <p id="datanum" class="num-p">65890次</p></div>
+                <div class="art-dow chart-bg"><h4 class="art-h">本月监控匹配率</h4>
+                    <div class="chart-left" style="width: 96%">
+                        <p class="p-chart-man" id="gril"></p>
+
+                    </div>
+
+                </div>
+            </article>
+            <article class="art-con2 chart-bg" style="height: 395px">
+                <h4 class="art-h">本月监控走势</h4>
+                <p class="chart-p" id="chart01"></p>
+            </article>
+            <article class="art-con1 chart-bg" style="height: 395px">
+                <h4 class="art-h">监控设备监控排名</h4>
+                <table id="tablem" border="0"></table>
+            </article>
+            <article class="art-con3 chart-bg">
+                <h4 class="art-h">监控记录</h4>
+                <p><select class="list-input scholList" id="mselct">
+                </select><input type="text" placeholder="输入姓名，学号" class="list-input" id="mNo"><select class="list-input" id="okm"><option value="">全部</option><option value="2">未成功</option><option value="1">成功</option></select><button onclick="findMouth()" class="lin-find">查询</button></p>
+                <table id="table2" border="0"></table>
+            </article>
+        </div>
+        <!--周年级-->
+        <div class="chang-con" >
+
+            <article class="art-con4" >
+                <div class="art-up chart-bg">
+                    <h4 class="art-h">上周运动打卡人数</h4>
+                    <p id="datanumw" class="num-p"></p></div>
+                <div class="art-dow chart-bg"><h4 class="art-h">上周学生打卡率</h4>
+                    <div class="chart-left">
+                        <p class="p-chart-man" id="grilw"></p>
+                        <p class="lv-p"> 女</p>
+                    </div>
+                    <div class="chart-left">
+                        <p class="p-chart-man" id="boyw"></p>
+                        <p class="lv-p">男</p>
+                    </div>
+                </div>
+            </article>
+            <article class="art-con2 chart-bg" style="height: 395px">
+                <h4 class="art-h">上周运动打卡趋势</h4>
+                <p class="chart-p" id="chart01w"></p>
+            </article>
+            <article class="art-con1 chart-bg" style="height: 395px">
+                <h4 class="art-h">运动达标班级排名</h4>
+                <table id="tablew"></table>
+            </article>
+            <article class="art-con3 chart-bg">
+                <h4 class="art-h">运动人员名单</h4>
+                <p><select class="list-input scholList" id="wselct">
+                </select><input type="text" placeholder="输入姓名，学号" class="list-input" id="wNo"><button onclick="findWeek()" class="lin-find">查询</button></p>
+                <table id="table2w" border="0"></table>
+            </article>
+
+
+
+        </div>
+        <!--日年级-->
+        <div class="chang-con" >
+            <article class="art-con4">
+                <div class="art-up chart-bg">
+                    <h4 class="art-h">今日运动打卡</h4>
+                    <p id="datanumd" class="num-p"></p></div>
+                <div class="art-dow chart-bg"><h4 class="art-h">今日学生打卡率</h4>
+                    <div class="chart-left">
+                        <p class="p-chart-man" id="grild"></p>
+                        <p class="lv-p"> 女</p>
+                    </div>
+                    <div class="chart-left">
+                        <p class="p-chart-man" id="boyd"></p>
+                        <p class="lv-p">男</p>
+                    </div>
+                </div>
+            </article>
+            <article class="art-con2 chart-bg" style="height: 395px">
+                <h4 class="art-h">运动打卡学生班级分布</h4>
+                <p class="chart-p" id="chart01d"></p>
+            </article>
+            <article class="art-con1 chart-bg" style="height: 395px">
+                <h4 class="art-h">班级打卡率排名</h4>
+                <table id="tabled"></table>
+            </article>
+        </div>
+    </div>
+
+
+
+</section>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bstable/js/bootstrap.min.js"></script>
+<script src="js/bstable/js/bootstrap-table.js"></script>
+<script src="js/bstable/js/bootstrap-table-zh-CN.min.js"></script>
+<script src="js/echarts.common.min.js"></script>
+<script>
+    $(function () {
+
+
+        charGril();
+
+        char1();
+        tableList()
+
+
+        tablem();
+
+
+
+    })
+    //    运动辅导员月男、女生打卡率
+    function charGril() {
+        var myChart = echarts.init($("#gril")[0]);
+        option = {
+            color: ['#00aeff', '#19fffc'],
+            tooltip : {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            legend: {
+
+                left: 'center',
+                data: ['成功','失败'],
+                textStyle: {
+                    fontSize: 12,
+                    color:"#fff"
+                },
+            },
+            series : [
+                {
+                    name: '匹配结果',
+                    type: 'pie',
+                    radius : '55%',
+                    center: ['50%', '60%'],
+                    textStyle: {
+                        fontSize: 12,
+                        color:"#fff"
+                    },
+                    data:[
+                        {value:33005, name:'成功'},
+                        {value:310, name:'失败'},
+
+                    ],
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }
+            ]
+        };
+
+        myChart.setOption(option);
+        window.addEventListener('resize', function () {myChart.resize();})
+
+    };
+
+    //    获取辅导员月运动达标趋势
+    function char1() {
+
+        var myChart = echarts.init($("#chart01")[0]);
+        option = {
+
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['匹配率小于20%','匹配率小于40%','匹配率小于60%','匹配率小于80%','匹配率小于100%'],
+                textStyle: {
+                    fontSize: 12,
+                    color:"#fff"
+                },
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                axisLabel: {
+                    textStyle: {
+                        color:'#ffffff',
+                        fontSize: 12,
+                    }
+                },
+                axisLine: {//轴线
+                    lineStyle: {
+                        color: '#89a8e4'
+                    }
+                },
+                data: ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30']
+            },
+            yAxis: {
+                type: 'value',
+                axisLabel: {
+                    textStyle: {
+                        color:'#ffffff',
+                        fontSize: 12,
+                    }
+                },
+                axisLine: {//轴线
+                    lineStyle: {
+                        color: '#89a8e4'
+                    }
+                },
+            },
+            series: [
+                {
+                    name:'匹配率小于20%',
+                    type:'line',
+                    stack: '总量',
+                    data:[120, 132, 101, 134, 90, 230, 210,190, 330, 410,220, 182, 191, 234, 290, 330, 310,220,320, 332, 301, 334, 390, 330, 320,901, 934, 1290, 1330, 1320,820, 932, 901]
+                },
+                {
+                    name:'匹配率小于40%',
+                    type:'line',
+                    stack: '总量',
+                    data:[220, 182, 191, 234, 290, 330, 310,820, 932, 901, 934, 1290, 1330, 1320,820, 932, 901, 934, 1290, 1330, 1320,820, 932, 901, 934, 1290, 1330, 1320,820, 932]
+                },
+                {
+                    name:'视匹配率小于60%',
+                    type:'line',
+                    stack: '总量',
+                    data:[150, 232, 201, 154, 190, 330, 410,220, 182, 191, 234, 290, 330, 310,220, 182, 191, 234, 290, 330, 310,220, 182, 191, 234, 290, 330, 310,890,4578]
+                },
+                {
+                    name:'匹配率小于80%',
+                    type:'line',
+                    stack: '总量',
+                    data:[320, 332, 301, 334, 390, 330, 320,901, 934, 1290, 1330, 1320,820, 932, 901, 934, 1290, 1330, 1320,820, 932, 901, 934, 1290, 1330, 1320,820, 932, 901, 934]
+                },
+                {
+                    name:'匹配率小于100%',
+                    type:'line',
+                    stack: '总量',
+                    data:[820, 932, 901, 934, 1290, 1330, 1320,820, 932, 901, 934, 1290, 1330, 1320,820, 932, 901, 934, 1290, 1330, 1320,820, 932, 901, 934, 1290, 1330, 1320,9010,4578]
+                }
+            ]
+        };
+        myChart.setOption(option);
+
+
+        window.addEventListener('resize', function () {myChart.resize();})
+
+    };
+//      获取辅导员月班级排名
+    function tablem() {
+        $('#tablem').bootstrapTable({
+            method: "get",
+            striped: true,
+            singleSelect: false,
+            url: "json/order.json",
+            dataType: "json",
+            pagination: true, //分页
+            pageSize: 5,
+            pageNumber: 1,
+            search: false, //显示搜索框
+            contentType: "application/x-www-form-urlencoded",
+            queryParams:null,
+//            onLoadSuccess: function (data) {
+//                console.log(data);
+//
+//            },
+            columns: [
+
+                {
+                    title: "设备名称",
+                    field: 'name',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '人数',
+                    field: 'totalNum',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '成功人数',
+                    field: 'reachNum',
+                    align: 'center',
+                    valign: 'middle'
+                }
+                ,
+                {
+                    title: '匹配率',
+                    field: 'pro',
+                    align: 'center',
+                    valign: 'middle'
+                }
+
+
+            ]
+        });
+
+    };
+    //    月查询
+    function findMouth() {
+        tableList();
+
+    }
+    //    月运动人员名单
+    function tableList() {
+        //先销毁表格
+        $('#table2').bootstrapTable('destroy');
+        $('#table2').bootstrapTable({
+            method: "get",
+            striped: true,
+            singleSelect: false,
+            url: "json/order.json",
+            dataType: "json",
+            pagination: true, //分页
+            pageSize: 5,
+            pageNumber: 1,
+            search: false, //显示搜索框
+            sidePagination: "server",
+            contentType: "application/x-www-form-urlencoded",
+
+            columns: [
+
+                {
+                    title: "编号",
+                    field: 'className',
+                    align: 'center',
+                    valign: 'middle'
+                },
+
+                {
+                    title: '姓名',
+                    field: 'name',
+                    align: 'center',
+                    valign: 'middle'
+                },
+
+                {
+                    title: '性别',
+                    field: 'sex',
+                    align: 'center',
+                    valign: 'middle',
+                    formatter:function (val) {
+                        if(val=="1"){
+                            return '<div>男</div>';
+                        }
+                        else {
+                            return '<div>女</div>';
+                        }
+
+                    }
+                },
+                {
+                    title: '图片',
+                    field: 'dorm',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '匹配率',
+                    field: 'counsellor',
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    title: '结果',
+                    field: 'attendNum',
+                    align: 'center',
+                    valign: 'middle'
+                }
+
+
+
+            ]
+        });
+
+    }
+
+    //      获取辅导员日班级排名
+//    function tabled() {
+//        $('#tabled').bootstrapTable({
+//            method: "get",
+//            striped: true,
+//            singleSelect: false,
+//            url: "/morningrun/counsellor/getCouDayClassPro",
+//            dataType: "json",
+//            pagination: true, //分页
+//            pageSize: 5,
+//            pageNumber: 1,
+//            search: false, //显示搜索框
+//            contentType: "application/x-www-form-urlencoded",
+//            queryParams:null,
+////            onLoadSuccess: function (data) {
+////                console.log(data);
+////
+////            },
+//            columns: [
+//
+//                {
+//                    title: "班级",
+//                    field: 'className',
+//                    align: 'center',
+//                    valign: 'middle'
+//                },
+//                {
+//                    title: '人数',
+//                    field: 'totalNum',
+//                    align: 'center',
+//                    valign: 'middle'
+//                },
+//                {
+//                    title: '打卡人数',
+//                    field: 'reachNum',
+//                    align: 'center',
+//                    valign: 'middle'
+//                }
+//                ,
+//                {
+//                    title: '百分比',
+//                    field: 'pro',
+//                    align: 'center',
+//                    valign: 'middle'
+//                }
+//
+//
+//            ]
+//        });
+//
+//    };
+
+
+    //    切换年月日
+    function divChange() {
+        $('#select').on("change", function () {
+            var ins=$(this).get(0).selectedIndex;
+            $(".chagen-div .chang-con").eq(ins).css({"opacity":"1","z-index":"999"}).siblings().css({"opacity":"0","z-index":"1"});
+
+        });
+
+    }
+</script>
+</body>
+</html>

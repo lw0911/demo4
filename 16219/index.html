@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>家庭装修,公司装修,酒店装修,xxx装修公司</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<LINK href="css/style.css" rel=stylesheet>
+<LINK href="css/jbox.css" rel=stylesheet>
+<script language="JavaScript" type="text/javascript" src="js/jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/search.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/menu.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/jqselect.js"></script>
+<script src="js/jquery.superslide.2.1.1.js" type="text/javascript"></script><!--news-->
+<script type="text/javascript" src="js/jquery.touchslider.js"></script><!--ibanner-->
+<script type="text/javascript" src="js/superslide.2.1.js"></script><!--base-->
+
+<script type="text/javascript"><!--ibanner-->
+$(document).ready(function () {
+	$(".main_visual").hover(function(){
+		$("#btn_prev,#btn_next").fadeIn()
+		},function(){
+		$("#btn_prev,#btn_next").fadeOut()
+		})
+	$dragBln = false;
+	$(".main_image").touchSlider({
+		flexible : true,
+		speed : 200,
+		btn_prev : $("#btn_prev"),
+		btn_next : $("#btn_next"),
+		paging : $(".flicking_con a"),
+		counter : function (e) {
+			$(".flicking_con a").removeClass("on").eq(e.current-1).addClass("on");
+		}
+	});
+	$(".main_image").bind("mousedown", function() {
+		$dragBln = false;
+	})
+	$(".main_image").bind("dragstart", function() {
+		$dragBln = true;
+	})
+	$(".main_image a").click(function() {
+		if($dragBln) {
+			return false;
+		}
+	})
+	timer = setInterval(function() { $("#btn_next").click();}, 5000);
+	$(".main_visual").hover(function() {
+		clearInterval(timer);
+	}, function() {
+		timer = setInterval(function() { $("#btn_next").click();}, 5000);
+	})
+	$(".main_image").bind("touchstart", function() {
+		clearInterval(timer);
+	}).bind("touchend", function() {
+		timer = setInterval(function() { $("#btn_next").click();}, 5000);
+	})
+});
+</script>
+
+<!--[if IE 6]><script type="text/javascript" src="js/dd_belatedpng.js"></script><![endif]-->
+
+</head>
+<body>
+<div class="banner">
+  <div class="head">
+    <div class="headtop">
+      <div class="fra1"> <a href=""><img src="images/logo.png"/></a>
+        <div class="head-right"> <span>
+          <label>xxx</label>
+          <em>24小时咨询热线：</em></span> 
+          <!----> 
+        </div>
+      </div>
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a title="网站首页" href="index.html">网站首页</a> </li>
+        <li><a title="关于我们" href="about.html">关于我们</a> </li>
+        <li><a title="产品展示" href="product.html">产品展示</a> </li>
+        <li><a title="资质荣誉" href="product.html">资质荣誉</a> </li>
+        <li><a title="新闻资讯" href="news.html">新闻资讯</a> </li>
+        <li><a title="种植基地" href="product.html">种植基地</a> </li>
+        <li><a title="科普知识" href="about.html">科普知识</a> </li>
+        <li><a title="招商加盟" href="about.html">招商加盟</a> </li>
+        <li><a title="在线留言" href="about.html">在线留言</a> </li>
+        <li><a title="联系我们" href="about.html">联系我们</a> </li>
+      </ul>
+    </div>
+  </div>
+  <div class="main_visual">
+    <div class="main_image">
+      <ul>
+        <li><span class="img_3" style="background:url(images/4.jpg) no-repeat top; background-size: cover"></span></li>
+        <li><span class="img_3" style="background:url(images/6.jpg) no-repeat top; background-size: cover"></span></li>
+      </ul>
+      <a href="javascript:;" id="btn_prev"></a> <a href="javascript:;" id="btn_next"></a> </div>
+  </div>
+</div>
+<div class="clear"></div>
+<div class="mi-notice">
+  <ul class="mi-left">
+    <li><a href="">家庭装修</a></li>
+    <li><a href="">公司装修</a></li>
+    <li><a href="">酒店装修</a></li>
+    <li><a class="a1" href="">更多分类</a></li>
+  </ul>
+  <div class="notice-right">
+    <div class="noticecon"><b>最新公告：</b>
+      <marquee scrollamount="2" scrolldelay="5" onMouseOut="this.start()" onMouseOver="this.stop()">
+      诚信为本：市场永远在变，诚信永远不变。
+      </marquee>
+    </div>
+    <div class="search">
+      <form id="search" name="search" method="get" action="">
+        <input type="text" class="text" name="kws" id="kws" value="输入您要搜索的关键词"/>
+        <div class="select">
+          <select id="rid" style="display: none" name="rid">
+            <option value=1 selected="selected">新闻资讯</option>
+            <option value=2 >产品展示</option>
+            <option value=5 >种植基地</option>
+            <option value=6 >资质荣誉</option>
+            <option value=8 >科普知识</option>
+          </select>
+        </div>
+        <input type="submit" title="搜索" class="button" value=""/>
+      </form>
+      <script type=text/javascript>
+                            jQuery(document).ready(function() {
+                                jQuery("#rid").selectbox();
+                            });
+                        </script> 
+    </div>
+  </div>
+</div>
+<div class="clear"></div>
+<div class="fra">
+  <div class="www51buycom">
+    <ul class="51buypic">
+      <li><img class="imgfra" src="images/ad1.jpg" alt="1" width="288" height="213" /></li>
+      <li><img class="imgfra" src="images/ad2.jpg" alt="1" width="288" height="213" /></li>
+    </ul>
+    <a class="prev" href="javascript:void(0)" title="prev"></a> <a class="next" href="javascript:void(0)" title="next"></a>
+    <div class="num">
+      <ul>
+      </ul>
+    </div>
+  </div>
+  <script>
+/*鼠标移过，左右按钮显示*/
+$(".www51buycom").hover(function(){
+	$(this).find(".prev,.next").fadeTo("show",1);
+},function(){
+	$(this).find(".prev,.next").show();
+})
+
+$(".www51buycom").slide({ titCell:".num ul" , mainCell:".51buypic" , effect:"fold", autoPlay:true, delayTime:700 , autoPage:true });
+</script>
+  <div class="actr">
+    <div class="newstop"> <span><b>专修资讯</b><br />
+      行业最新资讯，集团最新动态！</span> <a href="news.html" title="更多">更多>></a> </div>
+    <a class="actop"  href=""><b>物业给错钥匙 她花了13万装修却发现房子是别人的</b><span>昨日下午，记者前往现场调查此事发现，该小区物业属于海投公司，物业负责人刘主任表示，他们在交房的时候没有弄错，是后来交装修钥匙的时候才出错。他们愿意承担责任，但是不认同13万多元的费用，希望能够通过第三方进行装修费用评估...</span></a>
+    <ul>
+      <li><span>2015/08/28</span><a href="#">欧式风格 40平小户型舒适家</a></li>
+      <li><span>2015/08/28</span><a href="#">惊艳北欧简约风 打造150平三居室</a></li>
+      <li><span>2015/08/28</span><a href="#">主卫巧改书房 100平现代简约三居</a></li>
+      <li><span>2015/08/28</span><a href="#">简欧风巧用吊顶扩容升级 打造98㎡三居</a></li>
+      <li><span>2015/08/28</span><a href="#">网友装修 4套79㎡经济适用家</a></li>
+      <li><span>2015/08/28</span><a href="#">现代简约风格 16款白色厨房设计</a></li>
+    </ul>
+  </div>
+</div>
+<div class="clear"></div>
+<div class="product">
+  <div class="pro-name">
+    <p> <span><b>装修项目</b><br />
+      只有客户的满意，才有我们的发展！</span> <a href="product.html" title="更多">更多>></a> </p>
+  </div>
+  <div class="fra1">
+    <ul class="pro-ul">
+      <li> <a href="#"> <img src="images/cp1.jpg" alt="有机大米" width="250" height="188" />
+        <div> <span>家庭装修</span>
+          <p class="con">家庭装修是把生活的各种情形“物化”到房间之中，买的一般房间的设计业已完成，不能做大的调整了</p>
+        </div>
+        </a> </li>
+      <li> <a href="#"> <img src="images/cp2.jpg" alt="有机大米" width="250" height="188" />
+        <div> <span>公司装修</span>
+          <p class="con">装修这一行业慢慢地从建筑这一大行业之中脱离开来，发展成为了一个专门的子行业</p>
+        </div>
+        </a> </li>
+      <li> <a class="a1" href="#">
+        <div> <span>酒店装修</span>
+          <p class="con">最初的酒店装修设计仅限于对建成的酒店进行室内外的各种美化，现今酒店装修设计又被赋予了新的含义</p>
+        </div>
+        <img src="images/cp3.jpg" alt="" width="250" height="188" /> </a> </li>
+      <li> <a class="a1" href="#">
+        <div> <span>政府装修</span>
+          <p class="con">装修材料分为两大部分：一部分为室外材料，一部分为室内材料。室内材料再分为实材，板材、片材、型材、线材五个类型</p>
+        </div>
+        <img src="images/cp4.jpg" alt="" width="250" height="188" /> </a> </li>
+    </ul>
+  </div>
+</div>
+<div class="clear"></div>
+<div class="join">
+  <div class="pro-name">
+    <p> <span><b>企业简介</b><br />
+      民以食为天，食以米为先！</span> <a href="about.html" title="更多">更多>></a> </p>
+  </div>
+  <div class="fra"> <span class="join-pic"><img src="images/join.png" alt="招商加盟" /></span> <span class="join-name">
+    </span>
+    <div class="join-con">
+    五常市地处黑龙江省南部，属于中温带大陆气候，无霜期140天，平均年降水量608毫米，年日照2629小时。溪浪河、拉林河、牤牛河贯穿全境,水系纵横。充沛的日照，天然河水灌溉，加上种植的成熟期长的优质晚熟品种的水稻，使五常大米与众不同的特点。五常山清水秀，更是鱼米之乡。
+    自五常于清乾隆年间开始有栽培水稻的历史记载以来，不到200年的时间里，五常大米名声鹊起，誉满天下，一直是皇室独享的御贡米。改革开放后来更是屡获殊荣，“绿色食品”、“有机食品”、“中国名牌”、“美国食品营养协会认证产品”、“中国原产地域保护产品”等桂冠独享华夏。“五常米，帝王粮”的民谚在白山黑水间广为传唱。对饮食挑剔到极致的慈禧太后更是多次提起“非此米不能尽食”。
+    </div>
+  </div>
+</div>
+<div class="clear"></div>
+<div class="base">
+  <div class="pro-name">
+    <p> <span><b>装修案例</b><br />
+      独特的装修风格，想你所想！</span> <a href="product.html" title="更多">更多>></a> </p>
+  </div>
+  <!--广告-->
+  <div class="kong"></div>
+  <div class="slider">
+    <div class="bd">
+      <ul>
+        <li> 
+        <a href="#"><img src="images/cp1.jpg" /></a> 
+        <a href="#"><img src="images/cp2.jpg" /></a> 
+        <a href="#"><img src="images/cp3.jpg" /></a> 
+        <a href="#"><img src="images/cp4.jpg" /></a> </li>
+        <li> 
+        <a href="#"><img src="images/cp5.jpg" /></a> 
+        <a href="#"><img src="images/cp6.jpg" /></a> 
+        <a href="#"><img src="images/cp7.jpg" /></a> 
+        <a href="#"><img src="images/cp1.jpg" /></a> </li>
+      </ul>
+    </div>
+    <div class="hd">
+      <ul>
+      </ul>
+    </div>
+    <div class="pnBtn prev"><span class="blackBg"></span><a class="arrow" href="javascript:void(0)"></a></div>
+    <div class="pnBtn next"><span class="blackBg"></span><a class="arrow" href="javascript:void(0)"></a></div>
+  </div>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	/* 设置第一张图片 */
+	$(".slider .bd li").first().before($(".slider .bd li").last());
+	
+	/* 鼠标悬停箭头按钮显示 */
+	$(".slider").hover(function(){
+		$(this).find(".arrow").stop(true,true).fadeIn(300)
+	},function(){
+		$(this).find(".arrow").fadeOut(300)
+	});
+	
+	/* 滚动切换 */
+	$(".slider").slide({
+		titCell:".hd ul", 
+		mainCell:".bd ul", 
+		effect:"leftLoop",
+		autoPlay:true, 
+		vis:2,
+		autoPage:true, 
+		trigger:"click"
+	});
+
+});
+</script>
+</div>
+<div class="clear"></div>
+<div class="foot">
+  <div class="foot-map">
+    <div class="foot-mleft">
+      <ul>
+        <li><a title="">网站首页</a> </li>
+        <li><a title="">关于我们</a> </li>
+        <li><a title="">产品展示</a> </li>
+        <li><a title="">资质荣誉</a> </li>
+        <li><a title="">新闻资讯</a> </li>
+        <li><a title="">种植基地</a> </li>
+        <li><a title="">科普知识</a> </li>
+        <li><a title="">招商加盟</a> </li>
+        <li><a title="">在线留言</a> </li>
+        <li><a title="">联系我们</a> </li>
+      </ul>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <div class="footlink"> <b class="name"> 友情链接： </b>
+    <div class="linka"> <a href="http://www.baidu.com" target="_blank" >百度</a> </div>
+  </div>
+  <div class="foot-con">
+    <div class="foot-left">电话：xxx&nbsp;&nbsp;&nbsp;&nbsp;传真：xxx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;版权所有：xxx某某公司医疗器械有限责任公司版权所有</div>
+    
+  </div>
+</div>
+</body>
+</html>

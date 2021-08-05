@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<!--总容器-->
+<main class="index-section">
+    <!--左侧-->
+    <aside class="index-aside left">
+        <!--左侧头部-->
+        <header class="index-header">
+            <img src="img/admin.png">
+            <p>欢迎你！管理员</p>
+
+        </header>
+        <!--导航-->
+        <nav class="index-nav">
+            <ul class="nav-ul">
+                <li class="li-active"><p><img src="img/home.png"> </p><a href="home.html" target="iframename">首页</a> </li>
+                <li><p><img src="img/data-ph.png"> </p><a href="table.html" target="iframename">监测数据</a> </li>
+                <li><p><img src="img/video.png"> </p><a href="user.html" target="iframename">监控视频</a> </li>
+                <li><p><img src="img/anyais.png"> </p><a href="AssistantRun.html" target="iframename">统计分析</a> </li>
+                <li><p><img src="img/anyais.png"> </p><a href="set.html" target="iframename">摄像头管理</a> </li>
+                <li><p><img src="img/sysset.png"> </p><a href="playback.html" target="iframename">回放设置</a> </li>
+
+            </ul>
+        </nav>
+    </aside>
+    <!--右侧-->
+    <article class="index-artie right">
+        <header class="artie-header"><div class="header-logo"><img src="img/headLogo.png"></div><span class="header-exit"><i class="exit-i"></i><a href="javascript:void (0)">退出</a> </span></header>
+        <section class="right-section">
+            <iframe class="iframe-con" frameborder="0" name="iframename" src="home.html"></iframe>
+        </section>
+    </article>
+</main>
+<script src="js/jquery.min.js"></script>
+<script>
+    $(function(){
+        $('.nav-ul li').click(function(){
+            var dis=$(this).find(".nav_son_ul").css("visibility");
+            if(dis=='hidden'){
+                $(this).find(".nav_son_ul").css('visibility',"visible");
+                $(this).find(".change_icon").removeClass("down_icon").addClass("up_icon");
+
+            }
+            else {
+                $(this).find(".nav_son_ul").css('visibility',"hidden");
+                $(this).find(".change_icon").removeClass("up_icon").addClass("down_icon");
+
+            }
+
+        })
+
+
+    })
+</script>
+</body>
+</html>

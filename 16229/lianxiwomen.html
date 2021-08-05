@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>联系我们</title>
+</head>
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+<link href="css/public.css" rel="stylesheet" type="text/css" />
+<!--ie6解决png-->
+<script src="js/DD_belatedPNG_0.0.8a.js" type="text/javascript"></script>
+<script type="text/javascript">
+        DD_belatedPNG.fix('div, ul, img, li, input , a ,p');
+</script>
+<!--ie6解决png-->
+<!--banner-->
+
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	
+	
+	
+	
+	// 图片左右翻滚
+	var size = $('.slidebtn-01>ul>li').length;
+	var frist = 0;
+	var datetime;
+	$('.slidebtn-01 li').mouseover(function(){
+		frist = $('.slidebtn-01 li').index(this);
+		showpic(frist);
+	}).eq(0).mouseover();
+	
+	$('.slidebox-01').hover(function(){
+		clearInterval(datetime);
+	},function(){
+		datetime = setInterval(function(){
+			showpic(frist)
+			frist++;
+			if(frist==size){
+				frist=0;
+			}
+		},3000);
+	}).trigger('mouseleave');
+
+	function showpic(frist){
+		var imgheight = $('.slidebox-01').width();
+		$('.slidepic-01').stop(true,false).animate({left:-imgheight*frist},600)
+		$('.slidebtn-01 li').removeClass('current').eq(frist).addClass('current');
+	};
+	
+});
+
+
+	
+</script>
+<!--导航开始-->
+<!--<SCRIPT type=text/javascript src="js/jquery.min.js"></SCRIPT>-->
+<SCRIPT type=text/javascript src="js/lavalamp.min.js"></SCRIPT>
+<SCRIPT type=text/javascript src="js/xixi.js"></SCRIPT>
+<SCRIPT type=text/javascript>
+$(function(){$(".lavaLamp").lavaLamp({ fx: "backout", speed: 700 })});
+</SCRIPT>
+<!--导航结束-->
+
+</head>
+
+<body>
+<div class="j_header">
+	<div class="j_top">
+    	<div class="j_top_main">
+    		<span class="j_top_left">您好！欢迎来到金草缘网站！</span>
+        	<span class="j_top_right"><a href="#">设为首页 </a> | <a href="#"> 收藏本页</a></span>
+        </div>
+        <div class="clear"></div>
+    </div>   
+</div> 
+<div class="clear"></div>
+<div class="j_logo">
+	<div class="j_logo_bg">
+    	<div class="j_logo_main">
+    		<div class="j_logo1"><img src="images/jcy_logo1.png" width="234" height="96" />
+            </div>
+            <p class="j_t1">全国服务热线：<br />
+          <font class="j_30">400-123-4567</font>
+            </p>
+            <div class="j_tell"><img src="images/jcy_tell.png" width="65" height="67" />
+          	</div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+<div class="j_nav">
+	<div class="j_nav_main">
+    <div id=wrapper>
+    	<ul class=lavaLamp>
+        	<li><a href="index.html">网站首页</a></li>
+            <li><a href="gongsijianjie.html">公司简介</a></li>
+            <li><a href="chanpinzhanshi.html">产品展示</a></li>
+            <li><a href="xinwenzixun.html">新闻资讯</a></li>
+            <li><a href="zhaoxiannashi.html">招贤纳士</a></li>
+            <li><a href="zhaoshangjiameng.html">招商加盟</a></li>
+            <li style="background:none;"><a href="lianxiwomen.html">联系我们</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    </div>
+</div>
+<div class="clear"></div>
+<div class="j_con">
+    <div class="zy_banner"><img src="images/zy_banner.jpg" width="1000" height="317" /></div>
+    <div class="zy_c">
+      <div class="zy_c_l">
+        <div class="sy_lx">
+          <div class="sy_lx_top"><p>联系我们</p></div>
+          <div class="sy_lx_di">
+            <h3>XXX</h3>
+            <p>联系人：王经理<br />
+电话：186********<br />
+Q Q:12345678910<br />
+邮箱：12345678910@qq.com<br />
+地址：XXX 更多模板：<a href="http://www.mycodes.net/" target="_blank">源码之家</a></p>
+          </div>
+        </div>
+        <div class="zy_ggtu">
+          <img src="images/zsjm_bj.jpg" width="342" height="137" />
+          <img src="images/zxns_bj.jpg" width="342" height="128"/>
+        </div>
+      </div>
+      <div class="zy_c_r">
+        <div class="zy_c_r_top"><P>联系我们</P></div>
+        <div class="zy_lxwm">
+          <iframe width="504" height="425" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://j.map.baidu.com/86s_T"></iframe>
+         <h3>XXX</h3>
+            <p>联系人：王经理<br />
+电话：186********<br />
+Q Q:12345678910<br />
+邮箱：12345678910@qq.com<br />
+地址：XXX 更多模板：<a href="http://www.mycodes.net/" target="_blank">源码之家</a></p>
+        </div>
+      </div>
+    </div>
+    
+</div>
+<div class="clear"></div>
+<div class="shouye_di">
+  <div class="sy_yq">
+    <div class="sy_yq_top"><p><em>友</em>情链接 &nbsp; &nbsp;<span>FRIENDLY LINK</span></p><a href="#">申请友情链接 》</a></div>
+    <div style=" clear:both"></div>
+    <div class="sy_yq_di">
+      <ul>
+        <li><a href="#">茅台定制酒</a></li>
+        <li><a href="#">茅台定制酒</a></li>
+        <li><a href="#">茅台定制酒</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <div class="banquan">
+   <p><a href="#">网站首页</a> | <a href="#">公司简介</a> | <a href="#">产品展示</a> | <a href="#">新闻资讯</a> | <a href="#">招贤纳士</a> | <a href="#">招商加盟</a> |  <a href="#">联系我们</a></p>
+   <p class="bq_p1">版权所有：XXX    备案号：XXX<br />   
+电 话：186********     传 真：XXX    加盟热线： 186********   <br />
+地址：XXX </p>
+  </div>
+</div>
+</body>
+</html>

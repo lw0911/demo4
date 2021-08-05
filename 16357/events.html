@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Events</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Elite Furniture Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<!-- menu -->
+<link href="css/component.css" rel="stylesheet" type="text/css"  />
+<!-- //menu -->
+<link href='http://fonts.useso.com/css?family=Raleway:400,100,200,300,500,600,700,900,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+	
+<body class="cbp-spmenu-push">
+<!-- banner -->
+	<div class="banner1">
+		<div class="header">
+			<div class="top-nav">
+				<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s2">
+					<h3>Menu</h3>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="services.html">Services</a></li>
+						<li class="active"><a href="events.html">News & Events</a></li>
+						<li><a href="typo.html">Short Codes</a></li>
+						<li><a href="#contact" class="scroll">Mail Us</a></li>
+					</ul>
+				</nav>
+				<div class="main buttonset">	
+						<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
+						<button id="showRightPush">Menu</button>
+						<!--<span class="menu"></span>-->
+				</div>
+				<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+				<script src="js/classie.js"></script>
+				<script>
+				var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+				showRightPush = document.getElementById( 'showRightPush' ),
+				body = document.body;
+
+				showRightPush.onclick = function() {
+					classie.toggle( this, 'active' );
+					classie.toggle( body, 'cbp-spmenu-push-toleft' );
+					classie.toggle( menuRight, 'cbp-spmenu-open' );
+					disableOther( 'showRightPush' );
+				};
+
+				function disableOther( button ) {
+					if( button !== 'showRightPush' ) {
+						classie.toggle( showRightPush, 'disabled' );
+					}
+				}
+				</script>
+			</div>
+			<div class="logo">
+				<a href="index.html">Elite Furniture</a>
+			</div>
+			<div class="logo-right">
+				<p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>Contact Us </p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //banner -->
+<!-- events -->
+	<div class="events">
+		<div class="container">
+			<h3>Latest Events</h3>
+			<p class="est">Excepteur sint occaecat cupidatat non proident, 
+				sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div class="event-grids">
+				<div class="col-md-4 event-grid">
+					<p class="dte">20 Sep,2015</p>
+					<img src="images/1.jpg" alt=" " class="img-responsive" />
+					<div class="nobis">
+						<a href="single.html">impedit minus id quod soluta<span> maxime placeat facere</span></a>
+					</div>
+					<p class="quod">Nam libero tempore, cum soluta nobis est eligendi optio 
+						cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+					<div class="more">
+						<a href="single.html">More Info</a>
+					</div>
+				</div>
+				<div class="col-md-4 event-grid">
+					<p class="dte">22 Sep,2015</p>
+					<img src="images/2.jpg" alt=" " class="img-responsive" />
+					<div class="nobis">
+						<a href="single.html">id quod maxime placeat facere <span>maxime eligendi optio</span></a>
+					</div>
+					<p class="quod">Nam libero tempore, cum soluta nobis est eligendi optio 
+						cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+					<div class="more">
+						<a href="single.html">More Info</a>
+					</div>
+				</div>
+				<div class="col-md-4 event-grid">
+					<p class="dte">25 Sep,2015</p>
+					<img src="images/3.jpg" alt=" " class="img-responsive" />
+					<div class="nobis">
+						<a href="single.html">soluta nobis est eligendi quod <span>placeat facere possimus</span></a>
+					</div>
+					<p class="quod">Nam libero tempore, cum soluta nobis est eligendi optio 
+						cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+					<div class="more">
+						<a href="single.html">More Info</a>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="featured-events">
+				<h4>Featured Events</h4>
+				<div class="featured-evnt">
+					<div class="col-md-8 featured-events-left">
+						<h5>Nam libero tempore, cum soluta nobis est eligendi optio dignissimos 
+							<span>cumque nihil impedit quo minus id quod maxime placeat</span></h5>
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui 
+						blanditiis praesentium voluptatum deleniti atque corrupti 
+						quos dolores et quas molestias excepturi sint occaecati cupiditate 
+						non provident, similique sunt in culpa qui officia deserunt mollitia
+						animi, id est laborum et dolorum fuga.
+						Nam libero tempore, cum soluta nobis est eligendi optio 
+						cumque nihil impedit quo minus id quod maxime placeat facere possimus.
+						Nam libero tempore, cum soluta nobis est eligendi optio 
+						cumque nihil impedit quo minus id quod maxime placeat facere possimus,
+						omnis voluptas assumenda est, omnis dolor repellendus.</p>
+						<ul class="last1">
+							<li><a href="#">Temporibus autem quibusdam</a></li>
+							<li><a href="#">Et aut officiis debitis aut</a></li>
+							<li><a href="#">Necessitatibus saepe eveniet</a></li>
+							<li><a href="#">Ut et voluptates repudiandae</a></li>
+							<li><a href="#">Molestiae non recusandae earum</a></li> 
+							<li><a href="#">Rerum hic tenetur a sapiente delectus</a></li>
+							<li><a href="#">Temporibus autem quibusdam</a></li>
+							<li><a href="#">Et aut officiis debitis aut</a></li>
+							<li><a href="#">Necessitatibus saepe eveniet</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4 featured-events-right">
+						<img src="images/7.jpg" alt=" " class="img-responsive" />
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- //events -->	
+<!-- footer -->
+	<div id="contact" class="footer">
+		<div class="footer-left">
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99362.47205895327!2d-77.01456655!3d38.8993487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c6de5af6e45b%3A0xc2524522d4885d2a!2sWashington%2C+DC%2C+USA!5e0!3m2!1sen!2sin!4v1427716677381" frameborder="0" style="border:0"></iframe>
+			</div>
+			<div class="map-color">
+				<ul>
+						<li class="dot"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></li>
+						<li class="mobile"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span></li>
+						<li class="mes"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info"></a></li>
+				</ul>
+			</div>
+			<p>Copyright &copy; 2016.Company name All Rights Reserved <a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a>.</p>
+		</div>
+		<div class="footer-right">
+			<h4>Newsletter</h4>
+			<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece.</p>
+			<form>
+				<input type="text" placeholder=" " required=" ">
+				<input type="submit" value=" ">
+			</form>
+			<h5>Follow Us</h5>
+			<ul>
+				<li><a href="#" class="twitter"></a></li>
+				<li><a href="#" class="g"></a></li>
+				<li><a href="#" class="v"></a></li>
+			</ul>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+<!-- //footer -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>

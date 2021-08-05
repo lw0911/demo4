@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页</title>
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+<link href="css/public.css" rel="stylesheet" type="text/css" />
+<!--ie6解决png-->
+<script src="js/DD_belatedPNG_0.0.8a.js" type="text/javascript"></script>
+<script type="text/javascript">
+        DD_belatedPNG.fix('div, ul, img, li, input , a ,p');
+</script>
+<!--ie6解决png-->
+<!--banner-->
+
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	
+	
+	
+	
+	// 图片左右翻滚
+	var size = $('.slidebtn-01>ul>li').length;
+	var frist = 0;
+	var datetime;
+	$('.slidebtn-01 li').mouseover(function(){
+		frist = $('.slidebtn-01 li').index(this);
+		showpic(frist);
+	}).eq(0).mouseover();
+	
+	$('.slidebox-01').hover(function(){
+		clearInterval(datetime);
+	},function(){
+		datetime = setInterval(function(){
+			showpic(frist)
+			frist++;
+			if(frist==size){
+				frist=0;
+			}
+		},3000);
+	}).trigger('mouseleave');
+
+	function showpic(frist){
+		var imgheight = $('.slidebox-01').width();
+		$('.slidepic-01').stop(true,false).animate({left:-imgheight*frist},600)
+		$('.slidebtn-01 li').removeClass('current').eq(frist).addClass('current');
+	};
+	
+});
+
+
+	
+</script>
+<!--导航开始-->
+<!--<SCRIPT type=text/javascript src="js/jquery.min.js"></SCRIPT>-->
+<SCRIPT type=text/javascript src="js/lavalamp.min.js"></SCRIPT>
+<SCRIPT type=text/javascript src="js/xixi.js"></SCRIPT>
+<SCRIPT type=text/javascript>
+$(function(){$(".lavaLamp").lavaLamp({ fx: "backout", speed: 700 })});
+</SCRIPT>
+<!--导航结束-->
+
+</head>
+
+<body>
+<div class="j_header">
+	<div class="j_top">
+    	<div class="j_top_main">
+    		<span class="j_top_left">您好！欢迎来到金草缘网站！</span>
+        	<span class="j_top_right"><a href="#">设为首页 </a> | <a href="#"> 收藏本页</a></span>
+        </div>
+        <div class="clear"></div>
+    </div>   
+</div> 
+<div class="clear"></div>
+<div class="j_logo">
+	<div class="j_logo_bg">
+    	<div class="j_logo_main">
+    		<div class="j_logo1"><img src="images/jcy_logo1.png" width="234" height="96" />
+            </div>
+            <p class="j_t1">全国服务热线：<br />
+          <font class="j_30">400-123-4567</font>
+            </p>
+            <div class="j_tell"><img src="images/jcy_tell.png" width="65" height="67" />
+          	</div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+<div class="j_nav">
+	<div class="j_nav_main">
+    <div id=wrapper>
+    	<ul class=lavaLamp>
+        	<li ><a href="index.html">网站首页</a></li>
+            <li><a href="gongsijianjie.html">公司简介</a></li>
+            <li><a href="chanpinzhanshi.html">产品展示</a></li>
+            <li><a href="xinwenzixun.html">新闻资讯</a></li>
+            <li><a href="zhaoxiannashi.html">招贤纳士</a></li>
+            <li><a href="zhaoshangjiameng.html">招商加盟</a></li>
+            <li style="background:none;"><a href="lianxiwomen.html">联系我们</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    </div>
+</div>
+<div class="clear"></div>
+<div class="j_con">
+    <div class="jcy_main">
+     <div class="slidebox-01">
+	<ul class="slidepic-01">
+		<li><a href="#" target="_blank"><img  src="images/banner_tu.jpg" width="972" height="451"/></a></li>
+		<li><a href="#" target="_blank"><img  src="images/banner_tu.jpg" width="972" height="451"/></a></li>
+		<li><a href="#" target="_blank"><img  src="images/banner_tu.jpg" width="972" height="451"/></a></li>
+		<li><a href="#" target="_blank"><img  src="images/banner_tu.jpg" width="972" height="451"/></a></li>
+	</ul>
+	<div class="slidebtn-01">
+		<ul>
+			<li class="current">1</li>
+			<li>2</li>
+			<li>3</li>		
+			<li>4</li>				
+		</ul>
+	</div>
+</div>
+	
+</div>
+    <div class="shouye_c">
+      <div class="shouye_c1">
+        <div class="sy_lx">
+          <div class="sy_lx_top"><p>联系我们</p></div>
+          <div class="sy_lx_di">
+             <h3>XXX</h3>
+            <p>联系人：王经理<br />
+电话：186********<br />
+Q Q:12345678910<br />
+邮箱：12345678910@qq.com<br />
+地址：XXX </p>
+          </div>
+        </div>
+        <div class="sy_gsjj">
+          <div class="sy_gsjj_top"><p>公司简介</p><span><a href="#">更多</a></span></div>
+          <div class="sy_gsjj_di"><img src="images/gongsi_tu.jpg" width="190" height="143" /><p> 公司秉承"品质就是生命，酒品就是人品"的理念，以"高品质，高品味"为开发思路，始终站在"人无我有，人有我优"的高度，审时度势，把握市场及高端消费者对健康的需求，对高品味的追求。公司发展至今，已经拥有一支实力雄厚的营销团队，销售网络遍布全国20多个省市，产品畅销全国，销量连年翻番，得到了广大消费者、合作伙伴及相关领导的好评和赞誉。产品畅销全国，销量连年翻番，得到了广大消费者、合作伙伴及相关领导的好评........<a href="gongsijianjie.html">详情</a></p></div>
+        </div>
+      </div>
+      <div style=" clear:both; height:10px;"></div>
+      <div class="sy_cpzs">
+        <div class="sy_cpzs_top"><p>产品展示</p><span><a href="chanpinzhanshi.html">更多</a></span></div>
+        <div class="sy_cpzs_di">
+          <div id="marquee_demo" style="overflow: hidden; width:998px; text-align: center;">
+    <table cellspacing="0" cellpadding="3" align="center" border="0">
+        <tr>
+            <td id="marquee_product1" valign="top">
+                <table width="998" height="190" border="0" cellpadding="2" cellspacing="0">
+                    <tr>
+                        <td>
+                            <a  title="产品一" href="chanpinzhanshi_nr.html"><img src="images/chanpin_tu1.jpg" width="170" height="152"/></a>
+                        </td>
+                        <td >
+                            <a  title="产品一" href="chanpinzhanshi_nr.html"><img src="images/chanpin_tu1.jpg" width="170" height="152"/></a>
+                        </td>
+                        <td >
+                          <a  title="产品一" href="chanpinzhanshi_nr.html"><img src="images/chanpin_tu1.jpg" width="170" height="152"/></a>  
+                        </td>
+                        <td >
+                            <a  title="产品一" href="chanpinzhanshi_nr.html"><img src="images/chanpin_tu1.jpg" width="170" height="152"/></a>
+                        </td>
+                        <td >
+                            <a  title="产品一" href="chanpinzhanshi_nr.html"><img src="images/chanpin_tu1.jpg" width="170" height="152"/></a>
+                        </td>
+                        <td>
+                            <a  title="产品一" href="chanpinzhanshi_nr.html"><img src="images/chanpin_tu1.jpg" width="170" height="152"/></a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td id="marquee_product2" valign="top">
+            </td>
+        </tr>
+    </table>
+</div>
+<!--滚动图片-->
+<script type="text/javascript">
+var speed=20;
+marquee_product2.innerHTML=marquee_product1.innerHTML;
+function Marquee(){
+if(marquee_demo.scrollLeft>=marquee_product1.scrollWidth){
+marquee_demo.scrollLeft=0;
+}
+else{
+marquee_demo.scrollLeft++;
+}
+}
+var MyMar=setInterval(Marquee,speed);
+marquee_demo.onmouseover=function(){clearInterval(MyMar);}
+marquee_demo.onmouseout=function(){MyMar=setInterval(Marquee,speed);}
+</script>
+        </div>
+       
+      </div>
+      <div style=" clear:both; height:10px;"></div>
+      <div class="shouye_c2">
+        <div class="sy_gsxw">
+          <div class="sy_gsxw_top"><p>公司新闻</p><span><a href="xinwenzixun.html">更多</a></span></div>
+          <div class="sy_gsxw_di">
+            <div class="sy_gsxw1"><img src="images/xinwen_tu1.jpg" width="136" height="134" /><h3>商务酒市场是白酒的下一个营销方向</h3><p>2013年，中国白酒行业结束十年黄金发展期，离开了政务消费所带来的巨大销量与高额利润后，中国白酒下一个主流消费方向又在何方？有关数据表明，自2012年下半年以来...<a href="xinwenzixun_nr.html">查看详情</a></p>
+            <div style=" clear:both"></div>
+            </div>
+            <div style=" clear:both"></div>
+            <ul>
+              <li><span>2020-2-20</span><a href="xinwenzixun_nr.html">现代社会供求关系促使养生酒市场升温</a></li>
+              <li><span>2020-2-20</span><a href="xinwenzixun_nr.html">现代社会供求关系促使养生酒市场升温</a></li>
+              <li><span>2020-2-20</span><a href="xinwenzixun_nr.html">现代社会供求关系促使养生酒市场升温</a></li>
+              <li><span>2020-2-20</span><a href="xinwenzixun_nr.html">现代社会供求关系促使养生酒市场升温</a></li>
+              <li><span>2020-2-20</span><a href="xinwenzixun_nr.html">现代社会供求关系促使养生酒市场升温</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="sy_gsxw" style=" float:right;">
+          <div class="sy_gsxw_top"><p>行业动态</p><span><a href="xinwenzixun.html">更多</a></span></div>
+          <div class="sy_gsxw_di">
+            <div class="sy_gsxw1"><img src="images/xinwen_tu1.jpg" width="136" height="134" /><h3>商务酒市场是白酒的下一个营销方向</h3><p>2013年，中国白酒行业结束十年黄金发展期，离开了政务消费所带来的巨大销量与高额利润后，中国白酒下一个主流消费方向又在何方？有关数据表明，自2012年下半年以来...<a href="#">查看详情</a></p>
+            <div style=" clear:both"></div>
+            </div>
+            <div style=" clear:both"></div>
+            <ul>
+              <li><span>2020-2-20</span><a href="xinwenzixun_nr.html">现代社会供求关系促使养生酒市场升温</a></li>
+              <li><span>2020-2-20</span><a href="xinwenzixun_nr.html">现代社会供求关系促使养生酒市场升温</a></li>
+              <li><span>2020-2-20</span><a href="xinwenzixun_nr.html">现代社会供求关系促使养生酒市场升温</a></li>
+              <li><span>2020-2-20</span><a href="xinwenzixun_nr.html">现代社会供求关系促使养生酒市场升温</a></li>
+              <li><span>2020-2-20</span><a href="xinwenzixun_nr.html">现代社会供求关系促使养生酒市场升温</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="clear"></div>
+<div class="shouye_di">
+  <div class="sy_yq">
+    <div class="sy_yq_top"><p><em>友</em>情链接 &nbsp; &nbsp;<span>FRIENDLY LINK</span></p><a href="#">申请友情链接 》</a></div>
+    <div style=" clear:both"></div>
+    <div class="sy_yq_di">
+      <ul>
+        <li><a href="#">茅台定制酒</a></li>
+        <li><a href="#">茅台定制酒</a></li>
+        <li><a href="#">茅台定制酒</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <div class="banquan">
+   <p><a href="#">网站首页</a> | <a href="#">公司简介</a> | <a href="#">产品展示</a> | <a href="#">新闻资讯</a> | <a href="#">招贤纳士</a> | <a href="#">招商加盟</a> |  <a href="#">联系我们</a></p>
+   <p class="bq_p1">版权所有：XXX    备案号：XXX<br />   
+电 话：186********     传 真：XXX    加盟热线： 186********   <br />
+地址：XXX </p>
+  </div>
+</div>
+</body>
+</html>
