@@ -1,0 +1,864 @@
+.clearfloat{*zoom:1;}
+.clearfloat:before,.clearfloat:after{content:""; display:table; line-height:0;visibility:hidden;}
+.clearfloat:after{ clear:both;}
+i {font-style: normal;}
+.wrap {width: 82%; height: auto; margin: 0 auto;}
+
+/*垂直对齐*/
+.m-list-flex{display: -webkit-box; display: -webkit-flex; display: flex; -webkit-box-align: center; -webkit-align-items: center; align-items: center; }
+.m-list-flex .m-cell-bd{ -webkit-box-flex: 1; -webkit-flex: 1; flex: 1; overflow: hidden; }
+/*文字截取*/
+.single-line{ text-overflow:ellipsis;white-space:nowrap;overflow:hidden; }
+.multi-line{min-height: 2em; display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;text-overflow:clip;overflow:hidden;}
+.multi-line1{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;text-overflow:clip;overflow:hidden;}
+/*图片*/
+.pic {width: 100%; overflow: hidden; font-size: 0;}
+.pic img {width: 100%;-moz-transition: all 0.3s ease-in;-webkit-transition: all 0.3s ease-in;-o-transition: all 0.3s ease-in;transition: all 0.3s ease-in;}
+
+.deg {-ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg);}
+.hover {-webkit-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); -moz-transform: scale(1.1); transform: scale(1.1);}
+
+.bgFFF {background: #fff;}
+
+/*top*/
+#top {position: fixed; width: 100%; height: 90px; line-height: 90px; /*background: #00CA9D;*/ background: rgba(0,202,175,0.75); top: 0; left: 0; z-index: 99; -moz-transition: all 0.3s ease-in;-webkit-transition: all 0.3s ease-in;-o-transition: all 0.3s ease-in;transition: all 0.3s ease-in;}
+#top .wrap {height: 100%;}
+#top .logo {float: left; height: 100%;}
+#top .logo img {max-width: 100%; max-height: 100%; vertical-align: middle;}
+#top .nav {float: left; margin: 30px 0 0 11%;}
+#top .nav ul {}
+#top .nav ul li {float: left; margin-left: 18px; position: relative;}
+#top .nav ul li:first-child {margin-left: 0;}
+#top .nav ul li a {display: block;}
+#top .nav ul li h2 {height: 30px; line-height: 30px; font-size: 16px; border-radius: 15px; overflow: hidden; }
+#top .nav ul li h2 a {height: 100%; padding: 0 22px; color: #fff;}
+#top .nav ul li.active h2 a,
+#top .nav ul li:hover h2 a {color: #00ca9d; background: #fff;}
+#top .navDown {display: none; width: 128px; position: absolute; background: #fff; text-align: center; left: 50%; top: 60px; margin-left: -64px; /*margin-top: 32px;*/}
+#top .navDown a {height: 50px; line-height: 50px; color: #4c4c4c; border-top: 1px solid #e5e5e5;}
+#top .navDown a:first-child {border-top: none;}
+#top .navDown a:hover {color: #fff; font-weight: 600; background: #00CA9D;}
+.topRight {float: right; height: 40px; line-height: 40px; color: #fff; margin-top: 24px;}
+.topLang {float: left; width: 52px; padding-right: 20px; text-align: right; position: relative;}
+.topLang a {display: block; color: #fff;}
+.topLang .topLangBtn {position: absolute; width: 20px; height: 20px; background: url(../images/ico_sj.png) no-repeat center; right: 0; top: 50%; margin-top: -10px;}
+.topLang .topLangCh {display: none; position: absolute; width: 100%; /*padding-right: 20px; padding-left: 20px;*/ text-align: center; /*box-sizing: border-box;*/ right: 0; top: 45px; line-height: 30px; color: #00CA9D; background: #fff; border: 1px solid #eee;} 
+.topSearch {float: right; width: 34px; height: 100%; margin-left: 10px; position: relative;}
+.topSearchBtn {display: block; width: 100%; height: 100%; background: url(../images/ico_search.png) no-repeat right center; cursor: pointer; opacity: 0.9; -moz-transition: all 0.3s ease-in;-webkit-transition: all 0.3s ease-in;-o-transition: all 0.3s ease-in;transition: all 0.3s ease-in;}
+.topSearchBtn:hover {opacity: 1;}
+.topSearchWrap {display: none; position: absolute; width: 204px; height: 100%; font-size: 0; border-bottom: 1px solid #99d7cd; top: 0; right: 0; z-index: 66;}
+.topSearchWrap input {width: 166px; margin-left: 2px; font-size: 12px; vertical-align: middle; color: #fff;}
+.topSearchWrap button {float: right; width: 34px; height: 100%; background: url(../images/ico_search.png) no-repeat right center; cursor: pointer;}
+
+#top.topHome {background: rgba(0,202,175,0.75);}
+#top.topHome.on {background: #00CA9D;}
+
+.navBtn {position: absolute;}
+
+.muen {display: none; position: absolute; width: 36px; height: 36px; box-sizing: border-box; padding: 10px 6px; background: #fff; border-radius: 6px; right: 3%; top: 50%; transform: translateY(-50%); z-index: 99;}
+.muen span {display: block; width: 100%; height: 3px; margin-top: 4px; background: #00CA9D; -moz-transition: all 0.3s ease-in;-webkit-transition: all 0.3s ease-in;-o-transition: all 0.3s ease-in;transition: all 0.3s ease-in;}
+.muen span:first-child {margin-top: 0;}
+.muen.on span.muenX {margin-top: 6px; -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg);}
+.muen.on span.muenY {display: none;}
+.muen.on span.muenZ {margin-top: -3px; -ms-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg);}
+
+#footer {padding: 38px 0 40px 0; background: #fafafa;}
+#footer.homeFooter {background: #fff;}
+#footer .footerlogo {width: 162px; margin-top: 15px;}
+#footer .footerlogo img {width: 100%;}
+#footer ul {}
+#footer ul li {float: left; width: 16.66%;}
+#footer ul li:first-child {margin-left: 0;}
+#footer ul li h3 {line-height: 44px; font-size: 16px; font-weight: 600; color: #595959;}
+#footer ul li p {line-height: 30px;}
+#footer ul li p a {color: #8c8c8c;}
+#footer ul li p a:hover {color: #333;}
+#footer .footerEwm {width: 162px; margin-top: 50px; text-align: center;}
+#footer .footerEwm img {width: 88px;}
+#footer .footerEwm p {margin-top: 16px; font-size: 12px; color: #999; line-height: 16px;}
+#bottom {background: #404040; text-align: center; padding: 12px 0;}
+#bottom p {color: #fff; font-size: 12px; line-height: 26px;}
+
+#footer .footerLeft {float: left; width: 20%;}
+#footer .footerRight {float: right; width: 80%;}
+#footer .footerInfor {margin-top: 25px; padding-top: 20px; border-top: 2px solid #e5e5e5;}
+#footer .footerInfor div {float: left; width: 50%; line-height: 30px; color: #4c4c4c;}
+#footer .footerInfor p span:first-child {margin-right: 20px;}
+
+/*banner*/
+.bx-wrapper .bx-viewport {/*height: auto !important;*/ background: none; border: none; box-shadow: none; left: 0;}
+.bx-wrapper {margin: 0 auto 0; max-width: 100% !important;}
+.bx-wrapper .bx-pager {z-index: 22;}
+.bx-wrapper .bx-controls-direction a {z-index: 22;}
+.banner {width: 100%;}
+.banner img {display: block; width: 100%;}
+.banner img.img2 {display: none;}
+.banner li {width: 100%; height: auto; position: relative; overflow: hidden; z-index: 22;}
+.banner li a {display: block; width: 100%;}
+#banner .bx-wrapper .bx-pager {width: 82%; left: 50%; bottom: 20px; font-size: 0; margin-left: -41%; line-height: 20px; padding: 0; z-index: 22;}
+#banner .bx-wrapper .bx-pager .bx-pager-item {vertical-align: middle;	}
+#banner .bx-wrapper .bx-pager.bx-default-pager a {width: 20px; height: 20px; line-height: 20px; margin: 0 10px; text-indent: 0; font-size: 12px; font-weight: normal; border-radius: 0; background: none; border: none; color: #fff;}
+#banner .bx-wrapper .bx-pager.bx-default-pager a:hover, #banner .bx-wrapper .bx-pager.bx-default-pager a.active {font-size: 16px; font-weight: 600;}
+#banner .bx-wrapper .bx-pager:before {display: block; content: ""; position: absolute; width: 45%; height: 1px; top: 50%; left: 0; background: rgba(255,255,255,0.3);} 
+#banner .bx-wrapper .bx-pager:after {display: block; content: ""; position: absolute; width: 45%; height: 1px; top: 50%; right: 0; background: rgba(255,255,255,0.3);} 
+#banner .bx-controls-direction {width: 82%; position: absolute; top: 50%; left: 50%; margin-left: -41%;}
+#banner .bx-wrapper .bx-controls-direction a {width: 36px; height: 56px; top: 50%; margin: 0; transform: translateY(-50%); background-repeat: no-repeat; background-position: center; background-repeat: no-repeat; opacity: 0.7; box-sizing: border-box;}
+#banner .bx-wrapper .bx-controls-direction a:hover {opacity: 1;}
+#banner .bx-wrapper .bx-prev {left: -40px; background-image: url(../images/ico_btn_jt_l_a.png);}
+#banner .bx-wrapper .bx-next {right: -40px; background-image: url(../images/ico_btn_jt_r_a.png);}
+
+.homeBox {padding: 40px 0 60px 0;}
+
+.homeTitle {text-align: center; margin-bottom: 40px;}
+.homeTitle h2 {line-height: 34px; font-size: 20px; color: #4c4c4c; font-weight: 600;}
+.homeTitle h3 {font-size: 12px; color: #00ca9d;}
+.homeTitle h3 span {display: inline-block; position: relative;}
+.homeTitle h3 span:before {display: block; width: 102px; height: 100%; content: ""; position: absolute; left: -120px; top: 0; background: url(../images/home_tit_bg_l.png) no-repeat center; background-size: 100%;}
+.homeTitle h3 span:after {display: block; width: 102px; height: 100%; content: ""; position: absolute; right: -120px; top: 0; background: url(../images/home_tit_bg_r.png) no-repeat center; background-size: 100%;}
+.homeTitle .line {width: 40px; height: 1px; background: #00CA9D; margin: 10px auto 0;}
+
+.slideHomeIdear {}
+.homeIdearWrap {/*padding: 0 30px;*/}
+.slideHomeIdear li {float: left; width: 30.66%; margin-left: 4%; position: relative; /*margin: 0 36px;*/ }
+.slideHomeIdear li:first-child {margin-left: 0;}
+.slideHomeIdear li h3 {line-height: 30px; font-size: 18px; font-weight: 600; text-align: center;}
+.slideHomeIdear li .line {width: 24px; height: 2px; margin: 6px auto 0; background: #00CA9D;}
+.slideHomeIdear li .pic {margin-top: 20px;}
+.slideHomeIdear li p {height: 96px; margin-top: 12px; line-height: 24px; color: #999; overflow: hidden;}
+.slideHomeIdear li a {display: block; width: 94px; height: 34px; margin: 10px auto 0; line-height: 34px; font-size: 20px; text-align: center; color: #cccccc; background: #f1f1f1; border-radius: 17px;}
+.slideHomeIdear li:hover h3 {color: #00CA9D;}
+.slideHomeIdear li:hover a {color: #fff; background: #00CA9D;}
+.slideHomeIdear li:hover img {-webkit-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); -moz-transform: scale(1.1); transform: scale(1.1);}
+.homeIdearWrap .bx-wrapper .bx-controls-direction a {width: 36px; height: 36px; top: 50%; transform: translateY(-50%); background-repeat: no-repeat; background-position: center; background-repeat: no-repeat; opacity: 0.7; box-sizing: border-box;}
+.homeIdearWrap .bx-wrapper .bx-prev {left: -56px; background-image: url(../images/home_idear_jt_l.png);}
+.homeIdearWrap .bx-wrapper .bx-prev:hover {background-image: url(../images/home_idear_jt_l_a.png);}
+.homeIdearWrap .bx-wrapper .bx-next {right: -56px; background-image: url(../images/home_idear_jt_r.png);}
+.homeIdearWrap .bx-wrapper .bx-next:hover {background-image: url(../images/home_idear_jt_r_a.png);}
+
+.homeCour {padding-bottom: 56px; background: url(../images/home_c_bg.jpg) no-repeat center; background-size: cover;}
+.homeCourWrap {/*padding: 0 40px;*/}
+.homeCourList {margin-top: 40px;}
+.homeCourList li {float: left; width: 23%; height: 284px; margin: 0 1%; text-align: center; border-radius: 5px; overflow: hidden; -moz-transition: all 0.3s ease-in;-webkit-transition: all 0.3s ease-in;-o-transition: all 0.3s ease-in;transition: all 0.3s ease-in;}
+.homeCourList li a {/*background: #00CA9D;*/ height: 100%; display: block; /*padding: 32px 24px 10px 24px;*/ box-sizing: border-box; position: relative;}
+.homeCourList li .pic {width: 160px; height: 160px; line-height: 160px; margin: 0 auto 0; margin-top: 20px; border-radius: 50%; background-color: #fff; }
+.homeCourList li .pic img {width: auto; vertical-align: middle;}
+.homeCourList li h3 {margin-top: 18px; font-size: 16px; line-height: 28px;}
+.homeCourList li h4 {color: #b2b2b2; line-height: 24px;}
+.homeCourList li p {padding:0 26px; margin-top: 15px; color: #666; /*height: 146px;*/ line-height: 32px; font-size: 16px; overflow: hidden;} 
+/*.homeCourList li:hover {margin-top: -24px; background: #00CA9D;box-shadow: 0 0 20px 0 #aeded3;}*/
+/*.homeCourList li:hover h3, .homeCourList li:hover h4, .homeCourList li:hover p {color: #fff;}*/
+.homeCourInner {/*display: none;*/ width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 3; -moz-transition: all 0.4s ease-in;-webkit-transition: all 0.4s ease-in;-o-transition: all 0.4s ease-in;transition: all 0.4s ease-in;}
+.homeCourTxt {display: none; width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 22;}
+.homeCourList li .homeCourTxt h3 {margin-top: 120px; margin-bottom: 4px; /*color: #fff;*/ font-size: 20px;}
+/*.homeCourList li .homeCourTxt h3 {color: #00CA9D;}*/
+.homeCourList li.on {margin-top: -24px;}
+/*.homeCourList li.on a {background: #00CA9D;}*/
+.homeCourList li.on .homeCourInner {top: -60px; left: 80px; opacity: 0; filter:alpha(opacity=0);  -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg);} 
+.homeCourList li.on .homeCourInner h3,
+.homeCourList li.on .homeCourInner h4 {display: none;}
+
+.homeJoin {}
+.homeJoinWrap {margin-bottom: 42px;}
+.homeJoinList {}
+.homeJoinList li {float: left; width: 50%; position: relative;}
+.homeJoinBg {position: absolute; width: 90%; height: 130px; line-height: 130px; color: #fff; font-size: 0; background: rgba(0,202,157,0.8); border-radius: 6px; top: 20px; left: 50%; margin-left: -45%;}
+.homeJoinBgInner {display: inline-block; margin-left: 24px; padding-left: 30px; vertical-align: middle; background: url(../images/home_jion_ico2.png) no-repeat left 0;}
+.homeJoinBgInner h3 {font-size: 18px; line-height: 20px;}
+.homeJoinBgInner h4 {font-size: 12px; line-height: 24px;}
+.homeJoinBgInner h4 span {display: inline-block; width: 24px; height: 24px; margin-left: 20px; vertical-align: top; background: url(../images/ico_jt.png) no-repeat center;}
+.homeJoinList li:first-child .homeJoinBg {top: auto; bottom: 20px;}
+.homeJoinList li:first-child .homeJoinBgInner {background: url(../images/home_jion_ico1.png) no-repeat left 0;}
+.homeJoinList li:hover img {-webkit-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); -moz-transform: scale(1.1); transform: scale(1.1);}
+.homeJoinList li:hover .homeJoinBg {background: #00CA9D;}
+
+.homeCamWrap {}
+.homeCamList {}
+.homeCamList li {float: left; width: 32%; margin-left: 2%; -moz-transition: all 0.3s ease-in;-webkit-transition: all 0.3s ease-in;-o-transition: all 0.3s ease-in;transition: all 0.3s ease-in;}
+.homeCamList li:first-child {margin-left: 0;}
+.homeCamList li h3 {font-size: 18px; margin-bottom: 8px;}
+.homeCamList li h3 a {color: #808080;}
+.homeCamList li h4 {font-size: 18px; color: #cfcfcf;}
+.homeCamList li p {font-size: 16px; color: #808080; line-height: 26px; overflow: hidden;}
+.homeCamList li .line {width: 26px; height: 2px; margin: 10px 0 20px 0; background: #00CA9D;}
+.homeCamList li a.more {display: block; width: 100px; height: 28px; margin-top: 20px; line-height: 28px; text-align: center; font-size: 12px; color: #fff; border: 1px solid #fff;}
+.homeCamList li a.more:hover {background: #01b48c;}
+.homeCamCont {padding: 20px 0 24px 0; -moz-transition: all 0.3s ease-in;-webkit-transition: all 0.3s ease-in;-o-transition: all 0.3s ease-in;transition: all 0.3s ease-in;}
+.homeCamList li:hover {background: #00CA9D;}
+.homeCamList li:hover h3 a,
+.homeCamList li:hover h4,
+.homeCamList li:hover p {color: #fff;}
+.homeCamList li:hover .line {background: #fff;}
+.homeCamList li:hover .homeCamCont {padding-left: 10px; padding-right: 10px;}
+.homeCamList li:hover img {-webkit-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); -moz-transform: scale(1.1); transform: scale(1.1);}
+
+.footerLink {line-height: 30px; margin-top: 10px;}
+.footerLink h3 {margin-right: 8px; font-size: 16px; font-weight: 600; color: #fc7a19;}
+.footerLink p {}
+.footerLink p a {display: inline-block; margin-right: 15px; color: #646363;}
+.footerLink p a:hover {color: #000;}
+.footerLink.m-list-flex {align-items: normal;}
+
+.homeLink {padding: 38px 0 40px 0; background: #f9f9f9;}
+.homeLinkWrap {text-align: center; line-height: 30px;}
+.homeLinkWrap a {display: inline-block; margin: 0 25px 14px 25px; color: #262626;}
+.homeLinkWrap a:hover {color: #00CA9D;}
+
+/*************内页**************/
+.bannerCont {height: 402px; background-size: cover;}
+.bannerContCourse {background: url(../images/banner_list.jpg) no-repeat center; }
+
+.main {margin-bottom: 40px;}
+.contLeft {float: left; width: 20%; background: #f5f5f5; position: relative;}
+.contRight {float: right; width: 77.666%; margin-top: 15px;}
+.contLeftNav {text-align: center;}
+.contLeftNav ul {}
+.contLeftNav ul li {}
+.contLeftNav ul li h3 {height: 58px; line-height: 58px; border-top: 1px solid #e5e5e5; position: relative;}
+.contLeftNav ul li h3 a {display: block; height: 100%;}
+.contLeftNav ul li h3 a:hover {background: #efefef;}
+.contLeftNav ul li h3 span {position: absolute; width: 30px; height: 30px; right: 17%; top: 50%; margin-top: -15px; background: url(../images/ico_jt_contL.png) no-repeat center; z-index: 22; -moz-transition: all 0.3s ease-in;-webkit-transition: all 0.3s ease-in;-o-transition: all 0.3s ease-in;transition: all 0.3s ease-in;}
+.contLeftDown {display: none;}
+.contLeftDown a {display: block; height: 56px; line-height: 56px; color: #fff; background: #ffb628; border-top: 1px solid #e5e5e5;}
+.contLeftDown a:hover,
+.contLeftDown a.on {background: #f0a920;}
+.contLeftNav ul li.on h3 a {background: #ffa800; font-size: 18px; font-weight: 600; color: #fff;}
+.contLeftNav ul li.on h3 span {background: url(../images/ico_jt_contL_a.png) no-repeat center; -ms-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg);}
+.contLeftNav ul li.active h3 a {background: #ffa800; font-size: 18px; font-weight: 600; color: #fff;}
+.contLeftNav ul li.active h3 span {background: url(../images/ico_jt_contL_a.png) no-repeat center;}
+.contLeftTit {position: absolute; width: 100%; height: 116px; text-align: center; /*background: #00CA9D;*/ background: rgba(0,202,175,0.75); color: #fff; left: 0; top: -116px; z-index: 44; border-top-left-radius: 4px; border-top-right-radius: 4px;}
+.contLeftTit span {display: block; margin-top: 22px;}
+.contLeftTit h2 {font-size: 16px; font-weight: 600; line-height: 26px; margin-top: 6px;}
+.contLeftTit h3 {font-size: 12px; line-height: 18px;}
+
+.contRightH {line-height: 38px;}
+.contRightH h2 {float: left; font-size: 24px; color: #585858;} 
+.contRightH p {float: right; font-size: 12px; color: #808080;}
+.contRightH p a {color: #808080;}
+.contRightH p a:hover,
+.contRightH p span {color: #00CA9D;}
+.contRightLine {height: 8px; margin-top: 10px; background: url(../images/cont_tit_bg.png) no-repeat center; background-size: cover;}
+
+/*课程列表*/
+.contRightWrap {margin-top: 10px;}
+.courseList {}
+.courseList li {padding: 18px 0; border-bottom: 1px solid #eeeeee;}
+.courseList li:last-child {border-bottom: none;}
+.courseList li .pic {float: left; width: 25%;}
+.courseList li .cont {float: right; width: 73.1%;}
+.courseList li .cont h3 {margin-top: 16px; margin-bottom: 6px; font-size: 18px; font-weight: 600; line-height: 34px;}
+.courseList li .cont h3 a {color: #00CA9D;}
+.courseList li .cont h3 a:hover {color: #01B48C;}
+.courseList li .cont p {color: #4c4c4c; line-height: 30px;}
+.courseList li:hover img {-webkit-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); -moz-transform: scale(1.1); transform: scale(1.1);}
+.courseList li:hover p {color: #333;}
+
+.page {width: 100%; height: 36px; margin:50px 0 40px 0; text-align: center; line-height: 36px; color: #333333;}
+.page em {display: inline-block; height: 100%; margin: 0 3px; padding: 0 15px; border: 1px solid #eee; vertical-align: top; cursor: pointer;}
+.page em:hover {background: #f5f4f4;}
+.page em.active {color: #fff; background: #00ca9d;}
+.page i {display: inline-block; height: 100%; margin: 0 3px; padding: 0 16px; border: 1px solid #eee; cursor: pointer;}
+.page i:hover {background: #f5f4f4;}
+.page i.active {color: #fff; background: #00ca9d;}
+.page a {display: inline-block; width: 30px; height: 100%; margin: 0 3px; color: #202020; border: 1px solid #eee; zoom: 1; *display:inline; float:none;}
+.page a:hover {background: #f5f4f4;}
+.page a.active {color: #fff; background: #00ca9d;}
+.page p {display: inline-block; height: 100%; margin-left: 20px;zoom: 1; *display:inline; float:none;}	
+
+/*课程详情*/
+.bannerContCourseD {background: url(../images/banner_course_d.jpg) no-repeat center;}
+.contRightH h3 {max-width: 70%; float: left; font-size: 18px; font-weight: 600; color: #595959;}
+.courDetailH {font-size: 0;margin-bottom: 8px; margin-top: 24px;}
+.courDetailH a {display: inline-block; width: 14.16%; height: 32px; margin-right: 3%; margin-bottom: 20px; text-align: center; line-height: 30px; font-size: 14px; color: #808080; border: 1px solid #e5e5e5; border-radius: 16px; box-sizing: border-box;}
+.courDetailH a:nth-child(6n) {margin-right: 0;}
+.courDetailH a:hover {background: #F5F4F4;}
+.courDetailTit {height: 60px; padding: 0 15px; margin-top: 40px; line-height: 60px; color: #fff; background: #00CA9D;}
+.courDetailTit h3 {padding-left: 36px; font-size: 16px; font-weight: 600; background: url(../images/ico_course_d.png) no-repeat left center;}
+.courDetailCont {margin: 26px 0 30px 0;}
+.courDetailCont p {color: #4c4c4c; line-height: 32px; text-indent: 2em;}
+
+/*新闻列表*/
+.bannerContNews {background: url(../images/banner_news.jpg) no-repeat center;}
+.newsH {margin-top: 22px;}
+.newsH input {width: 100%; vertical-align: middle;}
+.newsH .left {float: left; width: 36%;}
+.newsH .right {float: right; width: 54%;}
+.newsH .left,
+.newsH .right {height: 42px; line-height: 40px; font-size: 0;}
+.newsH .left .newsSearch {float: left; width: 80%; height: 100%; padding: 0 10px; border: 1px solid #e5e5e5; box-sizing: border-box;}
+.newsH .left button {float: left; width: 20%; height: 100%; background-color: #00ca9d; background-image: url(../images/ico_search.png); background-position: center; background-repeat: no-repeat; cursor: pointer;} 
+.newsH .left button:hover {background-color: #01B48C;}
+.newsH .right .newsSearchInner {float: left; width: 30%; padding: 0 10px; box-sizing: border-box; border: 1px solid #e5e5e5;}
+.newsH .right .newsSearchInner input {text-align: center; color: #00CA9D;}
+.newsH .right .line {float: left; width: 5%; height: 2px; margin: 20px 3% 0 3%; background: #e5e5e5;}
+.newsH .right button {float: right; width: 20%; height: 100%; font-size: 16px; font-weight: 600; color: #fff; background-color: #00CA9D; cursor: pointer;}
+.newsH .right button:hover {background-color: #01B48C;}
+
+.newsList {margin-top: 15px;}
+.newsList li {overflow: hidden; border: none; margin-bottom: 10px;-moz-transition: all 0.3s ease-in;-webkit-transition: all 0.3s ease-in;-o-transition: all 0.3s ease-in;transition: all 0.3s ease-in;}
+.newsList li .pic {}
+.newsList li .cont {-moz-transition: all 0.3s ease-in;-webkit-transition: all 0.3s ease-in;-o-transition: all 0.3s ease-in;transition: all 0.3s ease-in;}
+.newsList li .cont h3 {margin-top: 2px; line-height: 28px; font-size: 16px; font-weight: normal;}
+.newsList li .cont h3 a {color: #4c4c4c;}
+.newsList li .cont h4 {margin-top: 12px; line-height: 24px; color: #adadad;-moz-transition: all 0.3s ease-in;-webkit-transition: all 0.3s ease-in;-o-transition: all 0.3s ease-in;transition: all 0.3s ease-in;}
+.newsList li .cont p {color: #808080; line-height: 22px;}
+.newsList li .cont .line {height: 1px; margin: 16px 0 16px 0; background: #eee;-moz-transition: all 0.3s ease-in;-webkit-transition: all 0.3s ease-in;-o-transition: all 0.3s ease-in;transition: all 0.3s ease-in;}
+.newsList li .cont .more {/*opacity: 0; filter:alpha(opacity=0);*/ /*display: none;*/ width: 100px; height: 32px; margin-top: 12px; line-height: 32px; text-align: center; -moz-transition: all 0.3s ease-in;-webkit-transition: all 0.3s ease-in;-o-transition: all 0.3s ease-in;transition: all 0.3s ease-in;}
+.newsList li .cont .more a {display: block; height: 100%;color: #00CA9D; background: #F1F1F1; }
+.newsList li .cont .more:hover a {background: #01B48C;}
+.newsList li:hover .more a {color: #fff; background: #00CA9D;}
+.newsList li:hover h3 a {color: #00CA9D;}
+.newsList li:hover .cont .line {margin: 10px 0 10px 0;}
+
+/*新闻列表-详情页*/
+.contRightH h2.contRightTit {font-size: 18px; color: #595959; font-weight: 600;}
+.newsDetailH {padding: 36px 0 24px 0; text-align: center; border-bottom: 1px dashed #dcdcdc;}
+.newsDetailH h3 {margin-bottom: 22px; font-size: 18px; font-weight: 600; color: #4c4c4c;}
+.newsDetailH p {color: #8c8c8c;}
+.newsDetailH p span {}
+.newsDetailH p span:first-child {margin-right: 50px;}
+.newsDetailCont {margin-top: 40px;}
+.picCenter {text-align: center;}
+.picCenter img {width: auto; max-width: 100%;}
+.newsDetailCont p {font-size: 16px; color: #4c4c4c; text-align: center; line-height: 42px;}
+.newsDetailCont .pic {margin-bottom: 36px;}
+.picCont {margin: 36px 0 36px 0;} 
+.picList {margin-top: 36px;}
+.picList li {float: left; width: 44%; margin-left: 12%;}
+.picList li:first-child {margin-left: 0;}
+.pageJump {margin-top: 25px; padding-top: 30px; border-top: 1px dashed #DCDCDC;}
+.pageJump p {font-size: 16px; line-height: 30px; margin-bottom: 10px;}
+.pageJump p a {color: #666;}
+.pageJump p a:hover {color: #00CA9D; text-decoration: underline;}
+
+/*相册列表*/
+.contRight.stuRight {width: 100%;}
+.stuRight .contRightLine {height: 1px; background: #eee;}
+.stuSearch {margin: 30px 0; padding: 40px 8%; background: #fafafa;}
+.stuSearch .newsH {margin: 0;}
+.stuWrap {}
+.stuTop {}
+.stuTop a {display: block; position: relative;}
+.stuTop p {position: absolute; padding: 0 20px; width: 100%; height: 60px; line-height: 68px; font-size: 14px; color: #fff; background: url(../images/stu_bg.png) repeat-x center; left: 0; bottom: 0; z-index: 5; box-sizing: border-box; background-size: auto 100%;}
+.stuTop:hover img {-webkit-transform: scale(1.08); -ms-transform: scale(1.08); -o-transform: scale(1.08); -moz-transform: scale(1.08); transform: scale(1.08);}
+.stuList {margin-top: 40px;}
+.stuList li {float: left; width: 31.33%; margin-right: 3%; margin-bottom: 18px; text-align: center;}
+.stuList li:nth-child(3n) {margin-right: 0;}
+.stuList li a {display: block;color: #4d4d4d;}
+.stuList li .cont {padding: 15px 0 14px; }
+.stuList li .cont h3 {font-size: 16px; line-height: 28px;}
+.stuList li .cont p {line-height: 26px;}
+.stuList li:hover a {color: #fff; background: #00CA9D;}
+.stuList li:hover img {-webkit-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); -moz-transform: scale(1.1); transform: scale(1.1);}
+
+/*相册列表-详情页*/
+.picDetail {position: relative; padding: 0 10%; padding-bottom: 55px; margin-top: 80px; border-bottom: 2px solid #f4f4f4;}
+.picDetail .bx-wrapper .bx-controls-direction a {width: 60px; height: 60px; top: 50%; margin: 0; transform: translateY(-50%); background-color: #ededed; background-position: center; background-repeat: no-repeat; box-sizing: border-box;}
+.picDetail .bx-wrapper .bx-controls-direction a:hover {background-color: #00CA9D;}
+.picDetail .bx-wrapper .bx-prev {left: -92px; background-image: url(../images/pic_ico_l.png);}
+.picDetail .bx-wrapper .bx-prev:hover {background-image: url(../images/pic_ico_l_a.png);}
+.picDetail .bx-wrapper .bx-next {right: -92px; background-image: url(../images/pic_ico_r.png);}
+.picDetail .bx-wrapper .bx-next:hover {background-image: url(../images/pic_ico_r_a.png);}
+.picDetail .bx-wrapper .bx-pager {font-size: 20px; bottom: 6px;}
+.picDetail img {display: block; width: 100%;}
+
+/*关于我们*/
+.aboutH {text-align: center; padding: 38px 0;}
+.aboutH img {width: 130px;}
+.aboutBrief {margin-top: 26px;}
+.aboutBrief img {float: left; width: 43%; margin-right: 2%;}
+.aboutBrief p {font-size: 16px; line-height: 34px;}
+.aboutBList {margin-top: 40px; padding: 76px 25px 30px 25px; background: #fafafa;}
+.aboutBList li {float: left; width: 31.333%; margin-left: 3%;}
+.aboutBList li:first-child {margin-left: 0;}
+.aboutBList li h3 {line-height: 40px; font-size: 16px; color: #4d4d4d;}
+.aboutBList li h3 span {margin-right: 18px; font-size: 24px; font-weight: 600; vertical-align: sub;}
+.aboutBList li p {min-height: 140px; line-height: 26px; color: #808080;}
+.aboutBList li .line {margin: 14px 0 12px 0; border-top: 1px dashed #e5e5e5;}
+.aboutTxt {margin-top: 40px;}
+.aboutTxt h3 {margin-bottom: 12px; font-size: 18px; color: #4c4c4c;}
+.aboutTxt p {line-height: 26px; color: #999;}
+.abputTList {}
+.abputTList li {width: 32%; margin-right: 2%; margin-bottom: 0;}
+
+
+
+
+
+
+@media (max-width: 1680px) {
+	#top .nav {margin-left: 9%;}
+	#top .nav ul li {margin-left: 12px;}
+	#top .nav ul li h2 a {padding: 0 18px;}
+	
+	.bannerCont {height: 380px;}
+	/*.slideHomeIdear li {margin-right: 40px;}*/
+	.newsList li .cont h4 {margin-top: 6px;}
+	.newsList li .cont .line {margin: 10px 0 10px 0;}
+	.newsList li:hover .cont .line {margin: 6px 0 6px 0;}
+	
+	.contLeftNav ul li h3 {height: 54px; line-height: 54px;}
+	.contLeftDown a {height: 52px; line-height: 52px;}
+	
+}
+
+@media (max-width: 1440px) {
+	#top .nav {margin-left: 5%; }
+	#top .nav ul li {margin-left: 8px;}
+	#top .nav ul li h2 a {padding: 0 15px;}
+	
+	/*.slideHomeIdear li {margin-right: 0 30px;}*/
+	#banner .bx-wrapper .bx-pager:before,
+	#banner .bx-wrapper .bx-pager:after {width: 43.555%;}
+	.homeCourList li p {padding: 0 12px; line-height: 30px;}
+	
+	.bannerCont {height: 360px;}
+	.newsList li .cont h4 {margin-top: 2px;line-height: 20px;}
+	.newsList li .cont h3 {margin-top: 0;}
+	.newsList li .cont .line {margin: 8px 0 8px 0;}
+	.newsList li .cont .more {margin-top: 8px;}
+	.newsList li:hover .cont .line {margin: 5px 0 5px 0;}
+	
+	.topSearchWrap {width: 172px;}
+	.topSearchWrap input {width: 135px;}
+	
+	.contLeftNav ul li h3 {height: 52px; line-height: 52px;}
+	.contLeftDown a {height: 50px; line-height: 50px;}
+	
+}
+
+@media (max-width: 1366px) {
+	.wrap {width: 88%;}
+	#top .nav {margin-left: 3.5%;}
+}
+
+@media (max-width: 1280px) {
+	.wrap {width: 90%;}
+	#top .nav {margin-left: 7%;}
+	#top .nav ul li {margin-left: 5px;}
+	#top .nav ul li h2 a {padding: 0 12px;}
+	.topSearchWrap input {width: 128px;}
+	.topSearchWrap  {width: 165px;}
+	
+	/*#banner .bx-wrapper .bx-pager,
+	#banner .bx-controls-direction {width: 1000px; margin-left: -500px;}
+	#banner .bx-wrapper .bx-pager:before,
+	#banner .bx-wrapper .bx-pager:after {width: 438px;}*/
+	
+	.homeIdearWrap {padding: 0 20px;}
+	/*.slideHomeIdear li {margin: 0; margin-right: 20px;}*/
+	.homeIdearWrap .bx-wrapper .bx-next {right: -38px;}
+	.homeIdearWrap .bx-wrapper .bx-prev {left: -38px;}
+	
+	.homeBox {padding: 35px 0 56px 0;}
+	.homeCourList {margin-top: 68px;}
+	.homeCour {padding-bottom: 40px;}
+	.homeCourList li .homeCourTxt h3 {font-size: 18px;}
+	.homeCourList li p {padding: 0 10px; font-size: 15px; line-height: 28px;}
+	
+	.homeLinkWrap a {margin-left: 15px; margin-right: 15px;}
+	
+	.contLeft {width: 22%;}
+	.contRight {width: 75.555%;}
+	.contRightH h2 {font-size: 22px;}
+	
+	.bannerCont {height: 340px;}
+	.courseList li .cont h3 {margin-top: 12px; font-size: 17px;}
+	.courseList li .cont p {max-height: 90px; overflow: hidden;}
+	.courDetailCont p {line-height: 30px;}
+	.courDetailCont {margin: 22px 0 20px 0;}
+	.contRightH h3 {font-size: 17px;}
+	
+	.newsList li {margin-bottom: 10px;}
+	.newsList li .cont h4 {margin-top: 2px;line-height: 20px;}
+	.newsList li .cont h3 {font-size: 15px; margin-top: 0; margin-bottom: 0; line-height: 22px;}
+	.newsList li .cont .line {margin: 8px 0 6px 0;}
+	.newsList li .cont .more {margin-top: 8px;}
+	.newsList li .cont p {line-height: 20px;}
+	.newsH .left, .newsH .right {height: 38px; line-height: 36px;}
+	.newsDetailCont p {line-height: 40px;}
+	.newsDetailCont .pic {margin-bottom: 28px;}
+	.picCont {margin-top: 28px;}
+	
+	.stuSearch {padding: 40px 6%;}
+	.picDetail {margin-top: 60px; padding: 0 9%; padding-bottom: 45px;}
+	.picDetail .bx-wrapper .bx-prev {left: -68px;}
+	.picDetail .bx-wrapper .bx-next {right: -68px;}
+	
+	.aboutBrief p {font-size: 15px; line-height: 32px;}
+	.aboutBList {padding: 56px 20px 30px 20px;}
+	
+	.contLeftNav ul li h3 {height: 50px; line-height: 50px;}
+	.contLeftDown a {height: 48px; line-height: 48px;}
+	.contLeftNav ul li.active h3 a {font-size: 17px;}
+	
+}
+
+@media (max-width: 1080px) { 
+	.wrap {width: 94%;}
+	/*#banner .bx-wrapper .bx-pager,
+	#banner .bx-controls-direction {width: 960px; margin-left: -480px;}*/
+	#banner .bx-wrapper .bx-next {right: 0;}
+	#banner .bx-wrapper .bx-prev {left: 0;}
+	/*#banner .bx-wrapper .bx-pager:before, 
+	#banner .bx-wrapper .bx-pager:after {width: 418px;}*/
+	
+	#top .logo {width: 150px;}
+	
+	.homeIdearWrap {padding: 0 40px;}
+	#top .nav {margin-left: 4%;}
+	#top .nav ul li {margin-left: 4px;}
+	#top .nav ul li h2 {font-size: 14px;}
+	#footer {padding: 35px 0 48px 0;}
+	#footer .footerlogo,
+	#footer .footerEwm {width: 138px;}
+	#footer .footerLeft {width: 16%;}
+	#footer .footerRight {width: 84%;}
+	.homeCourList li p {font-size: 14px; line-height: 25px;}
+	.homeCourList li .homeCourTxt h3 {font-size: 16px;}
+	
+	.bannerCont {height: 320px;}
+	.courseList li .cont h3 {margin-top: 6px; line-height: 26px;}
+	.courseList li .cont p {line-height: 24px; max-height: 72px;}
+	
+	.newsList li {margin-bottom: 5px;}
+	.newsList li .cont h4 {margin-top: 2px;line-height: 20px;}
+	.newsList li .cont h3 {font-size: 15px; margin-top: 0; margin-bottom: 0; line-height: 22px;}
+	.newsList li .cont .line {margin: 8px 0 6px 0;}
+	.newsList li .cont .more {margin-top: 8px;}
+	.newsList li .cont p {line-height: 20px;}
+	/*.newsList li:hover .cont .line {margin: 5px 0 5px 0;}*/
+	
+	.contLeftNav ul li h3 {height: 48px; line-height: 48px;}
+	.contLeftDown a {height: 46px; line-height: 46px;}
+	.contLeftNav ul li.active h3 a {font-size: 16px;}
+	
+	
+}
+
+@media (max-width: 1024px) { 
+	#top .nav {margin-left: 2%;}
+	
+}
+
+@media (max-width: 992px) { 
+	.wrap {width: 94%;}
+	.banner {margin-top: 58px;}
+	#banner .bx-wrapper .bx-pager,
+	#banner .bx-controls-direction {width: 94%; margin-left: -47%;}
+	#banner .bx-wrapper .bx-pager:before, 
+	#banner .bx-wrapper .bx-pager:after {width: 43.5%;}
+	
+	#top.topHome {background: #00CA9D;}
+	#top {height: 58px; line-height: 58px; background: #00CA9D;}
+	#top .logo {width: 128px; position: relative; z-index: 99;}
+	.topRight {margin-top: 12px; height: 34px; line-height: 34px;} 
+	#top .nav {position: fixed;	width: 240px; height: 100%; margin: 0; left: -100%; top: 0; background: #00CA9D; z-index: 88; }
+	#top .nav ul {height: calc(100% - 60px); margin-top: 60px; padding-bottom: 30px; box-sizing: border-box; overflow: auto;}
+	#top .nav ul li {width: 100%; margin: 0;}
+	#top .nav ul li h2 {height: 44px; line-height: 44px; font-size: 16px; border-bottom: 1px solid #99d7cd; border-radius: 0;}
+	#top .nav ul li h2 a {padding: 0 15px;}
+	#top .navDown {/*display: block;*/ position: static; width: 100%; top: auto; left: auto; margin-left: 0;}
+	#top .navDown a {height: 40px; line-height: 40px;}
+	.navBtn {width: 44px; height: 44px; right: 0; top: 0; background: url(../images/ico_btn_jt_r_a.png) no-repeat center; background-size: 12px; -moz-transition: all 0.3s ease-in;-webkit-transition: all 0.3s ease-in;-o-transition: all 0.3s ease-in;transition: all 0.3s ease-in;}
+	#top .nav ul li.active h2 .navBtn {background: url(../images/ico_btn_jt_r_a1.png) no-repeat center; background-size: 12px;} 
+	#top .nav ul li:hover h2 a {color: #fff; background: #00CA9D;}
+	#top .nav ul li.active h2 a,
+	#top .nav ul li h2.on a {color: #00CA9D; background: #fff;}
+	#top .nav ul li h2.on .navBtn {background: url(../images/ico_btn_jt_r_a1.png) no-repeat center; background-size: 12px; -ms-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg);}
+	.topRight {margin-right: 6%;}
+	.topLang {padding-right: 24px;}
+	.topLang .topLangBtn {width: 22px; height: 28px;margin-top: -14px;}
+	.topLang .topLangCh {top: 35px;}
+	.muen {display: block;}
+	
+	.homeBox {padding-bottom: 45px;}
+	.homeTitle {margin-bottom: 32px;}
+	.homeCourList li {height: 212px;}
+	.homeCourList li p {display: block; margin-top: 8px;font-size: 13px;}
+	.homeCourList li .pic {width: 120px; height: 120px; line-height: 120px; margin-top: 0;}
+	.homeCourList li a {padding: 18px 10px 10px 10px;}
+	.homeCourList {margin-top: 30px;}
+	.homeCourList li h4 {font-size: 13px;}
+	.homeJoinBgInner {margin-left: 18px;}
+	.homeJoinBg {height: 86px; line-height: 86px;}
+	.homeCamList li {background: #00CA9D;}
+	.homeCamList li h3,.homeCamList li h4 {font-size: 16px; color: #fff;}
+	.homeCamList li h3 {margin-bottom: 4px;}
+	.homeCamList li h3 a {color: #fff;}
+	.homeCamList li p {font-size: 14px; color: #fff; line-height: 20px;}
+	.homeCamList li .line {margin: 6px 0 12px 0; background: #fff;}
+	.homeCamList li a.more {margin-top: 15px;}
+	.homeCamCont {padding-left: 10px; padding-right: 10px;}
+	
+	#footer .footerEwm {width: 80px;}
+	#footer ul li {margin: 0; width: 16.66%;}
+	#footer {padding: 30px 0 26px 0;}
+	
+	#footer .footerlogo, #footer .footerEwm {width: 130px;}
+	#footer .footerInfor div {width: 100%;}
+	#footer .footerInfor p {font-size: 13px;}
+	#footer .footerInfor {padding-top: 18px;}
+	#footer .footerLeft {width: 20%;}
+	#footer .footerRight {width: 80%;}
+	
+	.homeLinkWrap a {margin-left: 10px; margin-right: 10px;}
+	
+	.bannerCont {height: 280px; margin-top: 58px;}
+	.contRightH h2 {font-size: 20px;}
+	.contLeftTit {height: 92px; top: -92px;}
+	.contLeftTit span {margin-top: 12px;}
+	.contLeftTit h2 {margin-top: 7px; line-height: 20px;}
+	.contLeftNav ul li h3 span {right: 4px;}
+	
+	.courseList li .cont h3 {font-size: 16px;line-height: 22px;}
+	.courseList li .cont p {line-height: 22px; max-height: 66px;}
+	.page em,.page i {padding: 0 8px;}
+	.page p {margin-left: 8px;}
+	
+	.courDetailH a {font-size: 13px; margin-bottom: 14px;}
+	.courDetailTit {height: 50px; line-height: 50px;}
+	.courDetailCont {margin: 18px 0 20px 0;}
+	.contRightH h3 {font-size: 16px;} 
+	
+	.newsList li .cont h4 {line-height: 18px;}
+	.newsList li .cont h3 {font-size: 15px; margin-top: 0; margin-bottom: 0; line-height: 22px;}
+	.newsList li .cont .line {margin: 6px 0 4px 0;}
+	.newsList li .cont .more {width: 90px; height: 30px; margin-top: 8px; line-height: 30px;}
+	.newsList li .cont p {line-height: 20px;}
+	.contRightH h2.contRightTit,
+	.newsDetailH h3 {font-size: 17px;}
+	.newsDetailH {padding: 28px 0 20px 0;}
+	.newsDetailCont {margin-top: 32px;}
+	.newsDetailCont .pic {margin-bottom: 24px;}
+	.newsDetailCont p {line-height: 36px; font-size: 15px;}
+	.picCont,.picList {margin-top: 24px;}
+	.picList li {width: 45%; margin-left: 10%;}
+	.pageJump {padding-top: 22px; margin-top: 20px;}
+	.pageJump p {font-size: 15px; line-height: 26px;}
+	
+	.stuSearch {padding: 30px 6%;}
+	.stuList li .cont {padding: 12px 0 11px;}
+	.picDetail .bx-wrapper .bx-controls-direction a {width: 48px; height: 48px;	}
+	.picDetail {margin-top: 50px;padding: 0 8%; padding-bottom: 35px;}
+	.picDetail .bx-wrapper .bx-prev {left: -62px;}
+	.picDetail .bx-wrapper .bx-next {right: -62px;}
+	
+	.aboutH {padding: 24px 0;}
+	.aboutBrief {margin-top: 15px;}
+	.aboutBrief p { font-size: 14px; line-height: 26px;}
+	.aboutBList {margin-top: 30px; padding: 42px 20px 22px 20px;}
+	.aboutBList li h3 {font-size: 15px; line-height: 30px;}
+	.aboutBList li h3 span {font-size: 22px; margin-right: 15px;}
+	.aboutBList li .line {margin: 10px 0 8px 0;}
+	.aboutBList li p {font-size: 13px; line-height: 22px;}
+	.aboutTxt {margin-top: 32px;}
+	.aboutTxt h3 {font-size: 17px;}
+	.aboutTxt p {font-size: 13px; line-height: 24px;}
+	.abputTList {margin-top: 30px;}
+	
+	.contLeftNav ul li h3 {height: 46px; line-height: 46px;}
+	.contLeftDown a {height: 44px; line-height: 44px;}
+	.contLeftNav ul li.active h3 a {font-size: 15px;}
+	
+}
+
+@media (max-width: 768px) {
+	.topRight {margin-right: 46px; position: relative; z-index: 99;}
+	.topSearch {margin-left: 4px;}
+	#top .logo {width: 116px;}
+	.topSearch {width: 28px;}
+	#top .nav {width: 200px;}
+	.topLang {padding-right: 16px;}
+	.topLang .topLangBtn {width: 12px;}
+	.navBtn {background-size: 10px;}
+	#top .nav ul li h2.on .navBtn,#top .nav ul li.active h2 .navBtn {background-size: 10px;}
+	
+	
+	#banner .bx-wrapper .bx-pager {bottom: 12px;}
+	#banner .bx-wrapper .bx-pager:before, #banner .bx-wrapper .bx-pager:after {display: none;}
+	.homeBox {padding: 25px 0 24px 0;}
+	.homeTitle {margin-bottom: 20px;}
+	.homeTitle h2 {font-size: 18px; line-height: 30px;}
+	.homeTitle .line {margin-top: 8px;}
+	.homeTitle h3 span:before,
+	.homeTitle h3 span:after {width: 74px;}
+	.homeTitle h3 span:before {left: -80px;}
+	.homeTitle h3 span:after {right: -80px;}
+	.slideHomeIdear li h3 {font-size: 16px; line-height: 26px;}
+	.slideHomeIdear li .line {margin-top: 2px;}
+	.slideHomeIdear li .pic {margin-top: 10px;}
+	.slideHomeIdear li p {height: 60px; font-size: 12px; line-height: 20px; margin-top: 8px;}
+	.slideHomeIdear li a {width: 70px; height: 30px; line-height: 30px; margin-top: 16px;}
+	.slideHomeIdear li {width: 100%; margin: 0; margin-bottom: 15px;}
+	.homeIdearWrap {padding: 0;}
+	.homeIdearWrap .bx-wrapper .bx-controls-direction a {width: 26px; height: 26px; background-size: 100%;} 
+	.homeIdearWrap .bx-wrapper .bx-next {right: 0;}
+	.homeIdearWrap .bx-wrapper .bx-prev {left: 0;}
+	
+	.homeCourList li {width: 50%; margin: 0; height: 160px; margin-bottom: 12px;}
+	.homeCourList li .pic {width: 100px; height: 100px; line-height: 100px;}
+	.homeCourList li .pic img {max-width: 60%;}
+	.homeCourList li:hover {margin-top: 0;} 
+	.homeCourList {margin-top: 25px;}
+	.homeCourList li a {padding: 12px 8px 8px 8px;}
+	.homeCourList li h3 {font-size: 14px; margin-top: 6px; line-height: 22px;}
+	.homeCourList li h4,.homeCourList li p {font-size: 12px;}
+	.homeCourList li h4 {line-height: 18px;}
+	.homeCourList li p {height: 120px; margin-top: 4px; line-height: 20px;}
+	.homeJoinList li {width: 100%;}
+	.homeJoinList li:first-child .homeJoinBg {bottom: auto; top: 20px;}
+	.homeJoinBgInner h3 {font-size: 16px;}
+	.homeJoinBgInner {margin-left: 8px; padding-left: 26px;}
+	.homeJoinBgInner h4 span {margin-left: 12px;}
+	.homeJoinBg {height: 76px; line-height: 76px;}
+	
+	.homeCamList li {width: 100%; margin: 0; margin-bottom: 15px;}
+	.homeCamList li h3, .homeCamList li h4 {font-size: 14px;}
+	.homeCamList li p {font-size: 12px; height: 40px;}
+	.homeCamCont {padding: 14px 10px 16px 10px;}
+	.homeCamList li a.more {width: 86px;}
+	
+	#footer {padding: 22px 0 18px 0;}
+	#footer .footerlogo {width: 120px;}
+	#footer ul {float: none; display: none;}
+	#footer ul li {width: 100%; margin-bottom: 5px;}
+	#footer ul li p {display: inline-block; font-size: 12px; line-height: 22px;}
+	#footer ul li h3 {font-size: 14px; line-height: 24px;}
+	#footer .footerEwm {float: none; margin: 15px auto 0;}
+	#footer .footerEwm p {margin-top: 6px;}
+	#bottom p {line-height: 20px;}
+	#footer .footerRight {width: 100%;}
+	#footer .footerInfor p {font-size: 12px; line-height: 20px; margin-bottom: 6px;}
+	#footer .footerLeft {width: 100%; text-align: center;}
+	#footer .footerlogo {margin: 0 auto;}
+	#footer .footerInfor {margin-top: 20px; padding-top: 15px;}
+	
+	#banner .bx-wrapper .bx-pager.bx-default-pager a {margin: 0 6px;}
+	
+	.footerLink {line-height: 26px;}
+	.footerLink h3 {font-size: 14px;}
+	.footerLink p {font-size: 12px;}
+	
+	.homeLinkWrap a {margin: 0 8px 5px 8px;}
+	
+	.bannerCont {height: 170px;}
+	.contLeft,.contRight {width: 100%;}
+	/*.contLeftTit {position: static; top: 0; left: 0;}
+	.contLeftTit span {margin: 0;}*/
+	
+	.contLeftNav ul li h3 {height: 44px; line-height: 44px;}
+	.contLeftDown a {height: 42px; line-height: 42px; background: #ffb628;}
+	/*.contLeftNav ul li.active h3 a {font-size: 14px;}*/
+	.contLeftTit h2 {font-size: 15px; line-height: 18px;	margin-top: 6px;}
+	.contLeftTit h3 {line-height: 16px;}
+	.contLeftTit span {margin-top: 8px;}
+	.contLeftTit span img {width: 24px;}
+	.contLeftTit {height: 78px; top: -78px; background: rgba(0,202,175,0.75);}
+	.contRightH {line-height: 28px;}
+	.contRightH h2 {font-size: 16px;}
+	.contRightLine {height: 6px;margin-top: 4px;}
+	
+	.courseList li .pic {min-width: 106px;}
+	.courseList li .cont {max-width: calc(100% - 116px);}
+	.courseList li .cont h3 {margin: 3px 0; font-size: 15px; line-height: 20px;}
+	.courseList li .cont p {font-size: 12px; line-height: 20px; max-height: 40px;}
+	.courseList li {padding: 12px 0;}
+	.page {margin: 30px 0 15px 0; font-size: 12px; height: 28px; line-height: 28px;}
+	.page p {display: none;}
+	.page em {display: none;}
+	.page i {padding: 0 5px; margin: 0 1px;}
+	.page a {width: 22px; margin: 0 2px;}
+	
+	.contRightH h3 {width: 100%; max-width: 100%; margin: 6px 0; font-size: 15px; text-align: center; line-height: 20px;} 
+	.courDetailH a {height: 28px; line-height: 26px; width: 66px; margin: 0 4px 12px 4px; font-size: 12px; border-radius: 14px;}
+	.courDetailH a:nth-child(6n) {margin-right: 4px;}
+	.courDetailH {margin-top: 18px;}
+	.contRightHD p {float: left;}
+	.courDetailTit {height: 40px; line-height: 40px; padding: 0 10px; margin-top: 30px;}
+	.courDetailTit h3 {font-size: 15px; background-size: 22px; padding-left: 30px;}
+	.courDetailCont p {font-size: 12px; line-height: 24px;}
+	
+	.newsList li {margin-bottom: 0;}
+	.newsList li .cont h3 {font-size: 14px; margin-top: 3px; margin-bottom: 0; line-height: 18px;}
+	.newsList li .cont h4 {font-size: 13px; line-height: 14px; margin: 0;}
+	.newsList li .cont p {line-height: 18px;}
+	.newsList li .cont .more {width: 80px; height: 26px; margin-top: 6px; line-height: 26px; font-size: 12px;}
+	.newsList li .cont .more a {color: #fff; background: #00CA9D;}
+	.newsList li .cont .line,
+	.newsList li:hover .cont .line {margin: 4px 0 2px 0;}
+	.newsH .left .newsSearch,
+	.newsH .right .newsSearchInner {padding: 0 8px;}
+	.newsH .right button {font-size: 15px;}
+	.newsH .left, .newsH .right {height: 34px; line-height: 32px;}
+	.newsH input {font-size: 12px;}
+	.newsH .left .newsSearch, .newsH .right .newsSearchInner {padding: 0 6px;}
+	.newsH .left,
+	.newsH .right {width: 100%;}
+	.newsH .left {margin-bottom: 12px;}
+	.newsH .right .line {margin-top: 16px;}
+	.newsH .left button {width: 60px;}
+	.newsH .left .newsSearch {width: calc(100% - 60px);}
+	
+	.contRightH h2.contRightTit {font-size: 15px;}
+	.newsDetailH {padding: 18px 0 16px 0;}
+	.newsDetailH p {font-size: 12px;}
+	.newsDetailH p span:first-child {margin-right: 10px;}
+	.newsDetailH h3 {font-size: 16px; margin-bottom: 12px;}
+	.newsDetailCont .pic {margin-bottom: 15px;}
+	.picCont, .picList {margin-top: 15px;}
+	.newsDetailCont p {font-size: 14px; line-height: 26px;}
+	.picList li {width: 48.5%; margin-left: 3%;}
+	.pageJump {margin-top: 12px; padding-top: 15px;}
+	.pageJump p {font-size: 14px; line-height: 20px;}
+	
+	.stuList {margin-top: 25px;}
+	.stuList li {width: 49%; margin-right: 2%;}
+	.stuList li:nth-child(3n) {margin-right: 2%;}
+	.stuList li:nth-child(2n) {margin-right: 0;}
+	.stuList li .cont h3 {font-size: 14px; line-height: 20px;}
+	.stuList li .cont p {font-size: 12px; line-height: 18px;}
+	.stuList li .cont {padding: 8px 0 8px;}
+	.stuSearch {padding: 15px 2%;margin: 18px 0;}
+	.stuRight .contRightH p {float: left;}
+	.stuTop p {padding: 0 10px; font-size: 12px; height: 40px; line-height: 45px;}
+	
+	.picDetail {padding: 0 34px; padding-bottom: 20px; margin-top: 30px;}
+	.picDetail .bx-wrapper .bx-controls-direction a {width: 30px; height: 30px;}
+	.picDetail .bx-wrapper .bx-prev {left: -34px;}
+	.picDetail .bx-wrapper .bx-next {right: -34px;}
+	.picDetail .bx-wrapper .bx-pager {font-size: 15px; bottom: 2px;}
+	
+	.abputTList li {width: 32%;}
+	.abputTList li:nth-child(2n){margin-right: 2%;}
+	.abputTList li:nth-child(3n){margin-right: 0;}
+	.abputTList li .cont h3 {font-size: 13px;}
+	.aboutBrief p {font-size: 12px; line-height: 24px;}
+	.aboutBList {margin-top: 20px; padding: 0; background: none;}
+	.aboutBList li {width: 100%; margin: 0; margin-bottom: 15px; background: #FAFAFA; padding: 12px 10px; box-sizing: border-box;}
+	.aboutBList li p {min-height: auto;}
+	.aboutBList li h3 {font-size: 14px; line-height: 20px;}
+	.aboutBList li h3 span {font-size: 18px; margin-right: 8px;}
+	.aboutBList li p {font-size: 12px; line-height: 20px;}
+	.aboutTxt {margin-top: 8px;}
+	.aboutTxt h3 {font-size: 16px;margin-bottom: 8px;}
+	.aboutTxt p {font-size: 12px; line-height: 22px;}
+	.abputTList {margin-top: 20px;}
+	.aboutH {padding: 15px 0;}
+	.aboutBrief {margin-top: 8px;}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+.aboutus-box {
+	padding-right: 60px
+}
+
+.aboutus-box h1 {
+	font: 700 20px/50px "Microsoft Yahei";
+	text-align: center;
+	color: #3d5480
+}
+
+.aboutus-box .info {
+	padding-top: 40px;
+	font-size: 16px;
+	color: #757575
+}
+
+.aboutus-box .info .pic {
+	text-align: center
+}
+
+.aboutus-box .info .hd {
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #3d5480
+}
+
+.aboutus-box .info p {
+	line-height: 32px;
+	margin-bottom: 32px
+}
+
+.aboutus-box .code {
+	margin: 100px 0 0 230px
+}
+
+.aboutus-box .code p {
+	width: 180px;
+	padding-top: 8px;
+	text-align: center;
+	line-height: 22px;
+	font-size: 12px
+}

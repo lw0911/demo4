@@ -1,0 +1,948 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>某某国际 - 首页</title>
+
+
+<link href="css/daohang.css" rel="stylesheet" type="text/css" />
+<link href="css/banner.css" rel="stylesheet" type="text/css" />
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.touchSlider.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/ks-switch.pack.js"></script>
+
+</head>
+
+<body>
+<div class="top">
+	<div class="top_blank">
+   		<a href="index.html"><div class="logo"><img src="images/logo.jpg" /></div></a>
+   		<div class="top_tel"><img src="images/tele.jpg" /></div>
+   	</div>
+</div>
+
+<!-- 导航开始  -->
+<nav class="nav pr">
+<div class="nav-in">
+	<!-- -------菜单html代码---------begin------- -->
+    <div class="menuDiv">
+        <ul>
+            <li>
+                <a href="index.html" >首页</a>
+            </li> 
+            <li>
+                <a href="USA_ym.html">美国移民</a>
+                <ul>
+                    <li><a href="USA_ym.html" >美国EB1A移民</a></li>
+                </ul>
+            </li> 
+            <li>
+                <a href="USA_lx.html" target="_blank">美国留学</a>
+                <ul>
+                    <li><a href="USA_lx_gz.html" >美国高中</a></li>
+                    <li><a href="USA_lx_gz.html" >美国本科</a></li>
+                    <li><a href="USA_lx_gz.html" >美国研究生</a></li>
+                </ul>
+            </li> 
+            <li>
+                <a href="England_lx.html">英国留学</a>
+                <ul>
+                    <li><a href="England_lx_gz.html" >英国高中</a></li>
+                    <li><a href="England_lx_gz.html" >英国本科</a></li>
+                    <li><a href="England_lx_gz.html" >英国研究生</a></li>
+                </ul>
+            </li> 
+            <li>
+                <a href="ajzy.html" >海外服务</a>
+                <ul>
+                    <li><a href="ajzy.html" >安家置业</a></li>
+                    <li><a href="hwfc.html" >海外房产</a></li>
+                    <li><a href="cwgh.html" >财务规划</a></li>
+                </ul>
+            </li> 
+            <li>
+                <a href="hdjz.html" >活动讲座</a>
+            </li> 
+            <li>
+                <a href="about.html" >关于移民</a>
+                <ul>
+                    <li><a href="about.html">移民介绍</a></li>
+                    <li><a href="jytd.html" >精英团队</a></li>
+                </ul>
+            </li> 
+        </ul>
+    </div>
+    <!-- -------菜单html代码---------end------- -->
+    </div>
+</nav>
+<!-- 导航结束  -->
+
+<!--banner-->
+<div class="main_visual">
+	<div class="flicking_con">
+		<a href="#">1</a>
+		<a href="#">2</a>
+		<a href="#">3</a>
+		<a href="#">4</a>
+		<a href="#">5</a>
+	</div>
+	<div class="main_image">
+		<ul>
+			<a href="#"><li><span class="img_1"></span></li></a>
+			<a href="#"><li><span class="img_2"></span></li></a>
+			<a href="#"><li><span class="img_3"></span></li></a>
+			<a href="#"><li><span class="img_4"></span></li></a>
+			<a href="#"><li><span class="img_5"></span></li></a>
+		</ul>
+		<a href="javascript:;" id="btn_prev"></a>
+		<a href="javascript:;" id="btn_next"></a>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".main_visual").hover(function(){
+		$("#btn_prev,#btn_next").fadeIn()
+	},function(){
+		$("#btn_prev,#btn_next").fadeOut()
+	});
+	
+	$dragBln = false;
+	
+	$(".main_image").touchSlider({
+		flexible : true,
+		speed : 200,
+		btn_prev : $("#btn_prev"),
+		btn_next : $("#btn_next"),
+		paging : $(".flicking_con a"),
+		counter : function (e){
+			$(".flicking_con a").removeClass("on").eq(e.current-1).addClass("on");
+		}
+	});
+	
+	$(".main_image").bind("mousedown", function() {
+		$dragBln = false;
+	});
+	
+	$(".main_image").bind("dragstart", function() {
+		$dragBln = true;
+	});
+	
+	$(".main_image a").click(function(){
+		if($dragBln) {
+			return false;
+		}
+	});
+	
+	timer = setInterval(function(){
+		$("#btn_next").click();
+	}, 5000);
+	
+	$(".main_visual").hover(function(){
+		clearInterval(timer);
+	},function(){
+		timer = setInterval(function(){
+			$("#btn_next").click();
+		},5000);
+	});
+	
+	$(".main_image").bind("touchstart",function(){
+		clearInterval(timer);
+	}).bind("touchend", function(){
+		timer = setInterval(function(){
+			$("#btn_next").click();
+		}, 5000);
+	});
+	
+});
+</script>
+<!--banner end-->
+<!-- 评估表 -->
+<div class="HL_pgb_bg">
+	<div class="HL_pgb_logo"></div>
+</div>
+<div class="HL_pgb_text">想移民，先评估！快速、全面、准确评估您与移民目标国的匹配度，锁定目标</div>
+<div class="HL_pgb">
+	<div class="item">
+			<div class="filter-box">
+				<div class="filter-text">
+					<input class="filter-title" type="text" readonly placeholder="移民留学国家" />
+					<i class="icon icon-filter-arrow"></i>
+				</div>
+				<select name="filter">
+                	<option value="-1"></option>
+					<option value="1">美国EB1A移民</option>
+					<option value="2">美国留学</option>
+					<option value="3">英国留学</option>
+					<option value="4">海外投资</option>
+					<option value="5">其它</option>
+				</select>
+			</div>
+	</div>
+    <div class="item" style="margin-left:20px">
+			<div class="filter-box1">
+				<div class="filter-text">
+					<input class="filter-title" type="text" readonly placeholder="预算" />
+					<i class="icon icon-filter-arrow"></i>
+				</div>
+				<select name="filter">
+                	<option value="-1"></option>
+					<option value="1">50万-100万</option>
+					<option value="2">100万-200万</option>
+					<option value="3">300万-500万</option>
+					<option value="4">500万-800万</option>
+					<option value="5">1000万以上</option>
+                    <option value="5">其他</option>
+				</select>
+              </div>
+	</div>
+    <div class="item" style="margin-left:20px">
+    	<input class="input" placeholder="联系方式" />
+    </div>
+    <div class="pgbButton" style="margin-left:20px">
+        <input type="reset"  value="立即评估"/>
+    </div>
+</div>
+<!-- 评估表 end -->
+
+<!-- 活动讲座 -->
+<div class="HL_jz">
+	<div class="HL_jz_img"><img src="images/HL_img1.jpg" /></div>
+    <div class="HL_hdjz">活动讲座<span><a href="hdjz.html" target="_blank">更多+</a></span></div>
+    <div class="HL_hdjz_nr">
+    	<div class="HL_hdjz_nr_img"><img src="images/HL_img2.jpg" /></div>
+        <div class="HL_hdjz_nr_text">
+        	<a href="#">
+        	<p><span>[02-24 - 02-28]</span> 澳洲考察行繁荣新南威尔士州为中国投资人提供上佳契机澳洲上佳契澳洲考察行繁荣新南威尔士州为中国投资人提供上佳契机澳洲上南威尔士州为中国投供澳洲上南威尔士州为中国投供澳洲上南威尔士州为中国投供上佳契机澳洲考察行繁荣新南威尔士州为中国投资人提供上佳契机澳洲上佳契澳洲考察行繁荣新南威尔士州为中国投资人提供上佳契机澳洲上南威尔士州为中国投供澳洲上南威尔士州为中国投供澳洲上南威尔士州为中国投供上佳契机</p>
+            </a>
+        </div>
+    </div>
+    <div class="HL_ymli">
+    	<div class="HL_ym">
+        	<strong>移民讲座</strong>
+            <a href="xiangqing.html" target="_blank"><li><span>02-26</span>澳出生籍还是籍还是绿卡...</li></a>
+            <a href="xiangqing.html" target="_blank"><li><span>02-26</span>澳出生籍还是籍还是绿卡...</li></a>
+            <a href="xiangqing.html" target="_blank"><li><span>02-26</span>澳出生籍还是籍还是绿卡...</li></a>
+            <a href="xiangqing.html" target="_blank"><li><span>02-26</span>澳出生籍还是籍还是绿卡...</li></a>
+            <a href="xiangqing.html" target="_blank"><li><span>02-26</span>澳出生籍还是籍还是绿卡澳出生籍还是籍还是绿卡澳出生籍还是籍还是绿卡</li></a>
+        </div>
+        <div class="HL_ym" style=" float:right">
+        	<strong>留学讲座</strong>
+            <a href="xiangqing.html" target="_blank"><li><span>02-26</span>澳出生籍还是籍还是绿卡...</li></a>
+            <a href="xiangqing.html" target="_blank"><li><span>02-26</span>澳出生籍还是籍还是绿卡...</li></a>
+            <a href="xiangqing.html" target="_blank"><li><span>02-26</span>澳出生籍还是籍还是绿卡...</li></a>
+            <a href="xiangqing.html" target="_blank"><li><span>02-26</span>澳出生籍还是籍还是绿卡...</li></a>
+            <a href="xiangqing.html" target="_blank"><li><span>02-26</span>澳出生籍还是籍还是绿卡澳出生籍还是籍还是绿卡澳出生籍还是籍还是绿卡</li></a>
+        </div>
+    </div>
+</div>
+<!-- 活动讲座 end -->
+
+<!-- 热门项目  -->
+<div class="HL_rmxm">
+	<div class="YMCountry_top">
+    	<div class="YMCountry_top_title">热门项目</div>
+    </div>
+	<div class="YMCountry">
+    	
+    	<dl class="slideBox1">
+			<dt>
+				<span>美国移民</span>
+				<span>美国留学</span>
+            	<span>英国留学</span>
+				<span>海外投资</span>
+			</dt>
+			<dd><!--美国移民 -->
+			<div class="YMCountry_nr">  
+            	<div class="YMCountry_image"><a href="#"><img src="images/HL_img4.jpg" alt=""/></a></div>
+                <div class="YMCountry_xm">
+                <div class="kv4" style="margin-left:25px;">
+     
+    			<div class="kv4-content">
+        		<div class="kv4-content-one has_bottom">
+    				<a href="#">
+        				<img src="images/HL_img5.jpg" alt="">
+        				<span>10万欧起移民欧洲 · 预期8%年收益</span>
+        				<div class="box">
+            					<h3 class="title">学历重要吗？初中毕业的裁缝铺老板也可以成为EB-1A的楷模！</h3>
+           				 <p>杰出人才，最低学历是什么？</p>
+						<p>想起了之前批准的一位苏商</p>
+						<p>初中毕业后经营一家裁缝铺</p>
+        				</div>
+   				 	</a>
+				</div>
+                <div class="kv4-content-one has_bottom">
+    				<a href="#">
+        				<img src="images/HL_img6.jpg" alt="">
+        				<span>10万欧起移民欧洲 · 预期8%年收益</span>
+        				<div class="box">
+            					<h3 class="title">学历重要吗？初中毕业的裁缝铺老板也可以成为EB-1A的楷模！</h3>
+           				 <p>杰出人才，最低学历是什么？</p>
+						<p>想起了之前批准的一位苏商</p>
+						<p>初中毕业后经营一家裁缝铺</p>
+        				</div>
+   				 	</a>
+				</div>
+
+				<div class="kv4-content-one has_bottom">
+    				<a href="#">
+        				<img src="images/HL_img7.jpg" alt="">
+        				<span> 15万加币起投资 · 移民标致性项目</span>
+        				<div class="box">
+            				<h3 class="title">批准函没加水印，轨道交通高管杰出人才客户变身成为武林高手！</h3>
+            				<p>“诡异的”批准函：武林高手并非我们的客户</p>
+							<p>才华与品德兼备的轨道交通专家“变身记”</p>
+							<p>通过对比日期，找到了批准函的所有者</p>
+        				</div>
+    				</a>
+				</div>
+				<div class="kv4-content-one has_bottom">
+    				<a href="#">
+        				<img src="images/HL_img8.jpg" alt="">
+        				<span> 25万欧投资马耳他A级国债 · 1人申请4代移民</span>
+        				<div class="box">
+            				<h3 class="title">刻意练习造就90后天才魔术师成美国杰出人才，6天即获批！</h3>
+            				<p>一位优秀的客户</p>
+							<p>只需一个不会犯错的律师团队就可以成功</p>
+							<p>&nbsp;任何杰出，源于对自己技能的“刻意练习”</p>
+        					</div>
+    				</a>
+				</div>
+                </div>
+                </div>
+                
+                </div>
+
+          </div>      
+             
+		</dd>
+			<dd><!--美国留学 -->
+			<div class="YMCountry_nr">  
+            	<div class="YMCountry_image"><a href="#"><img src="images/HL_img4.jpg" alt=""/></a></div>
+                <div class="YMCountry_xm">
+                <div class="kv4" style="margin-left:25px;">
+     
+    			<div class="kv4-content">
+        		<div class="kv4-content-one has_bottom">
+    				<a href="#">
+        				<img src="images/HL_img6.jpg" alt="">
+        				<span>10万欧起移民欧洲 · 预期8%年收益</span>
+        				<div class="box">
+            					<h3 class="title">学历重要吗？初中毕业的裁缝铺老板也可以成为EB-1A的楷模！</h3>
+           				 		<p>杰出人才，最低学历是什么？</p>
+								<p>想起了之前批准的一位苏商</p>
+        				</div>
+   				 	</a>
+				</div>
+                <div class="kv4-content-one has_bottom">
+    				<a href="#">
+        				<img src="images/HL_img7.jpg" alt="">
+        				<span>10万欧起移民欧洲 · 预期8%年收益</span>
+        				<div class="box">
+            					<h3 class="title">学历重要吗？初中毕业的裁缝铺老板也可以成为EB-1A的楷模！</h3>
+           				 <p>杰出人才，最低学历是什么？</p>
+						<p>想起了之前批准的一位苏商</p>
+						<p>初中毕业后经营一家裁缝铺</p>
+        				</div>
+   				 	</a>
+				</div>
+
+				<div class="kv4-content-one has_bottom">
+    				<a href="#">
+        				<img src="images/HL_img8.jpg" alt="">
+        				<span> 15万加币起投资 · 移民标致性项目</span>
+        				<div class="box">
+            				<h3 class="title">批准函没加水印，轨道交通高管杰出人才客户变身成为武林高手！</h3>
+            				<p>“诡异的”批准函：武林高手并非我们的客户</p>
+							<p>才华与品德兼备的轨道交通专家“变身记”</p>
+							<p>通过对比日期，找到了批准函的所有者</p>
+        				</div>
+    				</a>
+				</div>
+				<div class="kv4-content-one has_bottom">
+    				<a href="#">
+        				<img src="images/HL_img5.jpg" alt="">
+        				<span> 25万欧投资马耳他A级国债 · 1人申请4代移民</span>
+        				<div class="box">
+            				<h3 class="title">刻意练习造就90后天才魔术师成美国杰出人才，6天即获批！</h3>
+            				<p>一位优秀的客户</p>
+							<p>只需一个不会犯错的律师团队就可以成功</p>
+							<p>&nbsp;任何杰出，源于对自己技能的“刻意练习”</p>
+        					</div>
+    				</a>
+				</div>
+                </div>
+                </div>
+                
+                </div>
+
+          </div> 
+		</dd>
+        	<dd><!--英国留学 -->
+			<div class="YMCountry_nr">  
+            	<div class="YMCountry_image"><a href="#"><img src="images/HL_img4.jpg" alt=""/></a></div>
+                <div class="YMCountry_xm">
+                <div class="kv4" style="margin-left:25px;">
+     
+    			<div class="kv4-content">
+        		<div class="kv4-content-one has_bottom">
+    				<a href="#">
+        				<img src="images/HL_img7.jpg" alt="">
+        				<span>10万欧起移民欧洲 · 预期8%年收益</span>
+        				<div class="box">
+            					<h3 class="title">学历重要吗？初中毕业的裁缝铺老板也可以成为EB-1A的楷模！</h3>
+           				 <p>杰出人才，最低学历是什么？</p>
+						<p>想起了之前批准的一位苏商</p>
+						<p>初中毕业后经营一家裁缝铺</p>
+        				</div>
+   				 	</a>
+				</div>
+                <div class="kv4-content-one has_bottom">
+    				<a href="#">
+        				<img src="images/HL_img8.jpg" alt="">
+        				<span>10万欧起移民欧洲 · 预期8%年收益</span>
+        				<div class="box">
+            					<h3 class="title">学历重要吗？初中毕业的裁缝铺老板也可以成为EB-1A的楷模！</h3>
+           				 <p>杰出人才，最低学历是什么？</p>
+						<p>想起了之前批准的一位苏商</p>
+						<p>初中毕业后经营一家裁缝铺</p>
+        				</div>
+   				 	</a>
+				</div>
+
+				<div class="kv4-content-one has_bottom">
+    				<a href="#">
+        				<img src="images/HL_img5.jpg" alt="">
+        				<span> 15万加币起投资 · 移民标致性项目</span>
+        				<div class="box">
+            				<h3 class="title">批准函没加水印，轨道交通高管杰出人才客户变身成为武林高手！</h3>
+            				<p>“诡异的”批准函：武林高手并非我们的客户</p>
+							<p>才华与品德兼备的轨道交通专家“变身记”</p>
+							<p>通过对比日期，找到了批准函的所有者</p>
+        				</div>
+    				</a>
+				</div>
+				<div class="kv4-content-one has_bottom">
+    				<a href="#">
+        				<img src="images/HL_img6.jpg" alt="">
+        				<span> 25万欧投资马耳他A级国债 · 1人申请4代移民</span>
+        				<div class="box">
+            				<h3 class="title">刻意练习造就90后天才魔术师成美国杰出人才，6天即获批！</h3>
+            				<p>一位优秀的客户</p>
+							<p>只需一个不会犯错的律师团队就可以成功</p>
+							<p>&nbsp;任何杰出，源于对自己技能的“刻意练习”</p>
+        					</div>
+    				</a>
+				</div>
+                </div>
+                </div>
+                
+                </div>
+
+          </div> 
+		</dd>
+            <dd><!--海外投资 -->
+                <div class="YMCountry_nr">  
+                    <div class="YMCountry_image"><a href="#"><img src="images/HL_img4.jpg" alt=""/></a></div>
+                    <div class="YMCountry_xm">
+                    <div class="kv4" style="margin-left:25px;">
+         
+                    <div class="kv4-content">
+                    <div class="kv4-content-one has_bottom">
+                        <a href="#">
+                            <img src="images/HL_img8.jpg" alt="">
+                            <span>10万欧起移民欧洲 · 预期8%年收益</span>
+                            <div class="box">
+                                    <h3 class="title">学历重要吗？初中毕业的裁缝铺老板也可以成为EB-1A的楷模！</h3>
+                             <p>杰出人才，最低学历是什么？</p>
+                            <p>想起了之前批准的一位苏商</p>
+                            <p>初中毕业后经营一家裁缝铺</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="kv4-content-one has_bottom">
+                        <a href="#">
+                            <img src="images/HL_img5.jpg" alt="">
+                            <span>10万欧起移民欧洲 · 预期8%年收益</span>
+                            <div class="box">
+                                    <h3 class="title">学历重要吗？初中毕业的裁缝铺老板也可以成为EB-1A的楷模！</h3>
+                             <p>杰出人才，最低学历是什么？</p>
+                            <p>想起了之前批准的一位苏商</p>
+                            <p>初中毕业后经营一家裁缝铺</p>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="kv4-content-one has_bottom">
+                        <a href="#">
+                            <img src="images/HL_img6.jpg" alt="">
+                            <span> 15万加币起投资 · 移民标致性项目</span>
+                            <div class="box">
+                                <h3 class="title">批准函没加水印，轨道交通高管杰出人才客户变身成为武林高手！</h3>
+                                <p>“诡异的”批准函：武林高手并非我们的客户</p>
+                                <p>才华与品德兼备的轨道交通专家“变身记”</p>
+                                <p>通过对比日期，找到了批准函的所有者</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="kv4-content-one has_bottom">
+                        <a href="#">
+                            <img src="images/HL_img7.jpg" alt="">
+                            <span> 25万欧投资马耳他A级国债 · 1人申请4代移民</span>
+                            <div class="box">
+                                <h3 class="title">刻意练习造就90后天才魔术师成美国杰出人才，6天即获批！</h3>
+                                <p>一位优秀的客户</p>
+                                <p>只需一个不会犯错的律师团队就可以成功</p>
+                                <p>&nbsp;任何杰出，源于对自己技能的“刻意练习”</p>
+                                </div>
+                        </a>
+                    </div>
+                    </div>
+                    </div>
+                    
+                    </div>
+    
+              </div> 
+            </dd>
+		</dl><!-- -->
+    </div><!--移民国家到此结束 -->
+</div>
+<!-- 热门项目 end  -->
+
+<!-- 热点资讯  -->
+<div class="HL_rdzx">
+	<div class="HL_rdzx_title">热点资讯</div>
+</div>
+
+<div class="HL_rdzx_nr">
+    <div class="yx-rotaion">
+		<ul class="rotaion_list">
+			<li><a href=""><img src="images/HL_img9.jpg" alt="塞浦路斯欧盟护照项目"></a></li>
+			<li><a href=""><img src="images/HL_img4.jpg" alt="达拉斯1号 2017美国EB-5钻石项目"></a></li>
+			<li><a href=""><img src="images/HL_img9.jpg" alt="美国纽约帝国奥特莱斯购物中心"></a></li>
+			<li><a href=""><img src="images/HL_img4.jpg" alt="曼哈顿9号缩短排期EB-5项目震撼问世"></a></li>
+		</ul>
+	</div>
+    
+    <div class="HL_rdzx_ym">
+    	
+    	<div class="HL_rdzx_img">
+        	<a href="#">
+        	<div class="HL_rdzx_img_img"><img src="images/HL_img10.jpg" alt="塞浦路斯欧盟护照项目"></div>
+            <div class="HL_rdzx_img_title"><p>澳洲188C重大投资类别项目</p></div>
+            </a>
+        </div>
+        <div class="HL_rdzx_zx">移民咨询<a href="liebiao.html" target="_blank">更多+</a></div>
+        <div class="HL_rdzx_zx_nr">
+        	<a href="#"><li><span>02-06</span>保本理财产品将消失保本理财产品将消失保本理财产品将消失保本理财产品将消失</li></a>
+            <a href="#"><li><span>02-06</span>外联客户子女专享福利:500强公司实...</li></a>
+            <a href="#"><li><span>02-06</span>孩子在澳出生算澳籍还是绿卡 外联移...</li></a>
+            <a href="#"><li><span>02-06</span>特朗普任内二度上演关门“闹剧” ...</li></a>
+            <a href="#"><li><span>02-06</span>跌跌不休！比特币投资压力大 不如随...</li></a>
+            <a href="#"><li><span>02-06</span>保本理财产品将消失保本理财产品将消失保本理财产品将消失保本理财产品将消失 留学容易“留...</li></a>
+
+        </div>
+    </div>
+    <div class="HL_rdzx_ym" >
+    	<div class="HL_rdzx_img">
+        	<a href="#">
+        	<div class="HL_rdzx_img_img"><img src="images/HL_img11.jpg" alt="塞浦路斯欧盟护照项目"></div>
+            <div class="HL_rdzx_img_title"><p>澳洲188C重大投资类别项目</p></div>
+            </a>
+        </div>
+        <div class="HL_rdzx_zx">留学资讯<a href="liebiao.html" target="_blank">更多+</a></div>
+        <div class="HL_rdzx_zx_nr">
+        	<a href="#"><li><span>02-06</span>保本理财产品将消失 中海哈德逊稳赚...</li></a>
+            <a href="#"><li><span>02-06</span>外联客户子女专享福利:500强公司实...</li></a>
+            <a href="#"><li><span>02-06</span>孩子在澳出生算澳籍还是绿卡 外联移...</li></a>
+            <a href="#"><li><span>02-06</span>特朗普任内二度上演关门“闹剧” ...</li></a>
+            <a href="#"><li><span>02-06</span>跌跌不休！比特币投资压力大 不如随...</li></a>
+            <a href="#"><li><span>02-06</span>中国迎来最大海归潮 留学容易“留...</li></a>
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery.yx_rotaion.js"></script>
+<script type="text/javascript">
+$(".yx-rotaion").yx_rotaion({auto:true});
+</script>
+<!-- 热点资讯 end  -->
+
+<!-- 移民留学  -->
+<div class="HL_rdzx">
+	<span><a href="liebiao.html" target="_blank">更多+</a></span>
+	<div class="HL_rdzx_title">移民留学</div>
+</div>
+<div class="HL_ymlx">
+<div class="HL_ymlxa">
+	<ul>
+    	<li>
+        	<a href="#">
+            <div class="HL_ymlx_img"><img src="images/HL_ymlx_img1.jpg" alt=""></div>
+            <div class="HL_ymlx_bg">
+            	<p><span>美 国</span></p>
+				<p>世界第一大经济体</p>
+            </div>
+            </a>
+        </li>
+        <li>
+        	<a href="#">
+            <div class="HL_ymlx_img"><img src="images/HL_ymlx_img2.jpg" alt=""></div>
+            <div class="HL_ymlx_bg">
+            	<p><span>英 国</span></p>
+				<p>移民同时获得英期工作</p>
+            </div>
+            </a>
+        </li>
+        <li>
+        	<a href="#">
+            <div class="HL_ymlx_img"><img src="images/HL_ymlx_img3.jpg" alt=""></div>
+            <div class="HL_ymlx_bg">
+            	<p><span>加拿大</span></p>
+				<p>宜居的福利天堂</p>
+            </div>
+            </a>
+        </li>
+        <li>
+        	<a href="#">
+            <div class="HL_ymlx_img"><img src="images/HL_ymlx_img4.jpg" alt=""></div>
+            <div class="HL_ymlx_bg">
+            	<p><span>荷 兰</span></p>
+				<p>性价比超高的移民项目</p>
+            </div>
+            </a>
+        </li>
+        <li>
+        	<a href="#">
+            <div class="HL_ymlx_img"><img src="images/HL_ymlx_img5.jpg" alt=""></div>
+            <div class="HL_ymlx_bg">
+            	<p><span>西班牙</span></p>
+				<p>欧洲第四大经济体系</p>
+            </div>
+            </a>
+        </li>
+        <li>
+        	<a href="#">
+            <div class="HL_ymlx_img"><img src="images/HL_ymlx_img6.jpg" alt=""></div>
+            <div class="HL_ymlx_bg">
+            	<p><span>希 腊</span></p>
+				<p>全欧洲额最低</p>
+            </div>
+            </a>
+        </li>
+        <li>
+        	<a href="#">
+            <div class="HL_ymlx_img"><img src="images/HL_ymlx_img7.jpg" alt=""></div>
+            <div class="HL_ymlx_bg">
+            	<p><span>美 国</span></p>
+				<p>世界第一大经济体</p>
+            </div>
+            </a>
+        </li>
+        <li>
+        	<a href="#">
+            <div class="HL_ymlx_img"><img src="images/HL_ymlx_img8.jpg" alt=""></div>
+            <div class="HL_ymlx_bg">
+            	<p><span>英 国</span></p>
+				<p>移民同时获得英期工作</p>
+            </div>
+            </a>
+        </li>
+    </ul>
+    </div>
+</div>
+<!-- 移民留学 end  -->
+
+<!-- 成功案例  -->
+<div class="HL_success">
+	<div class="index_new_case">
+    <div class="left">
+        <ul>
+            <li class="cur">美国移民案例</li>
+            <li>美国留学案例</li>
+            <li>英国留学案例</li>
+            <li>其他成功案例</li>
+        </ul>
+    </div>
+    
+    <div class="center">
+        <ul>  
+            <li><a href="#"><img src="images/HL_success_img1.jpg" alt=""></a></li>   
+            <li><a href="#"><img src="images/HL_success_img2.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/HL_success_img3.jpg" alt=""></a></li>
+        </ul>
+    </div>
+    <div class="center" style="display: none;">
+        <ul>  
+            <li><a href="#"><img src="images/HL_success_img2.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/HL_success_img3.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/HL_success_img1.jpg" alt=""></a></li> 
+        </ul>
+    </div>
+    <div class="center" style="display: none;">
+        <ul>  
+        	<li><a href="#"><img src="images/HL_success_img3.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/HL_success_img1.jpg" alt=""></a></li>   
+            <li><a href="#"><img src="images/HL_success_img2.jpg" alt=""></a></li>
+            
+        </ul>
+    </div>
+    <div class="center" style="display: none;">
+        <ul>  
+            <li><a href="#"><img src="images/HL_success_img1.jpg" alt=""></a></li>   
+            <li><a href="#"><img src="images/HL_success_img2.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/HL_success_img3.jpg" alt=""></a></li>
+        </ul>
+    </div>
+    
+
+</div>
+</div>
+<script type="text/javascript">
+	$(".index_new_case .left li").hover(function () {
+        var i = $(this).index();
+        $(".index_new_case .left li").eq(i).addClass("cur").siblings().removeClass("cur");
+        $(".index_new_case .center").eq(i).show().siblings(".index_new_case .center").hide();
+    })
+</script>
+<!-- 成功案例 end  -->
+
+<!-- 某某国际  -->
+<div class="HL_rdzx">
+	<div class="HL_rdzx_title">某某国际</div>
+</div>
+
+<div class="Box">
+    	<div class="content">
+    		
+    		<div class="Box_con clearfix">
+    			<span class="btnl btn" id="btnl"></span>
+    			<span class="btnr btn" id="btnr"></span>
+    			
+    			<div class="conbox" id="BoxUl">
+	    			<ul>
+	    				<li>
+                        	<a href="#">
+                            <div class="Box_nr">
+                            	<img src="images/HL.hlgj_img1.jpg" alt=""/>
+                                <div class="Box_bg">
+                                	<p>G·T Lauren</p>
+                                    <p>合作律师</p>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+	    				
+	    				<li>
+                        	<a href="#">
+                            <div class="Box_nr">
+                            	<img src="images/HL.hlgj_img2.jpg" alt=""/>
+                                <div class="Box_bg">
+                                	<p>G·T Lauren</p>
+                                    <p>合作律师</p>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        
+                        <li>
+                       		<a href="#">
+                        	<div class="Box_nr">
+                            	<img src="images/HL.hlgj_img3.jpg" alt=""/>
+                                <div class="Box_bg">
+                                	<p>G·T Dillon R.Colucc</p>
+                                    <p>合作律师</p>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        
+                        <li>
+                        	<a href="#">
+                            <div class="Box_nr">
+                            	<img src="images/HL.hlgj_img1.jpg" alt=""/>
+                                <div class="Box_bg">
+                                	<p>G·T Lauren</p>
+                                    <p>合作律师</p>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+	    				
+	    				<li>
+                        	<a href="#">
+                        	<div class="Box_nr">
+                            	<img src="images/HL.hlgj_img2.jpg" alt=""/>
+                                <div class="Box_bg">
+                                	<p>D·H Bima Korpicaara</p>
+                                    <p>合作律师</p>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        
+                        <li>
+                        	<a href="#">
+                        	<div class="Box_nr">
+                            	<img src="images/HL.hlgj_img3.jpg" alt=""/>
+                                <div class="Box_bg">
+                                	<p>G·T Dillon R.Colucc</p>
+                                    <p>合作律师</p>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        
+    				</ul>
+    			</div>
+    		</div>
+    		
+    	</div>
+    </div>
+
+<script type="text/javascript">
+    //滚动元素id，左切换按钮，右切换按钮，切换元素个数id,滚动方式，切换方向，是否自动滚动，滚动距离，滚动时间，滚动间隔，显示个数
+    LbMove('BoxUl','btnl','btnr','BoxSwitch',true,'left',true,205,1000,5000,4);
+</script>
+<!-- 某某国际 end  -->
+
+<!-- 底部评估表 -->
+<div class="HL_pgb_bottom">
+	<div class="HL_pgb">
+	<div class="item">
+			<div class="filter-box2">
+				<div class="filter-text">
+					<input class="filter-title" type="text" readonly placeholder="移民留学国家" />
+					<i class="icon icon-filter-arrow"></i>
+				</div>
+				<select name="filter">
+                	<option value="-1"></option>
+					<option value="1">美国EB1A移民</option>
+					<option value="2">美国留学</option>
+					<option value="3">英国留学</option>
+					<option value="4">海外投资</option>
+					<option value="5">其它</option>
+				</select>
+			</div>
+	</div>
+    <div class="item" style="margin-left:20px">
+			<div class="filter-box3">
+				<div class="filter-text">
+					<input class="filter-title" type="text" readonly placeholder="预算" />
+					<i class="icon icon-filter-arrow"></i>
+				</div>
+				<select name="filter">
+                	<option value="-1"></option>
+					<option value="1">50万-100万</option>
+					<option value="2">100万-200万</option>
+					<option value="3">300万-500万</option>
+					<option value="4">500万-800万</option>
+					<option value="5">1000万以上</option>
+                    <option value="5">其他</option>
+				</select>
+              </div>
+	</div>
+    <div class="item" style="margin-left:20px">
+    	<input class="input" placeholder="联系方式" />
+    </div>
+    <div class="pgbButton" style="margin-left:20px">
+        <input type="reset"  value="立即评估"/>
+    </div>
+</div>
+
+</div>
+<!-- 底部评估表 end  -->
+
+<!-- 底部信息开始 -->
+<div class="HL_gj">
+	<div class="HL_gj_nr">
+    	<li>
+        	<a href="#"><p>美国移民</p></a>
+            <a href="#"><p>美国EB1A移民</p></a>
+        </li>
+        <li>
+        	<a href="#"><p>美国留学</p></a>
+            <a href="#"><p>美国高中</p></a>
+            <a href="#"><p>美国本科</p></a>
+            <a href="#"><p>美国研究生</p></a>
+        </li>
+        <li>
+        	<a href="#"><p>英国留学</p></a>
+            <a href="#"><p>英国高中</p></a>
+            <a href="#"><p>英国本科</p></a>
+            <a href="#"><p>英国研究生</p></a>
+        </li>
+        <li>
+        	<a href="#"><p>海外服务</p></a>
+            <a href="#"><p>安家置业</p></a>
+            <a href="#"><p>海外房产</p></a>
+            <a href="#"><p>财务规划</p></a>
+        </li>
+        <li>
+        	<a href="#"><p>关于移民</p></a>
+            <a href="#"><p>移民介绍</p></a>
+            <a href="#"><p>精英团队</p></a>
+            <a href="#"><p>活动讲座</p></a>
+        </li>
+        <li><img src="images/HL_logo.png" alt=""></li>
+    </div>
+</div>
+
+<div class="HL_bottom">
+	<div class="HL_bottom_nr">
+    	<li>
+        	<img src="images/HL_fwh.jpg" alt="">
+            <div class="HL_bottom_title">关注官方服务号</div>
+        </li>
+        <li>
+        	<img src="images/HL_dyh.jpg" alt="">
+            <div class="HL_bottom_title">关注官方订阅号</div>
+        </li>
+        <li>
+        	<p><span>VIP免费热线：400-888-8888</span></p>
+            <p>地址：南京市玄武区玄武湖10号</p>
+            <p>版权所有 ©2020 XXX</p>
+            <p>XXX</p>
+        </li>
+    </div>
+</div>
+<!-- 底部信息结束 -->
+
+<script type="text/javascript" src="js/selectFilter.js"></script>
+<script type="text/javascript">
+			//本小插件支持移动端哦
+			
+			//这里是初始化
+			$('.filter-box').selectFilter({
+				callBack : function (val){
+					//返回选择的值
+					console.log(val+'-是返回的值')
+				}
+			});
+			$('.filter-box1').selectFilter({
+				callBack : function (val){
+					//返回选择的值
+					console.log(val+'-是返回的值')
+				}
+			});
+			$('.filter-box2').selectFilter({
+				callBack : function (val){
+					//返回选择的值
+					console.log(val+'-是返回的值')
+				}
+			});
+			$('.filter-box3').selectFilter({
+				callBack : function (val){
+					//返回选择的值
+					console.log(val+'-是返回的值')
+				}
+			});
+</script>
+
+</body>
+</html>

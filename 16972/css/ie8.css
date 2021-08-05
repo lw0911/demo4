@@ -1,0 +1,49 @@
+﻿/* dede58.com ����õ�֯��ģ�� */
+.ny-banner {
+	margin-top: 0px;
+}
+.banner {
+	margin-top:0px;
+}
+.case figure figcaption, .team figure figcaption, .kehu figure figcaption, .ny-kehu figure figcaption {
+	background-color: #f75a53;
+}
+.rslides {
+	height:550px;
+}
+.yq-link hr {
+	border-color: #676C71
+}
+.header .logo {
+	height: 38px;
+	display:block
+}
+#lytel, #lyusername, #lycontent {
+	padding-top:10px;
+}
+.key, .mail {
+	padding-top: 10px;
+	background-color: none;
+	border: 0px solid #b2b4b7;
+}
+#lyusername, #lytel, .key, .mail {
+	height: 26px;
+}
+#lycontent {
+	height: 100px;
+}
+.s-button, .m-button {
+	background-color: #f75a53;
+	height: 37px;
+	width: 37px;
+	right:2px;
+}
+.fuwu figure {
+	background-color: #FFFFFF;
+}
+.case-more, .team-more {
+	background-color:#FFFFFF;
+}
+.team figure h3.team-title {
+	background-color:#FFFFFF;
+}

@@ -1,0 +1,45 @@
+/*详情页样式*/
+
+.inside_right h2 {
+	text-align: center;
+	border-bottom: 1px solid #E6E6E6;
+	line-height: 50px;
+	font-size: 2rem;
+	margin-bottom: 15px;
+	padding: 0 20px;
+}
+
+.inside_right_1 {
+	overflow: hidden;
+}
+
+.inside_right .inside_right_1_left {
+	float: left;
+}
+
+.inside_right .inside_right_1_left p {
+	font-size: 1.4rem;
+	float: left;
+	color: #666666;
+	padding: 0 10px;
+	line-height: 28px;
+}
+
+.bdsharebuttonbox {
+	float: right;
+}
+
+.bdsharebuttonbox p {
+	float: left;
+	font-size: 1.4rem;
+	line-height: 28px;
+	color: #666666;
+}
+
+.inside_right_2 {
+	padding: 20px;
+}
+
+.inside_right_2 img {
+	max-width: 100%;
+}

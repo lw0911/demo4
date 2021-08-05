@@ -1,0 +1,1026 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>某某国际 - 海外房产 - 详情</title>
+
+<link href="css/daohang.css" rel="stylesheet" type="text/css" />
+<link href="css/banner.css" rel="stylesheet" type="text/css" />
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.touchSlider.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/ks-switch.pack.js"></script>
+</head>
+
+<body>
+<div class="top">
+	<div class="top_blank">
+   		<a href="index.html"><div class="logo"><img src="images/logo.jpg" /></div></a>
+   		<div class="top_tel"><img src="images/tele.jpg" /></div>
+   	</div>
+</div>
+
+<!-- 导航开始  -->
+<nav class="nav pr">
+<div class="nav-in">
+	<!-- -------菜单html代码---------begin------- -->
+    <div class="menuDiv">
+        <ul>
+            <li>
+                <a href="index.html" >首页</a>
+            </li> 
+            <li>
+                <a href="USA_ym.html">美国移民</a>
+                <ul>
+                    <li><a href="USA_ym.html" >美国EB1A移民</a></li>
+                </ul>
+            </li> 
+            <li>
+                <a href="USA_lx.html" target="_blank">美国留学</a>
+                <ul>
+                    <li><a href="USA_lx_gz.html" >美国高中</a></li>
+                    <li><a href="USA_lx_gz.html" >美国本科</a></li>
+                    <li><a href="USA_lx_gz.html" >美国研究生</a></li>
+                </ul>
+            </li> 
+            <li>
+                <a href="England_lx.html">英国留学</a>
+                <ul>
+                    <li><a href="England_lx_gz.html" >英国高中</a></li>
+                    <li><a href="England_lx_gz.html" >英国本科</a></li>
+                    <li><a href="England_lx_gz.html" >英国研究生</a></li>
+                </ul>
+            </li> 
+            <li>
+                <a href="ajzy.html" >海外服务</a>
+                <ul>
+                    <li><a href="ajzy.html" >安家置业</a></li>
+                    <li><a href="hwfc.html" >海外房产</a></li>
+                    <li><a href="cwgh.html" >财务规划</a></li>
+                </ul>
+            </li> 
+            <li>
+                <a href="hdjz.html" >活动讲座</a>
+            </li> 
+            <li>
+                <a href="about.html" >关于移民</a>
+                <ul>
+                    <li><a href="about.html">移民介绍</a></li>
+                    <li><a href="jytd.html" >精英团队</a></li>
+                </ul>
+            </li> 
+        </ul>
+    </div>
+    <!-- -------菜单html代码---------end------- -->
+    </div>
+</nav>
+<!-- 导航结束  -->
+
+<!--banner-->
+<div class="NLBanner">
+	<div class="NYBanner_xs"><img src="images/HWFCXQ_banner.jpg" /></div>
+</div>
+<!--banner end-->
+
+<!-- 波士顿公寓 -->
+<div class="HWFCXQ">
+	<div class="HWFCXQ_title">
+    	<span>在售</span>
+    	波士顿公寓 -- 99 Tremont | 毗邻波士顿学院
+    </div>
+</div>
+<div class="HWFCXQ_zs">
+	<div class="HWFCXQ_zs_left">
+    <div id="wrapper">
+	<!--滚动看图-->
+	<div id="picSlideWrap" class="clearfix"><br>
+        <div class="imgnav" id="imgnav"> 
+             <div id="img"> 
+                <img src="images/HWFCXQ_img1.jpg" >
+                <img src="images/HWFCXQ_img2.jpg"  >
+                <img src="images/HWFCXQ_img3.jpg"  />
+                <img src="images/HWFCXQ_img4.jpg"  />
+                <img src="images/HWFCXQ_img5.jpg" >
+                <img src="images/HWFCXQ_img6.jpg"  >
+               
+             </div>
+              
+             <div id="cbtn">
+                <i class="picSildeLeft"><img src="images/ico/picSlideLeft.gif"></i> 
+                <i class="picSildeRight"><img src="images/ico/picSlideRight.gif"></i> 
+                <div id="cSlideUl">
+                    <ul>
+                        <li><img src="images/HWFCXQ_img1.jpg"><tt></tt></li>
+                        <li><img src="images/HWFCXQ_img2.jpg"><tt></tt></li>
+                        <li><img src="images/HWFCXQ_img3.jpg" /><tt></tt></li>
+                        <li><img src="images/HWFCXQ_img4.jpg"><tt></tt></li>
+                        <li><img src="images/HWFCXQ_img5.jpg"><tt></tt></li>
+                        <li><img src="images/HWFCXQ_img6.jpg"><tt></tt></li>
+                    </ul>
+                </div>
+             </div>         
+        </div>
+    </div><!--end滚动看图-->
+</div>
+
+<script>
+$(document).ready(function(){                          
+    var index=0;
+    var length=$("#img img").length;
+    var i=1;
+    
+    //关键函数：通过控制i ，来显示图片
+    function showImg(i){
+        $("#img img")
+            .eq(i).stop(true,true).fadeIn(800)
+            .siblings("img").hide();
+         $("#cbtn li")
+            .eq(i).addClass("hov")
+            .siblings().removeClass("hov");
+    }
+    
+    function slideNext(){
+        if(index >= 0 && index < length-1) {
+             ++index;
+             showImg(index);
+        }else{
+			if(1){
+				showImg(0);
+				index=0;
+				aniPx=(length-4)*142+'px'; //所有图片数 - 可见图片数 * 每张的距离 = 最后一张滚动到第一张的距离
+				$("#cSlideUl ul").animate({ "left": "+="+aniPx },200);
+				i=1;
+			}
+            return false;
+        }
+        if(i<0 || i>length-4) {return false;}						  
+               $("#cSlideUl ul").animate({ "left": "-=142px" },200)
+               i++;
+    }
+     
+    function slideFront(){
+       if(index >= 1 ) {
+             --index;
+             showImg(index);
+        }
+        if(i<2 || i>length+4) {return false;}
+               $("#cSlideUl ul").animate({ "left": "+=142px" },200)
+               i--;
+    }	
+        $("#img img").eq(0).show();
+        $("#cbtn li").eq(0).addClass("hov");
+        $("#cbtn tt").each(function(e){
+            var str=(e+1)+""+length;
+            $(this).html(str)
+        })
+    
+        $(".picSildeRight,#next").click(function(){
+               slideNext();
+           })
+        $(".picSildeLeft,#front").click(function(){
+               slideFront();
+           })
+        $("#cbtn li").click(function(){
+            index  =  $("#cbtn li").index(this);
+            showImg(index);
+        });	
+		$("#next,#front").hover(function(){
+			$(this).children("a").fadeIn();
+		},function(){
+			$(this).children("a").fadeOut();
+		})
+    })	
+</script>
+    </div>
+    <div class="HWFCXQ_zs_right">
+    	<div class="HWFCXQ_right_top">
+        	<p><strong>￥39~63万</strong> <span>192~312万泰铢</span></p>
+            <p>1泰铢= 0.203人民币 （数据更新时间：2018-03-18）</p>
+        </div>
+        <div class="HWFCXQ_right_topa">
+        	<li>
+            	<p><span>6%~8%</span></p>
+                <p>年均租金</p>
+            </li>
+            <li>
+            	<p><span>8%</span></p>
+                <p>近一年房价涨幅</p>
+            </li>
+            <li>
+            	<p><span>30%</span></p>
+                <p>首付</p>
+            </li>
+        </div>
+        <div class="HWFCXQ_right_topb">
+        	<li>新房 公寓</li>
+            <li>精装修</li>
+            <li>永久产权</li>
+            <li>投资房,学区房</li>
+        </div>
+        <div class="HWFCXQ_right_topc">
+        	<li>
+            	<span>项目地址</span>
+                <p>泰国曼谷 Sukhumvit 115, Mueang Samut Prakan District, 10270泰国</p>
+            </li>
+            <li>
+            	<span>主力户型</span>
+                <p>一室一厅  (27m²)    两室一厅  (36m²)    一室+一书房  (40m²)</p>
+            </li>
+        </div>
+        <div class="HWFCXQ_right_topb" style="height:68px">
+        	<div class="HWFCXQ_right_topd"></div>
+            <div class="HWFCXQ_right_tope">
+            	<p>在线预付订金，快人一步锁定优惠和购房资格！</p>
+ 				<p><span>无忧购</span>  <span>优惠多</span>  <span>免佣金</span></p>
+            </div>
+        </div>
+        <div class="HWFCXQ_right_topb" style="border-bottom:none">
+        	<div class="HWFCXQ_right_topf" >
+            	<input  type="reset" value="预约咨询" />
+                <input  type="reset" value="立即预订" />
+            </div>
+            <div class="HWFCXQ_right_topg">
+            	<p><span>免费电话</span></p>
+                <p><strong>400 659 8399 转 40102</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 波士顿公寓 end  -->
+
+<!-- 基本信息 -->
+<div class="HWFCXQ_XX_Country">
+    	                                                
+    	<dl class="slideBox5">
+			<dt>
+				<span>基本信息</span>
+				<span>投资回报率</span>
+            	<span>城市介绍</span>
+				<span>学校信息</span>
+                <span>社区信息</span>
+                <span>房屋贷款</span>
+			</dt>
+			<dd><!-- 基本信息  -->
+				<div class="HWFCXQ_xx">
+                	<li>
+                    	<ol><img src="images/HWFCXQ8.png" /></ol>
+                        <ol><strong>房屋类型</strong></ol>
+                        <ol>独栋别墅</ol>
+                    </li>
+                	<li>
+                    	<ol><img src="images/HWFCXQ9.png" /></ol>
+                        <ol><strong>建筑面积</strong></ol>
+                        <ol>1,934平方英尺(约180平方米)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ10.png" /></ol>
+                        <ol><strong>土地面积</strong></ol>
+                        <ol>2025平方英尺(约180平方米)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ11.png" /></ol>
+                        <ol><strong>建筑年代</strong></ol>
+                        <ol>2011</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ12.png" /></ol>
+                        <ol><strong>停车位数</strong></ol>
+                        <ol>--</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ13.png" /></ol>
+                        <ol><strong>卧室数量</strong></ol>
+                        <ol>4间</ol>
+                    </li>  
+                    <li>
+                    	<ol><img src="images/HWFCXQ14.png" /></ol>
+                        <ol><strong>3/4卫浴数</strong></ol>
+                        <ol>0间</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ15.png" /></ol>
+                        <ol><strong>MLS#</strong></ol>
+                        <ol>0ML81696352</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ16.png" /></ol>
+                        <ol><strong>单位价格</strong></ol>
+                        <ol>$619/平方英寸(约¥42,096/平米)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ17.png" /></ol>
+                        <ol><strong>房产税</strong></ol>
+                        <ol>$811/月(约¥5,63/月2)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ18.png" /></ol>
+                        <ol><strong>物业费</strong></ol>
+                        <ol>$132/月(约¥833/月)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ19.png" /></ol>
+                        <ol><strong>预约月租金</strong></ol>
+                        <ol>$4,067/月(约¥25,676/月)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ20.png" /></ol>
+                        <ol><strong>完整卫浴数</strong></ol>
+                        <ol>2间</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ21.png" /></ol>
+                        <ol><strong>1/2卫浴数</strong></ol>
+                        <ol>1间</ol>
+                    </li>
+                </div>      
+			</dd>
+            
+			<dd><!--投资回报率 -->
+            	<div class="HWFCXQ_xx">
+                	<li>
+                    	<ol><img src="images/HWFCXQ8.png" /></ol>
+                        <ol><strong>房屋类型</strong></ol>
+                        <ol>别墅</ol>
+                    </li>
+                	<li>
+                    	<ol><img src="images/HWFCXQ9.png" /></ol>
+                        <ol><strong>建筑面积</strong></ol>
+                        <ol>934平方英尺(约180平方米)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ10.png" /></ol>
+                        <ol><strong>土地面积</strong></ol>
+                        <ol>2015平方英尺(约180平方米)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ11.png" /></ol>
+                        <ol><strong>建筑年代</strong></ol>
+                        <ol>2015</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ12.png" /></ol>
+                        <ol><strong>停车位数</strong></ol>
+                        <ol>10</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ13.png" /></ol>
+                        <ol><strong>卧室数量</strong></ol>
+                        <ol>2间</ol>
+                    </li>  
+                    <li>
+                    	<ol><img src="images/HWFCXQ14.png" /></ol>
+                        <ol><strong>3/4卫浴数</strong></ol>
+                        <ol>2间</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ15.png" /></ol>
+                        <ol><strong>MLS#</strong></ol>
+                        <ol>0ML81696352</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ16.png" /></ol>
+                        <ol><strong>单位价格</strong></ol>
+                        <ol>$610/平方英寸(约¥42,096/平米)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ17.png" /></ol>
+                        <ol><strong>房产税</strong></ol>
+                        <ol>$911/月(约¥5,63/月2)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ18.png" /></ol>
+                        <ol><strong>物业费</strong></ol>
+                        <ol>$232/月(约¥833/月)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ19.png" /></ol>
+                        <ol><strong>预约月租金</strong></ol>
+                        <ol>$067/月(约¥25,676/月)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ20.png" /></ol>
+                        <ol><strong>完整卫浴数</strong></ol>
+                        <ol>5间</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ21.png" /></ol>
+                        <ol><strong>1/2卫浴数</strong></ol>
+                        <ol>3间</ol>
+                    </li>
+                </div>     
+			</dd>
+        	<dd><!--城市介绍 -->
+				<div class="HWFCXQ_xx">
+                	<li>
+                    	<ol><img src="images/HWFCXQ8.png" /></ol>
+                        <ol><strong>房屋类型</strong></ol>
+                        <ol>独栋别墅</ol>
+                    </li>
+                	<li>
+                    	<ol><img src="images/HWFCXQ9.png" /></ol>
+                        <ol><strong>建筑面积</strong></ol>
+                        <ol>1,934平方英尺(约180平方米)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ10.png" /></ol>
+                        <ol><strong>土地面积</strong></ol>
+                        <ol>2025平方英尺(约180平方米)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ11.png" /></ol>
+                        <ol><strong>建筑年代</strong></ol>
+                        <ol>2011</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ12.png" /></ol>
+                        <ol><strong>停车位数</strong></ol>
+                        <ol>--</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ13.png" /></ol>
+                        <ol><strong>卧室数量</strong></ol>
+                        <ol>4间</ol>
+                    </li>  
+                    <li>
+                    	<ol><img src="images/HWFCXQ14.png" /></ol>
+                        <ol><strong>3/4卫浴数</strong></ol>
+                        <ol>0间</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ15.png" /></ol>
+                        <ol><strong>MLS#</strong></ol>
+                        <ol>0ML81696352</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ16.png" /></ol>
+                        <ol><strong>单位价格</strong></ol>
+                        <ol>$619/平方英寸(约¥42,096/平米)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ17.png" /></ol>
+                        <ol><strong>房产税</strong></ol>
+                        <ol>$811/月(约¥5,63/月2)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ18.png" /></ol>
+                        <ol><strong>物业费</strong></ol>
+                        <ol>$132/月(约¥833/月)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ19.png" /></ol>
+                        <ol><strong>预约月租金</strong></ol>
+                        <ol>$4,067/月(约¥25,676/月)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ20.png" /></ol>
+                        <ol><strong>完整卫浴数</strong></ol>
+                        <ol>2间</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ21.png" /></ol>
+                        <ol><strong>1/2卫浴数</strong></ol>
+                        <ol>1间</ol>
+                    </li>
+                </div> 
+			</dd>
+            <dd><!--学校信息 -->
+                <div class="HWFCXQ_xx">
+                	<li>
+                    	<ol><img src="images/HWFCXQ8.png" /></ol>
+                        <ol><strong>房屋类型</strong></ol>
+                        <ol>别墅</ol>
+                    </li>
+                	<li>
+                    	<ol><img src="images/HWFCXQ9.png" /></ol>
+                        <ol><strong>建筑面积</strong></ol>
+                        <ol>934平方英尺(约180平方米)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ10.png" /></ol>
+                        <ol><strong>土地面积</strong></ol>
+                        <ol>2015平方英尺(约180平方米)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ11.png" /></ol>
+                        <ol><strong>建筑年代</strong></ol>
+                        <ol>2015</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ12.png" /></ol>
+                        <ol><strong>停车位数</strong></ol>
+                        <ol>10</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ13.png" /></ol>
+                        <ol><strong>卧室数量</strong></ol>
+                        <ol>2间</ol>
+                    </li>  
+                    <li>
+                    	<ol><img src="images/HWFCXQ14.png" /></ol>
+                        <ol><strong>3/4卫浴数</strong></ol>
+                        <ol>2间</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ15.png" /></ol>
+                        <ol><strong>MLS#</strong></ol>
+                        <ol>0ML81696352</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ16.png" /></ol>
+                        <ol><strong>单位价格</strong></ol>
+                        <ol>$610/平方英寸(约¥42,096/平米)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ17.png" /></ol>
+                        <ol><strong>房产税</strong></ol>
+                        <ol>$911/月(约¥5,63/月2)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ18.png" /></ol>
+                        <ol><strong>物业费</strong></ol>
+                        <ol>$232/月(约¥833/月)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ19.png" /></ol>
+                        <ol><strong>预约月租金</strong></ol>
+                        <ol>$067/月(约¥25,676/月)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ20.png" /></ol>
+                        <ol><strong>完整卫浴数</strong></ol>
+                        <ol>5间</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ21.png" /></ol>
+                        <ol><strong>1/2卫浴数</strong></ol>
+                        <ol>3间</ol>
+                    </li>
+                </div>
+            </dd>
+            <dd><!--社区信息 -->
+                <div class="HWFCXQ_xx">
+                	<li>
+                    	<ol><img src="images/HWFCXQ8.png" /></ol>
+                        <ol><strong>房屋类型</strong></ol>
+                        <ol>独栋别墅</ol>
+                    </li>
+                	<li>
+                    	<ol><img src="images/HWFCXQ9.png" /></ol>
+                        <ol><strong>建筑面积</strong></ol>
+                        <ol>1,934平方英尺(约180平方米)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ10.png" /></ol>
+                        <ol><strong>土地面积</strong></ol>
+                        <ol>2025平方英尺(约180平方米)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ11.png" /></ol>
+                        <ol><strong>建筑年代</strong></ol>
+                        <ol>2011</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ12.png" /></ol>
+                        <ol><strong>停车位数</strong></ol>
+                        <ol>--</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ13.png" /></ol>
+                        <ol><strong>卧室数量</strong></ol>
+                        <ol>4间</ol>
+                    </li>  
+                    <li>
+                    	<ol><img src="images/HWFCXQ14.png" /></ol>
+                        <ol><strong>3/4卫浴数</strong></ol>
+                        <ol>0间</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ15.png" /></ol>
+                        <ol><strong>MLS#</strong></ol>
+                        <ol>0ML81696352</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ16.png" /></ol>
+                        <ol><strong>单位价格</strong></ol>
+                        <ol>$619/平方英寸(约¥42,096/平米)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ17.png" /></ol>
+                        <ol><strong>房产税</strong></ol>
+                        <ol>$811/月(约¥5,63/月2)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ18.png" /></ol>
+                        <ol><strong>物业费</strong></ol>
+                        <ol>$132/月(约¥833/月)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ19.png" /></ol>
+                        <ol><strong>预约月租金</strong></ol>
+                        <ol>$4,067/月(约¥25,676/月)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ20.png" /></ol>
+                        <ol><strong>完整卫浴数</strong></ol>
+                        <ol>2间</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ21.png" /></ol>
+                        <ol><strong>1/2卫浴数</strong></ol>
+                        <ol>1间</ol>
+                    </li>
+                </div>
+            </dd>
+            <dd><!--房屋贷款 -->
+                <div class="HWFCXQ_xx">
+                	<li>
+                    	<ol><img src="images/HWFCXQ8.png" /></ol>
+                        <ol><strong>房屋类型</strong></ol>
+                        <ol>别墅</ol>
+                    </li>
+                	<li>
+                    	<ol><img src="images/HWFCXQ9.png" /></ol>
+                        <ol><strong>建筑面积</strong></ol>
+                        <ol>934平方英尺(约180平方米)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ10.png" /></ol>
+                        <ol><strong>土地面积</strong></ol>
+                        <ol>2015平方英尺(约180平方米)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ11.png" /></ol>
+                        <ol><strong>建筑年代</strong></ol>
+                        <ol>2015</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ12.png" /></ol>
+                        <ol><strong>停车位数</strong></ol>
+                        <ol>10</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ13.png" /></ol>
+                        <ol><strong>卧室数量</strong></ol>
+                        <ol>2间</ol>
+                    </li>  
+                    <li>
+                    	<ol><img src="images/HWFCXQ14.png" /></ol>
+                        <ol><strong>3/4卫浴数</strong></ol>
+                        <ol>2间</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ15.png" /></ol>
+                        <ol><strong>MLS#</strong></ol>
+                        <ol>0ML81696352</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ16.png" /></ol>
+                        <ol><strong>单位价格</strong></ol>
+                        <ol>$610/平方英寸(约¥42,096/平米)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ17.png" /></ol>
+                        <ol><strong>房产税</strong></ol>
+                        <ol>$911/月(约¥5,63/月2)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ18.png" /></ol>
+                        <ol><strong>物业费</strong></ol>
+                        <ol>$232/月(约¥833/月)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ19.png" /></ol>
+                        <ol><strong>预约月租金</strong></ol>
+                        <ol>$067/月(约¥25,676/月)</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ20.png" /></ol>
+                        <ol><strong>完整卫浴数</strong></ol>
+                        <ol>5间</ol>
+                    </li>
+                    <li>
+                    	<ol><img src="images/HWFCXQ21.png" /></ol>
+                        <ol><strong>1/2卫浴数</strong></ol>
+                        <ol>3间</ol>
+                    </li>
+                </div> 
+            </dd>
+            
+		</dl><!-- -->
+    </div>
+    
+<!-- 基本信息 end  -->
+
+<!-- 投资回报率 -->
+<div class="HWFCXQ_hbl">
+	<div class="HWFCXQ_hbl_title"><span></span>投资回报率</div>
+    <div class="HWFCXQ_hbl_nr">
+    	<div class="HWFCXQ_hbl_nra">
+    		<li>8年年化投资回报率: <span>9.72%</span></li>
+        	<li>房屋增值</li>
+        	<li>
+        		<ol>房屋总价</ol>
+            	<ol>$1,198,000</ol>
+        	</li>
+        	<li>
+        		<ol>首付比例</ol>
+            	<ol>40.00%</ol>
+        	</li>
+        	<li>
+        		<ol>持有年限</ol>
+            	<ol>8年</ol>
+        	</li>
+        	<li>
+        		<ol>预估年增值率</ol>
+            	<ol>6.04%</ol>
+        	</li>
+        	<li>
+        		<ol>过去十二个月房价趋势</ol>
+            	<ol>4.96%</ol>
+        	</li>
+        </div>
+        <div class="HWFCXQ_hbl_nra" style=" float:right">
+    		<li>现金购房出租净收益: <span>9.72%</span></li>
+        	<li>房屋增值</li>
+        	<li>
+        		<ol>预估租金</ol>
+            	<ol>$4,067</ol>
+        	</li>
+        	<li>
+        		<ol>房产税</ol>
+            	<ol>$833</ol>
+        	</li>
+        	<li>
+        		<ol>物业费</ol>
+            	<ol>$131</ol>
+        	</li>
+        	<li>
+        		<ol>保险费</ol>
+            	<ol>$124</ol>
+        	</li>
+        	<li>
+        		<ol>维护费</ol>
+            	<ol>$149</ol>
+        	</li>
+        </div>
+    </div>
+</div>
+<!-- 投资回报率 end  -->
+
+<!-- 城市介绍  -->
+<div class="HWFCXQ_cs">
+	<div class="HWFCXQ_cs_left">
+    	<h1>城市介绍</h1>
+    	<p><img src="images/HWFCXQ_img7.jpg" />圣何塞（San Jose），是加州旧金山湾区南部的城市，是加州（人口）第3大城市。
+地处旧金山湾以南的圣克拉拉谷地（硅谷）为圣克拉拉县首府，临凯奥特河，西北距旧金山65公里，人口948,279(2009)，为美国第10大城市，被誉为“硅谷之心”，世界知名大型高。</p>
+		<p>科技公司（Apple、intel、Yahoo、ebay、HP、FireFox、Google等）云集于此；大市区包括圣克拉拉县，面积3429平方公里。</p>
+    </div>
+    <div class="HWFCXQ_cs_right">
+    	<h1>学校信息</h1>
+    	<dl class="slideBox6">
+			<dt>
+				<span>公立学校</span>
+				<span>私立学校</span>
+			</dt>
+			<dd><!-- 公立学校  -->
+            	<div class="HWFCXQ_cs_rightnr">
+                	<li>
+                    	<ol>学校评分</ol>
+                        <ol>学校名称</ol>
+                        <ol>类型</ol>
+                        <ol>年假</ol>
+                        <ol>距离</ol>
+                    </li>
+                    <li>
+                    	<ol>5</ol>
+                        <ol>Sand Jose High School</ol>
+                        <ol>高中</ol>
+                        <ol>9-12</ol>
+                        <ol>1.95km</ol>
+                    </li>
+                    <li>
+                    	<ol>3</ol>
+                        <ol>Pater Burnett Middle School</ol>
+                        <ol>初中</ol>
+                        <ol>6-8</ol>
+                        <ol>1.00km</ol>
+                    </li>
+                    <li>
+                    	<ol>2</ol>
+                        <ol>Grant Elemenary School</ol>
+                        <ol>小学</ol>
+                        <ol>k-5</ol>
+                        <ol>0.28km</ol>
+                    </li>
+                </div>  
+			</dd>
+            
+			<dd><!--私立学校 -->
+            	 <div class="HWFCXQ_cs_rightnr">
+                 	<li>
+                    	<ol>学校评分</ol>
+                        <ol>学校名称</ol>
+                        <ol>类型</ol>
+                        <ol>年假</ol>
+                        <ol>距离</ol>
+                    </li>
+                    <li>
+                    	<ol>2</ol>
+                        <ol>Grant Elemenary School</ol>
+                        <ol>小学</ol>
+                        <ol>k-5</ol>
+                        <ol>0.28km</ol>
+                    </li>
+                    <li>
+                    	<ol>5</ol>
+                        <ol>Sand Jose High School</ol>
+                        <ol>高中</ol>
+                        <ol>9-12</ol>
+                        <ol>1.95km</ol>
+                    </li>
+                    <li>
+                    	<ol>3</ol>
+                        <ol>Pater Burnett Middle School</ol>
+                        <ol>初中</ol>
+                        <ol>6-8</ol>
+                        <ol>1.00km</ol>
+                    </li>
+                    
+                 </div>
+			</dd>
+      
+		</dl>
+    </div>
+</div>
+<!-- 城市介绍 end  -->
+
+<!-- 社区信息  -->
+<div class="HWFCXQ_HWLC">
+<div class="HWFCXQ_fy"></div>
+<div class="HWFCXQ_fy_title" style="background:#182d5a">
+	社区信息
+	<div class="HWFCXQ_fy_cirl"></div>
+    <div class="HWFCXQ_fy_cirl2"></div>
+</div>
+<div class="HWFCXQ_fy_introduce">COMMUMITYINFORMATION</div>
+<div class="HWFCXQ_fynr"><img src="images/HWFCXQ_img8.png" /></div>
+</div>
+<!-- 社区信息 end  -->
+
+<!-- 社区人口数  -->
+<div class="HWFCXQ_sqrk"><img src="images/HWFCXQ_img9.jpg" /></div>
+<div class="HWFCXQ_sqrk"><img src="images/HWFCXQ_img10.jpg" /></div>
+<div class="HWFCXQ_fwdk">
+	<div class="HWFCXQ_fwdknr">
+    	<li>
+        	<ol>首付<span>479200$</span></ol>
+            <ol>百分比<span>40%</span></ol>
+         </li>
+        <li>贷款计划<span>30年固定利息</span></li>
+        <li>年利率<span>5.5%</span></li>
+        <li><input type="reset"  value="立即申请"/></li>
+    </div>
+</div>
+<!-- 社区人口数 end  -->
+
+
+
+<!-- 底部评估表 -->
+<div class="HL_pgb_bottom">
+	<div class="HL_pgb">
+	<div class="item">
+			<div class="filter-box2">
+				<div class="filter-text">
+					<input class="filter-title" type="text" readonly placeholder="移民留学国家" />
+					<i class="icon icon-filter-arrow"></i>
+				</div>
+				<select name="filter">
+                	<option value="-1"></option>
+					<option value="1">美国EB1A移民</option>
+					<option value="2">美国留学</option>
+					<option value="3">英国留学</option>
+					<option value="4">海外投资</option>
+					<option value="5">其它</option>
+				</select>
+			</div>
+	</div>
+    <div class="item" style="margin-left:20px">
+			<div class="filter-box3">
+				<div class="filter-text">
+					<input class="filter-title" type="text" readonly placeholder="预算" />
+					<i class="icon icon-filter-arrow"></i>
+				</div>
+				<select name="filter">
+                	<option value="-1"></option>
+					<option value="1">50万-100万</option>
+					<option value="2">100万-200万</option>
+					<option value="3">300万-500万</option>
+					<option value="4">500万-800万</option>
+					<option value="5">1000万以上</option>
+                    <option value="5">其他</option>
+				</select>
+              </div>
+	</div>
+    <div class="item" style="margin-left:20px">
+    	<input class="input" placeholder="联系方式" />
+    </div>
+    <div class="pgbButton" style="margin-left:20px">
+        <input type="reset"  value="立即评估"/>
+    </div>
+</div>
+
+</div>
+<!-- 底部评估表 end  -->
+
+
+<!-- 底部信息开始 -->
+<div class="HL_gj">
+	<div class="HL_gj_nr">
+    	<li>
+        	<a href="#"><p>美国移民</p></a>
+            <a href="#"><p>美国EB1A移民</p></a>
+        </li>
+        <li>
+        	<a href="#"><p>美国留学</p></a>
+            <a href="#"><p>美国高中</p></a>
+            <a href="#"><p>美国本科</p></a>
+            <a href="#"><p>美国研究生</p></a>
+        </li>
+        <li>
+        	<a href="#"><p>英国留学</p></a>
+            <a href="#"><p>英国高中</p></a>
+            <a href="#"><p>英国本科</p></a>
+            <a href="#"><p>英国研究生</p></a>
+        </li>
+        <li>
+        	<a href="#"><p>海外服务</p></a>
+            <a href="#"><p>安家置业</p></a>
+            <a href="#"><p>海外房产</p></a>
+            <a href="#"><p>财务规划</p></a>
+        </li>
+        <li>
+        	<a href="#"><p>关于移民</p></a>
+            <a href="#"><p>移民介绍</p></a>
+            <a href="#"><p>精英团队</p></a>
+            <a href="#"><p>活动讲座</p></a>
+        </li>
+        <li><img src="images/HL_logo.png" alt=""></li>
+    </div>
+</div>
+
+<div class="HL_bottom">
+	<div class="HL_bottom_nr">
+    	<li>
+        	<img src="images/HL_fwh.jpg" alt="">
+            <div class="HL_bottom_title">关注官方服务号</div>
+        </li>
+        <li>
+        	<img src="images/HL_dyh.jpg" alt="">
+            <div class="HL_bottom_title">关注官方订阅号</div>
+        </li>
+        <li>
+        	<p><span>VIP免费热线：400-888-8888</span></p>
+            <p>地址：南京市玄武区玄武湖10号</p>
+            <p>版权所有 ©2020 XXX <a href="http://www.adminbuy.cn" target="_blank">网站模板</a></p>
+            <p>XXX</p>
+        </li>
+    </div>
+</div>
+<!-- 底部信息结束 -->
+
+<script type="text/javascript" src="js/selectFilter.js"></script>
+<script type="text/javascript">
+			//本小插件支持移动端哦
+			
+			//这里是初始化
+			$('.filter-box').selectFilter({
+				callBack : function (val){
+					//返回选择的值
+					console.log(val+'-是返回的值')
+				}
+			});
+			$('.filter-box1').selectFilter({
+				callBack : function (val){
+					//返回选择的值
+					console.log(val+'-是返回的值')
+				}
+			});
+			$('.filter-box2').selectFilter({
+				callBack : function (val){
+					//返回选择的值
+					console.log(val+'-是返回的值')
+				}
+			});
+			$('.filter-box3').selectFilter({
+				callBack : function (val){
+					//返回选择的值
+					console.log(val+'-是返回的值')
+				}
+			});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+#page{
+    text-align: center;
+    padding:70px 0 100px;
+}
+div.zxf_pagediv{
+    text-align: center;
+    color: #999999;
+}
+div.zxf_pagediv a{
+    text-decoration: none;
+
+}
+div.zxf_pagediv span,div.zxf_pagediv a{
+    display: inline-block;
+    box-sizing: border-box;
+}
+span.disabled{
+    height: 35px;
+    width: 65px;
+    line-height: 35px;
+    background: #f2f2f2;
+    margin: 0 5px;
+}
+.zxfPagenum{
+    color: #999999;
+    background: #fbfbfb;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #cccccc;
+    margin: 0 5px;
+    display: inline-block;
+    text-align: center;
+
+}
+.nextbtn,.prebtn{
+    color: #999999;
+    background: #FFFFFF;
+    width: 65px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #dfdfdf;
+    display: inline-block;
+    text-align: center;
+    margin-right:5px;
+}
+.nextbtn{
+    margin-left:5px;
+}
+.zxfinput{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #dfdfdf;
+    margin: 0 12px;
+}
+.zxfokbtn{
+    width:50px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #dfdfdf;
+    cursor: pointer;
+    display: inline-block;
+    margin-left:10px;
+    background: #f5f5f5;
+}
+.nextpage{
+
+    margin: 0 5px;
+
+}
+.current{
+    color: #aa5500;
+    background: #feeba6;
+    border: 1px solid #f7bf4f;
+}

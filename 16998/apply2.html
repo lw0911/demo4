@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="renderer" content="webkit"/>
+        <title>申请向导 申请成为向导 XXX导游申请 XXX</title>
+        <link rel="shortcut icon" href="http://static.liantu.cn/image/public/favicon.ico"/>
+        <meta http-equiv="Cache-Control" content="no-transform"/>
+        <link rel="stylesheet" type="text/css" href="css/apply_common.css"/>
+        <link rel="stylesheet" type="text/css" href="css/apply_form.css"/>
+        <script type="text/javascript">
+            var TU = {
+                wwwUrl: 'http://www.liantu.cn',
+                myUrl: 'http://my.liantu.cn',
+                imageUrl: 'http://static.liantu.cn/image/',
+                domain: '',
+                today: '2016-03-13'
+            };
+            var isMobi = (function() {
+                var u = navigator.userAgent.toLowerCase();
+                return  u.indexOf("mobi") > 0 || u.indexOf("nexus 7") > 0 || u.indexOf("480") > 0;
+            })();
+            PL = {
+                'MID': 0}
+        </script>
+        <script type="text/javascript" id="js-prelogin" src="js/cas.js"></script></head>
+    <body>
+        <div class="header">
+            <div class="top-bg"></div>
+
+            <div class="mod-head">
+                <a href="/" class="logo"><img src="http://static.liantu.cn/image/public/logo.png" alt="XXX"/></a>
+
+                <div class="search">
+                    <div class="box">
+                        <div class="sbox">
+                            <input type="text" class="text" id="search_text" placeholder="输入想去的地方（例如：北京）"/>
+                            <div class="ico" id="search_ico"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="link"><a href="http://my.liantu.cn/merchant/apply/" target="_blank">申请成为向导</a></div>
+                <div class="login pl-login-info" id="pl-login-info">
+                    <div class="info">
+                        <a href="javascript:;" onclick="TU.login();">登录</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="warpper">
+            <div class="container">
+                <div class="mod-step">
+                    <ul>
+                        <li class="active">
+                            <span class="step-bg"></span>
+                            <span class="step">STEP01</span>
+                            <span>填写申请资料</span>
+                        </li>
+                        <li>
+                            <span class="step-bg"></span>
+                            <span class="step">STEP02</span>
+                            <span>提交审核</span>
+                        </li>
+                        <li>
+                            <span class="step-bg"></span>
+                            <span class="step">STEP03</span>
+                            <span>等待工作人员联系</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mod-form">
+                    <form name="apply" method="post" action="" class="apply"  enctype='multipart/form-data'>
+                        <div class="info-form">
+                            <div class="info">
+                                <label>基本信息</label>
+                                <p>我们会严格保护您的个人隐私<br>仅当客人付款后才能看到</p>
+                            </div>
+                            <div class="form">
+                                <ul>
+                                    <li>
+                                        <label class="title">姓名 *</label>
+                                        <input type="text" name="name" class="input-text " maxlength="4" value="">                            </li>
+                                    <li>
+                                        <label class="title">性别 *</label>
+                                        <input type="hidden" class="gender" name="gender" value="">
+                                        <span class="changes">
+                                            <i name="gender " data-gender="M" ></i>
+                                            男士
+                                        </span>
+                                        <span class="changes">
+                                            <i name="gender " data-gender="F" ></i>
+                                            女士
+                                        </span>
+                                    </li>
+                                    <li class="zindex6">
+                                        <label class="title">出生年月 *</label>
+                                        <input type="text" class="input-text birthday " name="birthday" id="birthday" readonly="readonly" data-value="" value="">
+                                        <label for="birthday" class="calendar"></label>
+                                    </li>
+                                    <li class="zindex5 city-now">
+                                        <label class="title">现居城市 *</label>
+                                        <div class="select-now " onselectstart="return false;">
+                                            <select name="province" class="province " id="pro-now" data-id="-1">                                        
+                                                <option value="-1">请选择</option>
+                                            </select>
+                                        </div>
+                                        <span class="area">省</span>
+                                        <div class="select-now " onselectstart="return false;">
+                                            <select name="domicile" class="domicile city " id="city-now" data-id="-1">
+                                                <option value="-1">请选择</option>
+                                            </select>
+                                        </div>
+                                        <span class="area">市</span>
+
+                                    </li>
+                                    <li class="zindex4 city-now">
+                                        <label class="title">
+                                            申请服务城市 *
+                                            <p>(填写你想申请哪座城市的当地向导)</p>
+                                        </label>
+                                        <div class="select-now " onselectstart="return false;">
+                                            <select name="serviceprovince" class="province" id="pro" data-id="-1">
+                                                <option value="-1">请选择</option>                                     
+                                            </select>
+                                        </div>
+                                        <span class="area">省</span>
+                                        <div class="select-now " onselectstart="return false;">
+                                            <select name="servicecity" class="domicile city" id="city" data-id="-1">
+                                                <option value="-1">请选择</option>
+                                            </select>
+                                        </div>
+                                        <span class="area">市</span>
+
+                                    </li>
+                                    <li>
+                                        <label class="title">
+                                            在该城市停留时间（年） *
+                                            <p>(填写数字即可)</p>
+                                        </label>
+                                        <input type="text" class="input-text " name="stayyear" maxlength="2" value="">                            </li>
+                                    <li class="zindex3">
+                                        <label class="title">目前身份 *</label>
+                                        <div class="now-status" onselectstart="return false;">
+                                            <select name="job" id="" class="status " data-id="">
+                                                <option value="-1">请选择</option>
+                                                <option value="1" >学生</option>
+                                                <option value="2" >上班族</option>
+                                                <option value="3" >专车司机</option>
+                                                <option value="4" >导游</option>
+                                                <option value="5" >自由职业者</option>
+                                                <option value="6" >当地居民</option>
+                                            </select>
+
+                                        </div>
+                                    </li>
+                                    <li class="last">
+                                        <label class="title">是否自己有车 *</label>
+                                        <input type="hidden" name="iscar" class="iscar" value="">
+                                        <span class="changes hascar"><i name="iscar " data-iscar="1" ></i>有</span>
+                                        <span class="changes nohascar"><i name="iscar " data-iscar="0" ></i>没有</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="car"  >
+                            <ul>
+                                <li class="zindex2">
+                                    <label class="title">车辆信息</label>
+                                    <span class="car-info brand">品牌：</span>
+                                    <div class="select-car " onselectstart="return false;">
+                                        <select name="brand_id" id="" class="car_brand " data-id="">
+                                            <option value="-1">请选择</option>
+                                        </select>
+                                    </div>
+                                    <span class="car-info">系列：</span>
+                                    <div class="select-car" onselectstart="return false;" >
+                                        <select name="serie" id="" class="serie " data-id="-1">
+                                            <option value="-1">请选择</option>
+                                        </select>
+                                    </div>
+                                    <span class="car-info">座位数：</span>
+                                    <div class="select-seat seat-div" onselectstart="return false;">
+                                        <select name="seating" id="" class="seat "  data-id="">
+                                            <option value="4" >4</option>
+                                            <option value="5" >5</option>
+                                            <option value="7" >7</option>
+                                            <option value="10" >10</option>
+                                            <option value="12" >12</option>
+                                            <option value="14" >14</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label class="title">上传汽车照片 *</label>
+                                    <p class="car-image car-changes p15 now-upload">
+                                        <i name="isupload" ></i>
+                                        现在就上传
+                                    </p>
+                                    <p class="car-image car-changes no-upload">
+                                        <i name="isupload" ></i>
+                                        现在没有照片，提交资料后补交
+                                    </p>
+                                </li>
+                                <li class="carupload-image" >
+                                    <label class="title">
+                                        请上传汽车照片 *
+                                        <p>(请上传 .jpg 或 .gif 或 .png 格式的图片，图片大小需小于2M)</p>
+                                    </label>
+                                    <div class="upload-text">
+                                        <label>点击上传</label>
+                                        <span class="add-image"><i></i></span>
+                                        <input type="file" class="file-text" name="carimg" accept=".png,.jpg,.gif,.JPG,.PNG,.GIF,.jpeg,.JPEG">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contact line">
+                            <div class="info">
+                                <label>联系方式</label>
+                                <p>我们会严格保护您的个人隐私<br>仅当客人付款后才能看到</p>
+                            </div>
+                            <div class="contact-main">
+                                <ul>
+                                    <li>
+                                        <label class="title">手机 *</label>
+                                        <input type="hidden" name="mobile" class="mobile" value="">
+                                        <input type="text" class="input-text" name="mobile_phone" maxlength="11" value="">
+                                    </li>
+                                    <li class="captcha">
+                                        <label class="title">验证码*</label>
+                                        <input type="text" class="input-text s-input" maxlength="4" name="captcha">
+                                        <a href="javascript:;"><img src="/i/captcha" alt="更换验证码" title="更换验证码"/></a>
+                                    </li>
+                                    <li>
+                                        <label class="title">短信验证码 *</label>
+                                        <input type="text" class="input-text s-input" maxlength="4" name="code">
+                                        <a href="javascript:;" class="s-btn">发送验证码</a>
+                                    </li>
+                                    <li>
+                                        <label class="title">QQ *</label>
+                                        <input type="text" class="input-text " name="qq" maxlength="10" value="">
+                                    </li>
+                                    <li>
+                                        <label class="title">微信 *</label>
+                                        <input type="text" class="input-text " name="wechat" value="">
+                                    </li>
+                                    <li>
+                                        <label class="title">E-Mail *</label>
+                                        <input type="text" class="input-text " name="email" value="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="btn">
+                            <input type="hidden" class="hidden" name="card_image" value="">
+                            <input value="提交审核" type="submit" name="submit">
+                        </div>
+
+                    </form>
+                    <form action="/merchant/apply/uploadtmp" enctype='multipart/form-data' name="card-form" target="card-ifm" class="cd-form" method="POST">
+                        <div class="id-card">
+                            <div class="card">
+                                <ul>
+                                    <li>
+                                        <label class="title">身份证认证照片 *</label>
+                                        <div class="upload-text ">
+                                            <label>点击上传(图片大小需小于2M)</label>                                     <span class="add-image"><i></i></span>
+                                            <input type="file" class="file-text card_image" name="card_image" accept=".png,.jpg,.gif,.JPG,.PNG,.GIF,.jpeg,.JPEG">
+                                            <iframe id="card-ifm" name="card-ifm" class="card-ifm"></iframe>
+
+                                        </div>
+                                        <p>(上传手持居民身份证 或 passport 的照片等，姓名和证件编号需清晰可见)<br> 不对外，只做平台留存</p>
+                                    </li>
+                                    <li>
+                                        <div class="card-image">
+                                            <img src="" alt="">
+                                        </div>
+                                        <i class="card-sample"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="footer">
+
+            <div class="mod-back">
+                <span class="qrcode">
+                    <span class="ico"></span>
+                    <img src="http://static.liantu.cn/image/public/qrcode.jpg" alt="XXX微信二维码" width="200" height="200"/>官方微信服务号
+                </span>
+                <a href="javascript:" class="code" id="code"></a>
+                <a href="/" class="customer"></a>
+                <a href="#" class="goback"></a>
+            </div>
+
+            <div class="mod-foot">
+                <div class="info">
+                    <div class="contact">
+                        <p class="logo">
+                            <a href="/"><img src="http://static.liantu.cn/image/public/logo.png" alt="XXX" width="136" height="50"/></a>
+                            <span>同行之路，有你才有意义</span>
+                        </p>
+
+                        <p class="tell">XXX</p>
+
+                        <p>24小时服务热线</p>
+                    </div>
+                    <dl>
+                        <dt>公司信息</dt>
+                        <dd><a href="http://www.liantu.cn/about/aboutus/" target="_blank"  rel="nofollow">关于我们</a></dd>
+                        <dd><a href="http://www.liantu.cn/about/copyrightstatement/" target="_blank"  rel="nofollow">免责声明</a></dd>
+                        <dd><a href="http://www.liantu.cn/about/contactus/" target="_blank"  rel="nofollow">联系我们</a></dd>
+                        <dd><a href="http://www.liantu.cn/about/joinus/" target="_blank" rel="nofollow">加入我们</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>帮助中心</dt>
+                        <dd><a href="http://www.liantu.cn/about/userprotocol/" target="_blank"  rel="nofollow">用户协议</a></dd>
+                        <dd><a href="http://www.liantu.cn/about/safetyassurance/" target="_blank"  rel="nofollow">安全保障</a></dd>
+                        <dd><a href="http://www.liantu.cn/about/bookingprocess/" target="_blank"  rel="nofollow">预定流程</a></dd>
+                    </dl>
+                    <dl class="app">
+                        <dt>发现</dt>
+                        <dd><a href="http://www.liantu.cn/app/" target="_blank">Android客户端</a></dd>
+                        <dd><a href="http://www.liantu.cn/app/" target="_blank">iOS客户端</a></dd>
+                        <dd><a href="http://www.liantu.cn/app/huilv/" target="_blank">XXX汇率</a></dd>
+                        <dd><a href="http://www.liantu.cn/app/tongyou/" target="_blank">XXX同游</a></dd>
+                    </dl>
+                </div>
+
+
+                <div class="copyright">
+                    
+                    Copyright &copy; 2020 All Rights Reserved <a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a> stat
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/jquery.seajs.js" id="seajsnode"></script>
+        <script type="text/javascript">
+            seajs.config({
+                base: 'http://static.liantu.cn/script/dist',
+                paths: {
+                    'modules': 'http://static.liantu.cn/script/dist'
+                },
+                map: [
+                    [/^(.*?\/script\/(?:src|dist)\/.*?\/.*?\.js$)(?:.*)$/i, '$1?version=v1']
+                ],
+                charset: 'utf-8'
+            });
+            seajs.use('modules/my/common/common.login.js');
+            seajs.use('modules/my/merchant/apply/form.js');
+        </script>
+
+
+</html>

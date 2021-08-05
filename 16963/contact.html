@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no"/>
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<title>XXX</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<header>
+	<div class="main">
+		<div class="logo left"><img src="./images/logo.png" alt=""> <span class="muen"></span></div>
+		<ul class="nav-list right">
+			<li><a href="index.html"><span>01</span>首页</a></li>		
+			<li><a href="service.html"><span>02</span>服务</a></li>	
+			<li><a href="news_com.html"><span>03</span>企业资讯</a></li>		
+			<li><a href="news_act.html"><span>04</span>企业活动</a></li>		
+			<li class="current"><a href="about.html"><span>05</span>关于我们</a></li>		
+			<li><a href="partner.html"><span>06</span>合作伙伴</a></li>	
+			<li><a href="javascript:;"><span>07</span>登录注册</a></li>				
+		</ul>	
+	</div>
+</header>
+<div class="navbg"></div>
+<section class="sbanner"></section>
+
+<section class="content">
+	<div class="main">
+		<ul class="nav">
+			<li>
+				<a href="about.html">公司介绍 <span>01</span></a>
+			</li>
+			<li>
+				<a href="news_com.html">最新动态 <span>02</span></a>
+			</li>
+			<li class="act">
+				<a href="contact.html">联系我们 <span>03</span></a>
+			</li>
+			<li>
+				<a href="recruit.html">人才招聘 <span>04</span></a>
+			</li>
+		</ul>
+		<div class="clear"></div>
+		<div class="contact">
+			<div class="map">
+				<!--<img src="./images/map.png" alt="">-->
+				<style type="text/css">
+				    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+				    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+				</style>
+				<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+
+			    <div id="dituContent"></div>
+
+				<script type="text/javascript">
+				    //创建和初始化地图函数：
+				    function initMap(){
+				        createMap();//创建地图
+				        setMapEvent();//设置地图事件
+				        addMapControl();//向地图添加控件
+				    }
+				    
+				    //创建地图函数：
+				    function createMap(){
+				        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+				        var point = new BMap.Point(121.834058,29.919471);//定义一个中心点坐标
+				        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+				        window.map = map;//将map变量存储在全局
+				    }
+				    
+				    //地图事件设置函数：
+				    function setMapEvent(){
+				        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+				        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+				        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+				        map.enableKeyboard();//启用键盘上下左右键移动地图
+				    }
+				    
+				    //地图控件添加函数：
+				    function addMapControl(){
+				        //向地图中添加缩放控件
+					var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+					map.addControl(ctrl_nav);
+				        //向地图中添加缩略图控件
+					var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+					map.addControl(ctrl_ove);
+				        //向地图中添加比例尺控件
+					var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+					map.addControl(ctrl_sca);
+				    }
+				    
+				    
+				    initMap();//创建和初始化地图
+				</script>
+			</div>
+			<div class="text">
+				<h4><span>客服热线</span></h4>
+				<h5>0516-88888888</h5>
+				<ul>
+					<li><img src="./images/icon6.png" alt="">邮编：310012</li>
+					<li><img src="./images/icon7.png" alt="">联系电话：0516-88888888</li>
+					<li><img src="./images/icon8.png" alt="">传真：0516-88888888</li>
+					<li><img src="./images/icon9.png" alt="">地址：徐州某某</li>
+				</ul>
+				<div class="wechat midle">
+					<img src="./images/wechat.png" alt="">
+					<p>微信公众号<br>扫一扫关注我们</p>
+				</div>
+				<h4><span>在线留言</span></h4>
+				<div class="form">
+					<input type="text" placeholder="姓名">
+					<input type="text" placeholder="联系方式">
+					<input type="text" placeholder="姓名">
+					<div class="input select">
+						<select id="s_province" name="s_province"></select>
+					    <select id="s_city" name="s_city" ></select>
+					    <select id="s_county" name="s_county"></select>
+					</div>
+					<input type="text" placeholder="车型">
+					<textarea name="`" id="" cols="30" rows="10" placeholder="需求描述"></textarea>
+					<a href="">在线提交</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<footer>
+	<div class="top"><a >T.O.P</a></div>
+	<div class="bot">
+		<div class="main">
+			<div class="l">
+				<div class="li3">
+					<h3>服务</h3>
+					<ul>
+						<li><a href="">车辆服务</a></li>
+						<li><a href="">维修及保养</a></li>
+						<li><a href="">安全管理</a></li>
+						<li><a href="">金融管理</a></li>
+						<li><a href="">会员服务</a></li>
+						<li><a href="">免费专区</a></li>
+						<li><a href="">驾驶员招聘与求职</a></li>
+					</ul>
+				</div>
+				<div class="li3">
+					<h3>企业资讯</h3>
+					<ul>
+						<li><a href="">物流信息</a></li>
+						<li><a href="">车队信息</a></li>
+						<li><a href="">行业规范</a></li>
+					</ul>
+					<h3>企业活动</h3>
+					<ul>
+						<li><a href=""></a></li>
+					</ul>
+				</div>
+				<div class="li3">
+					<h3>关于我们</h3>
+					<ul>
+						<li><a href="">公司介绍</a></li>
+						<li><a href="">最新动态</a></li>
+						<li><a href="">联系我们</a></li>
+						<li><a href="">人才招聘</a></li>
+					</ul>
+					<h3>合作伙伴</h3>
+					<ul>
+						<li><a href=""></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="r">
+				<div class="ri2 text">
+					<h3>联系我们</h3>
+					<ul>
+						<li>电话：0517-8888888</li>
+						<li>传真：0517-6666666</li>
+						<li>邮箱：1243282709@qq.com</li>
+						<li>地址：江苏省徐州市矿大科技园</li>
+					</ul>
+				</div>
+				<div class="ri2 img">
+					<img src="images/wechat.png" alt="">
+					<p>扫一扫关注我们</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main copy">
+		Copyright © 2018 XXX科技有限公司 
+	</div>
+</footer>
+<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+<script type="text/javascript">
+	$(function () {
+		$(window).scroll(function() {
+			var p = $(window).scrollTop();
+			if(p>100){
+				$('footer .top').show();
+			}else{	
+				$('footer .top').hide();
+			}	
+		});
+
+		$("footer .top").click(function() {
+		    $("html,body").animate({scrollTop:0}, 500);
+		}); 
+		var top = $('header').outerHeight();
+		var fot = $('footer').outerHeight();
+		var hei = $(window).height();
+		$('.content').css('min-height',hei-top-fot);
+		
+		$('header .muen').click(function () {
+		  	$('.navbg').toggle();
+		  	$('header').toggleClass('menu-is-open');
+		})
+		$('.navbg').click(function () {
+		  	$('.navbg').hide();
+		  	$('header').removeClass('menu-is-open');
+		})
+	})
+</script>
+
+<script type="text/javascript">
+	_init_area();
+</script>
+
+</body>
+</html>

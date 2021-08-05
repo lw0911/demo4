@@ -1,0 +1,736 @@
+<!doctype html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<title>某某家政-家电清洗</title>
+
+		<link rel="stylesheet" href="css/style.css">
+
+		<link rel="stylesheet" href="css/reset.css">
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+
+		<link rel="stylesheet" href="css/font-awesome.css">
+
+		<!--导航处城市切换插件-->
+
+		<link rel="stylesheet" href="css/cityPicker.css">
+
+		<!--下拉处城市切换插件-->
+
+		<link rel="stylesheet" href="css/city-picker.css">
+
+		<!--分页-->
+
+		<link rel="stylesheet" href="css/pagination.css" />
+
+		<!--lay组件-->
+
+		<link rel="stylesheet" href="css/layui.css">
+
+</head>
+
+
+
+<body>
+
+	<div class="top-nav">
+
+		<div class="container">
+
+			<ul class="login-left">
+
+				<li> <span>欢迎来到某某家政政！</span> </li>
+
+				<li> <a href="employer_login.html" id="employer-login">[雇主登录]</a> </li>
+
+				<li> <a href="hire_login.html" id="hire-login">[雇员登录]</a> </li>
+
+				<li> <a href="javascript:void(0)" class="logout">[退出登录]</a> </li>
+
+			</ul>
+
+			<ul class="top-right">
+
+				<li>
+
+					<a href="business_center.html" class="top-link">
+
+						<span class="fa fa-hand-o-right"></span>商务中心
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="http://www.fzjlbj.com/p_jjqjcontentgxh.aspx" class="top-link">
+
+						<span class="fa fa-diamond"></span>
+
+						个性化定制
+
+					</a>
+
+				</li>
+
+				<li style="display:none;">
+
+					<a href="javascript:void(0)" class="top-link phone-link">
+
+						<span class="fa fa-phone"></span>
+
+						4000-591-798
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="person-center.html" class="top-link">
+
+						<span class="fa fa-user"></span>
+
+						个人中心
+
+					</a>
+
+				</li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+
+
+	<div class="header">
+
+		<div class="container">
+
+			<div class="jw-logo">
+
+				<img src="images/logo2.png" alt="" onClick="location.href=&#39;index.html&#39;"/>
+
+				<div class="change-city">
+
+					<em>
+
+						<input type="text" id="cityChoice" value="福州" placeholder="请选择"/>
+
+					</em>
+
+					<p id="choose-city">[切换城市]</p>
+
+				</div>
+
+			</div>
+
+			<div class="header-right">
+
+				<ul class="header-nav">
+
+					<li class="nav-list"><a href="index.html">首页</a></li>
+
+					<li class="nav-list"><a href="baomu.html">保姆</a></li>
+
+					<li class="nav-list"><a href="yuesao.html">月嫂</a></li>
+
+					<li class="nav-list"><a href="linshi.html">临时钟点工</a></li>
+
+					<li class="nav-list"><a href="changqi.html">长期钟点工</a></li>
+
+					<li class="nav-list">
+
+						<a href="javascript:void(0)" class="nav-more">更多服务<span class="fa fa-angle-down"></span></a>
+
+						<ol class="hide-nav">
+
+							<li><a href="jiadian.html" class="active">家电清洗</a></li>
+
+							<li><a href="no_date.html">干洗</a></li>
+
+							<li><a href="no_date.html">搬家</a></li>
+
+							<li><a href="no_date.html">护工</a></li>
+
+							<li><a href="no_date.html">居家保养</a></li>
+
+							<li><a href="no_date.html">皮具护理</a></li>
+
+							<li><a href="no_date.html">居家便民</a></li>
+
+							<li><a href="no_date.html">家电维修</a></li>
+
+						</ol>
+
+					</li>
+
+				</ul>
+
+				<div class="drop-menu">
+
+					<span class="fa fa-navicon"></span>
+
+				</div>
+
+				<div class="search-right">
+
+					<ul class="three">
+
+						<li class="hir-name current">雇员名字</li>
+
+						<li class="phone">手机号码</li>
+
+						<li class="role">角色</li>
+
+					</ul>
+
+					<ul class="search-input">
+
+						<li>
+
+							<input type="text" placeholder="请输入雇员名称"/>
+
+							<span class="fa fa-search"></span>
+
+						</li>
+
+						<li>
+
+							<input type="text" placeholder="请输入手机号码"/>
+
+							<span class="fa fa-search"></span>
+
+						</li>
+
+						<li>
+
+							<input type="text" placeholder="请输入角色"/>
+
+							<span class="fa fa-search"></span>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="section-banner">
+
+		<img src="images/jiadian_bj.png" alt=""/>
+
+	</div>
+
+	<div class="section-mian">
+
+		<div class="container">
+
+			<h4>以下数据更新于48小时前，如有变动请以客服为准。谢谢！</h4>
+
+			<div class="choose-select">
+
+				<ul class="condition-choose">
+
+					<li class="col-md-4">
+
+						<span class="skill-tit">地点:</span>
+
+						<div id="distpicker">
+
+							<input id="city-picker3" class="form-control input" readonly type="text" value="" data-toggle="city-picker">
+
+						</div>
+
+						<span class="fa fa-angle-down down"></span>
+
+						<div class="clearfix"></div>
+
+					</li>
+
+					<li class="col-md-4">
+
+						<span class="skill-tit">时间:</span>
+
+					  	<input class="layui-input time-input input" placeholder="" type="text"  value="请选择服务时间" onclick="layui.laydate({elem: this, festival: true})">
+
+						<span class="fa fa-angle-down down"></span>
+
+					</li>
+
+					<li class="col-md-4">
+
+						<span class="skill-tit">能力:</span>
+
+						<select class="base-select">
+
+							<option value="">==请选择==</option>
+
+							<option value="做家务">做家务</option>
+
+							<option value="辅助带孩子">辅助带孩子</option>
+
+							<option value="全职带孩子">全职带孩子</option>
+
+							<option value="照顾半自理老人">照顾半自理老人</option>
+
+							<option value="照顾不能自理老人">照顾不能自理老人</option>
+
+							<option value="照顾病人">照顾病人</option>
+
+							<option value="饲养宠物">饲养宠物</option>
+
+							<option value="公司做饭">公司做饭</option>
+
+						</select>
+
+						<span class="fa fa-angle-down down"></span>
+
+					</li>
+
+					<li class="col-md-4">
+
+						<span class="skill-tit">排序:</span>
+
+						<select class="base-select">
+
+							<option value="">==请选择==</option>
+
+							<option value="不限">等级升序</option>
+
+							<option value="等级降序">等级降序</option>
+
+							<option value="信用值升序">信用值升序</option>
+
+							<option value="信用值降岁">信用值降序</option>
+
+							<option value="更新时间升序">更新时间升序</option>
+
+							<option value="更新时间降序">更新时间降序</option>
+
+						</select>
+
+						<span class="fa fa-angle-down down"></span>
+
+					</li>
+
+					<div class="clearfix"></div>
+
+				</ul>
+
+				<div class="choose-confirm">
+
+					<div class="container">
+
+						<button class="choose-btn">确认</button>
+
+					</div>
+
+				</div>
+
+				<div class="clearfix"></div>
+
+			</div>
+
+			<div class="person-info">
+
+				<ul class="person-list">
+
+					<li class="person-item col-md-4">
+
+						<a href="book_info.html" class="person-link">
+
+							<img src="images/linshi_1.jpg" alt=""/>
+
+							<dl>
+
+								<dt class="user-name">张师傅</dt>
+
+								<dd>薪资：3000元/月</dd>
+
+								<dd class="state">状态：忙碌</dd>
+
+								<dd>等级：1</dd>
+
+								<dd>好评率：0%</dd>
+
+								<dd>年龄：48岁</dd>
+
+								<dd>籍贯：福建</dd>
+
+								<dd>工作经验：2年</dd>
+
+								<dd>信用值：300</dd>
+
+								<dd class="last-child">能力：做家务、照顾能自理的老人</dd>
+
+							</dl>
+
+						</a>
+
+					</li>
+
+					<li class="person-item col-md-4">
+
+						<a href="book_info.html" class="person-link">
+
+							<img src="images/linshi_2.jpg" alt=""/>
+
+							<dl>
+
+								<dt class="user-name">连师傅</dt>
+
+								<dd>薪资：3000元/月</dd>
+
+								<dd class="state">状态：空闲</dd>
+
+								<dd>等级：1</dd>
+
+								<dd>好评率：0%</dd>
+
+								<dd>年龄：48岁</dd>
+
+								<dd>籍贯：福建</dd>
+
+								<dd>工作经验：2年</dd>
+
+								<dd>信用值：300</dd>
+
+								<dd class="last-child">能力：做家务、照顾能自理的老人</dd>
+
+							</dl>
+
+						</a>
+
+					</li>
+
+					<li class="person-item col-md-4">
+
+						<a href="book_info.html" class="person-link">
+
+							<img src="images/linshi_3.jpg" alt=""/>
+
+							<dl>
+
+								<dt class="user-name">李师傅</dt>
+
+								<dd>薪资：3000元/月</dd>
+
+								<dd class="state">状态：工作中</dd>
+
+								<dd>等级：1</dd>
+
+								<dd>好评率：0%</dd>
+
+								<dd>年龄：48岁</dd>
+
+								<dd>籍贯：福建</dd>
+
+								<dd>工作经验：2年</dd>
+
+								<dd>信用值：300</dd>
+
+								<dd class="last-child">能力：做家务、照顾能自理的老人</dd>
+
+							</dl>
+
+						</a>
+
+					</li>
+
+					<div class="clearfix"></div>
+
+				</ul>
+
+			</div>
+
+			<div class="center-box">
+
+				<div class="M-box2"></div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="footer">
+
+		<div class="container">
+
+			<div class="footer-text" id="footer-text">
+
+				<ul class="other-contact text-float text-ul">
+
+					<h5>部门客服</h5>
+
+					<li><a href="service_alert.html">鼓楼区客服</a></li>
+
+					<li><a href="service_alert.html">晋安区客服</a></li>
+
+					<li><a href="service_alert.html">月嫂部客服</a></li>
+
+					<li><a href="service_alert.html">保姆部客服</a></li>
+
+					<li><a href="service_alert.html">钟点工客服</a></li>
+
+				</ul>
+
+				<ul class="friendly-link text-ul" >
+
+					<h5>友情链接</h5>
+
+					<li><a href="http://www.968jw.com" target="_blank">福建家政</a></li>
+
+					<li><a href="http://www.fzjlbj.com" target="_blank">福州洁丽保洁</a></li>
+
+					<li><a href="http://www.968jw.com" target="_blank">福州金牌月嫂</a></li>
+
+					<li><a href="http://www.fzjlbj.com" target="_blank">福州家政公司</a></li>
+
+				</ul>
+
+				<ul class="contact-us text-ul">
+
+					<h5>联系我们</h5>
+
+					<li>客服热线：XXX</li>
+
+					<li>总公司地址：XXX　<br/>联系电话： XXX</li>
+
+					<li>南平分公司地址：XXX　<br/>联系电话:XXX</li>
+
+				</ul>
+
+			</div>
+
+			<div class="bottom-code">
+
+				<img src="images/code.jpg" alt=""/>
+
+				<p>扫码关注某某家政公众号，更多好礼期待你的关注</p>
+
+			</div>
+
+		</div>	
+
+	</div>
+
+	<p class="address">家政综合信息服务平台 XXX分享 XXX</p>
+
+	<div class="fix-service">
+
+		<ul class="servise-list">
+
+			<li class="weixin-item fix-item">
+
+				<span class="weixin-code code"></span>
+
+				<div class="icon">
+
+					<img src="images/weixin.png" alt="" class="weixin"/>
+
+				</div>
+
+			</li>
+
+			<li class="weibo-item fix-item">
+
+				<span class="weibo-code code"></span>
+
+				<div class="icon">
+
+					<img src="images/weibo.png" alt="" class="weibo"/>
+
+				</div>
+
+			</li>
+
+			<li class="service-item fix-item">
+
+				<span class="service-code code"></span>
+
+				<div class="icon">
+
+					<img src="images/qq.png" alt="" class="service"/>
+
+				</div>
+
+			</li>
+
+			<li id="btn" class="top-item fix-item">
+
+				<div class="icon">
+
+					<img src="images/top.png" alt="" class="top"/>
+
+				</div>
+
+			</li>
+
+		</ul>
+
+	</div>
+
+	<script src="js/jquery-2.0.0.min.js"></script>
+
+	<script src="js/bootstrap.min.js"></script>
+
+	<!--导航城市选择-->
+
+	<script src="js/cityData.js"></script>
+
+	<script src="js/cityPicker.js"></script>
+
+	<!--下拉城市选择-->
+
+	<script src="js/city-picker.data.js"></script>
+
+	<script src="js/city-picker.js"></script>
+
+	<!--分页-->
+
+	<script src="js/jquery.pagination.js"></script>
+
+	<!--日期插件-->
+
+	<script src="js/layui.js"></script>
+
+	<script src="js/laydate.js"></script>
+
+	<script>
+
+	$(".search-input li").hide().first().show();
+
+	$(document).ready(function(e) {
+
+		$(".nav-more").click(function(){
+
+			$(".hide-nav").slideToggle();	
+
+		});
+
+		$(".drop-menu").click(function(){
+
+			$(".header-nav").slideToggle();	
+
+		});
+
+		$(".three li").click(function(){
+
+			$(this).addClass("current").siblings().removeClass("current");
+
+			$(".search-input li").hide().eq($(this).index()).show();
+
+		});
+
+		//返回顶部
+
+		$(".top-item").click(function(){
+
+			$('body,html').animate({ scrollTop: 0 }, 500);
+
+			return false;
+
+		});
+
+	});
+
+	</script>
+
+	<script>
+
+		var cityPicker = new IIInsomniaCityPicker({
+
+			data: cityData,
+
+			target: '#cityChoice',
+
+			valType: 'k-v',
+
+			hideCityInput: '#city',
+
+			hideProvinceInput: '#province',
+
+			callback: function(city_id){
+
+			}
+
+		});
+
+		cityPicker.init();
+
+	</script>
+
+	<script>
+
+		$(function(){
+
+			$('.M-box').pagination({
+
+				callback:function(api){
+
+					$('.now').text(api.getCurrent());
+
+				}
+
+			},function(api){
+
+				$('.now').text(api.getCurrent());
+
+			});
+
+	
+
+			$('.M-box2').pagination({
+
+				coping:true,
+
+				homePage:'首页',
+
+				endPage:'末页',
+
+				prevContent:'上页',
+
+				nextContent:'下页'
+
+			});
+
+		});
+
+	</script>
+
+	<!--<script>
+
+	layui.use('layer', function(){
+
+	  var $ = layui.jquery, layer = layui.layer;
+
+	  layui.use('laydate', function(){
+
+	 	 var laydate = layui.laydate;
+
+		});
+
+	</script> -->
+
+</body>
+
+</html>
+

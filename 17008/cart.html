@@ -1,0 +1,618 @@
+<html>
+ <head> 
+  <title>我的购物车</title> 
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" /> 
+  <meta content="培训课程分类,培训视频,管理培训视频,企业培训视频,网络商学院,XXX" name="keywords" /> 
+  <meta content="XXX全部视频课程分类,为您提供详细培训课程分类.选培训课程看分类,让您找培训课程更省时,方便." name="description" /> 
+  <meta content="XXX" name="author" /> 
+  <!--CSS文件--> 
+  <link href="css/global_cart.css" type="text/css" rel="stylesheet" /> 
+  <link href="css/global_buy.css" type="text/css" rel="stylesheet" /> 
+  <link href="css/buy_cart.css" type="text/css" rel="stylesheet" /> 
+
+
+  <script type="text/javascript" async="" src="js/adw.js"></script> 
+  <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script> 
+  <script src="js/layer.min.js" type="text/javascript"></script> 
+  <link type="text/css" rel="stylesheet" href="css/layer.css" id="skinlayercss" /> 
+  <script charset="utf-8" src="js/onyx-full.js" type="text/javascript"></script> 
+  
+  <script src="js/jquery.cookie.js" type="text/javascript"></script> 
+  <script type="text/javascript">
+        
+        $(document).ready(function () {
+            $('#btnReturn').click(function () {
+                window.location.href = "http://www.yingsheng.com/college/";
+            });
+
+            $('#btnGoPay').click(function () {
+                layer.confirm("确认要提交订单么？", function (index) {
+                    window.location.href = "cart_pay.html?src=1&phone=" + $("#mobile").val();
+                }, "提示", function (index) {
+                    layer.close(index);
+                });
+            });
+
+            $("#aFavSel").click(function () {
+                var list = $('input:checkbox[name=chb_item][data-type=A]:checked');
+                var iCount = 0;
+                if (list.length > 0) {
+                    list.each(function (i) {
+                        var $this = $(this);
+                        favorite.add($this.attr("data-type"), $this.attr("id"), $this.attr("data-title"), function () {
+                            if (this.result == "1") {
+                                iCount++;
+                            }
+                            if ((i + 1) == list.length) {
+                                if (iCount == list.length) {
+                                    alert("收藏成功");
+                                }
+                                else {
+                                    if (list.length > 1 && iCount > 0) {
+                                        alert("部分收藏失败");
+                                    }
+                                    else {
+                                        alert("收藏失败");
+                                    }
+                                }
+                            }
+                        });
+                    });
+                }
+                else {
+                    alert("请选中视频或系统班进行收藏");
+                }
+            });
+
+            $('.add_fav').click(function () {
+                favorite.add($(this).attr("data-type"), $(this).attr("data-id"), $(this).attr("data-title"), function () {
+                    if (this.result == "1") {
+                        alert("收藏成功");
+                    }
+                    else {
+                        alert("收藏失败");
+                    }
+                });
+            });
+
+            $("#inChkAll").click(function () {
+                $('input:checkbox[name=chb_item]').prop("checked", $(this).prop("checked"));
+                $("#aChkAll").prop("checked", $(this).prop("checked"));
+            });
+
+            $("#aChkAll").click(function () {
+                $('input:checkbox[name=chb_item]').prop("checked", $(this).prop("checked"));
+                $("#inChkAll").prop("checked", $(this).prop("checked"));
+            });
+
+            $("#aDelSel").click(function () {
+                var list = $('input:checkbox[name=chb_item]');
+                var ids = "";
+                list.each(function (i) {
+                    if ($(this).prop("checked")) {
+                        var id = $(this).attr("attr-val");
+                        var itemid = $(this).attr("attr-itemid");
+                        var type = $(this).attr("data-type");
+                        //console.log(id+"|"+ itemid + "|"+ type)
+                        ids += id + ",";
+                        deleteCart(id, itemid, type);
+                        //ys.ShoppingCart.remove(i);
+                    }
+                });
+                
+                //window.location.href = window.location.href;
+            });
+            //
+
+            /************* start plus subtract*******************/
+
+            $(".spanPlus").click(function () {
+                var $count = $(this).prev();
+                var count = $count.val();
+                var type = /^[0-9]*[1-9][0-9]*$/;
+                var re = new RegExp(type);
+                if (count.match(re) == null) {
+                    count = 1;
+                }
+                else {
+                    count++;
+                }
+
+                $count.val(count);
+
+                //var itemId = $(this).attr("data-value");
+                //setCartCookie(itemId, count);
+                //calcCartMoney();
+
+                //新购物车
+                var id = $(this).attr("attr-val");
+                updateshopcart(id, count);
+            });
+
+            $(".spanSubtract").click(function () {
+                var $count = $(this).next();
+                var count = $count.val();
+                var type = /^[0-9]*[1-9][0-9]*$/;
+                var re = new RegExp(type);
+                if (count.match(re) == null) {
+                    count = 1;
+                }
+                else {
+                    if (count > 1)
+                        count--;
+                }
+                $count.val(count);
+
+                //老购物车
+                //var itemId = $(this).attr("data-value");
+                //setCartCookie(itemId, count);
+                //calcCartMoney();
+
+                //新购物车
+                var id = $(this).attr("attr-val");
+                updateshopcart(id, count);
+            });
+            //更新购物车数量
+            function updateshopcart(id,count) {
+                $.ajax({
+                    type: "get",
+                    url: "/Order/UpdateShopCart",
+                    data: "id=" + id + "&count=" + count + "",
+                    dataType: "json",
+                    success: function (json) {
+                        calcCartMoney();
+                    }, error: function () { alert("系统错误"); }
+                });
+            }
+            //删除购物车
+            $(".del").click(function () {
+                var id = $(this).attr("attr-val");
+                var itemid = $(this).attr("attr-itemid");
+                var type = $(this).attr("attr-type");
+                deleteCart(id, itemid, type);
+            });
+            function deleteCart(id, itemid, type) {
+                $.ajax({
+                    type: "get",
+                    url: "/Order/DeleteShopCart",
+                    data: "id=" + id + "&itemid="+ itemid +"&type="+ type +"",
+                    dataType: "json",
+                    success: function (json) {
+                        if (json.result == 1) {
+                            var str = id.split(',');
+                            for (var i=0; i < str.length; i++) {
+                                $("#cart_" + str[i]).hide(1000);
+                            }
+                            if (type == "D") {
+                                $('#cartTotalMoney').html(0);
+                                $('#cartItemCount').html(0);
+                            } else {
+                                calcCartMoney();
+                            }
+
+                            var item = eval('(' + json.data + ')');
+                            //console.log(item);
+                            //console.log(json.userid + "|" + item.id + "|" + item.title + "|" + item.price + "|" + $("#num_" + id).val() + "|" + item.classid + "|" + item.classname + "");
+                            //易博js代码
+                            _adwq.push(['_setDataType', 'delete']);
+                            _adwq.push(['_setCustomer',
+                                '' + json.userid + ''   //当前登陆用户ID或用户名，未登录情况下传空字符串
+                            ]);
+                            _adwq.push(['_setItem',
+                                '' + item.id + '',    // 商品编号  - 必填项
+                                '' + item.title + '',       // 商品名称  - 必填项
+                                '' + item.price + '',    // 商品金额  - 必填项
+                                '' + $("#num_" + id).val() + '',        // 商品数量  - 必填项
+                                '' + item.classid + '',     // 商品分类编号  - 必填项
+                                '' + item.classname + ''        // 商品分类名称  - 必填项
+                            ]);
+                            _adwq.push(['_trackTrans']);
+                        } else if (json.result == -1) {
+                            alert("系统错误");
+                        } else {
+                            alert("系统错误");
+                        }
+                    }, error: function () { alert("系统错误"); }
+                });
+            }
+            //清空购物车
+            $("#clearcart").click(function () {
+                var list = $('input:checkbox[name=chb_item]');
+                var ids = "";
+                list.each(function (i) {
+                    var id = $(this).attr("attr-val");
+                    var itemid = $(this).attr("attr-itemid");
+                    var type = $(this).attr("data-type");
+                    ids += id + ",";
+                    deleteCart(id, itemid, type);
+                });               
+            });
+
+            /************* end plus subtract*********************/
+
+            var Favorite = {
+                createFavorite: function () {
+                    var result = {};
+                    result.result = 1;
+                    result.msg = "发送请求成功";
+
+                    var favorite = {};
+                    favorite.add = function (objType, courseId, title, callBack) {
+                        var data = {};
+                        data.id = courseId;
+                        data.type = objType;
+                        data.title = title;
+                        if (!data.type) { layer.msg("收藏类型不能为空"); return false; }
+                        if (!data.id) { layer.msg("课程ID不能为空"); return false; }
+                        if (!data.title) { layer.msg("标题不能为空"); return false; }
+
+                        $.ajax({
+                            url: "/order/addfav",
+                            data: data,
+                            type: "post",
+                            dataType: "json",
+                            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                                result.result = 0;
+                                result.msg = "发送请求发生错误";
+                                if ($.isFunction(callBack)) callBack.call(result, XMLHttpRequest);
+                            },
+                            success: function (d) {
+                                if (d.result == 0 && d.msg) {
+                                    //layer.msg(d.msg, 2, 8);
+                                }
+                                else {
+                                    //layer.msg("收藏成功", 2, 9);
+                                }
+                                if ($.isFunction(callBack)) callBack.call(result, d);
+                                return false;
+                            }
+                        });
+                    };
+                    favorite.del = function (ids) {
+                        var data = {};
+                        data.ids = ids;
+
+                        $.ajax({
+                            url: "/order/deletefav",
+                            data: data,
+                            type: "post",
+                            dataType: "json",
+                            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                                result.result = 0;
+                                result.msg = "发送请求发生错误";
+                                if ($.isFunction(callBack)) callBack.call(result, XMLHttpRequest);
+                            },
+                            success: function (d) {
+                                if (d.result == 0 && d.msg) {
+                                    layer.msg(d.msg, 2, 8);
+                                }
+                                else {
+                                    layer.msg("收藏成功", 2, 9);
+                                }
+                                if ($.isFunction(callBack)) callBack.call(result, d);
+                                return false;
+                            }
+                        });
+                    };
+                    return favorite;
+                }
+            };
+
+            var favorite = Favorite.createFavorite();
+
+            function setCartCookie(id, n) {
+                var item = ys.ShoppingCart.getByItemId(id);
+                console.log("获取cartItem:itemId=" + id);
+                if (item) {
+                    item.num = n;
+                }
+                ys.ShoppingCart.update(item, false);
+                console.log("更新cartItem");
+            }
+
+            function calcCartMoney() {
+                $.ajax({
+                    type: "GET",
+                    url: "/order/CalcPayMoney",
+                    data: {},
+                    dataType: "json",
+                    success: function (d) {
+                        if (d.data.result == 1) {
+                            //$('#cartRealTotal').html(d.realTotal);
+                            //begin 活动减价
+                            var isexpire = $("#isexpire").val();
+                            console.log(hasCard);
+                            if (isexpire == "True" && !hasCard) {
+                                if (d.data.total < 100) {
+                                    $("#dicprice").html(0);//小于100折扣为0
+                                } else {
+                                    $("#dicprice").html(-(Math.floor(d.data.total / 100) * 25)); //大于100算出折扣价，每满100-25
+                                }
+                                $("#totalprice").html(d.data.total); //原价
+                                d.data.total = d.data.total - (Math.floor(d.data.total / 100) * 25); //应付价
+                            }
+                            //end
+                            $('#cartTotalMoney').html(d.data.total);
+                            $('#cartItemCount').html(d.data.itemCount);
+                        }
+                        else {
+                            $('#cartTotalMoney').html(0);
+                            $('#cartItemCount').html(0);
+                        }
+                    }
+                });
+            }
+
+        });
+
+
+        
+    </script> 
+  <style>
+        .buy_box .sub_price .s6 {
+            color: #333333;
+            font-size: 20px;
+            margin-left: 10px;
+        }
+        .sp_w {
+            width:100px;
+        }
+    </style> 
+
+  <link rel="stylesheet" href="css/blue.css?4.1.7" /> 
+  <style>* { margin:0; padding:0;}.global_feedback {width: 530px;display: none;background: #fff;z-index: 999;}.global_feedback table {width: 530px;text-align: center;font-size: 25px;}.global_feedback .h_20 {height: 20px;}.global_feedback table tr {height: 50px;}.global_feedback .t_title {height: 40px;}.global_feedback .tips {height: 30px;color: #ff0000;font-size: 12px;text-align: left;}.global_feedback .t_left {text-align: right;font-size: 14px;}.global_feedback .t_right {text-align: left;font-size: 14px;}.global_feedback .t_right select {height:30px;}.global_feedback .t_right input, .global_feedback textarea {width: 310px;border: 1px solid #dddddd;padding: 10px;height: 14px;border-radius: 3px;}.global_feedback textarea {line-height: 20px;height: 116px;margin-top: 10px;}.global_feedback .sub_btn {background: #288ce6;font-size: 20px;color: #fff;padding: 10px 32px;border-radius: 5px;border: none;cursor: pointer;margin: 20px;}</style> 
+ </head> 
+ <body> 
+  <div style="position: absolute; left: -9999em; top: 177px; display: block; width: auto; z-index: 1987;" class=" aui_state_focus"> 
+   <div class="aui_outer"> 
+    <table class="aui_border"> 
+     <tbody> 
+      <tr> 
+       <td class="aui_nw"></td> 
+       <td class="aui_n"></td> 
+       <td class="aui_ne"></td> 
+      </tr> 
+      <tr> 
+       <td class="aui_w"></td> 
+       <td class="aui_c"> 
+        <div class="aui_inner"> 
+         <table class="aui_dialog"> 
+          <tbody> 
+           <tr> 
+            <td class="aui_header" colspan="2"> 
+             <div class="aui_titleBar"> 
+              <div class="aui_title" style="cursor: move; display: block;">
+                消息 
+              </div> 
+              <a href="javascript:/*artDialog*/;" class="aui_close" style="display: block;">&times;</a> 
+             </div></td> 
+           </tr> 
+           <tr> 
+            <td class="aui_icon" style="display: none;"> 
+             <div class="aui_iconBg" style="background: transparent none repeat scroll 0% 0%;"></div></td> 
+            <td class="aui_main" style="width: auto; height: auto;"> 
+             <div class="aui_content" style="padding: 20px 25px;"> 
+              <div class="aui_loading"> 
+               <span>loading..</span> 
+              </div> 
+             </div></td> 
+           </tr> 
+           <tr> 
+            <td class="aui_footer" colspan="2"> 
+             <div class="aui_buttons" style="display: none;"></div></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div></td> 
+       <td class="aui_e"></td> 
+      </tr> 
+      <tr> 
+       <td class="aui_sw"></td> 
+       <td class="aui_s"></td> 
+       <td class="aui_se" style="cursor: se-resize;"></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </div> 
+<!--  <script src="js/YS.SSO.VS.Login.js"></script> -->
+  <div style="background-color: rgb(40, 140, 230); height: auto;" id="YingShengSSOTopDIV"> 
+   <div class="global_top" id="yS_tOp_LoGinbaR"> 
+    <ul> 
+     <li class="top_logo"> <a href="index.html"><img src="images/global_logo.png" alt="XXX" /></a></li> 
+     <li class="login _sso" style="display: none;"><a onclick="OpenLoginOrRegBox('f','1')" href="javascript:void(0)" title="登录" rel="nofollow">登录</a></li> 
+     <li class="reg _sso" style="display: none;"><a onclick="OpenLoginOrRegBox('f','0')" href="javascript:void(0)" title="注册" rel="nofollow">注册</a></li> 
+     <li style="display: list-item;" class="msg" id="ys_top_Msg"><a class="gradient_all msg_bg" href="javascript:void(0)"><i class="i1"><i class="i2" style="display:none" id="ys_top_haveMsgIcon"></i></i></a> 
+      <div style="display:none;" class="msg_div"> 
+       <dl> 
+        <dd> 
+         <a class="gradient_all" href="#">课程通知<span id="ys_top_msgType_2">0</span></a> 
+        </dd> 
+        <dd> 
+         <a class="gradient_all" href="#">交易通知<span id="ys_top_msgType_3">0</span></a> 
+        </dd> 
+        <dd> 
+         <a class="gradient_all" href="#">我的评论<span id="ys_top_msgType_4">0</span></a> 
+        </dd> 
+        <dd> 
+         <a class="gradient_all" href="#">系统消息<span id="ys_top_msgType_1">0</span></a> 
+        </dd> 
+       </dl> 
+      </div> </li> 
+     <li class="line"></li> 
+     <li class="name global_top_LoginInfo" style="display: list-item;"><a id="global_top_UserName" href="javascript:void()" title="用户名" rel="nofollow">adou416148489<i></i><br /><span class="s1">Y币：0</span></a> 
+      <div style="display: none; " class="member_div"> 
+       <dl> 
+        <dd> 
+         <a href="http://i.yingsheng.com/" title="个人中心" target="_blank">个人中心</a> 
+        </dd> 
+        <dd> 
+         <a href="http://order.yingsheng.com/Order?source=1" title="购 物 车" target="_blank">购 物 车</a> 
+        </dd> 
+        <dd> 
+         <a href="http://i.yingsheng.com/courselist-1.html" title="已 购 买" target="_blank">已 购 买</a> 
+        </dd> 
+        <dd> 
+         <a href="http://i.yingsheng.com/collect.html" title="我的收藏" target="_blank">我的收藏</a> 
+        </dd> 
+        <dd> 
+         <a href="http://i.yingsheng.com/orderlist-1.html" title="我的订单" target="_blank">我的订单</a> 
+        </dd> 
+        <dd> 
+         <a href="http://i.yingsheng.com/courseview.html" title="观看历史" target="_blank">观看历史</a> 
+        </dd> 
+        <dd> 
+         <a href="http://zone.yingsheng.com/" title="我的空间" target="_blank" style="display: none; " id="ys_top_dl_dd_LinkZone">我的空间</a> 
+        </dd> 
+        <dd> 
+         <a onclick="return confirm('确认要退出?');" rel="nofollow" href="http://sso.yingsheng.com/logout.aspx?from=http%3a%2f%2fwww.yingsheng.com" title="退出" id="action_logout">退出</a> 
+        </dd> 
+       </dl> 
+      </div> </li> 
+     <li class="avatar global_top_LoginInfo" style="display: list-item;"> <a target="_blank" href="member_index.html" ><img class="m1" src="images/101925_100_100.jpg?r=0.6502539684544028" alt="头像" id="global_top_UserFace" /></a> <img style="display:none;" class="m2" src="images/vip_ioc.png" alt="vip" /> </li> 
+     <li class="reg_gift" id="top_btn_RegGift" style="display: none;"><a href="http://www.yingsheng.com/zhuanti-141103.html" title="注册有礼" target="_blank" rel="nofollow">注册有礼</a></li> 
+     <li class="app_down"><a target="_blank" rel="nofollow" href="http://www.yingsheng.com/app">手机APP</a></li> 
+    </ul> 
+   </div> 
+  </div> 
+  <div class="buy_state"> 
+   <div class="buy_logo"> 
+    <a href="index.html"> <img src="images/logo.jpg" alt="logo" /></a> 
+   </div> 
+   <div class="state_1"></div> 
+  </div> 
+  <div class="clear"></div> 
+  <div class="buy_box"> 
+   <div class="list_title"> 
+    <span></span>购物车 
+   </div> 
+   <div class="clear"></div> 
+   <table cellspacing="0" cellpadding="0" border="0" class="cart_list"> 
+    <tbody> 
+     <tr> 
+      <th style="width: 50px;" class="t1"> <input type="checkbox" id="inChkAll" />全选</th> 
+      <th style="width: 380px;">课程名称</th> 
+      <th style="width: 94px;">产品类型</th> 
+      <th style="width: 112px;">原价(元)</th> 
+      <th style="width: 115px;">现价(元)</th> 
+      <th style="width: 89px;">数量</th> 
+      <th style="width: 96px;">操作</th> 
+     </tr> 
+     <tr id="cart_6756"> 
+      <td class="t1"> <input type="checkbox" attr-itemid="1413" attr-val="6756" data-type="A" data-title="软文营销如何创造8亿营销奇迹（10集）" name="chb_item" id="1413" /></td> 
+      <td class="t2"> <img width="60" height="48" src="images/1413_353_279.jpg" /> 
+       <div> 
+        <a target="_blank" href="http://www.yingsheng.com/course-1413.html"> <span class="name">软文营销如何创造8亿营销奇迹（10集）</span></a> 
+        <span class="s1">课程</span> 
+       </div> </td> 
+      <td class="t3"> 视频 </td> 
+      <td class="t3"> 
+       <del>
+         68 
+       </del></td> 
+      <td class="t4">68</td> 
+      <td class="t4"> 
+       <div class="quy"> 
+        <span attr-val="6756" data-value="1413" class="spanSubtract"></span> 
+        <input type="text" readonly="readonly" value="2" class="cartNum" id="num_6756" /> 
+        <span attr-val="6756" data-value="1413" class="spanPlus"></span> 
+       </div> </td> 
+      <td class="t5"> <a href="javascript:void(0);" data-type="A" data-title="软文营销如何创造8亿营销奇迹（10集）" data-id="1413" class="add_fav">收藏</a> <br /> <a class="del" attr-type="A" attr-itemid="1413" attr-val="6756" href="javascript:">删除</a></td> 
+     </tr> 
+     <tr> 
+      <td style="height: 10px; padding: 0;"></td> 
+     </tr> 
+     <tr> 
+      <td class="bottom" colspan="7"> <a id="aDelSel" href="javascript:void(0);">删除所选</a> <a id="aFavSel" href="javascript:void(0);">收藏所选</a> <a id="clearcart" href="javascript:void(0)">清空购物车</a> <span style="text-align: right; padding-right: 20px;">购物车数量总计：<samp id="cartItemCount">2</samp>件</span> </td> 
+     </tr> 
+    </tbody> 
+   </table> 
+   <div class="clear"></div> 
+   <div class="sub_price"> 
+    <ul> 
+     <li> <span class="sp_w">订单总额</span><span class="s6">&yen;</span><span class="s6" id="totalprice">136.00</span><br /> <span class="sp_w">每满100-25</span><span class="s6">&yen;</span><span class="s6" id="dicprice">-25</span><br /> <span class="sp_w">应付</span><span class="s1">&yen;</span><span class="s1" id="cartTotalMoney">111</span><br /> <span style="display: none;" class="s2">*请填写您的手机号码，以便我们为您提供更优质的服务： <input type="text" maxlength="14" value="" class="phone" id="mobile" /></span> </li> 
+    </ul> 
+    <dl> 
+     <a href="course.html">继续选购课程</a> 
+     <a id="btnGoPay" class="settlement" href="javascript:void(0);">前去结算</a> 
+    </dl> 
+   </div> 
+   <div class="clear"></div> 
+   <input type="hidden" value="True" id="isexpire" /> 
+  </div> 
+  <div class="clear"></div> 
+  <div class="buy_foot"> 
+   <ul> 
+    <li> <a target="_blank" href="index.html">XXX首页</a>| <a target="_blank" href="http://i.yingsheng.com/">个人中心</a>| <a target="_blank" href="http://ask.yingsheng.com/">问问题</a>| <a target="_blank" href="http://zone.yingsheng.com/">找老师</a>| <a target="_blank" href="course.html">找课程</a>| <a target="_blank" href="classes.html">岗位系统班</a> </li> 
+   </ul> 
+   <div class="certification"> 
+    <a rel="nofollow" style="display: inline-block;" kx_type="图标式" tabindex="-1" id="kx_verify" href="http://www.yingsheng.com/link.htm?linkurl=https://ss.knet.cn/verifyseal.dll?sn=e14111144030056156pfd9000000&amp;ct=df&amp;a=1&amp;pa=0.5873584735672921" title="经营性网站备案信息" target="_blank"> <img src="images/certification_1.png" alt="安全联盟" /></a> 
+    <img src="images/certification_2.png" alt="支付宝" /> 
+    <img src="images/certification_3.png" alt="网络警察" /> 
+    <a href="http://www.yingsheng.com/link.htm?linkurl=http://www.baidu.com/s?wd=www.yingsheng.com%40v&amp;tn=baidu&amp;ie=utf-8&amp;bs=www.xsteach.com%40v&amp;f=8&amp;rsv_bp=1&amp;rsv_sug3=13&amp;rsv_sug4=767&amp;rsv_sug1=1&amp;rsv_sug2=0&amp;inputT=4221&amp;rsv_sug=1&amp;qh=360" title="百度信誉" target="_blank" rel="nofollow"> <img src="images/certification_4.png" alt="百度信誉" /></a> 
+    <img src="images/certification_5.png" alt="经营性网站备案信息" /> 
+    <script src="http://kxlogo.knet.cn/seallogo.dll?sn=e14111144030056156pfd9000000&amp;size=0"></script> 
+    <span style="display:inline-block;position:relative;width:auto;"><a style="display:inline-block;" kx_type="图标式" target="_blank" tabindex="-1" id="kx_verify" href="https://ss.knet.cn/verifyseal.dll?sn=e0505194400000224489546357&amp;ct=df&amp;a=1&amp;pa=0.3431632444121253"><img alt="可信网站" oncontextmenu="return false;" style="border:none;" src="images/yx_2.png" /></a></span> 
+   </div> 
+   <p> 版权所有：XXX 网站备案号：粤ICP备050222448&nbsp;&nbsp;&nbsp;&nbsp;经营许可证：XXX<br /> Copyright 2011 Enterprise Management Training<br /> Center All Rights Reserved <a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a> ｜ </p> 
+  </div> 
+  <!--** 右边悬浮 *****--> 
+  <div class="fd_float"> 
+   <div class="fd_box"> 
+    <a target="_blank" href="http://www.yingsheng.com/app" class="fd_a fd_app" title="英盛APP下载" rel="nofollow"> <span class="fd_ck"><span class="fk_ckcont"> <img alt="英盛APP下载" src="images/code.png" /></span></span> </a> 
+    <a class="fd_a fd_qq" href="http://wpa.qq.com/msgrd?v=3&amp;uin=475855150&amp;site=qq&amp;menu=yes" target="_blank" title="客服" rel="nofollow"></a> 
+    <a href="http://order.yingsheng.com/Order?source=1" class="fd_car" target="_blank" title="购物车" rel="nofollow"></a> 
+    <script src="js/feedback.js" type="text/javascript"></script> 
+    <a href="javascript:;" class="fd_feedback" title="反馈" id="fd_feedback" rel="nofollow"></a> 
+    <a id="J_Feedback" href="javascript:;" class="fd_a fd_totop" title="返回页首" rel="nofollow"></a> 
+   </div> 
+  </div> 
+  <script type="text/javascript">
+        var hasCard = false;
+    </script> 
+  <div class="global_feedback" id="ys_global_feedbackBox"> 
+   <table> 
+    <tbody> 
+     <tr class="h_20"> 
+      <td colspan="2"></td> 
+     </tr> 
+     <tr class="t_title"> 
+      <td colspan="2">用户反馈</td> 
+     </tr> 
+     <tr> 
+      <td width="130px" class="t_left">分类：</td> 
+      <td width="*" class="t_right"><select id="fq_text_cate"></select></td> 
+     </tr> 
+     <tr> 
+      <td class="t_left">标题：</td> 
+      <td class="t_right"><input type="text" id="fq_text_title" /></td> 
+     </tr> 
+     <tr> 
+      <td class="t_left">联系人：</td> 
+      <td class="t_right"><input type="text" id="fq_text_linkname" /></td> 
+     </tr> 
+     <tr> 
+      <td class="t_left">联系邮箱：</td> 
+      <td class="t_right"><input type="text" id="fq_text_email" /></td> 
+     </tr> 
+     <tr> 
+      <td class="t_left">手机号码：</td> 
+      <td class="t_right"><input type="text" id="fq_text_tel" /></td> 
+     </tr> 
+     <tr> 
+      <td class="t_left">联系QQ：</td> 
+      <td class="t_right"><input type="text" id="fq_text_qq" /></td> 
+     </tr> 
+     <tr> 
+      <td class="t_left">反馈内容：</td> 
+      <td class="t_right"><textarea id="fq_text_context"></textarea></td> 
+     </tr> 
+     <tr> 
+      <td colspan="2"><input type="button" value="提交" class="sub_btn" id="sub_feedback" /></td> 
+     </tr> 
+    </tbody> 
+   </table> 
+  </div> 
+  <div style="display: none; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; cursor: move; opacity: 0; background: rgb(255, 255, 255) none repeat scroll 0% 0%;"></div>  
+ </body>
+</html>

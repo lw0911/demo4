@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!--<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>-->
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_u4qz1594lnixusor.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/detail_p.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+</head>
+<body>
+<!--头部导航-->
+<div class="wrap">
+    <div class="comm-container nav-container">
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <ul>
+            <li>
+                <a href="">主页</a>
+            </li>
+            <li>
+                <a href="">救助系统介绍</a>
+            </li>
+            <li>
+                <a href="">我们如何救助</a>
+            </li>
+            <li>
+                <a href="">您的风险评估</a>
+            </li>
+            <li>
+                <a href="">产品购买</a>
+            </li>
+            <li>
+                <a href="">新闻链接</a>
+            </li>
+            <li>
+                <a href="">关于我们</a>
+            </li>
+        </ul>
+        <div class="search-top">
+            <img src="img/search.png" alt="">
+        </div>
+        <div class="search-show">
+            <input type="text" placeholder="请输入关键字">
+            <img src="img/search.png" alt="" class="search-show-search">
+            <img src="img/close.png" alt="" class="search-show-close">
+        </div>
+    </div>
+</div>
+<!--头部视频播放区域-->
+<div class="wrap header-wrap">
+    <div class="header-container">
+        <div class="videos">
+            <!--bottom-->
+            <div class="video_b" style="margin-top:0">
+                <div class="video_b_in">
+                    <div class="video_ls">
+                        <video id="vids">
+                            您的浏览器不支持h5标签,请升级或换个浏览器
+                        </video>
+                        <!--暂停-->
+                        <div id="pass">
+                            <img src="media/zt.png">
+                        </div>
+                        <!--控制器-->
+                        <div class="controls">
+                            <!--进度条容器-->
+                            <div id="pBar">
+                                <!--进度条底色-->
+                                <div class="pBar_bj">
+                                    <!--缓冲的进度条-->
+                                    <div id="buff"></div>
+                                    <!--进度条动态-->
+                                    <div id="pBar_move">
+                                        <!--进度条按钮-->
+                                        <div id="pBtn"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--展厅播放快进快退音量全屏-->
+                            <div class="trol_list">
+                                <!--暂停和快进快退-->
+                                <div class="list_1">
+                                    <i class="iconfont icon-zanting2" id="ztbf"></i>
+                                </div>
+                                <!--音量-->
+                                <div class="voice">
+                                    <i class="iconfont icon-yinliang" style="float:left;"></i>
+                                    <div class="voicep">
+                                        <div id="vBar">
+                                            <div id="vBar_in"></div>
+                                        </div>
+                                        <div id="vBtn"></div>
+                                    </div>
+                                </div>
+                                <!--时间-->
+                                <div class="vtime">
+                                    <font id="nTime">00:00:00</font>/<em id="aTime">00:00:00</em>
+                                </div>
+                                <!--全屏-->
+                                <i id="qp" class="iconfont icon-quanping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-img">
+            <img src="img/header_text.png" alt="">
+        </div>
+    </div>
+</div>
+<!--医疗警报系统-->
+<div class="wrap system-wrap">
+    <div class="system-container">
+        <div class="system-title">
+            <h2>我们的医疗警报系统</h2>
+            <div class="system-title-line">
+                <div class="system-title-line-sub"></div>
+            </div>
+            <div class="system-title-bottom">Our medical alert system</div>
+        </div>
+        <div class="system-sub-left system-sub-1 wow bounceIn" data-wow-delay="0.5s">
+            <div class="system-sub-content">
+                <div class="system-sub-title">
+                    一键式呼叫
+                </div>
+                <div class="system-sub-text">
+                    <p>一旦连接到您的固定电话，基站提供</p>
+                    <p>24/7保护在家里和周围</p>
+                </div>
+            </div>
+            <div class="system-sub-img">
+                <img src="img/system_1.png" alt="">
+            </div>
+        </div>
+        <div class="system-sub-right system-sub-2 wow bounceIn" data-wow-delay="0.7s">
+            <div class="system-sub-img">
+                <img src="img/system_2.png" alt="">
+            </div>
+            <div class="system-sub-content">
+                <div class="system-sub-title">
+                    快速联系医院
+                </div>
+                <div class="system-sub-text">
+                    <p>由美国保险商实验室（UL）认证的所</p>
+                    <p>有个人应急系统的要求</p>
+                </div>
+            </div>
+        </div>
+        <div class="system-sub-left system-sub-3 wow bounceIn" data-wow-delay="0.9s">
+            <div class="system-sub-content">
+                <div class="system-sub-title">
+                    7*24小时服务
+                </div>
+                <div class="system-sub-text">
+                    <p>一旦连接到您的固定电话，基站提供</p>
+                    <p>24/7保护在家里和周围</p>
+                </div>
+            </div>
+            <div class="system-sub-img">
+                <img src="img/system_3.png" alt="">
+            </div>
+        </div>
+        <div class="system-sub-right system-sub-4 wow bounceIn" data-wow-delay="1.1s">
+            <div class="system-sub-img">
+                <img src="img/system_4.png" alt="">
+            </div>
+            <div class="system-sub-content">
+                <div class="system-sub-title">
+                    协助建立绿色通道
+                </div>
+                <div class="system-sub-text">
+                    <p>您可以选择以下可穿戴式按钮之一：</p>
+                    <p>医疗警卫警报项链</p>
+                </div>
+            </div>
+        </div>
+        <div class="system-sub-left system-sub-5 wow bounceIn" data-wow-delay="1.3s">
+            <div class="system-sub-content">
+                <div class="system-sub-title">
+                    现场急救支持急救培训
+                </div>
+                <div class="system-sub-text">
+                    <p>一旦连接到您的固定电话，基站提供</p>
+                    <p>24/7保护在家里和周围</p>
+                </div>
+            </div>
+            <div class="system-sub-img">
+                <img src="img/system_5.png" alt="">
+            </div>
+        </div>
+        <div class="system-sub-right system-sub-6 wow bounceIn" data-wow-delay="1.5s">
+            <div class="system-sub-img">
+                <img src="img/system_6.png" alt="">
+            </div>
+            <div class="system-sub-content">
+                <div class="system-sub-title">
+                    急救档案卡
+                </div>
+                <div class="system-sub-text">
+                    <p>我们方便的门户允许您查看和更新您</p>
+                    <p>的账户信息</p>
+                </div>
+            </div>
+        </div>
+        <div class="system-sub-left system-sub-7 wow bounceIn" data-wow-delay="1.7s">
+            <div class="system-sub-content">
+                <div class="system-sub-title">
+                    可佩带的按钮
+                </div>
+                <div class="system-sub-text">
+                    <p>这些防水按钮可以触发最远距离基站</p>
+                    <p>600英尺的紧急呼叫</p>
+                </div>
+            </div>
+            <div class="system-sub-img">
+                <img src="img/system_5.png" alt="">
+            </div>
+        </div>
+        <div class="system-sub-right system-sub-8 wow bounceIn" data-wow-delay="1.9s">
+            <div class="system-sub-img">
+                <img src="img/system_6.png" alt="">
+            </div>
+            <div class="system-sub-content">
+                <div class="system-sub-title">
+                    日常健康管理
+                </div>
+                <div class="system-sub-text">
+                    <p>我们方便的门户允许您查看和更新您</p>
+                    <p>的账户信息</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--学习更多-->
+<div class="more-wrap">
+    <div class="more-container">
+        <div class="more-title wow bounceInLeft" data-wow-delay="0.5s">
+            医学警报服务不像其他
+        </div>
+        <div class="more-text wow bounceInLeft" data-wow-delay="0.7s">
+            危险随时发生，急救警报服务，呵护您的生命安全
+        </div>
+        <div class="more-btn wow bounceInLeft" data-wow-delay="0.9s">
+            <button>
+                <a href="">学习更多</a>
+            </button>
+        </div>
+    </div>
+</div>
+<!--整站搜索-->
+<div class="search-bottom-wrap">
+    <div class="search-box">
+        <div class="search-title">
+            整站搜索
+        </div>
+        <div class="search-input">
+            <input type="text" placeholder="搜索">
+            <img src="img/search.png" alt="">
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div class="footer-wrap">
+    <div class="footer-container">
+        <div class="nav-footer">
+            <div class="footer-title">
+                公司
+            </div>
+            <div class="nav-footer-list footer-content">
+                <span>
+                    <a href="">产品</a>
+                </span>
+                <span>
+                    <a href="about.html">关于</a>
+                </span>
+                <span>
+                    <a href="">操作步骤</a>
+                </span>
+                <span>
+                    <a href="news.html">最新动态</a>
+                </span>
+                <span>
+                    <a href="buy.html">购买建议</a>
+                </span>
+            </div>
+        </div>
+        <div class="contact-box">
+            <div class="footer-title">
+                联系我们
+            </div>
+            <div class="footer-content">
+                <div>XXX</div>
+                <div>XXX</div>
+                <div>XXX</div>
+            </div>
+            <div class="wechat">
+                <img src="img/wechat.png" alt="">
+            </div>
+        </div>
+        <div class="copyright">
+            <strong>&copy2020医疗科技有限公司</strong>
+            
+            <span><a href="#">使用条款</a></span>
+            <span><a href="#">隐私声明</a></span>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="js/vedio.js"></script>
+<script type="text/javascript">
+    new WOW().init();
+</script>
+</html>

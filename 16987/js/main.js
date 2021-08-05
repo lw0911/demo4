@@ -1,0 +1,51 @@
+$(function () {
+	var atxt = $(".banner .ban-text");
+	$("#bannerBig").slide({
+		mainCell:".bd ul",
+		autoPage:true,
+		effect:"left",
+		autoPlay:true,
+		interTime:4000,
+		endFun:function(i){
+			atxt.css("display","none").eq(i).fadeIn(1500);
+		}
+	})
+	// banner部分
+	$("#prolist li").hover(function() {
+		$(this).find(".img").stop().animate({"top":0},300)
+	}, function() {
+		$(this).find(".img").stop().animate({"top":"-105px"},300)
+	});
+	// tab切换
+	$("#pro_nav li").hover(function(){
+		var id = $(this).addClass('act').siblings().removeClass('act').end().data("id");
+		var obj = "#bdM_"+id;
+		$(obj).stop(true,true).fadeIn().siblings('.bd').hide();
+	})
+	// 荣誉证书部分
+	$("#slide_maq").slide({
+		mainCell:".bd ul",
+		autoPage:true,
+		effect:"left",
+		autoPlay:true,
+		vis:4,
+		prevCell:".pre-btn",
+		nextCell:".next-btn"
+	});
+
+
+	// 地区部分
+	$("#cp_nav a").hover(function(){
+		var id = $(this).addClass('active').siblings().removeClass('active').end().data("id");
+		var obj = "#capM_"+id;
+		$(obj).stop(true,true).fadeIn().siblings('.cap-box').hide();
+	})
+	//联系电话
+	$("#cc_nav a").hover(function(){
+		var id = $(this).addClass('active').siblings().removeClass('active').end().data("id");
+		var obj = "#ccM_"+id;
+		$(obj).stop(true,true).fadeIn().siblings('.cc-box').hide();
+	})
+
+
+})

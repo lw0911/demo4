@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/list_1.css"/>
+		<script src="js/jquery1.42.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/sc.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				//banner
+				jQuery(".slideBox").slide({
+					mainCell: ".bd ul",
+					effect: "leftLoop",
+					autoPlay: true,
+				});
+				//内页案例滚动
+				jQuery(".picMarquee-top").slide({
+					mainCell: ".bd ul",
+					autoPlay: true,
+					effect: "topMarquee",
+					vis: 3,
+					interTime: 50,
+					opp: true,
+				});
+			})
+		</script>
+	</head>
+
+	<body>
+		<!--顶部-->
+		<div class="nav_top">
+			<div class="nav_top_in">
+				<p>XXX 欢迎您！！！</p>
+				<ul>
+					<li>
+						<a href="javascript:void(0)" onclick="SetHome(this,window.location)">设为首页</a>
+					</li>
+					<li class="wx">
+						<a>微信关注</a>
+						<img src="img/wx.jpg" />
+					</li>
+					<li>
+						<a href="">联系我们</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--logo-->
+		<div class="logo" id="logo">
+			<a href=""><img src="img/logo.png" /></a>
+			<img src="img/dh1.png" />
+		</div>
+		<!--导航-->
+		<div class="nav_bj">
+			<div class="nav">
+				<ul>
+					<li class="on">
+						<a href="">首 页</a>
+					</li>
+					<li>
+						<a href="">关于我们</a>
+						<ol>
+							<li>
+								<a href="">公司介绍</a>
+							</li>
+							<li>
+								<a href="">公司理念</a>
+							</li>
+							<li>
+								<a href="">法人致辞</a>
+							</li>
+							<li>
+								<a href="">机构组织</a>
+							</li>
+						</ol>
+					</li>
+					<li>
+						<a href="">业务内容</a>
+					</li>
+					<li>
+						<a href="">新闻中心</a>
+						<ol>
+							<li>
+								<a href="">法律法规</a>
+							</li>
+							<li>
+								<a href="">公司动态</a>
+							</li>
+							<li>
+								<a href="">公告通知</a>
+							</li>
+							<li>
+								<a href="">招标公告</a>
+							</li>
+							<li>
+								<a href="">中标公示</a>
+							</li>
+						</ol>
+					</li>
+					<li>
+						<a href="">经典案例</a>
+					</li>
+					<li>
+						<a href="">管理平台</a>
+					</li>
+					<li>
+						<a href="">联系我们</a>
+					</li>
+				</ul>
+				<div class="search">
+					<input type="text" class="sea" name="" id="" value="请输入关键字" onfocus="if(this.value==this.defaultValue){this.value='';};" onblur="if(this.value==''){this.value=this.defaultValue;}" />
+					<input type="submit" class="but" name="" id="" value="" />
+				</div>
+			</div>
+		</div>
+		<!--banner-->
+		<div id="slideBox" class="slideBox">
+			<div class="hd">
+				<ul>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="bd">
+				<ul>
+					<li>
+						<a href=" "><img src="img/banner1.jpg" /></a>
+					</li>
+					<li>
+						<a href=" "><img src="img/banner1.jpg" /></a>
+					</li>
+				</ul>
+			</div>
+			<!--前/后按钮-->
+			<a class="prev" href="javascript:void(0)"></a>
+			<a class="next" href="javascript:void(0)"></a>
+		</div>
+		<!--内页-->
+		<div class="inside">
+			<div class="inside_left">
+				<div class="inside_left_1 inside_left_nav">
+					<h2>新闻中心</h2>
+					<ul>
+						<li>--
+							<a href="">法律法规</a> --
+						</li>
+						<li>--
+							<a href="">公司动态</a> --
+						</li>
+						<li>--
+							<a href="">公告通知</a> --
+						</li>
+						<li>--
+							<a href="">招标公告</a> --
+						</li>
+						<li>--
+							<a href="">中标公示</a> --
+						</li>
+					</ul>
+				</div>
+				<div class="inside_left_1">
+					<h2>新闻中心<a href="" class="more">更多>></a></h2>
+					<ul>
+						<li>•
+							<a href="">中华人民共和国招标投标法</a>
+						</li>
+						<li>•
+							<a href="">工程造价咨询单位管理办法</a>
+						</li>
+						<li>•
+							<a href="">西安市阎良污水处理厂二期工程施工项目招标公告</a>
+						</li>
+						<li>•
+							<a href="">渭南市临渭区猕猴桃产业项目</a>
+						</li>
+						<li>•
+							<a href="">西北税务学校操场改造及绿化</a>
+						</li>
+						<li>•
+							<a href="">中华人民共和国建筑法</a>
+						</li>
+						<li>•
+							<a href="">陕西省环保厅眉县废物库（基地）三期工程中标公示</a>
+						</li>
+					</ul>
+				</div>
+				<div class="picMarquee-top inside_left_1">
+					<h2>经典案例<a href="" class="more">更多>></a></h2>
+					<div class="bd">
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/cp_1.jpg" />
+									<p>工业园污水处理设施建设</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/cp_2.jpg" />
+									<p>工业园污水处理设施建设</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/cp_3.jpg" />
+									<p>工业园污水处理设施建设</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="inside_right">
+				<div class="inside_right_top">
+					<a href="" class="home">首页</a>
+					<i>>></i>
+					<a href="">新闻中心</a>
+					<i>>></i>
+					<a href="">公告通知</a>
+				</div>
+				<dl>
+					<dt>
+						<a href="">
+							<img src="img/new_1.jpg"/>
+						</a>
+					</dt>
+					<dd>
+						<a href="" class="inside_right_tit">无规律涂抹防晒霜 长期日晒 肌肤光老化</a>
+						<span class="dat">发布日期：2017-4-27<a href="">行业资讯</a></span>
+						<p>许多妇女使用喷雾为肌肤保湿，舒缓和镇静和可以达到的效果，带来柔软舒适的感觉。但为了让皮肤吸收水分，爱让水滴在皮肤持久保持......</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="">
+							<img src="img/new_1.jpg"/>
+						</a>
+					</dt>
+					<dd>
+						<a href="" class="inside_right_tit">无规律涂抹防晒霜 长期日晒 肌肤光老化</a>
+						<span class="dat">发布日期：2017-4-27<a href="">新闻动态</a></span>
+						<p>许多妇女使用喷雾为肌肤保湿，舒缓和镇静和可以达到的效果，带来柔软舒适的感觉。但为了让皮肤吸收水分，爱让水滴在皮肤持久保持......</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="">
+							<img src="img/new_1.jpg"/>
+						</a>
+					</dt>
+					<dd>
+						<a href="" class="inside_right_tit">无规律涂抹防晒霜 长期日晒 肌肤光老化</a>
+						<span class="dat">发布日期：2017-4-27<a href="">新闻动态</a></span>
+						<p>许多妇女使用喷雾为肌肤保湿，舒缓和镇静和可以达到的效果，带来柔软舒适的感觉。但为了让皮肤吸收水分，爱让水滴在皮肤持久保持......</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="">
+							<img src="img/new_1.jpg"/>
+						</a>
+					</dt>
+					<dd>
+						<a href="" class="inside_right_tit">无规律涂抹防晒霜 长期日晒 肌肤光老化</a>
+						<span class="dat">发布日期：2017-4-27<a href="">行业资讯</a></span>
+						<p>许多妇女使用喷雾为肌肤保湿，舒缓和镇静和可以达到的效果，带来柔软舒适的感觉。但为了让皮肤吸收水分，爱让水滴在皮肤持久保持......</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="">
+							<img src="img/new_1.jpg"/>
+						</a>
+					</dt>
+					<dd>
+						<a href="" class="inside_right_tit">无规律涂抹防晒霜 长期日晒 肌肤光老化</a>
+						<span class="dat">发布日期：2017-4-27<a href="">行业资讯</a></span>
+						<p>许多妇女使用喷雾为肌肤保湿，舒缓和镇静和可以达到的效果，带来柔软舒适的感觉。但为了让皮肤吸收水分，爱让水滴在皮肤持久保持......</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="">
+							<img src="img/new_1.jpg"/>
+						</a>
+					</dt>
+					<dd>
+						<a href="" class="inside_right_tit">无规律涂抹防晒霜 长期日晒 肌肤光老化</a>
+						<span class="dat">发布日期：2017-4-27<a href="">行业资讯</a></span>
+						<p>许多妇女使用喷雾为肌肤保湿，舒缓和镇静和可以达到的效果，带来柔软舒适的感觉。但为了让皮肤吸收水分，爱让水滴在皮肤持久保持......</p>
+					</dd>
+				</dl>
+				<!--翻页-->
+				<div class="Flip">
+					<a href="">首页</a>
+					<a href="">上一页</a>
+					<a href="">1</a>
+					<a href="" class="on">2</a>
+					<a href="">3</a>
+					<a id="Flip_6">...</a>
+					<a href="">下一页</a>
+					<a href="">尾页</a>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="nav_bj">
+			<div class="nav">
+				<ul>
+					<li>
+						<a href="">首 页</a>
+					</li>
+					<li>
+						<a href="">关于我们</a>
+					</li>
+					<li>
+						<a href="">业务内容</a>
+					</li>
+					<li>
+						<a href="">新闻中心</a>
+					</li>
+					<li>
+						<a href="">经典案例</a>
+					</li>
+					<li>
+						<a href="">管理平台</a>
+					</li>
+					<li>
+						<a href="">联系我们</a>
+					</li>
+				</ul>
+				<a class="top" href="#logo">返回顶部</a>
+			</div>
+		</div>
+		<div class="footer_bj">
+			<div class="footer">
+				<p>Copyright © 2020<br/>
+					公司地址：XXX<br/>Email: XXX | 联系手机：XXX<br/>技术支持：
+					<a href="">XXX</a>
+				</p>
+				<img class="dh" src="img/dh2.png" />
+				<img class="wx" src="img/wx.jpg" />
+			</div>
+		</div>
+	</body>
+
+</html>

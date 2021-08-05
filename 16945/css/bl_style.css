@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+/*明星资源*/
+ul{ margin: 0; padding: 0;}
+.onShow,.onFocus,.onError{ color: #00aadb; font-weight: normal; font-size: 14px; display: inline-block; line-height: 30px; margin-bottom: 0px;}
+.onCorrect{ display: none;}
+.onShow{ display: none;}
+.Star{ width: 100%; overflow: hidden; zoom: 1; background: url(../images/star_bg.jpg) repeat-x center top; box-sizing: border-box; padding: 5px 0px 120px 0px;}
+.StarRoW{ margin-right: -1px; margin-left: -1px;}
+.StarRoW .col-xs-6,.StarRoW .col-md-2,.StarRoW .col-lg-2{ padding: 1px;}
+.StarTitle{ width: 100%; font-size: 14.49px; color: #fff; text-align: right;}
+.StarTitle span{ font-size: 27.46px;}
+.StarBg{ width: 100%; font-size: 14px; overflow: hidden; zoom: 1; color: #fff; box-sizing: border-box; background: url(../images/star_bg2.jpg) no-repeat center top; padding: 30px 0px 20px 0px;}
+.StarBg p{ line-height: 22px;}
+.StarBg .blue{ color: #7be1ff;}
+.StarBg h3{ text-align: center; font-size: 18px; font-weight: bold;}
+.StarBg p.right{ width: 74%;}
+
+.StarMain{ width: 100%;}
+.StarPeople{ width: 100%; position: relative;}
+.StarPeople .star-text{ width: 100%; height: 30px; opacity: 0; line-height: 56px; text-align: center; color: #fff; font-size: 18px; position: absolute; left: 0px; bottom: -10px; background: #000; filter:Alpha(opacity=40); background-color: rgba(0,0,0,0.4);}
+.StarPeople:hover .star-text{ height: 55px; opacity: 1; transition: 0.3s all ease-in-out; -moz-transition: 0.3s all ease-in-out; -ms-transition: 0.3s all ease-in-out; -o-transition: 0.3s all ease-in-out; -webkit-transition: 0.3s all ease-in-out;}
+.Star .StarFoot{ width: 100%; overflow: hidden; zoom: 1; color: #fff; font-size: 19px; padding-top: 50px;}
+.Star .StarFoot .blue-phone{ font-size: 36px; color: #29c5ff;}
+.StarFoot ul{ width: 100%; overflow:  hidden; zoom: 1;}
+.StarFoot ul li{ list-style: none; width: 88px; color: #c4c4d6; font-size: 14px; text-align: center; float: left;}
+.StarFoot li img{ margin: 0 auto; }
+.StarFoot ul .process_img{ float: left; margin: 0 auto; padding: 5px 10px;}
+.StarFoot .StarFootRight{ line-height: 30px;}
+/*文章页*/
+.ContentS{ width: 100%; overflow: hidden; zoom: 1; padding-top: 72px; margin-bottom: 30px;}
+.ContentsRight{ background-color: #f5f5f5; float: right; width: 92%; margin-top: 58px; padding-top: 16px; padding-bottom: 40px;}
+.ContentSTitle{ text-align: center; width: 100%; font-size: 26px; color: #1c1c1c; border-bottom: 1px solid #dddddd; padding-bottom: 10px;}
+.ContentS .ContsSource{ width: 100%; overflow: hidden; zoom: 1; font-size: 14px; color: #7e7e7e; margin-bottom: 45px;}
+.ContentS .ContsSource a{ color: #7e7e7e;}
+.ContentS .ContsSource a:hover{ color: #00c6ff;}
+.ContentS .ContsText{ border-bottom: 1px dashed #c5c5c5; font-size: 14px; color: #4a4949; line-height: 24px; padding-bottom: 60px;}
+.ContentS .ContsText p{ text-indent: 2em;}
+.ContentS .ContsPage{ width: 100%; overflow: hidden; zoom: 1; font-size: 12px; color: #848484; padding-top: 22px; padding-bottom: 60px;}
+.ContentS .ContsPage a{ color: #3971bd;}
+.ContentS .ContsPage .fl,.ContentS .ContsPage .fr{ overflow: hidden; zoom: 1; width: 45%;}
+.ContentS .ContsPage .fl p,.ContentS .ContsPage .fr p{ white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.ContentS .ContsPage .fl{ padding-top: 10px;}
+.ContentS .ContsPage .fr{ text-align: right;}
+.ContentS .ContsPage .fr .text-next,.ContentS .ContsPage .fr .text-prev
+{ padding: 7px 8px; background-color: #6ea9fa; display: inline-block; color: #fff; font-size: 13px;}
+.ContentS .ContsPage .fr .text-prev{ background-color: #3971bd;}
+.ContentS .ContsPage .fr .page-name{ text-indent: 1em; width: 85%; line-height: 28px; text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.ContentS .ContsPage a:hover{ color: #ff5512;}
+.ContentsRight h3{ width: 210px; margin: 0 auto; font-size: 18px; color: #00aadb; border-bottom: 1px solid #d6d6d6; padding-bottom: 8px;}
+.ContentsRight div{ width: 205px; margin: 0 auto; font-size: 12px; color: #5e5e5e; margin-top: 18px;}
+.ContentsRight div p{ width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 15px;}
+.ContentsRight div a{ color: #5e5e5e;}
+.ContentsRight div a:hover{ color: #ff5512;}
+.ContentsRight p span{ display: inline-block; width: 17px; height: 17px; line-height: 17px; text-align: center; background-color: #e0e0e0; margin-right: 6px;}
+.ContentsRight p span.yellow{ background-color: #ff5512; color: #fff;}
+/*工作邀约*/
+.WorkOffer{ width: 100%; padding-top: 58px; padding-bottom: 60px;}
+.WorkOffer form{ overflow: hidden; zoom: 1;}
+.WorkOffer .form-title{ font-size: 28.43px; color: #fff; width: 268px; height: 97px; text-align: center; line-height: 104px;  background: url(../images/workoffer_bg.png) no-repeat center top; margin: 0 auto;}
+.WorkOffer form .formain{ border: 1px solid #646d84; width: 80%; box-sizing: border-box; margin: 0 auto; padding: 32px 40px 60px 40px; border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; -webkit-border-radius: 10px; }
+.WorkOffer form .formainB{padding: 32px 40px 12px 40px;}
+.WorkOffer .formain .form-group{ width: 100%; overflow: hidden; zoom: 1; margin-bottom: 10px;}
+.WorkOffer form .control-label{ color: #242424; font-size: 14px; white-space: nowrap; font-weight: normal; width: 28%; float: left; line-height: 32px; text-align: right;}
+.WorkOffer form .form-control{ width: 65%; float: left; border: none; border-bottom: 1px solid #838383; box-shadow: none; border-radius: 0px; color: #242424;}
+.WorkOffer .form-group textarea{ border: none; background-color: #f2f2f2; width: 100%; box-sizing: border-box; padding: 10px;}
+.WorkOffer form .Refer{ width: 80%; margin: 0 auto;}
+.WorkOffer form .Refer input{ float: right; background-color: #00aadb; font-size: 16px; color: #fff; border: none; display: block; padding: 12px 35px; margin-top: 10px; border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; -webkit-border-radius: 5px;}
+.WorkOffer form .Refer input:hover{ background-color: #00c6ff;}
+/*邀约成功*/
+.OfferSuc{ width: 80%; margin: 0 auto; padding: 110px 0px; text-align: center; color: #242424;}
+.OfferSuc h6{ font-size: 18px; font-weight: bold;}
+.OfferSuc p{ font-size: 16px;}
+/*公司介绍*/
+.ComIntroduce{ width: 100%; padding-bottom: 30px;  margin-bottom: 20px;}
+.ComMain{ width: 100%; border-bottom: 1px solid #dddddd; overflow: hidden; zoom: 1; margin-top: 65px; padding-bottom: 60px;}
+.ComMain .left{ text-align: right; font-size: 26px; color: #191919; font-weight: bold; vertical-align: top; height: auto;}
+.ComMain .left a{ color: #191919;}
+.ComMain .right{ font-size: 15px; color: #696969;}
+.ComMain .BigSize{ font-size: 30px;}
+.content_logo{ width: 100%; display: block; padding-top: 18px;}
+.content_logo img{ float: right; padding-right: 105px;}
+.com_jieshao{ position: relative;}
+.com_jieshao div{ position: absolute; left: 100px; top: 140px; font-size: 18px; color: #fff; line-height: 24px;}
+/*成功案例*/
+.SuccessCase { width: 100%; background-color: #fdfcfc; display: table; box-sizing: border-box; padding-top: 65px; padding-bottom: 100px;}
+.SuccessCase p { margin-bottom: 42px;}
+.SuccessCase p img { width: 100%; display: block; text-align: center;}
+
+@media only screen and (min-width: 961px) and (max-width: 1024px) {
+	.ContentS{ padding-top:20px;}
+	.ContentS .ContsPage .fl,.ContentS .ContsPage .fr{ float: none; width: 100%;}
+	.ContentS .ContsPage .fr{ text-align: left;}
+	.ContentS .ContsPage .fl{ padding-top: 0px;}
+	.ContentsRight h3{ width: 95%; }
+    .ContentsRight div{ width: 95%;}
+    
+    .WorkOffer form .formain{ width: 90%; padding: 32px 40px 30px 40px;}
+    .WorkOffer form .formainB{ padding: 32px 40px 0px 40px;}
+}
+@media only screen and (min-width: 100px) and (max-width: 960px) {
+	.Star{ background-color: #393d4a; background-image: none; padding: 5px 0px 60px 0px;}
+	.StarTitle{ font-size: 12px; text-align: left; padding-top: 10px; padding-bottom: 5px;}
+	.StarTitle span{ font-size: 14.46px;}
+	.StarBg{ background: none; padding: 0px 0px;}
+	.StarBg h3{ text-align: left;}
+	.StarBg p.right{ width: 100%;}
+	.Star .StarFoot{ padding-top: 30px; font-size: 14px;}
+	.Star .StarFoot .blue-phone{ font-size: 26px;}
+	.StarFoot ul li{ width: 17%; font-size: 12px;}
+	.StarFoot ul .process_img{ max-width: 10%; }
+	.StarFoot .StarFootRight{ line-height:15px; padding-top: 10px;}
+	
+	.ContentS{ padding-top: 0px;}
+	.ContentsRight{ width: 100%; margin-top: 20px;}
+	.ContentSTitle{ font-size: 16px;}
+	.ContentS .ContsText{ padding-bottom: 20px;}
+	.ContentS .ContsSource{ font-size: 12px; margin-bottom: 15px;}
+	.ContentS .ContsPage{ padding-bottom: 10px;}
+	.ContentS .ContsPage .fl,.ContentS .ContsPage .fr{ float: none; width: 100%;}
+	.ContentS .ContsPage .fr{ text-align: left;}
+	.ContentS .ContsPage .fr .page-name{ width: 80%;}
+	.ContentS .ContsPage .fl{ padding-top: 0px;}
+	.ContentsRight h3{ width: 95%; }
+    .ContentsRight div{ width: 95%;}
+    
+    .WorkOffer{ padding-top: 28px;}
+    .WorkOffer form .formain{ width: 100%; padding: 32px 10px 30px 10px;}
+    .WorkOffer .form-title{ width: 120px; height: 43px; background: url(../images/workoffer_bg2.png) no-repeat center top; font-size: 18px; line-height: 46px;}
+    .WorkOffer form .control-label{ width: 35%;}
+    .WorkOffer form .form-control{ width: 60%;}
+    .WorkOffer .form-group textarea{ width: 100%;}
+    
+    .WorkOffer form{ margin-bottom: 20px;}
+    .WorkOffer form .Refer input{ float: none; margin: 0 auto; margin-top: 10px; text-align: center;}
+    
+    .OfferSuc{ padding: 30px 0px;}
+    /*公司介绍*/
+    .ComMain{ margin-top: 15px; padding-bottom: 15px;}
+    .ComMain .left{ text-align: left; font-size: 20px;}
+    .ComMain .BigSize{ font-size: 18px;}
+    .content_logo img{ float: none; text-align: center;}
+    .com_jieshao div{ position: absolute; left: 10%; top: 20%; font-size: 14px; line-height: 10px;}
+    /*成功案例*/
+   .SuccessCase { width: 100%; background-color: #fdfcfc; display: table; box-sizing: border-box; padding-top: 35px; padding-bottom: 100px;}
+   .SuccessCase p { margin-bottom: 22px;}
+   .SuccessCase p img { width: 100%; display: block; text-align: center;}
+    
+}

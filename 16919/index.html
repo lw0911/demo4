@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>XXX</title>
+<link type="text/css" rel="stylesheet" href="css/index.css">
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/slider.js"></script>
+<script type="text/javascript">
+		$( function () {
+			var bannerSlider = new Slider( $( '#banner_tabs' ), {
+				time: 5000,
+				delay: 400,
+				event: 'hover',
+				auto: true,
+				mode: 'fade',
+				controller: $( '#bannerCtrl' ),
+				activeControllerCls: 'active'
+			} );
+			$( '#banner_tabs .flex-prev' ).click( function () {
+				bannerSlider.prev()
+			} );
+			$( '#banner_tabs .flex-next' ).click( function () {
+				bannerSlider.next()
+			} );
+
+		} )
+	</script>
+</head>
+<body>
+<div class="top">
+  <div class="top_logo"><a href="index.html"><img src="images/logo.jpg"/ title="XXX" alt="XXX" ></a>
+    <div class="top_logo_guanggao"><img src="images/guanggao.jpg"/ title="XXX" alt="XXX"> </div>
+    <div class="top_tel">
+      <div class="top_tel2">
+        <ul>
+          <li><a href="#">企业邮箱</a> </li>
+          <li><a href="#">加入收藏</a> </li>
+          <li><a href="#">设为首页</a> </li>
+        </ul>
+      </div>
+      <img src="images/tel.jpg"/ title="XXX" alt="XXX"> </div>
+  </div>
+</div>
+<div class="nav_box">
+  <div class="menu">
+    <ul>
+      <li><a href="index.php">网站首页</a></li>
+      <li><a href="qiye_wenhua.html">走进大塬</a>
+        <div class="dap">
+          <ul>
+            <li><a href="qiye_wenhua.html">企业文化</a></li>
+            <li><a href="yuangong_fengcai.html">员工风采</a></li>
+            <li><a href="changqu_changmao.html">厂区厂貌</a></li>
+            <li><a href="shipin_zhongxin.html">视频中心</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="pinpai_chanpin.html">品牌与产品</a>
+        <div class="dap">
+          <ul>
+            <li><a href="pinpai_chanpin.html">古园</a></li>
+            <li><a href="pinpai_chanpin.html">古藻</a></li>
+            <li><a href="pinpai_chanpin.html">XXX助滤剂</a></li>
+            <li><a href="pinpai_chanpin.html">XXX填料</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="xinwen_dongtai.html">新闻动态</a>
+        <div class="dap">
+          <ul>
+            <li><a href="xinwen_dongtai.html">企业动态</a></li>
+            <li><a href="xinwen_dongtai.html">产品动态</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="zizhi_rongyu.html">荣誉资质</a></li>
+      <li><a href="jishu_zhongxin.html">技术中心</a></li>
+      <li><a href="zhaopin_jiameng.html">招聘加盟</a>
+        <div class="dap">
+          <ul>
+            <li><a href="zhaopin_jiameng.html">人才招聘</a></li>
+            <li><a href="zhaopin_jiameng.html">合作伙伴</a></li>
+            <li><a href="zhaopin_jiameng.html">加盟招商</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="lianxi_women.html">联系我们</a></li>
+    </ul>
+  </div>
+</div>
+<div id="banner_tabs" class="flexslider">
+  <ul class="slides">
+    <li> <a title="" href="#"> <img width="1920" height="482" alt="" style="background: url(images/banner1.jpg) no-repeat center;" src="images/alpha.png"> </a> </li>
+    <li> <a title="" href="#"> <img width="1920" height="550" alt="" style="background: url(images/banner2.jpg) no-repeat center;" src="images/alpha.png"> </a> </li>
+    <li> <a title="" href="#"> <img width="1920" height="550" alt="" style="background: url(images/banner3.jpg) no-repeat center;" src="images/alpha.png"> </a> </li>
+    <li> <a title="" href="#"> <img width="1920" height="550" alt="" style="background: url(images/banner4.jpg) no-repeat center;" src="images/alpha.png"> </a> </li>
+  </ul>
+  <ul class="flex-direction-nav">
+    <li><a class="flex-prev" href="javascript:;">Previous</a> </li>
+    <li><a class="flex-next" href="javascript:;">Next</a> </li>
+  </ul>
+  <ol id="bannerCtrl" class="flex-control-nav flex-control-paging">
+    <li><a>1</a> </li>
+    <li><a>2</a> </li>
+    <li><a>3</a> </li>
+    <li><a>4</a> </li>
+  </ol>
+</div>
+<div class="tu"> <img src="images/tu1.png"> </div>
+
+	<div class="gongsi_jianjie">
+		<div class="nei_rong">
+			<ul>
+				<li>公司简介</li>
+				<li>Company Profile</li>
+			</ul>
+			<div class="tu1">
+				<img src="images/tu3.JPG">
+			</div>
+			<div class="tu2">
+				<img src="images/tu4.JPG">
+			</div>
+			<div class="nei_rong1">
+				<p>临江市大塬XXX是国内XXX生产规模较大的厂家之一.占地面积4万平方米,目前拥有XXX资源储量超
+过1亿吨,已开采XXX矿2座,年开采设计能力为20万吨. 大塬XXX集团下辖吉林省临江市大华XXX产品有限公
+司、临江市华通XXX制品有限公司、临江市吉丰缓释生物肥料有限公司及临江市鸿原贸易有限责任公司。临江市大
+塬XXX是国内XXX生产规模较大的厂家之一.占地面积4万平方米,目前拥有XXX资源储量超过1亿吨,已开采硅
+藻土矿2座,年开采设计能力为20万吨. 大塬XXX集团下辖吉林省临江市大华XXX产品有限公司、临江市华通硅藻
+土制品...</p>
+				<span><a href="qiye_wenhua.html">查看详情</a></span>
+			</div>
+		</div>
+	</div>
+	<div class="zizhi_rongyu">
+		<div class="zizhi_juzhong">
+			<ul>
+				<li>荣誉资质</li>
+				<li>Honor</li>
+			</ul>
+			<div class="tu_juzhong">
+				<div class="tu3"><a href="zizhi_rongyu_zy.html"><img src="images/tu5.JPG"></a><h1>自理报检企业备案登记...</h1></div>
+			<div class="tu4"><a href="zizhi_rongyu_zy.html"><img src="images/tu6.JPG"></a><h1>开户许可证</h1></div>
+			<div class="tu5"><a href="zizhi_rongyu_zy.html"><img src="images/tu7.JPG"></a><h1>营业执照</h1></div>
+			</div>
+			<span><a href="zizhi_rongyu.html">查看更多>></a></span>
+		</div>
+	</div>
+	<div class="tu6">
+		<img src="images/tu9.png">
+	</div>
+	<div class="chanpin_zhanshi">
+		<div class="zhanshi_juzhong">
+			<ul>
+				<li>产品展示</li>
+				<li>Product</li>
+			</ul>
+			<div class="btn">
+				<span><a href="pinpai_chanpin.html">古园</a></span>
+				<span><a href="pinpai_chanpin.html">古藻</a></span>
+				<span><a href="pinpai_chanpin.html">XXX助滤剂</a></span>
+				<span><a href="pinpai_chanpin.html">XXX填料</a></span>
+			</div>
+			<div class="chanpin">
+				<a href="pinpai_chanpin_zy.html"><img src="images/tu10.png"></a>
+				<a href="pinpai_chanpin_zy.html"><img src="images/tu10.png"></a>
+				<a href="pinpai_chanpin_zy.html"><img src="images/tu10.png"></a>
+				<a href="pinpai_chanpin_zy.html"><img src="images/tu10.png"></a>
+				<a href="pinpai_chanpin_zy.html"><img src="images/tu10.png"></a>
+				<a href="pinpai_chanpin_zy.html"><img src="images/tu10.png"></a>
+				
+			</div>
+			<div class="btn_juzhong">
+				<a href="pinpai_chanpin.html"><img src="images/tu11.png" ></a>
+				<h1><a href="pinpai_chanpin.html">查看更多>></a></h1>
+				<a href="pinpai_chanpin.html"><img src="images/tu13.png"></a>
+			</div>
+		</div>
+	</div>
+	<div class="xinwen">
+		<div class="xinwen_juzhong">
+			<ul>
+				<li>新闻中心</li>
+				<li>News Center</li>
+			</ul>
+			<div class="btn2">
+				<span><a href="xinwen_dongtai.html">企业动态</a></span>
+				<span><a href="xinwen_dongtai.html">产品动态</a></span>
+			</div>
+			<div class="tu7">
+				<img src="images/tu14.png">
+			</div>
+			<div class="nei_rong2">
+				<div class="date">
+				<h1>18</h1>
+				<h2>2017-12</h2>
+				</div>
+				<div class="date_neirong">
+				<h3>临江市大塬XXX新材料生态环保科技...</h3>
+				<h4>大塬XXX产业经过十余年的发展，已形成以临江藻土园区为载体，拥有过滤材料、功能填料、生态建材、载体材料四大类、35个品种138个产品。是过滤材料。XXX孔隙...</h4>
+				</div>
+		</div>
+			<div class="nei_rong3">
+				<div>
+					<h1>18</h1>
+					<h2>2017-12</h2>
+				</div>
+					<div>
+					<h1>18</h1>
+					<h2>2017-12</h2>
+				</div>
+					<div>
+					<h1>18</h1>
+					<h2>2017-12</h2>
+				</div>
+					<div>
+					<h1>18</h1>
+					<h2>2017-12</h2>
+				</div>
+				</div>
+				<div class="date_neirong1">
+					<div>
+						<h1><a href="xinwen_dongtai_zy.html">临江市大塬XXX产业蓬勃发展</a></h1></a>
+						<h2>利用XXX化学稳定性好、质量轻、比表面积大、吸附性强以及阻燃隔热隔音等特征，开发主要产品有橡胶补强剂、塑料添加剂、造纸添加剂、轻质纸张...</h2>
+					</div>
+					<div>
+						<h1><a href="xinwen_dongtai_zy.html">临江市大塬XXX产业蓬勃发展</a></h1>
+						<h2>利用XXX化学稳定性好、质量轻、比表面积大、吸附性强以及阻燃隔热隔音等特征，开发主要产品有橡胶补强剂、塑料添加剂、造纸添加剂、轻质纸张...</h2>
+					</div>
+					<div>
+						<h1><a href="xinwen_dongtai_zy.html">临江市大塬XXX产业蓬勃发展</a></h1>
+						<h2>利用XXX化学稳定性好、质量轻、比表面积大、吸附性强以及阻燃隔热隔音等特征，开发主要产品有橡胶补强剂、塑料添加剂、造纸添加剂、轻质纸张...</h2>
+					</div>
+					<div>
+						<h1><a href="xinwen_dongtai_zy.html">临江市大塬XXX产业蓬勃发展</a></h1>
+						<h2>利用XXX化学稳定性好、质量轻、比表面积大、吸附性强以及阻燃隔热隔音等特征，开发主要产品有橡胶补强剂、塑料添加剂、造纸添加剂、轻质纸张...</h2>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+	</div>
+	<div class="jishu_zhongxin">
+		<div class="jishu_juzhong">
+			<ul>
+				<li>技术中心</li>
+				<li>Technology Centert</li>
+			</ul>
+			<div class="lunbo2"><iframe src="lb.html" scrolling="no" frameborder="0" width="1300px" height="300px" class="kuang"></iframe>
+				</div>
+		</div>
+	</div>
+		<div class="di">
+
+			<div class="di_juzhong">
+				<img src="images/tu22.png">
+				<div class="nei_rong4">
+					<h1>机械操作员</h1>
+					<h2>任职资格：要求初中以上文化程度，工作勤恳，有爱学精神。        以上均要求工作积
+极认真、能努力完成上级交给的每项工作任务，团结周围同仁，工作态度端正，有爱
+岗敬业奉献精神，努力提高自身的技术水平，自觉遵守公司的各项规章制度。 </h2>
+					<h1>机械操作员（具体待添加...）</h1>
+					<h2>任职资格：要求初中以上文化程度，工作勤恳，有爱学精神。        以上均要求工作积
+极认真、能努力完成上级交给的每项工作任务，团结周围同仁，工作态度端正，有爱
+岗敬业奉献精神，努力提高自身的技术水平，自觉遵守公司的各项规章制度。 </h2>
+					<h1>机械操作员</h1>
+					<h2>任职资格：要求初中以上文化程度，工作勤恳，有爱学精神。        以上均要求工作积
+极认真、能努力完成上级交给的每项工作任务，团结周围同仁，工作态度端正，有爱
+岗敬业奉献精神，努力提高自身的技术水平，自觉遵守公司的各项规章制度。 </h2>
+					
+				</div>
+			</div>
+		</div>
+<div class="foot">
+			<div class="foot_juzhong">
+				<img src="images/tu24.png">
+				<div class="foot_neirong">
+					<h1>大塬XXX有限公司<br>地址：XXX&nbsp;&nbsp;&nbsp;&nbsp;联系人：刘先生（副总经理）&nbsp;&nbsp;电话：XXX<br>传真:	XXX&nbsp;&nbsp;&nbsp;&nbsp;邮箱:	XXX<br>版权所有：大塬XXX有限公司&nbsp;&nbsp;&nbsp;&nbsp;备案号：0000000000号</h1>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
+

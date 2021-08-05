@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jquery鼠标悬停导航下划线滑出效果</title>
+    <link rel="stylesheet" href="css/swiper-3.2.7.min.css" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/bannerList.css">
+</head>
+<body>
+<div class="header">
+    <div class="w1200">
+        <div class="logo">
+            <a href=""><img src="images/logo.png" width="378" height="82" alt=""></a>
+        </div>
+        <div class="nav">
+            <ul class="nav-list">
+                <li><a href='http://www.17sucai.com/'>首页</a><span></span></li>
+                <li><a href='http://www.17sucai.com/'>课程</a><span></span></li>
+                <li><a href='http://www.17sucai.com/'>教练</a><span></span></li>
+                <li><a href='http://www.17sucai.com/'>培训证书</a><span></span></li>
+                <li><a href='http://www.17sucai.com/'>优势</a><span></span></li>
+                <li><a href='http://www.17sucai.com/'>报名优惠</a><span></span></li>
+                <li><a href='http://www.17sucai.com/'>新闻动态</a><span></span></li>
+                <li><a href='http://www.17sucai.com/'>成绩查询</a><span></span></li>
+                <li><a href='http://www.17sucai.com/'>关于我们</a><span></span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="banner">
+    <ul class="">
+        <li><a href=""><img src="images/banner/baoming_banner.jpg" alt=""></a></li>
+    </ul>
+    <div class="left-btn"></div>
+    <div class="right-btn"></div>
+    <div class="img-btn-list"></div>
+</div>
+
+<div class="ny_baoming">
+    <div class="sign-up">
+        <div class="w1200">
+            <div class="ih-item circle effect5">
+                <a href="#">
+                    <div class="img"><img src="images/photo/sign1.png" alt="img"></div>
+                    <div class="info">
+                        <div class="info-back">
+                            <h3>凡12月25日 前报名<br>
+                                即可免费
+                                赠送<br>《产后功能恢复课程》</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="ih-item circle effect5">
+                <a href="#">
+                    <div class="img"><img src="images/photo/sign2.png" alt="img"></div>
+                    <div class="info">
+                        <div class="info-back">
+                            <h3><br>
+                                同时享受<br>
+                                学费优惠1000元
+                            </h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="ih-item circle effect5">
+                <a href="#">
+                    <div class="img"><img src="images/photo/sign3.png" alt="img"></div>
+                    <div class="info">
+                        <div class="info-back">
+                            <h3>
+                                前100名报名<br>
+                                免费考取价值2000<br>元的
+                                中国健美协会（CBBA）高级证书
+                            </h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="ih-item circle effect5">
+                <a href="#">
+                    <div class="img"><img src="images/photo/sign4.png" alt="img"></div>
+                    <div class="info">
+                        <div class="info-back">
+                            <h3>
+                                前100名报名<br>
+                                免费考取价值2000<br>元的
+                                中国健美协会（CBBA）高级证书
+                            </h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w1200">
+        <div class="ny_baoming_myform">
+            <div class="ny_baoming_myform2">
+                <form action="" name="myform" method="post">
+                    <div class="ny_baoming_myform_left">
+                        <div class="form-control">
+                            <label for="txtname">姓名</label>
+                            <input type="mail" id="txtname" name="txtname" required oninvalid="setCustomValidity('请务必填写身份证上的姓名');" oninput="setCustomValidity('');" placeholder="请务必填写身份证上的姓名">
+                        </div>
+                        <div class="form-control">
+                            <label for="txtage">年龄</label>
+                            <input type="text" id="txtage" name="txtage" required oninvalid="setCustomValidity('请务必填写身份证实际年龄');" oninput="setCustomValidity('');" placeholder="请务必填写身份证实际年龄">
+                        </div>
+                        <div class="form-control">
+                            <label for="txtqq">QQ</label>
+                            <input type="text" id="txtqq" name="txtqq" required oninvalid="setCustomValidity('请填写您的QQ号');" oninput="setCustomValidity('');" placeholder="请填写您的QQ号">
+                        </div>
+                        <div class="form-control">
+                            <label for="txtid">身份证</label>
+                            <input type="text" id="txtid" name="txtid" required oninvalid="setCustomValidity('请填写您的身份证号码');" oninput="setCustomValidity('');" placeholder="请填写您的身份证号码">
+                        </div>
+                    </div>
+                    <div class="ny_baoming_myform_right">
+                        <div class="form-control">
+                            <label >性别</label>
+                            <input type="radio" id="txtnan" name="txtnan" checked value="男">男
+                            <input type="radio" id="txtnv" name="txtnan" value="女">女
+                        </div>
+                        <div class="form-control">
+                            <label for="txtmob">手机</label>
+                            <input type="text" id="txtmob" name="txtmob" required oninvalid="setCustomValidity('请务必填写身份证上的姓名');" oninput="setCustomValidity('');" placeholder="请填写11位手机号码">
+                        </div>
+                        <div class="form-control">
+                            <label for="txtclass">课程</label>
+                            <select id="txtclass" name="txtclass" required placeholder="请选择您要报名的课程">
+                                <option value="">请选择您要报名的课程</option>
+                            </select>
+                        </div>
+                        <div class="form-control">
+                            <label for="txt_calendar">日期</label>
+                            <input type="text" id="txt_calendar" name="txtdate" readonly="readonly" onfocus="showDate()" required oninvalid="setCustomValidity('请选择您要预定的日期');" oninput="setCustomValidity('');" placeholder="请选择您要预定的日期">
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="form-control">
+                        <label for="txtclass">地址</label>
+                        <textarea id="txtclass" name="txtclass" required placeholder="请填写您的所在地址"></textarea>
+                    </div>
+                    <div class="form-control">
+                        <button type="submit" name="submit">
+                            立即报名
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--three_icon start-->
+<div class="three_icon">
+    <div class="w1200">
+        <div class="three_icon_list">
+            <span><img src="images/icon/icon1.png" alt=""></span>
+            <span>0元入学 百度钱包随意分期付款</span>
+        </div>
+        <div class="three_icon_list">
+            <span><img src="images/icon/icon2.png" alt=""></span>
+            <span>入学3天不满意 无条件全额退款</span>
+        </div>
+        <div class="three_icon_list">
+            <span><img src="images/icon/icon3.png" alt=""></span>
+            <span>零基础包教会 终身免费重修</span>
+        </div>
+    </div>
+</div>
+<!--three_icon end-->
+
+<div class="footer">
+    <div class="w1200">
+        <div class="footer_left">
+            <h2>联系我们</h2>
+            <div class="footer_left_contact">
+                    <span>
+                        <p>XXX</p>
+                    </span>
+                <span>
+                        <p>XXX</p>
+                    </span>
+                <span>
+                        <p>XXX</p>
+                    </span>
+            </div>
+            <div class="footer_left_ewm">
+                <span>微信公众号：</span>
+                <span><img src="images/photo/footer_ewm1.png" alt=""></span>
+                <span><img src="images/photo/footer_ewm2.png" alt=""></span>
+            </div>
+        </div>
+        <div class="footer_right">
+            <h2 class="text-right">留言</h2>
+            <form class="myform" action="" method="post" name="myform">
+                <div class="form-control">
+                    <label for="txtname">您的姓名：</label>
+                    <input type="text" id="txtname" name="txtname" required="required" placeholder="请输入您的姓名">
+                </div>
+                <div class="form-control">
+                    <label for="txttel">您的电话：</label>
+                    <input type="tel" id="txttel" name="txttel" required="required" placeholder="请输入您的电话">
+                </div>
+                <div class="form-control">
+                    <label for="txtmail">您的邮箱：</label>
+                    <input type="email" id="txtmail" name="txtmail" required="required" placeholder="请输入您的邮箱">
+                </div>
+                <div class="form-control">
+                    <label for="txtadd">您的地址：</label>
+                    <input type="address" id="txtadd" name="txtadd" required="required" placeholder="请输入您的地址">
+                </div>
+                <div class="form-control">
+                    <label for="txtcontent">请您留言：</label>
+                    <textarea  id="txtcontent" name="txtcontent" cols="30" rows="10" placeholder="请输入您的姓名"></textarea>
+                </div>
+                <div class="form-control">
+                    <label>&nbsp;</label>
+                    <button type="submit" name="submit">
+                        提交信息
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="clearfix"></div>
+        <p class="text-center">版权所有©2016-2020 XXX健身咨询有限公司 COPYRIGHT </p>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/dateJs.fei.js" ></script>
+
+<!--head js-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.nav li').hover(function(){
+            $('span',this).stop().css('height','2px');
+            $('span',this).animate({
+                left:'0',
+                width:'100%',
+                right:'0'
+            },200);
+        },function(){
+            $('span',this).stop().animate({
+                left:'50%',
+                width:'0'
+            },200);
+        });
+    });
+</script>
+<!--banner-->
+<script src="js/bannerList.js"></script>
+<script>
+    bannerListFn(
+        $(".banner"),
+        $(".img-btn-list"),
+        $(".left-btn"),
+        $(".right-btn"),
+        2000,
+        true
+    );
+</script>
+
+<script>
+    $(function () {
+        $(".con-four").hover(function() {
+            $(this).find(".txt-four").stop().animate({"left": 0});
+        }, function() {
+            $(this).find(".txt-four").stop().animate({"left":-380});
+        })
+    });
+</script>
+</body>
+</html>

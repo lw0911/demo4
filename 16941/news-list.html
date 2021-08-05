@@ -1,0 +1,332 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>新闻中心</title>
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<link href="css/child.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+
+<body style="background-color:#f5f5f5;">
+<div class="left-menu child-menu">
+	<div class="left-logo"><img src="img/logo-1.png"></div>
+    <ul class="nav">
+        <li>
+            <a href="index.html">
+                <p>网站首页</p>
+                <span>HOME</span>
+            </a>
+            <i></i>
+        </li>
+        <li>
+            <a href="about.html">
+                <p>关于我们</p>
+                <span>ABOUT US</span>
+            </a>
+            <i></i>
+            <ul class="child-nav">
+                <div class="bb"></div>
+                <li><a href="#">公司简介</a>
+                    <ul class="child-nav-1">
+                        <div class="bb"></div>
+                        <li><a href="#">关于我们三级</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">公司梗概</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="product-list.html">
+                <p>产品中心</p>
+                <span>PRODUCTS</span>
+            </a>
+            <i></i>
+        </li>
+        <li class="now">
+            <a href="news-list.html">
+                <p>新闻中心</p>
+                <span>THE NEWS</span>
+            </a>
+            <i></i>
+        </li>
+        <li>
+            <a href="product-list.html">
+                <p>美丽乡村</p>
+                <span>COUNTRYSIDE</span>
+            </a>
+            <i></i>
+        </li>
+        <li>
+            <a href="online.html">
+                <p>联系我们</p>
+                <span>CONTACT US</span>
+            </a>
+            <i></i>
+        </li>
+    </ul>
+    <div class="contact-menu">
+        总机：XXX <br/>
+
+        电话：XXX <br/>
+
+        联系人：陈总 <br/>
+
+        邮箱：XXX <br/>
+    
+        网址：XXX <br/>
+
+        地址：XXX
+        XXX
+    </div>
+    <div class="menu-box-1"><img src="img/menu-box.png"></div>
+</div>
+
+<script type="text/javascript">
+/*侧边导航隐藏显示事件*/
+	var z = true;
+	$(".menu-box-1").click(function(){
+		if(z == true){
+			$(".left-menu").animate({marginLeft:0,},500);
+			/*$(".content").animate({marginLeft:290,},500).css("width","calc(100% - 290px)");
+			$(".content").addClass("content-1");*/
+			$(".menu-box-1 img").attr('src','img/close.png');
+			z = false;
+		}
+		else{
+			z = true;
+			$(".left-menu").animate({marginLeft:-290,},500);
+			/*$(".content").animate({marginLeft:0,width:'100%',},500);
+			$(".content").removeClass("content-1");*/
+			$(".menu-box-1 img").attr('src','img/menu-box.png');
+		}
+		
+	})
+/* --end-- */
+	
+/* 二级菜单显示隐藏效果 */
+	$(".child-nav").hide();
+	$(".nav > li").mouseenter(
+		function(){
+			$(this).children(".child-nav").show().fadeIn(500);
+		}
+	)
+	$(".nav > li").mouseleave(
+		function(){
+			$(this).children(".child-nav").hide().fadeOut(500);
+		}
+	)
+/* -- end -- */	
+
+/* 判断侧边导航的菜单栏高度 */
+	var h = $(".left-menu .nav").height();
+			var h2 = $(window).height();
+			var h3 = h / h2;
+			if(h3 > (54 / 100)){
+				
+				$(".left-menu .nav > li a span").css("display","none");
+			}
+			else{
+				$(".left-menu .nav > li a span").css("display","inline-block");
+			}
+/* -- end -- */	
+</script>
+
+<div class="content">
+	<div class="main-cont">
+    	<ul class="nav-copy fix">
+        	<li id="search">
+            	<i class="change"></i>
+            	<img id="search-img-1" src="img/search-1.png">
+            	<img id="search-img-2" src="img/search-2.png">
+            	<form>
+                	<img class="cc" src="img/jian-1.png">
+                	<input class="shuru" value="Search">
+                    <button class="sub"></button>
+                </form>
+            </li>
+            <li class="nav-select"><a href="#">公司新闻</a></li>
+            <li>
+            	<i class="change"></i>
+            	<a href="#">行业资讯</a>
+                <dl>
+                	<img class="cc" src="img/jian-2.png">
+                	<dd><a href="#">三级菜单</a></dd>
+                </dl>
+            </li>
+        </ul>
+        <div class="box">
+        	<div class="main">
+            	<ul class="list">
+                	<li>
+                    	<a href="news.html">
+                        	<div class="left-img"><img src="img/1.jpg"></div>
+                            <div class="right-info">
+                            	<h2>国产菜油行业再度退守“防线”或迟早沦为“大豆第二”</h2>
+                                <p>近日，“进口菜油顶包掺进国家临储库存”的报道炸开了锅，不仅令消费者神经紧绷，对菜油的青睐度一降再降，更是将国产菜油行业的尴尬处境暴露无遗，步步“退守”的趋势或导致国产菜油迟早沦为“大豆第二”。</p>
+                                <span>2018-09-10</span>
+                                <span>admin</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#">
+                        	<div class="left-img"><img src="img/2.jpg"></div>
+                            <div class="right-info">
+                            	<h2>领导为企业排忧解难， 全力以赴推进现代都市观光农业示范园建设</h2>
+                                <p>5月31日下午，为加快荔联街沧联现代都市观光休闲农业示范园建设进程，区农林局局长宋小平在荔联街道办事处主持召开“荔联街沧联现代都市观光休闲农业示范园建设问题协调会”，区相关职能部门出席了会议，广东XXX农业科技股份有限公司董事长邓肖辉协同公司高管参...</p>
+                                <span>2018-09-10</span>
+                                <span>admin</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#">
+                        	<div class="left-img"><img src="img/3.jpg"></div>
+                            <div class="right-info">
+                            	<h2>华新园第三届“华交会”〡【广东XXX】从田间到餐桌的有机蔬菜</h2>
+                                <p>2018年5月18日，由广州火炬高新技术创业服务中心、广州华南新材料创新园有限公司、广州领引书吧企业管理有限公司联合主办的2018年广州市黄埔区首届“禾雀花”企业交流交易会暨华南新材料创新园第三届“华交会”圆满落幕。广东XXX农业科技股份有限公司与近百家...</p>
+                                <span>2018-09-10</span>
+                                <span>admin</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#">
+                        	<div class="left-img"><img src="img/4.jpg"></div>
+                            <div class="right-info">
+                            	<h2>一个不一样的节日：“中国农民丰收节”</h2>
+                                <p>近日，“进口菜油顶包掺进国家临储库存”的报道炸开了锅，不仅令消费者神经紧绷，对菜油的青睐度一降再降，更是将国产菜油行业的尴尬处境暴露无遗，步步“退守”的趋势或导致国产菜油迟早沦为“大豆第二”。</p>
+                                <span>2018-09-10</span>
+                                <span>admin</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#">
+                        	<div class="left-img"><img src="img/5.jpg"></div>
+                            <div class="right-info">
+                            	<h2>华新园第三届“华交会”〡【广东XXX】从田间到餐桌的有机蔬菜</h2>
+                                <p>2018年5月18日，由广州火炬高新技术创业服务中心、广州华南新材料创新园有限公司、广州领引书吧企业管理有限公司联合主办的2018年广州市黄埔区首届“禾雀花”企业交流交易会暨华南新材料创新园第三届“华交会”圆满落幕。广东XXX农业科技股份有限公司与近百家...</p>
+                                <span>2018-09-10</span>
+                                <span>admin</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#">
+                        	<div class="left-img"><img src="img/6.jpg"></div>
+                            <div class="right-info">
+                            	<h2>一个不一样的节日：“中国农民丰收节”</h2>
+                                <p>近日，“进口菜油顶包掺进国家临储库存”的报道炸开了锅，不仅令消费者神经紧绷，对菜油的青睐度一降再降，更是将国产菜油行业的尴尬处境暴露无遗，步步“退守”的趋势或导致国产菜油迟早沦为“大豆第二”。</p>
+                                <span>2018-09-10</span>
+                                <span>admin</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            	<ul class="page">
+                    <li><i class="change"></i><a href="#"> < </a></li>
+                    <li><i class="change"></i><a class="selected" href="#">1</a></li>
+                    <li><i class="change"></i><a href="#">2</a></li>
+                    <li><i class="change"></i><a href="#">></a></li>
+                </ul>
+            </div>
+            <div class="rcom">
+            	<h1>为您推荐 <i class="xian" style="background:rgba(0,0,0,0.2);"></i></h1>
+            	<hr align="left">
+            	<div class="rcom-bd">
+                	<ul class="rcom-list">
+                    	<li>
+                    		<a href="#">
+                                <div class="left-img"><img src="img/3.jpg"></div>
+                                <div class="right-info">
+                                    <h2>智慧城市建设莫入误区</h2>
+                                    <span>2018-09-10</span>
+                                </div>
+                            </a>
+                    	</li>
+                        <li>
+                    		<a href="#">
+                                <div class="left-img"><img src="img/4.jpg"></div>
+                                <div class="right-info">
+                                    <h2>一个不一样的节日：“中国农民丰收节”</h2>
+                                    <span>2018-09-10</span>
+                                </div>
+                            </a>
+                    	</li>
+                        <li>
+                    		<a href="#">
+                                <div class="left-img"><img src="img/5.jpg"></div>
+                                <div class="right-info">
+                                    <h2>领导为企业排忧解难， 全力以赴推进现代都市观光农业示范园建设</h2>
+                                    <span>2018-09-10</span>
+                                </div>
+                            </a>
+                    	</li>
+                        <li>
+                    		<a href="#">
+                                <div class="left-img"><img src="img/6.jpg"></div>
+                                <div class="right-info">
+                                    <h2>华新园第三届“华交会”〡【广东XXX】从田间到餐桌的有机蔬菜</h2>
+                                    <span>2018-09-10</span>
+                                </div>
+                            </a>
+                    	</li>
+                        <li>
+                    		<a href="#">
+                                <div class="left-img"><img src="img/1.jpg"></div>
+                                <div class="right-info">
+                                    <h2>国产菜油行业再度退守“防线”或迟早沦为“大豆第二”</h2>
+                                    <span>2018-09-10</span>
+                                </div>
+                            </a>
+                    	</li>
+                        <li>
+                    		<a href="#">
+                                <div class="left-img"><img src="img/2.jpg"></div>
+                                <div class="right-info">
+                                    <h2>智慧城市建设莫入误区</h2>
+                                    <span>2018-09-10</span>
+                                </div>
+                            </a>
+                    	</li>
+                     	<li>
+                    		<a href="#">
+                                <div class="left-img"><img src="img/8.jpg"></div>
+                                <div class="right-info">
+                                    <h2>华新园第三届“华交会”〡【广东XXX】从田间到餐桌的有机蔬菜</h2>
+                                    <span>2018-09-10</span>
+                                </div>
+                            </a>
+                    	</li>
+                    </ul>
+                </div>
+            </div>
+            <script type="text/javascript">
+				jQuery(".rcom").slide({mainCell:".rcom-bd ul",autoPage:true,effect:"topLoop",autoPlay:2000,vis:5,trigger:"click"});
+			</script>
+        </div>
+    </div>
+    <div class="footer deep">
+         <br/>
+        访问统计：  浏览总量<span>41046</span>次 /今日浏览<span>41</span>次 /今日独立访客<span>11</span>位    建议(1024*768) IE8.0以上浏览器浏览本站 <br/> 
+        <a href="#">即时通管理</a>    <a href="#">后台登录</a> <br/>
+            <a href="">触屏版</a> 丨 <a href="">电脑版</a> <br/>
+    </div>
+</div>
+
+<script type="text/javascript">
+/* 搜索框事件 */	
+	$("#search").mouseenter(function(){
+		$(this).children("form").css("display","block");
+	})
+	$("#search").mouseleave(function(){
+		$(this).children("form").css("display","none");
+	})
+	
+/* --end-- */
+</script>
+</body>
+</html>

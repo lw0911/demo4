@@ -1,0 +1,150 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<title>时尚购购时尚</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1, maximum-scale=1" />
+<link rel="stylesheet" href="css/css.css" />
+<script src="js/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/superslide.2.1.js"></script>
+<script src="js/common.js"></script>
+<script src="js/jquery.slidebox.min.js"></script>
+  <script type="text/javascript" language="javascript">
+    //加入收藏
+    function AddFavorite(sURL, sTitle) {
+      sURL = encodeURI(sURL);
+      try {
+        window.external.addFavorite(sURL, sTitle);
+      } catch (e) {
+        try {
+          window.sidebar.addPanel(sTitle, sURL, "");
+        } catch (e) {
+          alert("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
+        }
+      }
+    }
+    //设为首页
+    function SetHome(url) {
+      if (document.all) {
+        document.body.style.behavior = 'url(#default#homepage)';
+        document.body.setHomePage(url);
+      } else {
+        alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");
+      }
+    } 
+</script>
+
+<!--[if lte IE 6]>  
+<script src="js/dd_belatedpng.js"></script>  
+ <script>
+  DD_belatedPNG.fix('.img'); 
+ </script>
+<![endif]-->
+</head>
+<body>
+<div id="header">
+ <div class="top">
+  <div class="container fn-clear">
+   <h1 class="logo img"><a href="#" ><img src="images/logo.png" border="0" class="img"  /></a></h1>
+   <div class="head_ri">
+      <div class="head_ri_top"><span class="img">4000-720-888</span><p><a href="#">返回首页</a>|
+
+        <a href="#" onclick="AddFavorite(window.location,document.title)">加入收藏</a>|
+
+        <a href="#" onclick="SetHome(window.location)">设为首页</a></p></div>
+    <div class="nav">
+    <ul id="main-menu" class="sm fn-clear">
+       <li style="background:none"><a href="index.html">网站首页</a></li>
+       <li><a href="news.html" >新闻资讯</a></li>
+       <li><a href="pic.html" >产品展示</a></li>
+       <li><a href="show.html" >联系我们</a></li>
+       <li><a href="#" >成功案例</a></li>
+       <li><a href="#" >营销网络</a></li>
+       <li><a href="#" >人才招聘</a></li>
+       <li><a href="#" >在线留言</a></li>  
+    </ul>
+      <script type="text/javascript">
+        $(function(){
+          $('#main-menu li ul').addClass('sub-menu');
+        })
+      </script>
+   </div>
+   </div>
+   </div>
+</div>
+</div>
+<!--banner-->
+
+<div class="fullSlide fn-relative">
+  <div class="bd">
+    <ul>
+       <li style="background-color:; background-image:url(); background-repeat:repeat-x"><!--背景图片-->
+       <a  style="background:url() no-repeat center center"><img src="images/banner1.jpg" alt="" width="100%" height="450px"></a>
+      </li>
+    </ul>
+  </div>
+</div>
+  <div class="container mt30 fn-clear">
+<!--内页左侧内容-->
+<div class="bar_left fn-left">
+       <div class="pro_cate">
+         <div class="inside_title"><h3>产品导航</h3></div>
+          <ul class="cate_list navi">
+           <li><a href="#" target="_self">产品一类</a></li>
+           <li class="selected"><a href="#" target="_self">产品二类</a></li>
+           <li><a href="#" target="_self">产品三类</a></li>
+           <li><a href="#" target="_self">产品四类</a></li> 
+          </ul>
+       </div>
+           <div class="page_contact mt15">
+         <img src="images/tel.jpg" alt="">
+         <ul>
+           <li> <p>某某时尚购网<br/></p><p style="white-space: normal;">地址：北京丰台xxx路xxx号</p><p style="white-space: normal;">电话：00000-88888888</p><p style="white-space: normal;">传真：0000-8888888</p></li>
+         </ul>
+      </div>
+        <div class="inside_adv"><a href="#"><img src="images/product.jpg"  class="imgwith" ></a></div>
+ </div> <!--内页右侧title-->
+<div class="bar_right fn-right">
+  <div class="inside_right_top fn-clear">
+        <h3>新闻资讯</h3>
+        <div class="inside_link fn-right">所在位置：<a href="#" style="float:none">首页</a>
+              &nbsp;>&nbsp;<a href="#" style="float:none">新闻资讯</a>
+          </div>
+     </div>
+<!--文字列表页-->
+  <div class="bar_right_text">
+      <ul class="article_list">
+      <li><span>2014-12-10</span><a href="#">某某时尚购一切以顾客为中心,让不可能成为可能</a></li>
+      <li><span>2014-12-10</span><a href="#">某某购时尚_时尚购_时尚小都</a></li>
+      <li><span>2014-12-10</span><a href="#">庐阳畅享时尚购碰撞圣诞节 平安夜人气爆棚嗨翻合肥步行街</a></li>
+      <li><span>2014-12-10</span><a href="#">动感时尚 购上海大众朗逸优惠0.5万元</a></li>
+      <li><span>2014-12-10</span><a href="#">Farfetch携手2015春夏上海时装周展示“一站购遍全球300家顶尖时尚...</a></li>
+      <li><span>2014-12-10</span><a href="#">欧洲设计师品牌对话中国当代艺术!SSOMO轻奢时尚购物网站于2015年4...</a></li>
+      <li><span>2014-12-10</span><a href="#">电商圈主携某某时尚购明天约地铁</a></li>
+      <li><span>2014-12-10</span><a href="#">变身潮人? 建行携手尚品网全球时尚购不停</a></li>
+      <li><span>2014-12-10</span><a href="#">巴拉巴拉 Town打造国内儿童时尚购物基地</a></li>
+      <li><span>2014-12-10</span><a href="#">看美女品时尚购名品 青岛国际时装周4日开幕</a></li>
+      <li><span>2014-12-10</span><a href="#">西安龙湖星悦荟打造人居时尚购物中心 满足一站式生活需求</a></li>
+      <li><span>2014-12-10</span><a href="#">灯光设计之与购物中心:洛阳王府井营造时尚购物环境</a></li>
+  </ul>
+        <div class="fy" style="text-align:right; margin:20px 5px;text-align:center;" >共20条 <a href='xinwenzi/p/1' >首页</a> 上一页 <a href='xinwenzi/p/2'>下一页</a> <a href='xinwenzi/p/2' >末页</a> 共(1/2)页</div>
+    </div>
+</div>
+</div>
+<!--底部-->
+<div class="bot_contact mt30">
+  <div class="container fn-clear">
+     <div class="bot_us fn-left img"><img src="images/hst_35.png"  class="img"><b>XXX</b><p>全国统一客服电话</p></div>
+
+     <div class="bot_address fn-right"><img src="images/hst_38.png"   class="img"><p>地址：北京丰台xxx路xxx号</p>
+     </div>
+  </div>
+</div>
+<!--版权-->
+<div id="copyright">
+ <div class="container">
+<p><strong><span style="color: rgb(118, 146, 60); font-family: 微软雅黑,;" >地址：北京丰台xxx路xxx号 电话：XXX 4000-8888-8888</span></strong></p><p><strong><span style="color: rgb(118, 146, 60); font-family: 微软雅黑;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;版权所有：某某时尚购 技术支持：专业团队 ICP备案编号： 88888888</span></strong></p> </div>
+</div>
+</body>
+</html>

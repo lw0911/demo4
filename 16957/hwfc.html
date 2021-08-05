@@ -1,0 +1,1258 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>某某国际 - 海外房产</title>
+
+<link href="css/daohang.css" rel="stylesheet" type="text/css" />
+<link href="css/banner.css" rel="stylesheet" type="text/css" />
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.touchSlider.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/ks-switch.pack.js"></script>
+
+
+
+</head>
+
+<body>
+<div class="top">
+	<div class="top_blank">
+   		<a href="index.html"><div class="logo"><img src="images/logo.jpg" /></div></a>
+   		<div class="top_tel"><img src="images/tele.jpg" /></div>
+   	</div>
+</div>
+
+<!-- 导航开始  -->
+<nav class="nav pr">
+<div class="nav-in">
+	<!-- -------菜单html代码---------begin------- -->
+    <div class="menuDiv">
+        <ul>
+            <li>
+                <a href="index.html" >首页</a>
+            </li> 
+            <li>
+                <a href="USA_ym.html">美国移民</a>
+                <ul>
+                    <li><a href="USA_ym.html" >美国EB1A移民</a></li>
+                </ul>
+            </li> 
+            <li>
+                <a href="USA_lx.html" target="_blank">美国留学</a>
+                <ul>
+                    <li><a href="USA_lx_gz.html" >美国高中</a></li>
+                    <li><a href="USA_lx_gz.html" >美国本科</a></li>
+                    <li><a href="USA_lx_gz.html" >美国研究生</a></li>
+                </ul>
+            </li> 
+            <li>
+                <a href="England_lx.html">英国留学</a>
+                <ul>
+                    <li><a href="England_lx_gz.html" >英国高中</a></li>
+                    <li><a href="England_lx_gz.html" >英国本科</a></li>
+                    <li><a href="England_lx_gz.html" >英国研究生</a></li>
+                </ul>
+            </li> 
+            <li>
+                <a href="ajzy.html" >海外服务</a>
+                <ul>
+                    <li><a href="ajzy.html" >安家置业</a></li>
+                    <li><a href="hwfc.html" >海外房产</a></li>
+                    <li><a href="cwgh.html" >财务规划</a></li>
+                </ul>
+            </li> 
+            <li>
+                <a href="hdjz.html" >活动讲座</a>
+            </li> 
+            <li>
+                <a href="about.html" >关于移民</a>
+                <ul>
+                    <li><a href="about.html">移民介绍</a></li>
+                    <li><a href="jytd.html" >精英团队</a></li>
+                </ul>
+            </li> 
+        </ul>
+    </div>
+    <!-- -------菜单html代码---------end------- -->
+    </div>
+</nav>
+<!-- 导航结束  -->
+<!--banner-->
+<div class="main_visual_mg">
+	<div class="flicking_con_mg">
+		<a href="#">1</a>
+		<a href="#">2</a>
+		<a href="#">3</a>
+	</div>
+	<div class="main_image_mg">
+		<ul>
+			<a href="#"><li><span class="img_13"></span></li></a>
+			<a href="#"><li><span class="img_14"></span></li></a>
+			<a href="#"><li><span class="img_15"></span></li></a>
+		</ul>
+		<a href="javascript:;" id="btn_prev_mg"></a>
+		<a href="javascript:;" id="btn_next_mg"></a>
+	</div>
+</div>
+<div class="HWFC_img"><img src="images/HWFC_img.jpg" /></div>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".main_visual_mg").hover(function(){
+		$("#btn_prev_mg,#btn_next_mg").fadeIn()
+	},function(){
+		$("#btn_prev_mg,#btn_next_mg").fadeOut()
+	});
+	
+	$dragBln = false;
+	
+	$(".main_image_mg").touchSlider({
+		flexible : true,
+		speed : 200,
+		btn_prev : $("#btn_prev_mg"),
+		btn_next : $("#btn_next_mg"),
+		paging : $(".flicking_con_mg a"),
+		counter : function (e){
+			$(".flicking_con_mg a").removeClass("on").eq(e.current-1).addClass("on");
+		}
+	});
+	
+	$(".main_image_mg").bind("mousedown", function() {
+		$dragBln = false;
+	});
+	
+	$(".main_image_mg").bind("dragstart", function() {
+		$dragBln = true;
+	});
+	
+	$(".main_image_mg a").click(function(){
+		if($dragBln) {
+			return false;
+		}
+	});
+	
+	timer = setInterval(function(){
+		$("#btn_next_mg").click();
+	}, 5000);
+	
+	$(".main_visual_mg").hover(function(){
+		clearInterval(timer);
+	},function(){
+		timer = setInterval(function(){
+			$("#btn_next_mg").click();
+		},5000);
+	});
+	
+	$(".main_image_mg").bind("touchstart",function(){
+		clearInterval(timer);
+	}).bind("touchend", function(){
+		timer = setInterval(function(){
+			$("#btn_next_mg").click();
+		}, 5000);
+	});
+	
+});
+</script><div class="HWFC_zx">
+	<div class="HWFC_zxnr">
+    	<div class="HWFC_zxnra">
+       	  	<div class="HWFC_zxnra_top">
+            	<div class="HWFC_zxnra_icon"><img src="images/HWFC_icon.png" /></div>
+           	    美国房地产咨询
+            </div>
+            <div class="HWFC_zxnra_img"><img src="images/HWFC_img1.jpg" /></div>
+            <div class="HWFC_zxnra_nr">
+            	<div class="HWFC_zxnra_nra">美国房产要问<a href="#">更多+</a></div>
+                <div class="HWFC_zxnra_nrb">
+                	<a href="#"><li>他与澳洲190技术移民失之交臂技术移技术移民失之交臂技术移技术移民失之交臂技术移技术移民失之交臂技术移</li></a>
+                    <a href="#"><li>9年漫漫移民路，环球与客户始终在一起</li></a>
+                    <a href="#"><li>带你领略最美“澳洲红”优质服务来自最强澳洲团队</li></a>
+                </div>
+                <div class="HWFC_zxnra_nra">美国房地产导购<a href="#">更多+</a></div>
+                <div class="HWFC_zxnra_nrb">
+                	<a href="#"><li>他与澳洲190技术移民失之交臂技术移技术移民失之交臂技术移技术移民失之交臂技术移技术移民失之交臂技术移</li></a>
+                    <a href="#"><li>9年漫漫移民路，环球与客户始终在一起</li></a>
+                    <a href="#"><li>带你领略最美“澳洲红”优质服务来自最强澳洲团队</li></a>
+                </div>
+            </div>
+        </div>
+        <div class="HWFC_zxnrb">
+        	<div class="HWFC_zxnrb_top">
+            	<div class="HWFC_zxnrb_icon"><img src="images/HWFC_icon1.png" /></div>
+            	美国房产热门城市
+            </div>
+            <div class="HWFC_zxnrb_img"><img src="images/HWFC_img2.jpg" /></div>
+        </div>
+    </div>
+</div>
+<!--banner end-->
+
+<!-- 美国精选房源 -->
+<div class="HWFC_fy"></div>
+<div class="HWFC_fy_title">
+	美国精选房源
+	<div class="HWFC_fy_cirl"></div>
+    <div class="HWFC_fy_cirl2"></div>
+</div>
+<div class="HWFC_fy_introduce">海外精选房源 我们为您精心挑选</div>
+<div class="HWFC_fy_nr">
+	<a href="#"><li style="margin-left:0">
+    	<div class="HWFC_fy_nr_img"><img src="images/HWFC_img3.jpg" /></div>
+        <div class="HWFC_fy_nr_title">
+        	<p><span>泰晤士河住宅泰晤士河住宅 Enderby Wharf</span></p>
+            <p>总价：<strong>78.5万</strong>美元起</p>
+        </div>
+        <div class="HWFC_fy_nr_icon">专题</div>
+    </li></a>
+    <a href="#"><li>
+    	<div class="HWFC_fy_nr_img"><img src="images/HWFC_img4.jpg" /></div>
+        <div class="HWFC_fy_nr_title">
+        	<p><span>泰晤士河住宅 Enderby Wharf</span></p>
+            <p>总价：<strong>78.5万</strong>美元起</p>
+        </div>
+        <div class="HWFC_fy_nr_icon">专题</div>
+    </li></a>
+    <a href="#"><li>
+    	<div class="HWFC_fy_nr_img"><img src="images/HWFC_img5.jpg" /></div>
+        <div class="HWFC_fy_nr_title">
+        	<p><span>泰晤士河住宅 Enderby Wharf</span></p>
+            <p>总价：<strong>78.5万</strong>美元起</p>
+        </div>
+    </li></a>
+    <a href="#"><li>
+    	<div class="HWFC_fy_nr_img"><img src="images/HWFC_img6.jpg" /></div>
+        <div class="HWFC_fy_nr_title">
+        	<p><span>泰晤士河住宅 Enderby Wharf</span></p>
+            <p>总价：<strong>78.5万</strong>美元起</p>
+        </div>
+
+    </li></a>
+    <a href="#"><li style="margin-left:0">
+    	<div class="HWFC_fy_nr_img"><img src="images/HWFC_img7.jpg" /></div>
+        <div class="HWFC_fy_nr_title">
+        	<p><span>泰晤士河住宅 Enderby Wharf</span></p>
+            <p>总价：<strong>78.5万</strong>美元起</p>
+        </div>
+    </li></a>
+    <a href="#"><li>
+    	<div class="HWFC_fy_nr_img"><img src="images/HWFC_img8.jpg" /></div>
+        <div class="HWFC_fy_nr_title">
+        	<p><span>泰晤士河住宅 Enderby Wharf</span></p>
+            <p>总价：<strong>78.5万</strong>美元起</p>
+        </div>
+    </li></a>
+    <a href="#"><li>
+    	<div class="HWFC_fy_nr_img"><img src="images/HWFC_img9.jpg" /></div>
+        <div class="HWFC_fy_nr_title">
+        	<p><span>泰晤士河住宅 Enderby Wharf</span></p>
+            <p>总价：<strong>78.5万</strong>美元起</p>
+        </div>
+    </li></a>
+    <a href="#"><li>
+    	<div class="HWFC_fy_nr_img"><img src="images/HWFC_img10.jpg" /></div>
+        <div class="HWFC_fy_nr_title">
+        	<p><span>泰晤士河住宅 Enderby Wharf</span></p>
+            <p>总价：<strong>78.5万</strong>美元起</p>
+        </div>
+
+    </li></a>
+</div>
+<!-- 美国精选房源 end-->
+
+<!-- 热点资讯  -->
+<div class="HL_rdzx">
+	<div class="HWFC_XX_title">美国房产信息参考</div>
+</div>
+<div class="HWFC_XX_Country">
+    	                                                
+    	<dl class="slideBox4">
+			<dt>
+				<span>纽约</span>
+				<span>洛杉矶</span>
+            	<span>旧金山</span>
+				<span>波士顿</span>
+                <span>芝加哥</span>
+                <span>休斯顿</span>
+                <span>迈阿密</span>
+                <span>亚特兰大</span>
+                <span>西雅图</span>
+                <span>圣地亚哥</span>
+                <span>宾夕法尼亚州</span>
+                <span>新泽西州</span>
+                <span>德拉瓦州</span>
+			</dt>
+			<dd><!-- 纽约  -->
+				<div class="HWFC_XX_nr">
+                	<div class="HWFC_XX_nr_left">
+                    	<li>
+                        	<ol>人口与学校概况</ol>
+                            <ol>数值</ol>
+                            <ol>生活与购房概况</ol>
+                            <ol>数值</ol>
+                        </li>
+                        	
+                        <li>
+                        	<ol>人口数量/年增长率</ol>
+                            <ol>均833.7万/-5.4%</ol>
+                            <ol>失业率</ol>
+                            <ol>约5.7%</ol>
+                        </li>
+                        <li>
+                        	<ol>主要族裔</ol>
+                            <ol>白人</ol>
+                            <ol>生活成本</ol>
+                            <ol>约$62.8K</ol>
+                        </li>
+                        <li>
+                        	<ol>家庭收入(年)</ol>
+                            <ol>约$65.786</ol>
+                            <ol>房屋空置率</ol>
+                            <ol>约8.8%</ol>
+                        </li>
+                        <li>
+                        	<ol>人均收入(年)</ol>
+                            <ol>约$28,524</ol>
+                            <ol>租房率</ol>
+                            <ol>约62.2%</ol>
+                        </li>
+                        <li>
+                        	<ol>公立/私立学校数量</ol>
+                            <ol>349/173</ol>
+                            <ol>住房自有率</ol>
+                            <ol>约28.9%</ol>
+                        </li>
+                        <li>
+                        	<ol>本州知名大学</ol>
+                            <ol>纽约大学,哥伦比亚大学</ol>
+                            <ol>年最高/最低温度</ol>
+                            <ol>33℃/-4℃</ol>
+                        </li>
+                    </div>
+                    <div class="HWFC_XX_nr_right">
+                    	<div class="HWFC_XX_nr_right_top">纽约每月平均房价走势</div>
+                        <div class="HWFC_XX_nr_right_img"><img src="images/HWFC_img11.jpg" /></div>
+                    </div>
+                </div>      
+			</dd>
+            
+			<dd><!--洛杉矶 -->
+            	<div class="HWFC_XX_nr">
+                	<div class="HWFC_XX_nr_left">
+                    	<li>
+                        	<ol>人口与学校概况</ol>
+                            <ol>数值</ol>
+                            <ol>生活与购房概况</ol>
+                            <ol>数值</ol>
+                        </li>
+                        <li>
+                        	<ol>主要族裔</ol>
+                            <ol>白人</ol>
+                            <ol>生活成本</ol>
+                            <ol>约$62.8K</ol>
+                        </li>
+                        <li>
+                        	<ol>家庭收入(年)</ol>
+                            <ol>约$65.786</ol>
+                            <ol>房屋空置率</ol>
+                            <ol>约8.8%</ol>
+                        </li>
+                        <li>
+                        	<ol>人均收入(年)</ol>
+                            <ol>约$28,524</ol>
+                            <ol>租房率</ol>
+                            <ol>约62.2%</ol>
+                        </li>
+                        <li>
+                        	<ol>公立/私立学校数量</ol>
+                            <ol>349/173</ol>
+                            <ol>住房自有率</ol>
+                            <ol>约28.9%</ol>
+                        </li>
+                        <li>
+                        	<ol>本州知名大学</ol>
+                            <ol>纽约大学,哥伦比亚大学</ol>
+                            <ol>年最高/最低温度</ol>
+                            <ol>33℃/-4℃</ol>
+                        </li>
+                        <li>
+                        	<ol>人口数量/年增长率</ol>
+                            <ol>均833.7万/-5.4%</ol>
+                            <ol>失业率</ol>
+                            <ol>约5.7%</ol>
+                        </li>
+                    </div>
+                    <div class="HWFC_XX_nr_right">
+                    	<div class="HWFC_XX_nr_right_top">纽约每月平均房价走势</div>
+                        <div class="HWFC_XX_nr_right_img"><img src="images/HWFC_img11.jpg" /></div>
+                    </div>
+                </div>      
+			</dd>
+        	<dd><!--旧金山 -->
+				<div class="HWFC_XX_nr">
+                	<div class="HWFC_XX_nr_left">
+                    	<li>
+                        	<ol>人口与学校概况</ol>
+                            <ol>数值</ol>
+                            <ol>生活与购房概况</ol>
+                            <ol>数值</ol>
+                        </li>
+                        
+                        <li>
+                        	<ol>家庭收入(年)</ol>
+                            <ol>约$65.786</ol>
+                            <ol>房屋空置率</ol>
+                            <ol>约8.8%</ol>
+                        </li>
+                        <li>
+                        	<ol>人均收入(年)</ol>
+                            <ol>约$28,524</ol>
+                            <ol>租房率</ol>
+                            <ol>约62.2%</ol>
+                        </li>
+                        <li>
+                        	<ol>公立/私立学校数量</ol>
+                            <ol>349/173</ol>
+                            <ol>住房自有率</ol>
+                            <ol>约28.9%</ol>
+                        </li>
+                        <li>
+                        	<ol>本州知名大学</ol>
+                            <ol>纽约大学,哥伦比亚大学</ol>
+                            <ol>年最高/最低温度</ol>
+                            <ol>33℃/-4℃</ol>
+                        </li>
+                        <li>
+                        	<ol>人口数量/年增长率</ol>
+                            <ol>均833.7万/-5.4%</ol>
+                            <ol>失业率</ol>
+                            <ol>约5.7%</ol>
+                        </li>
+                        <li>
+                        	<ol>主要族裔</ol>
+                            <ol>白人</ol>
+                            <ol>生活成本</ol>
+                            <ol>约$62.8K</ol>
+                        </li>
+                    </div>
+                    <div class="HWFC_XX_nr_right">
+                    	<div class="HWFC_XX_nr_right_top">纽约每月平均房价走势</div>
+                        <div class="HWFC_XX_nr_right_img"><img src="images/HWFC_img11.jpg" /></div>
+                    </div>
+                </div>  
+			</dd>
+            <dd><!--波士顿 -->
+                <div class="HWFC_XX_nr">
+                	<div class="HWFC_XX_nr_left">
+                    	<li>
+                        	<ol>人口与学校概况</ol>
+                            <ol>数值</ol>
+                            <ol>生活与购房概况</ol>
+                            <ol>数值</ol>
+                        </li>
+                        
+                        
+                        <li>
+                        	<ol>人均收入(年)</ol>
+                            <ol>约$28,524</ol>
+                            <ol>租房率</ol>
+                            <ol>约62.2%</ol>
+                        </li>
+                        <li>
+                        	<ol>公立/私立学校数量</ol>
+                            <ol>349/173</ol>
+                            <ol>住房自有率</ol>
+                            <ol>约28.9%</ol>
+                        </li>
+                        <li>
+                        	<ol>本州知名大学</ol>
+                            <ol>纽约大学,哥伦比亚大学</ol>
+                            <ol>年最高/最低温度</ol>
+                            <ol>33℃/-4℃</ol>
+                        </li>
+                        <li>
+                        	<ol>人口数量/年增长率</ol>
+                            <ol>均833.7万/-5.4%</ol>
+                            <ol>失业率</ol>
+                            <ol>约5.7%</ol>
+                        </li>
+                        <li>
+                        	<ol>主要族裔</ol>
+                            <ol>白人</ol>
+                            <ol>生活成本</ol>
+                            <ol>约$62.8K</ol>
+                        </li>
+                        <li>
+                        	<ol>家庭收入(年)</ol>
+                            <ol>约$65.786</ol>
+                            <ol>房屋空置率</ol>
+                            <ol>约8.8%</ol>
+                        </li>
+                    </div>
+                    <div class="HWFC_XX_nr_right">
+                    	<div class="HWFC_XX_nr_right_top">纽约每月平均房价走势</div>
+                        <div class="HWFC_XX_nr_right_img"><img src="images/HWFC_img11.jpg" /></div>
+                    </div>
+                </div>
+            </dd>
+            <dd><!--芝加哥 -->
+                <div class="HWFC_XX_nr">
+                	<div class="HWFC_XX_nr_left">
+                    	<li>
+                        	<ol>人口与学校概况</ol>
+                            <ol>数值</ol>
+                            <ol>生活与购房概况</ol>
+                            <ol>数值</ol>
+                        </li>
+                        	
+                        <li>
+                        	<ol>人口数量/年增长率</ol>
+                            <ol>均833.7万/-5.4%</ol>
+                            <ol>失业率</ol>
+                            <ol>约5.7%</ol>
+                        </li>
+                        <li>
+                        	<ol>主要族裔</ol>
+                            <ol>白人</ol>
+                            <ol>生活成本</ol>
+                            <ol>约$62.8K</ol>
+                        </li>
+                        <li>
+                        	<ol>家庭收入(年)</ol>
+                            <ol>约$65.786</ol>
+                            <ol>房屋空置率</ol>
+                            <ol>约8.8%</ol>
+                        </li>
+                        <li>
+                        	<ol>人均收入(年)</ol>
+                            <ol>约$28,524</ol>
+                            <ol>租房率</ol>
+                            <ol>约62.2%</ol>
+                        </li>
+                        <li>
+                        	<ol>公立/私立学校数量</ol>
+                            <ol>349/173</ol>
+                            <ol>住房自有率</ol>
+                            <ol>约28.9%</ol>
+                        </li>
+                        <li>
+                        	<ol>本州知名大学</ol>
+                            <ol>纽约大学,哥伦比亚大学</ol>
+                            <ol>年最高/最低温度</ol>
+                            <ol>33℃/-4℃</ol>
+                        </li>
+                    </div>
+                    <div class="HWFC_XX_nr_right">
+                    	<div class="HWFC_XX_nr_right_top">纽约每月平均房价走势</div>
+                        <div class="HWFC_XX_nr_right_img"><img src="images/HWFC_img11.jpg" /></div>
+                    </div>
+                </div>
+            </dd>
+            <dd><!--休斯顿 -->
+                <div class="HWFC_XX_nr">
+                	<div class="HWFC_XX_nr_left">
+                    	<li>
+                        	<ol>人口与学校概况</ol>
+                            <ol>数值</ol>
+                            <ol>生活与购房概况</ol>
+                            <ol>数值</ol>
+                        </li>
+                        <li>
+                        	<ol>主要族裔</ol>
+                            <ol>白人</ol>
+                            <ol>生活成本</ol>
+                            <ol>约$62.8K</ol>
+                        </li>
+                        <li>
+                        	<ol>家庭收入(年)</ol>
+                            <ol>约$65.786</ol>
+                            <ol>房屋空置率</ol>
+                            <ol>约8.8%</ol>
+                        </li>
+                        <li>
+                        	<ol>人均收入(年)</ol>
+                            <ol>约$28,524</ol>
+                            <ol>租房率</ol>
+                            <ol>约62.2%</ol>
+                        </li>
+                        <li>
+                        	<ol>公立/私立学校数量</ol>
+                            <ol>349/173</ol>
+                            <ol>住房自有率</ol>
+                            <ol>约28.9%</ol>
+                        </li>
+                        <li>
+                        	<ol>本州知名大学</ol>
+                            <ol>纽约大学,哥伦比亚大学</ol>
+                            <ol>年最高/最低温度</ol>
+                            <ol>33℃/-4℃</ol>
+                        </li>
+                        <li>
+                        	<ol>人口数量/年增长率</ol>
+                            <ol>均833.7万/-5.4%</ol>
+                            <ol>失业率</ol>
+                            <ol>约5.7%</ol>
+                        </li>
+                    </div>
+                    <div class="HWFC_XX_nr_right">
+                    	<div class="HWFC_XX_nr_right_top">纽约每月平均房价走势</div>
+                        <div class="HWFC_XX_nr_right_img"><img src="images/HWFC_img11.jpg" /></div>
+                    </div>
+                </div> 
+            </dd>
+            <dd><!--迈阿密 -->
+                <div class="HWFC_XX_nr">
+                	<div class="HWFC_XX_nr_left">
+                    	<li>
+                        	<ol>人口与学校概况</ol>
+                            <ol>数值</ol>
+                            <ol>生活与购房概况</ol>
+                            <ol>数值</ol>
+                        </li>
+                        
+                        <li>
+                        	<ol>家庭收入(年)</ol>
+                            <ol>约$65.786</ol>
+                            <ol>房屋空置率</ol>
+                            <ol>约8.8%</ol>
+                        </li>
+                        <li>
+                        	<ol>人均收入(年)</ol>
+                            <ol>约$28,524</ol>
+                            <ol>租房率</ol>
+                            <ol>约62.2%</ol>
+                        </li>
+                        <li>
+                        	<ol>公立/私立学校数量</ol>
+                            <ol>349/173</ol>
+                            <ol>住房自有率</ol>
+                            <ol>约28.9%</ol>
+                        </li>
+                        <li>
+                        	<ol>本州知名大学</ol>
+                            <ol>纽约大学,哥伦比亚大学</ol>
+                            <ol>年最高/最低温度</ol>
+                            <ol>33℃/-4℃</ol>
+                        </li>
+                        <li>
+                        	<ol>人口数量/年增长率</ol>
+                            <ol>均833.7万/-5.4%</ol>
+                            <ol>失业率</ol>
+                            <ol>约5.7%</ol>
+                        </li>
+                        <li>
+                        	<ol>主要族裔</ol>
+                            <ol>白人</ol>
+                            <ol>生活成本</ol>
+                            <ol>约$62.8K</ol>
+                        </li>
+                    </div>
+                    <div class="HWFC_XX_nr_right">
+                    	<div class="HWFC_XX_nr_right_top">纽约每月平均房价走势</div>
+                        <div class="HWFC_XX_nr_right_img"><img src="images/HWFC_img11.jpg" /></div>
+                    </div>
+                </div> 
+            </dd>
+            <dd><!--亚特兰大 -->
+                <div class="HWFC_XX_nr">
+                	<div class="HWFC_XX_nr_left">
+                    	<li>
+                        	<ol>人口与学校概况</ol>
+                            <ol>数值</ol>
+                            <ol>生活与购房概况</ol>
+                            <ol>数值</ol>
+                        </li>
+                        
+                        
+                        <li>
+                        	<ol>人均收入(年)</ol>
+                            <ol>约$28,524</ol>
+                            <ol>租房率</ol>
+                            <ol>约62.2%</ol>
+                        </li>
+                        <li>
+                        	<ol>公立/私立学校数量</ol>
+                            <ol>349/173</ol>
+                            <ol>住房自有率</ol>
+                            <ol>约28.9%</ol>
+                        </li>
+                        <li>
+                        	<ol>本州知名大学</ol>
+                            <ol>纽约大学,哥伦比亚大学</ol>
+                            <ol>年最高/最低温度</ol>
+                            <ol>33℃/-4℃</ol>
+                        </li>
+                        <li>
+                        	<ol>人口数量/年增长率</ol>
+                            <ol>均833.7万/-5.4%</ol>
+                            <ol>失业率</ol>
+                            <ol>约5.7%</ol>
+                        </li>
+                        <li>
+                        	<ol>主要族裔</ol>
+                            <ol>白人</ol>
+                            <ol>生活成本</ol>
+                            <ol>约$62.8K</ol>
+                        </li>
+                        <li>
+                        	<ol>家庭收入(年)</ol>
+                            <ol>约$65.786</ol>
+                            <ol>房屋空置率</ol>
+                            <ol>约8.8%</ol>
+                        </li>
+                    </div>
+                    <div class="HWFC_XX_nr_right">
+                    	<div class="HWFC_XX_nr_right_top">纽约每月平均房价走势</div>
+                        <div class="HWFC_XX_nr_right_img"><img src="images/HWFC_img11.jpg" /></div>
+                    </div>
+                </div> 
+            </dd>
+            <dd><!--西雅图 -->
+                <div class="HWFC_XX_nr">
+                	<div class="HWFC_XX_nr_left">
+                    	<li>
+                        	<ol>人口与学校概况</ol>
+                            <ol>数值</ol>
+                            <ol>生活与购房概况</ol>
+                            <ol>数值</ol>
+                        </li>
+                        	
+                        <li>
+                        	<ol>人口数量/年增长率</ol>
+                            <ol>均833.7万/-5.4%</ol>
+                            <ol>失业率</ol>
+                            <ol>约5.7%</ol>
+                        </li>
+                        <li>
+                        	<ol>主要族裔</ol>
+                            <ol>白人</ol>
+                            <ol>生活成本</ol>
+                            <ol>约$62.8K</ol>
+                        </li>
+                        <li>
+                        	<ol>家庭收入(年)</ol>
+                            <ol>约$65.786</ol>
+                            <ol>房屋空置率</ol>
+                            <ol>约8.8%</ol>
+                        </li>
+                        <li>
+                        	<ol>人均收入(年)</ol>
+                            <ol>约$28,524</ol>
+                            <ol>租房率</ol>
+                            <ol>约62.2%</ol>
+                        </li>
+                        <li>
+                        	<ol>公立/私立学校数量</ol>
+                            <ol>349/173</ol>
+                            <ol>住房自有率</ol>
+                            <ol>约28.9%</ol>
+                        </li>
+                        <li>
+                        	<ol>本州知名大学</ol>
+                            <ol>纽约大学,哥伦比亚大学</ol>
+                            <ol>年最高/最低温度</ol>
+                            <ol>33℃/-4℃</ol>
+                        </li>
+                    </div>
+                    <div class="HWFC_XX_nr_right">
+                    	<div class="HWFC_XX_nr_right_top">纽约每月平均房价走势</div>
+                        <div class="HWFC_XX_nr_right_img"><img src="images/HWFC_img11.jpg" /></div>
+                    </div>
+                </div>
+            </dd>
+            <dd><!--圣地亚哥 -->
+                <div class="HWFC_XX_nr">
+                	<div class="HWFC_XX_nr_left">
+                    	<li>
+                        	<ol>人口与学校概况</ol>
+                            <ol>数值</ol>
+                            <ol>生活与购房概况</ol>
+                            <ol>数值</ol>
+                        </li>
+                        <li>
+                        	<ol>主要族裔</ol>
+                            <ol>白人</ol>
+                            <ol>生活成本</ol>
+                            <ol>约$62.8K</ol>
+                        </li>
+                        <li>
+                        	<ol>家庭收入(年)</ol>
+                            <ol>约$65.786</ol>
+                            <ol>房屋空置率</ol>
+                            <ol>约8.8%</ol>
+                        </li>
+                        <li>
+                        	<ol>人均收入(年)</ol>
+                            <ol>约$28,524</ol>
+                            <ol>租房率</ol>
+                            <ol>约62.2%</ol>
+                        </li>
+                        <li>
+                        	<ol>公立/私立学校数量</ol>
+                            <ol>349/173</ol>
+                            <ol>住房自有率</ol>
+                            <ol>约28.9%</ol>
+                        </li>
+                        <li>
+                        	<ol>本州知名大学</ol>
+                            <ol>纽约大学,哥伦比亚大学</ol>
+                            <ol>年最高/最低温度</ol>
+                            <ol>33℃/-4℃</ol>
+                        </li>
+                        <li>
+                        	<ol>人口数量/年增长率</ol>
+                            <ol>均833.7万/-5.4%</ol>
+                            <ol>失业率</ol>
+                            <ol>约5.7%</ol>
+                        </li>
+                    </div>
+                    <div class="HWFC_XX_nr_right">
+                    	<div class="HWFC_XX_nr_right_top">纽约每月平均房价走势</div>
+                        <div class="HWFC_XX_nr_right_img"><img src="images/HWFC_img11.jpg" /></div>
+                    </div>
+                </div>
+            </dd>
+            <dd><!--宾夕法尼亚州 -->
+                <div class="HWFC_XX_nr">
+                	<div class="HWFC_XX_nr_left">
+                    	<li>
+                        	<ol>人口与学校概况</ol>
+                            <ol>数值</ol>
+                            <ol>生活与购房概况</ol>
+                            <ol>数值</ol>
+                        </li>
+                        
+                        <li>
+                        	<ol>家庭收入(年)</ol>
+                            <ol>约$65.786</ol>
+                            <ol>房屋空置率</ol>
+                            <ol>约8.8%</ol>
+                        </li>
+                        <li>
+                        	<ol>人均收入(年)</ol>
+                            <ol>约$28,524</ol>
+                            <ol>租房率</ol>
+                            <ol>约62.2%</ol>
+                        </li>
+                        <li>
+                        	<ol>公立/私立学校数量</ol>
+                            <ol>349/173</ol>
+                            <ol>住房自有率</ol>
+                            <ol>约28.9%</ol>
+                        </li>
+                        <li>
+                        	<ol>本州知名大学</ol>
+                            <ol>纽约大学,哥伦比亚大学</ol>
+                            <ol>年最高/最低温度</ol>
+                            <ol>33℃/-4℃</ol>
+                        </li>
+                        <li>
+                        	<ol>人口数量/年增长率</ol>
+                            <ol>均833.7万/-5.4%</ol>
+                            <ol>失业率</ol>
+                            <ol>约5.7%</ol>
+                        </li>
+                        <li>
+                        	<ol>主要族裔</ol>
+                            <ol>白人</ol>
+                            <ol>生活成本</ol>
+                            <ol>约$62.8K</ol>
+                        </li>
+                    </div>
+                    <div class="HWFC_XX_nr_right">
+                    	<div class="HWFC_XX_nr_right_top">纽约每月平均房价走势</div>
+                        <div class="HWFC_XX_nr_right_img"><img src="images/HWFC_img11.jpg" /></div>
+                    </div>
+                </div> 
+            </dd>
+            <dd><!--新泽西州 -->
+                <div class="HWFC_XX_nr">
+                	<div class="HWFC_XX_nr_left">
+                    	<li>
+                        	<ol>人口与学校概况</ol>
+                            <ol>数值</ol>
+                            <ol>生活与购房概况</ol>
+                            <ol>数值</ol>
+                        </li>
+                        
+                        <li>
+                        	<ol>家庭收入(年)</ol>
+                            <ol>约$65.786</ol>
+                            <ol>房屋空置率</ol>
+                            <ol>约8.8%</ol>
+                        </li>
+                        <li>
+                        	<ol>人均收入(年)</ol>
+                            <ol>约$28,524</ol>
+                            <ol>租房率</ol>
+                            <ol>约62.2%</ol>
+                        </li>
+                        <li>
+                        	<ol>公立/私立学校数量</ol>
+                            <ol>349/173</ol>
+                            <ol>住房自有率</ol>
+                            <ol>约28.9%</ol>
+                        </li>
+                        <li>
+                        	<ol>本州知名大学</ol>
+                            <ol>纽约大学,哥伦比亚大学</ol>
+                            <ol>年最高/最低温度</ol>
+                            <ol>33℃/-4℃</ol>
+                        </li>
+                        <li>
+                        	<ol>人口数量/年增长率</ol>
+                            <ol>均833.7万/-5.4%</ol>
+                            <ol>失业率</ol>
+                            <ol>约5.7%</ol>
+                        </li>
+                        <li>
+                        	<ol>主要族裔</ol>
+                            <ol>白人</ol>
+                            <ol>生活成本</ol>
+                            <ol>约$62.8K</ol>
+                        </li>
+                    </div>
+                    <div class="HWFC_XX_nr_right">
+                    	<div class="HWFC_XX_nr_right_top">纽约每月平均房价走势</div>
+                        <div class="HWFC_XX_nr_right_img"><img src="images/HWFC_img11.jpg" /></div>
+                    </div>
+                </div> 
+            </dd>
+            <dd><!--德拉瓦州 -->
+                <div class="HWFC_XX_nr">
+                	<div class="HWFC_XX_nr_left">
+                    	<li>
+                        	<ol>人口与学校概况</ol>
+                            <ol>数值</ol>
+                            <ol>生活与购房概况</ol>
+                            <ol>数值</ol>
+                        </li>
+                        
+                        
+                        <li>
+                        	<ol>人均收入(年)</ol>
+                            <ol>约$28,524</ol>
+                            <ol>租房率</ol>
+                            <ol>约62.2%</ol>
+                        </li>
+                        <li>
+                        	<ol>公立/私立学校数量</ol>
+                            <ol>349/173</ol>
+                            <ol>住房自有率</ol>
+                            <ol>约28.9%</ol>
+                        </li>
+                        <li>
+                        	<ol>本州知名大学</ol>
+                            <ol>纽约大学,哥伦比亚大学</ol>
+                            <ol>年最高/最低温度</ol>
+                            <ol>33℃/-4℃</ol>
+                        </li>
+                        <li>
+                        	<ol>人口数量/年增长率</ol>
+                            <ol>均833.7万/-5.4%</ol>
+                            <ol>失业率</ol>
+                            <ol>约5.7%</ol>
+                        </li>
+                        <li>
+                        	<ol>主要族裔</ol>
+                            <ol>白人</ol>
+                            <ol>生活成本</ol>
+                            <ol>约$62.8K</ol>
+                        </li>
+                        <li>
+                        	<ol>家庭收入(年)</ol>
+                            <ol>约$65.786</ol>
+                            <ol>房屋空置率</ol>
+                            <ol>约8.8%</ol>
+                        </li>
+                    </div>
+                    <div class="HWFC_XX_nr_right">
+                    	<div class="HWFC_XX_nr_right_top">纽约每月平均房价走势</div>
+                        <div class="HWFC_XX_nr_right_img"><img src="images/HWFC_img11.jpg" /></div>
+                    </div>
+                </div>
+            </dd>
+            
+		</dl><!-- -->
+    </div><!--移民国家到此结束 -->
+<!-- 热点资讯  end -->
+
+<!-- 海外理财  -->
+<div class="HWFC_HWLC">
+<div class="HWFC_fy"></div>
+<div class="HWFC_fy_title" style="background:#f8f8f8">
+	海外理财
+	<div class="HWFC_fy_cirl"></div>
+    <div class="HWFC_fy_cirl2"></div>
+</div>
+<div class="HWFC_fy_introduce">最简单的海外投资不动产新方式</div>
+<div class="HWFC_HWLC_nr">
+	<a href="#"><li style=" margin-left:0">
+    	<div class="HWFC_HWLC_img"><img src="images/HWFC_img12.jpg" /></div>
+        <div class="HWFC_HWLC_title">
+        	<p><span>纽约长岛市Loft公寓收购贷款项目(第二期募资)</span></p>
+            <p>美元黄金商住公寓投资机会公寓收购贷款项目</p>
+            <p>起投金额: <strong>5万</strong>美元 | 投资期限: <strong>18-24月</strong></p>
+        </div>
+    </li></a>
+    <a href="#"><li style=" margin-left:0">
+    	<div class="HWFC_HWLC_img"><img src="images/HWFC_img13.jpg" /></div>
+        <div class="HWFC_HWLC_title">
+        	<p><span>纽约长岛市Loft公寓收购贷款项目(第二期募资)</span></p>
+            <p>美元黄金商住公寓投资机会</p>
+            <p>起投金额: <strong>5万</strong>美元 | 投资期限: <strong>18-24月</strong></p>
+        </div>
+    </li></a>
+    <li>
+    	<div class="HWFC_TZZX">
+        	<div class="HWFC_TZZX_img"></div>
+        	投资咨询
+        </div>
+        <div class="HWFC_TZZX_nr">
+        	<a href="#"><ol>
+            	<img src="images/HWFC_img14.jpg" />
+            	<p>如何得利?私募股权投资资金收益分配方式解析</p>
+            </ol></a>
+            <a href="#"><ol>
+            	<img src="images/HWFC_img15.jpg" />
+            	<p>涨幅达64%, 投资美国学生公寓基金就是现在!</p>
+            </ol></a>
+            <a href="#"><ol>
+            	<img src="images/HWFC_img16.jpg" />
+            	<p>玩转私募股权LP投资流程,你需要知道这些知识</p>
+            </ol></a>
+            <a href="#"><ol>
+            	<img src="images/HWFC_img17.jpg" />
+            	<p>了解投资业务类型, 才能掌握海外房产基金的”命脉”</p>
+            </ol></a>
+            
+        </div>
+    </li>
+</div>
+</div>
+<!-- 海外理财  end -->
+
+
+<!-- 移民留学  -->
+<div class="HL_rdzx">
+	<div class="HL_rdzx_title">项目推荐</div>
+</div>
+<div class="HL_ymlx" style="margin-top:30px;">
+<div class="HL_ymlxa">
+	<ul>
+    	<li>
+        	<a href="#">
+            <div class="HL_ymlx_img"><img src="images/HL_ymlx_img1.jpg" alt=""></div>
+            <div class="HL_ymlx_bg">
+            	<p><span>美 国</span></p>
+				<p>世界第一大经济体</p>
+            </div>
+            </a>
+        </li>
+        <li>
+        	<a href="#">
+            <div class="HL_ymlx_img"><img src="images/HL_ymlx_img2.jpg" alt=""></div>
+            <div class="HL_ymlx_bg">
+            	<p><span>英 国</span></p>
+				<p>移民同时获得英期工作</p>
+            </div>
+            </a>
+        </li>
+        <li>
+        	<a href="#">
+            <div class="HL_ymlx_img"><img src="images/HL_ymlx_img3.jpg" alt=""></div>
+            <div class="HL_ymlx_bg">
+            	<p><span>加拿大</span></p>
+				<p>宜居的福利天堂</p>
+            </div>
+            </a>
+        </li>
+        <li>
+        	<a href="#">
+            <div class="HL_ymlx_img"><img src="images/HL_ymlx_img4.jpg" alt=""></div>
+            <div class="HL_ymlx_bg">
+            	<p><span>荷 兰</span></p>
+				<p>性价比超高的移民项目</p>
+            </div>
+            </a>
+        </li>
+        <li>
+        	<a href="#">
+            <div class="HL_ymlx_img"><img src="images/HL_ymlx_img5.jpg" alt=""></div>
+            <div class="HL_ymlx_bg">
+            	<p><span>西班牙</span></p>
+				<p>欧洲第四大经济体系</p>
+            </div>
+            </a>
+        </li>
+        <li>
+        	<a href="#">
+            <div class="HL_ymlx_img"><img src="images/HL_ymlx_img6.jpg" alt=""></div>
+            <div class="HL_ymlx_bg">
+            	<p><span>希 腊</span></p>
+				<p>全欧洲额最低</p>
+            </div>
+            </a>
+        </li>
+        <li>
+        	<a href="#">
+            <div class="HL_ymlx_img"><img src="images/HL_ymlx_img7.jpg" alt=""></div>
+            <div class="HL_ymlx_bg">
+            	<p><span>美 国</span></p>
+				<p>世界第一大经济体</p>
+            </div>
+            </a>
+        </li>
+        <li>
+        	<a href="#">
+            <div class="HL_ymlx_img"><img src="images/HL_ymlx_img8.jpg" alt=""></div>
+            <div class="HL_ymlx_bg">
+            	<p><span>英 国</span></p>
+				<p>移民同时获得英期工作</p>
+            </div>
+            </a>
+        </li>
+    </ul>
+    </div>
+</div>
+<!-- 移民留学 end  -->
+
+
+<!-- 底部评估表 -->
+<div class="HL_pgb_bottom" style=" margin-top:-50px">
+	<div class="HL_pgb">
+	<div class="item">
+			<div class="filter-box2">
+				<div class="filter-text">
+					<input class="filter-title" type="text" readonly placeholder="移民留学国家" />
+					<i class="icon icon-filter-arrow"></i>
+				</div>
+				<select name="filter">
+                	<option value="-1"></option>
+					<option value="1">美国EB1A移民</option>
+					<option value="2">美国留学</option>
+					<option value="3">英国留学</option>
+					<option value="4">海外投资</option>
+					<option value="5">其它</option>
+				</select>
+			</div>
+	</div>
+    <div class="item" style="margin-left:20px">
+			<div class="filter-box3">
+				<div class="filter-text">
+					<input class="filter-title" type="text" readonly placeholder="预算" />
+					<i class="icon icon-filter-arrow"></i>
+				</div>
+				<select name="filter">
+                	<option value="-1"></option>
+					<option value="1">50万-100万</option>
+					<option value="2">100万-200万</option>
+					<option value="3">300万-500万</option>
+					<option value="4">500万-800万</option>
+					<option value="5">1000万以上</option>
+                    <option value="5">其他</option>
+				</select>
+              </div>
+	</div>
+    <div class="item" style="margin-left:20px">
+    	<input class="input" placeholder="联系方式" />
+    </div>
+    <div class="pgbButton" style="margin-left:20px">
+        <input type="reset"  value="立即评估"/>
+    </div>
+</div>
+
+</div>
+<!-- 底部评估表 end  -->
+
+
+<!-- 底部信息开始 -->
+<div class="HL_gj">
+	<div class="HL_gj_nr">
+    	<li>
+        	<a href="#"><p>美国移民</p></a>
+            <a href="#"><p>美国EB1A移民</p></a>
+        </li>
+        <li>
+        	<a href="#"><p>美国留学</p></a>
+            <a href="#"><p>美国高中</p></a>
+            <a href="#"><p>美国本科</p></a>
+            <a href="#"><p>美国研究生</p></a>
+        </li>
+        <li>
+        	<a href="#"><p>英国留学</p></a>
+            <a href="#"><p>英国高中</p></a>
+            <a href="#"><p>英国本科</p></a>
+            <a href="#"><p>英国研究生</p></a>
+        </li>
+        <li>
+        	<a href="#"><p>海外服务</p></a>
+            <a href="#"><p>安家置业</p></a>
+            <a href="#"><p>海外房产</p></a>
+            <a href="#"><p>财务规划</p></a>
+        </li>
+        <li>
+        	<a href="#"><p>关于移民</p></a>
+            <a href="#"><p>移民介绍</p></a>
+            <a href="#"><p>精英团队</p></a>
+            <a href="#"><p>活动讲座</p></a>
+        </li>
+        <li><img src="images/HL_logo.png" alt=""></li>
+    </div>
+</div>
+
+<div class="HL_bottom">
+	<div class="HL_bottom_nr">
+    	<li>
+        	<img src="images/HL_fwh.jpg" alt="">
+            <div class="HL_bottom_title">关注官方服务号</div>
+        </li>
+        <li>
+        	<img src="images/HL_dyh.jpg" alt="">
+            <div class="HL_bottom_title">关注官方订阅号</div>
+        </li>
+        <li>
+        	<p><span>VIP免费热线：400-888-8888</span></p>
+            <p>地址：南京市玄武区玄武湖10号</p>
+            <p>版权所有 ©2020 XXX <a href="http://www.adminbuy.cn" target="_blank">网站模板</a></p>
+            <p>XXX</p>
+        </li>
+    </div>
+</div>
+<!-- 底部信息结束 -->
+
+<script type="text/javascript" src="js/selectFilter.js"></script>
+<script type="text/javascript">
+			//本小插件支持移动端哦
+			
+			//这里是初始化
+			$('.filter-box').selectFilter({
+				callBack : function (val){
+					//返回选择的值
+					console.log(val+'-是返回的值')
+				}
+			});
+			$('.filter-box1').selectFilter({
+				callBack : function (val){
+					//返回选择的值
+					console.log(val+'-是返回的值')
+				}
+			});
+			$('.filter-box2').selectFilter({
+				callBack : function (val){
+					//返回选择的值
+					console.log(val+'-是返回的值')
+				}
+			});
+			$('.filter-box3').selectFilter({
+				callBack : function (val){
+					//返回选择的值
+					console.log(val+'-是返回的值')
+				}
+			});
+</script>
+
+</body>
+</html>

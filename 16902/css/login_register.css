@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+/*登录*/
+.welcome-wrap{position: relative; overflow:hidden;}
+	.welcome-wrap .wel-head{ margin:30px 0; clear:both;}
+		.wel-head .wel-logo{ float:left;}
+			.wel-logo img{ width:120px; height:auto; cursor:pointer;}
+		.wel-head .switch-hire{ float:right;}
+	.welcome-wrap .wel-body{ overflow:hidden; background-color:#efefef; margin:0 auto; padding:100px 0; background:url(../images/login_bj.jpg) center center;}
+		.wel-body .login-content{ width:320px; height:auto; margin:0 auto; padding:30px 0; background-color:#fff; border-radius:20px;}
+			.login-content h4{ text-align:center; color:#333; margin-bottom:30px;}
+			.login-content .login-mian{ padding:0 15px;}
+				.login-mian .login-input{ margin-bottom:25px;}
+				.login-mian	.button{ width:100%; border-radius:200px; margin:15px 0 40px 0; font-size:16px; letter-spacing:2px;font-family: Microsoft Yahei;}
+				.login-mian .switch-hire.button{ color:#fff; margin-bottom:30px;}
+				.login-mian .other-operation{ overflow:hidden; width:100%;}
+					.other-operation a{ display:block; font-size:14px; color:#333; margin-bottom:10px;}
+					.other-operation a:hover{color:#666;}
+					.other-operation .forget-password{ float:left;}
+					.other-operation .quick-register{ float:right;}
+@media(max-width:760px){
+	.footer{ display:none;}
+	}
+/*注册*/
+.register-head{ text-align:center;}
+.form-control.auth-code{ width:62%;}
+.code-botton{ position:relative; display:inline-block; float:right;}
+	.code-botton #get_btn{position:absolute;  right:0 ;color:#c6c6c6; background-color:#f7f7f7; border-radius:3px; text-align:center; font-size:13px; border:1px solid #f7f7f7; width:84px; height:34px; padding:6px 0; }
+	.code-botton #get_btn:active{ color:#5f5f5f; border:1px solid #d6d6d6;}

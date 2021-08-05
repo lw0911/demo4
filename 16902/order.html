@@ -1,0 +1,880 @@
+<!doctype html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<title>预定服务</title>
+
+		<link rel="stylesheet" href="css/style.css">
+
+		<link rel="stylesheet" href="css/reset.css">
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+
+		<link rel="stylesheet" href="css/font-awesome.css">
+
+		<!--导航处城市切换插件-->
+
+		<link rel="stylesheet" href="css/cityPicker.css">
+
+		<!--下拉处城市切换插件-->
+
+		<link rel="stylesheet" href="css/city-picker.css">
+
+		<!--分页-->
+
+		<link rel="stylesheet" href="css/pagination.css" />
+
+		<!--lay组件-->
+
+		<link rel="stylesheet" href="css/layui.css">
+
+</head>
+
+
+
+<body>
+
+	<div class="top-nav">
+
+		<div class="container">
+
+			<ul class="login-left">
+
+				<li> <span>欢迎来到某某家政政！</span> </li>
+
+				<li> <a href="employer_login.html" id="employer-login">[雇主登录]</a> </li>
+
+				<li> <a href="hire_login.html" id="hire-login">[雇员登录]</a> </li>
+
+				<li> <a href="javascript:void(0)" class="logout">[退出登录]</a> </li>
+
+			</ul>
+
+			<ul class="top-right">
+
+				<li>
+
+					<a href="business_center.html" class="top-link">
+
+						<span class="fa fa-hand-o-right"></span>商务中心
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="http://www.fzjlbj.com/p_jjqjcontentgxh.aspx" class="top-link">
+
+						<span class="fa fa-diamond"></span>
+
+						个性化定制
+
+					</a>
+
+				</li>
+
+				<li style="display:none;">
+
+					<a href="javascript:void(0)" class="top-link phone-link">
+
+						<span class="fa fa-phone"></span>
+
+						4000-591-798
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="person-center.html" class="top-link">
+
+						<span class="fa fa-user"></span>
+
+						个人中心
+
+					</a>
+
+				</li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+
+
+	<div class="header">
+
+		<div class="container">
+
+			<div class="jw-logo">
+
+				<img src="images/logo2.png" alt="" onClick="location.href=&#39;index.html&#39;"/>
+
+				<div class="change-city">
+
+					<em>
+
+						<input type="text" id="cityChoice" value="福州" placeholder="请选择"/>
+
+					</em>
+
+					<p id="choose-city">[切换城市]</p>
+
+				</div>
+
+			</div>
+
+			<div class="header-right">
+
+				<ul class="header-nav">
+
+					<li class="nav-list"><a href="index.html">首页</a></li>
+
+					<li class="nav-list"><a href="baomu.html">保姆</a></li>
+
+					<li class="nav-list"><a href="yuesao.html">月嫂</a></li>
+
+					<li class="nav-list"><a href="linshi.html">临时钟点工</a></li>
+
+					<li class="nav-list"><a href="changqi.html">长期钟点工</a></li>
+
+					<li class="nav-list">
+
+						<a href="javascript:void(0)" class="nav-more">更多服务<span class="fa fa-angle-down"></span></a>
+
+						<ol class="hide-nav">
+
+							<li><a href="jiadian.html">家电清洗</a></li>
+
+							<li><a href="no_date.html">干洗</a></li>
+
+							<li><a href="no_date.html">搬家</a></li>
+
+							<li><a href="no_date.html">护工</a></li>
+
+							<li><a href="no_date.html">居家保养</a></li>
+
+							<li><a href="no_date.html">皮具护理</a></li>
+
+							<li><a href="no_date.html">居家便民</a></li>
+
+							<li><a href="no_date.html">家电维修</a></li>
+
+						</ol>
+
+					</li>
+
+				</ul>
+
+				<div class="drop-menu">
+
+					<span class="fa fa-navicon"></span>
+
+				</div>
+
+				<div class="search-right">
+
+					<ul class="three">
+
+						<li class="hir-name current">雇员名字</li>
+
+						<li class="phone">手机号码</li>
+
+						<li class="role">角色</li>
+
+					</ul>
+
+					<ul class="search-input">
+
+						<li>
+
+							<input type="text" placeholder="请输入雇员名称"/>
+
+							<span class="fa fa-search"></span>
+
+						</li>
+
+						<li>
+
+							<input type="text" placeholder="请输入手机号码"/>
+
+							<span class="fa fa-search"></span>
+
+						</li>
+
+						<li>
+
+							<input type="text" placeholder="请输入角色"/>
+
+							<span class="fa fa-search"></span>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="section-order">
+
+		<div class="container">
+
+			<span class="order-note"></span>
+
+			<span class="order-text"></span>
+
+		</div>
+
+	</div>
+
+	<div class="section-mian order-mian">
+
+		<div class="container">
+
+			<div class="order-box">
+
+				<div class="order-fill col-md-4">
+
+					<div class="fill-hd">
+
+						<p>服务人员:<span class="employee-name">何美琴（保姆）</span></p>
+
+						<p>服务价格:<span class="employee-wage">3000.0</span>元/月</p>
+
+					</div>
+
+					<ul class="fill-bd condition-choose">
+
+						<li class="fill-item">
+
+							<p class="tit">服务时间</p>
+
+							<input class="layui-input time-input input" placeholder="" readonly  type="text" value="请选择服务时间" onclick="layui.laydate({elem: this, festival: true})"/>
+
+						</li>
+
+						<li class="fill-item">
+
+							<p class="tit">面试方式</p>
+
+							<select class="base-select">
+
+								<option value="">==选择面试方式==</option>
+
+								<option value="上门面试">上门面试</option>
+
+								<option value="运营中心面试">运营中心面试</option>
+
+								<option value="视频面试">视频面试</option>
+
+								<option value="电话面试">电话面试</option>
+
+							</select>
+
+						</li>	
+
+						<li class="fill-item">
+
+							<p class="tit">付款方式</p>
+
+							<select class="base-select">
+
+								<option value="">==选择付款方式==</option>
+
+								<option value="账户余额支付">账户余额支付</option>
+
+								<option value="支付宝">支付宝</option>
+
+								<option value="微信支付">微信支付</option>
+
+							</select>
+
+						</li>
+
+						<li class="fill-item">
+
+							<p class="tit">服务地址</p>
+
+							<input type="text" class="input service-address" placeholder="请填写服务地址"/>
+
+						</li>
+
+						<li class="fill-item">
+
+							<p class="tit">备注</p>
+
+							<input type="text" class="remark input" placeholder="备注更多需求"/>
+
+						</li>
+
+						<li class="fill-item">
+
+							<div class="clause">
+
+								<input type="checkbox" class="choose-input" name="clause" value="1">
+
+								<label for="1">是否同意代发工资</label>
+
+								<span  data-method="confirmTransB" class="down-arrow down-btn1 alert-btn"></span>
+
+							</div>
+
+						</li>
+
+						<li class="fill-item">
+
+							<div class="clause">
+
+								<input type="checkbox" class="choose-input" name="clause" value="2">
+
+								<label for="2">购买家政综合险</label>
+
+								<span  data-method="confirmTransC" class="down-arrow down-btn1 alert-btn"></span>
+
+							</div>
+
+						</li>
+
+						<li class="fill-item">
+
+							<div class="clause">
+
+								<input type="checkbox" class="choose-input" name="clause" value="3">
+
+								<label for="3">支付保证金</label>
+
+								<span  data-method="confirmTransD" class="down-arrow down-btn1 alert-btn"></span>
+
+							</div>
+
+						</li>
+
+					</ul>
+
+					<div class="service-clause">
+
+						<p>我已阅读并同意<i>《服务条款》</i></p>
+
+						<button  data-method="confirmTransA" class="alert-btn">确认</button>
+
+					</div>	
+
+				</div>
+
+				<div class="order-pic col-md-8">
+
+					<div class="pic-text">
+
+						<h1 class="service-project">家电清洗</h1>
+
+						<div class="spilt-line"></div>
+
+						<ul class="service-wrap">
+
+							<li>
+
+								<div class="service-tit">
+
+									<span class="small-title">说明</span>
+
+									<span class="bedeck"></span>
+
+									<div class="clearfix"></div>
+
+								</div>
+
+								<p class="service-cont">家电清洗即对家用电器进行清洁保养，以增加家电运作效率以及延长其使用寿命，使人们更好的利用家电，保持家庭清洁，人们心情愉快生活更健康。家电清洗包括：饮水机、油烟机、空调、电磁炉、电冰箱、电脑、电视等一些经常使用的家用电器清洗。不同的家电清洗方法不同具体的标准也不同。</p>
+
+							</li>
+
+							<li>
+
+								<div class="service-tit">
+
+									<span class="small-title">空调</span>
+
+									<span class="bedeck"></span>
+
+									<div class="clearfix"></div>
+
+								</div>
+
+								<p class="service-cont">家电清洗即对家用电器进行清洁保养，以增加家电运作效率以及延长其使用寿命，使人们更好的利用家电，保持家庭清洁，人们心情愉快生活更健康。家电清洗包括：饮水机、油烟机、空调、电磁炉、电冰箱、电脑、电视等一些经常使用的家用电器清洗。不同的家电清洗方法不同具体的标准也不同。</p>
+
+							</li>
+
+							<li>
+
+								<div class="service-tit">
+
+									<span class="small-title">油烟机</span>
+
+									<span class="bedeck"></span>
+
+									<div class="clearfix"></div>
+
+								</div>
+
+								<p class="service-cont">家电清洗即对家用电器进行清洁保养，以增加家电运作效率以及延长其使用寿命，使人们更好的利用家电，保持家庭清洁，人们心情愉快生活更健康。家电清洗包括：饮水机、油烟机、空调、电磁炉、电冰箱、电脑、电视等一些经常使用的家用电器清洗。不同的家电清洗方法不同具体的标准也不同。</p>
+
+							</li>
+
+							<li>
+
+								<div class="service-tit">
+
+									<span class="small-title">洗衣机</span>
+
+									<span class="bedeck"></span>
+
+									<div class="clearfix"></div>
+
+								</div>
+
+								<p class="service-cont">家电清洗即对家用电器进行清洁保养，以增加家电运作效率以及延长其使用寿命，使人们更好的利用家电，保持家庭清洁，人们心情愉快生活更健康。家电清洗包括：饮水机、油烟机、空调、电磁炉、电冰箱、电脑、电视等一些经常使用的家用电器清洗。不同的家电清洗方法不同具体的标准也不同。</p>
+
+							</li>
+
+							<li>
+
+								<div class="service-tit">
+
+									<span class="small-title">热水器</span>
+
+									<span class="bedeck"></span>
+
+									<div class="clearfix"></div>
+
+								</div>
+
+								<p class="service-cont">家电清洗即对家用电器进行清洁保养，以增加家电运作效率以及延长其使用寿命，使人们更好的利用家电，保持家庭清洁，人们心情愉快生活更健康。家电清洗包括：饮水机、油烟机、空调、电磁炉、电冰箱、电脑、电视等一些经常使用的家用电器清洗。不同的家电清洗方法不同具体的标准也不同。</p>
+
+								<li>
+
+								<div class="service-tit">
+
+									<span class="small-title">冰箱</span>
+
+									<span class="bedeck"></span>
+
+									<div class="clearfix"></div>
+
+								</div>
+
+								<p class="service-cont">家电清洗即对家用电器进行清洁保养，以增加家电运作效率以及延长其使用寿命，使人们更好的利用家电，保持家庭清洁，人们心情愉快生活更健康。家电清洗包括：饮水机、油烟机、空调、电磁炉、电冰箱、电脑、电视等一些经常使用的家用电器清洗。不同的家电清洗方法不同具体的标准也不同。</p>
+
+								<li>
+
+								<div class="service-tit">
+
+									<span class="small-title">电脑</span>
+
+									<span class="bedeck"></span>
+
+									<div class="clearfix"></div>
+
+								</div>
+
+								<p class="service-cont">家电清洗即对家用电器进行清洁保养，以增加家电运作效率以及延长其使用寿命，使人们更好的利用家电，保持家庭清洁，人们心情愉快生活更健康。家电清洗包括：饮水机、油烟机、空调、电磁炉、电冰箱、电脑、电视等一些经常使用的家用电器清洗。不同的家电清洗方法不同具体的标准也不同。</p>
+
+							</li>
+
+							</li>
+
+							</li>
+
+						</ul>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="pay-alert">
+
+		<p>余额不足，请选择其他支付方式</p>
+
+	</div>
+
+	<div id="payroll-credit">
+
+		<img src="images/wage.jpg" alt="代发工资说明">
+
+	</div>
+
+	<div id="insurance">
+
+		<img src="images/insurance.jpg" alt="家政综合险">
+
+	</div>
+
+	<div id="margin">
+
+		<img src="images/margin.jpg" alt="保证金">
+
+	</div>
+
+	<div class="footer">
+
+		<div class="container">
+
+			<div class="footer-text" id="footer-text">
+
+				<ul class="other-contact text-float text-ul">
+
+					<h5>部门客服</h5>
+
+					<li><a href="service_alert.html">鼓楼区客服</a></li>
+
+					<li><a href="service_alert.html">晋安区客服</a></li>
+
+					<li><a href="service_alert.html">月嫂部客服</a></li>
+
+					<li><a href="service_alert.html">保姆部客服</a></li>
+
+					<li><a href="service_alert.html">钟点工客服</a></li>
+
+				</ul>
+
+				<ul class="friendly-link text-ul" >
+
+					<h5>友情链接</h5>
+
+					<li><a href="http://www.968jw.com" target="_blank">福建家政</a></li>
+
+					<li><a href="http://www.fzjlbj.com" target="_blank">福州洁丽保洁</a></li>
+
+					<li><a href="http://www.968jw.com" target="_blank">福州金牌月嫂</a></li>
+
+					<li><a href="http://www.fzjlbj.com" target="_blank">福州家政公司</a></li>
+
+				</ul>
+
+				<ul class="contact-us text-ul">
+
+					<h5>联系我们</h5>
+
+					<li>客服热线：XXX</li>
+
+					<li>总公司地址：XXX　<br/>联系电话： XXX</li>
+
+					<li>南平分公司地址：XXX　<br/>联系电话:XXX</li>
+
+				</ul>
+
+			</div>
+
+			<div class="bottom-code">
+
+				<img src="images/code.jpg" alt=""/>
+
+				<p>扫码关注某某家政公众号，更多好礼期待你的关注</p>
+
+			</div>
+
+		</div>	
+
+	</div>
+
+	<p class="address">家政综合信息服务平台 XXX分享 XXX</p>
+
+	<div class="fix-service">
+
+		<ul class="servise-list">
+
+			<li class="weixin-item fix-item">
+
+				<span class="weixin-code code"></span>
+
+				<div class="icon">
+
+					<img src="images/weixin.png" alt="" class="weixin"/>
+
+				</div>
+
+			</li>
+
+			<li class="weibo-item fix-item">
+
+				<span class="weibo-code code"></span>
+
+				<div class="icon">
+
+					<img src="images/weibo.png" alt="" class="weibo"/>
+
+				</div>
+
+			</li>
+
+			<li class="service-item fix-item">
+
+				<span class="service-code code"></span>
+
+				<div class="icon">
+
+					<img src="images/qq.png" alt="" class="service"/>
+
+				</div>
+
+			</li>
+
+			<li id="btn" class="top-item fix-item">
+
+				<div class="icon">
+
+					<img src="images/top.png" alt="" class="top"/>
+
+				</div>
+
+			</li>
+
+		</ul>
+
+	</div>
+
+	<script src="js/jquery-2.0.0.min.js"></script>
+
+	<script src="js/bootstrap.min.js"></script>
+
+	<!--导航城市选择-->
+
+	<script src="js/cityData.js"></script>
+
+	<script src="js/cityPicker.js"></script>
+
+	<!--下拉城市选择-->
+
+	<script src="js/city-picker.data.js"></script>
+
+	<script src="js/city-picker.js"></script>
+
+	<!--分页-->
+
+	<script src="js/jquery.pagination.js"></script>
+
+	<!--日期插件-->
+
+	<script src="js/layui.js"></script>
+
+	<script src="js/laydate.js"></script>
+
+	<script>
+
+	$(".search-input li").hide().first().show();
+
+	$(document).ready(function(e) {
+
+		$(".nav-more").click(function(){
+
+			$(".hide-nav").slideToggle();	
+
+		});
+
+		$(".drop-menu").click(function(){
+
+			$(".header-nav").slideToggle();	
+
+		});
+
+		$(".three li").click(function(){
+
+			$(this).addClass("current").siblings().removeClass("current");
+
+			$(".search-input li").hide().eq($(this).index()).show();
+
+		});
+
+		//返回顶部
+
+		$(".top-item").click(function(){
+
+			$('body,html').animate({ scrollTop: 0 }, 500);
+
+			return false;
+
+		});
+
+	});
+
+	</script>
+
+	<script>
+
+		var cityPicker = new IIInsomniaCityPicker({
+
+			data: cityData,
+
+			target: '#cityChoice',
+
+			valType: 'k-v',
+
+			hideCityInput: '#city',
+
+			hideProvinceInput: '#province',
+
+			callback: function(city_id){
+
+			}
+
+		});
+
+		cityPicker.init();
+
+	</script>
+
+	<script>
+
+	layui.use('layer', function(){ //独立版的layer无需执行这一句
+
+	  var $ = layui.jquery, layer = layui.layer; //独立版的layer无需执行这一句
+
+	  
+
+	  //触发事件
+
+	  var active = {
+
+		confirmTransA: function(){
+
+		  layer.open({
+
+			 type:1,
+
+			 title:'信息',
+
+			 shade:0.5,
+
+			 move:false,
+
+			 scrollbar:false,
+
+			 resize:false,
+
+			 content:$('#pay-alert'),
+
+			 btn:['选择其他支付方式','去充值'],
+
+			 btn2: function(index, layero) {  
+
+				window.location.href='person-center.html';  
+
+             }
+
+		  });
+
+		},
+
+		confirmTransB: function(){
+
+		  layer.open({
+
+			 type:1,
+
+			 title:'代发工资说明',
+
+			 area:['340px','500px'],
+
+			 shade:0.5,
+
+			 move:false,
+
+			 scrollbar:false,
+
+			 resize:false,
+
+			 content:$('#payroll-credit')
+
+		  });
+
+		},
+
+		confirmTransC: function(){
+
+		  layer.open({
+
+			 type:1,
+
+			 title:'家政综合险说明',
+
+			  area:['340px','500px'],
+
+			 shade:0.5,
+
+			 move:false,
+
+			 scrollbar:false,
+
+			 resize:false,
+
+			 content:$('#insurance')
+
+		  });
+
+		},
+
+		confirmTransD: function(){
+
+		  layer.open({
+
+			 type:1,
+
+			 title:'保证金说明',
+
+			  area:['340px','500px'],
+
+			 shade:0.5,
+
+			 move:false,
+
+			 scrollbar:false,
+
+			 resize:false,
+
+			 content:$('#margin')
+
+		  });
+
+		}
+
+		
+
+	  };
+
+	  $('.alert-btn').on('click', function(){
+
+		var othis = $(this), method = othis.data('method');
+
+		active[method] ? active[method].call(this, othis) : '';
+
+	  	});
+
+	 });
+
+	</script>
+
+</body>
+
+</html>
+

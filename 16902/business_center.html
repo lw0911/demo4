@@ -1,0 +1,704 @@
+<!doctype html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<title>某某家政-商务中心</title>
+
+		<link rel="stylesheet" href="css/style.css">
+
+		<link rel="stylesheet" href="css/reset.css">
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+
+		<link rel="stylesheet" href="css/animate.min.css">
+
+		<link rel="stylesheet" href="css/font-awesome.css">
+
+		<link rel="stylesheet" href="css/button.css">
+
+		<!--城市切换插件-->
+
+		<link rel="stylesheet" href="css/cityPicker.css">
+
+</head>
+
+
+
+<body>
+
+	<div class="top-nav">
+
+		<div class="container">
+
+			<ul class="login-left">
+
+				<li> <span>欢迎来到某某家政政！</span> </li>
+
+				<li> <a href="employer_login.html" id="employer-login">[雇主登录]</a> </li>
+
+				<li> <a href="hire_login.html" id="hire-login">[雇员登录]</a> </li>
+
+				<li> <a href="javascript:void(0)" class="logout">[退出登录]</a> </li>
+
+			</ul>
+
+			<ul class="top-right">
+
+				<li>
+
+					<a href="business_center.html" class="top-link">
+
+						<span class="fa fa-hand-o-right"></span>商务中心
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="http://www.fzjlbj.com/p_jjqjcontentgxh.aspx" class="top-link">
+
+						<span class="fa fa-diamond"></span>
+
+						个性化定制
+
+					</a>
+
+				</li>
+
+				<li style="display:none;">
+
+					<a href="javascript:void(0)" class="top-link phone-link">
+
+						<span class="fa fa-phone"></span>
+
+						4000-591-798
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="person-center.html" class="top-link">
+
+						<span class="fa fa-user"></span>
+
+						个人中心
+
+					</a>
+
+				</li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+
+
+	<div class="header">
+
+		<div class="container">
+
+			<div class="jw-logo">
+
+				<img src="images/logo2.png" alt="" onClick="location.href=&#39;index.html&#39;"/>
+
+				<div class="change-city">
+
+					<em>
+
+						<input type="text" id="cityChoice" value="福州" placeholder="请选择"/>
+
+					</em>
+
+					<p id="choose-city">[切换城市]</p>
+
+				</div>
+
+			</div>
+
+			<div class="header-right">
+
+				<ul class="header-nav">
+
+					<li class="nav-list"><a href="index.html">首页</a></li>
+
+					<li class="nav-list"><a href="baomu.html">保姆</a></li>
+
+					<li class="nav-list"><a href="yuesao.html">月嫂</a></li>
+
+					<li class="nav-list"><a href="linshi.html">临时钟点工</a></li>
+
+					<li class="nav-list"><a href="changqi.html">长期钟点工</a></li>
+
+					<li class="nav-list">
+
+						<a href="javascript:void(0)" class="nav-more">更多服务<span class="fa fa-angle-down"></span></a>
+
+						<ol class="hide-nav">
+
+							<li><a href="jiadian.html">家电清洗</a></li>
+
+							<li><a href="no_date.html">干洗</a></li>
+
+							<li><a href="no_date.html">搬家</a></li>
+
+							<li><a href="no_date.html">护工</a></li>
+
+							<li><a href="no_date.html">居家保养</a></li>
+
+							<li><a href="no_date.html">皮具护理</a></li>
+
+							<li><a href="no_date.html">居家便民</a></li>
+
+							<li><a href="no_date.html">家电维修</a></li>
+
+						</ol>
+
+					</li>
+
+				</ul>
+
+				<div class="drop-menu">
+
+					<span class="fa fa-navicon"></span>
+
+				</div>
+
+				<div class="search-right">
+
+					<ul class="three">
+
+						<li class="hir-name current">雇员名字</li>
+
+						<li class="phone">手机号码</li>
+
+						<li class="role">角色</li>
+
+					</ul>
+
+					<ul class="search-input">
+
+						<li>
+
+							<input type="text" placeholder="请输入雇员名称"/>
+
+							<span class="fa fa-search"></span>
+
+						</li>
+
+						<li>
+
+							<input type="text" placeholder="请输入手机号码"/>
+
+							<span class="fa fa-search"></span>
+
+						</li>
+
+						<li>
+
+							<input type="text" placeholder="请输入角色"/>
+
+							<span class="fa fa-search"></span>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="business-img">
+
+		<img src="images/business_center.jpg" class="" alt=""/>
+
+	</div>
+
+	<div class="business-center">
+
+		<div class="container">
+
+			<div class="col-md-2">
+
+				<ul class="left-nav">
+
+					<li class="active">师资力量</li>
+
+					<li>专家风采</li>
+
+					<li>加盟合作</li>
+
+					<li>公司简介</li>
+
+				</ul>
+
+			</div>
+
+			<div class="col-md-10">
+
+				<div class="right-wrap">
+
+					<div class="right-tab">
+
+						<div class="right-text">
+
+							<h4>师资力量</h4>
+
+							<p>洁丽保洁对本公司的家政服务人员实行岗前专业培训、岗中一对一督导、待岗针对性培训制度。公司拥有一批经验丰富的、操作科学的培训老师团队，因材施教，配合招工部、客户部等部门，根据市场的需求，共同打造专业的高品质从业人员。我公司每位学员必须通过公司的5天-1个月的滚动式的专业培训、严格考核合格后方可上岗</p>
+
+							<div class="big-title">[培训课程]</div>
+
+							<p>1、公司企业文化</p>
+
+							<p>2、家政服务职业道德、仪表仪容</p>
+
+							<p>3、家庭餐制作、家居保洁、衣物洗涤、熨烫和保管</p>
+
+							<p>4、家用电器的认识和使用</p>
+
+							<p>5、采买与记帐</p>
+
+							<p class="last-section">6、婴幼儿日常护理（婴幼儿抚触、被动操、婴幼儿辅食添加、婴幼儿早期教育）</p>
+
+							<div class="big-title">[学员分级设置]</div>
+
+							<p class="small-title">学员分为三级：</p>
+
+							<p>1、初级家政员</p>
+
+							<p>2、中级家政员</p>
+
+							<p class="last-section">3、高级家政员</p>
+
+							<div class="middle-title">一、初级家政员</div>
+
+							<p>1、初中以上文化程度。</p>
+
+							<p>2、无家政从业经验。</p>
+
+							<p>3、遵守职业道德，职业守则，了解法律常识。</p>
+
+							<p>4、掌握一般的家庭礼仪方面的知识，如：言谈举止，仪表仪容，生活习俗等。</p>
+
+							<p>5、能够做一般家庭餐，并掌握蒸煮两种主食制作方法，掌握蒸、炒、炖、拌四种烹调技术，能简单配置一般菜肴。</p>
+
+							<p class="last-section">6、掌握家居保洁的目的和顺序，如：清扫地面、擦拭家具及用品、清洁厨房和卫生间、一般清洁剂的性能和使用常识。</p>
+
+							<div class="middle-title">二、中级家政员</div>
+
+							<p>1、初中以上文化程度，在本职业工作半年以上。</p>
+
+							<p>2、遵守职业道德和职业守则，掌握法律常识、安全知识和卫生常识。</p>
+
+							<p>3、掌握家庭礼仪方面的知识，如：仪表仪容（服饰仪容、姿态行为）、人际交往（日常交际礼节）、生活习俗（我国主要传统节日习俗）、宗教信仰、基本礼仪。</p>
+
+							<p>4、制定一周家庭膳食计划，掌握炒、炸、蒸、煮、炖、拌6种烹调技法，掌握3种以上的复合调味方法，掌握一般家庭餐制作的相关知识，如：营养搭配、调味知识、食用油合理使用等。</p>
+
+							<p>5、掌握家居保洁知识，如：不同质地的地面清洁和保养方法、正确使用清洁剂清洁、保养各类家居用品、厨房卫生间清洁和消毒。</p>
+
+							<p class="last-section">6、掌握衣物的洗涤、熨烫和保管，正确洗涤各种面料的衣物，保管不同面料的衣物，鉴别常见服装面料的质地，皮毛制品的收藏方法，常见面料衣物的熨烫方法和注意事项。</p>
+
+							<div class="middle-title">三、高级家政员</div>
+
+							<p>1、高中以上文化程度，在本职业工作一年以上。</p>
+
+							<p>2、树立正确的家政服务观念与健康心理，遵守职业道德和职业守则，了解相关法律常识、安全和卫生常识。</p>
+
+							<p>3、掌握中、西方社交礼仪的相关知识，如：家庭宴请和聚会、社交场合、服饰化妆、英语日常对话等。</p>
+
+							<p>4、具有营养学基础，掌握蒸、煮、烙、烤四种主食制作技法，掌握炒、煎、炸、蒸、煮、炖、煨，凉拌等8种烹调技法，制作两种以上甜品，掌握上菜程序和制汤基本常识，干货涨发，合理安排膳食，做到营养均衡。</p>
+
+							<p>5、掌握家居美化的有关知识：如居家布置，常见花卉的养护并合理摆放，一般插花常识等。</p>
+
+							<p>6、掌握家用办公设备的使用。如：传真机、电脑的操作、上网和下载文件的方法。</p>
+
+							<p>7、具有家务管理能力，如：家庭理财：合理安排日常生活开支、记账、信用卡使用方法；家庭保健：膳食调配、体格锻炼、中医药膳、常见病的饮食禁忌等。</p>
+
+							<p>8、科学合理的护理孕、产妇、新生儿、老人、病人的日常生活。</p>
+
+							<p>9、掌握家庭教育的有关知识，婴幼儿早教、学前儿童家庭教育：游戏、儿歌、行为习惯的培养。</p>
+
+							<p class="last-section">10、能够组织安排家庭休闲娱乐活动，如：陪同家庭成员进行体育活动、安排外出活动、家庭聚会等娱乐活动。</p>
+
+						</div>
+
+					</div>
+
+					<div class="right-tab">
+
+						<div class="right-text">
+
+							<h4>专家风采</h4>
+
+							<p>洁丽保洁对本公司的家政服务人员实行岗前专业培训、岗中一对一督导、待岗针对性培训制度。公司拥有一批经验丰富、操作科学的培训老师团队，因材施教，配合招	工部、客户部等部门，根据市场的需求，共同打造专业的高品质从业人员。我公司每位学员必须通过公司的5天-1个月的滚动式的专业培训、严格考核合格后方可上岗。</p>
+
+							<div class="big-title">[培训课程]</div>
+
+							<p class="middle-title">一、沟通能力的提升</p>
+
+							<p>1、专业月嫂、育儿嫂的概念，做事先做人。上岗前的基本礼仪，风俗习惯。个人形象，形体礼仪，语言礼仪，电话礼仪，沟通技巧，心理素质要求等。</p>
+
+							<p>2、职业道德，安全服务意识，法律法规。月嫂的职业道德，月嫂应掌握的基本法律知识和常识等。</p>
+
+							<p class="middle-title">二、专业技能的提升</p>
+
+							<p class="small-title">产妇护理</p>
+
+							<p>1、母乳喂养指导，乳房护理及乳腺炎预防。乳头皲裂的预防和护理。月子餐制作，营养学与烹饪等。</p>
+
+							<p>2、产妇个人卫生指导，	产后侧切及手术伤口的清洁。形体恢复指导，形体恢复操。产后抑郁疏导。 产妇休养环境清洁等。</p>
+
+							<p class="small-title">新生儿护理</p>
+
+							<p>1、人工喂养指导、溢奶处理。眼部护理。臀部护理。脐部护理等。</p>
+
+
+
+<p>2、护理新生儿的其他技能、	新生儿洗澡。新生儿抚触。新生儿被动操。新生儿生理性黄疸处理。 </p>新生儿五项行为训练。新生儿用品的清理与消毒等。
+
+
+
+<p>3	、疾病预防、湿疹预防与护理。鹅口疮预防与护理。消化不良的预防。脐炎的预防与护理。 呼吸道感染预防与护理。脓疱疮预防与护理。	尿布疹预防与护理等。</p>
+
+						</div>
+
+					</div>
+
+					<div class="right-tab">
+
+						<div class="right-text">
+
+							<h4>加盟合作</h4>
+
+							<p>合作电话：13328680991</p>
+
+						</div>
+
+					</div>
+
+					<div class="right-tab">
+
+						<div class="right-text">
+
+							<h4>公司简介</h4>
+
+							<p class="text-center">福建省某某家政家政综合信息服务平台</p>
+
+							<p>平台简介：</p>
+
+							<p class="indent">福建省某某家政网络科技股份有限公司，成立于2015年12月（创建于2014年11月）是董事长黄先平在福州洁丽保洁技术服务有限公司与福建省洁丽家政服务有限公司为基础创建成立，是将传统家政与互联网完美结合的创建者，是家政互联“概念” 的创始人，以洁丽家政的精英团队为主体，凭着专业的，感恩的、负责任的企业精神，募集顶级智慧及行业高端人才共同打造的专业家政功能性平台。是目前为止全国最专业、最完善、最精细的功能性实用型家政服务平台。</p>
+
+							<p>“某某家政”品牌释义：</p>
+
+							<p>“金”</p>
+
+							<p>◆在线人员及合作伙伴们的赤诚品格，善良本性</p>
+
+							<p>◆表示在此平台接受服务的客户无比尊贵。</p>
+
+							<p>◆体现服务人员与用户相互尊敬，坦诚相待，良心合作；</p>
+
+							<p>◆体现平台注重专业品质，做精做细，科技创新;</p>
+
+							<p class="last-section">◆打造金牌品质，畅想金品生活。</p>
+
+							<p>“网”</p>
+
+							<p>◆体现多层次覆盖，提供更为全面的家政服务。</p>
+
+							<p>◆网聚有实力、负责任精英共同参与。</p>
+
+							<p>◆募集勤劳善良的务工人员同等奉献。</p>
+
+							<p  class="last-section">◆吸引高端大气的优质客户畅享金品生活。</p>
+
+							<p>“信”</p>
+
+							<p>◆信者，诚也，定身以行事谓之信。</p>
+
+							<p>◆企业以诚信、信义为发展之根本，以诚信待人，以信义服人。</p>
+
+							<p  class="last-section">◆体现客户与服务员工深层次的融合。</p>
+
+							<p>“家”</p>
+
+							<p>◆温暖，待客户如家人般去服务，温馨与亲切。</p>
+
+							<p>◆让家政员有家的感觉，宾至如归。</p>
+
+							<p  class="last-section">◆代表家政服务，满足客户家庭的需求，把家政服务做到细致、精致。</p>
+
+							<p>企业文化：</p>	
+
+							<p>企业愿景：  网天下之才  创优之服务 利社会之益</p>	
+
+							<p class="indent-5">引领社会服务业一体化、规范化、标准化</p>	
+
+							<p>企业使命：  以德聚才 以术成材  助务工者实现自身价值</p>	
+
+							<p class="indent-5">务便民之工  立宜民之事 让每个家庭畅享舒心生活</p>	
+
+							<p>核心价值观：重德行、尚忠孝、 知感恩 、行礼遇 、和万邦</p>	
+
+							<p>团    队：  共享资源  、分享经验 、 精确分工 、良好沟通、 富于勇气</p>	
+
+							<p>极    致：  发挥无限潜能 、 以点带面、 逐个突破、 抵达服务巅峰</p>	
+
+							<p>创    新：  以用户需求为导向 、与时俱进</p>	
+
+							<p class="indent-3">实现管理创新、市场创新、技术创新、服务创新</p>	
+
+							<p>追求与责任：律己正心  明理讲信  承责敢当</p>	
+
+							<p class="indent-5">&nbsp;&nbsp;严谨高效 脚踏实地  行动迅速</p>
+
+							<p class="indent-2 spacing" style="margin-top:20px;">根据市场分析表明：很多的客户在聘请服务人员的时候无法了解到服务人员的详细资料，也无法知道服务人员的等级标准，不知道服务人员的服务品质！</p>
+
+							<p class="indent-2 spacing ">某某家政以市场需求迎合服务标准，进行市场整合，通过平台的服务人员专业化等级机制，来让大家更清楚明了的知悉服务人员的标准化和专业化。</p>
+
+							<p class="indent-2 spacing">某某家政平台功能介绍：1、信息服务：通过某某家政平台展示的雇员信息、雇员视频、责任老师评价等信息，让雇主更快更精准的找到最适合自己的雇员；2、信息快捷通道：通过雇主在平台上快速留下信息，每个雇员可以看到雇主预留信息，让雇主筛选最合适自己的雇员；3、家政综合服务：不仅有主营项目：保姆、月嫂、钟点工，还有家电清洗、搬家、居家保养、干洗、皮具清洗、家电维修等一系列家政服务，让雇主在家就可雇佣所有家庭服务；4、个性化定制：针对高端用户，我们根据雇主的需求量身定制雇员，让雇主体验更专业、更精细、更全面的服务；5、星级设置：通过平台的星级认证，让雇主一目了然雇员的职业能力等级；6、保障机制：为雇主提供安全保障、品质保障、风险保障；7、代发薪资：保障雇员和雇主更多的权益。</p>
+
+							<p class="indent-2 spacing">通过某某家政网络平台帮助客户解决以下4大难题：1、节假日聘用难：我们能做到春节和各大节假日的时候人员供应的充足；2、节假日价格高：我们所有的服务都是统一价，在春节和各大节假日的时候价格也是平价；3、市场无标准：以假乱真、以次充好的不诚信行为，我们通过严格的品质管控：专家审核和客户评定，让您无后顾之忧；4、资源匹配不当：我们通过精细筛选，让雇主直接了解自己需要阿姨的详细信息，并通过三种面试方式，让您更直观的认识属于您的好阿姨！</p>
+
+							<p class="indent-2 spacing">某某家政网络平台7大优势：1、我们彻底取消中介环节，为您节省中介费用。2、海量好阿姨任您选，好阿姨您直接领回家。3、品质严格管控：专家审核、客户评定；杜绝以次充好，服务品质与价格的不符！4、完善的保障机制：风险保障、品质保障、安全保障。5、高端家政、国内顶级专家、个性化定制。6、百万商品免费等您拿回家。7、您雇服务，您享分红</p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="footer">
+
+		<div class="container">
+
+			<div class="footer-text" id="footer-text">
+
+				<ul class="other-contact text-float text-ul">
+
+					<h5>部门客服</h5>
+
+					<li><a href="service_alert.html">鼓楼区客服</a></li>
+
+					<li><a href="service_alert.html">晋安区客服</a></li>
+
+					<li><a href="service_alert.html">月嫂部客服</a></li>
+
+					<li><a href="service_alert.html">保姆部客服</a></li>
+
+					<li><a href="service_alert.html">钟点工客服</a></li>
+
+				</ul>
+
+				<ul class="friendly-link text-ul" >
+
+					<h5>友情链接</h5>
+
+					<li><a href="http://www.968jw.com" target="_blank">福建家政</a></li>
+
+					<li><a href="http://www.fzjlbj.com" target="_blank">福州洁丽保洁</a></li>
+
+					<li><a href="http://www.968jw.com" target="_blank">福州金牌月嫂</a></li>
+
+					<li><a href="http://www.fzjlbj.com" target="_blank">福州家政公司</a></li>
+
+				</ul>
+
+				<ul class="contact-us text-ul">
+
+					<h5>联系我们</h5>
+
+					<li>客服热线：XXX</li>
+
+					<li>总公司地址：XXX　<br/>联系电话： XXX</li>
+
+					<li>南平分公司地址：XXX　<br/>联系电话:XXX</li>
+
+				</ul>
+
+			</div>
+
+			<div class="bottom-code">
+
+				<img src="images/code.jpg" alt=""/>
+
+				<p>扫码关注某某家政公众号，更多好礼期待你的关注</p>
+
+			</div>
+
+		</div>	
+
+	</div>
+
+	<p class="address">家政综合信息服务平台 XXX分享 XXX</p>
+
+	<div class="fix-service">
+
+		<ul class="servise-list">
+
+			<li class="weixin-item fix-item">
+
+				<span class="weixin-code code"></span>
+
+				<div class="icon">
+
+					<img src="images/weixin.png" alt="" class="weixin"/>
+
+				</div>
+
+			</li>
+
+			<li class="weibo-item fix-item">
+
+				<span class="weibo-code code"></span>
+
+				<div class="icon">
+
+					<img src="images/weibo.png" alt="" class="weibo"/>
+
+				</div>
+
+			</li>
+
+			<li class="service-item fix-item">
+
+				<span class="service-code code"></span>
+
+				<div class="icon">
+
+					<img src="images/qq.png" alt="" class="service"/>
+
+				</div>
+
+			</li>
+
+			<li id="btn" class="top-item fix-item">
+
+				<div class="icon">
+
+					<img src="images/top.png" alt="" class="top"/>
+
+				</div>
+
+			</li>
+
+		</ul>
+
+	</div>
+
+	<script src="js/jquery-2.0.0.min.js"></script>
+
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/wow.min.js"></script>
+
+	<script src="js/cityData.js"></script>
+
+	<script src="js/cityPicker.js"></script>
+
+	<script>
+
+	new WOW().init();<!--动画延迟加载-->
+
+	</script>
+
+	<script>
+
+	$(".search-input li").hide().first().show();
+
+	$(".right-tab").hide().first().show();
+
+	$(document).ready(function(e) {
+
+		$(".nav-more").click(function(){
+
+			$(".hide-nav").slideToggle();	
+
+		});
+
+		$(".drop-menu").click(function(){
+
+			$(".header-nav").slideToggle();	
+
+		});
+
+		$(".three li").click(function(){
+
+			$(this).addClass("current").siblings().removeClass("current");
+
+			$(".search-input li").hide().eq($(this).index()).show();
+
+		});
+
+		$(".left-nav li").click(function(){
+
+			$(this).addClass("active").siblings().removeClass("active");
+
+			$(".right-tab").hide().eq($(this).index()).show();
+
+		});
+
+		//返回顶部
+
+		$(".top-item").click(function(){
+
+			$('body,html').animate({ scrollTop: 0 }, 500);
+
+			return false;
+
+		});
+
+	});
+
+	</script>
+
+	<script>
+
+		var cityPicker = new IIInsomniaCityPicker({
+
+			data: cityData,
+
+			target: '#cityChoice',
+
+			valType: 'k-v',
+
+			hideCityInput: '#city',
+
+			hideProvinceInput: '#province',
+
+			callback: function(city_id){
+
+			}
+
+		});
+
+		cityPicker.init();
+
+	</script>
+
+</body>
+
+</html>
+

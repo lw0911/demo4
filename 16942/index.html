@@ -1,0 +1,545 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+<!--控制视口宽度，让页面以1:1比例渲染页面-->
+<title>首页</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/aos.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="js/Carousel.js"></script>
+<script type="text/javascript" src="js/me.js"></script>
+<script type="text/javascript" src="js/aos.js"></script>
+</head>
+
+<body>
+<div class="header fix">
+	<a class="logo" href="index.html"><img src="img/1525859642.png"></a>
+     <div class="menu-box"><img src="img/menu-1.png"></div>
+    <ul class="nav fix">
+    	<li><a href="index.html" class="select">首页</a></li>
+        <li>
+        	<a href="about.html">关于我们</a>
+        	<div class="child-nav">
+            	<b class="bg-black"></b>  <!-- 背景色 -->
+            	<div class="red-box">
+                    <dl>
+                        <dd>
+                        	<a href="about.html">公司简介</a>
+                        	<dl>
+                            	<dd><a href="#">关于我们三级</a></dd>
+                            </dl>
+                        </dd>
+                        <dd><a href="#">集团荣誉</a></dd>
+                    </dl>
+                    <div class="spot">
+                    	<i></i>
+                    	<i></i>
+                    </div>  <!-- 小红点 -->
+                </div>
+            </div>
+        </li>
+        <li><a href="#">案例展示</a></li>
+        <li><a href="news-list.html">新闻资讯</a></li>
+        <li><a href="#">设备租赁</a></li>
+        <li><a href="#">视频展示</a></li>
+        <li><a href="#">演出资源</a></li>
+        <li><a href="product-list.html">主营范围</a></li>
+        <li><a href="contact.html">联系我们</a></li>
+    </ul>
+</div>
+
+
+<div class="black-box">
+    <div class="nav-main">
+        <div class="nav-box">
+            <div class="nav-ce">
+                <ul class="nav-ul">
+                    <li><a href="index.html"><span>首页</span></a></li>
+                    <li><a href="about.html"><span>关于我们</span></a></li>
+                    <li><a href="#"><span>案例展示</span></a></li>
+                    <li><a href="news-list.html"><span>新闻资讯</span></a></li>
+                    <li><a href="#"><span>设备租赁</span></a></li>
+                    <li><a href="#"><span>视频展示</span></a></li>
+                    <li><a href="#"><span>演出资源</span></a></li>
+                    <li><a href="product-list.html"><span>主营范围</span></a></li>
+                    <li><a href="contact.html"><span>联系我们</span></a></li>
+                </ul>
+            </div>
+            <div class="nav-slide">
+                <div class="nav-slide-o"></div>
+                <div class="nav-slide-o">
+                    <ul>
+                        <li><a href="#"><span>公司简介</span>
+                        	<ul class="child-menu">
+                            	<li><a href="#"><span>关于我们三级</span></a></li>
+                            </ul>
+                        </a></li>
+                        <li><a href="#"><span>集团荣誉</span></a></li>
+                    </ul>
+                </div>
+                <div class="nav-slide-o"></div>
+                <div class="nav-slide-o">
+                    <ul>
+                        <li><a href="#"><span>公司简介</span></a></li>
+                        <li><a href="#"><span>集团荣誉</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main">
+    <div class="flexslider">
+        <ul class="slides">
+            <li style="background: url(img/2ea8645-2.jpg) no-repeat center center; background-size: cover;"><a href="#"></a></li>
+            <li style="background: url(img/bg-2.jpeg) no-repeat center center; background-size: cover;"><a href="#"></a></li>
+        </ul>
+    </div>
+    <div class="case">
+    	<div id="particles-js" class="particles"></div>
+        <div class="case-box">
+        	<div class="title" aos="fade-up">
+            	<h1>案例展示</h1>
+                <h2>CASE SHOW</h2>
+            </div>
+           	<div data-setting='{
+                                "width":1000,
+                                "height":450,
+                                "posterWidth":450,
+                                "posterHeight":450,
+                                "scale":0.8,
+                                "autoPlay":true,
+                                "delay":2000,
+                                "speed":300,
+                                "verticalAlign":"middle"
+                                }'  aos="fade-down" aos-delay="1500" class="pictureSlider poster-main" id="carousel" >
+                <div class="poster-btn poster-prev-btn"></div>
+                <ul class="poster-list">
+                    <li class="poster-item">
+                    	<a href="#">
+                        	<img src="img/2ea8645-2.jpg">
+                            <div class="caseTxt">
+                            	<h1>大型演唱会策划</h1>
+                                <div class="linkIcon"><img src="img/link.png"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="poster-item">
+                    	<a href="#">
+                        	<img src="img/1ef0283e2d33ca2256783150bf38cda322c0622f18387-6vYCOZ_fw658.jpg">
+                            <div class="caseTxt">
+                            	<h1>大型演唱会策划</h1>
+                                <div class="linkIcon"><img src="img/link.png"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="poster-item">
+                    	<a href="#">
+                        	<img src="img/0b55b319ebc4b745f83eba3ac5fc1e178a821577.jpg">
+                            <div class="caseTxt">
+                            	<h1>大型演唱会策划</h1>
+                                <div class="linkIcon"><img src="img/link.png"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="poster-item">
+                    	<a href="#">
+                        	<img src="img/01d5b35a1213baa801204a0ec768eb.JPG@2o.jpg">
+                            <div class="caseTxt">
+                            	<h1>大型演唱会策划</h1>
+                                <div class="linkIcon"><img src="img/link.png"></div>
+                            </div>
+                        </a>
+                    </li>
+                     <li class="poster-item">
+                    	<a href="#">
+                        	<img src="img/d058ccbf6c81800a340fc80ebb3533fa838b47c3.jpg">
+                            <div class="caseTxt">
+                            	<h1>大型演唱会策划</h1>
+                                <div class="linkIcon"><img src="img/link.png"></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="poster-btn poster-next-btn"></div>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="abImg-box" aos="fade-right" aos-duration="1000"><img src="img/bg-2.jpeg"></div>
+        <div class="abTxt-box" aos="fade-left" aos-duration="1000">
+        	<h1 class="title" aos="fade-left" aos-duration="1000" aos-delay="2000">关于我们<span>ABOUT US</span></h1>
+        	<div class="bg-box" aos="fade-left" aos-duration="1000" aos-delay="2000">   
+                <div class="abTxt">贵州XXX演艺文化传媒有限公司专业承接各类商业演出、文化庆典、品牌推广策划、文艺演出策划、明星演出、
+                房地产活动策划、摄影摄像、豪车租赁等服务。我们从不把自己当成单纯的服务商，而是旨在与企业建立共同成长的合作伙伴关系，与商业界人士在商业创作中相互交流碰撞建立互补多赢的人脉关系！</div>
+                <a href="about.html" class="more"><img src="img/more-1.png">查看更多</a>
+            </div>
+        </div>
+        <div class="pos" aos="zoom-in">
+        	<i></i>
+            <i></i>
+            <hr id="line-1">
+            <hr id="line-2">
+            <hr id="line-3">
+            <hr id="line-4">
+        </div>
+    </div>
+    <div class="product">
+        <div class="title" aos="fade-up-right">
+            <h1>主营范围</h1>
+            <h2>MAIN SCOPE</h2>
+        </div>
+        <div class="pic-scoll">
+        	<div class="hd" aos="fade-up-right">
+            	<a class="next"></a>
+                <a class="prev"></a>
+            </div>
+        	<div class="bd" aos="fade-down" aos-delay="1000">
+            	<ul class="pic-list">
+                	<li>
+                    	<div class="item1">
+                            <a href="product.html">
+                                <img src="img/2ea8645-2.jpg">
+                                <div class="pic-txt">
+                                    <h1>个人高清艺术照拍摄</h1>
+                                    <p>贵州XXX演艺文化传媒有限公司专业承接各类商业演出、文化庆典、品牌推广策划、文艺演出策划、明星演出、
+                    房地产活动策划、摄影摄像、豪车租赁等服务。</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item1">
+                            <a href="product.html">
+                                <img src="img/bg-2.jpeg">
+                                <div class="pic-txt">
+                                    <h1>个人高清艺术照拍摄</h1>
+                                    <p>贵州XXX演艺文化传媒有限公司专业承接各类商业演出、文化庆典、品牌推广策划、文艺演出策划、明星演出、
+                    房地产活动策划、摄影摄像、豪车租赁等服务。</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="item2">
+                            <a href="product.html">
+                                <img src="img/2345_image_file_copy_17.jpg">
+                                <div class="pic-txt">
+                                    <h1>个人高清艺术照拍摄</h1>
+                                    <p>贵州XXX演艺文化传媒有限公司专业承接各类商业演出、文化庆典、品牌推广策划、文艺演出策划、明星演出、
+                    房地产活动策划、摄影摄像、豪车租赁等服务。</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item3">
+                            <a href="product.html">
+                                <img src="img/2345_image_file_copy_5.jpg">
+                                <div class="pic-txt">
+                                    <h1>个人高清艺术照拍摄</h1>
+                                    <p>贵州XXX演艺文化传媒有限公司专业承接各类商业演出、文化庆典、品牌推广策划、文艺演出策划、明星演出、
+                    房地产活动策划、摄影摄像、豪车租赁等服务。</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="item1">
+                            <a href="product.html">
+                                <img src="img/u=438195234,1785795498&fm=214&gp=0.jpg">
+                                <div class="pic-txt">
+                                    <h1>个人高清艺术照拍摄</h1>
+                                    <p>贵州XXX演艺文化传媒有限公司专业承接各类商业演出、文化庆典、品牌推广策划、文艺演出策划、明星演出、
+                    房地产活动策划、摄影摄像、豪车租赁等服务。</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item1">
+                            <a href="product.html">
+                                <img src="img/596c143cdc75f.jpg">
+                                <div class="pic-txt">
+                                    <h1>个人高清艺术照拍摄</h1>
+                                    <p>贵州XXX演艺文化传媒有限公司专业承接各类商业演出、文化庆典、品牌推广策划、文艺演出策划、明星演出、
+                    房地产活动策划、摄影摄像、豪车租赁等服务。</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="item3">
+                            <a href="product.html">
+                                <img src="img/0b55b319ebc4b745f83eba3ac5fc1e178a821577.jpg">
+                                <div class="pic-txt">
+                                    <h1>个人高清艺术照拍摄</h1>
+                                    <p>贵州XXX演艺文化传媒有限公司专业承接各类商业演出、文化庆典、品牌推广策划、文艺演出策划、明星演出、
+                    房地产活动策划、摄影摄像、豪车租赁等服务。</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item2">
+                            <a href="product.html">
+                                <img src="img/01d5b35a1213baa801204a0ec768eb.JPG@2o.jpg">
+                                <div class="pic-txt">
+                                    <h1>个人高清艺术照拍摄</h1>
+                                    <p>贵州XXX演艺文化传媒有限公司专业承接各类商业演出、文化庆典、品牌推广策划、文艺演出策划、明星演出、
+                    房地产活动策划、摄影摄像、豪车租赁等服务。</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="item1">
+                            <a href="product.html">
+                                <img src="img/1ef0283e2d33ca2256783150bf38cda322c0622f18387-6vYCOZ_fw658.jpg">
+                                <div class="pic-txt">
+                                    <h1>个人高清艺术照拍摄</h1>
+                                    <p>贵州XXX演艺文化传媒有限公司专业承接各类商业演出、文化庆典、品牌推广策划、文艺演出策划、明星演出、
+                    房地产活动策划、摄影摄像、豪车租赁等服务。</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item1">
+                            <a href="product.html">
+                                <img src="img/d058ccbf6c81800a340fc80ebb3533fa838b47c3.jpg">
+                                <div class="pic-txt">
+                                    <h1>个人高清艺术照拍摄</h1>
+                                    <p>贵州XXX演艺文化传媒有限公司专业承接各类商业演出、文化庆典、品牌推广策划、文艺演出策划、明星演出、
+                    房地产活动策划、摄影摄像、豪车租赁等服务。</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pic-more">
+            <a href="product-list.html">查看更多</a>
+            <hr><i></i>
+        </div>
+    </div>
+    <div class="news">
+    	<div class="title" aos="fade-down" aos-duration="500">
+            <h1>新闻资讯</h1>
+            <h2>THE NEWS</h2>
+        </div>
+        <div class="news-list" id="news-slides">
+        	
+        	
+        	<div class="news-slides" aos="fade-right" aos-duration="500" aos-delay="1500">
+            	<b></b>
+            	<div class="newsBtn">
+                	<a class="next"></a>
+					<a class="prev"></a>
+                </div>
+            	<div class="news-wrap">
+                	<ul>
+                    	<li>
+                            <div class="date">
+                                <h3>07-10</h3>
+                                <h4>2018</h4>
+                            </div>
+                            <div class="news-describe">
+                                <a href="news.html">
+                                    <div class="newsImg"><img src="img/d058ccbf6c81800a340fc80ebb3533fa838b47c3.jpg"></div>
+                                    <div class="newsTxt">
+                                        <h1>活动策划执行中最容易出现的三个问题</h1>
+                                        <p>对于一个活动而言，策划得再好执行的时候出现了问题，那也终究是纸上谈兵。那么，执行过程中最容易出现哪些问题呢？</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                       	<li>
+                            <div class="date">
+                                <h3>07-10</h3>
+                                <h4>2018</h4>
+                            </div>
+                            <div class="news-describe">
+                                <a href="news.html">
+                                    <div class="newsImg"><img src="img/d058ccbf6c81800a340fc80ebb3533fa838b47c3.jpg"></div>
+                                    <div class="newsTxt">
+                                        <h1>活动策划执行中最容易出现的三个问题</h1>
+                                        <p>对于一个活动而言，策划得再好执行的时候出现了问题，那也终究是纸上谈兵。那么，执行过程中最容易出现哪些问题呢？</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="news-box" id="news-box" aos="fade-left" aos-duration="500" aos-delay="2500">
+            	<b></b>
+            	<li>
+                	<a href="news.html" class="fix">
+                    	<div class="date">
+                        	<h3>07-10</h3>
+                            <h4>2018</h4>
+                        </div>
+                        <div class="news-describe">
+                            <div class="newsTxt">
+                                <h1>活动策划执行中最容易出现的三个问题</h1>
+                                <p>对于一个活动而言，策划得再好执行的时候出现了问题，那也终究是纸上谈兵。那么，执行过程中最容易出现哪些问题呢？</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                	<a href="news.html" class="fix">
+                    	<div class="date">
+                        	<h3>07-10</h3>
+                            <h4>2018</h4>
+                        </div>
+                        <div class="news-describe">
+                            <div class="newsTxt">
+                                <h1>活动策划执行中最容易出现的三个问题</h1>
+                                <p>对于一个活动而言，策划得再好执行的时候出现了问题，那也终究是纸上谈兵。那么，执行过程中最容易出现哪些问题呢？</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                	<a href="news.html" class="fix">
+                    	<div class="date">
+                        	<h3>07-10</h3>
+                            <h4>2018</h4>
+                        </div>
+                        <div class="news-describe">
+                            <div class="newsTxt">
+                                <h1>活动策划执行中最容易出现的三个问题</h1>
+                                <p>对于一个活动而言，策划得再好执行的时候出现了问题，那也终究是纸上谈兵。那么，执行过程中最容易出现哪些问题呢？</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="pic-more news-more">
+            	<a href="product-list.html">查看更多</a>
+            	<hr><i></i>
+       		</div>
+       </div>
+       
+    </div>
+    <div class="contact">
+    	<div class="contact-box">
+        	<div class="link" aos="fade-right" aos-duration="1000">
+            	<h1>友情链接</h1>
+                <div class="txtMarquee-top">
+					<div class="bd">
+                        <ul>
+                            <li><a href="#" title="官方链接1">官方链接1</a></li>
+                            <li><a href="#" title="官方链接2">官方链接2</a></li>
+                            <li><a href="#" title="官方链接3">官方链接3</a></li>
+                            <li><a href="#" title="官方链接1">官方链接1</a></li>
+                            <li><a href="#" title="官方链接2">官方链接2</a></li>
+                            <li><a href="#" title="官方链接3">官方链接3</a></li>
+                            <li><a href="#" title="官方链接1">官方链接1</a></li>
+                            <li><a href="#" title="官方链接2">官方链接2</a></li>
+                            <li><a href="#" title="官方链接3">官方链接3</a></li>
+                            <li><a href="#" title="官方链接1">官方链接1</a></li>
+                            <li><a href="#" title="官方链接2">官方链接2</a></li>
+                            <li><a href="#" title="官方链接3">官方链接3</a></li>
+                            <li><a href="#" title="官方链接3">官方链接3</a></li>
+                            <li><a href="#" title="官方链接1">官方链接1</a></li>
+                            <li><a href="#" title="官方链接2">官方链接2</a></li>
+                            <li><a href="#" title="官方链接3">官方链接3</a></li>
+                            <li><a href="#" title="官方链接3">官方链接3</a></li>
+                            <li><a href="#" title="官方链接1">官方链接1</a></li>
+                            <li><a href="#" title="官方链接2">官方链接2</a></li>
+                            <li><a href="#" title="官方链接3">官方链接3</a></li>
+                        </ul>
+            		</div>
+            	</div>
+            </div>
+            <div class="contactTxt" aos="fade-right" aos-duration="1000" aos-delay="2000">
+            	名称：XXX <br/>
+                
+                联系人：某某 <br/>
+
+                电话：XXX <br/>
+                
+                地址：XXX<br/>
+    
+                邮箱：XXX <br/>
+            
+                网址：XXX <br/>
+                <div class="scan">
+                	<img src="img/saom-1.png">
+                </div>
+            </div>
+            <form class="msg" aos="fade-right" aos-duration="1000" aos-delay="3000">
+            	<ul>
+                	<li>姓名<input type="text" name="" placeholder="请输入姓名" onFocus="bgChange();"></li>
+                    <li>电话<input type="text" name="" placeholder="请输入姓名"></li>
+                   	<textarea rows="4" placeholder="请输入留言内容"></textarea>
+                    <li class="verp">验证码<input type="text" name="">
+                    	<div class="verpImg"><img src="img/ver.jpg"></div>
+                    </li>
+                </ul>
+                <button type="submit">提  交</button>
+            </form>
+        </div>
+    	<div class="footer">
+        	 <br/>
+            访问统计：  浏览总量<span>41046</span>次 /今日浏览<span>41</span>次 /今日独立访客<span>11</span>位    建议(1024*768) IE8.0以上浏览器浏览本站 <br/> 
+            <a href="#">即时通管理</a>    <a href="#">后台登录</a> <br/>
+                <a href="">触屏版</a> 丨 <a href="">电脑版</a> <br/>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="js/particles.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script>
+/* 粒子动画应用 */	
+	var count_particles, stats, update;
+	stats = new Stats;
+	stats.setMode(0);
+	
+	stats.domElement.style.position = 'absolute';
+	stats.domElement.style.left = '0px';
+	stats.domElement.style.top = '0px';
+	document.body.appendChild(stats.domElement);
+	count_particles = document.querySelector('.js-count-particles');
+	update = function() {
+		stats.begin();
+		stats.end();
+		if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+			count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+		}
+		requestAnimationFrame(update);
+	};
+	requestAnimationFrame(update);
+/*-- end --*/
+</script>
+
+<script>
+  	AOS.init({
+  	duration: 1000,
+  	easing: 'ease-out-back',
+  	delay: 1000,
+});
+
+//判断鼠标滚动距离
+	$(window).scroll(function() {
+		// 当滚动超过80时加背景
+		if ($(this).scrollTop() >= 80) {
+			$(".header").css("background","#000");
+			var h;
+    		h = $(".about").offset().top;
+			if($(this).scrollTop() > (h - 200)){
+				$(".pos i").eq(0).animate({right:'100%'},3000);
+				$(".pos i").eq(1).animate({right:0},3000);
+			}
+		}
+		else{
+			$(".header").css("background","none");
+		}
+	});
+	
+var newsHeight = document.getElementById("news-box").clientHeight;
+document.getElementById("news-slides").style.height = newsHeight + "px";
+</script>
+</body>
+</html>

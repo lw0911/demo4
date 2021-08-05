@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>河南省XXX工程建设监理有限公司</title>
+	<link rel="stylesheet" href="css/style.css" />
+
+	<script type="text/javascript" src="js/jquery1.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("#dh li").hover(function(){
+			$(this).find("ul").slideDown("slow");	
+		},function(){
+			$(this).find("ul").slideUp("fast");	
+		});
+	});
+	</script>
+</head>
+<body>
+<div class="header">
+	<div class="top">
+		<div class="top_01">
+			<div class="fl_r"><a href="" class="top_favorite fl_r">加入收藏</a><a href="" class="top_home fl_r">设为首页</a></div>
+			<span>欢迎您到来XXX监理！！！</span>
+		</div>
+	</div>
+	<div class="head">
+		<div class="QRcode fl_r"><img class="fl" src="images/QRcode.jpg" alt="" /><span class="fl">扫一下二维码<br />关注XXX信息</span></div>
+		<div class="logo fl"><img src="images/logo.png" alt="" /></div>
+		<div class="by fl">河南省建设监理行业20强</div>
+	</div>
+	<nav>
+		<div class="nav_nr">
+			<ul id="dh">
+				<li class="mainlevel"><a href="index.html">网站首页</a></li>
+				<li class="mainlevel"><a href="aboutUs.html">走进XXX</a>
+					<ul style="display: none;">
+						<li><a href="">公司简介</a></li>
+						<li><a href="">总经理致辞</a></li>
+						<li><a href="">组织架构</a></li>
+						<li><a href="">营业执照</a></li>
+						<li><a href="certificate.html">资质证书</a></li>
+						<li><a href="">体系认证</a></li>
+					</ul>
+
+				</li>
+				<li class="mainlevel"><a href="news.html">新闻中心</a>
+					<ul style="display: none;">
+						<li><a href="">公司新闻</a></li>
+						<li><a href="">行业动态</a></li>
+						<li><a href="">公告通知</a></li>
+						<li><a href="">技术交流</a></li>
+						<li><a href="">装饰监理</a></li>
+					</ul>
+				</li>
+				<li class="mainlevel"><a href="projects.html">项目展示</a>
+					<ul style="display: none;">
+						<li><a href="">获奖项目</a></li>
+						<li><a href="">房建工程</a></li>
+						<li><a href="">市政工程</a></li>
+						<li><a href="">其他工程</a></li>
+					</ul>
+				</li>
+				<li class="mainlevel"><a href="">企业文化</a>
+					<ul style="display: none;">
+						<li><a href="">文化理念</a></li>
+						<li><a href="">培训教育</a></li>
+						<li><a href="video.html">视频专区</a></li>
+						<li><a href="">员工风采</a></li>
+					</ul>
+				</li>
+				<li class="mainlevel"><a href="">政策法规</a>
+					<ul style="display: none;">
+						<li><a href="">法律法规</a></li>
+						<li><a href="">行政奖章</a></li>
+						<li><a href="">规范文件</a></li>
+						<li><a href="">行业标准</a></li>
+					</ul>
+				</li>
+				<li class="mainlevel"><a href="">在线交流</a>
+					<ul style="display: none;">
+						<li><a href="">企业公告</a></li>
+						<li><a href="feedback.html">客户留言</a></li>
+						<li><a href="recruitment.html">招聘信息</a></li>
+					</ul>
+				</li>
+				<li class="mainlevel"><a href="">联系我们</a>
+					<ul style="display: none;">
+						<li><a href="map.html">公司地图</a></li>
+						<li><a href="">联系XXX</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="banner">
+		<div class="index_banner" id="banner_tabs">
+			<ul>
+				<li style="background:url(images/1.jpg) center top no-repeat;"><a href="#" target="_blank"></a></li>
+				<li style="background:url(images/2.jpg) center top no-repeat;"><a href="#" target="_blank"></a></li>      
+				<li style="background:url(images/3.jpg) center top no-repeat;"><a href="#" target="_blank"></a></li>
+				<li style="background:url(images/4.jpg) center top no-repeat;"><a href="#" target="_blank"></a></li>    
+			</ul>
+			<cite><span class="cur">1</span><span>2</span><span>3</span><span>4</span></cite> 
+		</div>
+		<script type="text/javascript">
+			(function(){
+		        if(!Function.prototype.bind){
+		            Function.prototype.bind = function(obj){
+		                var owner = this,args = Array.prototype.slice.call(arguments),callobj = Array.prototype.shift.call(args);
+		                return function(e){e=e||top.window.event||window.event;owner.apply(callobj,args.concat([e]));};
+		            };
+		        }
+		    })();
+		    var banner_tabs = function(id){
+		        this.ctn = document.getElementById(id);
+		        this.adLis = null;
+		        this.btns = null;
+		        this.animStep = 0.2;//动画速度0.1～0.9
+		        this.switchSpeed = 4;//自动播放间隔(s)
+		        this.defOpacity = 1;
+		        this.tmpOpacity = 1;
+		        this.crtIndex = 0;
+		        this.crtLi = null;
+		        this.adLength = 0;
+		        this.timerAnim = null;
+		        this.timerSwitch = null;
+		        this.init();
+		    };
+		    banner_tabs.prototype = {
+		        fnAnim:function(toIndex){
+		            if(this.timerAnim){window.clearTimeout(this.timerAnim);}
+		            if(this.tmpOpacity <= 0){
+		                this.crtLi.style.opacity = this.tmpOpacity = this.defOpacity;
+		                this.crtLi.style.filter = 'Alpha(Opacity=' + this.defOpacity*100 + ')';
+		                this.crtLi.style.zIndex = 0;
+		                this.crtIndex = toIndex;
+		                return;
+		            }
+		            this.crtLi.style.opacity = this.tmpOpacity = this.tmpOpacity - this.animStep;
+		            this.crtLi.style.filter = 'Alpha(Opacity=' + this.tmpOpacity*100 + ')';
+		            this.timerAnim = window.setTimeout(this.fnAnim.bind(this,toIndex),50);
+		        },
+		        fnNextIndex:function(){
+		            return (this.crtIndex >= this.adLength-1)?0:this.crtIndex+1;
+		        },
+		        fnSwitch:function(toIndex){
+		            if(this.crtIndex==toIndex){return;}
+		            this.crtLi = this.adLis[this.crtIndex];
+		            for(var i=0;i<this.adLength;i++){
+		                this.adLis[i].style.zIndex = 0;
+		            }
+		            this.crtLi.style.zIndex = 2;
+		            this.adLis[toIndex].style.zIndex = 1;
+		            for(var i=0;i<this.adLength;i++){
+		                this.btns[i].className = '';
+		            }
+		            this.btns[toIndex].className = 'cur'
+		            this.fnAnim(toIndex);
+		        },
+		        fnAutoPlay:function(){
+		            this.fnSwitch(this.fnNextIndex());
+		        },
+		        fnPlay:function(){
+		            this.timerSwitch = window.setInterval(this.fnAutoPlay.bind(this),this.switchSpeed*1000);
+		        },
+		        fnStopPlay:function(){
+		            window.clearTimeout(this.timerSwitch);
+		        },
+		        init:function(){
+		            this.adLis = this.ctn.getElementsByTagName('li');
+		            this.btns = this.ctn.getElementsByTagName('cite')[0].getElementsByTagName('span');
+		            this.adLength = this.adLis.length;
+		            for(var i=0,l=this.btns.length;i<l;i++){
+		                with({i:i}){
+		                    this.btns[i].index = i;
+		                    this.btns[i].onclick = this.fnSwitch.bind(this,i);
+		                    this.btns[i].onclick = this.fnSwitch.bind(this,i);
+		                }
+		            }
+		            this.adLis[this.crtIndex].style.zIndex = 2;
+		            this.fnPlay();
+		            this.ctn.onmouseover = this.fnStopPlay.bind(this);
+		            this.ctn.onmouseout = this.fnPlay.bind(this);
+		        }
+		    };
+		    var player1 = new banner_tabs('banner_tabs');
+		</script>
+	</div>
+	<div class="keywords">
+		<div class="keyw">
+			<span class="fl">关键词：河南监理公司  监理二十强  房建、市政甲级资质</span>
+			<form action="">
+				<div class="search fl_r">
+					<input name="cpname" type="text" value="请输入关键字" class="sea_txt">
+					<input value="" class="sea_btn" onclick="xuanze();" type="Submit">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<div class="content">
+	<div class="box_z">
+		<div class="fen_main">
+			<div class="left fl">
+				<div class="f_main">
+					<div class="tit">走进XXX</div>
+					<div class="f_main_01">
+						<ul>
+							<li class="current"><a href="">公司简介</a></li>
+							<li><a href="">总经理致辞</a></li>
+							<li><a href="">组织架构</a></li>
+							<li><a href="">营业执照</a></li>
+							<li><a href="">资质证书</a></li>
+							<li><a href="">体系认证</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="f_main">
+					<div class="tit">快捷导航</div>
+					<div class="f_main_02">
+						<div class="tit_01">监理公司</div>
+						<ul>
+							<li><a href="">监理公司挂靠</a></li>
+							<li><a href="">监理公司招聘</a></li>
+							<li><a href="">监理公司资质</a></li>
+							<li><a href="">监理公司排名</a></li>
+						</ul>
+					</div>
+					<div class="f_main_02">
+						<div class="tit_01">工程监理</div>
+						<ul>
+							<li><a href="">工程监理公司</a></li>
+							<li><a href="">工程监理资质</a></li>
+							<li><a href="">工程监理职责</a></li>
+							<li><a href="">建设工程监理规范</a></li>
+						</ul>
+					</div>
+					<div class="f_main_02">
+						<div class="tit_01">建设监理</div>
+						<ul>
+							<li><a href="">建设监理规范</a></li>
+							<li><a href="">监理实施细则</a></li>
+							<li><a href="">建设工程监理</a></li>
+							<li><a href="">监理日志</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="f_main">
+					<div class="tit">联系我们</div>
+					<div class="f_main_03">
+						<div class="link_01"><h1>咨询电话：</h1><span>0371-63825098/63697290</span></div>
+						<div class="link_02"><h1>公司地址：</h1><span>XXX</span></div>
+						<div class="link_03"><h1>邮箱：</h1><span>henanwananjianli@163.com</span></div>
+					</div>
+				</div>
+			</div>
+			<div class="right fl_r">
+				<div class="main_right">
+					<div class="tit">
+						<div class="location fl_r">当前位置：<a href="index.html">XXX首页</a>> <a href="aboutUs.html">公司简介</a></div>
+						<h1 class="fl">公司简介</h1>
+					</div>
+					<div class="about"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;河南省XXX工程建设监理有限公司成立于2000年1月31日，是经建设部批准、河南省工商行政管理局注册登记、具有独立法人资格的，专门从事工业与民用建筑、市政公用等工程建设监理的监理企业，并于2004年取得建设部甲级监理资质证书。1999年、2000年、2003年、2005年、2006年、2007年、2008年、2009年连续多年被授予“河南省先进工程监理企业”；2010年获得“河南省工程监理企业二十强”等荣誉。</p><br />
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⑴公司组织机构健全，专业及人员配套齐全，运行机制高效。<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司设有经营部、质量保证技术部、综合部、试验中心、工程管理部。并邀请相关工程、经济等专业博士、专家十三人组成公司专家顾问团，为公司前景做出规划、指导。公司现有监理人员568人，省、部级技术专家13人，建设部认定的EPC总承包项目经理10人，律师1人，质量体系国家注册审核员4人。监理人员中高、中级职称占76%，12人次具有国家注册建造工程师资格，6人次具有国家注册造价工程师资格，43人具有国家注册监理工程师资格证书。公司员工专业配套齐全，主要专业有：石油化工工艺、设备、管道、机械、测量、建筑、结构、水工、给排水、热工、暖通、电气、自动化、技术经济、概预算等。</p><br />
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司始终以“守法、诚信、公正、科学”为原则，坚持“科学规范、公正廉洁、竭诚服务”的质量方针，以“工程质量第一、综合效益第一、企业信誉第一”为目标，以“安全第一”为指导思想，建立高效运行的管理机制。热诚为用户服务，为工程建设服务。</p><br />
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⑵公司质量保证体系健全。<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司始终以高起点、高标准、科学化、规范化、现代化为发展原则，逐步建立了系统科学的管理体系，质量管理体系符合ISO9001：2008标准、国家认可注册号：03809Q20964ROS，环境管理体系符合ISO4001：2008标准、国家认可注册号：03809E20965ROS，职业健康安全管理体系符合GB/T28001-2001标准、国家认可注册号：03809S10966ROS。公司严格执行三体系标准，公司设有工程管理部专人负责施工监理现场巡视、检查，严把质量、安全、环境保护关，在交业主满意工程的同时，也为社会、为环境保护尽自己一份职责、一份义务。</p><br />
+				    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⑶公司技术装备配套齐全，管理软件、检测手段先进。<br />
+				    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司技术装备配套齐全，配置有经纬仪、水准仪、激光测距仪、液压万能实验机等大型工程检控设备和计算机系统。监理项目全部实现计算机管理，安装配置有P3、EXP、PDS、NOTUS等功能先进的软件系统，形成覆盖全国十多个省市的监理咨询服务网络。</p><br />
+				    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⑷公司监理业绩卓著，工程监理经验丰富。<br />	
+				    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;多年来，公司本着“守法、诚信、公正、科学”的宗旨，严格监理，热情服务，业务发展较快，截止目前，共承担了856多项工程的监理任务，其中一等工程398项，占46%，总建筑面积1094.5万平方米。经过数年的发展，公司在工业及民用建筑工程的监理上，积累了丰富的工程项目管理经验，形成了自己的特色，具备了承担大型项目工程监理的能力。近年来，公司积极参与激烈的市场竞争，通过投标取得了一大批大、中型工业项目和民用项目的监理。我公司充分发挥投资控制优势，严格控制概算，认真审查预（结）算，合理控制投资支出，成效突出，经过已竣工工程统计，投资节约率达到6.5%。已完工的项目中有多个被评为优良工程，其中驻马店市技工学校、周口外贸局培训楼、河南省水利厅防汛调度中心、河南省职工之家、安阳工学院、安阳高新区第二小学综合教学楼、滨河绿苑、国棉六厂综合办公楼、驻马店城市华达花园、确山电业局综合楼、周口艺术师范学校、颊县煤炭工业局安全培训中心大楼工程、项城市二高教学实验综合、周口市阳光花园住宅小区楼工程、等被评为河南省中州杯工程；并在建筑行业内获得好评。</p><br />
+				    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司从成立以来，经过数年的成长，已经从初期的稚嫩走向现在的成熟，也从原先的单一质量监督、监理及小规模经营发展到现在的全方位工程监理、大规模经营。遵循市场经济优胜劣汰的原则，我们不断规范自己的市场行为，严格遵守本行业的一切规范及行为准则。正因为如此，我公司才在竞争激烈的市场中占有一席之地，我们所监理的大多是国家重点工程、大中型工业或民用建筑工程，通过我们的努力，都取得了良好的建设效果，用户都十分满意，至今公司未受到过任何不良行为记录和处罚。相信我们公司全体员工会戒骄戒躁、继续努力，维护我公司来之不易的荣誉，出色地完成今后的一切监理任务。</p><br />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="foot">
+		XXX<br />
+		邮政编码：XXX     网址：http://www.xxxxxxx.com <br />
+		邮箱：XXX   技术支持：XXX
+	</div>
+</div>
+</body>
+</html>

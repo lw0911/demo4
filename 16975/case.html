@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>工程案例</title>
+<meta name="keywords" content="工程案例"/>
+<meta name="description" content="工程案例"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/nav.js"></script>
+<script type="text/javascript" src="js/jquery.superslide.2.1.1.js"></script>
+<link rel="icon" href="images/favicon.gif" type="image/gif">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<script language="javascript">
+function checkform3(nForm)  
+{
+	if(nForm.keys.value==""||nForm.keys.value=="搜索关键词")
+	{
+		alert("请输入关键字!");
+		nForm.keys.focus();
+		return false;
+	}
+}
+</script>
+<script type="text/javascript" src="js/zh.js"></script>
+<script>
+zh_tran('t');
+</script>
+<div class="top_bg">
+	<div class="menu b_center">
+		<div class="logo_l">
+			<a href="index.html"><img src="upload/picture/logo.png"></a>
+		</div>
+		<div class="logo_r">
+			<div class="nav">
+				<ul>
+					<li class="m ">
+					<h3><a href="index.html" title="首页">首页</a></h3>
+					</li>
+					<li class="m ">
+					<h3><a href="about.html" title="关于我们">关于我们</a></h3>
+					<li class="m ">
+					<h3><a href="news.html" title="公司动态">公司动态</a></h3>
+					</li>
+					<li class="m ">
+					<h3><a href="products.html" title="产品展示">产品展示</a></h3>
+					</li>
+					<li class="m on">
+					<h3><a href="case.html" title="工程案例">工程案例</a></h3>
+					</li>
+					<li class="m ">
+					<h3><a href="contact.html" title="联系我们">联系我们</a></h3>
+					</li>
+				</ul>
+				<script type="text/javascript"> jQuery(".nav").slide({ type:"menu",  titCell:".m", targetCell:".sub", effect:"slideDown", delayTime:300, triggerTime:100,returnDefault:true});</script>
+			</div>
+		</div>
+		<!-- clear the floats if required -->
+		<div class="clear">
+		</div>
+	</div>
+</div>
+<!--header_100 end-->
+<div class="h84">
+	&nbsp;
+</div>
+<!--banner star-->
+<div class="o_big" style="background:url(images/case.jpg) no-repeat center top;">
+	&nbsp;
+</div>
+<!--banner_sub end-->
+<div class="i_solution_t">
+	<h2>花卉與種子</h2>
+	<div class="solution_a">
+		当前位置:<a href="#">首页</a>&nbsp;&gt;&nbsp;<a href="#">工程案例</a>&nbsp;&gt;&nbsp;<label>花卉與種子</label>
+	</div>
+</div>
+<!--正文begin-->
+<div class="wrap">
+	<div class="case_t">
+		<a href="#" title="花卉與種子" class="about_sel">花卉與種子</a><a href="#" title="盆栽">盆栽</a><a href="#" title="庭園綠化景觀苗木">庭園綠化景觀苗木</a><a href="#" title="園藝資材及庭園石藝">園藝資材及庭園石藝</a><a href="#" title="庭園設計及造園施工">庭園設計及造園施工</a><a href="#" title="錦鯉養殖">錦鯉養殖</a>
+	</div>
+	<div class="case_list" id="guwenheight">
+		<ul>
+			<li class="guwenshow"><a title="紫薇" href="#">
+			<div class="img">
+				<img src="upload/picture/20161116230844904490.png"/>
+			</div>
+			<div class="txt2">
+				<em>查看更多</em>
+			</div>
+			<div class="txt3">
+				紫薇
+			</div>
+			</a>
+			</li>
+		</ul>
+	</div>
+	<a href="#" class="service_more showguwen" id="showguwen" style="margin-top:30px; margin-bottom:30px;display:none;">展开更多</a>
+</div>
+<!--正文end--><!--尾部begin-->
+<div class="foot_txt">
+	<div class="wrap" style="position:relative;">
+	ADD：KAM TIN NT HONKONG  客服电话：XXX
+		<br/>
+		<a href="#" title="关于我们" class="foot_title">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="#" title="公司动态">公司动态</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="#" title="产品展示">产品展示</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="#" title="工程案例">工程案例</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="#" title="视频中心">视频中心</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="#" title="联系我们">联系我们</a>
+		<a href="#" class="f_top" onclick="goTop()">&nbsp;</a>
+	</div>
+</div>
+<div class="f_bg">
+	<div class="b_center" style="width:1200px;">
+		<span class="l">Copyright © 某某国际贸易有限公司 All Rights Reserved <a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a>&nbsp;&nbsp;</span>
+		<div class="contact_a">
+			<ul>
+				<li><a href="#" class="foot_qq"></a></li>
+				<li><a href="#" class="foot_weixin"><img src="upload/picture/ewm.png"/></a></li>
+			</ul>
+		</div>
+		<div class="c_l">
+		</div>
+	</div>
+</div>
+<!--尾部end-->
+<script language="javascript" src="js/foot.js"></script>
+<script type="text/javascript">
+	  	  $(".service_more").click(function(){
+	if($(this).attr("id")=="showguwen")
+	{
+	$("#guwenheight li").show();
+	$(this).attr("id","hiddenguwen");
+	$(this).html("收起列表");
+	}
+	else
+	{
+	$("#guwenheight li").hide();
+	$("#guwenheight .guwenshow").show();
+	$(this).attr("id","showguwen");
+	$(this).html("展开更多");
+	}
+	});
+</script>
+</body>
+</html>

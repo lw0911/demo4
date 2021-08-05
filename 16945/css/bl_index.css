@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* CSS Document */
+a:hover{ text-decoration: none;}
+a{ outline: none;}
+a:focus{ outline: none;}
+.container{ padding-left: 5px; padding-right: 5px;}
+.HeadTop{ width: 100%; display: table;}
+.HeadTop h1 a{ color: #000;}
+.HeadTop .pull-right{ line-height: 20px; margin-top: 40px; font-size: 34px; color: #00aadb; height: auto;}
+.navbar-collapse{ padding-left: 0px;}
+.nav > li > a{ padding: 15px 0px 15px 65px; color: #fff;}
+.navbar-brand{ height: auto; padding: 0px;}
+.navbar-default{ background-color: #1f222b; }
+.navbar-nav > li{ background-color: #1f222b;min-height: 45px; margin-left: 1px;}
+.navbar{ border: none; min-height: 45px; border-radius: 0px; margin-bottom: 0px;}
+.navbar-default .navbar-nav > .active > a,.navbar-nav > li:hover, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
+{
+	background-color: #1f222b;
+	color: #00c6ff;
+}
+.navbar-collapse{ padding-right: 0px;}
+.navbar-nav{ float: right;}
+.navbar-default .navbar-nav > li > a{ color: #fff; font-size: 14px;}
+.navbar-default .navbar-nav > li > a:hover{ color: #00c6ff;}
+
+/*banner图轮播*/
+.Wrap-Banner{ min-width:1000px; position:relative;  height:450px; overflow:hidden;}
+.Wrap-Banner .bd{ position:relative; z-index:0;}
+.Wrap-Banner .bd ul{ width:100% !important;}
+.Wrap-Banner .bd li{ width:100% !important;  height:450px; overflow:hidden; text-align:center;}
+.Wrap-Banner .bd li a{ display:block; height:330px; }
+.Wrap-Banner .hd{ width:1160px; position:absolute; left:50%; margin-left:-580px;  bottom: -13px; z-index:1; overflow:hidden;}
+.Wrap-Banner .hd ul{ width: 100%; text-align: center;}
+.Wrap-Banner .hd ul li{  display: inline-block; margin:0px 5px; cursor:pointer; position: relative;}
+.Wrap-Banner .hd ul li .blackbg{ width: 100%; height: 100%; background-color: #000; position: absolute; left: 0; top: 0; filter:alpha(opacity=65); opacity: 0.65;}
+.Wrap-Banner .hd ul li img{ width:136px; height: 62px; display:block;}
+.Wrap-Banner .hd ul .on img{ border-color:#FF8106; opacity:1;}
+.Wrap-Banner .hd ul .on .blackbg{ display: none;}
+
+.phone-banner{ display: none;}
+.swiper-container{ width: 100%;}
+.swiper-pagination-bullet{ background-color: #00c4fd;}
+.swiper-slide 
+{
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+/*中间内容部分*/
+.ContMain{ width: 100%; background: url(../images/content_bg.jpg) no-repeat center top; box-sizing: border-box; padding: 25px 0px;}
+.ContMainTit{ width: 100%; font-size: 20px; color: #181818; padding-left: 10px; display: table; border-left: 8px solid #00c4fd; height: 35px; line-height: 35px;}
+.ContMainTit .pull-right{ font-size: 18px; color: #00aadb; font-weight: normal;}
+.ContMainTit .pull-right i{ color: #272727; font-style: inherit;}
+.ContMainA{ margin-top: 10px; display: table; padding-bottom: 20px;}
+.ContMainA a{ display: block; position: relative;}
+.ContMainA a p{ width: 100%; height: 40px; opacity: 0; line-height: 56px; text-align: center; color: #fff; font-size: 18px; position: absolute; left: 0px; bottom: -10px; background: #000; filter:Alpha(opacity=40); background-color: rgba(0,0,0,0.4);
+transition: 0.4s all ease-in-out; -moz-transition: 0.3s all ease-in-out; -ms-transition: 0.3s all ease-in-out; -o-transition: 0.3s all ease-in-out; -webkit-transition: 0.3s all ease-in-out;
+}
+.ContMainA a:hover p{height: 55px; opacity: 1; }
+.ContMain .row{ width: 100%;}
+.bs-docs-featured-sites{ margin-right: -1px; margin-left: -1px;}
+.bs-docs-featured-sites .col-xs-6{ padding: 1px;}
+.ContMainTit2{ color: #fff;}
+.ContMainB{ width: 100%; }
+.ContMainB img{ width:100%; text-align: right;}
+.ContMainB .yewu_img{ margin-top: -18px;}
+.navbar-default .navbar-toggle .icon-bar{ background-color: #fff;}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{ background-color: #000;}
+/*公司新闻动态*/
+.ComNews .ContMainTit{ margin-bottom: 10px;}
+.ComNews{ width: 100%; overflow: hidden; background-color: #f8f8f8; box-sizing: border-box; padding: 15px 0px 20px 0px;}
+.RoWCol6{ margin-right: -1px; margin-left: -1px;}
+.RoWCol6 .col-xs-6,.RoWCol6 .col-md-6,.RoWCol6 .col-lg-6{ padding: 1px;}
+.ComNewsBox{ width: 95%; overflow: hidden; zoom: 1; border-bottom: 1px solid #d8d8d8; box-sizing: border-box; padding: 15px 0px 8px 0px;}
+.ComNewsBox:last-child{ border-bottom: none;}
+.ComNewsBox .ComNewsLeft{ float: left; width: 23%;}
+.ComNewsBox .ComNewsCenter{ float: left; width: 57%; overflow: hidden; zoom: 1; box-sizing: border-box; padding: 15px 0px 0px 20px;}
+.ComNewsBox .ComNewsCenter a{ width: 80%; display: block; color: #6d6d6d; line-height: 26px; font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.ComNewsBox .ComNewsCenter .Blue{ color: #313131;font-size: 16px;}
+.ComNewsBox:hover{ background-color: #eeeeee;}
+.ComNewsBox:hover .Blue{color: #01a0ce;}
+.ComNewsBox .ComNewsRight{ float: right; width: 20%;text-align: right; font-size: 12px; color: #818181;}
+/*媒体合作*/
+.Meiti{ width: 100%; overflow: hidden; zoom: 1; box-sizing: border-box; padding: 12px 0px 32px 0px;}
+.Meiti .ContMainTit{ margin-bottom: 20px;}
+.MeitiMain{ width: 99%; text-align: center; overflow: hidden; zoom: 1; }
+.MeitiMain a{  display: inline-block; margin: 0px 12px 12px 0px;}
+.MeitiMain a img{border: 1px solid #dddddd;}
+.MeitiMain a img:hover{ border: 1px solid #adcceb;}
+/*网站底部*/
+.footer{ width: 100%; background-color: #1f222a; box-sizing: border-box; padding: 30px 0px 10px 0px; text-align: center; font-size: 14px; color: #cfcfcf;}
+.footer .row a{ display: inline-block; font-size: 20px; width: 23.5%; padding-bottom: 45px; color: #dcdcdc; font-weight: bold;}
+.footer-last{ font-size: 12px; color: #ababab;}
+.footer-last a{ color: #ababab;}
+.footer a:hover{ color: #00c6ff;}
+@media only screen and (min-width: 961px) and (max-width: 1024px) 
+{
+	.Wrap-Banner{ display: none;}
+	.phone-banner{ display: block;}
+	.ComNewsBox .ComNewsCenter{ width: 70%; padding: 3px 15px; overflow: hidden;}
+	.ComNewsBox .ComNewsCenter{ width: 50%;}
+	.MeitiMain{ width: 100%; text-align: center;}
+	.MeitiMain a{  display: inline-block; width: 19.5%; text-align: center; margin: 0px 0px 12px 0px;}
+}
+
+@media only screen and (min-width: 100px) and (max-width: 960px) 
+{
+	.container{ padding-left: 15px; padding-right: 15px;}
+	.HeadTop h1{ margin-top: 15px; margin-bottom: 10px;}
+	.navbar-default .navbar-toggle{ border: 1px solid #eee;}
+	.navbar-nav > li{ background: none;}
+	.nav > li > a{ padding: 15px 20px;}
+	.navbar-collapse{ padding-right: 15px;}
+	.HeadTop .pull-right{font-size: 24px; margin-top: 25px;}
+	.navbar-nav{ float: none;}
+	.HeadTop .pull-left img{ width: 60%;}
+	.Wrap-Banner{ display: none;}
+	.phone-banner{ display: block;}
+	.ContMain{ background: ; padding: 10px 0px;}
+	.ContMainTit{ width: 100%; font-size: 14px; color: #181818; padding-left: 5px; display: table; border-left: 4px solid #00c4fd; height: 20px; line-height: 20px;}
+    .ContMainTit2{ color: #fff;}
+    .bs-docs-featured-sites .col-xs-6{ padding: 2px 1px;}
+    .ContMainB .yewu_img{ margin-top: -4px;}
+    .navbar-default .navbar-nav > li.liA a{ padding: 15px 20px;}
+    .ComNewsBox{ width: 100%;}
+    .ComNewsBox .ComNewsLeft{ width: 28%;}
+    .ComNewsBox .ComNewsCenter{ width: 70%; padding: 10px 0px 0px 10px; overflow: hidden;}
+    .ComNewsBox .ComNewsCenter a{ width: 80%; font-size: 12px; line-height: 24px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+    .ComNewsBox .ComNewsCenter .Blue{ color: #01a0ce; font-size: 14px;}
+    .ComNewsBox .ComNewsRight{ display: none;}
+    .ComNews .pull-right{ display: none;}
+    .ComNewsBox:last-child{ border-bottom: 1px solid #d8d8d8;}
+    .MeitiMain{ width: 100%; text-align: center;}
+    .MeitiMain a{  display: block; float: left; width: 46%;  margin: 2%;}
+    .footer .row a{ font-size: 14px; width: 28%; padding-bottom: 25px;}
+}

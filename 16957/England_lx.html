@@ -1,0 +1,1032 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>某某国际 - 英国留学</title>
+
+
+<link href="css/daohang.css" rel="stylesheet" type="text/css" />
+<link href="css/banner.css" rel="stylesheet" type="text/css" />
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.touchSlider.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/ks-switch.pack.js"></script>
+
+</head>
+
+<body>
+<div class="top">
+	<div class="top_blank">
+   		<a href="index.html"><div class="logo"><img src="images/logo.jpg" /></div></a>
+   		<div class="top_tel"><img src="images/tele.jpg" /></div>
+   	</div>
+</div>
+
+<!-- 导航开始  -->
+<nav class="nav pr">
+<div class="nav-in">
+	<!-- -------菜单html代码---------begin------- -->
+    <div class="menuDiv">
+        <ul>
+            <li>
+                <a href="index.html" >首页</a>
+            </li> 
+            <li>
+                <a href="USA_ym.html">美国移民</a>
+                <ul>
+                    <li><a href="USA_ym.html" >美国EB1A移民</a></li>
+                </ul>
+            </li> 
+            <li>
+                <a href="USA_lx.html" target="_blank">美国留学</a>
+                <ul>
+                    <li><a href="USA_lx_gz.html" >美国高中</a></li>
+                    <li><a href="USA_lx_gz.html" >美国本科</a></li>
+                    <li><a href="USA_lx_gz.html" >美国研究生</a></li>
+                </ul>
+            </li> 
+            <li>
+                <a href="England_lx.html">英国留学</a>
+                <ul>
+                    <li><a href="England_lx_gz.html" >英国高中</a></li>
+                    <li><a href="England_lx_gz.html" >英国本科</a></li>
+                    <li><a href="England_lx_gz.html" >英国研究生</a></li>
+                </ul>
+            </li> 
+            <li>
+                <a href="ajzy.html" >海外服务</a>
+                <ul>
+                    <li><a href="ajzy.html" >安家置业</a></li>
+                    <li><a href="hwfc.html" >海外房产</a></li>
+                    <li><a href="cwgh.html" >财务规划</a></li>
+                </ul>
+            </li> 
+            <li>
+                <a href="hdjz.html" >活动讲座</a>
+            </li> 
+            <li>
+                <a href="about.html" >关于移民</a>
+                <ul>
+                    <li><a href="about.html">移民介绍</a></li>
+                    <li><a href="jytd.html" >精英团队</a></li>
+                </ul>
+            </li> 
+        </ul>
+    </div>
+    <!-- -------菜单html代码---------end------- -->
+    </div>
+</nav>
+<!-- 导航结束  -->
+
+<!--banner-->
+<div class="main_visual_mg">
+	<div class="flicking_con_mg">
+		<a href="#">1</a>
+		<a href="#">2</a>
+		<a href="#">3</a>
+	</div>
+	<div class="main_image_mg">
+		<ul>
+			<a href="#"><li><span class="img_4"></span></li></a>
+			<a href="#"><li><span class="img_5"></span></li></a>
+			<a href="#"><li><span class="img_6"></span></li></a>
+		</ul>
+		<a href="javascript:;" id="btn_prev_mg"></a>
+		<a href="javascript:;" id="btn_next_mg"></a>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".main_visual_mg").hover(function(){
+		$("#btn_prev_mg,#btn_next_mg").fadeIn()
+	},function(){
+		$("#btn_prev_mg,#btn_next_mg").fadeOut()
+	});
+	
+	$dragBln = false;
+	
+	$(".main_image_mg").touchSlider({
+		flexible : true,
+		speed : 200,
+		btn_prev : $("#btn_prev_mg"),
+		btn_next : $("#btn_next_mg"),
+		paging : $(".flicking_con_mg a"),
+		counter : function (e){
+			$(".flicking_con_mg a").removeClass("on").eq(e.current-1).addClass("on");
+		}
+	});
+	
+	$(".main_image_mg").bind("mousedown", function() {
+		$dragBln = false;
+	});
+	
+	$(".main_image_mg").bind("dragstart", function() {
+		$dragBln = true;
+	});
+	
+	$(".main_image_mg a").click(function(){
+		if($dragBln) {
+			return false;
+		}
+	});
+	
+	timer = setInterval(function(){
+		$("#btn_next_mg").click();
+	}, 5000);
+	
+	$(".main_visual_mg").hover(function(){
+		clearInterval(timer);
+	},function(){
+		timer = setInterval(function(){
+			$("#btn_next_mg").click();
+		},5000);
+	});
+	
+	$(".main_image_mg").bind("touchstart",function(){
+		clearInterval(timer);
+	}).bind("touchend", function(){
+		timer = setInterval(function(){
+			$("#btn_next_mg").click();
+		}, 5000);
+	});
+	
+});
+</script>
+<!--banner end-->
+
+<!-- 高分学霸获取剑桥大学录取 -->
+<div class="English_gx">
+	<div class="English_gxa">
+    	<div class="yg-rotaion">
+		<ul class="yg_rotaion_list">
+			<li><a href=""><img src="images/YG_img1.jpg" alt="塞浦路斯欧盟护照项目"></a></li>
+			<li><a href=""><img src="images/YG_img2.jpg" alt="达拉斯1号 2017美国EB-5钻石项目"></a></li>
+			<li><a href=""><img src="images/YG_img1.jpg" alt="美国纽约帝国奥特莱斯购物中心"></a></li>
+			<li><a href=""><img src="images/YG_img2.jpg" alt="曼哈顿9号缩短排期EB-5项目震撼问世"></a></li>
+		</ul>
+	</div>
+    </div>
+    <div class="English_gxb">
+    	<div class="English_gxb_top">
+        	<span>高分学霸获取剑桥大学录取</span>
+            <li><a href="#">解析去英国学多少钱解析去英国学多少钱解析去英国学多少钱!</a></li>
+            <li><a href="#">英国留学酒店管理专业怎么</a></li>
+            <li><a href="#">英国硕士留学费用需要多少项</a></li>
+            <li><a href="#">你了解热门英国留学院校</a></li>
+            <li><a href="#">英国硕士留学费用需要多少项</a></li>
+            <li><a href="#">你了解热门英国留学院校</a></li>
+        </div>
+        <div class="English_gxb_top" style="border:none; margin-top:28px">
+        	<span>伦敦政治经济学院录取</span>
+            <li><a href="#">解析去英国学多少钱!</a></li>
+            <li><a href="#">英国留学酒店管理专业怎么</a></li>
+            <li><a href="#">英国硕士留学费用需要多少项</a></li>
+            <li><a href="#">你了解热门英国留学院校</a></li>
+            <li><a href="#">英国硕士留学费用需要多少项</a></li>
+            <li><a href="#">你了解热门英国留学院校</a></li>
+        </div>
+    </div>
+</div>
+<!-- 高分学霸获取剑桥大学录取 end-->
+
+<script type="text/javascript" src="js/jquery.yx_rotaion.js"></script>
+<script type="text/javascript">
+$(".yg-rotaion").yg_rotaion({auto:true});
+</script>
+
+<!--  留学流程 -->
+<div class="English_lxlc_nr">
+	<a href="#"><input type="reset"  value="英国留学面试技巧"/></a>
+	<div class="English_lxlc">留学流程</div>
+</div>
+<div class="English_lxlca">
+	<a href="#"><li style="margin-left:0">
+    	<img src="images/YG_img3.png" />
+        <p>留学规划</p>
+    </li></a>
+    <a href="#"><li>
+    	<img src="images/YG_img4.png" />
+        <p>留学规划</p>
+    </li></a>
+    <a href="#"><li>
+    	<img src="images/YG_img5.png" />
+        <p>留学规划</p>
+    </li></a>
+    <a href="#"><li>
+    	<img src="images/YG_img6.png" />
+        <p>留学规划</p>
+    </li></a>
+    <a href="#"><li>
+    	<img src="images/YG_img7.png" />
+        <p>留学规划</p>
+    </li></a>
+    <a href="#"><li>
+    	<img src="images/YG_img8.png" />
+        <p>留学规划</p>
+    </li></a>
+</div>
+<!--  留学流程 end -->
+
+
+
+<!-- 英国留学看点 -->
+<div class="English_lxlc_nr">
+	<div class="English_lxlckd">英国留学看点</div>
+</div>
+
+<div class="English_lxlckda">
+	<div class="English_lxlckda_left"><img src="images/YG_img9.jpg" /></div>
+    <div class="English_lxlckda_center">
+    	<div class="English_lxlckda_center_a">
+    		<p><span>英国领军本研留学规划全程管家</span></p>
+        	<p>赢在留学前,职场早规划,超越预期,为你的人生保驾护航</p>
+        	<a href="#"><input type="reset"  value="校园选择"/></a>
+        </div>
+        <div class="English_lxlckda_center_b">
+        	<a href="#"><li>巧用细节“做”文章，轻松制胜里轻松制胜里！</li></a>
+            <a href="#"><li>耶鲁摘星之旅：优选是障信心为梦...</li></a>
+            <a href="#"><li>成为乔治华盛顿的校运更是努力！</li></a>
+            <a href="#"><li>巧用细节“做”文章，轻松制胜里！</li></a>
+            <a href="#"><li>耶鲁摘星之旅：优选是障信心为梦...</li></a>
+            <a href="#"><li>成为乔治华盛顿的校运更是努力！</li></a>
+        </div>
+    </div>
+    <div class="English_lxlckda_right">
+    	<a href="#"><img src="images/YG_img10.jpg" /></a>
+        
+    </div>
+</div>
+
+<div class="English_lxlckdb">
+	<div class="English_lxlckdb_nr" style="margin-left:0">
+    		<span>英国申请必读</span>
+        	<a href="#"><img src="images/YG_img11.jpg" /></a>
+        	<p>选择英国留学,3年可完成本科学习,1年可完成硕士学习,超高性价比超高性价比超高性价比超高性价比超高性价比...</p>
+            <a href="#"><li>2018英国高中留学费用解析</li></a>
+            <a href="#"><li>2018英国高中留学费用解析</li></a>
+            <a href="#"><li>2018年英国高中留学申请指南</li></a>
+    </div>
+    <div class="English_lxlckdb_nr">
+    		<span>英国高中申请</span>
+        	<a href="#"><img src="images/YG_img12.jpg" /></a>
+        	<p>选择英国留学,3年可完成本科学习,1年可完成硕士学习,超高性价比...</p>
+            <a href="#"><li>2018英国高中留学费用解析</li></a>
+            <a href="#"><li>2018英国高中留学费用解析</li></a>
+            <a href="#"><li>2018年英国高中留学申请指南</li></a>
+    </div>
+    <div class="English_lxlckdb_nr">
+    		<span>英国本科申请</span>
+        	<a href="#"><img src="images/YG_img13.jpg" /></a>
+        	<p>选择英国留学,3年可完成本科学习,1年可完成硕士学习,超高性价比...</p>
+            <a href="#"><li>2018英国高中留学费用解析</li></a>
+            <a href="#"><li>2018英国高中留学费用解析</li></a>
+            <a href="#"><li>2018年英国高中留学申请指南</li></a>
+    </div>
+    <div class="English_lxlckdb_nr">
+    		<span>英国硕士申请</span>
+        	<a href="#"><img src="images/YG_img14.jpg" /></a>
+        	<p>选择英国留学,3年可完成本科学习,1年可完成硕士学习,超高性价比...</p>
+            <a href="#"><li>2018英国高中留学费用解析</li></a>
+            <a href="#"><li>2018英国高中留学费用解析</li></a>
+            <a href="#"><li>2018年英国高中留学申请指南</li></a>
+    </div>
+</div>
+
+<!-- 英国留学看点 end-->
+
+<!-- 英国高中  -->
+<div class="USA_Leam">
+    	<dl class="slideBox2">
+			<dt>
+				<span>英国高中</span>
+				<span>英国本科</span>
+            	<span>英国研究生</span>
+	
+			</dt>
+			<dd><!--美国高中 -->
+			<div class="USA_Leam_nr">  
+            	<div class="USA_Leam_nr_img"><img src="images/MG_img6.jpg" /></div>
+                <div class="USA_Leam_nr_gz">
+                	<div class="USA_Leam_nr_gz_img"><a href="#"><img src="images/MG_img7.jpg" /></a></div>
+                	<div class="USA_Leam_nr_gz_title">
+                    	<p>文体方向活动</p>
+						<p>理工方向活动</p>
+                    	<p>商科方向活动</p>
+                    	<p>公益方向活动</p>
+                    </div>
+                    
+                </div>
+                <div class="USA_Leam_nr_gz">
+                	<div class="USA_Leam_nr_gz_img"><a href="#"><img src="images/MG_img8.jpg" /></a></div>
+                	<div class="USA_Leam_nr_gz_title">
+                    	<p>托福,SAT分数要求GPA分数要求美国留学费用详细清单US News综合大学排名</p>
+                    </div>
+                </div>
+                <div class="USA_Leam_nr_gz" style="margin-top:34px">
+                	<div class="USA_Leam_nr_gz_img"><a href="#"><img src="images/MG_img9.jpg" /></a></div>
+                	<div class="USA_Leam_nr_gz_title">
+                    	<p>定个小目标:托福100+新SAT一个月冲刺课程ACT60小时保30冲36TOEFUSA双封闭班</p>
+                    </div>
+                </div>
+                <div class="USA_Leam_nr_gz" style="margin-top:34px">
+                	<div class="USA_Leam_nr_gz_img"><a href="#"><img src="images/MG_img10.jpg" /></a></div>
+                	<div class="USA_Leam_nr_gz_title">
+                    	<p>高二留学方案-准备正当时初三留学本科申请方案美国本科留学申请全规划</p>
+                    </div>
+                </div>
+          	</div>      
+             
+			</dd>
+			<dd><!--美国本科 -->
+			<div class="USA_Leam_nr">
+            	<div class="USA_Leam_nr_img"><img src="images/MG_img6.jpg" /></div>
+                <div class="USA_Leam_nr_gz">
+                	<div class="USA_Leam_nr_gz_img"><a href="#"><img src="images/MG_img8.jpg" /></a></div>
+                	<div class="USA_Leam_nr_gz_title">
+                    	<p>托福,SAT分数要求GPA分数要求美国留学费用详细清单US News综合大学排名</p>
+                    </div>
+                </div>
+                <div class="USA_Leam_nr_gz" >
+                	<div class="USA_Leam_nr_gz_img"><a href="#"><img src="images/MG_img9.jpg" /></a></div>
+                	<div class="USA_Leam_nr_gz_title">
+                    	<p>定个小目标:托福100+新SAT一个月冲刺课程ACT60小时保30冲36TOEFUSA双封闭班</p>
+                    </div>
+                </div>
+                <div class="USA_Leam_nr_gz" style="margin-top:34px">
+                	<div class="USA_Leam_nr_gz_img"><a href="#"><img src="images/MG_img10.jpg" /></a></div>
+                	<div class="USA_Leam_nr_gz_title">
+                    	<p>高二留学方案-准备正当时初三留学本科申请方案美国本科留学申请全规划</p>
+                    </div>
+                </div>
+                
+                <div class="USA_Leam_nr_gz" style="margin-top:34px">
+                	<div class="USA_Leam_nr_gz_img"><a href="#"><img src="images/MG_img7.jpg" /></a></div>
+                	<div class="USA_Leam_nr_gz_title">
+                    	<p>文体方向活动</p>
+						<p>理工方向活动</p>
+                    	<p>商科方向活动</p>
+                    	<p>公益方向活动</p>
+                    </div>
+                </div>
+          	</div> 
+			</dd>
+        	<dd><!--美国研究生 -->
+			<div class="USA_Leam_nr">
+            	<div class="USA_Leam_nr_img"><img src="images/MG_img6.jpg" /></div>
+                <div class="USA_Leam_nr_gz" >
+                	<div class="USA_Leam_nr_gz_img"><a href="#"><img src="images/MG_img9.jpg" /></a></div>
+                	<div class="USA_Leam_nr_gz_title">
+                    	<p>定个小目标:托福100+新SAT一个月冲刺课程ACT60小时保30冲36TOEFUSA双封闭班</p>
+                    </div>
+                </div>
+                <div class="USA_Leam_nr_gz">
+                	<div class="USA_Leam_nr_gz_img"><a href="#"><img src="images/MG_img10.jpg" /></a></div>
+                	<div class="USA_Leam_nr_gz_title">
+                    	<p>高二留学方案-准备正当时初三留学本科申请方案美国本科留学申请全规划</p>
+                    </div>
+                </div>
+                
+                <div class="USA_Leam_nr_gz" style="margin-top:34px">
+                	<div class="USA_Leam_nr_gz_img"><a href="#"><img src="images/MG_img7.jpg" /></a></div>
+                	<div class="USA_Leam_nr_gz_title">
+                    	<p>文体方向活动</p>
+						<p>理工方向活动</p>
+                    	<p>商科方向活动</p>
+                    	<p>公益方向活动</p>
+                    </div>
+                </div>
+                <div class="USA_Leam_nr_gz" style="margin-top:34px">
+                	<div class="USA_Leam_nr_gz_img"><a href="#"><img src="images/MG_img8.jpg" /></a></div>
+                	<div class="USA_Leam_nr_gz_title">
+                    	<p>托福,SAT分数要求GPA分数要求美国留学费用详细清单US News综合大学排名</p>
+                    </div>
+                </div>
+          	</div> 
+		</dd>
+            
+		</dl><!-- -->
+    </div><!--移民国家到此结束 -->
+<!-- 英国高中 end  -->
+
+<!-- 研究生申请时间规划 | 本科申请时间规划 | 中学申请时间规划  -->
+<div class="USA_Leam" style="height:280px">
+    	<dl class="slideBox3">
+			<dt>
+				<span>研究生申请时间规划</span>
+				<span>本科申请时间规划</span>
+            	<span>中学申请时间规划</span>
+			</dt>
+			<dd><!--研究生申请时间规划 -->
+			<div class="USA_lc"><img src="images/MG_img11.jpg" /></div>      
+             
+			</dd>
+			<dd><!--本科申请时间规划 -->
+			<div class="USA_lc"><img src="images/MG_img12.jpg" /></div> 
+			</dd>
+        	<dd><!--中学申请时间规划 -->
+			<div class="USA_lc"><img src="images/MG_img11.jpg" /></div> 
+		</dd>
+            
+		</dl><!-- -->
+    </div><!--移民国家到此结束 -->
+<!-- 研究生申请时间规划 | 本科申请时间规划 | 中学申请时间规划 end  -->
+
+<div class="YMCountry_top">
+	<a href="#">更多+</a>
+    <div class="USA_tj">英国留学院校推荐</div>
+</div>
+<div class="USA_tj_nt">
+	<div class="USA_tj_img"><img src="images/MG_img13.jpg" /></div>
+    <div class="USA_tj_a">
+    	<a href="#">
+    	<p><em>芝加哥大学</em> &nbsp;<span>[美]</span>&nbsp; University of Chicago</p>
+        <p><strong>QS世界大学排名：9</strong></p>
+        <p>推荐理由： · 世界著名私立研究型大学    · 常年位列各大学排行榜世界前十    · 素以盛产诺贝尔奖得主而闻名</p>
+        </a>
+    </div>
+    <div class="USA_tj_b">
+    	<a href="#"><li style="margin-left:0"><img src="images/MG_img14.jpg" />密歇根大学安娜堡分校</li></a>
+        <a href="#"><li><img src="images/MG_img15.jpg" />约翰霍普金斯大学</li></a>
+        <a href="#"><li><img src="images/MG_img16.jpg" />菲利普斯安多佛中学</li></a>
+        <a href="#"><li><img src="images/MG_img17.jpg" />南加州大学</li></a>
+        <a href="#"><li><img src="images/MG_img18.jpg" />哥伦比亚大学</li></a>
+    </div>
+</div>
+
+
+
+<div class="HL_rdzx">
+	<div class="HL_rdzx_title">项目推荐</div>
+</div>
+
+<div class="Box">
+    	<div class="content">
+    		
+    		<div class="Box_con clearfix">
+    			<span class="btnl btn" id="btnl"></span>
+    			<span class="btnr btn" id="btnr"></span>
+    			
+    			<div class="conboxA" id="BoxUl">
+	    			<ul>
+	    				<li>
+                        	<a href="#">
+                            <div class="Box_nrA">
+                            	<img src="images/MG_img19.jpg" alt=""/>
+                                <div class="Box_bgA">
+                                	<p><span>如何申请牛津大学本科</span></p>
+                                    <p>每年,牛津大学都受到大量的申请牛津大学都受到大量的申请牛津大学都受到大量的申请,并对每一份申请进行仔细审核,最后确定</p>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+	    				
+	    				<li>
+                        	<a href="#">
+                            <div class="Box_nrA">
+                            	<img src="images/MG_img20.jpg" alt=""/>
+                                <div class="Box_bgA">
+                                	<p><span>如何申请牛津大学本科</span></p>
+                                    <p>每年,牛津大学都受到大量的申请,并对每一份申请进行仔细审核,最后确定</p>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        
+                        <li>
+                       		<a href="#">
+                        	<div class="Box_nrA">
+                            	<img src="images/MG_img21.jpg" alt=""/>
+                                <div class="Box_bgA">
+                                	<p><span>如何申请牛津大学本科</span></p>
+                                    <p>每年,牛津大学都受到大量的申请,并对每一份申请进行仔细审核,最后确定</p>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        
+                        <li>
+                        	<a href="#">
+                            <div class="Box_nrA">
+                            	<img src="images/MG_img22.jpg" alt=""/>
+                                <div class="Box_bgA">
+                                	<p><span>如何申请牛津大学本科</span></p>
+                                    <p>每年,牛津大学都受到大量的申请,并对每一份申请进行仔细审核,最后确定</p>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+	    				
+	    				<li>
+                        	<a href="#">
+                        	<div class="Box_nrA">
+                            	<img src="images/MG_img19.jpg" alt=""/>
+                                <div class="Box_bgA">
+                                	<p><span>如何申请牛津大学本科</span></p>
+                                    <p>每年,牛津大学都受到大量的申请,并对每一份申请进行仔细审核,最后确定</p>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        
+                        <li>
+                        	<a href="#">
+                        	<div class="Box_nrA">
+                            	<img src="images/HL.hlgj_img3.jpg" alt=""/>
+                                <div class="Box_bgA">
+                                	<p><span>如何申请牛津大学本科</span></p>
+                                    <p>合作律师</p>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        
+    				</ul>
+    			</div>
+    		</div>
+    		
+    	</div>
+    </div>
+
+<script type="text/javascript">
+// 过滚动
+function LbMove(boxID,btn_left,btn_right,btnBox,Car,direction,way,moveLengh,speed,Interval,number){
+				var        _ID   = $("#"+boxID+"");
+				var  _btn_left   = $("#"+btn_left+"");
+				var _btn_right   = $("#"+btn_right+"");
+				var    _btnBox   = $("#"+btnBox+"");
+				var        jsq   = 0
+				var      timer     ;
+				var         cj     ;
+				var     no_way   = 0;
+				var  no_wayGet   = 0;
+				var       fade   = 0;
+				var   new_time   = new Date;
+				
+				var ID_liLen , ID_liheight , cbtmBtn ;
+				ID_liLen    = _ID.find("li").length;
+				ID_liheight = _ID.find("li").innerHeight();
+				
+				if(direction == "left" || direction == "right"){
+					_ID.find("ul").width(ID_liLen*moveLengh);
+					}else if(direction == "top" || direction == "bottom"){
+						_ID.find("ul").height(ID_liLen*moveLengh);
+						_btnBox.hide()
+						}else if(direction == "fade"){
+							_ID.find("ul").width(moveLengh).height(ID_liheight);
+							_ID.find("li").eq(0).show().siblings().hide();
+							_ID.find("li").css({"position":"absolute","left":0,"top":0});
+							}
+				_btnBox.empty();
+				for(i=0;i<ID_liLen;i++){
+					_btnBox.append("<span></span>");
+					};
+				_btnBox.find("span").eq(0).addClass("cur");
+
+				if(way == false){
+						_btn_left.hide();
+						_btn_right.hide();
+						_btnBox.hide();
+						}
+				
+				
+				function Carousel(){
+					if(way == false){
+						no_way++;
+						
+						if(direction == "left"){
+							_ID.find("ul").css({"left":-no_way});	
+							no_wayGet = parseInt(_ID.find("ul").css("left"));
+							if(no_wayGet == -moveLengh){
+								no_way = 0
+								_ID.find("li:first").insertAfter(_ID.find("li:last"));
+								_ID.find("ul").css({"left":0});
+								}
+						}
+
+						if(direction == "right"){
+								
+							no_wayGet = parseInt(_ID.find("ul").css("left"));
+							if(no_wayGet == 0){
+								no_way = -moveLengh
+								_ID.find("li:last").insertBefore(_ID.find("li:first"));
+								_ID.find("ul").css({"left":0});
+								}
+							_ID.find("ul").css({"left":no_way});
+						}
+						
+						if(direction == "top"){
+							_ID.find("ul").css({"top":-no_way});	
+							no_wayGet = parseInt(_ID.find("ul").css("top"));
+							if(no_wayGet == -moveLengh){
+								no_way = 0
+								_ID.find("li:first").insertAfter(_ID.find("li:last"));
+								_ID.find("ul").css({"top":0});
+								}
+						}
+						
+						if(direction == "bottom"){
+								
+							no_wayGet = parseInt(_ID.find("ul").css("top"));
+							if(no_wayGet == 0){
+								no_way = -moveLengh
+								_ID.find("li:last").insertBefore(_ID.find("li:first"));
+								_ID.find("ul").css({"top":0});
+								}
+							_ID.find("ul").css({"top":no_way});
+						}
+						
+						
+						}else if(way == true){
+
+						if(direction == "left"){
+							_ID.find("ul").animate({left:-moveLengh},speed,function(){
+								_ID.find("li:first").insertAfter(_ID.find("li:last"));
+								_ID.find("ul").css({"left":0});
+								});	
+							if(jsq<ID_liLen-1){
+								jsq++;
+								_btnBox.find("span").eq(jsq).addClass("cur").siblings().removeClass("cur");
+								}else{
+									jsq = 0;
+									_btnBox.find("span").eq(jsq).addClass("cur").siblings().removeClass("cur");
+									}
+							
+						}
+						
+						if(direction == "right"){
+							_ID.find("li:last").insertBefore(_ID.find("li:first"));
+							_ID.find("ul").css({"left":-moveLengh});
+							_ID.find("ul").stop().animate({left:0},speed);
+							if(jsq>0){
+								jsq--;
+								_btnBox.find("span").eq(jsq).addClass("cur").siblings().removeClass("cur");
+								}else{
+									jsq = ID_liLen-1;
+									_btnBox.find("span").eq(jsq).addClass("cur").siblings().removeClass("cur");
+									}
+							
+						}
+						
+						if(direction == "top"){
+							_ID.find("ul").animate({top:-moveLengh},speed,function(){
+								_ID.find("li:first").insertAfter(_ID.find("li:last"));
+								_ID.find("ul").css({"top":0});
+								});	
+						}
+						
+						if(direction == "bottom"){
+							_ID.find("li:last").insertBefore(_ID.find("li:first"));
+							_ID.find("ul").css({"top":-moveLengh});
+							_ID.find("ul").stop().animate({top:0},speed);
+								
+						}
+						if(direction == "fade"){
+							
+							if(fade<ID_liLen-1){
+								fade++;
+								}else{fade = 0}
+							_ID.find("li").eq(fade).fadeIn(speed).siblings().fadeOut(speed);
+							_btnBox.find("span").eq(fade).addClass("cur").siblings().removeClass("cur");
+							
+						}
+					
+					}
+					}
+					
+					
+				if(Car == true){
+						
+					if(ID_liLen>number){
+						timer =	setInterval(Carousel,Interval);
+						}else{
+							clearInterval(timer);
+							_btn_left.hide();
+							_btn_right.hide();
+							_btnBox.hide();
+							}
+					}else{
+						clearInterval(timer);
+						}
+				_ID.find("li").hover(function(){
+					clearInterval(timer);
+					},function(){
+						if(Car == true){
+							if(ID_liLen>number){
+								timer =	setInterval(Carousel,Interval);
+								}else{
+									clearInterval(timer);
+									_btn_left.hide();
+									_btn_right.hide();
+									_btnBox.hide();
+									}
+							}else{
+								clearInterval(timer);
+								}
+						});
+					
+					
+				_btn_right.hover(function(){
+					clearInterval(timer);
+					},function(){
+						if(Car == true){
+							if(ID_liLen>number){
+								timer =	setInterval(Carousel,Interval);
+								}else{
+									clearInterval(timer);
+									_btn_left.hide();
+									_btn_right.hide();
+									_btnBox.hide();
+									}
+							}else{
+								clearInterval(timer);
+								}
+						
+						}).click(function(){
+							if(new Date - new_time>500){
+								new_time = new Date;
+							
+							if(direction == "left" || direction == "right"){
+								_ID.find("ul").animate({left:-moveLengh},speed,function(){
+									_ID.find("li:first").insertAfter(_ID.find("li:last"));
+									_ID.find("ul").css({"left":0});
+									});	
+								}
+							
+							
+							if(direction == "top" || direction == "bottom"){
+								_ID.find("ul").animate({top:-moveLengh},speed,function(){
+									_ID.find("li:first").insertAfter(_ID.find("li:last"));
+									_ID.find("ul").css({"top":0});
+									});	
+								}
+							if(direction == "fade"){
+							
+							if(fade>0){
+								fade--;
+								}else{fade = ID_liLen-1}
+									_ID.find("li").stop(true,true).eq(fade).fadeIn(speed).siblings().fadeOut(speed);
+									
+								}
+							if(jsq<ID_liLen-1){
+								jsq++;
+								_btnBox.find("span").eq(jsq).addClass("cur").siblings().removeClass("cur");
+								}else{
+									jsq = 0;
+									_btnBox.find("span").eq(jsq).addClass("cur").siblings().removeClass("cur");
+									};
+							
+								
+								}else{};
+							});
+				_btn_left.hover(function(){
+					clearInterval(timer);
+					},function(){
+						if(Car == true){
+							if(ID_liLen>number){
+								timer =	setInterval(Carousel,Interval);
+								}else{
+									clearInterval(timer);
+									_btn_left.hide();
+									_btn_right.hide();
+									_btnBox.hide();
+									}
+							}else{
+								clearInterval(timer);
+								}
+						}).click(function(){
+							if(new Date - new_time>500){
+								new_time = new Date;
+
+							if(direction == "left" || direction == "right"){
+								_ID.find("li:last").insertBefore(_ID.find("li:first"));
+								_ID.find("ul").css({"left":-moveLengh});
+								_ID.find("ul").stop().animate({left:0},speed);
+								}
+							
+							if(direction == "top" || direction == "bottom"){
+								_ID.find("li:last").insertBefore(_ID.find("li:first"));
+								_ID.find("ul").css({"top":-moveLengh});
+								_ID.find("ul").stop().animate({top:0},speed);
+									
+								}
+							if(direction == "fade"){
+							
+							if(fade<ID_liLen-1){
+								fade++;
+								}else{fade = 0}
+									_ID.find("li").stop(true,true).eq(fade).fadeIn(speed).siblings().fadeOut(speed);
+									
+								}
+							if(jsq>0){
+								jsq--;
+								_btnBox.find("span").eq(jsq).addClass("cur").siblings().removeClass("cur");
+								}else{
+									jsq = ID_liLen-1;
+									_btnBox.find("span").eq(jsq).addClass("cur").siblings().removeClass("cur");
+									};
+								}else{};
+							});
+					
+				_btnBox.find("span").hover(function(){
+					clearInterval(timer);
+
+					},function(){
+						if(Car == true){
+							if(ID_liLen>number){
+								timer =	setInterval(Carousel,Interval);
+								}else{
+									clearInterval(timer);
+									_btn_left.hide();
+									_btn_right.hide();
+									_btnBox.hide();
+									}
+							}else{
+								clearInterval(timer);
+								}
+						}).click(function(){
+							if(new Date - new_time>500){
+								new_time = new Date;
+							cbtmBtn = $(this).index();
+							$(this).addClass("cur").siblings().removeClass("cur");
+							if(direction == "fade"){
+											_ID.find("li").eq(cbtmBtn).fadeIn(speed).siblings().fadeOut(speed);
+										}else{
+							if(cbtmBtn>jsq){
+								cj =cbtmBtn - jsq;
+								jsq = cbtmBtn;
+								
+								_ID.find("ul").stop().animate({left:-moveLengh*cj},speed,function(){
+									for(i=0;i<cj;i++){
+										_ID.find("ul").css({"left":0})
+										_ID.find("li:first").insertAfter(_ID.find("li:last"));
+										};
+									});
+								}else{
+									cj = jsq - cbtmBtn;
+									jsq = cbtmBtn;
+									_ID.find("ul").css({"left":-moveLengh*cj});
+									for(i=0;i<cj;i++){
+										_ID.find("ul").stop().animate({left:0},speed);
+										_ID.find("li:last").insertBefore(_ID.find("li:first"));
+										};
+									};
+									};
+								}else{};
+							});
+}
+    //滚动元素id，左切换按钮，右切换按钮，切换元素个数id,滚动方式，切换方向，是否自动滚动，滚动距离，滚动时间，滚动间隔，显示个数
+    LbMove('BoxUl','btnl','btnr','BoxSwitch',true,'left',true,258,1000,5000,4);
+</script>
+
+
+<script type="text/javascript">
+// 切换标签效果
+$(function($){
+	$(".slideBox2").switchTab({trigger: "mouseover", delayTime: 0});
+	$(".slideBox3").switchTab({trigger: "mouseover", delayTime: 0});
+	
+});
+</script>
+
+
+
+<!-- 底部评估表 -->
+<div class="HL_pgb_bottom">
+	<div class="HL_pgb">
+	<div class="item">
+			<div class="filter-box2">
+				<div class="filter-text">
+					<input class="filter-title" type="text" readonly placeholder="移民留学国家" />
+					<i class="icon icon-filter-arrow"></i>
+				</div>
+				<select name="filter">
+                	<option value="-1"></option>
+					<option value="1">美国EB1A移民</option>
+					<option value="2">美国留学</option>
+					<option value="3">英国留学</option>
+					<option value="4">海外投资</option>
+					<option value="5">其它</option>
+				</select>
+			</div>
+	</div>
+    <div class="item" style="margin-left:20px">
+			<div class="filter-box3">
+				<div class="filter-text">
+					<input class="filter-title" type="text" readonly placeholder="预算" />
+					<i class="icon icon-filter-arrow"></i>
+				</div>
+				<select name="filter">
+                	<option value="-1"></option>
+					<option value="1">50万-100万</option>
+					<option value="2">100万-200万</option>
+					<option value="3">300万-500万</option>
+					<option value="4">500万-800万</option>
+					<option value="5">1000万以上</option>
+                    <option value="5">其他</option>
+				</select>
+              </div>
+	</div>
+    <div class="item" style="margin-left:20px">
+    	<input class="input" placeholder="联系方式" />
+    </div>
+    <div class="pgbButton" style="margin-left:20px">
+        <input type="reset"  value="立即评估"/>
+    </div>
+</div>
+
+</div>
+<!-- 底部评估表 end  -->
+
+
+<!-- 底部信息开始 -->
+<div class="HL_gj">
+	<div class="HL_gj_nr">
+    	<li>
+        	<a href="#"><p>美国移民</p></a>
+            <a href="#"><p>美国EB1A移民</p></a>
+        </li>
+        <li>
+        	<a href="#"><p>美国留学</p></a>
+            <a href="#"><p>美国高中</p></a>
+            <a href="#"><p>美国本科</p></a>
+            <a href="#"><p>美国研究生</p></a>
+        </li>
+        <li>
+        	<a href="#"><p>英国留学</p></a>
+            <a href="#"><p>英国高中</p></a>
+            <a href="#"><p>英国本科</p></a>
+            <a href="#"><p>英国研究生</p></a>
+        </li>
+        <li>
+        	<a href="#"><p>海外服务</p></a>
+            <a href="#"><p>安家置业</p></a>
+            <a href="#"><p>海外房产</p></a>
+            <a href="#"><p>财务规划</p></a>
+        </li>
+        <li>
+        	<a href="#"><p>关于移民</p></a>
+            <a href="#"><p>移民介绍</p></a>
+            <a href="#"><p>精英团队</p></a>
+            <a href="#"><p>活动讲座</p></a>
+        </li>
+        <li><img src="images/HL_logo.png" alt=""></li>
+    </div>
+</div>
+
+<div class="HL_bottom">
+	<div class="HL_bottom_nr">
+    	<li>
+        	<img src="images/HL_fwh.jpg" alt="">
+            <div class="HL_bottom_title">关注官方服务号</div>
+        </li>
+        <li>
+        	<img src="images/HL_dyh.jpg" alt="">
+            <div class="HL_bottom_title">关注官方订阅号</div>
+        </li>
+        <li>
+        	<p><span>VIP免费热线：400-888-8888</span></p>
+            <p>地址：南京市玄武区玄武湖10号</p>
+            <p>版权所有 ©2020 XXX <a href="http://www.adminbuy.cn" target="_blank">网站模板</a></p>
+            <p>XXX</p>
+        </li>
+    </div>
+</div>
+<!-- 底部信息结束 -->
+
+<script type="text/javascript" src="js/selectFilter.js"></script>
+<script type="text/javascript">
+			//本小插件支持移动端哦
+			
+			//这里是初始化
+			$('.filter-box').selectFilter({
+				callBack : function (val){
+					//返回选择的值
+					console.log(val+'-是返回的值')
+				}
+			});
+			$('.filter-box1').selectFilter({
+				callBack : function (val){
+					//返回选择的值
+					console.log(val+'-是返回的值')
+				}
+			});
+			$('.filter-box2').selectFilter({
+				callBack : function (val){
+					//返回选择的值
+					console.log(val+'-是返回的值')
+				}
+			});
+			$('.filter-box3').selectFilter({
+				callBack : function (val){
+					//返回选择的值
+					console.log(val+'-是返回的值')
+				}
+			});
+</script>
+
+</body>
+</html>

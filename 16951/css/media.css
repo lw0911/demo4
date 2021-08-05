@@ -1,0 +1,115 @@
+﻿@charset "utf-8";
+/*!
+ * 米维建站  一建轻松建站
+ * 详尽信息请看官网：http://www.miwinfo.com/
+ *
+ * Copyright 2014 米维建站
+ *
+ * 请尊重原创，保留头部版权
+ * 仅供学习参考使用，不可用于任何商业用途
+ *
+ * 客服QQ 974837117
+ */
+@media only screen and (max-width : 1400px) {
+
+}
+@media only screen and (max-width : 1200px) {
+.content{ max-width: 910px; }
+.header .inmuen ul li a{ padding: 0 20px; }
+.inadvyu .pic{ width: 520px; height: 350px; }
+.inadvyu{ padding: 70px 0 70px 550px; }
+}
+@media only screen and (max-width : 1024px) {
+
+}
+@media only screen and (max-width : 910px) {
+.header{ padding: 0; }
+.header .logo{ padding: 5px 0; }
+.header .logo img{ height: 40px; width: auto; }
+.nav_handle{ display: block; }
+.header .inmuen{ float: none; clear: both; display: none;}
+.header .inmuen ul li{ float: none; }
+.header .inmuen ul li > a{ text-align: center; padding: 0; }
+.header .inmuen ul li .erji{ width: 100%; left: 0; margin-left: 0; }
+.banner{ display: none; }
+.wapbanner{ display: block; width: 100%; height: auto; position: relative;}
+.wapbanner .pagination{ z-index: 9999; height: 30px; line-height: 30px; width: 100%; position: absolute; left: 0; bottom: 0; text-align: center; }
+.wapbanner .pagination .swiper-pagination-switch{ display: inline-block; margin: 0 3px; width: 8px; height: 8px; border-radius: 50%; background: #fff; }
+.wapbanner .pagination .swiper-active-switch{ background: #8cd635; }
+.inadvyu{ padding: 70px 0 70px 420px; min-height: 270px; }
+.inadvyu .pic .nr{ position: static; width: 100%; height: auto; }
+.inadvyu .pic{ width: 400px; height: auto; }
+.showpro .info{ padding-left: 380px; min-height: 241px; }
+.showpro .info .pic{ width: 350px; height: 241px; }
+.nynews ul li{ padding: 30px 30px 30px 320px;}
+.nynews ul li .jj{ height: 90px; }
+.nynews ul li .date{ position: static; top: initial; margin-top: 0; padding: 0; border: 0;}
+.nynews ul li .date span{ display: inline-block; padding-right: 10px;}
+.nynews ul li .date em{ display: inline-block; margin-bottom: 0;}
+.nynews ul li .date .more{ display: none; }
+.shownews .tit{ font-size: 20px; margin-bottom: 10px; }
+.shownews .pre{ float:none; padding:0;}
+.shownews .fanh{ float:none; width:100%;}
+.shownews .pic{ padding: 0 50px; }
+.shownews .pic .prev, .shownews .pic .next{ width: 40px; height: 40px; line-height: 40px; margin-top: -20px; }
+.nymess .cntit{ font-size: 20px; }
+.nymess .nr .li{ width: 100%;  padding: 0 0 0 35px;}
+.nymess .nr .li1{ width: 100%;  padding: 0 0 0 35px;}
+}
+@media only screen and (max-width : 850px) {
+
+}
+@media only screen and (max-width : 640px) {
+.wapbanner{ padding-top: 50px; background: #000;}
+.nybanner{ padding-top: 50px; background: #000;}
+.inadvyu{ padding: 30px 0; }
+.inadvyu .pic{ position: static; width: auto;}
+.inadvyu .tit{ font-size: 20px; line-height: 35px; margin-top: 20px; }
+.inadvyu .more{ height: 35px; line-height: 35px; }
+.inyous,.inservice,.inabout,.innews,.insearch{ padding: 30px 0; }
+.inyous ul li{ width: 48%; margin: 10px 1%; }
+.inyous ul li .sz{ width: 80px; height: 80px; line-height: 80px; font-size: 25px; }
+.inservice .lmtit,.inabout .lmtit,.innews .lmtit{ font-size: 20px; margin-bottom: 30px; }
+.inservice .shang,.inservice .xia{ height: auto; background: no-repeat; }
+.inservice .shang .pic,.inservice .xia .pic{ width: auto; height: 200px; float: none; }
+.inservice .shang .li,.inservice .xia .li{ height: auto; width: auto; padding: 30px 0; float: none; }
+.inservice .shang .li .fgc,.inservice .xia .li .fgc{ position: static; }
+.inabout .an1,.inabout .an2{ width:  120px; height: 35px; line-height: 35px; }
+.innews .nr ul li{ width: 100%; margin: 5px 0; }
+.innews .more{ line-height: 35px; height: 35px; margin-top: 20px; }
+.insearch span{ font-size: 16px; }
+.insearch .nr{ margin: 0; }
+.footer .fnav{ display: none; }
+.footer .flogo{ width: 130px; margin: 0 auto 30px; }
+.nynav ul li{ padding: 0; display: block; float: left; width: 31.333333%; margin: 5px 1%; height: 30px; line-height: 30px; }
+.nypro ul li{ width: 48%; }
+.nynav{ padding: 20px 0; }
+.nypro ul li .tit{ font-size: 14px; }
+.nypro ul li .fenl{ font-size: 12px; }
+.showpro .info{ padding: 0; min-height: 200px; }
+.showpro .info .pic{ width: 100%; height: auto; position: static; margin-bottom: 20px;}
+.nynews ul li{ padding:20px;}
+.nynews ul li .pic{ position: static; margin: 0 auto; }
+.nynews ul li .tit{ font-size: 16px; height: 40px; line-height: 40px; }
+.nynews ul li .date span{ font-size: 25px; }
+.shownews .sxp .lan{ width: 100%;float: none; height: 32px; line-height: 32px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-bottom: 10px; font-size: 12px;}
+.shownews .sxp .ran{ width: 100%;float: none; height: 32px; line-height: 32px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px;}
+.shownews .sxp .ran .ico{ float: left; margin-left: 0; margin-right: 10px; }
+.nycase ul li{ width: 48%; }
+.nycase ul li .tit{ height: 30px; line-height: 30px; }
+.nycase ul li .nyholipic{ padding: 10px; }
+.nymess .nr .tijiao{ height: 40px; border-radius: 20px; line-height: 40px; }
+}
+@media only screen and (max-width : 480px) {
+
+}
+@media only screen and (max-width : 450px) {
+
+}
+@media only screen and (max-width : 400px) {
+
+}
+@media only screen and (max-width : 360px) {
+
+}
+

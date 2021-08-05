@@ -1,0 +1,1404 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/nav.js"></script>
+<script type="text/javascript" src="js/jquery.superslide.2.1.1.js"></script>
+<script type="text/javascript" src="js/jquery.touchslider.js"></script>
+<!--控制banner切换效果-->
+<script type="text/javascript">
+$(document).ready(function () {
+	$(".main_visual").hover(function(){
+		$("#btn_prev,#btn_next").fadeIn()
+		},function(){
+		$("#btn_prev,#btn_next").fadeOut()
+		})
+	$dragBln = false;
+	$(".main_image").touchSlider({
+		flexible : true,
+		speed : 200,
+		btn_prev : $("#btn_prev"),
+		btn_next : $("#btn_next"),
+		paging : $(".flicking_con a"),
+		counter : function (e) {
+			$(".flicking_con a").removeClass("on").eq(e.current-1).addClass("on");
+		}
+	});
+	$(".main_image").bind("mousedown", function() {
+		$dragBln = false;
+	})
+	$(".main_image").bind("dragstart", function() {
+		$dragBln = true;
+	})
+	$(".main_image a").click(function() {
+		if($dragBln) {
+		 return false;
+		}
+	})
+	timer = setInterval(function() { $("#btn_next").click();}, 4000);
+	$(".main_visual").hover(function() {
+		clearInterval(timer);
+	}, function() {
+		timer = setInterval(function() { $("#btn_next").click();}, 4000);
+	})
+	$(".main_image").bind("touchstart", function() {
+		clearInterval(timer);
+	}).bind("touchend", function() {
+		timer = setInterval(function() { $("#btn_next").click();}, 4000);
+	})
+});
+</script>
+<title>某某国际贸易有限公司</title>
+<meta name="keywords" content="某某国际贸易有限公司"/>
+<meta name="description" content="某某国际贸易有限公司"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<!-- 防止IE8,7进入怪异模式 -->
+<link href="css/style.css" type="text/css" rel="stylesheet"/>
+<link rel="icon" href="images/favicon.gif" type="image/gif">
+<link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body>
+<script language="javascript">
+function checkform3(nForm)  
+{
+	if(nForm.keys.value==""||nForm.keys.value=="搜索关键词")
+	{
+		alert("请输入关键字!");
+		nForm.keys.focus();
+		return false;
+	}
+}
+</script>
+<script type="text/javascript" src="js/zh.js"></script>
+<script>
+zh_tran('t');
+</script>
+<div class="top_bg">
+	<div class="menu b_center">
+		<div class="logo_l">
+			<a href="index.html"><img src="upload/picture/logo.png"></a>
+		</div>
+		<div class="logo_r">
+			<div class="nav">
+				<ul>
+					<li class="m on">
+					<h3><a href="index.html" title="首页">首页</a></h3>
+					</li>
+					<li class="m ">
+					<h3><a href="about.html" title="关于我们">关于我们</a></h3>
+					<li class="m ">
+					<h3><a href="news.html" title="公司动态">公司动态</a></h3>
+					</li>
+					<li class="m ">
+					<h3><a href="products.html" title="产品展示">产品展示</a></h3>
+					</li>
+					<li class="m ">
+					<h3><a href="case.html" title="工程案例">工程案例</a></h3>
+					</li>
+					<li class="m ">
+					<h3><a href="contact.html" title="联系我们">联系我们</a></h3>
+					</li>
+				</ul>
+				<script type="text/javascript"> jQuery(".nav").slide({ type:"menu",  titCell:".m", targetCell:".sub", effect:"slideDown", delayTime:300, triggerTime:100,returnDefault:true});</script>
+			</div>
+		</div>
+		<!-- clear the floats if required -->
+		<div class="clear">
+		</div>
+	</div>
+</div>
+<!--header_100 end-->
+<div class="h84">
+	&nbsp;
+</div>
+<!--banner star-->
+<div class="main_visual">
+	<div class="flicking_con">
+		<div class="flicking_inner">
+			<a href="#">1</a>
+			<a href="#">2</a>
+			<a href="#">3</a>
+		</div>
+	</div>
+	<!--flicking_con end-->
+	<div class="main_image">
+		<ul>
+			<li><span style="background:url(images/banner_00.jpg) no-repeat center top;"><a href="#"></a></span></li>
+			<li><span style="background:url(images/2016101712030875875.jpg) no-repeat center top;"><a href="#"></a></span></li>
+			<li><span style="background:url(images/20161017120327032703.jpg) no-repeat center top;"><a href="#"></a></span></li>
+		</ul>
+		<a href="#" id="btn_prev"></a>
+		<a href="#" id="btn_next"></a>
+	</div>
+	<!--main_image end-->
+</div>
+<!--banner end--><!--正文begin--><!--我们的服务begin-->
+<div class="i_service" style="background:url(images/i_ongbg.jpg) #fff center top no-repeat;">
+	<div class="i_service_t">
+		SERVICE
+		<h2>我们的<span>服务</span></h2>
+	</div>
+	<div class="i_service_desc">
+	擁有豐富的花卉、種子、盆栽、苗木資源及國際貿易經驗。能為您提供選購，種植，通關一體化的供應鏈式服務。您可以時刻關注我們的網頁更新，捕捉最新、最優質的花卉，苗木資源.
+豐富的施工及養護經驗和一流的園林綠化設計、施工技術，永決您的後顧之憂。施工骨幹技術工人均經過專業培訓，並有多年的施工養護經驗，保證工程施工品質及後期養護規範化、專業化。
+我們歡迎您到我們浙江及廣東、廣西、江蘇各種植基地，實地選苗，我們將為您提供最專業的景觀建設意見，保證您挑選到最合心意的“綠意”產品。
+	</div>
+	<div class="wrap">
+		<ul class="i_service_ul">
+			<li onmouseover="$(this).find('img').attr('src','images/i_pic1_sel.png')" onmouseout="$(this).find('img').attr('src','images/i_pic1.png')"><a href="#"><img src="upload/picture/i_pic1.png"/>
+			<h2>花卉与盆栽</h2>
+			<p>
+				15年豐富的花卉與盆栽採購、種植及進出口貿易經驗，在行業內擁有良好的信譽。場內有大量品種繁多、品質上乘的花卉及盆栽可供選擇，同時銷售各類花卉優質種子。
+			</p>
+			</a></li>
+			<li onmouseover="$(this).find('img').attr('src','images/i_pic2_sel.png')" onmouseout="$(this).find('img').attr('src','images/i_pic2.png')"><a href="#"><img src="upload/picture/i_pic2.png"/>
+			<h2>景观苗木与观赏锦鲤</h2>
+			<p>
+				秉承專業的理念，由經驗豐富的團隊種植庭院綠化景觀苗木；同時以滿足客戶需要為原則，由業內專家精挑細選日本名場的高素質錦鯉，以共同豐富並完善庭院景觀，享受綠色與靈動相結合的愜意生活
+			</p>
+			</a></li>
+			<li onmouseover="$(this).find('img').attr('src','images/i_pic3_sel.png')" onmouseout="$(this).find('img').attr('src','images/i_pic3.png')"><a href="#"><img src="upload/picture/i_pic3.png"/>
+			<h2>庭院设计与园艺产品</h2>
+			<p>
+				擁有經驗豐富的園林設計團隊及技術過硬的施工隊伍，為客戶量身定做園林設計方案，並提供專業施工支持，同時可根據客戶要求打造石藝產品，全面優化客戶服務。
+			</p>
+			</a></li>
+		</ul>
+	</div>
+</div>
+<!--我们的服务end--><!--我们的产品begin-->
+<div class="i_product">
+	<div class="i_service_t" style="padding-top:36px;">
+		PRODUCTS
+		<h2>我们的<span>产品</span></h2>
+	</div>
+	<div class="M_7">
+		<div class="slideTxtBox3">
+			<div class="parBd">
+				<div class="picScroll-left2">
+					<div class="hd cd">
+						<a class="sNext"></a>
+						<a class="sPrev"></a>
+					</div>
+					<div class="bd dd">
+						<div style=" position: relative; width: 1084px;" class="tempWrap">
+							<ul class="picList" style="width: 1298px; left: 0px; position: relative; padding: 0pt; margin: 0pt; overflow:visible;">
+								<li><a href="#" title="茶">
+								<div class="img">
+									<img src="upload/picture/20161109113970197019.jpg" alt="茶"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									茶
+								</div>
+								</a></li>
+								<li><a href="#" title="茶">
+								<div class="img">
+									<img src="upload/picture/1439 (1).jpg" alt="茶"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									茶
+								</div>
+								</a></li>
+								<li><a href="#" title="茶">
+								<div class="img">
+									<img src="upload/picture/1439 (2).jpg" alt="茶"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									茶
+								</div>
+								</a></li>
+								<li><a href="#" title="茶">
+								<div class="img">
+									<img src="upload/picture/1439 (3).jpg" alt="茶"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									茶
+								</div>
+								</a></li>
+								<li><a href="#" title="茶">
+								<div class="img">
+									<img src="upload/picture/1439 (4).jpg" alt="茶"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									茶
+								</div>
+								</a></li>
+								<li><a href="#" title="羅漢松">
+								<div class="img">
+									<img src="upload/picture/20161109112978027802.jpg" alt="羅漢松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									羅漢松
+								</div>
+								</a></li>
+								<li><a href="#" title="羅漢松">
+								<div class="img">
+									<img src="upload/picture/1449 (1).jpg" alt="羅漢松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									羅漢松
+								</div>
+								</a></li>
+								<li><a href="#" title="羅漢松">
+								<div class="img">
+									<img src="upload/picture/1449 (2).jpg" alt="羅漢松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									羅漢松
+								</div>
+								</a></li>
+								<li><a href="#" title="羅漢松">
+								<div class="img">
+									<img src="upload/picture/1449 (3).jpg" alt="羅漢松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									羅漢松
+								</div>
+								</a></li>
+								<li><a href="#" title="羅漢松">
+								<div class="img">
+									<img src="upload/picture/1449 (4).jpg" alt="羅漢松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									羅漢松
+								</div>
+								</a></li>
+								<li><a href="#" title="羅漢松">
+								<div class="img">
+									<img src="upload/picture/1449 (5).jpg" alt="羅漢松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									羅漢松
+								</div>
+								</a></li>
+								<li><a href="#" title="羅漢松">
+								<div class="img">
+									<img src="upload/picture/1449 (6).jpg" alt="羅漢松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									羅漢松
+								</div>
+								</a></li>
+								<li><a href="#" title="羅漢松">
+								<div class="img">
+									<img src="upload/picture/1449 (7).jpg" alt="羅漢松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									羅漢松
+								</div>
+								</a></li>
+								<li><a href="#" title="羅漢松">
+								<div class="img">
+									<img src="upload/picture/1449 (8).jpg" alt="羅漢松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									羅漢松
+								</div>
+								</a></li>
+								<li><a href="#" title="羅漢松">
+								<div class="img">
+									<img src="upload/picture/1449 (9).jpg" alt="羅漢松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									羅漢松
+								</div>
+								</a></li>
+								<li><a href="#" title="羅漢松">
+								<div class="img">
+									<img src="upload/picture/1449 (10).jpg" alt="羅漢松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									羅漢松
+								</div>
+								</a></li>
+								<li><a href="#" title="羅漢松">
+								<div class="img">
+									<img src="upload/picture/1449 (11).jpg" alt="羅漢松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									羅漢松
+								</div>
+								</a></li>
+								<li><a href="#" title="羅漢松">
+								<div class="img">
+									<img src="upload/picture/1449 (12).jpg" alt="羅漢松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									羅漢松
+								</div>
+								</a></li>
+								<li><a href="#" title="羅漢松">
+								<div class="img">
+									<img src="upload/picture/1449 (13).jpg" alt="羅漢松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									羅漢松
+								</div>
+								</a></li>
+								<li><a href="#" title="羅漢松">
+								<div class="img">
+									<img src="upload/picture/1449 (14).jpg" alt="羅漢松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									羅漢松
+								</div>
+								</a></li>
+								<li><a href="#" title="羅漢松">
+								<div class="img">
+									<img src="upload/picture/1449 (15).jpg" alt="羅漢松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									羅漢松
+								</div>
+								</a></li>
+								<li><a href="#" title="羅漢松">
+								<div class="img">
+									<img src="upload/picture/1449 (16).jpg" alt="羅漢松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									羅漢松
+								</div>
+								</a></li>
+								<li><a href="#" title="羅漢松">
+								<div class="img">
+									<img src="upload/picture/1449 (17).jpg" alt="羅漢松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									羅漢松
+								</div>
+								</a></li>
+								<li><a href="#" title="羅漢松">
+								<div class="img">
+									<img src="upload/picture/1449 (18).jpg" alt="羅漢松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									羅漢松
+								</div>
+								</a></li>
+								<li><a href="#" title="羅漢松">
+								<div class="img">
+									<img src="upload/picture/2016111621380535535.jpg" alt="羅漢松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									羅漢松
+								</div>
+								</a></li>
+								<li><a href="#" title="羅漢松">
+								<div class="img">
+									<img src="upload/picture/1449 (20).jpg" alt="羅漢松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									羅漢松
+								</div>
+								</a></li>
+								<li><a href="#" title="羅漢松">
+								<div class="img">
+									<img src="upload/picture/1449 (21).jpg" alt="羅漢松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									羅漢松
+								</div>
+								</a></li>
+								<li><a href="#" title="真柏">
+								<div class="img">
+									<img src="upload/picture/201701101428007272.jpg" alt="真柏"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									真柏
+								</div>
+								</a></li>
+								<li><a href="#" title="真柏">
+								<div class="img">
+									<img src="upload/picture/20170110143986178617.jpg" alt="真柏"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									真柏
+								</div>
+								</a></li>
+								<li><a href="#" title="真柏">
+								<div class="img">
+									<img src="upload/picture/20170110144027002700.jpg" alt="真柏"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									真柏
+								</div>
+								</a></li>
+								<li><a href="#" title="日本錦鯉">
+								<div class="img">
+									<img src="upload/picture/20170110150670907090.jpg" alt="日本錦鯉"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									日本錦鯉
+								</div>
+								</a></li>
+								<li><a href="#" title="日本錦鯉">
+								<div class="img">
+									<img src="upload/picture/20170110150713101310.jpg" alt="日本錦鯉"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									日本錦鯉
+								</div>
+								</a></li>
+								<li><a href="#" title="日本錦鯉">
+								<div class="img">
+									<img src="upload/picture/20170110150890499049.jpg" alt="日本錦鯉"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									日本錦鯉
+								</div>
+								</a></li>
+								<li><a href="#" title="佛肚">
+								<div class="img">
+									<img src="upload/picture/20161109113443594359.jpg" alt="佛肚"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									佛肚
+								</div>
+								</a></li>
+								<li><a href="#" title="佛肚">
+								<div class="img">
+									<img src="upload/picture/1440 (1).jpg" alt="佛肚"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									佛肚
+								</div>
+								</a></li>
+								<li><a href="#" title="佛肚">
+								<div class="img">
+									<img src="upload/picture/1440 (2).jpg" alt="佛肚"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									佛肚
+								</div>
+								</a></li>
+								<li><a href="#" title="佛肚">
+								<div class="img">
+									<img src="upload/picture/1440 (3).jpg" alt="佛肚"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									佛肚
+								</div>
+								</a></li>
+								<li><a href="#" title="佛肚">
+								<div class="img">
+									<img src="upload/picture/1440 (4).jpg" alt="佛肚"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									佛肚
+								</div>
+								</a></li>
+								<li><a href="#" title="佛肚">
+								<div class="img">
+									<img src="upload/picture/1440 (5).jpg" alt="佛肚"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									佛肚
+								</div>
+								</a></li>
+								<li><a href="#" title="佛肚">
+								<div class="img">
+									<img src="upload/picture/1440 (6).jpg" alt="佛肚"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									佛肚
+								</div>
+								</a></li>
+								<li><a href="#" title="佛肚">
+								<div class="img">
+									<img src="upload/picture/1440 (7).jpg" alt="佛肚"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									佛肚
+								</div>
+								</a></li>
+								<li><a href="#" title="佛肚">
+								<div class="img">
+									<img src="upload/picture/1440 (8).jpg" alt="佛肚"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									佛肚
+								</div>
+								</a></li>
+								<li><a href="#" title="佛肚">
+								<div class="img">
+									<img src="upload/picture/1440 (9).jpg" alt="佛肚"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									佛肚
+								</div>
+								</a></li>
+								<li><a href="#" title="黑松">
+								<div class="img">
+									<img src="upload/picture/1453 (23).jpg" alt="黑松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									黑松
+								</div>
+								</a></li>
+								<li><a href="#" title="黑松">
+								<div class="img">
+									<img src="upload/picture/2017011016150841841.jpg" alt="黑松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									黑松
+								</div>
+								</a></li>
+								<li><a href="#" title="黑松">
+								<div class="img">
+									<img src="upload/picture/20170110161887608760.jpg" alt="黑松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									黑松
+								</div>
+								</a></li>
+								<li><a href="#" title="黑松">
+								<div class="img">
+									<img src="upload/picture/20170110162138903890.jpg" alt="黑松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									黑松
+								</div>
+								</a></li>
+								<li><a href="#" title="黑松">
+								<div class="img">
+									<img src="upload/picture/20170110162481958195.jpg" alt="黑松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									黑松
+								</div>
+								</a></li>
+								<li><a href="#" title="黑松">
+								<div class="img">
+									<img src="upload/picture/20170110162577147714.jpg" alt="黑松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									黑松
+								</div>
+								</a></li>
+								<li><a href="#" title="黑松">
+								<div class="img">
+									<img src="upload/picture/2017011016270453453.jpg" alt="黑松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									黑松
+								</div>
+								</a></li>
+								<li><a href="#" title="黑松">
+								<div class="img">
+									<img src="upload/picture/20170110162968136813.jpg" alt="黑松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									黑松
+								</div>
+								</a></li>
+								<li><a href="#" title="黑松">
+								<div class="img">
+									<img src="upload/picture/2017011016300802802.jpg" alt="黑松"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									黑松
+								</div>
+								</a></li>
+								<li><a href="#" title="橄欖">
+								<div class="img">
+									<img src="upload/picture/20161109113495699569.jpg" alt="橄欖"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									橄欖
+								</div>
+								</a></li>
+								<li><a href="#" title="橄欖">
+								<div class="img">
+									<img src="upload/picture/1444 (1).jpg" alt="橄欖"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									橄欖
+								</div>
+								</a></li>
+								<li><a href="#" title="橄欖">
+								<div class="img">
+									<img src="upload/picture/1444 (2).jpg" alt="橄欖"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									橄欖
+								</div>
+								</a></li>
+								<li><a href="#" title="橄欖">
+								<div class="img">
+									<img src="upload/picture/1444 (3).jpg" alt="橄欖"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									橄欖
+								</div>
+								</a></li>
+								<li><a href="#" title="橄欖">
+								<div class="img">
+									<img src="upload/picture/1444 (4).jpg" alt="橄欖"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									橄欖
+								</div>
+								</a></li>
+								<li><a href="#" title="橄欖">
+								<div class="img">
+									<img src="upload/picture/1444 (5).jpg" alt="橄欖"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									橄欖
+								</div>
+								</a></li>
+								<li><a href="#" title="橄欖">
+								<div class="img">
+									<img src="upload/picture/1444 (6).jpg" alt="橄欖"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									橄欖
+								</div>
+								</a></li>
+								<li><a href="#" title="橄欖">
+								<div class="img">
+									<img src="upload/picture/1444 (7).jpg" alt="橄欖"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									橄欖
+								</div>
+								</a></li>
+								<li><a href="#" title="橄欖">
+								<div class="img">
+									<img src="upload/picture/1444 (8).jpg" alt="橄欖"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									橄欖
+								</div>
+								</a></li>
+								<li><a href="#" title="橄欖">
+								<div class="img">
+									<img src="upload/picture/1444 (9).jpg" alt="橄欖"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									橄欖
+								</div>
+								</a></li>
+								<li><a href="#" title="橄欖">
+								<div class="img">
+									<img src="upload/picture/1444 (10).jpg" alt="橄欖"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									橄欖
+								</div>
+								</a></li>
+								<li><a href="#" title="橄欖">
+								<div class="img">
+									<img src="upload/picture/1444 (11).jpg" alt="橄欖"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									橄欖
+								</div>
+								</a></li>
+								<li><a href="#" title="橄欖">
+								<div class="img">
+									<img src="upload/picture/1444 (12).jpg" alt="橄欖"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									橄欖
+								</div>
+								</a></li>
+								<li><a href="#" title="橄欖">
+								<div class="img">
+									<img src="upload/picture/1444 (14).jpg" alt="橄欖"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									橄欖
+								</div>
+								</a></li>
+								<li><a href="#" title="橄欖">
+								<div class="img">
+									<img src="upload/picture/1444 (15).jpg" alt="橄欖"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									橄欖
+								</div>
+								</a></li>
+								<li><a href="#" title="橄欖">
+								<div class="img">
+									<img src="upload/picture/1444 (16).jpg" alt="橄欖"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									橄欖
+								</div>
+								</a></li>
+								<li><a href="#" title="庭園設計">
+								<div class="img">
+									<img src="upload/picture/20161109112696649664.jpg" alt="庭園設計"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									庭園設計
+								</div>
+								</a></li>
+								<li><a href="#" title="庭園設計">
+								<div class="img">
+									<img src="upload/picture/02.jpg" alt="庭園設計"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									庭園設計
+								</div>
+								</a></li>
+								<li><a href="#" title="庭園設計">
+								<div class="img">
+									<img src="upload/picture/03.jpg" alt="庭園設計"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									庭園設計
+								</div>
+								</a></li>
+								<li><a href="#" title="庭園設計">
+								<div class="img">
+									<img src="upload/picture/04.jpg" alt="庭園設計"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									庭園設計
+								</div>
+								</a></li>
+								<li><a href="#" title="庭園設計">
+								<div class="img">
+									<img src="upload/picture/05.jpg" alt="庭園設計"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									庭園設計
+								</div>
+								</a></li>
+								<li><a href="#" title="庭園設計">
+								<div class="img">
+									<img src="upload/picture/06.jpg" alt="庭園設計"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									庭園設計
+								</div>
+								</a></li>
+								<li><a href="#" title="庭園設計">
+								<div class="img">
+									<img src="upload/picture/07.jpg" alt="庭園設計"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									庭園設計
+								</div>
+								</a></li>
+								<li><a href="#" title="庭園設計">
+								<div class="img">
+									<img src="upload/picture/08.jpg" alt="庭園設計"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									庭園設計
+								</div>
+								</a></li>
+								<li><a href="#" title="庭園設計">
+								<div class="img">
+									<img src="upload/picture/09.jpg" alt="庭園設計"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									庭園設計
+								</div>
+								</a></li>
+								<li><a href="#" title="庭園設計">
+								<div class="img">
+									<img src="upload/picture/10.jpg" alt="庭園設計"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									庭園設計
+								</div>
+								</a></li>
+								<li><a href="#" title="庭園設計">
+								<div class="img">
+									<img src="upload/picture/11.jpg" alt="庭園設計"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									庭園設計
+								</div>
+								</a></li>
+								<li><a href="#" title="庭園設計">
+								<div class="img">
+									<img src="upload/picture/12.jpg" alt="庭園設計"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									庭園設計
+								</div>
+								</a></li>
+								<li><a href="#" title="庭園設計">
+								<div class="img">
+									<img src="upload/picture/13.jpg" alt="庭園設計"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									庭園設計
+								</div>
+								</a></li>
+								<li><a href="#" title="庭園設計">
+								<div class="img">
+									<img src="upload/picture/14.jpg" alt="庭園設計"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									庭園設計
+								</div>
+								</a></li>
+								<li><a href="#" title="日式庭園">
+								<div class="img">
+									<img src="upload/picture/20170110124810051005.jpg" alt="日式庭園"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									日式庭園
+								</div>
+								</a></li>
+								<li><a href="#" title="日式庭園">
+								<div class="img">
+									<img src="upload/picture/20170110134380748074.jpg" alt="日式庭園"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									日式庭園
+								</div>
+								</a></li>
+								<li><a href="#" title="日式庭園">
+								<div class="img">
+									<img src="upload/picture/20170110134585158515.jpg" alt="日式庭園"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									日式庭園
+								</div>
+								</a></li>
+								<li><a href="#" title="日式庭園">
+								<div class="img">
+									<img src="upload/picture/20170110135039693969.jpg" alt="日式庭園"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									日式庭園
+								</div>
+								</a></li>
+								<li><a href="#" title="日式庭園">
+								<div class="img">
+									<img src="upload/picture/20170110135120942094.jpg" alt="日式庭園"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									日式庭園
+								</div>
+								</a></li>
+								<li><a href="#" title="日式庭園">
+								<div class="img">
+									<img src="upload/picture/2017011013540991991.jpg" alt="日式庭園"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									日式庭園
+								</div>
+								</a></li>
+								<li><a href="#" title="日式庭園">
+								<div class="img">
+									<img src="upload/picture/20170110135666696669.jpg" alt="日式庭園"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									日式庭園
+								</div>
+								</a></li>
+								<li><a href="#" title="日式庭園">
+								<div class="img">
+									<img src="upload/picture/20170110135880218021.jpg" alt="日式庭園"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									日式庭園
+								</div>
+								</a></li>
+								<li><a href="#" title="日式庭園">
+								<div class="img">
+									<img src="upload/picture/20170110140045994599.jpg" alt="日式庭園"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									日式庭園
+								</div>
+								</a></li>
+								<li><a href="#" title="日式庭園">
+								<div class="img">
+									<img src="upload/picture/20170110140166656665.jpg" alt="日式庭園"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									日式庭園
+								</div>
+								</a></li>
+								<li><a href="#" title="日式庭園">
+								<div class="img">
+									<img src="upload/picture/20170110140355525552.jpg" alt="日式庭園"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									日式庭園
+								</div>
+								</a></li>
+								<li><a href="#" title="日式庭園">
+								<div class="img">
+									<img src="upload/picture/20170110140430003000.jpg" alt="日式庭園"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									日式庭園
+								</div>
+								</a></li>
+								<li><a href="#" title="日式庭園">
+								<div class="img">
+									<img src="upload/picture/20170110140621412141.jpg" alt="日式庭園"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									日式庭園
+								</div>
+								</a></li>
+								<li><a href="#" title="日式庭園">
+								<div class="img">
+									<img src="upload/picture/2017011014090260260.jpg" alt="日式庭園"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									日式庭園
+								</div>
+								</a></li>
+								<li><a href="#" title="日式庭園">
+								<div class="img">
+									<img src="upload/picture/20170110141260996099.jpg" alt="日式庭園"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									日式庭園
+								</div>
+								</a></li>
+								<li><a href="#" title="日式庭園">
+								<div class="img">
+									<img src="upload/picture/20170110141364646464.jpg" alt="日式庭園"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									日式庭園
+								</div>
+								</a></li>
+								<li><a href="#" title="日式庭園">
+								<div class="img">
+									<img src="upload/picture/20170110141570187018.jpg" alt="日式庭園"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									日式庭園
+								</div>
+								</a></li>
+								<li><a href="#" title="日式庭園">
+								<div class="img">
+									<img src="upload/picture/20170110141660036003.jpg" alt="日式庭園"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									日式庭園
+								</div>
+								</a></li>
+								<li><a href="#" title="日式庭園">
+								<div class="img">
+									<img src="upload/picture/20170110141839693969.jpg" alt="日式庭園"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									日式庭園
+								</div>
+								</a></li>
+								<li><a href="#" title="日式庭園">
+								<div class="img">
+									<img src="upload/picture/20170110141920242024.jpg" alt="日式庭園"/>
+								</div>
+								<div class="txt2">
+									<em>查看更多</em>
+								</div>
+								<div class="txt3">
+									日式庭園
+								</div>
+								</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--我们的产品end--><!--公司动态begin-->
+<div class="i_service_t" style="padding-top:36px;">
+		NEWS
+	<h2>公司<span>动态</span></h2>
+</div>
+<div class="wrap m_t30">
+	<div class="i_about_l">
+		<img src="upload/picture/20170110155846284628.jpg" alt=""/>
+		<h2>中式和日式庭院的比較分析</h2>
+		<p>
+			中國傳統的庭院規劃深受傳統哲學和繪畫的影響，甚至有“繪畫乃造園之母”的理論，最具參考性的是明清兩代的江南私家園林。江南私家園林重視寓
+		</p>
+		<a href="#" class="i_about_more"></a>
+	</div>
+	<div class="i_about_r">
+		<ul class="blog_list">
+			<li>
+			<a href="#" title="真柏盆景修剪方法">
+			<span class="blog_Rtime l">
+			<b>10</b>
+			<em>2017-01</em>
+			</span>
+			<span class="blog_Rmore r">
+			<b>真柏盆景修剪方法</b>
+			<span>真柏，顧名思義，具有真正好品性的柏樹，最漂亮的品種，在日本盆景界視為柏中王而備受崇敬。據資料介紹，盆栽界常見的真柏，其實是高山圓柏的</span>
+			</span>
+			</a>
+			</li>
+			<li>
+			<a href="#" title="某某国际贸易有限公司网站全新改版">
+			<span class="blog_Rtime l">
+			<b>14</b>
+			<em>2016-10</em>
+			</span>
+			<span class="blog_Rmore r">
+			<b>某某国际贸易有限公司网站全新改版</b>
+			<span>某某國際貿易有限公司總部位於香港，在中國內地多個地方設有分場。是一家擁有豐富花卉苗木採購，種植及進出口貿易經驗的專業公司，同時集庭院</span>
+			</span>
+			</a>
+			</li>
+			<li>
+			<a href="#" title="淺談中國古典園林中的假山藝術">
+			<span class="blog_Rtime l">
+			<b>14</b>
+			<em>2016-10</em>
+			</span>
+			<span class="blog_Rmore r">
+			<b>淺談中國古典園林中的假山藝術</b>
+			<span>“山者，天地之骨也”，自古以來人們對山石就有著特殊的崇拜。在中國的古典園林中，造園普遍使用疊石假山，疊石技藝精湛，成就極高，形成了特</span>
+			</span>
+			</a>
+			</li>
+		</ul>
+	</div>
+	<div class="c_l">
+	</div>
+</div>
+<!--公司动态end--><!--正文end--><!--尾部begin-->
+<div class="foot_txt">
+	<div class="wrap" style="position:relative;">
+	ADD：KAM TIN NT HONKONG  客服电话：XXX
+		<br/>
+		<a href="#" title="关于我们" class="foot_title">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="#" title="公司动态">公司动态</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="#" title="产品展示">产品展示</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="#" title="工程案例">工程案例</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="#" title="视频中心">视频中心</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="#" title="联系我们">联系我们</a>
+		<a href="#" class="f_top" onclick="goTop()">&nbsp;</a>
+	</div>
+</div>
+<div class="f_bg">
+	<div class="b_center" style="width:1200px;">
+		<span class="l">Copyright © 某某国际贸易有限公司 All Rights Reserved <a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a>&nbsp;&nbsp;</span>
+		<div class="contact_a">
+			<ul>
+				<li><a href="#" class="foot_qq"></a></li>
+				<li><a href="#" class="foot_weixin"><img src="upload/picture/ewm.png"/></a></li>
+			</ul>
+		</div>
+		<div class="c_l">
+		</div>
+	</div>
+</div>
+<!--尾部end-->
+<script language="javascript" src="js/foot.js"></script>
+</body>
+</html>

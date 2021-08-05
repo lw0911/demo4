@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+<!--控制视口宽度，让页面以1:1比例渲染页面-->
+<title>在线留言</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/child.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/me.js"></script>
+</head>
+
+<body style="background-color:#000;">
+<div class="header fix" style="background:#000;">
+	<a class="logo" href="index.html"><img src="img/1525859642.png"></a>
+     <div class="menu-box"><img src="img/menu-1.png"></div>
+    <ul class="nav fix">
+    	<li><a href="index.html">首页</a></li>
+        <li>
+        	<a href="about.html">关于我们</a>
+        	<div class="child-nav">
+            	<b class="bg-black"></b>  <!-- 背景色 -->
+            	<div class="red-box">
+                    <dl>
+                        <dd>
+                        	<a href="about.html">公司简介</a>
+                        	<dl>
+                            	<dd><a href="#">关于我们三级</a></dd>
+                            </dl>
+                        </dd>
+                        <dd><a href="#">集团荣誉</a></dd>
+                    </dl>
+                    <div class="spot">
+                    	<i></i>
+                    	<i></i>
+                    </div>  <!-- 小红点 -->
+                </div>
+            </div>
+        </li>
+        <li><a href="#">案例展示</a></li>
+        <li><a href="news-list.html">新闻资讯</a></li>
+        <li><a href="#">设备租赁</a></li>
+        <li><a href="#">视频展示</a></li>
+        <li><a href="#">演出资源</a></li>
+        <li><a href="product-list.html">主营范围</a></li>
+        <li><a href="contact.html" class="select">联系我们</a></li>
+    </ul>
+</div>
+
+<div class="black-box">
+    <div class="nav-main">
+        <div class="nav-box">
+            <div class="nav-ce">
+                <ul class="nav-ul">
+                    <li><a href="index.html"><span>首页</span></a></li>
+                    <li><a href="about.html"><span>关于我们</span></a></li>
+                    <li><a href="#"><span>案例展示</span></a></li>
+                    <li><a href="news-list.html"><span>新闻资讯</span></a></li>
+                    <li><a href="#"><span>设备租赁</span></a></li>
+                    <li><a href="#"><span>视频展示</span></a></li>
+                    <li><a href="#"><span>演出资源</span></a></li>
+                    <li><a href="product-list.html"><span>主营范围</span></a></li>
+                    <li><a href="contact.html"><span>联系我们</span></a></li>
+                </ul>
+            </div>
+            <div class="nav-slide">
+                <div class="nav-slide-o"></div>
+                <div class="nav-slide-o">
+                    <ul>
+                        <li><a href="#"><span>公司简介</span>
+                        	<ul class="child-menu">
+                            	<li><a href="#"><span>关于我们三级</span></a></li>
+                            </ul>
+                        </a></li>
+                        <li><a href="#"><span>集团荣誉</span></a></li>
+                    </ul>
+                </div>
+                <div class="nav-slide-o"></div>
+                <div class="nav-slide-o">
+                    <ul>
+                        <li><a href="#"><span>公司简介</span></a></li>
+                        <li><a href="#"><span>集团荣誉</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mainChild">
+	<div class="banner" style="background:url(img/child-bg.jpg) no-repeat center center;background-size:cover;"></div>
+    <div class="title">
+        <h1>联系我们</h1>
+        <h2>CONTACT</h2>
+    </div>
+    <div class="cont" style="background:url(img/message.png) no-repeat top right; background-size:cover;">
+    	<div class="menu">
+        	<div class="decorate">
+            	<i></i>
+                <b></b>
+                <i></i>
+            </div>
+            <form>
+            <ul class="main-menu">
+            	<li class="search fix"><button type="submit"></button><input type="text" placeholder="关键词"></li>
+                <li class="red"><a href="#">在线留言</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+            </form>
+        </div>
+    	<div class="mainTxt fix" style="background:none;">
+        	<div class="mainCont">
+            	<div>
+                    <b></b>
+                    <h1><span>MESSAGE / </span>在线留言</h1>
+                    <div class="txt">
+                        <form class="msgBox">
+                            <ul>
+                                <li>姓名<input type="text" name="" placeholder="请输入姓名" onFocus="bgChange();"></li>
+                                <li>电话<input type="text" name="" placeholder="请输入电话"></li>
+                                <textarea rows="10" placeholder="请输入留言内容"></textarea>
+                                <li class="verp">验证码<input type="text" name=""></li>
+                                <div class="verpImg"><img src="img/ver.jpg"></div>
+                            </ul>
+                            <div class="btn">
+                            	<button type="submit">提&nbsp;交</button>
+                                <button type="reset">取&nbsp;消</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+        	 <br/>
+            访问统计：  浏览总量<span>41046</span>次 /今日浏览<span>41</span>次 /今日独立访客<span>11</span>位    建议(1024*768) IE8.0以上浏览器浏览本站 <br/> 
+            <a href="#">即时通管理</a>    <a href="#">后台登录</a> <br/>
+                <a href="">触屏版</a> 丨 <a href="">电脑版</a> <br/>
+        </div>
+    </div>
+</div>
+
+<script>
+	window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"32"},"share":{}};
+	with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+</body>
+</html>

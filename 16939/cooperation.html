@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>XXX,打赏,打赏软件-XXX官网</title>
+    <meta name="keywords" content="XXX|打赏|打赏软件|XXX官网">
+    <meta name="description" content="XXX是一款针对线下服务行业的打赏评价营销系统，符合未来市场需求，迎合当下打赏经济热潮、思维模式、产品形态和商业模式，是一次巨大的创新。其主要功能在于提升顾客的消费体验，促进员工的服务热情，服务积极性，帮助商家有效的管理员工，增加源源不断的生意。">
+    <link rel="stylesheet" href="css\newbase.css">
+    <link rel="stylesheet" href="css\newstyle.css">
+    <link rel="stylesheet" href="css\iconfont.css">
+    <link rel="stylesheet" href="css\homeball.css">
+    <link rel="stylesheet" href="css\2018style.css">
+    <style>
+
+    </style>
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script> 
+   <style>
+        .service-content.p-content-bg-01 {
+            background: url('./images/service--bg.jpg') center center no-repeat !important;
+            background-size: contain !important;
+            margin-top: 0 !important;
+            height: 740px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="navigation animated">
+            <script type="text/javascript" src="https://api.map.baidu.com/api?ak=dZjnRr2t8nBpGswyCB731AFD&v=2.0&s=1"></script>
+            <div id="allmap" style="display:none;"></div>
+            <div class="nav-wrap">
+                <h1 class="logo">
+                    <a href="javascript:;">
+                        <img src="images\logo.png" height="75px">
+                    </a>
+                </h1>
+                <div class="nav">
+                    <ul class="nav-list clearfix">
+                        <li>
+                            <a href="index.html" title="首页">首页</a>
+                        </li>
+                        <li>
+                            <a href="server.html" title="服务介绍">服务介绍</a>
+                        </li>
+                        <li>
+                            <a href="cooperation.html" title="合作加盟">合作加盟</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" title="联系XXX">联系XXX</a>
+                        </li>
+                    </ul>
+                    <div style="clear:both;"></div>
+                </div>
+                <div class="button-group">
+                    <ul id="nologin" class="button-list">
+                        <li class="nav-header-city select-city">
+                            <span id="selectCity" class="cityname">定位中...</span>
+                            <img src="images\header-map-icon.png" alt="map">
+                        </li>
+                        <li>
+                            <a href="./login-list.shtml" class="button regist" target="_blank">管理员登陆</a>
+                        </li>
+                    </ul>
+                    <ul class="button-list welcome" id="userinfo" style="display: none;">
+                        <li>
+                            <a href="#" class="port fl">
+                                <img src="images\port.png" width="26" height="26" alt="UU用户">
+                            </a>
+                            <p class="username fl">欢迎您，
+                                <span id="userMobile"></span>
+                            </p>
+                        </li>
+                        <li>
+                            <a class="loginout" href="javascript:order.loginOut()">退出</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 主体部分 -->
+        <div class="coop top">
+        <!-- <div class="coop-banner">
+                <img src="../images/group4.jpg" alt="商务合作" />
+            </div> -->
+        <div class="section top intro-top">
+            <div class="banner banner-home add-banner">
+                <!-- <img src="images/intro-bg.png" alt="banner" height="600">  -->
+                <div class="banner-content">
+                    <img src="images\add-slogan.png" alt="slogan" class="slogan">
+                </div>
+                <!-- <div class="banner-content-footer">
+                        <a href="#"><img src="images/home-user.png" alt="download" class="down-user"></a>
+                        <a href="#" class="intro-down-entri"><img src="images/home-entri.png" alt="download"></a>
+                    </div>      -->
+            </div>
+        </div>
+
+        <div class="join item">
+            <div class="container">
+                <h2 class="title" id="jiameng">城市合作商加盟流程</h2>
+                <div class="e_title">City Partner Joining Process</div>
+                <!-- <h3 class="subtitle" id="sub">
+                        <span class="line"></span>
+                    </h3> -->
+                <!-- <h3 class="subtitle">&nbsp;</h3> -->
+                <ul class="ul_1">
+                    <li class="ul_li no-margin-left">
+                        <div class="imgBox">
+                            <img src="images\ltel-1.png" data-name="hhr_icon" alt="consult">
+                        </div>
+                        <p>1.电话咨询</p>
+                    </li>
+                    <li class="ul_li  ul_s">
+                        <img src="images\intro-arrow.png" alt="arrow">
+                    </li>
+                    <li class="ul_li">
+                        <div class="imgBox">
+                            <img src="images\icon4-1.png" data-name="hhr_icon" alt="inspect">
+                        </div>
+                        <p>2.双方考察</p>
+                    </li>
+                    <li class="ul_li ul_s">
+                        <img src="images\intro-arrow.png" alt="arrow">
+                    </li>
+                    <li class="ul_li">
+                        <div class="imgBox">
+                            <img src="images\icon3-1.png" data-name="hhr_icon" alt="contract">
+                        </div>
+                        <p>3.签订合同</p>
+                    </li>
+                    <li class="ul_li ul_s">
+                        <img src="images\intro-arrow.png" alt="arrow">
+                    </li>
+                    <li class="ul_li">
+                        <div class="imgBox">
+                            <img src="images\icon2-1.png" data-name="hhr_icon" alt="operation">
+                        </div>
+                        <p>4.运营支撑</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="item">
+            <div class="container c_2">
+                <h1 class="title" id="jiameng_1">城市合作商要求</h1>
+                <div class="e_title add-cop-title">City Partner Demand</div>
+            </div>
+            <!-- <h3 class="subtitle" id="sub_1">
+                        <span class="line"></span>
+                    </h3> -->
+            <div class="add-cop-txt">
+                <div class="container add-cop-content">
+                    <div class="content">
+                        <ul class="require">
+                            <li>
+                                <div>
+                                    <img src="images\group1-1.png" alt="economic">
+                                </div>
+                                <div>
+                                    <p class="tit">经济基础</p>
+                                    <p class="desc">少量市场开拓启动资金</p>
+                                </div>
+
+                            </li>
+                            <li class="left_3">
+                                <div>
+                                    <img src="images\group2-1.png" alt="experience">
+                                </div>
+                                <div>
+                                    <p class="tit">工作能力</p>
+                                    <p class="desc">擅长沟通，积极上进，有责任心</p>
+                                </div>
+                            </li>
+                            <li class="left_3">
+                                <div>
+                                    <img src="images\group3-1.png" alt="condition">
+                                </div>
+                                <div>
+                                    <p class="tit">优先条件</p>
+                                    <p class="desc">具有支付行业，商户地推类型人员更佳</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="item">
+            <div class="container c_2">
+                <h1 class="title " id="jiameng_2">城市合作商总部支持</h1>
+                <div class="e_title">City Partner Headquarters Support</div>
+            </div>
+            <div class="add-cop-txt add-support">
+                <div class="container">
+                    <div class="content">
+                        <ul class="ul_t">
+                            <li class="t_1">
+                                <div class="lf">
+                                    <img src="images\icon-11.png" alt="accredit">
+                                </div>
+                                <div class="rt">
+                                    <h2 class="firstP">培训支持</h2>
+                                    <p>专人一对一的系统操作培训，会电脑基础操作的人一学即会。</p>
+                                </div>
+                            </li>
+                            <li class="t_1 left_2">
+                                <div class="lf">
+                                    <img src="images\icon-6.png" alt="publicity">
+                                </div>
+                                <div class="rt">
+                                    <h2 class="firstP">物料支持</h2>
+                                    <p>合作商拓展市场所需的宣传物料，公司统一免费提供。</p>
+                                </div>
+                            </li>
+                            <li class="t_1 left_2">
+                                <div class="lf">
+                                    <img src="images\icon-7.png" alt="operation">
+                                </div>
+                                <div class="rt">
+                                    <h2 class="firstP"> 广告支持</h2>
+                                    <p>公司不定期在各种渠道投放广告，加深品牌的强化度，协助合作商更好的推广。</p>
+                                </div>
+                            </li>
+                            <li class="t_1 add-margin-top">
+                                <div class="lf">
+                                    <img src="images\icon-8.png" alt="product">
+                                </div>
+                                <div class="rt">
+                                    <h2 class="firstP">客服支持</h2>
+                                    <p>资深客服，专业培训，品牌设计，平台全方位保驾护航。</p>
+                                </div>
+                            </li>
+                            <li class="t_1 left_2 add-margin-top">
+                                <div class="lf">
+                                    <img src="images\icon-9.png" alt="technology">
+                                </div>
+                                <div class="rt">
+                                    <h2 class="firstP">技术支持</h2>
+                                    <p>数十年开发经验的技术精英团队提供全程运维支持</p>
+                                </div>
+                            </li>
+                            <li class="t_1 left_2 add-margin-top">
+                                <div class="lf">
+                                    <img src="images\icon-10.png" alt="convoy">
+                                </div>
+                                <div class="rt">
+                                    <h2 class="firstP">利润支持</h2>
+                                    <p>合作商的利润即时结算，无需等待周期，随时提现。</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--开通城市  -->
+        <div class="section service">
+            <h1 class="index title add-title">部分合作商展示</h1>
+            <h3 class="index subtitle add-desc">The Province Has Been Opened</h3>
+            <div class="service-content home-company cooperation-city">
+                <div class="container">
+                </div>
+            </div>
+        </div>
+
+        <!-- 欢迎申请合伙人 -->
+        <div class="item">
+            <div class="container c_2" style="margin-top: 60px;">
+                <h1 class="title" id="jiameng_4">欢迎申请合作商</h1>
+                <div class="e_title">Welcome To Partner</div>
+            </div>
+            <div class="add-cop-txt add-wel">
+                <div class="container">
+                    <div class="content mb30">
+                        <div class="col-left">
+                            <form action="#" method="post">
+                                <div class="tag">
+                                    <div class="in">
+                                        <label>所在城市</label>
+                                        <span class="noOpacity">
+                                            <input type="text" maxlength="10" class="inp inp1" name="IntentionCity" id="IntentionCity" placeholder="请填写您当前所在城市">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="tag">
+                                    <div class="in">
+                                        <label>合作商姓名</label>
+                                        <span class="noOpacity">
+                                            <input type="text" maxlength="10" class="inp inp1" name="Name" id="Name" placeholder="请填写您的姓名">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="tag">
+                                    <div class="in">
+                                        <label>合作商电话</label>
+                                        <span class="noOpacity">
+                                            <input type="tel" maxlength="11" class="inp inp1" name="Phone" id="Phone" placeholder="请填写您的电话" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="tag">
+                                    <div class="in">
+                                        <label>当前从事行业</label>
+                                        <span class="noOpacity">
+                                            <input type="text" class="inp inp1" name="job" id="job" maxlength="10" placeholder="请填写您的行业">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="tag tag1">
+                                    <label></label>
+                                    <span class="noOpacity">
+                                        <input type="button" class="inp inp1 sub btn-submit" onclick="post.agentApply()" value="申请合作商" style="padding-left:0px;">
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- 主体部分结束 -->
+        <div class="footer">
+            <div class="foot">
+                <dl class="dl-nav">
+                    <dt>友情链接</dt>
+                    <dd>
+                        
+                    </dd>
+                </dl>
+                <dl class="dl-nav">
+                    <dt>关于我们</dt>
+                    <dd>
+                        <a href="Contact.htm" title="联系XXX">联系XXX</a>
+                    </dd>
+                </dl>
+                <dl class="dl-nav">
+                    <dt>网站导航</dt>
+                    <dd>
+                        <a href="Introduction.htm" title="服务介绍">服务介绍</a>
+                    </dd>
+                    <dd>
+                        <a href="Cooperation.htm" title="合作加盟">合作加盟</a>
+                    </dd>
+                    <dd>
+                </dl>
+                <dl class="dl-contact">
+                    <dt>工作日客服热线</dt>
+                    <dd class="tel">XXX</dd>
+                    <dt>电子邮箱</dt>
+                    <dd class="email">XXX</dd>
+                </dl>
+                <dl class="dl-ewm">
+                    <dt>官方微信</dt>
+                    <dd>
+                        <img alt="" src="images\uuewm.jpg">
+                    </dd>
+                    <dd class="icon-foot-weixin">
+                        <img class="weixin" src="images\weixin.png" alt="UU微信"> 关注微信
+                    </dd>
+                </dl>
+                <dl class="dl-ewm fr">
+                    <dt>市场顾问</dt>
+                    <dd>
+                        <img alt="uu" src="images\ewmsina.jpg">
+                    </dd>
+                    <dd class="icon-foot-sina">
+                        关注顾问微信
+                    </dd>
+                </dl>
+            </div>
+            <div class="copy">
+                <p>
+                    XXX&nbsp;
+                    
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+$(function(){
+    // var timer;
+    //     $(".ul_t").on("hover", "li", function () {
+    //         $(this).toggleClass("active").toggleClass("actie");
+    //     })
+})
+</script>
+</html>

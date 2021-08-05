@@ -1,0 +1,560 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head> 
+     <title>个人中心 - 我的收藏</title> 
+  <meta name="keywords" content="培训,在线教育,在线培训,培训课程,企业培训,培训网,经营管理,营销管理,电子商务,营销管理,培训机构,视频学习,网络营销,职场礼仪,学习管理,岗位职责" /> 
+  <meta name="description" content="XXX是一个面向全国所有经营管理者、职场人士的在线学习及服务平台，培训课程免费体验，内容覆盖了人力资源，生产管理，营销管理，电子商务，市场营销，财务管理，职业素养，综合管理等多个领域，为用户提供一个最便捷、成本最低、服务最好的经营管理学习平台。" /> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" /> 
+  <link rel="stylesheet" href="css/global.css" /> 
+  <link href="css/bootstrap.min.css" rel="stylesheet" /> 
+  <link rel="stylesheet" href="member/css/global.css" /> 
+  <link href="member/css/style.css" type="text/css" rel="stylesheet" /> 
+  <link href="css/member_index.css" type="text/css" rel="stylesheet" /> 
+  <link rel="stylesheet" href="css/default.css" /> 
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" /> 
+
+  <script src="js/jquery-1.9.1.min.js"></script> 
+  <script src="js/bootstrap.min.js" type="text/javascript"></script> 
+  <script src="js/mokit.base.js" type="text/javascript"></script> 
+  <script src="js/mokit.config.js" type="text/javascript"></script> 
+  <script src="js/jquery-last.min.js" type="text/javascript"></script> 
+  <link rel="stylesheet" href="css/blue.css?4.1.7" /> 
+  <script src="js/artDialog.js?skin=blue" type="text/javascript"></script> 
+  <script src="js/iframeTools.js" type="text/javascript"></script> 
+  <script src="js/jquery.cookie.js" type="text/javascript"></script> 
+  <script type="text/javascript" src="js/uaredirect.js"></script> 
+  <script src="js/global_member.js"></script> 
+  <link type="text/css" href="css/layer.css" rel="stylesheet" /> 
+  <script src="js/layer.min.js" type="text/javascript"></script> 
+  <link type="text/css" rel="stylesheet" href="css/layer.css" id="skinlayercss" /> 
+  <script type="text/javascript">
+        $(document).ready(function () {
+            $("#chbSelectAll").click(function () {
+                $aryCheckBox = $("#ulList").find("input[type=checkbox]");
+                if ($(this).attr("checked") == "checked") {
+                    $aryCheckBox.attr("checked", true);
+                }
+                else {
+                    $aryCheckBox.attr("checked", false);
+                }
+            });
+
+            $("#btnDelete").click(function () {
+                var ids = "";
+                $("#ulList").find("input[type=checkbox]").each(function () {
+                    if ($(this).attr("checked") === "checked") {
+                        if (ids != "") ids += ",";
+                        ids += $(this).attr("value");
+                    }
+                });
+
+                if (ids.length === 0) {
+                    layer.alert("请先勾选要删除的收藏", 9);
+                    return false;
+                }
+
+                layer.confirm("确定要删除吗？",
+                    function () {
+                        $.ajax({
+                            dataType: "json",
+                            type: "get",
+                            url: "/Member/DeleteMemberFav",
+                            data: "ids=" + ids,
+                            success: function (result) {
+                                if (parseInt(result.num) > 0) {
+                                    location.href = "Collect-1.html";
+                                }
+                                else {
+                                    layer.alert(result.msg, 9);
+                                }
+                            },
+                            error: function () { alert("error"); }
+                        });
+                    },
+                    function () { }
+                    );
+                return false;
+            });
+        });
+    </script> 
+  <style>* { margin:0; padding:0;}.global_feedback {width: 530px;display: none;background: #fff;z-index: 999;}.global_feedback table {width: 530px;text-align: center;font-size: 25px;}.global_feedback .h_20 {height: 20px;}.global_feedback table tr {height: 50px;}.global_feedback .t_title {height: 40px;}.global_feedback .tips {height: 30px;color: #ff0000;font-size: 12px;text-align: left;}.global_feedback .t_left {text-align: right;font-size: 14px;}.global_feedback .t_right {text-align: left;font-size: 14px;}.global_feedback .t_right select {height:30px;}.global_feedback .t_right input, .global_feedback textarea {width: 310px;border: 1px solid #dddddd;padding: 10px;height: 14px;border-radius: 3px;}.global_feedback textarea {line-height: 20px;height: 116px;margin-top: 10px;}.global_feedback .sub_btn {background: #288ce6;font-size: 20px;color: #fff;padding: 10px 32px;border-radius: 5px;border: none;cursor: pointer;margin: 20px;}</style> 
+  <div style="position: absolute; left: -9999em; top: 441px; display: block; width: auto; z-index: 1987;" class=" aui_state_focus"> 
+   <div class="aui_outer"> 
+    <table class="aui_border"> 
+     <tbody> 
+      <tr> 
+       <td class="aui_nw"></td> 
+       <td class="aui_n"></td> 
+       <td class="aui_ne"></td> 
+      </tr> 
+      <tr> 
+       <td class="aui_w"></td> 
+       <td class="aui_c"> 
+        <div class="aui_inner"> 
+         <table class="aui_dialog"> 
+          <tbody> 
+           <tr> 
+            <td class="aui_header" colspan="2"> 
+             <div class="aui_titleBar"> 
+              <div class="aui_title" style="cursor: move; display: block;">
+                消息 
+              </div> 
+              <a href="javascript:/*artDialog*/;" class="aui_close" style="display: block;">&times;</a> 
+             </div></td> 
+           </tr> 
+           <tr> 
+            <td class="aui_icon" style="display: none;"> 
+             <div class="aui_iconBg" style="background: transparent none repeat scroll 0% 0%;"></div></td> 
+            <td class="aui_main" style="width: auto; height: auto;"> 
+             <div class="aui_content" style="padding: 20px 25px;"> 
+              <div class="aui_loading"> 
+               <span>loading..</span> 
+              </div> 
+             </div></td> 
+           </tr> 
+           <tr> 
+            <td class="aui_footer" colspan="2"> 
+             <div class="aui_buttons" style="display: none;"></div></td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div></td> 
+       <td class="aui_e"></td> 
+      </tr> 
+      <tr> 
+       <td class="aui_sw"></td> 
+       <td class="aui_s"></td> 
+       <td class="aui_se" style="cursor: se-resize;"></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </div> 
+  
+  <style type="text/css">.WPA3-SELECT-PANEL { z-index:2147483647; width:463px; height:292px; margin:0; padding:0; border:1px solid #d4d4d4; background-color:#fff; border-radius:5px; box-shadow:0 0 15px #d4d4d4;}.WPA3-SELECT-PANEL * { position:static; z-index:auto; top:auto; left:auto; right:auto; bottom:auto; width:auto; height:auto; max-height:auto; max-width:auto; min-height:0; min-width:0; margin:0; padding:0; border:0; clear:none; clip:auto; background:transparent; color:#333; cursor:auto; direction:ltr; filter:; float:none; font:normal normal normal 12px "Helvetica Neue", Arial, sans-serif; line-height:16px; letter-spacing:normal; list-style:none; marks:none; overflow:visible; page:auto; quotes:none; -o-set-link-source:none; size:auto; text-align:left; text-decoration:none; text-indent:0; text-overflow:clip; text-shadow:none; text-transform:none; vertical-align:baseline; visibility:visible; white-space:normal; word-spacing:normal; word-wrap:normal; -webkit-box-shadow:none; -moz-box-shadow:none; -ms-box-shadow:none; -o-box-shadow:none; box-shadow:none; -webkit-border-radius:0; -moz-border-radius:0; -ms-border-radius:0; -o-border-radius:0; border-radius:0; -webkit-opacity:1; -moz-opacity:1; -ms-opacity:1; -o-opacity:1; opacity:1; -webkit-outline:0; -moz-outline:0; -ms-outline:0; -o-outline:0; outline:0; -webkit-text-size-adjust:none; font-family:Microsoft YaHei,Simsun;}.WPA3-SELECT-PANEL a { cursor:auto;}.WPA3-SELECT-PANEL .WPA3-SELECT-PANEL-TOP { height:25px;}.WPA3-SELECT-PANEL .WPA3-SELECT-PANEL-CLOSE { float:right; display:block; width:47px; height:25px; background:url(images/panel.png);}.WPA3-CONFIRM * { position:static; z-index:auto; top:auto; left:auto; right:auto; bottom:auto; width:auto; height:auto; max-height:auto; max-width:auto; min-height:0; min-width:0; margin:0; padding:0; border:0; clear:none; clip:auto; background:transparent; color:#333; cursor:auto; direction:ltr; filter:; float:none; font:normal normal normal 12px "Helvetica Neue", Arial, sans-serif; line-height:16px; letter-spacing:normal; list-style:none; marks:none; overflow:visible; page:auto; quotes:none; -o-set-link-source:none; size:auto; text-align:left; text-decoration:none; text-indent:0; text-overflow:clip; text-shadow:none; text-transform:none; vertical-align:baseline; visibility:visible; white-space:normal; word-spacing:normal; word-wrap:normal; -webkit-box-shadow:none; -moz-box-shadow:none; -ms-box-shadow:none; -o-box-shadow:none; box-shadow:none; -webkit-border-radius:0; -moz-border-radius:0; -ms-border-radius:0; -o-border-radius:0; border-radius:0; -webkit-opacity:1; -moz-opacity:1; -ms-opacity:1; -o-opacity:1; opacity:1; -webkit-outline:0; -moz-outline:0; -ms-outline:0; -o-outline:0; outline:0; -webkit-text-size-adjust:none;}.WPA3-CONFIRM * { font-family:Microsoft YaHei,Simsun;}.WPA3-CONFIRM .WPA3-CONFIRM-TITLE { height:40px; margin:0; padding:0; line-height:40px; color:#2b6089; font-weight:normal; font-size:14px; text-indent:80px;}.WPA3-CONFIRM .WPA3-CONFIRM-CONTENT { height:55px; margin:0; line-height:55px; color:#353535; font-size:14px; text-indent:29px;}.WPA3-CONFIRM .WPA3-CONFIRM-PANEL { height:30px; margin:0; padding-right:16px; text-align:right;}.WPA3-CONFIRM .WPA3-CONFIRM-BUTTON { position:relative; display:inline-block!important; display:inline; zoom:1; width:99px; height:30px; margin-left:10px; line-height:30px; color:#000; text-decoration:none; font-size:12px; text-align:center;}.WPA3-CONFIRM .WPA3-CONFIRM-BUTTON-FOCUS { width:78px;}.WPA3-CONFIRM .WPA3-CONFIRM-BUTTON .WPA3-CONFIRM-BUTTON-TEXT { line-height:30px; text-align:center; cursor:pointer;}.WPA3-CONFIRM-CLOSE { position:absolute; top:7px; right:7px; width:10px; height:10px; cursor:pointer;}</style> 
+  <div class="container-fluid company_top"> 
+   <div class="center-block w_1200 center-block"> 
+    <div class="logo"> 
+     <a href="index.html"> <img class="logo" src="images/logo.jpg" /> </a> 
+    </div> 
+    <div class="member_name"> 
+     <dl class="member_con" id="m_info"> 
+      <a href="javascript:"> 
+       <dt> 
+        <img src="images/101925_100_100.jpg" /> 
+       </dt> 
+       <dd> 
+        <strong>adou416148489</strong> Y币：0 
+       </dd> </a> 
+     </dl> 
+     <div style="display: none;" class="member_div"> 
+      <ul> 
+       <li> <a href="http://i.yingsheng.com/" title="个人中心" target="_blank">个人中心</a> </li> 
+       <li> <a href="http://order.yingsheng.com/Order?source=1" title="购 物 车" target="_blank">购 物 车</a> </li> 
+       <li> <a href="http://i.yingsheng.com/courselist-1.html" title="已 购 买" target="_blank">已 购 买</a> </li> 
+       <li> <a href="http://i.yingsheng.com/collect.html" title="我的收藏" target="_blank">我的收藏</a> </li> 
+       <li> <a href="http://i.yingsheng.com/orderlist-1.html" title="我的订单" target="_blank">我的订单</a> </li> 
+       <li> <a href="http://i.yingsheng.com/courseview.html" title="观看历史" target="_blank">观看历史</a> </li> 
+       <li> <a href="http://zone.yingsheng.com/" title="我的空间" target="_blank" style="display: none;" id="ys_top_dl_dd_LinkZone">我的空间</a> </li> 
+       <li> <a onclick="return confirm('确认要退出?');" rel="nofollow" href="http://sso.yingsheng.com/logout.aspx?from=http://i.yingsheng.com/collect.html" title="退出" id="action_logout">退出</a> </li> 
+      </ul> 
+     </div> 
+    </div> 
+    <form id="search_js1" name="search_js1" method="get" action="http://www.yingsheng.com/search.htm/"> 
+     <div class="input-group seach"> 
+      <input type="text" id="title" name="kw" placeholder="搜课程、老师等" class="form-control" /> 
+      <span class="input-group-btn"> <button onclick="$('#search_js1').submit();" type="button" class="btn btn-default"> <i class="iconfont"></i> </button> </span> 
+     </div> 
+    </form> 
+    <div class="top_nav"> 
+     <dl> 
+      <dd> 
+       <a href="index.html">XXX首页</a> 
+      </dd> 
+      <dd> 
+       <a href="classes.html">岗位系统班</a> 
+      </dd> 
+      <dd> 
+       <a href="course.html">找课程</a> 
+      </dd> 
+      <dd> 
+       <a href="live.html">直播</a> 
+      </dd> 
+      <dd> 
+       <a href="http://www.yingsheng.com/springsale/">抢特惠</a> 
+      </dd> 
+     </dl> 
+    </div> 
+   </div> 
+  </div> 
+  <script>
+    //$("#m_info").click(function () {
+    //    $(".member_div").show();
+    //    return false;
+    //});
+    //$(".msg_bg").click(function () {
+    //    $(".msg_div").show();
+    //});
+    //$(document).click(function () {
+    //    $(".member_div").hide();
+    //    //$(".msg_div").hide();
+    //});
+
+</script> 
+  <!-- 内容 --> 
+  <div class="main"> 
+   <div class="mtcon"> 
+    <!-- 左边导航 --> 
+    <div class="leftbox"> 
+     <ul class="l_list"> 
+      <!-- 账户安全 --> 
+      <li> 
+       <!-- 标题 --> <p data-attr="" data-val="1" class="m_title"> <span> <img src="images/r_1.jpg" /></span> <strong> <img src="images/l_2.png" /></strong> <a href="javascript:">会员中心</a> </p> 
+       <ul> 
+        <li id="q_text_1"> 
+         <div class="q_text"> 
+          <p><a href="index.html" class="m_1">账户信息</a></p> 
+          <p><a href="member_info.html" class="m_2">修改资料</a></p> 
+          <p><a href="member_email.html" class="m_mail">修改邮箱</a></p> 
+          <p><a href="member_mobile.html" class="m_phone">修改手机</a></p> 
+          <p><a href="member_pwd.html" class="m_pwd">修改密码</a></p> 
+          <p><a href="member_code.html" class="m_Exchange">我的兑换码</a></p> 
+         </div> </li> 
+       </ul> </li> 
+      <li> 
+       <!-- 我的学习 --> <p data-val="2" class="m_title"> <span> <img src="images/r_1.jpg" /></span> <strong> <img src="images/l_4.png" /></strong> <a href="javascript:">我的学习</a> </p> 
+       <ul> 
+        <li id="q_text_2"> 
+         <div class="q_text"> 
+          <p><a href="member_buy_course.html??v=1" class="m_4">我购买的课程</a></p> 
+          <p><a href="member_collect.html" class="m_5 ph">我的收藏</a></p> 
+          <p><a href="member_play_record.html" class="m_6">播放记录</a></p> 
+          <p><a href="member_study_card.html" class="m_StudyCard">我的学习卡</a></p> 
+         </div> </li> 
+       </ul> </li> 
+      <li> 
+       <!-- 订单管理 --> <p data-val="3" class="m_title"> <span> <img src="images/r_1.jpg" /></span> <strong> <img src="images/l_3.png" /></strong> <a href="javascript:">订单管理</a> </p> 
+       <ul> 
+        <li id="q_text_3"> 
+         <div class="q_text"> 
+          <p><a href="member_order.html" class="m_8">我的订单</a></p> 
+          <p><a href="cart.html" class="m_9">购物车</a></p> 
+         </div> </li> 
+       </ul> </li> 
+      <li> 
+       <!-- 站内消息 --> <p data-val="4" class="m_title"> <span> <img src="images/r_1.jpg" /></span> <strong> <img src="images/l_5.png" /></strong> <a href="javascript:">站内消息</a> </p> 
+       <ul> 
+        <li id="q_text_4"> 
+         <div class="q_text"> 
+          <p><a href="/MsgList.html" class="m_11">查看消息</a></p> 
+          <p><a href="/feedback-1.html" class="m_15">客服反馈</a></p> 
+         </div> </li> 
+       </ul> </li> 
+      <li> 
+       <!-- 企业中心 --> <p data-val="5" class="m_title"> <span> <img src="images/r_1.jpg" /></span> <strong> <img src="images/l_4.png" /></strong> <a href="javascript:">企业中心</a> </p> 
+       <ul> 
+        <li id="q_text_5"> 
+         <div class="q_text"> 
+          <p><a target="_blank" href="http://i.qy.yingsheng.com/applyjoincorplist-1.html" class="m_12">企业申请/邀请</a></p> 
+         </div> </li> 
+       </ul> </li> 
+      <li> 
+       <!-- 账号管理 --> <p data-val="3" class="m_title"> <span> <img src="images/r_1.jpg" /></span> <strong> <img src="images/l_2.png" /></strong> <a href="javascript:">账号管理</a> </p> 
+       <ul> 
+        <li id="q_text_6"> 
+         <div class="q_text"> 
+          <p><a href="http://sso.yingsheng.com/logout.aspx?from=http://i.yingsheng.com/collect.html" class="m_16">退出登录</a></p> 
+         </div> </li> 
+       </ul> </li> 
+     </ul> 
+     <script>
+    $(".m_title").click(function () {
+        var id = $(this).attr("data-val");
+        var str = $(this).attr("data-attr");
+        if (str == "open") {
+            $("#q_text_" + id).slideDown(300);
+            $(this).attr("data-attr", "");
+        }
+        else {
+            $("#q_text_" + id).slideUp(300);
+            $(this).attr("data-attr", "open");
+        }
+    });
+</script> 
+    </div> 
+    <div class="xianbox"> 
+     <a target="_blank" href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzkzODA2NDI0NV8yODA2NjZfNDAwNjY2NDM0M18yXw"> <img src="http://wpa.qq.com/pa?p=2:105201007:45" alt="点击这里给我发消息" title="点击这里给我发消息" /> 在线客服</a> 
+    </div> 
+    <!-- 右边导航 --> 
+    <div class="rightbox"> 
+     <p class="r_title">我的收藏</p> 
+     <!-- 信息 --> 
+     <div class="collect"> 
+      <ul class="c_top"> 
+       <li class="li_06"><a id="btnDelete" href="javascript:void(0);">批量删除</a></li> 
+       <li class="li_07"> <input type="checkbox" id="chbSelectAll" />全选</li> 
+      </ul> 
+      <ul id="ulList" class="c_bottom"> 
+       <li></li> 
+       <li class="b_li"> <p> <img src="images/507_353_279.jpg" style="width:229px;height:181px;" alt="" /> </p> <p>库存如何制约工厂的管理运营</p> <p class="b_p"><span class="c1">讲师：<strong> 张洪涛</strong></span><span class="c2">&yen;19.8</span></p> <p class="look"> <a target="_blank" href="http://www.yingsheng.com/course-507.html"> <img src="images/look.jpg" /></a> </p> <samp> <input type="checkbox" value="11918" />删除</samp></li> 
+      </ul> 
+      <div style="clear: both; text-align: right;"></div> 
+      <div class="hr20">
+        213123123 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <!--右边悬浮--> 
+  <div class="fd_float"> 
+   <div class="fd_box"> 
+    <a target="_blank" href="http://www.yingsheng.com/app" class="fd_a fd_app" title="英盛APP下载" rel="nofollow"><span class="fd_ck"><span class="fk_ckcont"> <img alt="英盛APP下载" src="images/code.png" /></span></span></a> 
+    <!--<a rel="nofollow" title="客服" target="_blank" rel="nofollow" href="http://wpa.qq.com/msgrd?v=3&uin=475855150&site=qq&menu=yes" class="fd_a fd_qq"></a>--> 
+    <a href="http://order.yingsheng.com/Order?source=1" class="fd_car" target="_blank" title="购物车" rel="nofollow"></a> 
+    <script src="js/feedback.js" type="text/javascript"></script> 
+    <a href="javascript:;" class="fd_feedback" title="反馈" id="fd_feedback" rel="nofollow"></a> 
+    <a id="J_Feedback" href="javascript:;" class="fd_a fd_totop" title="返回页首" rel="nofollow"></a> 
+   </div> 
+  </div> 
+  <!--底部footer--> 
+  <div class="bottom_nav"> 
+   <div class="left_logo"> 
+    <a href="index.html" title="XXX"> <img border="0" src="images/bottom_logo.png" alt="XXX" /></a> 
+   </div> 
+   <div class="bottom_about"> 
+    <dl id="c"> 
+     <dt> 
+      <a target="_blank" href="http://www.yingsheng.com/zhuanti-150704.html">关于我们</a> 
+     </dt> 
+     <dd> 
+      <a title="XXX简介" href="http://www.yingsheng.com/forme-intro.html" target="_blank" rel="nofollow">XXX简介</a> 
+     </dd> 
+     <dd> 
+      <a title="免责声明" href="http://www.yingsheng.com/forme-exemption.html" target="_blank" rel="nofollow">免责声明</a> 
+     </dd> 
+     <dd> 
+      <a title="联系方式" href="http://www.yingsheng.com/forme-contact.html" target="_blank" rel="nofollow">联系方式</a> 
+     </dd> 
+     <dd> 
+      <a title="推广联盟" href="http://u.yingsheng.com" target="_blank" rel="nofollow">推广联盟</a> 
+     </dd> 
+    </dl> 
+    <dl> 
+     <dt> 
+      <a>帮助中心</a> 
+     </dt> 
+     <dd> 
+      <a title="会员权益" href="http://www.yingsheng.com/forme-member.html" target="_blank" rel="nofollow">会员权益</a> 
+     </dd> 
+     <dd> 
+      <a title="如何观看" href="http://www.yingsheng.com/forme-watch.html" target="_blank" rel="nofollow">如何观看</a> 
+     </dd> 
+     <dd> 
+      <a title="忘记密码" href="http://www.yingsheng.com/forme-forgetpass.html" target="_blank" rel="nofollow">忘记密码</a> 
+     </dd> 
+     <dd> 
+      <a title="常见问题" href="http://www.yingsheng.com/forme-question.html" target="_blank" rel="nofollow">常见问题</a> 
+     </dd> 
+    </dl> 
+    <dl class="dl_03"> 
+     <dt> 
+      <a>商务合作</a> 
+     </dt> 
+     <dd> 
+      <img src="images/tel.png" alt="电话" />客服热线：400-666-4343 
+     </dd> 
+     <dd> 
+      <a class="serviceqq" href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzkzODA2NDI0NV8yODA2NjZfNDAwNjY2NDM0M18yXw" target="_blank" rel="nofollow"> <img border="0" title="点击这里给我发消息" alt="点击这里给我发消息" src="images/QQ_contact.png" /></a> 
+     </dd> 
+    </dl> 
+   </div> 
+   <div class="bottom_contact"> 
+    <dl> 
+     <dt> 
+      <img src="images/bottom_code.png" alt="关注微信公众号" /> 
+     </dt> 
+     <dd>
+       关注微信公众号 
+     </dd> 
+    </dl> 
+    <ul> 
+     <li><a href="http://www.yingsheng.com/link.htm?linkurl=http://weibo.com/609878960" target="_blank" rel="nofollow" title="立即关注"> <img src="images/sina.png" alt="立即关注" /></a></li> 
+     <li><a href="http://www.yingsheng.com/link.htm?linkurl=http%3A%2F%2Flist.qq.com%2Fcgi-bin%2Fqf_invite%3Fid%3D3a8775ed4e5158814ede881a7540fa5385994870dacb95d0" target="_blank" rel="nofollow" title="立即订阅"> <img src="images/e-mail.png" alt="立即订阅" /></a></li> 
+    </ul> 
+   </div> 
+  </div> 
+  <div class="clear"></div> 
+  <div class="footer"> 
+   <div class="certification"> 
+    <!--<a target="_blank" title="经营性网站备案信息" href="http://www.yingsheng.com/link.htm?linkurl=https://ss.knet.cn/verifyseal.dll?sn=e14111144030056156pfd9000000&ct=df&a=1&pa=0.5873584735672921" id="kx_verify" tabindex="-1" target="_blank" kx_type="图标式" style="display: inline-block;" rel="nofollow">--> 
+    <a rel="nofollow" style="display: inline-block;" kx_type="图标式" tabindex="-1" id="A1" href="http://www.yingsheng.com/link.htm?linkurl=http://www.anquan.org/authenticate/cert/?site=yingsheng.com&amp;sn=None&amp;type=gj" title="经营性网站备案信息" target="_blank"> <img src="images/certification_1.png" alt="安全联盟" /></a> 
+    <img src="images/certification_2.png" alt="支付宝" /> 
+    <img src="images/certification_3.png" alt="网络警察" /> 
+    <a href="http://www.yingsheng.com/link.htm?linkurl=http://www.baidu.com/s?wd=www.yingsheng.com%40v&amp;tn=baidu&amp;ie=utf-8&amp;bs=www.xsteach.com%40v&amp;f=8&amp;rsv_bp=1&amp;rsv_sug3=13&amp;rsv_sug4=767&amp;rsv_sug1=1&amp;rsv_sug2=0&amp;inputT=4221&amp;rsv_sug=1&amp;qh=360" title="百度信誉" target="_blank" rel="nofollow"> <img src="images/certification_4.png" alt="百度信誉" /></a> 
+    <img src="images/certification_5.png" alt="经营性网站备案信息" /> 
+    <script src="http://kxlogo.knet.cn/seallogo.dll?sn=e14111144030056156pfd9000000&amp;size=0"></script> 
+    <span style="display:inline-block;position:relative;width:auto;"><a style="display:inline-block;" kx_type="图标式" target="_blank" tabindex="-1" id="kx_verify" href="https://ss.knet.cn/verifyseal.dll?sn=e0505194400000224489546357&amp;ct=df&amp;a=1&amp;pa=0.07970224402216242"><img alt="可信网站" oncontextmenu="return false;" style="border:none;" src="images/yx_2.png" /></a></span> 
+   </div> | 
+   <a target="_blank" href="http://www.yingsheng.com/pxjg-it/">行业资讯</a> | 
+   <a target="_blank" href="http://www.yingsheng.com/pxzx-pxgl/">职场法则</a> | 
+   <a target="_blank" href="http://www.yingsheng.com/pxzx-glzh/">管 理 学</a> | 
+   <a target="_blank" href="http://www.yingsheng.com/pxzx-zjlbd/">创业项目</a> | 
+   <a target="_blank" href="http://www.yingsheng.com/pxzx-zjwz/">专家文章</a> | 
+   <a target="_blank" href="http://www.yingsheng.com/pxzx-hr/">HR管理</a> | 
+   <a target="_blank" href="http://www.yingsheng.com/pxzx-glgy/">励志故事</a> | 
+   <a target="_blank" href="http://www.yingsheng.com/pxzx-cwzx/">销售技巧</a> | 
+   <a target="_blank" href="http://www.yingsheng.com/topic">热门专题</a> | 
+   <br /> 版权所有：XXX 
+   <br /> 网站备案号：XXX 经营许可证：XXX 
+   <br /> Copyright @ 2020 
+   <br /> All Rights Reserved <a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a>. 
+   <!----> 
+   <br /> 
+   <a href="http://m.yingsheng.com" id="linkPhone"> <img class="phone" src="images/bottom_phone.png" alt="手机版" />手机版</a> 
+  </div> 
+  <script src="js/lanmu.js"></script> 
+  <script type="text/javascript" src="js/style_new.js"></script> 
+  <div class="plase_goto" style="display:none;" id="fix"> 
+   <img style="cursor:pointer;" src="images/fix.jpg" /> 
+   <a href="http://www.yingsheng.com/hot-fenqing.html" class="a1"></a> 
+   <a href="javascript:TempHD_UserUnShow()" class="a2"></a> 
+  </div> 
+  <style>
+    body {
+padding-bottom:92px;
+}
+.global_ad_bottom {
+    background:url(images/bottom_ad.png) no-repeat center;
+    height:155px;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:9999;
+}
+.global_ad_bottom .ad_link{
+    height:92px;
+    margin-top:63px;
+    display:block;
+    z-index:10;
+    position:relative;
+}
+.global_ad_bottom .close{
+    height:92px;
+    display:block;
+    width:40px;
+    position:absolute;
+    left:50%;
+    margin-left:500px;
+    top:63px;
+    z-index:10;
+}
+</style> 
+  <div class="global_ad_bottom" id="global_ad_bottom_div"> 
+   <a class="ad_link" target="_blank" href="http://b.yingsheng.com/"></a> 
+   <a href="javascript:global_ad_bottomClose();" class="close"></a> 
+  </div> 
+  <script type="text/javascript">
+
+
+    $(document).ready(function () {
+        //修改客服QQ
+        try{
+            $.ajax({
+                type: "get",
+                async: true,	//false时执行完再继续执行
+                url: "http://www.yingsheng.com/ext-ajax-qq.htm",
+                data: {  },
+                dataType: "jsonp",
+                callback: "callback",
+                success: function (data) {
+                    if (data.result == '1') {
+                        $(".serviceqq").attr("href",data.qq);	            		
+                    }
+                    else {
+                    }
+                }, error: function () { return false; }
+            });
+        } catch (e) { }
+
+        //显示底部广告
+        if ($.cookie('isShowGlobal_ad_bottom_div') != null)
+        {
+            $("#global_ad_bottom_div").hide();
+            $(".global_kefu").css("bottom", "0");
+            $("body").css("padding-bottom", "0");
+
+        }
+    })
+
+    function global_ad_bottomClose()
+    {
+        //var r=confirm("是否不再显示？")
+        //if (r==true)
+        //{
+        //    //$.cookie("isShowGlobal_ad_bottom_div", "yes");
+        //    closeBottomAd();
+        //}
+
+        closeBottomAd();
+        $("#global_ad_bottom_div").hide(500);
+        $(".global_kefu").css("bottom", "0");
+        $("body").css("padding-bottom", "0");
+    }
+
+    function closeBottomAd() {
+        var date1 = new Date();
+        date1.setHours(23, 59, 59, 59);
+        $.cookie('isShowGlobal_ad_bottom_div', 'true', { expires: date1, domain: '.yingsheng.com' });
+    }
+
+</script> 
+  <script type="text/javascript">
+        $(".m_5").addClass('ph');
+    </script> 
+  <div class="global_feedback" id="ys_global_feedbackBox"> 
+   <table> 
+    <tbody> 
+     <tr class="h_20"> 
+      <td colspan="2"></td> 
+     </tr> 
+     <tr class="t_title"> 
+      <td colspan="2">用户反馈</td> 
+     </tr> 
+     <tr> 
+      <td width="130px" class="t_left">分类：</td> 
+      <td width="*" class="t_right"><select id="fq_text_cate"></select></td> 
+     </tr> 
+     <tr> 
+      <td class="t_left">标题：</td> 
+      <td class="t_right"><input type="text" id="fq_text_title" /></td> 
+     </tr> 
+     <tr> 
+      <td class="t_left">联系人：</td> 
+      <td class="t_right"><input type="text" id="fq_text_linkname" /></td> 
+     </tr> 
+     <tr> 
+      <td class="t_left">联系邮箱：</td> 
+      <td class="t_right"><input type="text" id="fq_text_email" /></td> 
+     </tr> 
+     <tr> 
+      <td class="t_left">手机号码：</td> 
+      <td class="t_right"><input type="text" id="fq_text_tel" /></td> 
+     </tr> 
+     <tr> 
+      <td class="t_left">联系QQ：</td> 
+      <td class="t_right"><input type="text" id="fq_text_qq" /></td> 
+     </tr> 
+     <tr> 
+      <td class="t_left">反馈内容：</td> 
+      <td class="t_right"><textarea id="fq_text_context"></textarea></td> 
+     </tr> 
+     <tr> 
+      <td colspan="2"><input type="button" value="提交" class="sub_btn" id="sub_feedback" /></td> 
+     </tr> 
+    </tbody> 
+   </table> 
+  </div> 
+  <div style="display: none; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; cursor: move; opacity: 0; background: rgb(255, 255, 255) none repeat scroll 0% 0%;"></div>  
+ </body>
+</html>

@@ -1,0 +1,83 @@
+.join {
+	width: 660px;
+	margin-left: 40px
+}
+
+h1 {
+	display: block;
+	margin: 10px 0 78px 0;
+	color: #3d5480;
+	font-size: 20px;
+	text-align: center
+}
+
+.text {
+	margin: 0 0 100px 0;
+	background: #fff;
+	padding: 0 30px 30px
+}
+
+.text-hd .intro .quotes-left,.text-hd .intro .quotes-right {
+	background: url('../images/quotes-icon.png') no-repeat;
+	_background: url('../images/quotes-icon.gif') no-repeat
+}
+
+.text-hd .intro .quotes-left,.text-hd .intro .quotes-right {
+	position: absolute;
+	width: 22px;
+	height: 14px
+}
+
+.text-hd {
+	display: block;
+	text-align: center
+}
+
+.text-hd img {
+	margin-top: -60px;
+	border-radius: 50%
+}
+
+.text-hd .name {
+	display: block;
+	margin: 14px 0 32px;
+	color: #757575;
+	font-size: 18px
+}
+
+.text-hd .intro {
+	display: inline-block;
+	position: relative;
+	padding: 0 22px;
+	line-height: 24px;
+	color: #757575
+}
+
+.text-hd .intro .quotes-left {
+	top: 0;
+	left: 0
+}
+
+.text-hd .intro .quotes-right {
+	background-position: 0 -34px;
+	bottom: 0;
+	right: 0
+}
+
+.text-bd {
+	margin-top: 22px;
+	color: #757575;
+	font-size: 14px;
+	line-height: 28px
+}
+
+.text-news {
+	margin: -60px 0 54px 0
+}
+
+.text-news .text-hd {
+	margin-left: 16px;
+	color: #3d5480;
+	font-size: 20px;
+	font-weight: bold
+}

@@ -1,0 +1,153 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<title>产品展示_某某时尚购</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1, maximum-scale=1" />
+<link rel="stylesheet" href="css/css.css" />
+<script src="js/jquery.min.js"></script><!--公用-->
+<script src="js/script.js"></script><!--产品图片滚动-->
+<script src="js/superslide.2.1.js"></script><!--焦点图-->
+<script src="js/common.js"></script><!--导航-->
+<script src="js/jquery.slidebox.min.js"></script><!--轮播图-->
+  <script type="text/javascript" language="javascript">
+    //加入收藏
+    function AddFavorite(sURL, sTitle) {
+      sURL = encodeURI(sURL);
+      try {
+        window.external.addFavorite(sURL, sTitle);
+      } catch (e) {
+        try {
+          window.sidebar.addPanel(sTitle, sURL, "");
+        } catch (e) {
+          alert("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
+        }
+      }
+    }
+    //设为首页
+    function SetHome(url) {
+      if (document.all) {
+        document.body.style.behavior = 'url(#default#homepage)';
+        document.body.setHomePage(url);
+      } else {
+        alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");
+      }
+    } 
+</script>
+
+<!--[if lte IE 6]>  
+<script src="js/dd_belatedpng.js"></script> 
+ <script>
+  DD_belatedPNG.fix('.img'); 
+ </script>
+<![endif]-->
+</head>
+<body>
+<!--top头部-->
+<div id="header">
+ <div class="top">
+  <div class="container fn-clear">
+  <h1 class="logo img"><a href="#" ><img src="images/logo.png" border="0" class="img"  /></a></h1>
+   <div class="head_ri">
+      <div class="head_ri_top"><span class="img">4000-000-000</span><p><a href="#">返回首页</a>|
+
+        <a href="#" onclick="AddFavorite(window.location,document.title)">加入收藏</a>|
+
+        <a href="#" onclick="SetHome(window.location)">设为首页</a></p></div>
+      <div class="nav">
+     <ul id="main-menu" class="sm fn-clear">
+        <li style="background:none"><a href="index.html">网站首页</a></li>
+       <li><a href="news.html" >新闻资讯</a></li>
+       <li><a href="pic.html" >产品展示</a></li>
+       <li><a href="show.html" >联系我们</a></li>
+       <li><a href="#" >成功案例</a></li>
+       <li><a href="#" >营销网络</a></li>
+       <li><a href="#" >人才招聘</a></li>
+       <li><a href="#" >在线留言</a></li>  
+    </ul>
+      <script type="text/javascript">
+        $(function(){
+          $('#main-menu li ul').addClass('sub-menu');
+        })
+      </script>
+  </div>
+   </div>
+   </div>
+</div>
+</div>
+<!--banner-->
+
+<div class="fullSlide fn-relative">
+  <div class="bd">
+     <ul>
+       <li style="background-color:; background-image:url(); background-repeat:repeat-x"><!--背景图片-->
+       <a  style="background:url() no-repeat center center"><img src="images/banner1.jpg"  width="100%" height="450px"></a>
+      </li>
+    </ul>
+  </div>
+</div>
+  <div class="container mt30 fn-clear">
+<!--内页左侧内容-->
+<div class="bar_left fn-left">
+       <div class="pro_cate">
+         <div class="inside_title"><h3>产品导航</h3></div>
+          <ul class="cate_list navi">
+           <li><a href="#" target="_self">产品一类</a></li>
+           <li class="selected"><a href="#" target="_self">产品二类</a></li>
+           <li><a href="#" target="_self">产品三类</a></li>
+           <li><a href="#" target="_self">产品四类</a></li> 
+          </ul>
+       </div>
+           <div class="page_contact mt15">
+         <img src="images/tel.jpg" alt="">
+         <ul>
+           <li> <p>某某时尚购网<br/></p><p style="white-space: normal;">地址：北京丰台xxx路xxx号</p><p style="white-space: normal;">电话：00000-88888888</p><p style="white-space: normal;">传真：0000-8888888</p></li>
+         </ul>
+      </div>
+        <div class="inside_adv"><a href="#"><img src="images/product.jpg"  class="imgwith" ></a></div>
+ </div> <!--内页右侧title-->
+<div class="bar_right fn-right">
+  <div class="inside_right_top fn-clear">
+        <h3>产品展示</h3>
+        <div class="inside_link fn-right">所在位置：<a href="#" style="float:none">首页</a>
+              &nbsp;>&nbsp;<a href="#" style="float:none">产品展示</a>
+  
+        </div>
+     </div>
+<!--图片列表页-->
+  <div class="bar_right_text">
+       <ul class="picture_list fn-clear">
+      <li><a href="#"><div><img src="images/p1.jpg"  onload="setImgMiddle(this);" /></div><span>荣誉产品</span></a></li>
+      <li><a href="#"><div><img src="images/p2.jpg"  onload="setImgMiddle(this);" /></div><span>产品展示</span></a></li>
+      <li><a href="#"><div><img src="images/p3.jpg"  onload="setImgMiddle(this);" /></div><span>荣誉产品</span></a></li>
+      <li><a href="#"><div><img src="images/p2.jpg"  onload="setImgMiddle(this);" /></div><span>时尚购物平台</span></a></li>
+      <li><a href="#"><div><img src="images/p3.jpg"  onload="setImgMiddle(this);" /></div><span>购购购</span></a></li>
+      <li><a href="#"><div><img src="images/p1.jpg"  onload="setImgMiddle(this);" /></div><span>买就送购就行</span></a></li>
+      <li><a href="#"><div><img src="images/p3.jpg"  onload="setImgMiddle(this);" /></div><span>买尚品购流行</span></a></li>
+      <li><a href="#"><div><img src="images/p2.jpg"  onload="setImgMiddle(this);" /></div><span>还在为落伍发愁吗</span></a></li>
+      <li><a href="#"><div><img src="images/p1.jpg"  onload="setImgMiddle(this);" /></div><span>购到你手软</span></a></li>
+      <li><a href="#"><div><img src="images/p2.jpg"  onload="setImgMiddle(this);" /></div><span>荣誉产品</span></a></li>
+      <li><a href="#"><div><img src="images/p3.jpg"  onload="setImgMiddle(this);" /></div><span>荣誉产品</span></a></li>
+
+     </ul>
+          <div style="clear:both;"></div>
+    <div class="fy" style="text-align:center; margin:20px 5px;" >共11条 首页 上一页 下一页 末页 共(1/1)页</div>
+        </div>
+</div>
+</div>
+<!--底部-->
+<div class="bot_contact mt30">
+  <div class="container fn-clear">
+     <div class="bot_us fn-left img"><img src="images/hst_35.png"  class="img"><b>XXX</b><p>全国统一客服电话</p></div>
+
+     <div class="bot_address fn-right"><img src="images/hst_38.png"   class="img"><p>地址：北京丰台xxx路xxx号</p>
+     </div>
+  </div>
+</div>
+<!--版权-->
+<div id="copyright">
+ <div class="container">
+<p><strong><span style="color: rgb(118, 146, 60); font-family: 微软雅黑,;" >地址：北京丰台xxx路xxx号 电话：XXX 4000-8888-8888</span></strong></p><p><strong><span style="color: rgb(118, 146, 60); font-family: 微软雅黑;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;版权所有：某某时尚购 技术支持：专业团队 ICP备案编号： 88888888</span></strong></p> </div>
+</div>
+</body>
+</html>

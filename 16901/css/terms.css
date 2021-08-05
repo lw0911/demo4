@@ -1,0 +1,49 @@
+.terms-body{
+    min-height: 900px;
+    padding-bottom: 68px;
+}
+.hrforce-container {
+    max-width: 1100px;
+}
+.terms-container{
+    width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 45px;
+}
+.terms-container>h2{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #0e4d92;
+    padding: 30px 0;
+    font-weight: bold;
+}
+.terms-container p,.terms-container h3{
+    font-size: 14px;
+    color: #232323;
+    line-height: 30px;
+    display: block;
+    text-indent:2rem;
+}
+
+
+.searchbox{margin:90px auto 0;width:650px;height:50px;line-height:50px;font-size:14px;}
+.searchbox input{height:28px;line-height:28px;padding:10px;border:1px solid #fff;color:#000;width:520px;float:left}
+.searchbox a{display:inline-block;width:100px;height:50px;line-height:50px;font-size:16px;text-align:center;background:#f0f0f0;color:#000}
+
+
+.product_list{margin:20px auto;overflow:hidden}
+.product_list li{cursor:pointer;background:#f6f6f6;position:relative;width:372px;height:280px;margin:10px 14px 20px 14px;float:left;overflow:hidden;transition:.5s}
+.product_list li .myimgs{height:200px;overflow:hidden;position: relative;}
+.product_list li .myimgs:before{content:'';position:absolute;left:0;bottom:200px;width:100%;height:200px;background:rgba(14, 77, 146, 0.72);transition:.5s;z-index:5}
+.product_list li .myimgs:after{font-family:"iconfont" !important;font-size:40px;font-style:normal;-webkit-font-smoothing: antialiased;-webkit-text-stroke-width: 0.2px;-moz-osx-font-smoothing: grayscale;vertical-align:top;z-index:6;color:white;position:absolute;content:'\e696';top:50%;left:50%;transform:translate(-50%,-50%);opacity:0}
+.product_list li .myimgs img{width:100%;height:200px;transition:.5s;}
+.product_list li .info{padding:10px}
+.product_list li .info  h2{line-height:30px;color:#000;font-size:16px;font-weight: bold;} 
+.product_list li .info  p{line-height:24px;margin-top:5px;color:#555;font-size:14px;text-indent:0;height:24px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.product_list li:hover{color:#fff;background:#0e4d92;transform:translateY(-10px);}
+.product_list li:hover img{transform:scale(1.2);}
+.product_list li:hover p,.product_list li:hover h2{color:white}
+.product_list li:hover .myimgs:before{bottom:0}
+.product_list li:hover .myimgs:after{opacity:1}
+ 

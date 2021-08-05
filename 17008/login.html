@@ -1,0 +1,75 @@
+<html>
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" /> 
+  <title>登录</title> 
+  <meta content="登录XXX" name="keywords" /> 
+  <meta content="登录XXX" name="description" /> 
+  <meta content="XXX" name="author" /> 
+  <!--JS文件--> 
+  <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script> 
+  <script src="js/layer.min.js" type="text/javascript"></script> 
+  <link type="text/css" rel="stylesheet" href="css/layer.css" id="skinlayercss" /> 
+  <script src="js/jquery.cookie.js" type="text/javascript"></script> 
+  <script src="js/onyx.js" type="text/javascript"></script> 
+  <script src="js/ys.login.merge.js"></script> 
+  <!--CSS文件--> 
+  <link href="css/global.css" type="text/css" rel="stylesheet" /> 
+  <link href="css/login.css" type="text/css" rel="stylesheet" /> 
+  <style type="text/css">
+/*        .hidden { display: none; }*/
+    </style> 
+ </head> 
+ <body> 
+  <div class="show_img_login hidden"> 
+   <h2>扫二维码 快捷登录</h2> 
+   <img class="login_code" src="" id="imgQRCode" /> 
+   <a class="a3" href="javascript:void(0);" id="btnRefresh"><i class="i8"></i>刷新二维码</a> 
+   <p class="p5">请使用APP“我的“右上角进行扫码登录</p> 
+   <a class="close_layer"><i class="i9"></i></a> 
+  </div> 
+  <div class="fullSlide"> 
+   <div class="bd"> 
+    <ul style="position: relative; width: 1663px; height: 1000px;">
+                
+                <li style="background-image: url(images/banner_1.jpg); position: absolute; width: 1663px; left: 0px; top: 0px; display: none;"></li>
+                
+                <li style="background-image: url(images/banner_2.jpg); position: absolute; width: 1663px; left: 0px; top: 0px; display: none;"></li>
+                
+                <li style="background-image: url(images/banner_3.jpg); position: absolute; width: 1663px; left: 0px; top: 0px;"></li>
+                
+                <li style="background-image: url(images/banner_4.jpg); position: absolute; width: 1663px; left: 0px; top: 0px; display: none;"></li>
+                
+            </ul>
+   </div> 
+   <div class="middle_box"> 
+    <img src="images/logo.png" /> 
+    <div class="login_box"> 
+     <h2><span>学习入口</span></h2> 
+     <ul> 
+      <li class="li_01"> <i class="i1"></i><input type="text" placeholder="手机/邮箱/用户名" class="text_1" id="txtAccount" /><i class="i2" id="icoQRCode"></i> <span class="s4 hidden" id="lbAccount"><i class="i6"></i><span class="msg">找不到该帐号</span></span> </li> 
+      <li> <i class="i3"></i><input type="password" placeholder="密码" class="text_2" id="txtPassword" /> <span class="s5 hidden" id="lbPassword"><i class="i7"></i><span class="msg">密码错误</span></span> </li> 
+     </ul> 
+     <ol> 
+      <li> <a href="javascript:;" class="go_btn" id="btnSubmit">登录</a> </li> 
+      <li class="li_02"> <span class="s2"><a href="javascript:void(0);" id="btnQQLogin"><i class="i4"></i>QQ登录</a></span> <span class="s3"><a href="javascript:void(0);" id="btnSinaLogin"><i class="i5"></i>微博登录</a></span> </li> 
+      <li class="li_03"> <a class="find" href="http://sso.yingsheng.com/FindPassword/VerifyUserInfo.aspx">找回密码</a> <a style="display:none;" href="#">免费注册</a> </li> 
+     </ol> 
+     <input type="hidden" value="0" name="loginType" /> 
+     <input type="hidden" value="__t" id="hdCkn" /> 
+     <input type="hidden" value="10080" id="hdCke" /> 
+     <input type="hidden" value="yingsheng.com" id="hdCkd" /> 
+     <input type="hidden" value="http://sso1.yingsheng.com/sso-login.htm?from=http%3A%2F%2Fi.yingsheng.com%2Forderlist-1.html" id="hdGoto" /> 
+     <div class="back_index"> 
+      <a href="index.html">返回首页<i></i></a> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <script src="js/login.js"></script> 
+  <script>
+
+//        window.frame = new ys.passport.login.ClientLoginFrame();
+
+    </script>  
+ </body>
+</html>

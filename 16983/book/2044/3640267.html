@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+	<meta name="applicable-device" content="pc,mobile">
+	<meta name="MobileOptimized" content="width">
+	<meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>大结局_重生之金融大亨_笔趣阁</title>
+    <meta name="keywords" content="大结局" />
+    <meta name="Description" content="笔趣阁提供了黑色尼古丁创作的小说《重生之金融大亨》干净清爽无错字的文字章节：大结局在线阅读。" />
+</head>
+
+<body id="reader-m-fix">
+    
+<link rel="stylesheet" href="https://cdn.bootcss.com/sweetalert/0.5.0/sweet-alert.css" />
+<link rel="stylesheet" href="https://zqjscss.cdn.bcebos.com/css/style.css"/>
+<script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="/static/js/novel.js"></script>
+<script src="https://zqjscss.cdn.bcebos.com/js/apps.js"></script>
+  <div class="topbar">
+    <div class="topbar-con">
+      <div class="topbar-sethome">
+        <a href="javascript:winSetHP();">将本站设为首页</a>
+      </div>
+      <div class="topbar-addfavorite">
+        <a href="javascript:winAddFav()">收藏笔趣阁</a>
+      </div>
+      <div class="topbar-right">
+         <script>PCLogin()</script>
+      </div>
+    </div>
+  </div>
+
+  <div class="header">
+    <h1 class="logo"><a href="/">笔趣阁</a></h1>
+    <form action="/ar.php" class="search-form" id="form">
+        <input class="input-text input-key" id="keyWord" name="keyWord" type="text" maxlength="30"
+            placeholder="可搜书名和作者，请您少字也别输错字。" />
+        <input type="button" class="btn-tosearch" value="搜索" title="搜索" onclick="check()"/>
+    </form>
+    <div class="m-user" style="color:#fff">
+       <script>MLogin()</script>
+    </div>
+  </div>
+
+  <ul class="nav">
+    <li><a href="/">首页</a></li>
+    <li><a rel="nofollow" href="/user/case.php">永久书架</a></li>
+	<li><a href="/xuanhuanxiaoshuo/">玄幻奇幻</a></li>
+	<li><a href="/xiuzhenxiaoshuo/">武侠仙侠</a></li>
+	<li><a href="/dushixiaoshuo/">都市言情</a></li>
+	<li><a href="/lishixiaoshuo/">历史军事</a></li>
+	<li><a href="/kehuanxiaoshuo/">科幻灵异</a></li>
+	<li><a href="/wangyouxiaoshuo/">网游竞技</a></li>
+	<li><a href="/nvshengxiaoshuo/">女生频道</a></li>
+    <li><a href="/paihangbang/">排行榜单</a></li>
+    <li><a href="/collect/">收藏榜单</a></li>
+    <li><a href="/wanbenxiaoshuo/">完本小说</a></li>
+    <li><a rel="nofollow" href="/reader/case.php">阅读记录</a></li>
+  </ul>
+  <ul class="m-nav">
+    <li><a href="/paihangbang/">排行</a></li>
+    <li><a href="/collect/">收藏</a></li>
+    <li><a href="/wanbenxiaoshuo/">完本</a></li>
+    <li><a href="/reader/case.php">阅读记录</a></li>
+    <li><a href="/user/case.php"  rel="nofollow">书架</a></li>
+  </ul>
+<script>createApp()</script>
+    <div class="m-setting">
+        <div class="font-box">
+            <span>字:</span>
+            <span id="fontbig" onclick="nr_setbg('big')">大</span>
+            <span id="fontmiddle" onclick="nr_setbg('middle')">中</span>
+            <span id="fontsmall" onclick="nr_setbg('small')">小</span>
+        </div>
+        <a onclick="nr_setbg('light')" class="btn-setbg" id="bgmode-light">关灯</a>
+        <a onclick="nr_setbg('huyan')" class="btn-setbg" id="bgmode-huyan">护眼</a>
+    </div>
+
+    <div class="container" id="container">
+        <div class="row row-detail row-reader">
+            <div class="layout layout-col1">
+                <div class="layout-tit xs-hidden">
+                    <a href="/">笔趣阁</a> > <a href="/book/2044/" title="重生之金融大亨">重生之金融大亨</a> &gt; 大结局
+                    <div class="reader-fun">
+                        <select class="select select-font">
+                            <option value="宋体,STSong">字体</option>
+                            <option value="方正启体简体,Apple LiGothic Medium">默认</option>
+                            <option value="黑体,STHeiti">黑体</option>
+                            <option value="楷体_GB2312,STKaiti">楷体</option>
+                            <option value="微软雅黑,STXihei">雅黑</option>
+                            <option value="方正启体简体,Apple LiGothic Medium">启体</option>
+                            <option value="宋体,STSong">宋体</option>
+                        </select>
+                        <select class="select select-color">
+                            <option value="#555555">颜色</option>
+                            <option value="#555555">默认</option>
+                            <option value="#9370DB">暗紫</option>
+                            <option value="#2E8B57">藻绿</option>
+                            <option value="#2F4F4F">深灰</option>
+                            <option value="#778899">青灰</option>
+                            <option value="#800000">栗色</option>
+                            <option value="#6A5ACD">青蓝</option>
+                            <option value="#BC8F8F">玫褐</option>
+                            <option value="#F4A460">黄褐</option>
+                            <option value="#F5F5DC">米色</option>
+                            <option value="#F5F5F5">雾白</option>
+                        </select>
+                        <select class="select select-size">
+                            <option value="#E9FAFF">大小</option>
+                            <option value="24px">默认</option>
+                            <option value="16px">16px</option>
+                            <option value="18px">18px</option>
+                            <option value="20px">20px</option>
+                            <option value="22px">22px</option>
+                            <option value="24px">24px</option>
+                            <option value="26px">26px</option>
+                            <option value="28px">28px</option>
+                            <option value="30px">30px</option>
+                            <option value="32px">32px</option>
+                        </select>
+                        <select class="select select-bg">
+                            <option value="#E9FAFF">背景</option>
+                            <option value="#E9FAFF">默认</option>
+                            <option value="#FFFFFF">白雪</option>
+                            <option value="#111111">漆黑</option>
+                            <option value="#FFFFED">明黄</option>
+                            <option value="#EEFAEE">淡绿</option>
+                            <option value="#CCE8CF">草绿</option>
+                            <option value="#FCEFFF">红粉</option>
+                            <option value="#EFEFEF">深灰</option>
+                            <option value="#F5F5DC">米色</option>
+                            <option value="#D2B48C">茶色</option>
+                            <option value="#C0C0C0">银色</option>
+                        </select>
+                        <span>
+                            <label for="readmode">夜间模式</label>
+                            <input type="checkbox" name="readmode" id="readermode" />
+                        </span>
+                    </div>
+                </div>
+                <div class="reader-main">
+                    <h1 class="title">大结局</h1>
+                    <div class="section-opt">
+                        
+                        <a href="/book/2044/3640266.html">上一章</a>
+                        
+                        <span class="xs-hidden">← </span>
+                        <a href="/book/2044/">章节列表</a>
+                        <span class="xs-hidden">→</span>
+                        
+                                <a href="/book/2044/3640267_2.html">下一页</a>
+                        
+						<a href="/txt/2044/">TXT下载</a>
+                        <a href="javascript:;" onclick="javascript:addBookMark();" class="xs-hidden">加入书签</a>
+                    </div>
+<style>
+            .appguide-wrap { display: block; margin: 15px 10px; border-radius: 5px; box-shadow: 0 0 6px #ddd; overflow: hidden; background: #f09629; background-image: repeating-linear-gradient(60deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1) 15px, transparent 0, transparent 30px); }
+            .appguide-wrap .appguide-txt { padding: 15px 10px; font-size: 16px; line-height: 26px; color: #fff; }
+            .appguide-wrap .appguide-btns { display: flex; line-height: 40px; text-align: center; background: #fff; }
+            .appguide-wrap .appguide-btns span { flex: 1; }
+            .appguide-wrap .appguide-btns span:first-child { background: #f5f5f5; color: #999; }
+        </style>
+        <a href="https://mgzs.cdn.bcebos.com/appdown.html?w=tg9" class="appguide-wrap">
+            <p class="appguide-txt"> 不想错过《重生之金融大亨》更新？安装笔趣阁专用APP，作者更新立即推送！承诺永久免费！</p>
+            <div class="appguide-btns">
+                <span>放弃</span>
+                <span>立即下载</span>
+            </div>
+        </a>
+                    <div class="content" id="content">
+                        <div class="posterror"><a href="javascript:postError();" class="red">章节错误,点此举报(免注册)</a>,举报后维护人员会在两分钟内校正章节内容,请耐心等待,并刷新页面。</div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;1997年12月，华盛顿。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;林宇在这里见到了一个人，这个人，身上穿着一身黑色的衣服。带着军帽，脸上却蒙着面具。只露出一双眼睛。.<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;虽然面具遮盖了他的脸，但是林宇却有一种熟悉感，这种熟悉又让他有些陌生。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;“克林顿先生，这位先生是？”林宇问道。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;“林，这位是联邦调查局的局长，你们认识一下。”<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;联邦调查局局长？林宇吃惊道。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;美国联邦调查局，是世界著名的美国最重要的情报机构之一，隶属于美国司法部，英文缩写fbi。“fbi”也不仅是美国联邦调查局的缩写，还代表着该局坚持贯彻的信条——忠诚fidelity，勇敢b<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;ave<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;y和正直iy，是联邦警察。美国联邦调查局根据职能和授权，广泛参与国内外重大特工调查案件，现有的调查司法权已经超过200种联邦罪行。fbi在京城等世界各地设有办事处。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;这是一个权力极大的机构，就连美国总统都不愿意招惹他们。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;他们曾调查过黑人运动领袖马丁?路德?金、驱赶过卓别林、调查过爱因斯坦，逮捕过墨索里尼，暗杀过希特勒，虽然没有成功，但是这一切的一切都让fbi在全球的名气大增。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;对于联邦调查局林宇也是早就有所接触了，但是像现在这样调查局的局长站在自己面前倒还是第一次，林宇可不觉得这是偶然，应该是有些原因在里面的。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;只是不知道这股子熟悉感到底是怎么回事？难道这个局长自己以前见过。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;可是还没等林宇说什么，这位局长便已经出去了。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;“什么来头？居然连你总统都不放在眼里。”林宇笑道。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;克林顿笑着说道：“我可不信你不知道联邦调查局的实力。要知道你手下的机构可比联邦调查局差不了多少。他们掌握的机密，除了这位局长之外，谁都不清楚，就连我也不知道，说不定就连我秘密这个情报头子都有。就更不用说其他人的了。自己的小辫子在人家手里面攥着，你说能不忌惮吗？”<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;“而且这个局长，年纪轻轻就十分的厉害，是有史以来。最神秘莫测地一个，在这方面，简直就是个天才。比之冷战时期的那位都厉害，现在在美国，我唯一忌惮地人，就是他了。那些家族虽然能影响到我，但是那都是利益的结合而已。我倒不在乎，可是这位局长，得罪了他，我都想着我一觉醒来还能不能待在这个位置上。”<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;“真地假的？这个人叫什么名字？”我咧了咧嘴。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;竟然让美国总统都忌惮，这个人也太牛了吧。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;“不知道，只知道一个代号，叫克罗克。很神秘的一个局长，关于他之前的事情基本上没有人知道。只知道这是被上届局长选中的一个人，将另外一个竞争对手路易斯直接打败，坐上了局长的座位。”克林顿笑着说道。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;这事对于外面一些有能力的人并不是什么多神秘的事情。所以他也就不在意的说了出来。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;克罗克？林宇感到很陌生，不过既然克林顿都给予了他这么高的评价，那么恐怕其人是真的有本事了。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;对于克林顿所说的那位冷战时期的牛人，林宇也是知道的，埃德加.胡佛，一个创造了美国历史和fbi神话的人物！他在联邦调查局局长的位子上，一坐就是半个世纪，他是美国历史上最有权势的人物，也是最富争议的人物，在他在位的近半个世纪的时间里面。美国换了8总统，16个检察官，可联邦调查局局长却始终都是他！<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;所有的fbi探员都效忠他一个人，他们不听美国总统的命令，他们的眼里，只有埃德加.胡佛。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;历史上。这个人有罗斯福夫人的裸照，知道任何一个总统的最私密的事情，他的权力之大，大得让任何一个总统对他都不敢龇一龇牙，连罗斯福那么牛逼的人，见到埃德加.胡佛都低头哈腰。以至于在埃德加.胡佛死的那一天，当时的总统尼克松长出了一口气道：“他终于在一个适当的时候死了。”<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;对于这些生活在埃德加.胡佛影子下面的总统来说，埃德加.胡佛，是一个撒旦一般的存在。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;埃德加.胡佛担任fbi局长的这几十年里，是“白宫是总统的，总统办公室是埃德加.胡佛的。”<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;由此可以看出，这个被成为历史上最有权力的男人，是一个多么令人乍舌的角色。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;能被克林顿评价的和胡佛一样，可见这个克罗克是真有本事的。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;和克林顿进行了隐秘的会谈之后，林宇便离开了。可是就在家门口，林宇遇见了刚刚遇见的人。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;“克罗克先生？”<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;“嗨，林，我们可以单独聊聊吗？”克罗克面无表情的说道。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;看了一眼这位被克林顿评价为胡佛第二的局长，林宇点了点头：“那就我家里吧。”<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;克罗克局长点了点头，随着林宇朝别墅里走去。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;“不知道克罗克局长找我想聊些什么？”在客厅里坐下来之后林宇问道。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;“林先生，我很好奇，你这些年怎么发展的这么快？”克罗克笑着问道。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;“我也很好奇克罗克局长是怎么当上联邦调查局的局长的？”林宇毫不在意的问道。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;克罗克没有回答，沉默一阵，才说道：“你是不是觉得我身上有一种熟悉感？但却不知道这种熟悉感从何而来？”<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;林宇心里一震，他还以为这是他的错觉呢，看样子还真是个熟人。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;可是这股子熟悉感到底是怎么回事呢？<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;“你是鲍伯？”林宇有点不敢确定的说道。<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;“林，没想到你还能认出我来。”鲍伯也有些激动，他努力保持着自己的镇定，终于说道：“宇，十多年了，我们终于又见面了。”<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;看到鲍伯终于承认了，林宇简直不敢相信。这是鲍伯吗？如果自己没有记错的话，鲍伯应该和自己差不多大吧？怎么看他现在这个样子，像三四十岁的样子？而且样子大变？<br />　　<br />　　&nbsp;&nbsp;&nbsp;&nbsp;“鲍伯，你怎么变成这样了？”林宇不知道鲍伯究竟去做什么了。他为什么会变成这样，这些年他受了多少的苦。<br /><script language="javascript" type="text/javascript" src="https://mgzs.cdn.bcebos.com/txt.js"></script>
+<script language="javascript">sjwzl("重生之金融大亨");</script>
+                    </div>
+                    <a href="javascript:;" onclick="javascript:addBookMark();" class="btn-addbs">『加入书签，方便阅读』</a>
+                    <div class="section-opt m-bottom-opt" style="margin: 0px; top: 0">
+                        
+                        <a href="/book/2044/3640266.html">上一章</a>
+                        
+                        <span class="xs-hidden">← </span>
+                        <a href="/book/2044/">章节列表</a>
+                        <span class="xs-hidden">→</span>
+                        
+                        <a href="/book/2044/3640267_2.html">下一页</a>
+                        
+                        <a href="/2044.html">TXT下载</a>
+                        <a href="javascript:;" class="xs-hidden" onclick="javascript:addBookMark();">加入书签</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://zqjscss.cdn.bcebos.com/js/novel.js"></script>
+	<script language="javascript">getset()</script>
+	<script language="javascript">getset1()</script>
+    <script>createApp()</script>
+<div class="footer" id="footer">
+    <div class="pc-footer">
+        <p>本站所有小说为转载作品，所有章节均由网友上传，转载至本站只是为了宣传本书让更多读者欣赏。</p>
+    </div>
+    <div class="m-footer">
+        <a href="/">首页</a>
+        <a href="/user/case.php" rel="nofollow">我的书架</a>
+        <a href="/reader/case.php" rel="nofollow">阅读记录</a>
+        <a href="https://mgzs.cdn.bcebos.com/appdown.html?w=tg12">客户端</a>
+        <a href="#">顶部↑</a>
+    </div>
+</div>
+
+<script src="https://zqjscss.cdn.bcebos.com/js/iconfont.js"></script>
+<script src="https://apps.bdimg.com/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/sweetalert/0.5.0/sweet-alert.min.js"></script>
+<script>
+    function check() {
+        var keyWord = $("#keyWord").val().trim();
+        if (keyWord == "" || keyWord == null || keyWord == undefined) {
+            swal({
+                title: "请输入正确的信息！",
+                type: "warning",
+            });
+        } else {
+            $("#form").submit();
+        }
+    }
+    function winSetHP() {
+        var name = document.title;
+        if (document.all) {
+            document.body.style.behavior = 'url(#default#homepage)';
+            document.body.setHomePage(name);
+        } else {
+            swal({
+                title: "提示",
+                text: '浏览器不支持此操作, 请手动设为首页'
+            });
+        }
+    }
+    function winAddFav() {
+        var domain = window.location.href;
+        var name = document.title;
+        try {
+            window.external.addFavorite(domain, name);
+        } catch (e) {
+            try {
+                window.sidebar.addPanel(name, domain, '');
+            } catch (e) {
+                swal({
+                    title: "提示",
+                    text: '加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置'
+                });
+            }
+        }
+    }
+    function loginbtn() {
+	var domain = window.location.href;
+        $.post("/MemberAction.php", { action: 'login', username: $("#small-username").val(), password: $("#small-password").val(), usecookie: "720" },
+            function (result) {
+                if (result != []) {
+                    if (result.status == 1) {
+                        swal({
+                            title: "提示",
+                            text: result.info
+                        });
+                        setTimeout(function () {
+						if(domain.indexOf("login.php") >= 0 ) {
+                            location.href = "/";
+						}else{
+							location.href = domain;
+						}	
+                        }, 1500);
+                    } else {
+                        swal({
+                            title: "提示",
+                            text: result.info
+                        });
+                    }
+                }
+            })
+    }
+</script>
+<div style="display:none;">
+	<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?1178a65c6e06652b52745ae1c757aa87";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+  <script type="text/javascript" src="https://s9.cnzz.com/z_stat.php?id=1278951145&web_id=1278951145"></script>
+  </div>
+    <div class="xs-hidden">
+	<script type="text/javascript" src="https://zqjscss.cdn.bcebos.com/js/pc-novel.js"></script>
+    </div>
+    <script>
+        function postError() {
+            var bookId = 2044;
+            var chapterId = 3640267;
+            var chapterName = "大结局";
+            $.post("/post.php", { action: "error", bookId: bookId, chapterId: chapterId, chapterName: chapterName },
+                function (data) {
+                    var data = JSON.parse(data);
+                    swal({
+                        title: "提示",
+                        text: data.info,
+                        timer:1000,
+                    });
+                })
+        }
+        function addBookMark() {
+            var bookId = 2044;
+            var chapterId = 3640267;
+            var chapterName = "大结局";
+            $.post("/post.php", { action: "addbookmark", bookId: bookId, chapterId: chapterId, chapterName: chapterName },
+                function (data) {
+                    var data = JSON.parse(data);
+                    swal({
+                        title: "提示",
+                        text: data.info,
+                        timer:1000
+                    });
+                })
+        }
+
+
+        function addHit(bookid) {
+            $.post("/post.php",
+                { action: "addhit", bookid: bookid }
+            );
+        }
+
+        if (typeof addHit != 'undefined' && addHit instanceof Function)
+            addHit(2044);
+
+        if (typeof addBookMarkByJs != 'undefined' && addBookMarkByJs instanceof Function)
+            addBookMarkByJs(3640267, 2044, '大结局');
+
+        $(window).resize(function () {
+            var winWidth = $(window).width()
+            if (winWidth < 980 && $('.m-setting').length) {
+                $('body').attr('id', 'reader-m-fix');
+            } else {
+                $('body').attr('id', '');
+            }
+        }).resize()
+    </script>
+    <script language="javascript">
+        document.onkeydown = keypage
+        var prevpage = "/book/2044/3640266.html"
+				
+        var nextpage = '3640267_2.html'
+                                
+        var index_page = "./"
+        function keypage() {
+            if (event.keyCode == 37) location = prevpage
+            if (event.keyCode == 39) location = nextpage
+            if (event.keyCode == 13) document.location = index_page
+        }
+    </script>
+	<script language="javascript" type="text/javascript" src="/static/js/true.js"></script>
+	<script>getSuijiLunbo("《重生之金融大亨》", "笔趣阁", 1);</script>
+</body>
+
+</html>

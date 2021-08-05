@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head> 
+        <meta charset="utf-8" /> 
+        <meta name="renderer" content="webkit" /> 
+        <title>我的订单 XXX用户中心</title> 
+        <link rel="shortcut icon" href="images/favicon.ico" /> 
+        <link rel="stylesheet" type="text/css" href="css/common_member.css" /> 
+        <link rel="stylesheet" type="text/css" href="css/order_index.css" /> 
+        <script type="text/javascript">
+            var TU = {
+                myUrl: 'http://my.liantu.cn',
+                wwwUrl: 'http://www.liantu.cn'
+            };
+        </script> 
+    </head> 
+    <body> 
+        <div class="header"> 
+            <div class="top-bg"></div> 
+            <div class="mod-head"> 
+                <a href="index.html" class="logo"><img src="images/logo.png" alt="XXX" /></a> 
+                <div class="search"> 
+                    <div class="box"> 
+                        <div class="sbox"> 
+                            <input type="text" class="text" id="search_text" placeholder="输入想去的地方（例如：北京）" /> 
+                            <div class="ico" id="search_ico">
+                                <span></span>
+                            </div> 
+                        </div> 
+                    </div> 
+                </div> 
+                <div class="link">
+                    <a href="apply.html" rel="nofollow" target="_blank">申请成为向导</a>
+                </div> 
+                <div class="login pl-login-info" id="pl-login-info"> 
+                    <div class="name"> 
+                        <img width="40" height="40" alt="" src="images/man_100x100.jpg" />
+                        <span class="name-text">180*****538</span>
+                        <span class="ico"></span>
+                    </div> 
+                    <div class="list"> 
+                        <div class="ico"></div> 
+                        <div class="login-box"> 
+                            <div class="bg"></div> 
+                            <p> <a member_info.html>个人信息</a> <a href="member_order.html">我的订单</a> <a href="member_tongyou.html">我的同游</a> <a href="/member/logout/" class="js-pl-logout">退出</a> </p> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+        <div class="container"> 
+            <div class="home"> 
+                <a href="index.html"> <span class="plus"></span>返回首页 </a>
+            </div> 
+            <div class="wrap"> 
+                <div class="side"> 
+                    <div class="avatar"> 
+                        <img src="images/man_160x160.jpg" alt="用户中心" /> 
+                        <p><span class="usr-name">180*****538</span> <span class="gender male "></span> </p> 
+                    </div> 
+                    <ul class="menu"> 
+                        <li> <a href="member_info.html" class="info">基本信息</a> 
+                            <div class="sub-menu"> 
+                                <p><a href="member_avatar.html" class="sc2">更换头像</a></p> 
+                                <p><a href="member_pwd.html" class="sc2">修改密码</a></p> 
+                            </div> </li> 
+                        <li> <a href="member_order.html" class="order">我的订单</a> </li> 
+                        <li> <a href="member_withdraw.html" class="wallet">我的钱包</a> </li> 
+                        <li> <a href="member_tongyou.html" class="gowith">结伴同游</a> </li> 
+                    </ul> 
+                </div> 
+                <div class="content"> 
+                    <div class="mod-hd"> 
+                        <h2>我的订单</h2> 
+                        <span>（共有 1 个订单）</span> 
+                    </div> 
+                    <div class="mod-bd"> 
+                        <div class="mod-order"> 
+                            <div class="tb-order"> 
+                                <div class="order-hd"> 
+                                    <span class="status reject"> 等待导游接受 </span> 
+                                    <span class="tip"> ID：<em>G308291319026980</em> </span> 
+                                </div> 
+                                <table class="order-bd"> 
+                                    <thead> 
+                                        <tr> 
+                                            <th width="17%">导游/伴游</th> 
+                                            <th width="13%">服务地点</th> 
+                                            <th width="28%">服务日期</th> 
+                                            <th width="20%">订单价格</th> 
+                                            <th>&nbsp;</th> 
+                                        </tr> 
+                                    </thead> 
+                                    <tbody> 
+                                        <tr> 
+                                            <td>乔蕊</td> 
+                                            <td>北京</td> 
+                                            <td>2016-03-10 ~ 2016-03-18</td> 
+                                            <td class="td-price">￥<span class="price">200.00</span>元</td> 
+                                            <td class="text-right"> <input type="submit" class="submit cancel" data-id="68" data-status="pending" value="取消" /> </td> 
+                                        </tr> 
+                                    </tbody> 
+                                </table> 
+                                <div class="order-ft"> 
+                                    <span class="text">预定的服务：基础导游服务</span> 
+                                    <span class="btn"><a href="member_order_detail.html" target="_blank"><em></em>查看详情</a></span> 
+                                </div> 
+                                <div class="mod-box"> 
+                                    <div class="mod-detail"> 
+                                        <div class="hd"> 
+                                            <span class="day">第1天</span> 
+                                            <span class="date">（2016-03-10 星期四）</span> 
+                                        </div> 
+                                        <div class="bd"> 
+                                            <p>基础导游服务 ￥<em>100</em>元/天</p> 
+                                        </div> 
+                                    </div> 
+                                    <div class="mod-detail"> 
+                                        <div class="hd"> 
+                                            <span class="day">第2天</span> 
+                                            <span class="date">（2016-03-11 星期五）</span> 
+                                        </div> 
+                                        <div class="bd"> 
+                                            <p>基础导游服务 ￥<em>100</em>元/天</p> 
+                                        </div> 
+                                    </div> 
+                                    <div class="btn-up"> 
+                                        <a href="javascript:" title="收起">收起<i></i></a> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div> 
+                    <!-- page --> 
+                </div> 
+                <div class="mod-popbg"> 
+                </div> 
+                <div class="mod-contact"> 
+                    <p class="close"><a href="javascript:"></a></p> 
+                    <div class="main"> 
+                        <p class="title">导游<span></span>的联系方式</p> 
+                        <ul> 
+                            <li class="phone"></li> 
+                            <li class="qq"></li> 
+                            <li class="wechat"></li> 
+                        </ul> 
+                        <a href="javascript:;" class="btn">知道了</a> 
+                    </div> 
+                </div> 
+                <div class="mod-reviews"> 
+                    <p class="close"><a href="javascript:"></a></p> 
+                    <p class="title">对导游<span>Lu-旅拍人</span>的评价</p> 
+                    <ul> 
+                        <li class="phone"> <p>服务态度</p> <p class="mod-star" data-name="rate_attitude" data-path="http://static.liantu.cn/image/my/member/profile"> </p> </li> 
+                        <li class="phone"> <p>符合描述</p> <p class="mod-star" data-name="rate_similar" data-path="http://static.liantu.cn/image/my/member/profile"> </p> </li> 
+                        <li class="phone"> <p>专业程度</p> <p class="mod-star" data-name="rate_major" data-path="http://static.liantu.cn/image/my/member/profile"> </p> </li> 
+                        <li class="phone"> <p>颜值评分</p> <p class="mod-star" data-name="rate_goodlook" data-path="http://static.liantu.cn/image/my/member/profile"> </p> </li> 
+                    </ul> 
+                    <div class="area"> 
+                        <textarea class="remark input-placeholder message" name="message" placeholder="打完分，别忘了给我们导游评价下哟~"></textarea> 
+                        <label class="placeholder">打完分，别忘了给我们导游评价下哟~</label> 
+                    </div> 
+                    <p class="msg-error">请对导游做出评分！</p> 
+                    <p class="count">还可输入<span>120</span>个字</p> 
+                    <p class="btn"><a href="javascript:;" id="submit">确定</a></p> 
+                </div> 
+            </div> 
+        </div> 
+        <div class="footer"> 
+            <div class="mod-back"> 
+                <span class="qrcode"> <span class="ico"></span> <img src="images/qrcode.jpg" alt="XXX微信二维码" width="200" height="200" />官方微信服务号 </span> 
+                <a href="javascript:" class="code" id="code"></a> 
+                <a href="index.html" class="customer"></a> 
+                <a href="#" class="goback"></a> 
+            </div> 
+            <div class="mod-foot"> 
+                <div class="info"> 
+                    <div class="contact"> 
+                        <p class="logo"> <a href="index.html"><img src="images/logo.png" alt="XXX" width="136" height="50" /></a> <span>同行之路，有你才有意义</span> </p> 
+                        <p class="tell">XXX</p> 
+                        <p>24小时服务热线</p> 
+                    </div> 
+                    <dl> 
+                        <dt>
+                        公司信息
+                        </dt> 
+                        <dd>
+                            <a href="http://www.liantu.cnabout.html" target="_blank" rel="nofollow">关于我们</a>
+                        </dd> 
+                        <dd>
+                            <a href="http://www.liantu.cncopyright.html" target="_blank" rel="nofollow">免责声明</a>
+                        </dd> 
+                        <dd>
+                            <a href="http://www.liantu.cncontact.html" target="_blank" rel="nofollow">联系我们</a>
+                        </dd> 
+                        <dd>
+                            <a href="http://www.liantu.cnjoin.html" target="_blank" rel="nofollow">加入我们</a>
+                        </dd> 
+                    </dl> 
+                    <dl> 
+                        <dt>
+                        帮助中心
+                        </dt> 
+                        <dd>
+                            <a href="http://www.liantu.cnxieyi.html" target="_blank" rel="nofollow">用户协议</a>
+                        </dd> 
+                        <dd>
+                            <a href="http://www.liantu.cnsafe.html" target="_blank" rel="nofollow">安全保障</a>
+                        </dd> 
+                        <dd>
+                            <a href="http://www.liantu.cnprocess.html" target="_blank" rel="nofollow">预定流程</a>
+                        </dd> 
+                    </dl> 
+                    <dl class="app"> 
+                        <dt>
+                        发现
+                        </dt> 
+                        <dd>
+                            <a href="http://www.liantu.cn/app/" target="_blank">Android客户端</a>
+                        </dd> 
+                        <dd>
+                            <a href="http://www.liantu.cn/app/" target="_blank">iOS客户端</a>
+                        </dd> 
+                        <dd>
+                            <a href="http://www.liantu.cn/app/huilv/" target="_blank">XXX汇率</a>
+                        </dd> 
+                        <dd>
+                            <a href="http://www.liantu.cn/app/tongyou/" target="_blank">XXX同游</a>
+                        </dd> 
+                    </dl> 
+                </div> 
+                <div class="copyright"> 
+                     Copyright &copy; 2020 All Rights Reserved <a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a> stat 
+                </div> 
+            </div> 
+        </div> 
+        <script type="text/javascript" src="js/jquery.seajs.js" id="seajsnode"></script> 
+        <script type="text/javascript">
+            seajs.config({
+                base: './',
+                paths: {
+                    'modules': './'
+                },
+                map: [
+                    [/^(.*?\/script\/(?:src|dist)\/.*?\/.*?\.js$)(?:.*)$/i, '$1?version=v1']
+                ],
+                charset: 'utf-8'
+            });
+
+            seajs.use('js/common_member.js');
+            seajs.use('js/index.js');
+        </script> 
+        <div class="hide"> 
+        </div>  
+    </body>
+</html>

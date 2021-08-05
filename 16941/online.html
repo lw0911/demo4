@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>在线留言</title>
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<link href="css/child.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+
+<body style="background-color:#f5f5f5;">
+<div class="left-menu child-menu">
+	<div class="left-logo"><img src="img/logo-1.png"></div>
+    <ul class="nav">
+        <li>
+            <a href="index.html">
+                <p>网站首页</p>
+                <span>HOME</span>
+            </a>
+            <i></i>
+        </li>
+        <li>
+            <a href="about.html">
+                <p>关于我们</p>
+                <span>ABOUT US</span>
+            </a>
+            <i></i>
+            <ul class="child-nav">
+                <div class="bb"></div>
+                <li><a href="#">公司简介</a>
+                    <ul class="child-nav-1">
+                        <div class="bb"></div>
+                        <li><a href="#">关于我们三级</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">公司梗概</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="product-list.html">
+                <p>产品中心</p>
+                <span>PRODUCTS</span>
+            </a>
+            <i></i>
+        </li>
+        <li>
+            <a href="news-list.html">
+                <p>新闻中心</p>
+                <span>THE NEWS</span>
+            </a>
+            <i></i>
+        </li>
+        <li>
+            <a href="product-list.html">
+                <p>美丽乡村</p>
+                <span>COUNTRYSIDE</span>
+            </a>
+            <i></i>
+        </li>
+        <li class="now">
+            <a href="online.html">
+                <p>联系我们</p>
+                <span>CONTACT US</span>
+            </a>
+            <i></i>
+        </li>
+    </ul>
+    <div class="contact-menu">
+        总机：XXX <br/>
+
+        电话：XXX <br/>
+
+        联系人：陈总 <br/>
+
+        邮箱：XXX <br/>
+    
+        网址：XXX <br/>
+
+        地址：XXX
+        XXX
+    </div>
+    <div class="menu-box-1"><img src="img/menu-box.png"></div>
+</div>
+
+<script type="text/javascript">
+/*侧边导航隐藏显示事件*/
+	var z = true;
+	$(".menu-box-1").click(function(){
+		if(z == true){
+			$(".left-menu").animate({marginLeft:0,},500);
+			/*$(".content").animate({marginLeft:290,},500).css("width","calc(100% - 290px)");
+			$(".content").addClass("content-1");*/
+			$(".menu-box-1 img").attr('src','img/close.png');
+			z = false;
+		}
+		else{
+			z = true;
+			$(".left-menu").animate({marginLeft:-290,},500);
+			/*$(".content").animate({marginLeft:0,width:'100%',},500);
+			$(".content").removeClass("content-1");*/
+			$(".menu-box-1 img").attr('src','img/menu-box.png');
+		}
+		
+	})
+	
+	
+/* --end-- */
+	
+/* 二级菜单显示隐藏效果 */
+	$(".child-nav").hide();
+	$(".nav > li").mouseenter(
+		function(){
+			$(this).children(".child-nav").show().fadeIn(500);
+			event.stopPropagation(); //阻止冒泡
+	})
+	
+	$(".nav > li").mouseleave(
+		function(){
+			$(this).children(".child-nav").hide().fadeOut(500);
+			event.stopPropagation(); //阻止冒泡
+		}
+	)
+/* -- end -- */	
+
+/* 判断侧边导航的菜单栏高度 */
+	var h = $(".left-menu .nav").height();
+			var h2 = $(window).height();
+			var h3 = h / h2;
+			if(h3 > (54 / 100)){
+				
+				$(".left-menu .nav > li a span").css("display","none");
+			}
+			else{
+				$(".left-menu .nav > li a span").css("display","inline-block");
+			}
+/* -- end -- */	
+</script>
+
+<div class="content" style="background:url(img/110155.jpg) no-repeat fixed;background-size: cover;">
+	<div class="main-cont">
+    	<ul class="nav-copy fix">
+            <li class="nav-select"><a href="#">在线留言</a></li>
+            <li>
+            	<i class="change"></i>
+            	<a href="#">联系我们</a>
+            </li>
+        </ul>
+        <div class="txt-box">
+        	<h1>在线留言 <i class="xian" style="background:rgba(0,0,0,0.2);"></i></h1>
+            <hr align="left">
+            <form>
+            	<ul class="form-style">
+            		<li>姓名<input type="text" name="" placeholder="请输入您的姓名"></li>
+                    <li class="even">电话<input type="text" name="" placeholder="请输入您的手机号码"></li>
+                    <textarea class="msg" placeholder="请输入留言内容" rows="10"></textarea>
+                    <li class="last">验证码<input type="text" name="" placeholder="请输入验证码"></li>
+                    <li class="ver"><img src="img/ver.jpg"></li>
+            	</ul>
+                <div class="bttn">
+                	<button type="submit" id="submit">提交</button>
+                    <button type="reset" id="reset">取消</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer deep">
+    	 <br/>
+		访问统计：  浏览总量<span>41046</span>次 /今日浏览<span>41</span>次 /今日独立访客<span>11</span>位    建议(1024*768) IE8.0以上浏览器浏览本站 <br/> 
+		<a href="#">即时通管理</a>    <a href="#">后台登录</a> <br/>
+		    <a href="">触屏版</a> 丨 <a href="">电脑版</a> <br/>
+    </div>
+</div>
+</body>
+</html>

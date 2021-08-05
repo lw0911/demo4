@@ -1,0 +1,58 @@
+.contactus-box dt,.contactus-box dd {
+	float: left;
+	*display: inline
+}
+
+.contactus-box dl {
+	zoom: 1
+}
+
+.contactus-box dl:before,.contactus-box dl:after {
+	content: "";
+	display: table
+}
+
+.contactus-box dl:after {
+	clear: both;
+	overflow: hidden
+}
+
+.contactus-box {
+	padding-right: 170px
+}
+
+.contactus-box h1 {
+	margin-left: 100px;
+	font: 700 20px/50px "Microsoft Yahei";
+	text-align: center;
+	color: #3d5480
+}
+
+.contactus-box .info {
+	padding-top: 70px;
+	font-size: 16px;
+	color: #757575
+}
+
+.contactus-box dl {
+	overflow: hidden;
+	padding: 0 0 43px 150px
+}
+
+.contactus-box dt {
+	width: 94px;
+	line-height: 32px;
+	font-size: 14px;
+	color: #3d5480
+}
+
+.contactus-box dd {
+	width: 380px;
+	line-height: 32px;
+	font-size: 16px;
+	color: #757575
+}
+
+.contactus-box dd .mail {
+	color: #3d5480
+}

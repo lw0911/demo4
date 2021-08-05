@@ -1,0 +1,271 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<title>时尚购鲜花购</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1, maximum-scale=1" />
+<link rel="stylesheet" href="css/css.css" />
+<script src="js/jquery.min.js"></script><!--公用-->
+<script src="js/script.js"></script><!--产品图片滚动-->
+<script src="js/superslide.2.1.js"></script><!--焦点图-->
+<script src="js/common.js"></script><!--导航-->
+<script src="js/jquery.slidebox.min.js"></script><!--轮播图-->
+<!--[if lte IE 6]>  
+<script src="js/dd_belatedpng.js"></script>  
+ <script>
+  DD_belatedPNG.fix('.img');
+ </script>
+<![endif]-->
+</head>
+<body>
+<!--top头部-->
+<div id="header">
+ <div class="top">
+  <div class="container fn-clear">
+   <h1 class="logo img"><a href="#" ><img src="images/logo.png" border="0" class="img"  /></a></h1>
+   <div class="head_ri">
+      <div class="head_ri_top"><span class="img">XXX</span><p><a href="#">返回首页</a>|
+
+        <a href="#" onclick="AddFavorite(window.location,document.title)">加入收藏</a>|
+
+        <a href="#" onclick="SetHome(window.location)">设为首页</a></p></div>
+      <div class="nav">
+    <ul id="main-menu" class="sm fn-clear">
+        <li style="background:none"><a href="index.html">网站首页</a></li>
+       <li><a href="news.html" >新闻资讯</a></li>
+       <li><a href="pic.html" >产品展示</a></li>
+       <li><a href="show.html" >联系我们</a></li>
+       <li><a href="#" >成功案例</a></li>
+       <li><a href="#" >营销网络</a></li>
+       <li><a href="#" >人才招聘</a></li>
+       <li><a href="#" >在线留言</a></li>  
+    </ul>
+      <script type="text/javascript">
+        $(function(){
+          $('#main-menu li ul').addClass('sub-menu');
+        })
+      </script>
+  </div>
+   </div>
+   </div>
+</div>
+</div>
+<!--banner-->
+
+<div class="fullSlide fn-relative">
+  <div class="bd">
+    <ul>
+      <li style="background-color:; background-image:url(); background-repeat:repeat-x"><!--背景图片-->
+       <a  style="background:url('images/banner1.jpg') no-repeat center center;background-size:cover;"></a>
+      </li>
+      <li style="background-color:; background-image:url(); background-repeat:repeat-x"><!--背景图片-->
+       <a  style="background:url('images/banner2.jpg') no-repeat center center;background-size:cover;"></a>
+      </li>
+        </ul>
+  </div>
+  <div class="hd"><ul></ul></div>
+  <span class="prev"></span>
+  <span class="next"></span>
+</div>
+<script type="text/javascript">
+$(".fullSlide").hover(function(){
+    $(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
+},
+function(){
+    $(this).find(".prev,.next").fadeOut()
+});
+$(".fullSlide").slide({
+    titCell: ".hd ul",
+    mainCell: ".bd ul",
+    effect: "fold",
+    autoPlay: true,
+    autoPage: true,
+    trigger: "click",
+    interTime:2500,//控制banner时间
+    startFun: function(i) {
+        var curLi = jQuery(".fullSlide .bd li").eq(i);
+        if ( !! curLi.attr("_src")) {
+            curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+        }
+    }
+});
+</script>
+  <!--联系我们-->
+
+<div class="container contact_mian fn-clear img">
+
+  <div class="contact_QQ fn-left"><p><b>某某时尚购有限公司</b></p></div>
+  <div class="contact_tele fn-left"><b>XXX</b><span>服务<br/>热线</span><p>TELEPHONE</p></div>
+  <div class="contact_adress fn-right"><span>公司地址</span><p>地址：北京丰台区xxx楼xxx号</p></div>
+
+</div>
+<!--图片与最新活动-->
+<div class="container mt30 fn-clear">
+
+          <div class="img_rolling fn-left img">
+    <div class="figure">
+    <div id="demo3" class="slideBox">
+
+      <ul class="items" id="part1">
+      
+      <li><a href="#" title="某某时尚购专题"><img src="images/b1.jpg"  onload="setImgMiddle(this);"></a></li>
+    
+      <li><a href="#" title="品质保证"><img src="images/b2.jpg"  onload="setImgMiddle(this);"></a></li>
+    
+      <li><a href="#" title="新鲜购"><img src="images/b3.jpg"  onload="setImgMiddle(this);"></a></li>
+
+      <li><a href="#" title="品牌购"><img src="images/b4.jpg"  onload="setImgMiddle(this);"></a></li>
+    
+     </ul>
+       </div>
+   </div>
+  </div>
+  
+
+  <div class="activity_mian fn-right">
+        
+      <h2>Case&nbsp;<b><a href="pic.html">成功案例</a></b></h2>
+      <ul>
+                <li>
+          <span class="child fn-left"><img src="images/p1.jpg"  onload="setImgMiddle(this);"></span>
+          <div class="activity_text fn-right">
+            <h3><a href="#">疯狂购，越购越年轻</a></h3>
+            <p><p>上购购物者的天堂，领先的购物平台，优质的购物体验，线上线下风光无限！满足你的各种尚购需求，全国唯一超大尚购体验店。</p></p>
+            <span><a href="#">查看更多</a><b>2016-1-13</b></span>
+          </div>
+        </li>
+              <li>
+          <span class="child fn-left"><img src="images/p2.jpg"  onload="setImgMiddle(this);"></span>
+          <div class="activity_text fn-right">
+            <h3><a href="#">某某时尚购，购年轻。</a></h3>
+            <p>基于领先业界的时尚购物平台，依托互联网口碑营销手段，某某时尚购成为最鲜活的购物平台，你购年轻吗？</p>
+            <span><a href="#">查看更多</a><b>2016-1-10</b></span>
+          </div>
+        </li>
+              <li>
+          <span class="child fn-left"><img src="images/p3.jpg"  onload="setImgMiddle(this);"></span>
+          <div class="activity_text fn-right">
+            <h3><a href="#">时尚美丽购传说</a></h3>
+            <p>你想要的这里都有，爱时尚就快来某某时尚购体验一下吧，三步一回头的惊心体验。来了不想走成了回头客的口头禅，你玩购了吗?</p>
+            <span><a href="#">查看更多</a><b>2016-1-10</b></span>
+          </div>
+        </li>
+      
+      </ul>
+        </div>
+</div>
+<!--作品展示-->
+<div class="container mt30">
+         <div class="container show_title img"><span>Products&nbsp;<b>产品展示</b></span><a href="#"><img src="images/hst_5f25.png" ></a></div>
+      <!--无缝滚动图片-->
+   <div class="scrollleft" id="part1">
+  <ul id="part1" class="fn-clear">
+        <li>
+         <a href="#" >
+          <div><img src="images/c1.jpg"  onload="setImgMiddle(this);" /></div>
+          <span>时尚购产品展示</span>
+         </a>
+        </li>
+          <li>
+         <a href="#" >
+          <div><img src="images/c2.jpg"  onload="setImgMiddle(this);" /></div>
+          <span>优质服务大家都说好</span>
+         </a>
+        </li>
+          <li>
+         <a href="#" >
+          <div><img src="images/c3.jpg"  onload="setImgMiddle(this);" /></div>
+          <span>没法比这样的效果</span>
+         </a>
+        </li>
+          <li>
+         <a href="#" >
+          <div><img src="images/c4.jpg"  onload="setImgMiddle(this);" /></div>
+          <span>好的产品在好的厂家展示效果才会带来销量</span>
+         </a>
+        </li>
+          <li>
+         <a href="#" >
+          <div><img src="images/c5.jpg"  onload="setImgMiddle(this);" /></div>
+          <span>优质产品展示平台</span>
+         </a>
+        </li>
+      
+</ul>
+ </div>
+<script type="text/javascript">
+$(document).ready(function(){
+
+  $(".scrollleft").imgscroll({
+    speed:40,    //图片滚动速度
+    amount: 0,    //图片滚动过渡时间
+    width: 1,     //图片滚动步数
+    dir: "left"   // "left" 或 "up" 向左或向上滚动
+  }); 
+});
+</script> 
+    </div>
+<div class="container fn-clear mt30">
+<!--新闻动态-->
+<div class="news_mian fn-left">
+        <div class="show_title news_title img"><span>News&nbsp;<b>新闻资讯</b></span><a href="#"><img src="images/hst_5f25.png" ></a></div>
+  <ul>
+        <li>
+      <span class="news_date"><strong>17</strong><b>2015-12</b></span>
+      <h2><a href="#">庐阳畅享时尚购碰撞圣诞节 平安夜人气爆棚嗨翻合肥步行街<br/><b>more>></b></a></h2>
+    </li>
+      <li>
+      <span class="news_date"><strong>16</strong><b>2015-12</b></span>
+      <h2><a href="#">【锦SHOW成都】“春熙汇”时尚购物节今日启动 2万份大礼等你来抢<br/><b>more>></b></a></h2>
+    </li>
+      <li>
+      <span class="news_date"><strong>15</strong><b>2015-12</b></span>
+      <h2><a href="#">时尚购物科普:去韩国买化妆品的攻略秘籍你一定要懂<br/><b>more>></b></a></h2>
+    </li>
+      <li>
+      <span class="news_date"><strong>14</strong><b>2015-12</b></span>
+      <h2><a href="#">多家商企竞购北京东直门某某时尚购物中心<br/><b>more>></b></a></h2>
+    </li>
+  
+  </ul>
+
+</div>
+
+<!--关于我们-->
+<div class="about_us fn-right">
+          <div class="show_title about_title img" ><span>About&nbsp;<b>公司简介</b></span><a href="#"><img src="images/hst_5f25.png" ></a></div>
+  <div class="about_text">
+     <div class="fn-left" id="part1"><img src="images/about.jpg"  onload="setImgMiddle(this);"></div>
+     <p><p><span style="color: rgb(103, 103, 103); font-family: 微软雅黑; font-size: 14px; line-height: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;某某时尚购云购物平台，依托强大的互联网支撑，通过大数据分析，时尚风向标预测，实时紧跟潮流风潮，实时演算结果，推送最时尚最流行的时尚购物体验。某某时尚购拥有全球几千家线下平台，客户预定可实现全球达。速度保证，让全球的客户享有全球最时尚的最快的购物体验，满足尚购一族的惊心体验。还在等待着淘宝的糟心购物体验，物流慢到龟速，产品质量参差不齐。无法保证的时尚，大街上全是撞衫族，这些你都能忍受吗。就来全球购吧！带给你不一样的体验，一次玩个购！</span></p></p>
+  </div>
+  </div>
+
+</div>
+<!--友情链接-->
+<div class="container link mt30">
+   <h2 class="img">友情链接</h2>
+   <ul class="fn-clear" id="part1">
+      
+      <li><a href="#" >百度</a></li>
+      <li><a href="#" >谷歌</a></li>
+      <li><a href="#" >腾讯</a></li>
+
+   </ul>
+</div>
+<!--底部-->
+<div class="bot_contact mt30">
+  <div class="container fn-clear">
+     <div class="bot_us fn-left img"><img src="images/hst_35.png"  class="img"><b>XXX</b><p>全国统一客服电话</p></div>
+
+     <div class="bot_address fn-right"><img src="images/hst_38.png"   class="img"><p>地址：北京丰台xxx路xxx号</p>
+     <p>电话：XXX</p>
+     </div>
+  </div>
+</div>
+<!--版权-->
+<div id="copyright">
+ <div class="container">
+<p><span style="color:#fb1871; font-family: 微软雅黑,;" >地址：北京丰台xxx路xxx号 电话：XXX </span></p><p><span style="color: #fb1871; font-family: 微软雅黑;" >版权所有：某某时尚购 技术支持：专业团队 ICP备案编号： 88888888</span></p> </div>
+</div>
+</body>
+</html>

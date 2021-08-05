@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<!--头部导航-->
+		<div class="header" id="header">
+			<div class="hed-logo fl"><a href="index.html"><img src="img/top-logo.jpg"/></a></div>
+			<div class="had-navBox fl">
+				<ul>
+					<li class="active"><a href="JavaScript:;">首页</a></li>
+					<li><a href="lingdao.html">领导机构</a></li>
+					<li><a href="wenjian.html">相关文件</a></li>
+					<li><a href="yuansuo.html">园所风采</a></li>
+					<li><a href="JavaScript:;">膳食健康</a></li>
+					<li><a href="xinwen.html">新闻动态</a></li>
+					<li><a href="women.html">关于我们</a></li>
+				</ul>
+			</div>
+			<div class="had-produceLink fr">
+				<a href="JavaScript:;" class="produce-link1">
+					<img src="img/top_img1.png"/>
+					<span>监管平台</span>
+				</a>
+				<a href="JavaScript:;" class="produce-link2">
+					<img src="img/top_img2.png"/></i>
+					<span>校长端</span>
+				</a>
+				<a href="JavaScript:;" class="produce-link3">
+					<img src="img/top_img3.png"/>
+					<span>家长端</span>
+				</a>
+			</div>
+		</div>
+		
+		<!--banner区域-->
+		<div class="banner-contion">
+			<div class="swiper-container" id="zl-banner-contion">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide"><a href="JavaScript:;"><img src="img/wugu.jpg"/></a></div>
+		            <div class="swiper-slide"><a href="JavaScript:;"><img src="img/jigou.jpg"/></a></div>
+		            <div class="swiper-slide"><a href="JavaScript:;"><img src="img/youji.jpg"/></a></div>
+		        </div>
+		        
+		        <div class="swiper-pagination zl-pagination"></div>
+		        
+		        <div class="zl-button-next swiper-button-next"><i class="iconfont">&#xe602;</i></div>
+        			<div class="zl-button-prev swiper-button-prev"><i class="iconfont">&#xe667;</i></div>
+		    </div>
+		</div>
+		
+		<!--主体部分-->
+		<div class="main-contion" id="main-contion">
+			
+			<!--***关于我们***-->
+			<div class="zl-aboutUs marTop80 max-width clearfloat">
+				<div class="zl-info fl">
+					<img src="img/about-img.png" alt="" />
+					<dl>
+						<dt>服务号码</dt>
+						<dd class="tel">XXX</dd>
+					</dl>
+					<dl>
+						<dt>服务邮箱</dt>
+						<dd>XXX</dd>
+					</dl>
+				</div>
+				<div class="zl-synopsis fr">
+					<h1>全国少儿膳食健康计划办公室</h1>
+					<div class="zl-video"><img src="img/video-img.png"/><a href="JavaScript:;" id="myImg"><i class="iconfont">&#xe630;</i></a></div>
+					<div class="zl-text">
+						<p>XXX提供精美好看的广告背景图片素材免费下载，本次作品主题是红色政府背景板。</p>
+						<p>XXX提供精美好看的广告背景图片素材免费下载，本次作品主题是红色政府背景板，建议使用CorelDRAW X7 及以上版本软件打开件打开，该广告背景图片素材大小是14.676 MB。红色政府背景板是由广告背景设计师N上传. 浏览本次作品的您可能还对 政府背景板 红色背景 红色渐变 橙色 宣传栏背景板感兴趣。</p>
+					</div>
+					<a href="javscript:;" class="zl-bant">了解更多 <i class="iconfont">&#xe7a5;</i></a>
+				</div>
+			</div>
+			
+			<!--官网视频视频-->
+			<div id="myModal" class="modal">
+			    <div id="caption" class="caption">
+			    		<div class="videoBox">
+			    			<!--播放器放的地方-->
+			    		</div>
+			    		<span class="close" id="close">×</span>
+			    </div>
+			</div>
+			
+			
+			<!--视差banner-->
+			<div class="cd-main-content zl-bj marTop80">
+				<div class="cd-fixed-bg cd-bg-1">
+					<div class="max-width">
+						<ul class="row clearfloat zl-cd-result">
+							<li class="col-3"><p><em id="myTargetElement"></em><i class="iconfont">＋</i></p><span>园长鼎力选择</span></li>
+							<li class="col-3"><p><em id="myTargetElement1"></em><i class="iconfont">＋</i></p><span>膳食服务幼儿</span></li>
+							<li class="col-3"><p><em id="myTargetElement2"></em><i class="iconfont">＋</i></p><span>膳食搭配菜谱</span></li>
+							<li class="col-3"><p><em id="myTargetElement3"></em><i class="iconfont">%</i></p><span>超高使用好评</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<!--核心产品-->
+			<div class="contion-hx max-width marTop80">
+				<div class="zl-title">
+					<h2>核心产品</h2>
+					<b><!--这里是装饰横线--></b> 
+					<p>每个平台相互交织，数据同步，让管理幼儿园更简单</p>
+				</div>
+				
+				<div class="zl-hx-contion marTop80 row clearfloat">
+					<div class="col-4">
+						<div class="zl-block hover">
+							<div class="zl-img">
+								<img src="img/hx-img.png"/>
+								<p>政府监管平台</p>
+							</div>
+							<div class="zl-info"><span>政府监管平台</span><i>-</i><em class="jieduan">是一个议使用CorelDRAW X7 及以上版本软件打开件打开，该广告背景图片素材大小是红色政府背景板是由背景图片素材红色政府背景板是由背景图片素材红色政府背景板是由背景图片素材</em></div>
+							<a href="javascript:;" class="zl-link">快速进入<i class="iconfont">&#xe7a5;</i></a> 
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="zl-block hover">
+							<div class="zl-img">
+								<img src="img/hx-img.png"/>
+								<p>政府监管平台</p>
+							</div>
+							<div class="zl-info"><span>政府监管平台</span><i>-</i><em class="jieduan">是一个议使用CorelDRAW X7 及以上版本软件打开件打开，该广告背景图片素材大小是红色政府背景板是由背景图片素材红色政府背景板是由背景图片素材红色政府背景板是由背景图片素材</em></div>
+							<a href="javascript:;" class="zl-link">快速进入<i class="iconfont">&#xe7a5;</i></a>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="zl-block hover">
+							<div class="zl-img">
+								<img src="img/hx-img.png"/>
+								<p>政府监管平台</p>
+							</div>
+							<div class="zl-info"><span>政府监管平台</span><i>-</i><em class="jieduan">是一个议使用CorelDRAW X7 及以上版本软件打开件打开，该广告背景图片素材大小是红色政府背景板是由背景图片素材红色政府背景板是由背景图片素材红色政府背景板是由背景图片素材</em></div>
+							<a href="javascript:;" class="zl-link">快速进入<i class="iconfont">&#xe7a5;</i></a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			<!--政策文件-->
+			<div class="contion-hx max-width marTop80">
+				<div class="zl-title">
+					<h2>政策文件</h2>
+					<b><!--这里是装饰横线--></b>
+					<p>国家政府机构，领导支持发言</p>
+				</div>
+				
+				<div class="zl-zc-contion marTop80 max-width">
+					<div class="swiper-container zl-zc-swiper" id="zc-swiper-container">
+					    <div class="swiper-wrapper">
+					        <div class="swiper-slide">
+					        		<div class="zl-zc-portrait"><img src="img/lingdao.png"/></div>
+					        		<div class="zl-zc-info">
+					        			<h4>李克强1<span>( 中共中央政治局常委，国务院总理 )</span></h4>
+					        			<div class="zl-zc-tilte"><span>李总理对家长说</span>:&nbsp;加强对儿童托育全过程监管 一定要让家长放心安心。</div>
+					        			<div class="zl-zc-js">
+										<p>发展公平而有质量的教育。推动城乡义务教育一体化发展，教育投入继续向困难地区和薄弱环节倾斜教育投入继续向困难地区和薄弱环节倾斜教育投入继续向困难地区和薄弱环节倾斜教育投入继续向困难地区和薄弱环节倾斜。切实降低农村学生辍学率，抓紧消除城镇“大班额”，着力解决中小学生课外负担重问题。儿童是民族的未来、家庭的希望。要多渠道增加学前教育资源供给，运用互联网等信息化手段，加强对儿童托育全过程监管，一定要让家长放心安心。支持社会力量举办职业教育 。推进普及高中阶段教育。以经济社会发展需要为导向，优化高等教育结构，加快“双一流”建设，支持中西部建设有特色、</p>
+										<p>发展公平而有质量的教育。推动城乡义务教育一体化发展，教育投入继续向困难地区和薄弱环节倾斜教育投入继续向困难地区和薄弱环节倾斜教育投入继续向困难地区和薄弱环节倾斜教育投入继续向困难地区和薄弱环节倾斜。切实降低农村学生辍学率，抓紧消除城镇“大班额”，着力解决中小学生课外负担重问题。儿童是民族的未来、家庭的希望。要多渠道增加学前教育资源供给，运用互联网等信息化手段，加强对儿童托育全过程监管，一定要让家长放心安心。支持社会力量举办职业教育 。推进普及高中阶段教育。以经济社会发展需要为导向，优化高等教育结构，加快“双一流”建设，支持中西部建设有特色、</p>
+					        			</div>
+					        		</div>
+					        		<div class="zl-zc-link"><a href="javascript:;"  target="_blank"><i class="iconfont" style="margin-top: 1px;">&#xe63e;</i>政策链接</a><a href="javascript:;"  target="_blank"><i class="iconfont">&#xe661;</i>查看全文</a></div>
+					        </div>
+					        <div class="swiper-slide">
+					        		<div class="zl-zc-portrait"><img src="img/lingdao.png"/></div>
+					        		<div class="zl-zc-info">
+					        			<h4>李克强2<span>( 中共中央政治局常委，国务院总理 )</span></h4>
+					        			<div class="zl-zc-tilte"><span>李总理对家长说</span>:&nbsp;加强对儿童托育全过程监管 一定要让家长放心安心。</div>
+					        			<div class="zl-zc-js">
+										<p>发展公平而有质量的教育。推动城乡义务教育一体化发展，教育投入继续向困难地区和薄弱环节倾斜教育投入继续向困难地区和薄弱环节倾斜教育投入继续向困难地区和薄弱环节倾斜教育投入继续向困难地区和薄弱环节倾斜。切实降低农村学生辍学率，抓紧消除城镇“大班额”，着力解决中小学生课外负担重问题。儿童是民族的未来、家庭的希望。要多渠道增加学前教育资源供给，运用互联网等信息化手段，加强对儿童托育全过程监管，一定要让家长放心安心。支持社会力量举办职业教育 。推进普及高中阶段教育。以经济社会发展需要为导向，优化高等教育结构，加快“双一流”建设，支持中西部建设有特色、</p>
+										<p>发展公平而有质量的教育。推动城乡义务教育一体化发展，教育投入继续向困难地区和薄弱环节倾斜教育投入继续向困难地区和薄弱环节倾斜教育投入继续向困难地区和薄弱环节倾斜教育投入继续向困难地区和薄弱环节倾斜。切实降低农村学生辍学率，抓紧消除城镇“大班额”，着力解决中小学生课外负担重问题。儿童是民族的未来、家庭的希望。要多渠道增加学前教育资源供给，运用互联网等信息化手段，加强对儿童托育全过程监管，一定要让家长放心安心。支持社会力量举办职业教育 。推进普及高中阶段教育。以经济社会发展需要为导向，优化高等教育结构，加快“双一流”建设，支持中西部建设有特色、</p>
+					        			</div>
+					        		</div>
+					        		<div class="zl-zc-link"><a href="javascript:;"  target="_blank"><i class="iconfont" style="margin-top: 1px;">&#xe63e;</i>政策链接</a><a href="javascript:;"  target="_blank"><i class="iconfont">&#xe661;</i>查看全文</a></div>
+					        </div>
+					        <div class="swiper-slide">
+					        		<div class="zl-zc-portrait"><img src="img/lingdao.png"/></div>
+					        		<div class="zl-zc-info">
+					        			<h4>李克强3<span>( 中共中央政治局常委，国务院总理 )</span></h4>
+					        			<div class="zl-zc-tilte"><span>李总理对家长说</span>:&nbsp;加强对儿童托育全过程监管 一定要让家长放心安心。</div>
+					        			<div class="zl-zc-js">
+										<p>发展公平而有质量的教育。推动城乡义务教育一体化发展，教育投入继续向困难地区和薄弱环节倾斜教育投入继续向困难地区和薄弱环节倾斜教育投入继续向困难地区和薄弱环节倾斜教育投入继续向困难地区和薄弱环节倾斜。切实降低农村学生辍学率，抓紧消除城镇“大班额”，着力解决中小学生课外负担重问题。儿童是民族的未来、家庭的希望。要多渠道增加学前教育资源供给，运用互联网等信息化手段，加强对儿童托育全过程监管，一定要让家长放心安心。支持社会力量举办职业教育 。推进普及高中阶段教育。以经济社会发展需要为导向，优化高等教育结构，加快“双一流”建设，支持中西部建设有特色、</p>
+										<p>发展公平而有质量的教育。推动城乡义务教育一体化发展，教育投入继续向困难地区和薄弱环节倾斜教育投入继续向困难地区和薄弱环节倾斜教育投入继续向困难地区和薄弱环节倾斜教育投入继续向困难地区和薄弱环节倾斜。切实降低农村学生辍学率，抓紧消除城镇“大班额”，着力解决中小学生课外负担重问题。儿童是民族的未来、家庭的希望。要多渠道增加学前教育资源供给，运用互联网等信息化手段，加强对儿童托育全过程监管，一定要让家长放心安心。支持社会力量举办职业教育 。推进普及高中阶段教育。以经济社会发展需要为导向，优化高等教育结构，加快“双一流”建设，支持中西部建设有特色、</p>
+					        			</div>
+					        		</div>
+					        		<div class="zl-zc-link"><a href="javascript:;"  target="_blank"><i class="iconfont" style="margin-top: 1px;">&#xe63e;</i>政策链接</a><a href="javascript:;"  target="_blank"><i class="iconfont">&#xe661;</i>查看全文</a></div>
+					        </div>
+					    </div>
+					    
+					
+					</div>
+					<!--切换-->
+					<div class="zl-qiehuang">
+						<a href="javascript:;" class="zl-prevBont" ><i class="iconfont">&#xe7a7;</i></a>
+						<a href="javascript:;" class="zl-nextBont" ><i class="iconfont">&#xe7a5;</i></a>
+					</div>
+					<!--进度-->
+					<div class="zl-jindu"></div>
+				</div>
+			</div>
+			
+			<!--营养膳食-->
+			<div class="contion-SY marTop80">
+				<div class="zl-title">
+					<h2>营养膳食</h2>
+					<b><!--这里是装饰横线--></b>
+					<p>上万篇膳食套餐食谱</p>
+				</div>
+				
+				<div class="zl-SY-contion max-width">
+					<div class="swiper-container" id="ss-swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide hover">
+								<a href="javscript:;" target="_blank">
+									<div class="zl-SY-img"><img src="img/yy-img.png" alt="" /></div>
+									<div class="zl-SY-info">
+										<h3>板栗-水晶糕收藏</h3>
+										<b><!--这里是装饰横线--></b>
+										<p class="jieduan2">炎炎夏日，没有什么比吃一根冰棍更能解酷暑之热的啦没有什么比吃一根冰棍更能解酷暑之热的啦没有什么比吃一根冰棍更能解酷暑之热的啦！浓浓的黑巧克力配上丝滑爽口的酸奶做成的冰棒，保证男女老少爱不释口！</p>
+										<span><i class="iconfont">&#xe602;</i></span>
+										
+									</div>
+								</a>	
+							</div>
+							<div class="swiper-slide hover">
+								<a href="javscript:;" target="_blank">
+									<div class="zl-SY-img"><img src="img/yy-img.png" alt="" /></div>
+									<div class="zl-SY-info">
+										<h3>板栗-水晶糕收藏</h3>
+										<b><!--这里是装饰横线--></b>
+										<p class="jieduan2">炎炎夏日，没有什么比吃一根冰棍更能解酷暑之热的啦没有什么比吃一根冰棍更能解酷暑之热的啦没有什么比吃一根冰棍更能解酷暑之热的啦！浓浓的黑巧克力配上丝滑爽口的酸奶做成的冰棒，保证男女老少爱不释口！</p>
+										<span><i class="iconfont">&#xe602;</i></span>
+										
+									</div>
+								</a>	
+							</div>
+							<div class="swiper-slide hover">
+								<a href="javscript:;" target="_blank">
+									<div class="zl-SY-img"><img src="img/yy-img.png" alt="" /></div>
+									<div class="zl-SY-info">
+										<h3>板栗-水晶糕收藏</h3>
+										<b><!--这里是装饰横线--></b>
+										<p class="jieduan2">炎炎夏日，没有什么比吃一根冰棍更能解酷暑之热的啦没有什么比吃一根冰棍更能解酷暑之热的啦没有什么比吃一根冰棍更能解酷暑之热的啦！浓浓的黑巧克力配上丝滑爽口的酸奶做成的冰棒，保证男女老少爱不释口！</p>
+										<span><i class="iconfont">&#xe602;</i></span>
+										
+									</div>
+								</a>	
+							</div>
+							<div class="swiper-slide hover">
+								<a href="javscript:;" target="_blank">
+									<div class="zl-SY-img"><img src="img/yy-img.png" alt="" /></div>
+									<div class="zl-SY-info">
+										<h3>板栗-水晶糕收藏</h3>
+										<b><!--这里是装饰横线--></b>
+										<p class="jieduan2">炎炎夏日，没有什么比吃一根冰棍更能解酷暑之热的啦没有什么比吃一根冰棍更能解酷暑之热的啦没有什么比吃一根冰棍更能解酷暑之热的啦！浓浓的黑巧克力配上丝滑爽口的酸奶做成的冰棒，保证男女老少爱不释口！</p>
+										<span><i class="iconfont">&#xe602;</i></span>
+										
+									</div>
+								</a>	
+							</div>
+							<div class="swiper-slide hover">
+								<a href="javscript:;" target="_blank">
+									<div class="zl-SY-img"><img src="img/yy-img.png" alt="" /></div>
+									<div class="zl-SY-info">
+										<h3>板栗-水晶糕收藏</h3>
+										<b><!--这里是装饰横线--></b>
+										<p class="jieduan2">炎炎夏日，没有什么比吃一根冰棍更能解酷暑之热的啦没有什么比吃一根冰棍更能解酷暑之热的啦没有什么比吃一根冰棍更能解酷暑之热的啦！浓浓的黑巧克力配上丝滑爽口的酸奶做成的冰棒，保证男女老少爱不释口！</p>
+										<span><i class="iconfont">&#xe602;</i></span>
+										
+									</div>
+								</a>	
+							</div>
+							<div class="swiper-slide hover">
+								<a href="javscript:;" target="_blank">
+									<div class="zl-SY-img"><img src="img/yy-img.png" alt="" /></div>
+									<div class="zl-SY-info">
+										<h3>板栗-水晶糕收藏</h3>
+										<b><!--这里是装饰横线--></b>
+										<p class="jieduan2">炎炎夏日，没有什么比吃一根冰棍更能解酷暑之热的啦没有什么比吃一根冰棍更能解酷暑之热的啦没有什么比吃一根冰棍更能解酷暑之热的啦！浓浓的黑巧克力配上丝滑爽口的酸奶做成的冰棒，保证男女老少爱不释口！</p>
+										<span><i class="iconfont">&#xe602;</i></span>
+										
+									</div>
+								</a>	
+							</div>
+							<div class="swiper-slide hover">
+								<a href="javscript:;" target="_blank">
+									<div class="zl-SY-img"><img src="img/yy-img.png" alt="" /></div>
+									<div class="zl-SY-info">
+										<h3>板栗-水晶糕收藏</h3>
+										<b><!--这里是装饰横线--></b>
+										<p class="jieduan2">炎炎夏日，没有什么比吃一根冰棍更能解酷暑之热的啦没有什么比吃一根冰棍更能解酷暑之热的啦没有什么比吃一根冰棍更能解酷暑之热的啦！浓浓的黑巧克力配上丝滑爽口的酸奶做成的冰棒，保证男女老少爱不释口！</p>
+										<span><i class="iconfont">&#xe602;</i></span>
+										
+									</div>
+								</a>	
+							</div>
+							<div class="swiper-slide hover">
+								<a href="javscript:;" target="_blank">
+									<div class="zl-SY-img"><img src="img/yy-img.png" alt="" /></div>
+									<div class="zl-SY-info">
+										<h3>板栗-水晶糕收藏</h3>
+										<b><!--这里是装饰横线--></b>
+										<p class="jieduan2">炎炎夏日，没有什么比吃一根冰棍更能解酷暑之热的啦没有什么比吃一根冰棍更能解酷暑之热的啦没有什么比吃一根冰棍更能解酷暑之热的啦！浓浓的黑巧克力配上丝滑爽口的酸奶做成的冰棒，保证男女老少爱不释口！</p>
+										<span><i class="iconfont">&#xe602;</i></span>
+										
+									</div>
+								</a>	
+							</div>
+							<div class="swiper-slide hover">
+								<a href="javscript:;" target="_blank">
+									<div class="zl-SY-img"><img src="img/yy-img.png" alt="" /></div>
+									<div class="zl-SY-info">
+										<h3>板栗-水晶糕收藏</h3>
+										<b><!--这里是装饰横线--></b>
+										<p class="jieduan2">炎炎夏日，没有什么比吃一根冰棍更能解酷暑之热的啦没有什么比吃一根冰棍更能解酷暑之热的啦没有什么比吃一根冰棍更能解酷暑之热的啦！浓浓的黑巧克力配上丝滑爽口的酸奶做成的冰棒，保证男女老少爱不释口！</p>
+										<span><i class="iconfont">&#xe602;</i></span>
+										
+									</div>
+								</a>	
+							</div>
+							<div class="swiper-slide hover">
+								<a href="javscript:;" target="_blank">
+									<div class="zl-SY-img"><img src="img/yy-img.png" alt="" /></div>
+									<div class="zl-SY-info">
+										<h3>板栗-水晶糕收藏</h3>
+										<b><!--这里是装饰横线--></b>
+										<p class="jieduan2">炎炎夏日，没有什么比吃一根冰棍更能解酷暑之热的啦没有什么比吃一根冰棍更能解酷暑之热的啦没有什么比吃一根冰棍更能解酷暑之热的啦！浓浓的黑巧克力配上丝滑爽口的酸奶做成的冰棒，保证男女老少爱不释口！</p>
+										<span><i class="iconfont">&#xe602;</i></span>
+										
+									</div>
+								</a>	
+							</div>
+							<div class="swiper-slide hover">
+								<a href="javscript:;" target="_blank">
+									<div class="zl-SY-img"><img src="img/yy-img.png" alt="" /></div>
+									<div class="zl-SY-info">
+										<h3>板栗-水晶糕收藏</h3>
+										<b><!--这里是装饰横线--></b>
+										<p class="jieduan2">炎炎夏日，没有什么比吃一根冰棍更能解酷暑之热的啦没有什么比吃一根冰棍更能解酷暑之热的啦没有什么比吃一根冰棍更能解酷暑之热的啦！浓浓的黑巧克力配上丝滑爽口的酸奶做成的冰棒，保证男女老少爱不释口！</p>
+										<span><i class="iconfont">&#xe602;</i></span>
+										
+									</div>
+								</a>	
+							</div>
+							<div class="swiper-slide hover">
+								<a href="javscript:;" target="_blank">
+									<div class="zl-SY-img"><img src="img/yy-img.png" alt="" /></div>
+									<div class="zl-SY-info">
+										<h3>板栗-水晶糕收藏</h3>
+										<b><!--这里是装饰横线--></b>
+										<p class="jieduan2">炎炎夏日，没有什么比吃一根冰棍更能解酷暑之热的啦没有什么比吃一根冰棍更能解酷暑之热的啦没有什么比吃一根冰棍更能解酷暑之热的啦！浓浓的黑巧克力配上丝滑爽口的酸奶做成的冰棒，保证男女老少爱不释口！</p>
+										<span><i class="iconfont">&#xe602;</i></span>
+										
+									</div>
+								</a>	
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+					
+					<a href="javscript:;" class="zl-bant">全部食谱 <i class="iconfont">&#xe7a5;</i></a>
+				</div>
+			</div>
+			
+			<!--新闻动态-->
+			<div class="contion-XW max-width marTop80">
+				<div class="zl-title">
+					<h2>新闻动态</h2>
+					<b><!--这里是装饰横线--></b>
+					<p>关注最新膳食动态</p>
+				</div>
+				
+				<div class="zl-xw-contion clearfloat marTop80">
+					<div class="swiper-container" id="gallery-top">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><a href="javascript:;" target="_blank"><img src="img/xw-img.png" alt="" /><div class="title1">细嚼慢咽 吃饭太快或致代谢综合征风险高出五倍<i class="iconfont">&#xe7a5;</i></div></a></div>
+							<div class="swiper-slide"><a href="javascript:;" target="_blank"><img src="img/xw-img.png" alt="" /><div class="title1">细嚼慢咽 吃饭太快或致代谢综合征风险高出五倍<i class="iconfont">&#xe7a5;</i></div></a></div>
+							<div class="swiper-slide"><a href="javascript:;" target="_blank"><img src="img/xw-img.png" alt="" /><div class="title1">细嚼慢咽 吃饭太快或致代谢综合征风险高出五倍<i class="iconfont">&#xe7a5;</i></div></a></div>
+							<div class="swiper-slide"><a href="javascript:;" target="_blank"><img src="img/xw-img.png" alt="" /><div class="title1">细嚼慢咽 吃饭太快或致代谢综合征风险高出五倍<i class="iconfont">&#xe7a5;</i></div></a></div>
+							<div class="swiper-slide"><a href="javascript:;" target="_blank"><img src="img/xw-img.png" alt="" /><div class="title1">细嚼慢咽 吃饭太快或致代谢综合征风险高出五倍<i class="iconfont">&#xe7a5;</i></div></a></div>
+							<div class="swiper-slide"><a href="javascript:;" target="_blank"><img src="img/xw-img.png" alt="" /><div class="title1">细嚼慢咽 吃饭太快或致代谢综合征风险高出五倍<i class="iconfont">&#xe7a5;</i></div></a></div>
+							<div class="swiper-slide"><a href="javascript:;" target="_blank"><img src="img/xw-img.png" alt="" /><div class="title1">细嚼慢咽 吃饭太快或致代谢综合征风险高出五倍<i class="iconfont">&#xe7a5;</i></div></a></div>
+							<div class="swiper-slide"><a href="javascript:;" target="_blank"><img src="img/xw-img.png" alt="" /><div class="title1">细嚼慢咽 吃饭太快或致代谢综合征风险高出五倍<i class="iconfont">&#xe7a5;</i></div></a></div>
+						</div>
+						<div class="zl-button-next swiper-button-next"><i class="iconfont">&#xe602;</i></div>
+        					<div class="zl-button-prev swiper-button-prev"><i class="iconfont">&#xe667;</i></div>
+					</div>
+					<div class="swiper-container" id="gallery-thumbs">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide active-nav">
+								<div class="zl-xw-time">
+									<p>20</p>
+									<em>2018-10</em>
+								</div>
+								<div class="zl-xw-info">
+									<h3>细嚼慢咽 吃饭太快或致代谢综合征风险高出五倍</h3>
+									<p>常听老人说，吃饭要细嚼慢咽。吃饭快到底有多大危害？日本一项最新研究显示，与吃饭细吃饭细吃饭细嚼慢咽的人相比，这可能让</p>
+								</div>
+								<i class="zl-xw-Label">01</i>
+							</div>
+							<div class="swiper-slide">
+								<div class="zl-xw-time">
+									<p>20</p>
+									<em>2018-10</em>
+								</div>
+								<div class="zl-xw-info">
+									<h3>细嚼慢咽 吃饭太快或致代谢综合征风险高出五倍</h3>
+									<p>常听老人说，吃饭要细嚼慢咽。吃饭快到底有多大危害？日本一项最新研究显示，与吃饭细嚼慢咽的人相比，这可能让</p>
+								</div>
+								<i class="zl-xw-Label">02</i>
+							</div>
+							<div class="swiper-slide">
+								<div class="zl-xw-time">
+									<p>20</p>
+									<em>2018-10</em>
+								</div>
+								<div class="zl-xw-info">
+									<h3>细嚼慢咽 吃饭太快或致代谢综合征风险高出五倍</h3>
+									<p>常听老人说，吃饭要细嚼慢咽。吃饭快到底有多大危害？日本一项最新研究显示，与吃饭细嚼慢咽的人相比，这可能让</p>
+									
+								</div>
+								<i class="zl-xw-Label">03</i>
+							</div>
+							<div class="swiper-slide">
+								<div class="zl-xw-time">
+									<p>20</p>
+									<em>2018-10</em>
+								</div>
+								<div class="zl-xw-info">
+									<h3><a href="JavaScript:;" target="_blank">细嚼慢咽 吃饭太快或致代谢综合征风险高出五倍</a></h3>
+									<p>常听老人说，吃饭要细嚼慢咽。吃饭快到底有多大危害？日本一项最新研究显示，与吃饭细嚼慢咽的人相比，这可能让</p>
+									
+								</div>
+								<i class="zl-xw-Label">04</i>
+							</div>
+							<div class="swiper-slide">
+								<div class="zl-xw-time">
+									<p>20</p>
+									<em>2018-10</em>
+								</div>
+								<div class="zl-xw-info">
+									<h3><a href="JavaScript:;" target="_blank">细嚼慢咽 吃饭太快或致代谢综合征风险高出五倍</a></h3>
+									<p>常听老人说，吃饭要细嚼慢咽。吃饭快到底有多大危害？日本一项最新研究显示，与吃饭细嚼慢咽的人相比，这可能让</p>
+									
+								</div>
+								<i class="zl-xw-Label">05</i>
+							</div>
+							<div class="swiper-slide">
+								<div class="zl-xw-time">
+									<p>20</p>
+									<em>2018-10</em>
+								</div>
+								<div class="zl-xw-info">
+									<h3><a href="JavaScript:;" target="_blank">细嚼慢咽 吃饭太快或致代谢综合征风险高出五倍</a></h3>
+									<p>常听老人说，吃饭要细嚼慢咽。吃饭快到底有多大危害？日本一项最新研究显示，与吃饭细嚼慢咽的人相比，这可能让</p>
+								</div>
+								<i class="zl-xw-Label">06</i>
+							</div>
+							<div class="swiper-slide">
+								<div class="zl-xw-time">
+									<p>20</p>
+									<em>2018-10</em>
+								</div>
+								<div class="zl-xw-info">
+									<h3><a href="JavaScript:;" target="_blank">细嚼慢咽 吃饭太快或致代谢综合征风险高出五倍</a></h3>
+									<p>常听老人说，吃饭要细嚼慢咽。吃饭快到底有多大危害？日本一项最新研究显示，与吃饭细嚼慢咽的人相比，这可能让</p>
+								</div>
+								<i class="zl-xw-Label">07</i>
+							</div>
+							<div class="swiper-slide">
+								<div class="zl-xw-time">
+									<p>20</p>
+									<em>2018-10</em>
+								</div>
+								<div class="zl-xw-info">
+									<h3><a href="JavaScript:;" target="_blank">细嚼慢咽 吃饭太快或致代谢综合征风险高出五倍</a></h3>
+									<p>常听老人说，吃饭要细嚼慢咽。吃饭快到底有多大危害？日本一项最新研究显示，与吃饭细嚼慢咽的人相比，这可能让</p>
+								</div>
+								<i class="zl-xw-Label">08</i>
+							</div>
+						</div>
+						<div class="swiper-scrollbar"></div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<!--合作园所-->
+			<div class="contion-XZ max-width marTop80">
+				<div class="zl-title">
+					<h2>合作园所</h2>
+					<b><!--这里是装饰横线--></b>
+					<p>上万所优质园所的选择</p>
+				</div>
+				
+				<div class="zl-yx-contion marTop80">
+					<div class="swiper-container" id="yx-swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide hover" target="_blank">
+								<a href="javascript:;">
+									<img class="on" src="img/ys-img2.png"/>
+									<img src="img/ys-img1.png"/>
+								</a>
+							</div>
+							<div class="swiper-slide hover" target="_blank">
+								<a href="javascript:;">
+									<img class="on" src="img/ys-img2.png"/>
+									<img src="img/ys-img1.png"/>
+								</a>
+							</div>
+							<div class="swiper-slide hover" target="_blank">
+								<a href="javascript:;">
+									<img class="on" src="img/ys-img2.png"/>
+									<img src="img/ys-img1.png"/>
+								</a>
+							</div>
+							<div class="swiper-slide hover" target="_blank">
+								<a href="javascript:;">
+									<img class="on" src="img/ys-img2.png"/>
+									<img src="img/ys-img1.png"/>
+								</a>
+							</div>
+							<div class="swiper-slide hover" target="_blank">
+								<a href="javascript:;">
+									<img class="on" src="img/ys-img2.png"/>
+									<img src="img/ys-img1.png"/>
+								</a>
+							</div>
+							<div class="swiper-slide hover" target="_blank">
+								<a href="javascript:;">
+									<img class="on" src="img/ys-img2.png"/>
+									<img src="img/ys-img1.png"/>
+								</a>
+							</div>
+							<div class="swiper-slide hover" target="_blank">
+								<a href="javascript:;">
+									<img class="on" src="img/ys-img2.png"/>
+									<img src="img/ys-img1.png"/>
+								</a>
+							</div> 
+							<div class="swiper-slide hover" target="_blank">
+								<a href="javascript:;">
+									<img class="on" src="img/ys-img2.png"/>
+									<img src="img/ys-img1.png"/>
+								</a>
+							</div>
+							<div class="swiper-slide hover" target="_blank">
+								<a href="javascript:;">
+									<img class="on" src="img/ys-img2.png"/>
+									<img src="img/ys-img1.png"/>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+			
+			<!--页脚-->
+			<div class="footer-contion marTop80">
+				<div class="max-width">
+					<div class="fonter-box clearfloat">
+						<div class="zl-fonter-info">
+							<h2>全国少儿膳食健康计划说明</h2>
+							<b><!--这里是装饰横线--></b>
+							<p>儿童正处于生长发育阶段，新陈代谢旺盛，对各种营养素的需要量相对高于成人，合理营养不仅能保证他们的正常生长发育，也可为其成年后的健康打下良好基础。</p>
+						</div>
+						<div class="zl-fonter-service">
+							<h2>客服咨询</h2>
+							<div class="zl-fonter-contact"><i class="iconfont" style="font-size: 19px;">&#xe797;</i>XXX</div>
+							<div class="zl-fonter-contact"><i class="iconfont" style="font-size: 18px;">&#xe647;</i>XXX</div>
+							<a href="javascript:;" class="zl-bant">在线客服<i class="iconfont" style="font-size: 18px;">&#xe607;</i></a>
+						</div>
+					</div>
+					<div class="fonter-prove">
+						<a href="javascript:;">XXX科技有限公司@版权所有</a>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--回到顶部-->
+		<div class="upTop" id="upTop">
+			<ul>
+				<li>
+					<a href="javascript:;"><i class="iconfont" style="font-size: 38px;">&#xe608;</i><p class="rwm-title">安全监管</p></a>
+				</li>
+				<li>
+					<a href="javascript:;"><i class="iconfont">&#xe7fc;</i><p class="rwm-title">校长端</p></a>
+					<div class="rwm-box" style="top: -56px;">
+						<img src="img/rvm.jpg"/>
+						<em class="rem-info">扫码关注校长端</em>
+						<b class="arrow" style="top: 76px;"></b>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:;"><i class="iconfont" style="font-size: 32px;">&#xe65d;</i><p class="rwm-title">家长端</p></a>
+					<div class="rwm-box" style="top: -112px;">
+						<img src="img/rvm2.jpg"/>
+						<em class="rem-info">扫码关注家长端</em>
+						<b class="arrow" style="top: 130px;"></b>
+					</div>
+				</li>
+				<li id="top-Up" ><a href="javascript:;"><i class="iconfont">&#xe61a;</i><p class="rwm-title">回到顶部</p></a></li>
+			</ul>
+		</div>
+		
+		<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/style.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/countUp.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".jieduan").each(function() {
+				var maxwidth = 60;
+				if($(this).text().length > maxwidth) {
+					$(this).text($(this).text().substring(0, maxwidth));
+					$(this).html($(this).html() + '...')
+				}
+			});
+		
+			$(".jieduan2").each(function() {
+				var maxwidth = 50;
+				if($(this).text().length > maxwidth) {
+					$(this).text($(this).text().substring(0, maxwidth));
+					$(this).html($(this).html() + '...')
+				}
+			});
+			
+			$('#myImg').click(function(){
+				$('#myModal').fadeIn();
+			});
+			$('#close').click(function(){
+				$('#myModal').fadeOut(); 
+			});
+			
+			
+			
+		</script>
+		
+		<script type="text/javascript">
+			var options = {   
+				useEasing: true,
+			  	useGrouping: true,
+			  	separator: ',',
+			  	decimal: '.',
+			  	prefix: '',
+			  	suffix: ''
+			};
+			var shuzi = new CountUp("myTargetElement", 0, 300000, 0, 2, options);
+			var shuzi1 = new CountUp("myTargetElement1", 0, 10000, 0, 2, options);
+			var shuzi2 = new CountUp("myTargetElement2", 0, 6000, 0, 2, options);
+			var shuzi3 = new CountUp("myTargetElement3", 0, 98, 0, 2, options);
+		
+			var juli = $('.cd-main-content').offset().top - 400;
+			$(window).scroll(function() {
+				if($(window).scrollTop() >= juli) {
+					shuzi.start();
+					shuzi1.start();
+					shuzi2.start();
+					shuzi3.start();
+				}
+			})
+		</script>
+	</body>
+</html>
+ 

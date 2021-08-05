@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/articel_1.css" />
+		<script src="js/jquery1.42.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/sc.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				//banner
+				jQuery(".slideBox").slide({
+					mainCell: ".bd ul",
+					effect: "leftLoop",
+					autoPlay: true,
+				});
+				//内页案例滚动
+				jQuery(".picMarquee-top").slide({
+					mainCell: ".bd ul",
+					autoPlay: true,
+					effect: "topMarquee",
+					vis: 3,
+					interTime: 50,
+					opp: true,
+				});
+			});
+			window._bd_share_config = {
+				"common": {
+					"bdSnsKey": {},
+					"bdText": "",
+					"bdMini": "2",
+					"bdPic": "",
+					"bdStyle": "0",
+					"bdSize": "16"
+				},
+				"share": {},
+				//"image": {
+				//"viewList": ["qzone", "tsina", "tqq", "renren", "weixin"],
+				//"viewText": "分享到：",
+				//"viewSize": "16"
+				//},
+				"selectShare": {
+					"bdContainerClass": null,
+					"bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"]
+				}
+			};
+			with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+		</script>
+	</head>
+
+	<body>
+		<!--顶部-->
+		<div class="nav_top">
+			<div class="nav_top_in">
+				<p>XXX 欢迎您！！！</p>
+				<ul>
+					<li>
+						<a href="javascript:void(0)" onclick="SetHome(this,window.location)">设为首页</a>
+					</li>
+					<li class="wx">
+						<a>微信关注</a>
+						<img src="img/wx.jpg" />
+					</li>
+					<li>
+						<a href="">联系我们</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--logo-->
+		<div class="logo" id="logo">
+			<a href=""><img src="img/logo.png" /></a>
+			<img src="img/dh1.png" />
+		</div>
+		<!--导航-->
+		<div class="nav_bj">
+			<div class="nav">
+				<ul>
+					<li class="on">
+						<a href="">首 页</a>
+					</li>
+					<li>
+						<a href="">关于我们</a>
+						<ol>
+							<li>
+								<a href="">公司介绍</a>
+							</li>
+							<li>
+								<a href="">公司理念</a>
+							</li>
+							<li>
+								<a href="">法人致辞</a>
+							</li>
+							<li>
+								<a href="">机构组织</a>
+							</li>
+						</ol>
+					</li>
+					<li>
+						<a href="">业务内容</a>
+					</li>
+					<li>
+						<a href="">新闻中心</a>
+						<ol>
+							<li>
+								<a href="">法律法规</a>
+							</li>
+							<li>
+								<a href="">公司动态</a>
+							</li>
+							<li>
+								<a href="">公告通知</a>
+							</li>
+							<li>
+								<a href="">招标公告</a>
+							</li>
+							<li>
+								<a href="">中标公示</a>
+							</li>
+						</ol>
+					</li>
+					<li>
+						<a href="">经典案例</a>
+					</li>
+					<li>
+						<a href="">管理平台</a>
+					</li>
+					<li>
+						<a href="">联系我们</a>
+					</li>
+				</ul>
+				<div class="search">
+					<input type="text" class="sea" name="" id="" value="请输入关键字" onfocus="if(this.value==this.defaultValue){this.value='';};" onblur="if(this.value==''){this.value=this.defaultValue;}" />
+					<input type="submit" class="but" name="" id="" value="" />
+				</div>
+			</div>
+		</div>
+		<!--banner-->
+		<div id="slideBox" class="slideBox">
+			<div class="hd">
+				<ul>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="bd">
+				<ul>
+					<li>
+						<a href=" "><img src="img/banner1.jpg" /></a>
+					</li>
+					<li>
+						<a href=" "><img src="img/banner1.jpg" /></a>
+					</li>
+				</ul>
+			</div>
+			<!--前/后按钮-->
+			<a class="prev" href="javascript:void(0)"></a>
+			<a class="next" href="javascript:void(0)"></a>
+		</div>
+		<!--内页-->
+		<div class="inside">
+			<div class="inside_left">
+				<div class="inside_left_1 inside_left_nav">
+					<h2>经典案例</h2>
+					<ul>
+						<li>--
+							<a href="">工程造价</a> --
+						</li>
+						<li>--
+							<a href="">市政建设</a> --
+						</li>
+						<li>--
+							<a href="">写字楼造价</a> --
+						</li>
+					</ul>
+				</div>
+				<div class="inside_left_1">
+					<h2>新闻中心<a href="" class="more">更多>></a></h2>
+					<ul>
+						<li>•
+							<a href="">中华人民共和国招标投标法</a>
+						</li>
+						<li>•
+							<a href="">工程造价咨询单位管理办法</a>
+						</li>
+						<li>•
+							<a href="">西安市阎良污水处理厂二期工程施工项目招标公告</a>
+						</li>
+						<li>•
+							<a href="">渭南市临渭区猕猴桃产业项目</a>
+						</li>
+						<li>•
+							<a href="">西北税务学校操场改造及绿化</a>
+						</li>
+						<li>•
+							<a href="">中华人民共和国建筑法</a>
+						</li>
+						<li>•
+							<a href="">陕西省环保厅眉县废物库（基地）三期工程中标公示</a>
+						</li>
+					</ul>
+				</div>
+				<div class="picMarquee-top inside_left_1">
+					<h2>经典案例<a href="" class="more">更多>></a></h2>
+					<div class="bd">
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/cp_1.jpg" />
+									<p>工业园污水处理设施建设</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/cp_2.jpg" />
+									<p>工业园污水处理设施建设</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/cp_3.jpg" />
+									<p>工业园污水处理设施建设</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="inside_right">
+				<div class="inside_right_top">
+					<a href="" class="home">首页</a>
+					<i>>></i>
+					<a href="">经典案例</a>
+					<i>>></i>
+					<a href="">市政建设</a>
+				</div>
+				<h2>中华人民共和国企业国有资产法</h2>
+				<div class="inside_right_1">
+					<div class="inside_right_1_left">
+						<p>作者：admin</p>
+						<p>来源：XXX</p>
+						<p>发布时间：2017-04-27</p>
+					</div>
+					<div class="bdsharebuttonbox">
+						<p>分享到：</p>
+						<a href="#" class="bds_qzone" data-cmd="qzone"></a>
+						<a href="#" class="bds_tsina" data-cmd="tsina"></a>
+						<a href="#" class="bds_tqq" data-cmd="tqq"></a>
+						<a href="#" class="bds_renren" data-cmd="renren"></a>
+						<a href="#" class="bds_weixin" data-cmd="weixin"></a>
+						<a href="#" class="bds_more" data-cmd="more"></a>
+					</div>
+				</div>
+				<div class="inside_right_2">
+					<!--调用文章-->
+					<style type="text/css">
+						.inside_right_2 p {
+							line-height: 36px;
+							color: #666;
+							font-size: 1.4rem;
+							text-indent: 2em;
+						}
+					</style>
+					<img src="img/banner1.jpg" style="margin-bottom: 20px;" />
+					<p>（2008年10月28日第十一届全国人民代表大会常务委员会第五次会议通过　2008年10月28日中华人民共和国主席令第五号公布　自2009年5月1日起施行）</p>
+					<p>第一章　总则<br/> 　　第二章　履行出资人职责的机构<br/>  　　第三章　国家出资企业<br/>  　　第四章　国家出资企业管理者的选择与考核<br/>  　　第五章　关系国有资产出资人权益的重大事项<br/>  　　第一节　一般规定<br/>  　　第二节　企业改制<br/>  　　第三节　与关联方的交易<br/>  　　第四节　资产评估<br/>  　　第五节　国有资产转让<br/>  　　第六章　国有资本经营预算<br/>  　　第七章　国有资产监督<br/>  　　第八章　法律责任 <br/> 　　第九章　附则</p>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="nav_bj">
+			<div class="nav">
+				<ul>
+					<li>
+						<a href="">首 页</a>
+					</li>
+					<li>
+						<a href="">关于我们</a>
+					</li>
+					<li>
+						<a href="">业务内容</a>
+					</li>
+					<li>
+						<a href="">新闻中心</a>
+					</li>
+					<li>
+						<a href="">经典案例</a>
+					</li>
+					<li>
+						<a href="">管理平台</a>
+					</li>
+					<li>
+						<a href="">联系我们</a>
+					</li>
+				</ul>
+				<a class="top" href="#logo">返回顶部</a>
+			</div>
+		</div>
+		<div class="footer_bj">
+			<div class="footer">
+				<p>Copyright © 2020<br/>
+					公司地址：XXX<br/>Email: XXX | 联系手机：XXX<br/>技术支持：
+					<a href="">XXX</a>
+				</p>
+				<img class="dh" src="img/dh2.png" />
+				<img class="wx" src="img/wx.jpg" />
+			</div>
+		</div>
+	</body>
+
+</html>

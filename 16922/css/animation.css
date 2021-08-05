@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+@keyframes myfirst
+{
+	0%{
+		transform:scale(0) rotate(0deg);
+		-webkit-transform:scale(0) rotate(0deg);
+		-moz-transform:scale(0) rotate(0deg);
+		-o-transform:scale(0) rotate(0deg); 
+	}
+	50%{
+		transform:scale(1.5) rotate(360deg);
+		-webkit-transform:scale(1.5) rotate(360deg);
+		-moz-transform:scale(1.5) rotate(360deg);
+		-o-transform:scale(1.5) rotate(360deg); 
+	}
+	100%{
+		transform:scale(1) rotate(360deg);
+		-webkit-transform:scale(1) rotate(360deg);
+		-moz-transform:scale(1) rotate(360deg);
+		-o-transform:scale(1) rotate(360deg); 
+	}
+
+/*
+from {left: 3000px; opacity: 0; }
+to { left:50%; opacity: 1;}
+*/
+}
+.word-con
+{
+
+
+@keyframes li-zx
+{
+from {left: -1000px;opacity: 0; }
+to {left: 175px;opacity: 1 }
+}
+.li-zx {
+	animation: li-zx 1.5s;
+	-moz-animation: li-zx 1.5s;	/* Firefox */
+	-webkit-animation: li-zx 1.5s;	/* Safari 和 Chrome */
+	-o-animation: li-zx 1.5s;	/* Opera */
+}
+
+
+
+.bd li .li-img {
+	-webkit-backface-visibility: hidden;
+    -webkit-animation: imageAnimation 36s linear infinite 0s;
+    -moz-animation: imageAnimation 36s linear infinite 0s;
+    -o-animation: imageAnimation 36s linear infinite 0s;
+    -ms-animation: imageAnimation 36s linear infinite 0s;
+    animation: imageAnimation 36s linear infinite 0s;
+	animation-iteration-count:infinite;
+
+}
+.li-img01,.li-img02,.li-img03,.li-img04,.li-img05,.li-img1,.itemli-img02,.itemli-img03,.itemli-img04,.itemli-img05{
+	-webkit-backface-visibility: hidden;
+    -webkit-animation: imageAnimation 36s linear infinite 0s;
+    -moz-animation: imageAnimation 36s linear infinite 0s;
+    -o-animation: imageAnimation 36s linear infinite 0s;
+    -ms-animation: imageAnimation 36s linear infinite 0s;
+    animation: imageAnimation 36s linear infinite 0s;
+	animation-iteration-count:infinite;
+
+}
+@keyframes imageAnimation { 
+	0% {
+	    opacity: 1;
+	    animation-timing-function: ease-in;
+	}
+	8% {
+	    opacity: 1;
+	    transform: scale(1.05);
+	    animation-timing-function: ease-out;
+	}
+	17% {
+	    opacity: 1;
+	    transform: scale(1.1) ;
+	}
+	25% {
+	    opacity: 1;
+	    transform: scale(1.05);
+	}
+	100% { opacity: 1 }
+}

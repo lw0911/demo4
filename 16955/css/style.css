@@ -1,0 +1,225 @@
+﻿/* AB模版网 做最好的织梦整站模板下载网站 Www.AdminBuy.Cn */
+/* QQ：9490489 */
+/* 仿站：Fang.AdminBuy.Cn */
+/* 素材：Sc.AdminBuy.Cn */
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0}
+ul li{ list-style:none}
+img{ border:0; max-width:100%}
+a{ text-decoration:none; color:#333}
+.clear{ clear:both}
+body{ font-family:"微软雅黑"; width:100%; min-width:1200px;color: #333;font-size: 12px;}
+.ccsl{ display:block;overflow:hidden; white-space:nowrap;text-overflow:ellipsis;}
+p{text-align:justify; letter-spacing:1px}
+
+.main{ width:1200px; margin:0 auto;}
+
+
+.banner{ width:100%; min-width:1200px; /*height:400px;*/ overflow:hidden; position:relative;font-size:0; margin:0 auto;}
+.b-img{ /*height:400px;*/  position:absolute; left:0; top:0;}
+.b-img img{ display:block; /*height:400px;*/ float:left;}
+.b-list{ height:20px; /*padding-top:380px;*/ margin:0 auto;position:relative;z-index:1;}
+.b-list span{ display:block;cursor:pointer; width:10px; height:10px; border-radius:50%; background:#fff; float:left; margin:0 5px; _margin:0 3px;}
+.b-list .spcss{ background:#d8241d}
+
+
+.topbox{ width:100%; min-width:1200px; height:40px; line-height:40px; background:#313131; overflow:hidden}
+.topbox p{ color:#fff}
+
+
+.logo{ width:1200px; margin:0 auto; overflow:hidden}
+.logo img{ width:1200px; display:block}
+
+
+.nav{ width:100%; min-width:1200px;height:50px; line-height:50px; background:#f67903; overflow:hidden}
+.nav ul{ overflow:hidden}
+.nav ul li{width: 120px; float:left;height: 50px;margin-right: 1px;}
+.nav ul li a{ display:block;color: #FFFFFF;line-height: 50px;font-size: 14px; text-align:center}
+.nav ul li a:hover,.nav ul li a.on{ color:#fff; background:#d07304}
+
+
+.part1{ width:100%; min-width:1200px;background:url(../images/bg1.jpg) repeat-x;height: 380px; padding-top:30px}
+.part1 .L{float: left;width: 280px;margin-left: 15px;padding-top: 75px;margin-right: 55px;}
+.part1 .L .titbox{height: 50px;background:#1251ff;}
+.part1 .L .titbox p{font-size: 24px;font-weight: bold;text-align: center;line-height: 50px; color:#fff}
+.part1 .L .conbox{background: #fff;padding: 28px 24px;line-height: 29px;color: #333333;}
+.part1 .L .conbox .con{height: 145px;overflow: hidden;}
+.part1 .C{float: left;width: 535px;margin-right: 35px;padding-top: 75px;}
+.part1 .C .titbox{ height:35px; line-height:35px; overflow:hidden;padding-left: 13px;margin-bottom: 20px;}
+.part1 .C .titbox p{ float:left;font-size: 18px;font-weight: bold;color: #fff; max-width:380px}
+.part1 .C .titbox a{ float:right;padding-right: 10px;font-size: 12px;color: #fff;}
+.part1 .C ul{ overflow:hidden;}
+.part1 .C ul li{width: 235px;height: 170px;margin: 14px;float: left;border: 2px solid #fff;text-align: center;}
+.part1 .C ul li img{ display:block;width: 235px;height: 170px}
+.part1 .R{float: right;width: 280px;background: #fff;color: #999999;}
+.part1 .R .titbox{height: 50px;line-height: 50px;background:#1251ff;padding-left: 22px;font-size: 24px;font-weight: bold;color: #fff; overflow:hidden}
+.part1 .R .titbox p{ float:left;}
+.part1 .R .titbox span{ float:left;padding-left: 10px;font-size: 16px;}
+.part1 .R .conbox{padding:20px;font-size: 14px;}
+.part1 .R .conbox .con{ overflow:hidden; height:326px}
+.part1 .R .conbox .con p{line-height: 40px;border-bottom: 1px dashed #999999;}
+
+
+.part2{ width:1200px; margin:0 auto; overflow:hidden;}
+.contitbox{ width:1200px;margin:0 auto; overflow:hidden;margin-top:10px;text-align: center;background: url(../images/titbg.png) no-repeat center 60px;margin-bottom: 30px;}
+.contitbox h3{ text-align:center;line-height: 40px;font-size: 32px;color: #000000; font-weight:normal}
+.contitbox p{ text-align:center;font-size: 14px;color: #999999;line-height: 17px;margin-bottom: 48px;}
+.contitbox span{ text-align:center;font-size: 14px;font-weight: bold;color: #333333;line-height: 22px;}
+
+.p2con{ overflow:hidden; padding-bottom:60px;}
+.p2con .L{margin-left: 89px;margin-right: 77px;width: 616px; height:210px;float: left;border-bottom: 2px solid #999999;border-top: 2px solid #999999; overflow:hidden}
+.p2con .L .con{padding: 8px;line-height: 33px;text-indent: 2em;}
+.p2con .R{width: 418px;height:210px; overflow:hidden;float: right;margin-top: 10px;}
+.p2con .R img{ display:block;width: 418px;height:210px; overflow:hidden;}
+
+
+.part3{width:100%; min-width:1200px;padding: 60px 0px;background: url(../images/bj.jpg) no-repeat; background-size:100% 100%;overflow: hidden;}
+
+.typebox{width: 260px; overflow:hidden;float: left; background:#333;}
+.typebox .titbox{height: 77px;background: url(../images/titbg2.png) no-repeat top;}
+.typebox .titbox p{padding-left: 52px;color: #fff;padding-top: 12px;line-height: 24px;font-size: 18px;font-weight: bold;}
+.typebox .titbox span{color: #fff;line-height: 15px;padding-left: 52px;font-size: 12px;text-transform: uppercase;font-weight: bold;}
+
+.typebox ul{ overflow:hidden}
+.typebox ul.hei{ max-height:390px; overflow:hidden}
+.typebox ul li{}
+.typebox ul li .typeone{width: 100%;height: 42px;line-height: 42px;text-indent: 4em;background: url(../images/icon.png) no-repeat 20px center;border-bottom: 1px dashed #999999; overflow:hidden}
+.typebox ul li .typeone a{font-weight: bold;color: #fff;font-size: 14px;}
+.typebox ul li .typetwo{width: 220px;text-indent: 4em;margin: auto; display:none}
+.typebox ul li .typetwo a{color: #fff;height: 30px;line-height: 30px;}
+
+.typebox .more{background: #333333;line-height: 60px;text-align: center;height: 60px;margin-top: 19px;}
+.typebox .more a{color: #FFFFFF;font-size: 14px;}
+
+.part3 ul.proul{width: 920px; overflow:hidden;float: right;}
+.part3 ul.proul li{ width:255px; float:left; margin:0 4px; padding:20px 20px 0 20px; border:1px solid #999; margin-top:20px; overflow:hidden}
+.part3 ul.proul li .pro{_display:table;display:table-cell;text-align:center;width:255px;height:190px;vertical-align:middle}
+.part3 ul.proul li .pro img{vertical-align:middle;max-height:190px; max-width:255px;}
+.part3 ul.proul li p{ height:40px; line-height:40px; text-align:center;}
+
+
+.part4{ width:1200px; margin:0 auto; overflow:hidden;padding-top: 65px}
+.part4 .L{width: 790px;float: left;background: #f67903;padding: 25px;color: #FFFFFF; overflow:hidden;height:347px;}
+.part4 .R{width: 300px; overflow:hidden;float: right;background: #333333;color: #FFFFFF;padding: 25px; height:347px;}
+
+
+.part4 .titbox{background: url(../images/titbg3.png);color: #FFFFFF;height:40px; line-height:40px; overflow:hidden}
+.part4 .titbox p{ float:left; max-width:170px;font-size: 16px; padding-left:25px; font-weight:bold}
+.part4 .titbox a{ float:right; padding-right:10px; color:#fff; font-size:12px;}
+
+.part4 .L .p4_1{width: 460px;float: left;}
+.part4 .L .p4_1 .onebox{width: 460px;margin: auto;margin-top: 17px;height:140px;margin-bottom: 10px; overflow:hidden;}
+.part4 .L .p4_1 .onebox .l{width: 209px;height: 136px;float: left;border: 2px solid #FFFFFF;}
+.part4 .L .p4_1 .onebox .l img{width: 209px;height: 136px;}
+.part4 .L .p4_1 .onebox .r{float: right;width: 220px;}
+.part4 .L .p4_1 .onebox .r a{font-weight: bold;font-size: 14px;line-height: 35px;color: #FFFFFF;}
+.part4 .L .p4_1 .onebox .r .sub{font-size: 12px;line-height: 25px;}
+
+.part4 .L .p4_1 ul{ padding:10px; overflow:hidden}
+.part4 .L .p4_1 ul li{height: 40px;line-height: 40px;border-bottom: 1px #e6e6e6 dashed;background: url(../images/icon.jpg) no-repeat 5px center;}
+.part4 .L .p4_1 ul li a{color: #FFFFFF; float:left; padding-left:30px; max-width:290px}
+.part4 .L .p4_1 ul li span{float: right;padding-right: 10px;}
+
+.part4 .L .p4_2{width: 295px;float: right;}
+.part4 .L .p4_2 ul{padding:10px; overflow:hidden}
+.part4 .L .p4_2 ul li{height: 40px;line-height: 40px;border-bottom: 1px #e6e6e6 dashed;background: url(../images/icon.jpg) no-repeat 5px center;}
+.part4 .L .p4_2 ul li a{color: #FFFFFF; float:left; padding-left:30px; max-width:150px}
+.part4 .L .p4_2 ul li span{float: right;padding-right: 10px;}
+
+.part4 .R ul{padding:10px; overflow:hidden}
+.part4 .R ul li{height: 40px;line-height: 40px;border-bottom: 1px #e6e6e6 dashed;background: url(../images/icon.jpg) no-repeat 5px center;}
+.part4 .R ul li a{color: #FFFFFF; float:left; padding-left:30px; max-width:150px}
+.part4 .R ul li span{float: right;padding-right: 10px;}
+
+
+.part5{ width:1200px; margin:0 auto; padding-top:60px}
+.marqueeleft{width:1160px;overflow:hidden; margin-top:20px}
+.marqueeleft ul{float:left;}
+.marqueeleft ul li{width: 278px;margin-right: 20px;float: left;border: 1px solid #333333;background-color: #333;}
+.marqueeleft ul li .pro{width: 278px;height: 200px;_display:table;display:table-cell;text-align:center;vertical-align:middle}
+.marqueeleft ul li .pro img{vertical-align:middle;max-height:200px; max-width:278px}
+.marqueeleft ul li p{ text-align:center;line-height: 35px;color: #fff;font-weight: bold; padding:0 15px}
+
+
+.linksbox{ width:1200px; margin:0 auto; overflow:hidden; padding-top:50px}
+.linksbox .titbox{width: 160px;float: left;font-size: 22px;font-weight: bold;color: #222222;padding-right: 35px;}
+.linksbox .titbox span{padding-left: 10px;font-size: 16px;font-weight: bold;text-transform: uppercase;}
+.linksbox .con{ float:left; width:1000px;}
+.linksbox .con a{padding-right: 15px;line-height: 30px;}
+
+
+.fnav{width:100%; min-width:1200px;height: 45px;line-height: 45px;background: #333333; overflow:hidden; margin-top:10px}
+.fnav .main{ overflow:hidden; text-align:center}
+.fnav .main a{margin: 0px 25px; color:#fff;font-size: 14px;font-weight: bold;}
+
+
+.footbox{width:100%; min-width:1200px;background: #000;padding: 30px 0px;}
+.footbox .con{ text-align:center;color: #FFFFFF;line-height: 30px;}
+
+
+.mainWarp{ width:1200px; margin:0 auto; overflow:hidden; padding-top:60px; padding-bottom:20px}
+
+.mainleft{ float:left; overflow:hidden; width:260px;}
+.mainleft .typebox{float: unset;}
+.mainleft .titbox0{ background:#f67903; height:40px; line-height:40px;}
+.mainleft .titbox0 p{ color:#fff; padding-left:15px; font-size:16px; font-weight:bold}
+
+.lxwm{ overflow:hidden; margin-top:10px;}
+.lxwm .con{ line-height:33px; overflow:hidden;border: 1px #e4e4e4 solid; padding:5px 10px}
+
+.mainright{ float:right; overflow:hidden; width:920px;border: 1px #e4e4e4 solid;margin-top: 5px;padding-bottom: 5px;}
+
+.brandnavbox{ height:40px; line-height:40px; border-bottom:3px solid #f67903; overflow:hidden}
+.brandnavbox .con{ padding-left:15px}
+
+
+ul.piclistul{ overflow:hidden; padding-bottom:20px; padding-top:10px}
+ul.piclistul li{width: 220px;float: left;margin-left: 8px;margin-top: 10px;}
+ul.piclistul li .pro{ width:220px; height:160px; overflow:hidden}
+ul.piclistul li .pro img{width:220px; height:160px;transition: all 0.5s;}
+ul.piclistul li .pro:hover img{transform: scale(1.1);}
+ul.piclistul li p{ text-align:center; height:30px;line-height: 30px;}
+ul.piclistul li p:hover{ color:#f67903}
+
+
+ul.listul{ padding:10px; overflow:hidden; padding-bottom:20px}
+ul.listul li{height: 40px;line-height: 40px; border-bottom: 1px #e6e6e6 dashed;background: url(../images/icon.png) no-repeat 5px center;}
+ul.listul li a{ float:left; max-width:720px; padding-left:30px}
+ul.listul li a:hover{ color:#f67903}
+ul.listul li span{ float:right;}
+
+.detailbox{padding:10px; overflow:hidden; padding-bottom:20px}
+.detailbox .xq{}
+.detailbox .xq .tit{text-align: center;line-height: 40px;font-size: 14px;font-weight: bold;margin-top: 20px;}
+.detailbox .xq .date{ text-align:center; line-height:30px;}
+.detailbox .xq .proimg{ margin:0 auto; display:block; max-width:700px; margin-top:10px}
+.detailbox .xq .con{ line-height:33px; padding:8px; overflow:hidden}
+.detailbox .xq .con p{ text-indent:2em}
+
+.tjbox{ overflow:hidden}
+.tjbox .titbox{height: 40px;line-height: 40px; overflow:hidden;border-bottom:1px solid #f67903;}
+.tjbox .titbox p{font-size: 14px; padding-left:15px}
+.tjbox ul{ overflow:hidden; padding:10px 0}
+.tjbox ul li{width: 440px;float: left;margin-left: 12px;height: 30px;line-height: 30px;border-bottom: 1px #e4e4e4 dashed;background: url(../images/icon.png) no-repeat 5px center;}
+.tjbox ul li a{ float:left; max-width:270px; padding-left:30px}
+.tjbox ul li span{float:right;}
+.tjbox ul li a:hover{ color:#f67903}
+
+
+
+.pagebox{ text-align:center; padding-top:10px; padding-bottom:50px}
+.pagebox a{ border:1px solid #ccc; padding:5px 10px; display:inline-block; color:#333; margin:3px}
+.pagebox a:hover{ border:1px solid #f67903; color:#f67903}
+
+
+
+
+
+
+
+
+
+
+
+

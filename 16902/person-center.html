@@ -1,0 +1,1576 @@
+<!doctype html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<title>某某家政-个人中心-雇主端</title>
+
+		<link rel="stylesheet" href="css/style.css">
+
+		<link rel="stylesheet" href="css/reset.css">
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+
+		<link rel="stylesheet" href="css/font-awesome.css">
+
+		<!--城市切换插件-->
+
+		<link rel="stylesheet" href="css/cityPicker.css">
+
+		<!--lay组件-->
+
+		<link rel="stylesheet" href="css/layui.css">
+
+</head>
+
+
+
+<body>
+
+	<div class="top-nav">
+
+		<div class="container">
+
+			<ul class="login-left">
+
+				<li> <span>欢迎来到某某家政政！</span> </li>
+
+				<li> <a href="employer_login.html" id="employer-login">[雇主登录]</a> </li>
+
+				<li> <a href="hire_login.html" id="hire-login">[雇员登录]</a> </li>
+
+				<li> <a href="javascript:void(0)" class="logout">[退出登录]</a> </li>
+
+			</ul>
+
+			<ul class="top-right">
+
+				<li>
+
+					<a href="business_center.html" class="top-link">
+
+						<span class="fa fa-hand-o-right"></span>商务中心
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="http://www.fzjlbj.com/p_jjqjcontentgxh.aspx" class="top-link">
+
+						<span class="fa fa-diamond"></span>
+
+						个性化定制
+
+					</a>
+
+				</li>
+
+				<li style="display:none;">
+
+					<a href="javascript:void(0)" class="top-link phone-link">
+
+						<span class="fa fa-phone"></span>
+
+						4000-591-798
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="person-center.html" class="top-link">
+
+						<span class="fa fa-user"></span>
+
+						个人中心
+
+					</a>
+
+				</li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+
+
+	<div class="header">
+
+		<div class="container">
+
+			<div class="jw-logo">
+
+				<img src="images/logo2.png" alt="" onClick="location.href=&#39;index.html&#39;"/>
+
+				<div class="change-city">
+
+					<em>
+
+						<input type="text" id="cityChoice" value="福州" placeholder="请选择"/>
+
+					</em>
+
+					<p id="choose-city">[切换城市]</p>
+
+				</div>
+
+			</div>
+
+			<div class="header-right">
+
+				<ul class="header-nav">
+
+					<li class="nav-list"><a href="index.html">首页</a></li>
+
+					<li class="nav-list"><a href="baomu.html">保姆</a></li>
+
+					<li class="nav-list"><a href="yuesao.html">月嫂</a></li>
+
+					<li class="nav-list"><a href="linshi.html">临时钟点工</a></li>
+
+					<li class="nav-list"><a href="changqi.html">长期钟点工</a></li>
+
+					<li class="nav-list">
+
+						<a href="javascript:void(0)" class="nav-more">更多服务<span class="fa fa-angle-down"></span></a>
+
+						<ol class="hide-nav">
+
+							<li><a href="jiadian.html">家电清洗</a></li>
+
+							<li><a href="no_date.html">干洗</a></li>
+
+							<li><a href="no_date.html">搬家</a></li>
+
+							<li><a href="no_date.html">护工</a></li>
+
+							<li><a href="no_date.html">居家保养</a></li>
+
+							<li><a href="no_date.html">皮具护理</a></li>
+
+							<li><a href="no_date.html">居家便民</a></li>
+
+							<li><a href="no_date.html">家电维修</a></li>
+
+						</ol>
+
+					</li>
+
+				</ul>
+
+				<div class="drop-menu">
+
+					<span class="fa fa-navicon"></span>
+
+				</div>
+
+				<div class="search-right">
+
+					<ul class="three">
+
+						<li class="hir-name current">雇员名字</li>
+
+						<li class="phone">手机号码</li>
+
+						<li class="role">角色</li>
+
+					</ul>
+
+					<ul class="search-input">
+
+						<li>
+
+							<input type="text" placeholder="请输入雇员名称"/>
+
+							<span class="fa fa-search"></span>
+
+						</li>
+
+						<li>
+
+							<input type="text" placeholder="请输入手机号码"/>
+
+							<span class="fa fa-search"></span>
+
+						</li>
+
+						<li>
+
+							<input type="text" placeholder="请输入角色"/>
+
+							<span class="fa fa-search"></span>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="section-person">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="person-wrap">
+
+					<div class="person-left col-md-3">
+
+						<div class="person-head">
+
+							<img src="images/team03.jpg" class="thumbnail" alt=""/>
+
+							<div class="real-name">用户名</div>
+
+							<p><span class="intergral"><b>积分：</b>0</span><span class="rank"><b>等级：</b>钻石会员</span></p>
+
+						</div>
+
+						<ul class="person-tab">
+
+							<li class="active"><span class="fa fa-user-o"></span>基本信息</li>
+
+							<li><span class="fa fa-newspaper-o"></span>详细信息</li>
+
+							<li><span class="fa fa-vcard-o"></span>我的账户</li>
+
+							<li><span class="fa fa-id-badge"></span>订单管理</li>
+
+							<li><span class="fa fa-key"></span>修改密码</li>
+
+							<li><span class="fa fa-external-link"></span>我的推广</li>
+
+							<li><span class="fa fa-pencil-square-o"></span>投诉建议</li>
+
+							<li data-method="confirmTransF" class="alert-btn"><span class="fa fa-heart-o"></span>会员管理</li>
+
+						</ul>
+
+					</div>
+
+					<div class="person-right col-md-9">
+
+						<div class="row">
+
+							<div class="person-cont">
+
+								<h4>基本信息</h4>
+
+								<ul class="person-piece">
+
+									<li class="piece-item">
+
+										<span class="tit col-sm-2">头像</span>
+
+										<div class="base-input col-sm-10">
+
+											<div class="upload ">
+
+												<input type="file" class="upload-input"/>
+
+												<button type="botton" class="btn btn-default btn-ghost">上传图片</button>
+
+											</div>
+
+										</div>
+
+									</li>
+
+									<li class="piece-item">
+
+										<span class="tit col-sm-2">用户名</span>
+
+										<div class="base-input col-sm-10">
+
+											<input type="text" class="form-control" placeholder="请输入用户名" />
+
+										</div>
+
+									</li>
+
+									<li class="piece-item">
+
+										<span class="tit col-sm-2">联系方式</span>
+
+										<div class="base-input col-sm-10">
+
+											<input type="text" readonly class="form-control" placeholder="13003805112" value="13003805112" />
+
+										</div>
+
+									</li>
+
+									<li class="piece-item">
+
+										<span class="tit col-sm-2">邮箱</span>
+
+										<div class="upload base-input col-sm-10">
+
+											<input type="text" class="form-control" placeholder="请填写邮箱"/>
+
+										</div>
+
+									</li>
+
+									<li class="piece-item">
+
+										<span class="tit col-sm-2">联系方式</span>
+
+										<div class="base-input col-sm-10">
+
+											<input type="text" class="form-control" placeholder="请填写地址" />
+
+										</div>
+
+									</li>
+
+									<li class="piece-item">
+
+										<span class="tit col-sm-2">性别</span>
+
+										<div class="base-input col-sm-10">
+
+											<input type="radio" name="sex" value="1" />
+
+											<label for="1">男</label>
+
+											<input type="radio" name="sex" value="2" />
+
+											<label for="2">女</label>
+
+										</div>
+
+									</li>
+
+									<li class="piece-item">
+
+										<div class="upload base-input col-sm-10 col-sm-offset-2">
+
+											<button data-method="confirmTransB" class="btn btn-default alert-btn">保存资料</button>
+
+										</div>
+
+									</li>
+
+								</ul>
+
+								<h4>我的地址</h4>
+
+								<div class="change-address">
+
+									<ul class="address-tit">
+
+										<li>详细地址</li>
+
+										<li>操作</li>
+
+									</ul>
+
+									<ul class="address-cont">
+
+										<li>
+
+											<span>福建省福州市台江区<i>（默认）</i></span>
+
+										</li>
+
+										<li>
+
+											<button class="btn bj-btn-green change-btn">修改</button>
+
+											<button  data-method="confirmTransA" class="btn bj-btn-green delete-btn alert-btn">删除</button>
+
+										</li>
+
+									</ul>
+
+								</div>
+
+							</div>
+
+							<div class="person-cont">
+
+								<h4>详细信息</h4>
+
+								<ul class="person-piece">
+
+									<li class="piece-item">
+
+										<span class="tit col-sm-2">姓名</span>
+
+										<div class="base-input col-sm-10">
+
+											<input type="text" class="form-control" placeholder="请填写姓名" />
+
+										</div>
+
+									</li>
+
+									<li class="piece-item">
+
+										<span class="tit col-sm-2">身份证号</span>
+
+										<div class="base-input col-sm-10">
+
+											<input type="text" class="form-control" placeholder="请填写身份证号" value="211324199004064457" />
+
+										</div>
+
+									</li>
+
+									<li class="piece-item">
+
+										<span class="tit col-sm-2">家庭住址</span>
+
+										<div class="upload base-input col-sm-10">
+
+											<input type="text" class="form-control" placeholder="请填写家庭住址"/>
+
+										</div>
+
+									</li>
+
+									<li class="piece-item">
+
+										<span class="tit col-sm-2">联系方式</span>
+
+										<div class="base-input col-sm-10">
+
+											<input type="text" class="form-control" placeholder="请填写联系方式" value="13003805112"/>
+
+										</div>
+
+									</li>
+
+									<li class="piece-item">
+
+										<div class="upload base-input col-sm-10 col-sm-offset-2">
+
+											<button data-method="confirmTransC" class="btn btn-default alert-btn">提交保存</button>
+
+										</div>
+
+									</li>
+
+								</ul>
+
+							</div>
+
+							<div class="person-cont">
+
+								<h4>我的账户</h4>
+
+								<ul class="person-piece">
+
+									<li class="piece-item">
+
+										<span class="tit col-sm-2">余额</span>
+
+										<div class="base-input col-sm-10">
+
+											<input type="text" class="form-control" readonly placeholder="" value="0.0元" />
+
+										</div>
+
+									</li>
+
+									<li class="piece-item">
+
+										<span class="tit col-sm-2">缴费</span>
+
+										<div class="base-input col-sm-10">
+
+											<input type="text" class="form-control" readonly placeholder="" value="0.0元" />
+
+										</div>
+
+									</li>
+
+									<li class="piece-item">
+
+										<span class="tit col-sm-2">提现中</span>
+
+										<div class="upload base-input col-sm-4">
+
+											<input type="text" class="form-control" readonly placeholder=""  value="0元"/>
+
+										</div>
+
+										<button  data-method="confirmTransD" class="btn bj-btn-green col-sm-1 withdraw alert-btn">提现</button>
+
+									</li>
+
+									<li class="piece-item">
+
+										<span class="tit col-sm-2">充值金额</span>
+
+										<div class="base-input col-sm-10">
+
+											<input type="text" class="form-control" placeholder="" value="100"/>
+
+										</div>
+
+									</li>
+
+									<li class="piece-item">
+
+										<span class="tit col-sm-2">充值方式</span>
+
+										<div class="base-input col-sm-10">
+
+											<input type="radio" name="pay" value="1"/>
+
+											<label for="1">支付宝充值</label>
+
+											<input type="radio" name="pay" value="2" />
+
+											<label for="2">微信充值</label>
+
+											<button class="btn btn-default">充值</button>
+
+										</div>
+
+									</li>
+
+								</ul>
+
+								<h4>历史财务</h4>
+
+								<div class="history-finance">
+
+									<ul class="history-tit">
+
+										<li>金额(元)</li>
+
+										<li>来源/去向</li>
+
+										<li class="clear-right-border">时间</li>
+
+									</ul>
+
+									<ul class="history-cont">
+
+										<li><i class="change">1000.0</i></li>
+
+										<li><i class="change">账户充值</i></li>
+
+										<li class="clear-right-border"><i>2017-8-2 16:47:45</i></li>
+
+									</ul>
+
+								</div>
+
+							</div>
+
+							<div class="person-cont">
+
+								<h4>
+
+									<span class="active">全部订单</span>
+
+									<span>已完成</span>
+
+									<span>未完成</span>
+
+								</h4>
+
+								<div class="order-wrap">
+
+									<div class="order-tab">
+
+										<ul class="order-list">
+
+										<li class="order-item col-sm-6 ">
+
+											<span class="tit">雇员姓名：</span>
+
+											<span class="cont">张三</span>
+
+										</li>
+
+										<li class="order-item col-sm-6 ">
+
+											<span class="tit">服务类型：</span>
+
+											<span class="cont">家电清洗</span>
+
+										</li>
+
+										<li class="order-item col-sm-6 ">
+
+											<span class="tit">价格描述：</span>
+
+											<span class="cont">300元/次</span>
+
+										</li>
+
+										<li class="order-item col-sm-6 ">
+
+											<span class="tit">总价（元）：</span>
+
+											<span class="cont">300</span>
+
+										</li>
+
+										<li class="order-item col-sm-6 ">
+
+											<span class="tit">开始服务时间：</span>
+
+											<span class="cont">2017-8-3 10:59:56</span>
+
+										</li>
+
+										<li class="order-item col-sm-6 ">
+
+											<span class="tit">订单状态：</span>
+
+											<span class="cont">已完成</span>
+
+										</li>
+
+										<li class="order-item col-sm-6 clear-bottom-border">
+
+											<span class="tit">订单操作：</span>
+
+											<span class="cont"><button class="btn btn-default">订单支付</button></span>
+
+										</li>
+
+									</ul>
+
+										<ul class="order-list">
+
+											<li class="order-item col-sm-6 ">
+
+												<span class="tit">雇员姓名：</span>
+
+												<span class="cont">李四</span>
+
+											</li>
+
+											<li class="order-item col-sm-6 ">
+
+												<span class="tit">服务类型：</span>
+
+												<span class="cont">家电清洗</span>
+
+											</li>
+
+											<li class="order-item col-sm-6 ">
+
+												<span class="tit">价格描述：</span>
+
+												<span class="cont">300元/次</span>
+
+											</li>
+
+											<li class="order-item col-sm-6 ">
+
+												<span class="tit">总价（元）：</span>
+
+												<span class="cont">300</span>
+
+											</li>
+
+											<li class="order-item col-sm-6 ">
+
+												<span class="tit">开始服务时间：</span>
+
+												<span class="cont">2017-8-3 10:59:56</span>
+
+											</li>
+
+											<li class="order-item col-sm-6 ">
+
+												<span class="tit">订单状态：</span>
+
+												<span class="cont">未完成</span>
+
+											</li>
+
+											<li class="order-item col-sm-6 clear-bottom-border">
+
+												<span class="tit">订单操作：</span>
+
+												<span class="cont"><button data-method="confirmTransH" class="btn btn-default alert-btn">取消订单</button></span>
+
+											</li>
+
+										</ul>
+
+									</div>
+
+									<div class="order-tab">
+
+										<ul class="order-list">
+
+											<li class="order-item col-sm-6 ">
+
+												<span class="tit">雇员姓名：</span>
+
+												<span class="cont">李四</span>
+
+											</li>
+
+											<li class="order-item col-sm-6 ">
+
+												<span class="tit">服务类型：</span>
+
+												<span class="cont">家电清洗</span>
+
+											</li>
+
+											<li class="order-item col-sm-6 ">
+
+												<span class="tit">价格描述：</span>
+
+												<span class="cont">300元/次</span>
+
+											</li>
+
+											<li class="order-item col-sm-6 ">
+
+												<span class="tit">总价（元）：</span>
+
+												<span class="cont">300</span>
+
+											</li>
+
+											<li class="order-item col-sm-6 ">
+
+												<span class="tit">开始服务时间：</span>
+
+												<span class="cont">2017-8-3 10:59:56</span>
+
+											</li>
+
+											<li class="order-item col-sm-6 clear-bottom-border">
+
+												<span class="tit">订单状态：</span>
+
+												<span class="cont">未完成</span>
+
+											</li>
+
+											<li class="order-item col-sm-6 clear-bottom-border">
+
+												<span class="tit">订单操作：</span>
+
+												<span class="cont"><button class="btn btn-default">订单支付</button></span>
+
+											</li>
+
+										</ul>
+
+									</div>
+
+									<div class="order-tab">
+
+										<ul class="order-list">
+
+											<li class="order-item col-sm-6 ">
+
+												<span class="tit">雇员姓名：</span>
+
+												<span class="cont">张三</span>
+
+											</li>
+
+											<li class="order-item col-sm-6 ">
+
+												<span class="tit">服务类型：</span>
+
+												<span class="cont">家电清洗</span>
+
+											</li>
+
+											<li class="order-item col-sm-6 ">
+
+												<span class="tit">价格描述：</span>
+
+												<span class="cont">300元/次</span>
+
+											</li>
+
+											<li class="order-item col-sm-6 ">
+
+												<span class="tit">总价（元）：</span>
+
+												<span class="cont">300</span>
+
+											</li>
+
+											<li class="order-item col-sm-6 ">
+
+												<span class="tit">开始服务时间：</span>
+
+												<span class="cont">2017-8-3 10:59:56</span>
+
+											</li>
+
+											<li class="order-item col-sm-6 clear-bottom-border">
+
+												<span class="tit">订单状态：</span>
+
+												<span class="cont">已完成</span>
+
+											</li>
+
+											<li class="order-item col-sm-6 clear-bottom-border">
+
+												<span class="tit">订单操作：</span>
+
+												<span class="cont"><button data-method="confirmTransH" class="btn btn-default alert-btn">取消订单</button></span>
+
+											</li>
+
+										</ul>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="person-cont">
+
+								<h4>修改密码</h4>
+
+								<ul class="person-piece">
+
+									<li class="piece-item">
+
+										<span class="tit col-sm-2">原密码</span>
+
+										<div class="base-input col-sm-10">
+
+											<input type="password" class="form-control" placeholder=""  value="000000"/>
+
+										</div>
+
+									</li>
+
+									<li class="piece-item">
+
+										<span class="tit col-sm-2">新密码</span>
+
+										<div class="base-input col-sm-10">
+
+											<input type="text" class="form-control" placeholder=""/>
+
+										</div>
+
+									</li>
+
+									<li class="piece-item">
+
+										<span class="tit col-sm-2">再次输入新密码</span>
+
+										<div class="upload base-input col-sm-10">
+
+											<input type="text" class="form-control" placeholder=""  />
+
+										</div>
+
+									</li>
+
+									<li class="piece-item">
+
+										<div class="upload base-input col-sm-10 col-sm-offset-2">
+
+											<button data-method="confirmTransE" class="btn btn-default alert-btn">提交修改</button>
+
+										</div>
+
+									</li>
+
+								</ul>
+
+							</div>
+
+							<div class="person-cont">
+
+								<h4>我的推广</h4>
+
+								<div class="expand-wrap">
+
+									<div class="expand-list">
+
+										<a href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http%3A%2F%2F112.74.103.6%2Fregister%3FuserType%3D2%26user_id%3D13003805952%23jtss-qzone&title=%E9%87%91%E7%BD%91%E4%BF%A1%E5%AE%B6%E6%8E%A8%E5%B9%BF&pics=%2Fcommons%2Fbaojie%2Fjwxj_logo.png&summary=%E5%88%86%E4%BA%AB%E6%B3%A8%E5%86%8C%E5%9C%B0%E5%9D%80%E5%8F%AF%E4%BB%A5%E8%8E%B7%E5%BE%97%E7%A7%AF%E5%88%86" class="expand-btn qzone-btn" title="分享到QQ空间">
+
+											<span class="base-txt base-size qzone"></span>
+
+										</a>
+
+										<a href="http://service.weibo.com/share/share.php?title=%E9%87%91%E7%BD%91%E4%BF%A1%E5%AE%B6%E6%8E%A8%E5%B9%BF%20%E5%88%86%E4%BA%AB%E6%B3%A8%E5%86%8C%E5%9C%B0%E5%9D%80%E5%8F%AF%E4%BB%A5%E8%8E%B7%E5%BE%97%E7%A7%AF%E5%88%86&url=http%3A%2F%2F112.74.103.6%2Fregister%3FuserType%3D2%26user_id%3D13003805952%23jtss-tsina&source=bookmark&appkey=%E6%82%A8%E7%BD%91%E7%AB%99%E7%9A%84%E6%96%B0%E6%B5%AA%E5%BE%AE%E5%8D%9AAPPKEY&pic=%2Fcommons%2Fbaojie%2Fjwxj_logo.png&ralateUid=%E6%82%A8%E7%9A%84%E6%96%B0%E6%B5%AA%E5%BE%AE%E5%8D%9AUID&sudaref=s.jiathis.com&retcode=6102#_loginLayer_1501725458897" class="expand-btn tsina-btn" title="分享到新浪微博">
+
+											<span class="base-txt base-size tsina"></span>
+
+										</a>
+
+										<a href="http://s.jiathis.com/?webid=tqq&url=http%3A%2F%2F112.74.103.6%2Fregister%3FuserType%3D2%26user_id%3D13003805952&title=%E9%87%91%E7%BD%91%E4%BF%A1%E5%AE%B6%E6%8E%A8%E5%B9%BF&uid=1626433&jtss=1&appkey=%E6%82%A8%E7%BD%91%E7%AB%99%E7%9A%84%E8%85%BE%E8%AE%AF%E5%BE%AE%E5%8D%9AAPPKEY&pic=%2Fcommons%2Fbaojie%2Fjwxj_logo.png&summary=%E5%88%86%E4%BA%AB%E6%B3%A8%E5%86%8C%E5%9C%B0%E5%9D%80%E5%8F%AF%E4%BB%A5%E8%8E%B7%E5%BE%97%E7%A7%AF%E5%88%86" class="expand-btn t-qq-btn" title="分享到腾讯微博">
+
+											<span class="base-txt base-size t-qq"></span>
+
+										</a>
+
+										<a href="javascript:void(0)"  data-method="confirmTransI" class="expand-btn weixin-btn alert-btn" title="分享到微信">
+
+											<span class="base-txt base-size weixin"></span>
+
+										</a>
+
+										<a href="http://widget.renren.com/dialog/share?resourceUrl=http%3A%2F%2F112.74.103.6%2Fregister%3FuserType%3D2%26user_id%3D13003805952%23jtss-renren&srcUrl=http%3A%2F%2F112.74.103.6%2Fregister%3FuserType%3D2%26user_id%3D13003805952%23jtss-renren&title=%E9%87%91%E7%BD%91%E4%BF%A1%E5%AE%B6%E6%8E%A8%E5%B9%BF&pic=%2Fcommons%2Fbaojie%2Fjwxj_logo.png&description=%E5%88%86%E4%BA%AB%E6%B3%A8%E5%86%8C%E5%9C%B0%E5%9D%80%E5%8F%AF%E4%BB%A5%E8%8E%B7%E5%BE%97%E7%A7%AF%E5%88%86" class="expand-btn renren-btn" title="分享到人人">
+
+											<span class="base-txt base-size renren"></span>
+
+										</a>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="person-cont">
+
+								<h4>投诉建议</h4>
+
+								<ul class="person-piece">
+
+									<li class="piece-item">
+
+										<span class="tit col-sm-2">投诉图片</span>
+
+										<div class="base-input col-sm-10">
+
+											<div class="upload ">
+
+												<input type="file" class="upload-input"/>
+
+												<button type="botton" class="btn btn-default btn-ghost">上传图片</button>
+
+											</div>
+
+										</div>
+
+									</li>
+
+									<li class="piece-item">
+
+										<span class="tit col-sm-2">投诉内容</span>
+
+										<div class="base-input col-sm-10">
+
+											<textarea placeholder="请对问题进行详情的描述~" class="base-textarea"></textarea>
+
+										</div>
+
+									</li>
+
+									<li class="piece-item">
+
+										<div class="upload base-input col-sm-10 col-sm-offset-2">
+
+											<button data-method="confirmTransH" class="btn btn-default alert-btn">提交</button>
+
+										</div>
+
+									</li>
+
+								</ul>
+
+							</div>
+
+							<div class="person-cont">
+
+								<h4>会员管理</h4>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="withdraw-alert">
+
+		<ul class="withdraw-wrap">
+
+			<li>
+
+				<span>提现金额：</span>
+
+				<input type="text" class="pay-input" placeholder="请输入提现金额"/>
+
+			</li>
+
+			<li>
+
+				<span>提现到：</span>
+
+				<div class="base-input base-radio" style=" width:70%;">
+
+					<input type="radio" name="payment" class="choose-radio" checked="chencked" value="1"/>
+
+					<label for="1">支付宝</label>
+
+					<input type="radio" name="payment" class="choose-radio" value="2"/>
+
+					<label for="2">银行卡</label>
+
+					<input type="radio" name="payment" class="choose-radio" value="3"/>
+
+					<label for="3">微信</label>
+
+				</div>
+
+			</li>
+
+			<li class="tab-li">
+
+				<span>支付宝:</span>
+
+				<input type="text" class="pay-input" placeholder="请输入支付宝账号"/>
+
+			</li>
+
+			<li class="tab-li">
+
+				<div><span>真实姓名:</span><input type="text"  class="pay-input" placeholder="请输入您的开户姓名"/></div>
+
+				<div><span>开户银行</span><input type="text" class="pay-input" placeholder="请输入您的开户银行"/></div>
+
+				<div><span>银行账号:</span><input type="text" class="pay-input" placeholder="请输入您的银行账号"/></div>
+
+			</li>
+
+			<li class="tab-li">
+
+				<span>微信:</span>
+
+				<input type="text" class="pay-input" placeholder="请输入微信账号"/>
+
+			</li>
+
+			<li>
+
+				<span></span>
+
+				<button class="btn btn-default">提现申请</button>
+
+			</li>
+
+		</ul>
+
+	</div>
+
+	<div id="vip-alert">
+
+		<p>您当前已升到最高级会员了哦！</p>
+
+	</div>
+
+	<div id="expand-weixin">
+
+		<img src="images/expand_weinxin.png" alt="">
+
+		<p>打开微信，点击底部的“发现”，使用 “扫一扫” 即可将网页分享到我的朋友圈</p>
+
+	</div>
+
+	<div class="public-dom">
+
+		<div class="public-mask"></div>
+
+	</div>
+
+	<div class="modal ng-isolate-scope in">
+
+		<div class="modal-dialog modal-lg">
+
+			<div class="modal-content">
+
+				<div class="modal-header ng-scope">
+
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+						<span aria-hidden="true">×</span></button>
+
+					<h3 class="modal-title">修改地址</h3></div>
+
+				<div class="modal-body ng-scope">
+
+					<form class="form-horizontal ng-pristine ng-valid">
+
+						<input type="hidden" id="address_id" value="58">
+
+						<div class="form-group">
+
+							<label for="inputEmail3" class="col-sm-3 control-label">详细地址</label>
+
+							<div class="col-sm-9">
+
+								<input type="text" class="form-control bj_input_width" id="address1" value="福建省福州市台江区"></div>
+
+						</div>
+
+						<div class="form-group">
+
+							<div class="col-sm-offset-3 col-sm-10">
+
+								<button class="btn btn-default btn_save">修改地址</button></div>
+
+						</div>
+
+						<div class="modal-footer">
+
+							<button class="btn btn-warning">关闭</button></div>
+
+					</form>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="footer">
+
+		<div class="container">
+
+			<div class="footer-text" id="footer-text">
+
+				<ul class="other-contact text-float text-ul">
+
+					<h5>部门客服</h5>
+
+					<li><a href="service_alert.html">鼓楼区客服</a></li>
+
+					<li><a href="service_alert.html">晋安区客服</a></li>
+
+					<li><a href="service_alert.html">月嫂部客服</a></li>
+
+					<li><a href="service_alert.html">保姆部客服</a></li>
+
+					<li><a href="service_alert.html">钟点工客服</a></li>
+
+				</ul>
+
+				<ul class="friendly-link text-ul" >
+
+					<h5>友情链接</h5>
+
+					<li><a href="http://www.968jw.com" target="_blank">福建家政</a></li>
+
+					<li><a href="http://www.fzjlbj.com" target="_blank">福州洁丽保洁</a></li>
+
+					<li><a href="http://www.968jw.com" target="_blank">福州金牌月嫂</a></li>
+
+					<li><a href="http://www.fzjlbj.com" target="_blank">福州家政公司</a></li>
+
+				</ul>
+
+				<ul class="contact-us text-ul">
+
+					<h5>联系我们</h5>
+
+					<li>客服热线：XXX</li>
+
+					<li>总公司地址：XXX　<br/>联系电话： XXX</li>
+
+					<li>南平分公司地址：XXX　<br/>联系电话:XXX</li>
+
+				</ul>
+
+			</div>
+
+			<div class="bottom-code">
+
+				<img src="images/code.jpg" alt=""/>
+
+				<p>扫码关注某某家政公众号，更多好礼期待你的关注</p>
+
+			</div>
+
+		</div>	
+
+	</div>
+
+	<p class="address">家政综合信息服务平台 XXX分享 XXX</p>
+
+	<div class="fix-service">
+
+		<ul class="servise-list">
+
+			<li class="weixin-item fix-item">
+
+				<span class="weixin-code code"></span>
+
+				<div class="icon">
+
+					<img src="images/weixin.png" alt="" class="weixin"/>
+
+				</div>
+
+			</li>
+
+			<li class="weibo-item fix-item">
+
+				<span class="weibo-code code"></span>
+
+				<div class="icon">
+
+					<img src="images/weibo.png" alt="" class="weibo"/>
+
+				</div>
+
+			</li>
+
+			<li class="service-item fix-item">
+
+				<span class="service-code code"></span>
+
+				<div class="icon">
+
+					<img src="images/qq.png" alt="" class="service"/>
+
+				</div>
+
+			</li>
+
+			<li id="btn" class="top-item fix-item">
+
+				<div class="icon">
+
+					<img src="images/top.png" alt="" class="top"/>
+
+				</div>
+
+			</li>
+
+		</ul>
+
+	</div>
+
+	<script src="js/jquery-2.0.0.min.js"></script>
+
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/cityData.js"></script>
+
+	<script src="js/cityPicker.js"></script>
+
+	<script src="js/layui.js"></script>
+
+	<script>
+
+	$(".tab-li").hide().first().show();
+
+	$(".search-input li").hide().first().show();
+
+	$(".person-cont").hide().first().show();
+
+	$(".order-tab").hide().first().show();
+
+	$(document).ready(function(e) {
+
+		$(".nav-more").click(function(){
+
+			$(".hide-nav").slideToggle();	
+
+		});
+
+		$(".drop-menu").click(function(){
+
+			$(".header-nav").slideToggle();	
+
+		});
+
+		$(".three li").click(function(){
+
+			$(this).addClass("current").siblings().removeClass("current");
+
+			$(".search-input li").hide().eq($(this).index()).show();
+
+		});
+
+		$(".person-tab li").click(function(){
+
+			$(this).addClass("active").siblings().removeClass("active");
+
+			$(".person-cont").hide().eq($(this).index()).show();
+
+		});
+
+		$(".base-radio .choose-radio").click(function(){
+
+			$(".tab-li").hide().eq($(this).index()).show();
+
+		});
+
+		$(".person-cont h4 span").click(function(){
+
+			$(this).addClass("active").siblings().removeClass("active");
+
+			$(".order-tab").hide().eq($(this).index()).show();
+
+		});
+
+		//返回顶部
+
+		$(".top-item").click(function(){
+
+			$('body,html').animate({ scrollTop: 0 }, 500);
+
+			return false;
+
+		});
+
+		$(".change-btn").click(function(){
+
+			$(".modal").fadeIn();
+
+			$(".public-dom").fadeIn();
+
+		});
+
+		$(".close,.layui-layer-btn a").click(function(){
+
+			$(".modal").fadeOut();
+
+			$(".layui-layer").fadeOut();
+
+			$(".public-dom").fadeOut();
+
+		});
+
+		$(".delete-btn").click(function(){
+
+			$(".layui-layer").fadeIn();
+
+		});
+
+	});
+
+	</script>
+
+	<script>
+
+		var cityPicker = new IIInsomniaCityPicker({
+
+			data: cityData,
+
+			target: '#cityChoice',
+
+			valType: 'k-v',
+
+			hideCityInput: '#city',
+
+			hideProvinceInput: '#province',
+
+			callback: function(city_id){
+
+			}
+
+		});
+
+		cityPicker.init();
+
+	</script>
+
+	<script>
+
+	layui.use('layer', function(){ //独立版的layer无需执行这一句
+
+	  var $ = layui.jquery, layer = layui.layer; //独立版的layer无需执行这一句
+
+	  
+
+	  //触发事件
+
+	  var active = {
+
+		confirmTransA: function(){
+
+		  layer.msg('确认删除改地址？', {
+
+			time: 20000,
+
+			btn: ['确认', '取消']
+
+		  });
+
+		},
+
+		confirmTransB: function(){
+
+		  layer.msg('修改成功', {
+
+			time: 2000,
+
+		  });
+
+		},
+
+		confirmTransC: function(){
+
+		  layer.msg('更新成功', {
+
+			time: 2000,
+
+		  });
+
+		},
+
+		confirmTransD: function(){
+
+		  layer.open({
+
+			 type:1,
+
+			 title:'提现',
+
+			 area:['347px','300px'],
+
+			 shade:0.5,
+
+			 move:false,
+
+			 scrollbar:false,
+
+			 skin:'demo-class',
+
+			 resize:false,
+
+			 content:$('#withdraw-alert') 
+
+		  });
+
+		},
+
+		confirmTransF: function(){
+
+		  layer.open({
+
+			 type:1,
+
+			 title:'会员管理',
+
+			 area:['250px','100px'],
+
+			 shade:0.5,
+
+			 move:false,
+
+			 scrollbar:false,
+
+			 resize:false,
+
+			 content:$('#vip-alert') 
+
+		  });
+
+		},
+
+		confirmTransE: function(){
+
+		  layer.msg('修改成功', {
+
+			time: 2000,
+
+		  });
+
+		},
+
+		confirmTransH: function(){
+
+		  layer.msg('提交成功，我们会及时对问题进行处理', {
+
+			time: 2000,
+
+		  });
+
+		},
+
+		confirmTransI: function(){
+
+		  layer.open({
+
+			 type:1,
+
+			 title:'分享到微信朋友圈',
+
+			 area:['340px','340px'],
+
+			 shade:0.5,
+
+			 move:false,
+
+			 scrollbar:false,
+
+			 resize:false,
+
+			 content:$('#expand-weixin') 
+
+		  });
+
+		},
+
+		confirmTransH: function(){
+
+		  layer.msg('确认取消订单？', {
+
+			time: 20000,
+
+			btn: ['确认', '取消']
+
+		  });
+
+		}
+
+	  };
+
+	  $('.alert-btn').on('click', function(){
+
+		var othis = $(this), method = othis.data('method');
+
+		active[method] ? active[method].call(this, othis) : '';
+
+	  	});
+
+	 });
+
+	</script>
+
+</body>
+
+</html>
+

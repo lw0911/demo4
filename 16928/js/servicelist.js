@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){var a,b=$(".sprotab dd");ScrollToTop.setup(),b.eq(1).css("display","none"),$(".sprotab span").hover(function(){a=$(this).index(),0==a?(b.eq(0).css("display","block"),b.eq(1).css("display","none")):(b.eq(1).css("display","block"),b.eq(0).css("display","none"))})});

@@ -1,0 +1,801 @@
+
+/*zy_banner*/
+.zy_banner{ width:100%;height: 390px; overflow:hidden;position: relative; }
+.zy_banner .hd{ overflow:hidden; position:absolute; right:0; bottom:16px; width: 100%; z-index:1; }
+.zy_banner .hd ul li{margin:0 3px; display: inline-block; width:10px; height:10px; 
+	cursor:pointer; border-radius: 50%;background:#fff; opacity: .5; padding: 0;
+}
+.zy_banner .hd ul li.on { opacity: 1;  }
+.zy_banner .bd img{width: 100%; height: 390px; display:block; }
+
+.zy_contentbox{
+	padding-top: 24px;
+	padding-bottom: 80px;
+	min-height: 400px; 
+}
+
+/*左边栏*/
+.zy_left_con{ 
+	float: left; 
+	width: 300px;  
+	overflow:hidden;
+}
+.zy_left_con h2.tit{ 
+	font-size: 24px; 
+	font-weight: bold; 
+	color: #2964af;
+	margin-bottom: 20px;
+}
+/*nav*/
+.zy_twonav{
+	margin-bottom: 36px;
+}
+.zy_twonav ul li:first-child{
+	border-top:#ddd solid 1px;
+}
+.zy_twonav ul li{
+	height: 44px;
+	line-height: 44px;
+	border-bottom: #ddd solid 1px;
+	margin-bottom: 1px;
+}
+.zy_twonav ul li.cur{
+	background-color: #2964af;
+	border-bottom: #2964af solid 1px;
+}
+.zy_twonav ul li a{
+	font-size:16px;
+	color:#333;
+	display: block;
+	padding:0 30px;
+	background-position: center right 90px;
+	transition: background-position .7s;
+}
+.zy_twonav ul li.cur a{
+	color:#fff;
+	background:url(../images/zy_navjt.png) no-repeat center right 30px;
+}
+.zy_twonav ul li:hover{
+	background-color:#2964af;
+	border-color: #2964af;
+}
+.zy_twonav ul li:hover a{
+	color:#fff;
+	background:url(../images/zy_navjt.png) no-repeat;
+	background-position: center right 30px; 
+}
+/*news*/
+.zy_left_con .news{
+	margin-bottom: 36px;
+}
+.zy_left_con .news ul{
+	max-height: 560px;
+	overflow:hidden;
+	margin-top:-10px;
+}
+.zy_left_con .news ul li{
+	border-bottom: #ddd solid 1px;
+	padding-bottom: 12px;
+	margin-top: 12px;
+}
+.zy_left_con .news ul li a{
+	display:block;
+	overflow:hidden;
+}
+.zy_left_con .news ul li i{
+	float: left;
+	width: 129px;
+	height: 86px;
+	overflow:hidden;
+}
+.zy_left_con .news ul li i img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	transform: scale(1,1);
+	transition: transform .7s;
+}
+.zy_left_con .news ul li dl{
+	float: right;
+	width: 165px;
+	height: 86px;
+	overflow:hidden;
+}
+.zy_left_con .news ul li dl dt{
+	font-size:16px;
+	color:#333;
+	max-height: 48px;
+	overflow:hidden;
+	line-height: 24px;
+	margin-bottom: 16px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+.zy_left_con .news ul li dl dd{
+	font-size:12px;
+	color:#999;
+	line-height: 22px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+.zy_left_con .news ul li:hover{
+	border-color: #2964af;
+}
+.zy_left_con .news ul li:hover dt{
+	color:#2964af;
+}
+.zy_left_con .news ul li:hover img{
+	transform: scale(1.1,1.1);
+}
+/*contact*/
+.zy_left_con .contact dl{
+	border-top:#ddd solid 1px;
+	border-bottom:#ddd solid 1px;
+	padding:30px 0;	
+}
+.zy_left_con .contact dl dt{
+	font-size:20px;
+	color:#666;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.zy_left_con .contact dl dd{
+	font-size:16px ;
+	color:#666;
+	line-height: 36px;
+}
+.zy_left_con .contact dl a{
+	display: block;
+	width: 160px;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	background-color:#2964af;
+	color:#fff;
+	font-size:16px;
+	font-weight: bold;
+	margin-top:20px;
+	transition: all .3s;
+	background-position: center center;
+}
+.zy_left_con .contact dl a:hover{
+	text-indent: -1em;
+	background:url(../images/zy_navjt.png) no-repeat center right 25px;
+	background-color:#2964af;
+}
+
+
+/*右边内容栏*/
+.zy_right_con{ 
+	float: right; 
+	width: 850px; 
+}
+/*当前位置*/
+.zy_right_con .weizhi{
+	border-bottom: #2964af solid 1px;
+	padding-bottom: 18px;
+	padding-top: 8px;
+	margin-bottom: 20px;
+}
+.zy_right_con .weizhi i{
+	display: inline-block;
+	vertical-align: middle;
+}
+.zy_right_con .weizhi i img{
+	display: block;
+}
+.zy_right_con .weizhi p{
+	display: inline-block;
+	vertical-align: middle;
+	font-size:14px;
+	color:#666;
+}
+.zy_right_con .weizhi p a{
+	color:#666;
+}
+.zy_right_con .weizhi p a:after{
+	content: ' > ';
+}
+.zy_right_con .weizhi p span{
+	color:#2964af;
+}
+.zy_right_con .weizhi p a:hover{
+	color:#2964af;
+}
+
+/*关于我们*/
+.zy_aboutbox h1{
+	text-align:center;
+	color: #333;
+	font-size:30px;
+	padding:24px 0;
+}
+.zy_aboutbox .txt{
+	font-size:16px;
+	color: #666;
+	line-height: 36px;
+	text-indent: 2em;
+}
+.zy_aboutbox .txt *{
+	margin-bottom:20px;
+}
+.zy_aboutbox .txt h2{
+	text-align:center;
+}
+.zy_aboutbox .txt h2 img{
+	display: block;
+	margin:0 auto;
+	max-width: 100%;
+}
+.zy_aboutbox .txt h2 span{
+	color:#999;
+	font-size:14px;
+}
+
+/*zy_about_djhj关于我们-XXX环境*/
+.zy_about_djhj ul.gallery{
+	overflow:hidden;
+	margin-left: -10px;
+	width: 870px;
+}
+.zy_about_djhj ul.gallery li{
+	float:left;
+	width: 270px;
+	margin:10px;
+}
+.zy_about_djhj ul li i{
+	display: block;
+	width: 270px;
+	height: 180px;
+	overflow:hidden;
+}
+.zy_about_djhj ul li img{
+	width: 270px;
+	min-height: 180px;
+	display: block;
+	transform: scale(1,1);
+	transition: transform .7s;
+}
+.zy_about_djhj ul li span{
+	display: block;
+	height: 48px;
+	text-align:center;
+	padding:0 10px;
+	line-height: 48px;
+	background-color: #eee;
+	color: #666;
+	font-size:16px;
+	transition: all .2s;
+}
+.zy_about_djhj ul li:hover img{
+	transform: scale(1.1,1.1);
+}
+.zy_about_djhj ul li:hover span{
+	background-color: #2964af;
+	color: #fff;
+}
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+/*关于我们-服务专区*/
+.zy_about_fwzq dl{
+	margin-bottom: 40px;
+}
+.zy_about_fwzq dl dt{
+	font-size:18px;
+	color:#666;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.zy_about_fwzq dl dd{
+	line-height: 36px;
+	color:#666;
+}
+
+/*联系我们*/
+.zy_contactbox h1{
+	font-size:30px;
+	color:#333;
+	position: relative;
+	line-height: 56px;
+}
+.zy_contactbox h1 i{
+	position: absolute;
+	bottom: 0;
+	width: 60px;
+	left: 0;
+	height: 3px;
+	background-color: #2964af;
+}
+.zy_contactbox>div{
+	margin-top:36px;
+}
+.zy_contactbox>div h2{
+	margin-bottom: 15px;
+	font-size:24px;
+}
+.zy_contactbox>div p{
+	line-height: 36px;
+	color:#666;
+}
+/*地图*/
+.zy_contactbox>div .ditu{
+	margin-top:24px;
+}
+.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+.iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+
+/*招生简章-网上报名*/
+.zy_wsbmbox h1{ 
+	font-size:30px; 
+	color:#333; 
+	text-align:center;
+	padding: 10px 0; 
+}
+.zy_wsbmbox p{
+	color:#666;
+	font-size:14px;
+	line-height: 24px;
+	margin:30px 0 20px;
+}
+.zy_wsbmbox form{
+	display: block;
+	border:#ddd solid 1px;
+	background-color: #f5f5f5;
+	padding:50px;
+}
+.zy_wsbmbox form >div{
+	margin-bottom: 26px;
+	color:#666;
+}
+.zy_wsbmbox form >div input{
+	background-color: #fff;
+	border:#bbb solid 1px;
+	width: 320px;
+	padding:0 10px;
+	height: 36px;
+	line-height: 36px;
+	color:#666;
+	font-size:16px;
+	font-family: "微软雅黑";
+	margin-left: 8px;
+}
+.zy_wsbmbox form >div input:focus{
+	border-color: #2964af;
+}
+.zy_wsbmbox form >div span{
+	width: 90px;
+	text-align:right;
+	display: inline-block;
+	color:#666;
+}
+.zy_wsbmbox form >div span b{
+	font-weight: normal;
+	color:red;
+	font-size:12px;
+	margin-right: 5px;
+}
+.zy_wsbmbox form >div input[type="radio"]{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right:4px;
+	background: none;
+	border:none;
+}
+.zy_wsbmbox form >div label{
+	margin-right: 14px;
+}
+.zy_wsbmbox form >div.yzm input{
+	width: 160px;
+}
+.zy_wsbmbox form >div.yzm label{
+	display: inline-block;
+	vertical-align: middle;
+	height: 36px;
+	overflow:hidden;
+	margin-top:-2px;
+}
+.zy_wsbmbox form >div.yzm label img{
+	display: block;
+	height: 36px;
+}
+.zy_wsbmbox form >div.btn{
+	margin-left: 103px;
+	margin-top:40px;
+}
+.zy_wsbmbox form >div.btn button{
+	width: 180px;
+	height: 50px;
+	background-color: #bbb;
+	color:#fff;
+	font-size:18px;
+	font-family: "微软雅黑";
+	cursor: pointer;
+}
+.zy_wsbmbox form >div.btn button:first-child{
+	background-color: #2964af;
+	margin-right:24px;
+}
+.zy_wsbmbox form >div.btn button:hover{
+	opacity: .9;
+}
+
+/*艺考成绩*/
+.zy_ykcjbox{
+	overflow:hidden;
+}
+.zy_ykcjbox ul{
+	overflow: hidden;
+	width: 870px;
+	margin-left: -10px;
+}
+.zy_ykcjbox ul li{
+	float: left;
+	width: 270px;
+	margin: 0 10px;
+	margin-top:20px;
+	margin-bottom: 10px;
+	padding-bottom: 18px;
+	border-bottom: #999 solid 2px;
+	position: relative;
+}
+.zy_ykcjbox ul li i{
+	display: block;
+	width: 270px;
+	height: 180px;
+	overflow: hidden;
+}
+.zy_ykcjbox ul li i img{
+	display: block;
+	width: 270px;
+	height: 180px;
+	transform: scale(1,1);
+	transition: transform .5s;
+}
+.zy_ykcjbox ul li h2{
+	font-size: 18px;
+	color: #222;
+	line-height: 28px;
+	height: 56px;
+	overflow:hidden;
+	margin:12px 0;
+}
+.zy_ykcjbox ul li span{
+	font-size: 12px;
+	color: #999;
+}
+.zy_ykcjbox ul li span:before{
+	content: "—— ";
+}
+.zy_ykcjbox ul li b{
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	height: 2px;
+	width: 0;
+	background-color: #2964af;
+	transition: width .3s;
+}
+.zy_ykcjbox ul li:hover h2{
+	color: #2964af;
+}
+.zy_ykcjbox ul li:hover b{
+	width:100%;
+}
+.zy_ykcjbox ul li:hover img{
+	transform: scale(1.15,1.15);
+}
+
+/***翻页样式**/
+.fanye{
+    text-align:center; 
+    margin:30px 0 20px 0;
+}
+.fanye a{ 
+    border:#bbb solid 1px; 
+    padding:0px 15px; 
+    font-size:14px; 
+    color:#666; 
+    line-height: 36px; 
+    display: inline-block; 
+    border-radius: 5px;
+    margin:0 1px;
+}
+.fanye span a{ 
+    margin: 0 2px;
+    padding:0 20px;
+}
+.fanye span .current{ 
+    color:#fff; 
+    background-color:#2964af; 
+    border:#2964af solid 1px;
+}
+.fanye a:hover{
+    color:#fff; 
+    background-color:#2964af; 
+    border:#2964af solid 1px;
+}
+
+/*子页新闻、艺考等、详情页*/
+.zy_newsxq .xq_tit{
+	margin: 30px 0;
+}
+.zy_newsxq .xq_tit h1{
+	font-size:30px;
+	color: #333;
+}
+.zy_newsxq .xq_tit p{
+	font-size:14px;
+	color: #999;
+	margin-top:16px;
+}
+.zy_newsxq .xq_tit p span{
+	margin-right:20px;
+}
+.zy_newsxq .txt{
+	font-size:16px;
+	color: #666;
+	line-height: 30px;
+	text-indent:2em;
+}
+.zy_newsxq .txt *{
+	margin:20px 0;
+}
+.zy_newsxq .txt img{
+	display: block;
+	max-width: 100%;
+}
+
+.zy_share{
+	border-top: #ddd solid 1px;
+	position: relative;
+	padding-top: 12px;
+	margin-top: 50px;
+}
+.zy_share i{
+	position: absolute;
+	height: 3px;
+	width: 80px;
+	left: 0;
+	top: -2px;
+	background-color: #2964af;
+}
+
+.zy_share h2{
+	float: left;
+}
+.zy_share h2 p{
+	font-size: 16px;
+	color: #666;
+	font-weight: bold;
+	line-height: 32px;
+}
+.zy_share h2 p a{
+	color: #666;
+	display: inline-block;
+	font-weight: normal;
+	max-width: 500px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	vertical-align: middle;
+	margin-top:-3px;
+}
+.zy_share h2 p a:hover{
+	color: #2964af;
+}
+
+.zy_share .bdsharebuttonbox{
+	float: right;
+	padding-top: 26px;
+}
+.zy_share .bdsharebuttonbox span {
+	position: absolute;
+	right: 0;
+	top:-2px;
+	z-index: 3;
+	width: 90px;
+	border-top:#2964af solid 3px;
+	text-align:right;
+	color: #666;
+	padding-top: 14px;
+}
+.zy_share .bdsharebuttonbox a{
+	margin-right:0;
+	margin-left: 6px;
+}
+
+/*师资团队*/
+.zy_teacherbox ul{
+	overflow:hidden;
+	width: 890px;
+	margin-left: -19px;
+}
+.zy_teacherbox ul li{
+	float: left;
+	width: 256px;
+	height: 390px;
+	margin:15px 20px;
+	overflow:hidden;
+}
+.zy_teacherbox ul li a{
+	position: relative;
+	display: block;
+}
+.zy_teacherbox ul li img{
+	display: block;
+	width: 256px;
+	height: 390px; 
+	transform: scale(1,1);
+	transition: transform .7s;
+}
+.zy_teacherbox ul li span{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	background:#2964af;
+	background-color: rgba(41,100,175,.7);
+	color: #fff;
+	text-align:center;
+	line-height: 60px;
+	font-size:18px;
+	transition: all .7s;
+
+}
+.zy_teacherbox ul li:hover span{
+	font-weight: bold;
+	background-color: #2964af;
+}
+.zy_teacherbox ul li:hover img{
+	transform: scale(1.1,1.1);
+}
+
+/*师资团队详情*/
+.zy_teacher_xq{ position: relative; margin-top: 50px;}
+.zy_teacher_xq i{float: left; width: 256px; height: 390px; margin-right: 30px;}
+.zy_teacher_xq i img{display: block; width: 256px; height: 390px;}
+.zy_teacher_xq .txt dl dt{ font-size: 24px;color: #333;display: inline-block; border-bottom: #333 solid 2px; line-height: 54px; }
+.zy_teacher_xq .txt dl dt span{ font-size: 18px; color: #333; text-transform: capitalize; margin-left: 20px; }
+.zy_teacher_xq .txt dl dd{ font-size: 16px; color: #666; margin-top: 30px; }
+.zy_teacher_xq .txt .text{ background-color: #f5f5f5; margin-top: 30px;min-height: 240px; 
+	font-size: 16px; color: #666; line-height: 36px;padding:16px 20px; padding-bottom: 40px;
+}
+.zy_teacher_xq .zy_share{
+	margin-top:0;
+}
+
+/*作品欣赏*/
+.zy_workshowbox ul li{
+	width: 256px;
+	height: 340px; 
+}
+.zy_workshowbox ul li img{
+	width: 256px;
+	height: 340px; 
+}
+
+/*XXX生活*/
+.zy_dj_lifebox ul{
+	overflow:hidden;
+	margin-left: -10px;
+	width: 870px;
+	padding:10px 0;
+}
+.zy_dj_lifebox ul li{
+	float: left;
+	width: 270px;
+	margin:10px;
+	background-color: #000;
+}
+.zy_dj_lifebox ul li i{
+	display: block;
+	width: 270px;
+	height: 180px;
+	overflow:hidden;
+}
+.zy_dj_lifebox ul li img{
+	width: 270px;
+	height: 180px;
+	display: block;
+	transform: scale(1,1);
+	transition: transform .7s;
+}
+.zy_dj_lifebox ul li span{
+	display: block;
+	height: 48px;
+	text-align:center;
+	padding:0 10px;
+	line-height: 48px;
+	background-color: #eee;
+	color: #666;
+	font-size:16px;
+	transition: all .2s;
+}
+.zy_dj_lifebox ul li:hover img{
+	transform: scale(1.1,1.1);
+}
+.zy_dj_lifebox ul li:hover span{
+	background-color: #2964af;
+	color: #fff;
+}
+
+/*XXX生活详情*/
+.pikachoose{ margin-bottom: 60px; width:850px; position:relative;}
+/* The stage is the wrapper. The image fills 100% the height of the stage */
+.pika-stage {position: relative; background: #fafafa; width: 675px; text-align:center; height:450px;}
+.pika-stage img{width:675px; height: 450px;}
+.pika-stage .caption {position: absolute; background: #000; background: rgba(41,100,175,0.7); font-size: 18px; 
+    color: #fff; text-align: center; bottom: 0; left: 0; width: 100%; height: 50px; line-height: 50px;
+}
+.pika-stage .caption p {padding: 0; margin: 0; line-height: 14px;}
+
+/* Ths play, pause, prev and next buttons */
+.pika-imgnav a {position: absolute;  display: block;z-index:3;}
+.pika-imgnav a.previous {background: url(../images/jt_left.png) no-repeat center center; 
+	height: 80px; width: 40px; top: 36%; left: 0;cursor:pointer;
+}
+.pika-imgnav a.next {background: url(../images/jt_right.png) no-repeat center center; 
+	height: 80px; width: 40px; top: 36%; right: 0;cursor:pointer;
+}
+.pika-imgnav a:hover{background-color: rgba(41,100,175,0.7);}
+
+/* The previous and next textual buttons */
+.pika-textnav {overflow: hidden; margin: 10px 0 0 0;bottom:10px; position:absolute; display: none;}
+.pika-textnav a {font-size: 12px; text-decoration: none; color: #333; padding: 4px;}
+.pika-textnav a.previous {float: left; width: auto; display: block;}
+.pika-textnav a.next {float: right; width: auto; display: block;}
+
+/*for the tool tips*/
+.pika-tooltip{font-size:12px;position:absolute;color:white;padding:3px; background-color: rgba(0,0,0,0.7);border:3px solid black;}
+.pika-counter{position: absolute;bottom: 45px;left:15px;color:white;background:rgba(0,0,0,0.7);font-size:11px;
+	padding:3px;-moz-border-radius: 5px;border-radius:5px;
+}
+
+/*if you just want to adjust the size of the stage and the thumbnails, you can do so by editing the following lines: */
+/* Style the thumbnails */
+.pika-thumbs li{ padding: 0; overflow: hidden;width: 165px; height:110px; border:transparent solid 1px;
+    float: left; list-style-type: none; background: #fafafa; cursor: pointer;
+}
+.pika-thumbs li .clip {position:relative;height:100%;text-align: center; vertical-align: middle; overflow: hidden;}
+.pika-thumbs li .clip img{ display: block;width: 165px; height:110px; opacity: 1 !important;}
+.pika-thumbs li.active{border:#2964af solid 1px;}
+
+/* jCarousel Styles */
+/*if you're not using the carousel you can delete everything below this */
+.jcarousel-skin-pika{position:absolute;top:0px;right:0;}
+.jcarousel-skin-pika .jcarousel-container-vertical { width: 167px;height: 451px; overflow:hidden;}
+.jcarousel-skin-pika .jcarousel-clip-vertical { width: 167px; height: 451px;}
+.jcarousel-skin-pika .jcarousel-item-vertical { margin-bottom: 1px;}
+
+/*视频中心*/
+.zy_videobox ul li{
+	position: relative;
+}
+.zy_videobox ul li b{
+	position: absolute;
+	top:60px;
+	left: 50%;
+	margin-left: -30px;
+	width: 60px;
+	height: 60px;
+	z-index: 10;
+	background:url(../images/play_btn.png) no-repeat center center;
+	background-size: 100%;
+}
+.zy_videobox ul li:hover img{
+	opacity: .7;
+}
+
+/*视频详情*/
+.zy_video_xqbox .video_xq video{
+	width: 850px; height: 560px; background: #111; 
+}

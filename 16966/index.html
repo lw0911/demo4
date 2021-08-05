@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="js/jquery1.42.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/sc.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				//banner
+				jQuery(".slideBox").slide({
+					mainCell: ".bd ul",
+					effect: "leftLoop",
+					autoPlay: true,
+				});
+				//新闻中心
+				jQuery(".inBox").slide({
+					titCell: ".inHd li",
+					mainCell: ".inBd"
+				});
+				jQuery(".outBox").slide({
+					effect: "left"
+				});
+			})
+		</script>
+	</head>
+
+	<body>
+		<!--顶部-->
+		<div class="nav_top">
+			<div class="nav_top_in">
+				<p>XXX 欢迎您！！！</p>
+				<ul>
+					<li>
+						<a href="javascript:void(0)" onclick="SetHome(this,window.location)">设为首页</a>
+					</li>
+					<li class="wx">
+						<a>微信关注</a>
+						<img src="img/wx.jpg" />
+					</li>
+					<li>
+						<a href="">联系我们</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--logo-->
+		<div class="logo" id="logo">
+			<a href=""><img src="img/logo.png" /></a>
+			<img src="img/dh1.png" />
+		</div>
+		<!--导航-->
+		<div class="nav_bj">
+			<div class="nav">
+				<ul>
+					<li class="on">
+						<a href="">首 页</a>
+					</li>
+					<li>
+						<a href="">关于我们</a>
+						<ol>
+							<li>
+								<a href="">公司介绍</a>
+							</li>
+							<li>
+								<a href="">公司理念</a>
+							</li>
+							<li>
+								<a href="">法人致辞</a>
+							</li>
+							<li>
+								<a href="">机构组织</a>
+							</li>
+						</ol>
+					</li>
+					<li>
+						<a href="">业务内容</a>
+					</li>
+					<li>
+						<a href="">新闻中心</a>
+						<ol>
+							<li>
+								<a href="">法律法规</a>
+							</li>
+							<li>
+								<a href="">公司动态</a>
+							</li>
+							<li>
+								<a href="">公告通知</a>
+							</li>
+							<li>
+								<a href="">招标公告</a>
+							</li>
+							<li>
+								<a href="">中标公示</a>
+							</li>
+						</ol>
+					</li>
+					<li>
+						<a href="">经典案例</a>
+					</li>
+					<li>
+						<a href="">管理平台</a>
+					</li>
+					<li>
+						<a href="">联系我们</a>
+					</li>
+				</ul>
+				<div class="search">
+					<input type="text" class="sea" name="" id="" value="请输入关键字" onfocus="if(this.value==this.defaultValue){this.value='';};" onblur="if(this.value==''){this.value=this.defaultValue;}" />
+					<input type="submit" class="but" name="" id="" value="" />
+				</div>
+			</div>
+		</div>
+		<!--banner-->
+		<div id="slideBox" class="slideBox">
+			<div class="hd">
+				<ul>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="bd">
+				<ul>
+					<li>
+						<a href=" "><img src="img/banner1.jpg" /></a>
+					</li>
+					<li>
+						<a href=" "><img src="img/banner1.jpg" /></a>
+					</li>
+				</ul>
+			</div>
+			<!--前/后按钮-->
+			<a class="prev" href="javascript:void(0)"></a>
+			<a class="next" href="javascript:void(0)"></a>
+		</div>
+		<!--企业文化-->
+		<div class="index_1">
+			<dl>
+				<a href=""><img src="img/wh_1.jpg" /></a>
+				<dt>企业文化</dt>
+				<dd>XXX信息科技有限公司成立于2015年7月，总部位于古城西安，目前共有XXX信息科技有限公司成立于2015年7月......</dd>
+			</dl>
+			<dl>
+				<a href=""><img src="img/wh_2.jpg" /></a>
+				<dt>服务承诺</dt>
+				<dd>XXX信息科技有限公司成立于2015年7月，总部位于古城西安，目前共有XXX信息科技有限公司成立于2015年7月......</dd>
+			</dl>
+			<dl>
+				<a href=""><img src="img/wh_3.jpg" /></a>
+				<dt>机构组织</dt>
+				<dd>XXX信息科技有限公司成立于2015年7月，总部位于古城西安，目前共有XXX信息科技有限公司成立于2015年7月......</dd>
+			</dl>
+		</div>
+		<!--关于我们-->
+		<div class="index_2_bj">
+			<div class="index_2">
+				<dl class="tit">
+					<dt>关于XXX</dt>
+					<dd>ABOUT US</dd>
+				</dl>
+				<h3>为客户提供最优质的整体解决方案</h3>
+				<p>XXX信息科技有限公司于2004年8月11日在西安成立，是经陕西省建设厅审核批准，建设部备案的工程造价咨询甲级资质、招标代理乙级、政府采购代理乙级资质单位。经过10年的发展，公司的各项业务发展已初具规模。公司在业务发展中注重专业化、标准化、规范化的建设，使公司逐步向高水准、全方位服务方向迈进，得到了社会相关行业的认可。我们XXX信息科技有限公司是专职从事工程造价咨询业务的独立法人机构，业务范围包括：建筑工程竣工结算审核、决算审计、编制建筑工程量清单、工程标底、建筑工程投招标代理、建设项目可行性研究评估等。XXX信息科技有限公司下设五个部门，注册有宝鸡分所、渭南分所，拥有高级工程师、注册造价师、工程师等各专业人员50余人，聚集了土建、安装、市政、公路、桥梁、机场、电力、冶金及法律等专业的高素质优秀人才，技术人员中具有高级职称的15名，中级职称的26名，国家注册造价工程师15名，技术负责人为建筑专业教授。目前业务涉及了建筑工程、房地产、市政道桥工程、水利工程、电力工程、冶金设备检修、公路工程、机场建设、建筑预决算软件开发等各个领域......
+					<a class="more1" href="">【了解更多】</a>
+				</p>
+				<ul>
+					<li><img src="img/gy_1.jpg" /></li>
+					<li><img src="img/gy_2.jpg" /></li>
+					<li><img src="img/gy_3.jpg" /></li>
+				</ul>
+			</div>
+		</div>
+		<!--业务内容-->
+		<div class="index_3">
+			<dl class="tit">
+				<dt>业务内容</dt>
+				<dd>business</dd>
+			</dl>
+			<div class="index_3_in">
+				<a href="">
+					<dl>
+						<dt><img src="img/yw_1.png"/></dt>
+						<dd>
+							<h2>造价咨询业务</h2>
+							<span>Cost consultation</span>
+							<p>根据现行标准“建筑设计”文件编制深度规定及初步设......</p>
+						</dd>
+					</dl>
+				</a>
+				<a href="">
+					<dl>
+						<dt><img src="img/yw_2.png"/></dt>
+						<dd>
+							<h2>招标代理业务</h2>
+							<span>Tender agent</span>
+							<p>可以分为中央投资项目招标代理机构、工程建设项目招......</p>
+						</dd>
+					</dl>
+				</a>
+				<a href="">
+					<dl>
+						<dt><img src="img/yw_3.png"/></dt>
+						<dd>
+							<h2>工程监理业务</h2>
+							<span>Engineering supervision</span>
+							<p>根据招标文件要求承担本工程施工阶段和保修阶段的......</p>
+						</dd>
+					</dl>
+				</a>
+				<a href="">
+					<dl>
+						<dt><img src="img/yw_4.png"/></dt>
+						<dd>
+							<h2>政府采购业务</h2>
+							<span>Government Procurement</span>
+							<p>在分管主任的指导下，由承办人员，按照采购人的委托......</p>
+						</dd>
+					</dl>
+				</a>
+				<a href="">
+					<dl>
+						<dt><img src="img/yw_5.png"/></dt>
+						<dd>
+							<h2>军工涉密咨询</h2>
+							<span>Military secret</span>
+							<p>为进一步加强保密实验室涉密设备保密管理工作，杜绝......</p>
+						</dd>
+					</dl>
+				</a>
+				<a href="">
+					<dl>
+						<dt><img src="img/yw_6.png"/></dt>
+						<dd>
+							<h2>业务流程</h2>
+							<span>Business Process</span>
+							<p>经过多年的企业实践和研究，明确各自的分工和职责......</p>
+						</dd>
+					</dl>
+				</a>
+			</div>
+		</div>
+		<!--新闻中心-->
+		<div class="index_4">
+			<dl class="tit">
+				<dt>新闻中心</dt>
+				<dd>News Center</dd>
+			</dl>
+			<div class="outBox">
+				<div class="hd">
+					<ul>
+						<li>法律法规</li>
+						<li>公司动态</li>
+						<li>招标公告</li>
+					</ul>
+				</div>
+				<div class="bd">
+					<div class="inBox">
+						<div class="inHd">
+							<ul>
+								<li>
+									<a href="">中华人民共和国招标投标法</a><span>2016/9/29</span></li>
+								<li>
+									<a href="">工程造价咨询单位管理办法</a><span>2016/9/29</span></li>
+								<li>
+									<a href="">西安市阎良污水处理厂二期工程施工项目招标公告</a><span>2016/9/29</span></li>
+								<li>
+									<a href="">渭南市临渭区猕猴桃产业项目</a><span>2016/9/29</span></li>
+								<li>
+									<a href="">西北税务学校操场改造及绿化</a><span>2016/9/29</span></li>
+								<li>
+									<a href="">中华人民共和国建筑法</a><span>2016/9/29</span></li>
+								<li>
+									<a href="">陕西省环保厅眉县废物库（基地）三期工程中标公示</a><span>2016/9/29</span></li>
+							</ul>
+						</div>
+						<div class="inBd">
+							<ul>
+								<li>
+									<a href="" class="inBd_img"><img src="img/xw_1.jpg" /></a>
+									<p>《中华人民共和国招标投标法》已由中华人民共和国第九届全国人民代表大会常务委员会第十一次会议......</p>
+									<a href="" class="more2">查看详情</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="" class="inBd_img"><img src="img/xw_1.jpg" /></a>
+									<p>《中华人民共和国招标投标法》已由中华人民共和国第九届全国人民代表大会常务委员会第十一次会议......</p>
+									<a href="" class="more2">查看详情</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="" class="inBd_img"><img src="img/xw_1.jpg" /></a>
+									<p>《中华人民共和国招标投标法》已由中华人民共和国第九届全国人民代表大会常务委员会第十一次会议......</p>
+									<a href="" class="more2">查看详情</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="" class="inBd_img"><img src="img/xw_1.jpg" /></a>
+									<p>《中华人民共和国招标投标法》已由中华人民共和国第九届全国人民代表大会常务委员会第十一次会议......</p>
+									<a href="" class="more2">查看详情</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="" class="inBd_img"><img src="img/xw_1.jpg" /></a>
+									<p>《中华人民共和国招标投标法》已由中华人民共和国第九届全国人民代表大会常务委员会第十一次会议......</p>
+									<a href="" class="more2">查看详情</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="" class="inBd_img"><img src="img/xw_1.jpg" /></a>
+									<p>《中华人民共和国招标投标法》已由中华人民共和国第九届全国人民代表大会常务委员会第十一次会议......</p>
+									<a href="" class="more2">查看详情</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="" class="inBd_img"><img src="img/xw_1.jpg" /></a>
+									<p>《中华人民共和国招标投标法》已由中华人民共和国第九届全国人民代表大会常务委员会第十一次会议......</p>
+									<a href="" class="more2">查看详情</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="inBox">
+						<div class="inHd">
+							<ul>
+								<li>
+									<a href="">中华人民共和国招标投标法</a><span>2016/9/29</span></li>
+								<li>
+									<a href="">工程造价咨询单位管理办法</a><span>2016/9/29</span></li>
+								<li>
+									<a href="">西安市阎良污水处理厂二期工程施工项目招标公告</a><span>2016/9/29</span></li>
+								<li>
+									<a href="">渭南市临渭区猕猴桃产业项目</a><span>2016/9/29</span></li>
+								<li>
+									<a href="">西北税务学校操场改造及绿化</a><span>2016/9/29</span></li>
+								<li>
+									<a href="">中华人民共和国建筑法</a><span>2016/9/29</span></li>
+								<li>
+									<a href="">陕西省环保厅眉县废物库（基地）三期工程中标公示</a><span>2016/9/29</span></li>
+							</ul>
+						</div>
+						<div class="inBd">
+							<ul>
+								<li>
+									<a href="" class="inBd_img"><img src="img/xw_1.jpg" /></a>
+									<p>《中华人民共和国招标投标法》已由中华人民共和国第九届全国人民代表大会常务委员会第十一次会议......</p>
+									<a href="" class="more2">查看详情</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="" class="inBd_img"><img src="img/xw_1.jpg" /></a>
+									<p>《中华人民共和国招标投标法》已由中华人民共和国第九届全国人民代表大会常务委员会第十一次会议......</p>
+									<a href="" class="more2">查看详情</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="" class="inBd_img"><img src="img/xw_1.jpg" /></a>
+									<p>《中华人民共和国招标投标法》已由中华人民共和国第九届全国人民代表大会常务委员会第十一次会议......</p>
+									<a href="" class="more2">查看详情</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="" class="inBd_img"><img src="img/xw_1.jpg" /></a>
+									<p>《中华人民共和国招标投标法》已由中华人民共和国第九届全国人民代表大会常务委员会第十一次会议......</p>
+									<a href="" class="more2">查看详情</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="" class="inBd_img"><img src="img/xw_1.jpg" /></a>
+									<p>《中华人民共和国招标投标法》已由中华人民共和国第九届全国人民代表大会常务委员会第十一次会议......</p>
+									<a href="" class="more2">查看详情</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="" class="inBd_img"><img src="img/xw_1.jpg" /></a>
+									<p>《中华人民共和国招标投标法》已由中华人民共和国第九届全国人民代表大会常务委员会第十一次会议......</p>
+									<a href="" class="more2">查看详情</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="" class="inBd_img"><img src="img/xw_1.jpg" /></a>
+									<p>《中华人民共和国招标投标法》已由中华人民共和国第九届全国人民代表大会常务委员会第十一次会议......</p>
+									<a href="" class="more2">查看详情</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="inBox">
+						<div class="inHd">
+							<ul>
+								<li>
+									<a href="">中华人民共和国招标投标法</a><span>2016/9/29</span></li>
+								<li>
+									<a href="">工程造价咨询单位管理办法</a><span>2016/9/29</span></li>
+								<li>
+									<a href="">西安市阎良污水处理厂二期工程施工项目招标公告</a><span>2016/9/29</span></li>
+								<li>
+									<a href="">渭南市临渭区猕猴桃产业项目</a><span>2016/9/29</span></li>
+								<li>
+									<a href="">西北税务学校操场改造及绿化</a><span>2016/9/29</span></li>
+								<li>
+									<a href="">中华人民共和国建筑法</a><span>2016/9/29</span></li>
+								<li>
+									<a href="">陕西省环保厅眉县废物库（基地）三期工程中标公示</a><span>2016/9/29</span></li>
+							</ul>
+						</div>
+						<div class="inBd">
+							<ul>
+								<li>
+									<a href="" class="inBd_img"><img src="img/xw_1.jpg" /></a>
+									<p>《中华人民共和国招标投标法》已由中华人民共和国第九届全国人民代表大会常务委员会第十一次会议......</p>
+									<a href="" class="more2">查看详情</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="" class="inBd_img"><img src="img/xw_1.jpg" /></a>
+									<p>《中华人民共和国招标投标法》已由中华人民共和国第九届全国人民代表大会常务委员会第十一次会议......</p>
+									<a href="" class="more2">查看详情</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="" class="inBd_img"><img src="img/xw_1.jpg" /></a>
+									<p>《中华人民共和国招标投标法》已由中华人民共和国第九届全国人民代表大会常务委员会第十一次会议......</p>
+									<a href="" class="more2">查看详情</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="" class="inBd_img"><img src="img/xw_1.jpg" /></a>
+									<p>《中华人民共和国招标投标法》已由中华人民共和国第九届全国人民代表大会常务委员会第十一次会议......</p>
+									<a href="" class="more2">查看详情</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="" class="inBd_img"><img src="img/xw_1.jpg" /></a>
+									<p>《中华人民共和国招标投标法》已由中华人民共和国第九届全国人民代表大会常务委员会第十一次会议......</p>
+									<a href="" class="more2">查看详情</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="" class="inBd_img"><img src="img/xw_1.jpg" /></a>
+									<p>《中华人民共和国招标投标法》已由中华人民共和国第九届全国人民代表大会常务委员会第十一次会议......</p>
+									<a href="" class="more2">查看详情</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="" class="inBd_img"><img src="img/xw_1.jpg" /></a>
+									<p>《中华人民共和国招标投标法》已由中华人民共和国第九届全国人民代表大会常务委员会第十一次会议......</p>
+									<a href="" class="more2">查看详情</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="nav_bj">
+			<div class="nav">
+				<ul>
+					<li>
+						<a href="">首 页</a>
+					</li>
+					<li>
+						<a href="">关于我们</a>
+					</li>
+					<li>
+						<a href="">业务内容</a>
+					</li>
+					<li>
+						<a href="">新闻中心</a>
+					</li>
+					<li>
+						<a href="">经典案例</a>
+					</li>
+					<li>
+						<a href="">管理平台</a>
+					</li>
+					<li>
+						<a href="">联系我们</a>
+					</li>
+				</ul>
+				<a class="top" href="#logo">返回顶部</a>
+			</div>
+		</div>
+		<div class="footer_bj">
+			<div class="footer">
+				<p>Copyright © 2020<br/>
+					公司地址：XXX<br/>Email: XXX | 联系手机：XXX<br/>技术支持：
+					<a href="">XXX</a>
+				</p>
+				<img class="dh" src="img/dh2.png" />
+				<img class="wx" src="img/wx.jpg" />
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>XXX</title>
+		<meta name="keywords" content="XXX">
+		<meta name="description" content="XXX">
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+	</head>
+	<body onload="createCode()">
+		<div class="header">
+			<div class="top">
+				<div class="meihua"><img src="images/meihua.jpg"></div>
+			    <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+			</div>
+		</div>
+		<div class="reg-box">
+			<div class="reg">
+				<p><img src="images/zhuce.png"/><span>免费注册</span></p>
+				<div class="chuangjian">
+					<span>创建您的账号</span>
+					<em>(以下信息皆为必填项，请认真填写！)</em>
+				</div>
+				<ul class="cj-infor">
+					<li>
+						
+						<span><i>*</i>设置登录名</span>
+						<input type="text" class="cj-input" />
+					</li>
+					<li>
+						<span><i>*</i>请设置登录密码</span>
+						<input type="text" class="cj-input" />
+						<em class="tishi">6-18个字符，请使用字母加数字的组合密码不能单独使用字母、数字或符号</em>
+					</li>
+					<li>
+						<span><i>*</i>确认登录密码</span>
+						<input type="text" class="cj-input" />
+						<em class="tishi">设置个比较复杂的密码</em>
+					</li>
+					<li>
+						<span>注册用户邮箱</span>
+						<input type="text" class="cj-input" />
+						<em class="find">找回密码用</em>
+					</li>
+					<li>
+						<span><i>*</i>验证码</span>
+						<input type="text" class="cj-input" id="input1" />
+						 <input type="text" onclick="createCode()" readonly="readonly" id="checkCode" class="unchanged" style="width: 80px"  />
+					</li>
+				</ul>
+				<button type="button" value="" class="login-btn" style="margin: 80px auto; display: block;">注册</button>
+			</div>
+		</div>
+		<div class="copyright">
+			版权所有：南昌市xx信息工作室　地址：解放西路XXXXXXXXXXX(写字楼)2605室 1XXX
+		</div>
+		<script language="javascript" type="text/javascript">  
+     var code ; //在全局 定义验证码  
+     function createCode()  
+     {   
+       code = "";  
+       var codeLength = 6;//验证码的长度  
+       var checkCode = document.getElementById("checkCode");  
+       var selectChar = new Array(0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z');//所有候选组成验证码的字符，当然也可以用中文的  
+       for(var i=0;i<codeLength;i++)  
+       {  
+          
+       var charIndex = Math.floor(Math.random()*36);  
+       code +=selectChar[charIndex];  
+       }   
+       if(checkCode)  
+       {  
+         checkCode.className="code";  
+         checkCode.value = code;  
+       }  
+         
+     }  
+       
+      function validate ()  
+     {  
+       var inputCode = document.getElementById("input1").value;  
+       if(inputCode.length <=0)  
+       {  
+           alert("请输入验证码！");  
+       }  
+       else if(inputCode != code )  
+       {  
+          alert("验证码输入错误！");  
+          createCode();
+       }  
+         
+       }  
+         
+    </script>  
+	</body>
+</html>

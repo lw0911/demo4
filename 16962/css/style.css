@@ -1,0 +1,237 @@
+/* AB模版网 做最好的织梦整站模板下载网站 Www.AdminBuy.Cn */
+/* QQ：9490489 */
+/* 仿站：Fang.AdminBuy.Cn */
+/* 素材：Sc.AdminBuy.Cn */
+/*通用替换颜色*/
+	body {
+	background-color: #fff;
+}
+.met-index-body h2, .site-header #tophead .tophead-contact li i, .site-header #tophead .tophead-right i {
+	color: #77d1ad;
+}
+.met-nav .nav > li > a.active, .met-nav .dropdown.open > a, .met-nav .nav > li > a:hover, .met-nav .dropdown-menu, .dropdown-menu > li > a:hover {
+	color: #77d1ad !important;
+}
+.stricky-fixed {
+	border-bottom: 2px solid #77d1ad;
+}
+.met-nav .dropdown-menu {
+	background-color: #77d1ad;
+}
+.met-index-body .more:hover {
+	background-color: #77d1ad;
+	border-color: #77d1ad;
+}
+.met-index-news ul.blocks-2 li a:hover {
+	color: #77d1ad;
+}
+.met_pager a.Ahover, .met_pager a.Ahover:hover {
+	border-color: #77d1ad;
+	background: #77d1ad;
+}
+#met-imgs-carousel .slick-dots li.slick-active {
+	border-color: #77d1ad;
+}
+.met-showproduct.pagetype2 nav.navbar .navbar-right li.active a {
+	color: #77d1ad;
+}
+.met-news-bar .recommend .list-group a:hover {
+	color: #77d1ad;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	color: #77d1ad;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+	color: #77d1ad;
+}
+@media (min-width: 768px) {
+	.navbar-default .navbar-nav>.active span i, .nav>li:hover span i {
+	background-color: #77d1ad;
+}
+} .logo-tel-img, .logo-tel-num strong {
+	color: #77d1ad;
+}
+.nav>li:hover a {
+	color: #77d1ad;
+}
+.met-index-product .nav-tabs li.active a {
+	background-color: #77d1ad;
+}
+.met-index-jion {
+	background-color: #77d1ad;
+}
+.met-foot-jion {
+	background-color: #77d1ad;
+}
+.met-banner-ny {
+	background-color: #77d1ad;
+}
+.met-column-nav .met-column-nav-ul > li a.link:hover, .met-column-nav .met-column-nav-ul > li a.link.active {
+	color: #77d1ad;
+}
+.btn-outline.btn-primary {
+	color: #77d1ad;
+}
+.btn-primary {
+	background: #77d1ad;
+	border-color: #77d1ad;
+}
+.btn-primary:hover {
+	background: #77d1ad;
+	border-color: #77d1ad;
+}
+.btn-outline.btn-primary.active, .btn-outline.btn-primary:active, .btn-outline.btn-primary:focus, .btn-outline.btn-primary:hover, .open>.dropdown-toggle.btn-outline.btn-primary {
+	background: #77d1ad;
+	border-color: #77d1ad;
+}
+.met-links a:hover {
+	color: #77d1ad;
+}
+.met-footnav h4 a:hover {
+	color: #77d1ad;
+}
+.about-info {
+	background: #77d1ad;
+}
+.met-index-about [class*=blocks] li:hover .about-info h3 {
+	color: #77d1ad;
+}
+.met-nav .dropdown-menu > li + li {
+	border-top: 1px solid rgba(255,255,255,0.5);
+}
+.met-index-about [class*=blocks] li .about-info:after {
+	background: #77d1ad;
+}
+.met-index-product #indexprolist h4 a:hover, .met-product.type-1 h4 a:hover {
+	color: #77d1ad;
+}
+.met-news-bar ul.column li a.active, .met-news-bar ul.column li a:hover {
+	color: #77d1ad;
+}
+.met-news ul.met-page-ajax li h4 a:hover {
+	color: #77d1ad;
+}
+.form-control.focus, .form-control:focus {
+	border-color: #77d1ad !important;
+}
+.pager li>a:focus, .pager li>a:hover {
+	border-color: #77d1ad;
+	color: #77d1ad;
+}
+.btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
+	background: #77d1ad !important;
+	border-color: #77d1ad !important;
+	opacity: 0.9;
+}
+.site-header.position1 #tophead, .met-footnav, .met-links, footer {
+	background: #262e28;
+}
+.met-index-contact {
+	background: #262e28;
+}
+.met-index-contact .met-form .form-control, .met-index-contact .input-group-addon {
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.met-index-contact .met-form .form-control, .met-index-contact .input-group-addon, .met-index-contact {
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.met-links, .met-links a, footer, .met-links .breadcrumb > li + li:before {
+	color: #ffffff;
+}
+.met-index-contact ::-webkit-input-placeholder {
+	/* WebKit browsers*/
+	color: #ffffff;
+}
+.met-index-contact :-moz-placeholder {
+	/* Mozilla Firefox 4 to 18*/
+	color: #ffffff;
+}
+.met-index-contact ::-moz-placeholder {
+	/* Mozilla Firefox 19+*/
+	color: #ffffff;
+}
+.met-index-contact :-ms-input-placeholder {
+	/* Internet Explorer 10+*/
+	color: #ffffff;
+}
+.met-index-contact select {
+	color: #ffffff;
+}
+.met-index-contact option {
+	color: #666;
+}
+.site-header #tophead a, .site-header #tophead .tophead-right {
+	color: #ffffff;
+}
+.btn-success {
+	background: #77d1ad !important;
+	border-color: #77d1ad !important;
+}
+.met-nav-right-shop.nav > li {
+	background: #77d1ad !important;
+}
+.met-nav-right-shop .dropdown > a > i, .met-nav-right-shop .dropdown-menu li i {
+	color: #ffffff !important;
+}
+.dropdown-menu > li > a:hover i {
+	color: #77d1ad !important;
+}
+.met-nav .nav-shop .met-nav-right-shop > li > a:hover, .met-nav .nav-shop .met-nav-right-shop > li > a.active, .met-nav .met-nav-right-shop .dropdown.open > a {
+	color: #ffffff !important;
+}
+.site-header.position1 .met-nav-right-shop > li > a {
+	color: #ffffff !important;
+}
+.dropdown-menu > li > a:hover i {
+	color: #77d1ad !important;
+}
+.met-nav-right-shop.nav > li > a {
+	color: #ffffff !important;
+}
+.met-nav-right-shop .dropdown-menu > li > a {
+	color: #ffffff !important;
+}
+.met-nav-right-shop .dropdown-menu > li > a:hover {
+	color: #77d1ad !important;
+}
+.met-nav .nav > li > a {
+	color: #ffffff !important;
+}
+.met-column-nav .dropdown-menu > li > a:hover {
+	color: #77d1ad !important;
+}
+.met-position a, .breadcrumb > li + li:before {
+	color: #77d1ad;
+}
+.nav-tabs-line > li.active > a, .nav-tabs-line > li.active > a:focus, .nav-tabs-line > li.active > a:hover, .nav-tabs-line > li > a:hover {
+	color: #77d1ad;
+	border-bottom: 2px solid #77d1ad;
+}
+.powered_by_metinfo a {
+	color: #77d1ad;
+}
+.stricky-fixed .nav > li > a {
+	color: #222 !important;
+}
+.met-index-contact {
+	color: #ffffff !important;
+}
+.checkbox-custom label::before {
+	background-color: #ffffff;
+	border: 1px solid #ffffff;
+}
+.checkbox-primary input[type="checkbox"]:checked + label::before, .checkbox-primary input[type="radio"]:checked + label::before {
+	background-color: #77d1ad!important;
+	border-color: #77d1ad!important;
+}
+.radio-primary input[type="radio"]:checked + label::before {
+	background-color: #77d1ad!important;
+	border-color: #77d1ad!important;
+}
+.radio-custom label::before {
+	background-color: #ffffff;
+	border: 1px solid #ffffff;
+}
+.met-column-nav-ul .dropdown-menu > li > a {
+	color: #90939b !important;
+}

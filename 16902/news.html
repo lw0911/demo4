@@ -1,0 +1,546 @@
+<!doctype html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<title>某某家政-新闻中心</title>
+
+		<link rel="stylesheet" href="css/style.css">
+
+		<link rel="stylesheet" href="css/reset.css">
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+
+		<link rel="stylesheet" href="css/font-awesome.css">
+
+		<!--导航处城市切换插件-->
+
+		<link rel="stylesheet" href="css/cityPicker.css">
+
+		<!--分页-->
+
+		<link rel="stylesheet" href="css/pagination.css" />
+
+</head>
+
+
+
+<body>
+
+	<div class="top-nav">
+
+		<div class="container">
+
+			<ul class="login-left">
+
+				<li> <span>欢迎来到某某家政政！</span> </li>
+
+				<li> <a href="employer_login.html" id="employer-login">[雇主登录]</a> </li>
+
+				<li> <a href="hire_login.html" id="hire-login">[雇员登录]</a> </li>
+
+				<li> <a href="javascript:void(0)" class="logout">[退出登录]</a> </li>
+
+			</ul>
+
+			<ul class="top-right">
+
+				<li>
+
+					<a href="business_center.html" class="top-link">
+
+						<span class="fa fa-hand-o-right"></span>商务中心
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="http://www.fzjlbj.com/p_jjqjcontentgxh.aspx" class="top-link">
+
+						<span class="fa fa-diamond"></span>
+
+						个性化定制
+
+					</a>
+
+				</li>
+
+				<li style="display:none;">
+
+					<a href="javascript:void(0)" class="top-link phone-link">
+
+						<span class="fa fa-phone"></span>
+
+						4000-591-798
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="person-center.html" class="top-link">
+
+						<span class="fa fa-user"></span>
+
+						个人中心
+
+					</a>
+
+				</li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+
+
+	<div class="header">
+
+		<div class="container">
+
+			<div class="jw-logo">
+
+				<img src="images/logo2.png" alt="" onClick="location.href=&#39;index.html&#39;"/>
+
+				<div class="change-city">
+
+					<em>
+
+						<input type="text" id="cityChoice" value="福州" placeholder="请选择"/>
+
+					</em>
+
+					<p id="choose-city">[切换城市]</p>
+
+				</div>
+
+			</div>
+
+			<div class="header-right">
+
+				<ul class="header-nav">
+
+					<li class="nav-list"><a href="index.html">首页</a></li>
+
+					<li class="nav-list"><a href="baomu.html">保姆</a></li>
+
+					<li class="nav-list"><a href="yuesao.html">月嫂</a></li>
+
+					<li class="nav-list"><a href="linshi.html">临时钟点工</a></li>
+
+					<li class="nav-list"><a href="changqi.html">长期钟点工</a></li>
+
+					<li class="nav-list">
+
+						<a href="javascript:void(0)" class="nav-more">更多服务<span class="fa fa-angle-down"></span></a>
+
+						<ol class="hide-nav">
+
+							<li><a href="jiadian.html" class="active">家电清洗</a></li>
+
+							<li><a href="no_date.html">干洗</a></li>
+
+							<li><a href="no_date.html">搬家</a></li>
+
+							<li><a href="no_date.html">护工</a></li>
+
+							<li><a href="no_date.html">居家保养</a></li>
+
+							<li><a href="no_date.html">皮具护理</a></li>
+
+							<li><a href="no_date.html">居家便民</a></li>
+
+							<li><a href="no_date.html">家电维修</a></li>
+
+						</ol>
+
+					</li>
+
+				</ul>
+
+				<div class="drop-menu">
+
+					<span class="fa fa-navicon"></span>
+
+				</div>
+
+				<div class="search-right">
+
+					<ul class="three">
+
+						<li class="hir-name current">雇员名字</li>
+
+						<li class="phone">手机号码</li>
+
+						<li class="role">角色</li>
+
+					</ul>
+
+					<ul class="search-input">
+
+						<li>
+
+							<input type="text" placeholder="请输入雇员名称"/>
+
+							<span class="fa fa-search"></span>
+
+						</li>
+
+						<li>
+
+							<input type="text" placeholder="请输入手机号码"/>
+
+							<span class="fa fa-search"></span>
+
+						</li>
+
+						<li>
+
+							<input type="text" placeholder="请输入角色"/>
+
+							<span class="fa fa-search"></span>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="section-banner">
+
+		<img src="images/news_bj.jpg" alt=""/>
+
+	</div>
+
+	<div class="news-center">
+
+		<div class="container">
+
+			<div class="news-wrap">
+
+				<div class="news-item">
+
+					<h3>这是新闻的标题这是新闻的标题</h3>
+
+					<p class="news-time"><span>来源：968金网月子中心</span><span>阅读量：14</span><i>更新时间：2017-07-09 16:31:11</i></p>
+
+					<p class="news-cont"> 然而这还不是最重要的，更要命的是，第一次生孩子，不知道要怎么处理各种问题。。于是很多妈妈可能会四处向前辈们取经，或网上查资料寻找更多方式来防患于未然......</p>
+
+					<a href="news_detail.html" class="news-detail">查看全文<i class="fa fa-angle-double-right"></i></a>
+
+					<span class="gray-piece"></span>
+
+					<span class="block-line"></span>
+
+					<span class="green-piece"></span>
+
+				</div>
+
+				<div class="news-margin"></div>
+
+				<div class="news-item">
+
+					<h3>这是新闻的标题这是新闻的标题</h3>
+
+					<p class="news-time"><span>来源：968金网月子中心</span><span>阅读量：14</span><i>更新时间：2017-07-09 16:31:11</i></p>
+
+					<p class="news-cont"> 然而这还不是最重要的，更要命的是，第一次生孩子，不知道要怎么处理各种问题。。于是很多妈妈可能会四处向前辈们取经，或网上查资料寻找更多方式来防患于未然......</p>
+
+					<a href="news_detail.html" class="news-detail">查看全文<i class="fa fa-angle-double-right"></i></a>
+
+					<span class="gray-piece"></span>
+
+					<span class="block-line"></span>
+
+					<span class="green-piece"></span>
+
+				</div>
+
+				<div class="news-margin"></div>
+
+				<div class="news-item">
+
+					<h3>这是新闻的标题这是新闻的标题</h3>
+
+					<p class="news-time"><span>来源：968金网月子中心</span><span>阅读量：14</span><i>更新时间：2017-07-09 16:31:11</i></p>
+
+					<p class="news-cont"> 然而这还不是最重要的，更要命的是，第一次生孩子，不知道要怎么处理各种问题。。于是很多妈妈可能会四处向前辈们取经，或网上查资料寻找更多方式来防患于未然......</p>
+
+					<a href="news_detail.html" class="news-detail">查看全文<i class="fa fa-angle-double-right"></i></a>
+
+					<span class="gray-piece"></span>
+
+					<span class="block-line"></span>
+
+					<span class="green-piece"></span>
+
+				</div>
+
+			</div>
+
+			<div class="center-box">
+
+				<div class="M-box2"></div>
+
+			</div>	
+
+		</div>
+
+	</div>
+
+	<div class="footer">
+
+		<div class="container">
+
+			<div class="footer-text" id="footer-text">
+
+				<ul class="other-contact text-float text-ul">
+
+					<h5>部门客服</h5>
+
+					<li><a href="service_alert.html">鼓楼区客服</a></li>
+
+					<li><a href="service_alert.html">晋安区客服</a></li>
+
+					<li><a href="service_alert.html">月嫂部客服</a></li>
+
+					<li><a href="service_alert.html">保姆部客服</a></li>
+
+					<li><a href="service_alert.html">钟点工客服</a></li>
+
+				</ul>
+
+				<ul class="friendly-link text-ul" >
+
+					<h5>友情链接</h5>
+
+					<li><a href="http://www.968jw.com" target="_blank">福建家政</a></li>
+
+					<li><a href="http://www.fzjlbj.com" target="_blank">福州洁丽保洁</a></li>
+
+					<li><a href="http://www.968jw.com" target="_blank">福州金牌月嫂</a></li>
+
+					<li><a href="http://www.fzjlbj.com" target="_blank">福州家政公司</a></li>
+
+				</ul>
+
+				<ul class="contact-us text-ul">
+
+					<h5>联系我们</h5>
+
+					<li>客服热线：XXX</li>
+
+					<li>总公司地址：XXX　<br/>联系电话： XXX</li>
+
+					<li>南平分公司地址：XXX　<br/>联系电话:XXX</li>
+
+				</ul>
+
+			</div>
+
+			<div class="bottom-code">
+
+				<img src="images/code.jpg" alt=""/>
+
+				<p>扫码关注某某家政公众号，更多好礼期待你的关注</p>
+
+			</div>
+
+		</div>	
+
+	</div>
+
+	<p class="address">家政综合信息服务平台 XXX分享 XXX</p>
+
+	<div class="fix-service">
+
+		<ul class="servise-list">
+
+			<li class="weixin-item fix-item">
+
+				<span class="weixin-code code"></span>
+
+				<div class="icon">
+
+					<img src="images/weixin.png" alt="" class="weixin"/>
+
+				</div>
+
+			</li>
+
+			<li class="weibo-item fix-item">
+
+				<span class="weibo-code code"></span>
+
+				<div class="icon">
+
+					<img src="images/weibo.png" alt="" class="weibo"/>
+
+				</div>
+
+			</li>
+
+			<li class="service-item fix-item">
+
+				<span class="service-code code"></span>
+
+				<div class="icon">
+
+					<img src="images/qq.png" alt="" class="service"/>
+
+				</div>
+
+			</li>
+
+			<li id="btn" class="top-item fix-item">
+
+				<div class="icon">
+
+					<img src="images/top.png" alt="" class="top"/>
+
+				</div>
+
+			</li>
+
+		</ul>
+
+	</div>
+
+	<script src="js/jquery-2.0.0.min.js"></script>
+
+	<script src="js/bootstrap.min.js"></script>
+
+	<!--导航城市选择-->
+
+	<script src="js/cityData.js"></script>
+
+	<script src="js/cityPicker.js"></script>
+
+	<!--分页-->
+
+	<script src="js/jquery.pagination.js"></script>
+
+	<script>
+
+	$(".search-input li").hide().first().show();
+
+	$(document).ready(function(e) {
+
+		$(".nav-more").click(function(){
+
+			$(".hide-nav").slideToggle();	
+
+		});
+
+		$(".drop-menu").click(function(){
+
+			$(".header-nav").slideToggle();	
+
+		});
+
+		$(".three li").click(function(){
+
+			$(this).addClass("current").siblings().removeClass("current");
+
+			$(".search-input li").hide().eq($(this).index()).show();
+
+		});
+
+		//返回顶部
+
+		$(".top-item").click(function(){
+
+			$('body,html').animate({ scrollTop: 0 }, 500);
+
+			return false;
+
+		});
+
+	});
+
+	</script>
+
+	<script>
+
+		var cityPicker = new IIInsomniaCityPicker({
+
+			data: cityData,
+
+			target: '#cityChoice',
+
+			valType: 'k-v',
+
+			hideCityInput: '#city',
+
+			hideProvinceInput: '#province',
+
+			callback: function(city_id){
+
+			}
+
+		});
+
+		cityPicker.init();
+
+	</script>
+
+	<script>
+
+		$(function(){
+
+			$('.M-box').pagination({
+
+				callback:function(api){
+
+					$('.now').text(api.getCurrent());
+
+				}
+
+			},function(api){
+
+				$('.now').text(api.getCurrent());
+
+			});
+
+	
+
+			$('.M-box2').pagination({
+
+				coping:true,
+
+				homePage:'首页',
+
+				endPage:'末页',
+
+				prevContent:'上页',
+
+				nextContent:'下页'
+
+			});
+
+		});
+
+	</script> 
+
+</body>
+
+</html>
+

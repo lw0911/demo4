@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>产品中心</title>
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<link href="css/child.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+
+<body style="background-color:#f5f5f5;">
+<div class="left-menu child-menu">
+	<div class="left-logo"><img src="img/logo-1.png"></div>
+    <ul class="nav">
+        <li>
+            <a href="index.html">
+                <p>网站首页</p>
+                <span>HOME</span>
+            </a>
+            <i></i>
+        </li>
+        <li>
+            <a href="about.html">
+                <p>关于我们</p>
+                <span>ABOUT US</span>
+            </a>
+            <i></i>
+            <ul class="child-nav">
+                <div class="bb"></div>
+                <li><a href="#">公司简介</a>
+                    <ul class="child-nav-1">
+                        <div class="bb"></div>
+                        <li><a href="#">关于我们三级</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">公司梗概</a></li>
+            </ul>
+        </li>
+        <li class="now">
+            <a href="product-list.html">
+                <p>产品中心</p>
+                <span>PRODUCTS</span>
+            </a>
+            <i></i>
+        </li>
+        <li>
+            <a href="news-list.html">
+                <p>新闻中心</p>
+                <span>THE NEWS</span>
+            </a>
+            <i></i>
+        </li>
+        <li>
+            <a href="product-list.html">
+                <p>美丽乡村</p>
+                <span>COUNTRYSIDE</span>
+            </a>
+            <i></i>
+        </li>
+        <li>
+            <a href="online.html">
+                <p>联系我们</p>
+                <span>CONTACT US</span>
+            </a>
+            <i></i>
+        </li>
+    </ul>
+    <div class="contact-menu">
+        总机：XXX <br/>
+
+        电话：XXX <br/>
+
+        联系人：陈总 <br/>
+
+        邮箱：XXX <br/>
+    
+        网址：XXX <br/>
+
+        地址：XXX
+        XXX
+    </div>
+    <div class="menu-box-1"><img src="img/menu-box.png"></div>
+</div>
+
+<script type="text/javascript">
+/*侧边导航隐藏显示事件*/
+	var z = true;
+	$(".menu-box-1").click(function(){
+		if(z == true){
+			$(".left-menu").animate({marginLeft:0,},500);
+			$(".menu-box-1 img").attr('src','img/close.png');
+			z = false;
+		}
+		else{
+			z = true;
+			$(".left-menu").animate({marginLeft:-290,},500);
+			$(".menu-box-1 img").attr('src','img/menu-box.png');
+		}
+		
+	})
+/* --end-- */
+	
+/* 二级菜单显示隐藏效果 */
+	$(".child-nav").hide();
+	$(".nav > li").mouseenter(
+		function(){
+			$(this).children(".child-nav").show().fadeIn(500);
+		}
+	)
+	$(".nav > li").mouseleave(
+		function(){
+			$(this).children(".child-nav").hide().fadeOut(500);
+		}
+	)
+/* -- end -- */	
+
+/* 判断侧边导航的菜单栏高度 */
+	var h = $(".left-menu .nav").height();
+			var h2 = $(window).height();
+			var h3 = h / h2;
+			if(h3 > (54 / 100)){
+				
+				$(".left-menu .nav > li a span").css("display","none");
+			}
+			else{
+				$(".left-menu .nav > li a span").css("display","inline-block");
+			}
+/* -- end -- */	
+</script>
+
+<div class="content">
+	<div class="main-cont">
+    	<ul class="nav-copy fix">
+        	<li id="search">
+            	<i class="change"></i>
+            	<img id="search-img-1" src="img/search-1.png">
+            	<img id="search-img-2" src="img/search-2.png">
+            	<form>
+                	<img class="cc" src="img/jian-1.png">
+                	<input class="shuru" value="Search">
+                    <button class="sub"></button>
+                </form>
+            </li>
+            <li class="nav-select"><a href="#">全部</a></li>
+            <li>
+            	<i class="change"></i>
+            	<a href="#">新鲜水果</a>
+                <dl>
+                	<img class="cc" src="img/jian-2.png">
+                	<dd><a href="#">三级菜单</a></dd>
+                    <dd><a href="#">新鲜</a></dd>
+                    <dd><a href="#">葡萄</a></dd>
+                </dl>
+            </li>
+            <li>
+            	<i class="change"></i>
+            	<a href="#">绿色蔬菜</a>
+            </li>
+            <li>
+            	<i class="change"></i>
+            	<a href="#">生态绿植</a>
+            </li>
+        </ul>
+        <ul class="pro-list">
+            <li>
+            	<a href="product.html">
+                    <div class="pro-img">
+                        <img src="img/8.jpg">
+                    </div>
+                    <div class="pic-txt">
+                        <i></i>
+                        <div class="txt-left">
+                            <h2>猕猴桃</h2>
+                            <p>樱桃，是某些李属类植物的统称</p>
+                        </div>
+                  </div>
+           		</a>
+           	</li>
+            <li>
+            	<a href="#">
+                    <div class="pro-img">
+                        <img src="img/7.jpg">
+                    </div>
+                    <div class="pic-txt">
+                        <i></i>
+                        <div class="txt-left">
+                            <h2>火龙果</h2>
+                            <p>樱桃，是某些李属类植物的统称</p>
+                        </div>
+                  </div>
+           		</a>
+           	</li>
+            <li>
+            	<a href="#">
+                    <div class="pro-img">
+                        <img src="img/9.jpg">
+                    </div>
+                    <div class="pic-txt">
+                        <i></i>
+                        <div class="txt-left">
+                            <h2>车厘子</h2>
+                            <p>樱桃，是某些李属类植物的统称</p>
+                        </div>
+                  </div>
+           		</a>
+           	</li>
+            <li>
+            	<a href="#">
+                    <div class="pro-img">
+                        <img src="img/10.jpg">
+                    </div>
+                    <div class="pic-txt">
+                        <i></i>
+                        <div class="txt-left">
+                            <h2>蓝莓</h2>
+                            <p>樱桃，是某些李属类植物的统称</p>
+                        </div>
+                  </div>
+           		</a>
+           	</li>
+           	            <li>
+            	<a href="#">
+                    <div class="pro-img">
+                        <img src="img/11.jpg">
+                    </div>
+                    <div class="pic-txt">
+                        <i></i>
+                        <div class="txt-left">
+                            <h2>红石榴</h2>
+                            <p>樱桃，是某些李属类植物的统称</p>
+                        </div>
+                  </div>
+           		</a>
+           	</li>
+            <li>
+            	<a href="#">
+                    <div class="pro-img">
+                        <img src="img/12.jpg">
+                    </div>
+                    <div class="pic-txt">
+                        <i></i>
+                        <div class="txt-left">
+                            <h2>芒果</h2>
+                            <p>樱桃，是某些李属类植物的统称</p>
+                        </div>
+                  </div>
+           		</a>
+           	</li>
+            <li>
+            	<a href="#">
+                    <div class="pro-img">
+                        <img src="img/13.jpg">
+                    </div>
+                    <div class="pic-txt">
+                        <i></i>
+                        <div class="txt-left">
+                            <h2>黑加仑</h2>
+                            <p>樱桃，是某些李属类植物的统称</p>
+                        </div>
+                  </div>
+           		</a>
+           	</li>
+            <li>
+            	<a href="#">
+                    <div class="pro-img">
+                        <img src="img/14.jpg">
+                    </div>
+                    <div class="pic-txt">
+                        <i></i>
+                        <div class="txt-left">
+                            <h2>青柠檬</h2>
+                            <p>樱桃，是某些李属类植物的统称</p>
+                        </div>
+                  </div>
+           		</a>
+           	</li>
+        </ul>
+        <ul class="page">
+        	<li><i class="change"></i><a href="#"> < </a></li>
+            <li><i class="change"></i><a class="selected" href="#">1</a></li>
+            <li><i class="change"></i><a href="#">2</a></li>
+            <li><i class="change"></i><a href="#">></a></li>
+        </ul>
+    </div>
+    <div class="footer deep">
+         <br/>
+        访问统计：  浏览总量<span>41046</span>次 /今日浏览<span>41</span>次 /今日独立访客<span>11</span>位    建议(1024*768) IE8.0以上浏览器浏览本站 <br/> 
+        <a href="#">即时通管理</a>    <a href="#">后台登录</a> <br/>
+            <a href="">触屏版</a> 丨 <a href="">电脑版</a> <br/>
+    </div>
+</div>
+
+<script type="text/javascript">
+/* 搜索框事件 */	
+	$("#search").mouseenter(function(){
+		$(this).children("form").css("display","block");
+	})
+	$("#search").mouseleave(function(){
+		$(this).children("form").css("display","none");
+	})
+	
+/* --end-- */
+</script>
+</body>
+</html>

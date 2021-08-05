@@ -1,0 +1,59 @@
+/*新闻列表样式*/
+
+.inside_right dl {
+	overflow: hidden;
+	border-bottom: 1px dashed #E6E6E6;
+	padding: 0 10px 30px;
+	margin-bottom: 30px;
+}
+
+.inside_right dl dt {
+	float: left;
+	width: 240px;
+	height: 140px;
+	border: 1px solid #CCCCCC;
+}
+
+.inside_right dl dt:hover {
+	border-color: #e97913;
+}
+
+.inside_right dl dt a img {
+	width: 100%;
+	height: 100%;
+}
+
+.inside_right dl dd {
+	float: right;
+	width: 650px;
+	margin-top: 15px;
+}
+
+.inside_right dl dd a.inside_right_tit {
+	font-size: 1.6rem;
+	font-weight: bold;
+	width: 80%;
+	margin-bottom: 10px;
+}
+
+.inside_right dl dd span.dat,
+.inside_right dl dd span.dat a {
+	margin-left: 30px;
+	color: #9b9b9b;
+}
+
+.inside_right dl dd span.dat a:hover,
+.inside_right dl dd a.inside_right_tit:hover {
+	color: #e97913;
+	text-decoration: underline;
+}
+
+.inside_right dl dd p {
+	font-size: 1.4rem;
+	line-height: 26px;
+	height: 52px;
+	overflow: hidden;
+	color: #666;
+	text-indent: 2em;
+	margin-top: 15px;
+}

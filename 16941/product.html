@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>产品中心</title>
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<link href="css/child.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+
+<body style="background-color:#f5f5f5;">
+<div class="left-menu child-menu">
+	<div class="left-logo"><img src="img/logo-1.png"></div>
+    <ul class="nav">
+        <li>
+            <a href="index.html">
+                <p>网站首页</p>
+                <span>HOME</span>
+            </a>
+            <i></i>
+        </li>
+        <li>
+            <a href="about.html">
+                <p>关于我们</p>
+                <span>ABOUT US</span>
+            </a>
+            <i></i>
+            <ul class="child-nav">
+                <div class="bb"></div>
+                <li><a href="#">公司简介</a>
+                    <ul class="child-nav-1">
+                        <div class="bb"></div>
+                        <li><a href="#">关于我们三级</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">公司梗概</a></li>
+            </ul>
+        </li>
+        <li class="now">
+            <a href="product-list.html">
+                <p>产品中心</p>
+                <span>PRODUCTS</span>
+            </a>
+            <i></i>
+        </li>
+        <li>
+            <a href="news-list.html">
+                <p>新闻中心</p>
+                <span>THE NEWS</span>
+            </a>
+            <i></i>
+        </li>
+        <li>
+            <a href="product-list.html">
+                <p>美丽乡村</p>
+                <span>COUNTRYSIDE</span>
+            </a>
+            <i></i>
+        </li>
+        <li>
+            <a href="online.html">
+                <p>联系我们</p>
+                <span>CONTACT US</span>
+            </a>
+            <i></i>
+        </li>
+    </ul>
+    <div class="contact-menu">
+        总机：XXX <br/>
+
+        电话：XXX <br/>
+
+        联系人：陈总 <br/>
+
+        邮箱：XXX <br/>
+    
+        网址：XXX <br/>
+
+        地址：XXX
+        XXX
+    </div>
+    <div class="menu-box-1"><img src="img/menu-box.png"></div>
+</div>
+
+<script type="text/javascript">
+/*侧边导航隐藏显示事件*/
+	var z = true;
+	$(".menu-box-1").click(function(){
+		if(z == true){
+			$(".left-menu").animate({marginLeft:0,},500);
+			/*$(".content").animate({marginLeft:290,},500).css("width","calc(100% - 290px)");
+			$(".content").addClass("content-1");*/
+			$(".menu-box-1 img").attr('src','img/close.png');
+			z = false;
+		}
+		else{
+			z = true;
+			$(".left-menu").animate({marginLeft:-290,},500);
+			/*$(".content").animate({marginLeft:0,width:'100%',},500);
+			$(".content").removeClass("content-1");*/
+			$(".menu-box-1 img").attr('src','img/menu-box.png');
+		}
+		
+	})
+/* --end-- */
+	
+/* 二级菜单显示隐藏效果 */
+	$(".child-nav").hide();
+	$(".nav > li").mouseenter(
+		function(){
+			$(this).children(".child-nav").show().fadeIn(500);
+		}
+	)
+	$(".nav > li").mouseleave(
+		function(){
+			$(this).children(".child-nav").hide().fadeOut(500);
+		}
+	)
+/* -- end -- */	
+
+/* 判断侧边导航的菜单栏高度 */
+	var h = $(".left-menu .nav").height();
+			var h2 = $(window).height();
+			var h3 = h / h2;
+			if(h3 > (54 / 100)){
+				
+				$(".left-menu .nav > li a span").css("display","none");
+			}
+			else{
+				$(".left-menu .nav > li a span").css("display","inline-block");
+			}
+/* -- end -- */	
+</script>
+
+<div class="content">
+	<div class="main-cont">
+    	<ul class="nav-copy fix">
+        	<li id="search">
+            	<i class="change"></i>
+            	<img id="search-img-1" src="img/search-1.png">
+            	<img id="search-img-2" src="img/search-2.png">
+            	<form>
+                	<img class="cc" src="img/jian-1.png">
+                	<input class="shuru" value="Search">
+                    <button class="sub"></button>
+                </form>
+            </li>
+            <li class="nav-select"><a href="#">全部</a></li>
+            <li>
+            	<i class="change"></i>
+            	<a href="#">新鲜水果</a>
+                <dl>
+                	<img class="cc" src="img/jian-2.png">
+                	<dd><a href="#">三级菜单</a></dd>
+                    <dd><a href="#">新鲜</a></dd>
+                    <dd><a href="#">葡萄</a></dd>
+                </dl>
+            </li>
+            <li>
+            	<i class="change"></i>
+            	<a href="#">绿色蔬菜</a>
+            </li>
+            <li>
+            	<i class="change"></i>
+            	<a href="#">生态绿植</a>
+            </li>
+        </ul>
+        <div class="txt-box" style="margin-bottom:30px;">
+        	<div class="focus">
+            	<div class="focus-img">
+                	<ul>
+                    	<li><a href="#"><img src="img/500215542.jpg"></a></li>
+                        <li><a href="#"><img src="img/pic-1.jpg"></a></li>
+                    </ul>
+                </div>
+                <a class="prev" href="javascript:void(0)"></a>
+				<a class="next" href="javascript:void(0)"></a>
+            </div>
+            <script type="text/javascript">
+				jQuery(".focus").slide({mainCell:".focus-img ul",effect:"leftLoop",autoPlay:true});
+			</script>
+            
+            <div class="focus-txt">
+            	<h1>樱桃</h1>
+                <p>樱桃（学名：Cerasus pseudocerasus），是某些李属类植物的统称，包括樱桃亚属、酸樱桃亚属、桂樱亚属等。乔木，高2-6米，树皮灰白色。小枝灰褐色，嫩枝绿色，无毛或被疏柔毛。冬芽卵形，无毛。果实可以作为水果食用，外表色泽鲜艳、晶莹美丽、红如玛瑙，黄如凝脂，果实富含糖、蛋白质、维生素及钙、铁、磷、钾等多种元素。</p>
+                <div class="otherPage">
+                	<a href="#" class="prev-page">上一篇：<span>蓝莓</span></a>
+                    <a href="#" class="next-page">下一篇：<span>猕猴桃</span></a>
+                </div>
+            </div>
+        </div>
+		<div class="box">
+        	<div class="main main-cc" style="padding-top:20px;">
+            	<h1 style="font-size:20px;padding:10px 0;">产品详情 <i class="xian" style="background:rgba(0,0,0,0.2);"></i></h1>
+                <hr align="left" style="width:80px;top:56px;left:30px;">
+                <div class="txt-box">
+                	<p>樱桃（学名：Cerasus pseudocerasus），是某些李属类植物的统称，包括樱桃亚属、酸樱桃亚属、桂樱亚属等。乔木，高2-6米，树皮灰白色。小枝灰褐色，嫩枝绿色，无毛或被疏柔毛。冬芽卵形，无毛。果实可以作为水果食用，外表色泽鲜艳、晶莹美丽、红如玛瑙，黄如凝脂，果实富含糖、蛋白质、维生素及钙、铁、磷、钾等多种元素。</p>
+
+					<p>世界上樱桃主要分布在美国、加拿大、智利、澳洲、欧洲等地，中国主要产地有黑龙江、吉林、辽宁、山东、安徽、江苏、浙江、河南、甘肃、陕西、四川等。</p>
+
+					<p>乔木，高2-6米，树皮灰白色。小枝灰褐色，嫩枝绿色，无毛或被疏柔毛。冬芽卵形，无毛。叶片卵形或长圆状卵形，长5-12厘米，宽3-5厘米，先端渐尖或尾状渐尖，基部圆形，边有尖锐重锯齿，齿端有小腺体，上面暗绿色，近无毛，下面淡绿色，沿脉或脉间有稀疏柔毛，侧脉9-11对；叶柄长0.7-1.5厘米，被疏柔毛，先端有1或2个大腺体；托叶早落，披针形，有羽裂腺齿。</p>
+
+					<p>花序伞房状或近伞形，有花3-6朵，先叶开放；总苞倒卵状椭圆形，褐色，长约5毫米，宽约3毫米，边有腺齿；花梗长0.8-1.9厘米，被疏柔毛；萼筒钟状，长3-6毫米，宽2-3毫米，外面被疏柔毛，萼片三角卵圆形或卵状长圆形，先端急尖或钝，边缘全缘，长为萼筒的一半或过半；花瓣白色，卵圆形，先端下凹或二裂；雄蕊30-35枚，栽培者可达50枚。花柱与雄蕊近等长，无毛。核果近球形，红色，直径0.9-1.3厘米。花期3-4月，果期5-6月。</p>
+                    <img src="img/pic-1.jpg">
+                    <img src="img/500215542.jpg">
+               	</div>
+            </div>
+            <div class="rcom pic-rcom">
+            	<h1>为您推荐 <i class="xian" style="background:rgba(0,0,0,0.2);"></i></h1>
+            	<hr align="left">
+            	<div class="rcom-bd">
+                	<ul class="rcom-list">
+                    	<li>
+                        	<a href="#">
+                            	<div class="rcom-img"><img src="img/10.jpg"></div>
+                                <p>蓝莓</p>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="rcom-img"><img src="img/9.jpg"></div>
+                                <p>车厘子</p>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="rcom-img"><img src="img/8.jpg"></div>
+                                <p>车厘子</p>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="rcom-img"><img src="img/7.jpg"></div>
+                                <p>车厘子</p>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="rcom-img"><img src="img/11.jpg"></div>
+                                <p>车厘子</p>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="rcom-img"><img src="img/12.jpg"></div>
+                                <p>车厘子</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <script type="text/javascript">
+				jQuery(".rcom").slide({mainCell:".rcom-bd ul",autoPage:true,effect:"topLoop",autoPlay:2000,vis:3,trigger:"click"});
+			</script>
+        </div>
+    </div>
+    <div class="footer deep">
+         <br/>
+        访问统计：  浏览总量<span>41046</span>次 /今日浏览<span>41</span>次 /今日独立访客<span>11</span>位    建议(1024*768) IE8.0以上浏览器浏览本站 <br/> 
+        <a href="#">即时通管理</a>    <a href="#">后台登录</a> <br/>
+            <a href="">触屏版</a> 丨 <a href="">电脑版</a> <br/>
+    </div>
+</div>
+
+<script type="text/javascript">
+/* 搜索框事件 */	
+	$("#search").mouseenter(function(){
+		$(this).children("form").css("display","block");
+	})
+	$("#search").mouseleave(function(){
+		$(this).children("form").css("display","none");
+	})
+	
+/* --end-- */
+</script>
+</body>
+</html>

@@ -1,0 +1,758 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>绿色的家政服务接单平台网页html模板</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/bootstrap-touch-slider.css"  media="all">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+<!--城市切换插件-->
+
+<link rel="stylesheet" href="css/cityPicker.css">
+</head>
+
+<body>
+<div class="top-nav">
+  <div class="container">
+    <ul class="login-left">
+      <li> <span>欢迎来到某某家政政！</span> </li>
+      <li> <a href="employer_login.html" id="employer-login">[雇主登录]</a> </li>
+      <li> <a href="hire_login.html" id="hire-login">[雇员登录]</a> </li>
+      <li> <a href="javascript:void(0)" class="logout">[退出登录]</a> </li>
+    </ul>
+    <ul class="top-right">
+      <li> <a href="business_center.html" class="top-link"> <span class="fa fa-hand-o-right"></span>商务中心 </a> </li>
+      <li> <a href="http://www.fzjlbj.com/p_jjqjcontentgxh.aspx" class="top-link"> <span class="fa fa-diamond"></span> 个性化定制 </a> </li>
+      <li style="display:none;"> <a href="javascript:void(0)" class="top-link phone-link"> <span class="fa fa-phone"></span> 4000-591-798 </a> </li>
+      <li> <a href="person-center.html" class="top-link"> <span class="fa fa-user"></span> 个人中心 </a> </li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="container">
+    <div class="jw-logo"> <img src="images/logo2.png" alt="" onClick="location.href=&#39;index.html&#39;"/>
+      <div class="change-city"> <em>
+        <input type="text" id="cityChoice" value="福州" placeholder="请选择"/>
+        </em>
+        <p id="choose-city">[切换城市]</p>
+      </div>
+    </div>
+    <div class="header-right">
+      <ul class="header-nav">
+        <li class="nav-list active"><a href="index.html">首页</a></li>
+        <li class="nav-list"><a href="baomu.html">保姆</a></li>
+        <li class="nav-list"><a href="yuesao.html">月嫂</a></li>
+        <li class="nav-list"><a href="linshi.html">临时钟点工</a></li>
+        <li class="nav-list"><a href="changqi.html">长期钟点工</a></li>
+        <li class="nav-list"> <a href="javascript:void(0)" class="nav-more">更多服务<span class="fa fa-angle-down"></span></a>
+          <ol class="hide-nav">
+            <li><a href="jiadian.html">家电清洗</a></li>
+            <li><a href="no_date.html">干洗</a></li>
+            <li><a href="no_date.html">搬家</a></li>
+            <li><a href="no_date.html">护工</a></li>
+            <li><a href="no_date.html">居家保养</a></li>
+            <li><a href="no_date.html">皮具护理</a></li>
+            <li><a href="no_date.html">居家便民</a></li>
+            <li><a href="no_date.html">家电维修</a></li>
+          </ol>
+        </li>
+      </ul>
+      <div class="drop-menu"> <span class="fa fa-navicon"></span> </div>
+      <div class="search-right">
+        <ul class="three">
+          <li class="hir-name current">雇员名字</li>
+          <li class="phone">手机号码</li>
+          <li class="role">角色</li>
+        </ul>
+        <ul class="search-input">
+          <li>
+            <input type="text" placeholder="请输入雇员名称"/>
+            <span class="fa fa-search"></span> </li>
+          <li>
+            <input type="text" placeholder="请输入手机号码"/>
+            <span class="fa fa-search"></span> </li>
+          <li>
+            <input type="text" placeholder="请输入角色"/>
+            <span class="fa fa-search"></span> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" > 
+  
+  <!-- Indicators -->
+  
+  <ol class="carousel-indicators">
+    <li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
+    <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+    <li data-target="#bootstrap-touch-slider" data-slide-to="2"></li>
+  </ol>
+  
+  <!-- Wrapper For Slides -->
+  
+  <div class="carousel-inner" role="listbox">
+    <div class="item active"> <img src="images/banner1.png" alt="Bootstrap Touch Slider"  class="slide-image"/>
+      <div class="bs-slider-overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="slide-text slide_style_center">
+            <h1 data-animation="animated zoomInRight">您的家庭好帮手</h1>
+            <p data-animation="animated fadeInLeft">家务事交给我们，您的时间值得更多..</p>
+            <a href="changqi.html" class="btn btn-default" data-animation="animated fadeInLeft">点击查看</a> <a href="order.html"   class="btn btn-primary" data-animation="animated fadeInRight">立即预约</a> </div>
+        </div>
+      </div>
+    </div>
+    <div class="item"> <img src="images/banner2.png" alt="Bootstrap Touch Slider"  class="slide-image"/>
+      <div class="bs-slider-overlay"></div>
+      <div class="slide-text slide_style_center">
+        <h1 data-animation="animated flipInX">悠然的家庭生活</h1>
+        <p data-animation="animated lightSpeedIn">金网家政全心全心为你提供</p>
+        <a href="changqi.html" class="btn btn-default" data-animation="animated fadeInUp">点击查看</a> <a href="order.html"  class="btn btn-primary" data-animation="animated fadeInDown">立即预约</a> </div>
+    </div>
+    <div class="item"> <img src="images/banner3.png" alt="Bootstrap Touch Slider"  class="slide-image"/>
+      <div class="bs-slider-overlay"></div>
+      <div class="slide-text slide_style_center">
+        <h1 data-animation="animated zoomInLeft">净美环境　愉悦办公</h1>
+        <p data-animation="animated fadeInRight">某某家政企业服务　服务好助手</p>
+        <a href="changqi.html"  class="btn btn-default" data-animation="animated fadeInLeft">点击查看</a> <a href="order.html"  class="btn btn-primary" data-animation="animated fadeInRight">立即预约</a> </div>
+    </div>
+  </div>
+  
+  <!-- Left Control --> 
+  
+  <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev"> <span class="fa fa-angle-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> 
+  
+  <!-- Right Control --> 
+  
+  <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next"> <span class="fa fa-angle-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+<div class="safe">
+  <div class="container">
+    <div class="section-heading">
+      <div class="section-title">服务保障</div>
+      <div class="section-subtitle">通过某某家政的安全保障、品质保障、风险保障三重保障机制，让您无后顾之忧！</div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 wow fadeInDown">
+        <article>
+          <div class="safe-item">
+            <div class="wrap-safe-icon">
+              <div class="safe-icon"> <span class="fa fa-shield"></span> </div>
+            </div>
+            <div class="title">安全保障</div>
+            <div class="text">家政人员身份经过实名认证审核，上门服务家政险保障护航</div>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-3 col-sm-6 wow bounceInLeft">
+        <article>
+          <div class="safe-item active">
+            <div class="wrap-safe-icon">
+              <div class="safe-icon"> <span class="fa  fa-leaf"></span> </div>
+            </div>
+            <div class="title">风险保障</div>
+            <div class="text">全面的家政综合险保障三方的权益，轻松解决您的支付困扰</div>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-3 col-sm-6 wow bounceIn">
+        <article>
+          <div class="safe-item">
+            <div class="wrap-safe-icon">
+              <div class="safe-icon"> <span class="fa fa-thumbs-o-up"></span> </div>
+            </div>
+            <div class="title">品质保障</div>
+            <div class="text">家政人员经过了严格的筛选、择优录取；专业工具、标准化流程</div>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-3 col-sm-6 wow bounceIn">
+        <article>
+          <div class="safe-item">
+            <div class="wrap-safe-icon">
+              <div class="safe-icon"> <span class="fa fa-flash"></span> </div>
+            </div>
+            <div class="title">闪电匹配</div>
+            <div class="text">快速精准找到适合的家政人员,个性化需求智匹配，无需现金，轻松支付</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="type">
+  <div class="container">
+    <div class="section-heading">
+      <div class="section-title">服务类型</div>
+      <div class="section-subtitle">全方位的家庭服务，一键下单，尽享清闲生活！</div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-sm-7">
+        <ul class="type-icon">
+          <li> <a href="baomu.html" class="icon-links"> <img src="images/baomu.png" alt=""/>
+            <p>保姆</p>
+            </a> </li>
+          <li> <a href="yuesao.html" class="icon-links"> <img src="images/yuesao.png" alt=""/>
+            <p>月嫂</p>
+            </a> </li>
+          <li> <a href="linshi.html" class="icon-links"> <img src="images/duanzhong.png" alt=""/>
+            <p>临时钟点工</p>
+            </a> </li>
+          <li> <a href="changqi.html" class="icon-links"> <img src="images/changzhong.png" alt=""/>
+            <p>长期钟点工</p>
+            </a> </li>
+          <li> <a href="jiadian.html" class="icon-links"> <img src="images/qingxi.png" alt=""/>
+            <p>家电清洗</p>
+            </a> </li>
+          <li> <a href="no_date.html" class="icon-links"> <img src="images/hugong.png" alt=""/>
+            <p>护工</p>
+            </a> </li>
+          <li> <a href="no_date.html" class="icon-links"> <img src="images/jiaju.png" alt=""/>
+            <p>居家保养</p>
+            </a> </li>
+          <li> <a href="no_date.html" class="icon-links"> <img src="images/weixiu.png" alt=""/>
+            <p>家电维修</p>
+            </a> </li>
+          <li> <a href="no_date.html" class="icon-links"> <img src="images/banjia.png" alt=""/>
+            <p>搬家</p>
+            </a> </li>
+          <li> <a href="no_date.html" class="icon-links"> <img src="images/ganxi.png" alt=""/>
+            <p>干洗</p>
+            </a> </li>
+          <li> <a href="no_date.html" class="icon-links"> <img src="images/piju.png" alt=""/>
+            <p>皮具护理</p>
+            </a> </li>
+          <li> <a href="no_date.html" class="icon-links"> <img src="images/jujia.png" alt=""/>
+            <p>居家便民</p>
+            </a> </li>
+        </ul>
+      </div>
+      <div class="col-md-5 col-sm-5">
+        <div class="type-item">
+          <div class="title">1、选择您的需求</div>
+          <div class="text">某某家政人性化设置，让您可以快速下单，也可精准筛选下单</div>
+        </div>
+        <div class="type-item">
+          <div class="title">2、选择家政人员</div>
+          <div class="text">通过平台精准筛选出的家政人员里，挑选觉得适合您的家政人员</div>
+        </div>
+        <div class="type-item">
+          <div class="title">3、坐等上门服务</div>
+          <div class="text">预约完成后，您只需在家中等候您满意的家政人员进行家政服务</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="package">
+  <div class="container">
+    <div class="section-heading">
+      <div class="section-title">优惠套餐</div>
+      <div class="section-subtitle">最新最全面的家政新闻资讯,让你实时掌握家政新闻的最新动态！</div>
+    </div>
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <div class="package-item">
+          <h3>双洗临门A款</h3>
+          <p class="package-intr">套餐说明</p>
+          <p>时间：26次/每次3小时（限1年内使用完）；</p>
+          <p>人员等级：四星级以上； </p>
+          <p>免费送全年管道免费疏通，开锁配锁（不含材料费）</p>
+          <p class="package-price">套餐价格：&yen;<em>2680.0</em></p>
+          <div class="refer-buy">
+            <button class="phone-refer">电话咨询</button>
+            <button class="now-buy" onClick="location.href=&#39;order.html&#39;">立即购买</button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="package-item">
+          <h3>双洗临门B款</h3>
+          <p class="package-intr">套餐说明</p>
+          <p>时间：1年52次/每次3小时（限1年内使用完）； </p>
+          <p>人员等级：四星级以上； </p>
+          <p>免费送全年管道免费疏通，开锁配锁（不含材料费）</p>
+          <p class="package-price">套餐价格：&yen;<em>4999.0</em></p>
+          <div class="refer-buy">
+            <button class="phone-refer">电话咨询</button>
+            <button class="now-buy" onClick="location.href=&#39;order.html&#39;">立即购买</button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="package-item">
+          <h3>双洗临门C款</h3>
+          <p class="package-intr">套餐说明</p>
+          <p>时间：1年104次/每次3小时（限1年内使用完）；</p>
+          <p>人员等级：四星级以上； </p>
+          <p>送空调清洗，油烟机，冰箱，洗衣机，厨房保养，各一次</p>
+          <p class="package-price">套餐价格：&yen;<em>9280.0</em></p>
+          <div class="refer-buy">
+            <button class="phone-refer">电话咨询</button>
+            <button class="now-buy" onClick="location.href=&#39;order.html&#39;">立即购买</button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="package-item">
+          <h3>双洗临门D款</h3>
+          <p class="package-intr">套餐说明</p>
+          <p>时间：1年26次/每次4小时（限1年内使用完）； </p>
+          <p>人员等级：四星级以上；</p>
+          <p>超值回馈：免费送空调清洗，全年包管道疏通，（开锁配锁）</p>
+          <p class="package-price">套餐价格：&yen;<em>3280.0</em></p>
+          <div class="refer-buy">
+            <button class="phone-refer">电话咨询</button>
+            <button class="now-buy" onClick="location.href=&#39;order.html&#39;">立即购买</button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="package-item">
+          <h3>双洗临门E款</h3>
+          <p class="package-intr">套餐说明</p>
+          <p>时间：1年52次/每次4小时（限1年内使用完）； </p>
+          <p>人员等级：四星级以上； </p>
+          <p>超值回馈：送全年管道免费疏通，开锁配锁(不含材料费)</p>
+          <p class="package-price">套餐价格：&yen;<em>6680.0</em></p>
+          <div class="refer-buy">
+            <button class="phone-refer">电话咨询</button>
+            <button class="now-buy" onClick="location.href=&#39;order.html&#39;">立即购买</button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="package-item">
+          <h3>双洗临门F款</h3>
+          <p class="package-intr">套餐说明</p>
+          <p>时间：1年104次/每次4小时（限1年内使用完）； </p>
+          <p>人员等级：四星级以上； </p>
+          <p>超值回馈：送全年空调清洗，油烟机，冰箱，洗衣机，厨房保养</p>
+          <p class="package-price">套餐价格：&yen;<em>8880.0</em></p>
+          <div class="refer-buy">
+            <button class="phone-refer">电话咨询</button>
+            <button class="now-buy" onClick="location.href=&#39;order.html&#39;">立即购买</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="public-dom">
+  <div class="public-mask"></div>
+  <div class="public-wrap">
+    <div class="public-content"> <span class="close-alert fa fa-close"></span>
+      <div class="public-body"></div>
+      <div class="public-footer">
+        <p>是否拨打客服热线：87853663？</p>
+        <ul class="operate">
+          <li> <span class="cancel">取消</span> </li>
+          <li> <span class="call-now">立即拨打</span> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="news">
+  <div class="container">
+    <div class="section-heading">
+      <div class="section-title">热点新闻</div>
+      <div class="section-subtitle">最新最全面的家政新闻资讯,让你实时掌握家政新闻的最新动态！</div>
+    </div>
+    <div class="row news">
+      <div class="col-md-4 wow bounceInLeft news-list">
+        <div class="hb-info" onClick="location.href=&#39;news_detail.html&#39;">
+          <div class="hb-thumb"> <img src="images/news1.jpg" class="img-responsive" alt=""/>
+            <div class="date-meta"> June<span>06</span>2017 </div>
+          </div>
+          <h4><a href="news_detail.html">五一小长假 968金网家政义工团走进静安养老院 关爱老人 传承美德</a></h4>
+          <p>五一小长假 968金网家政义工团走进静安养老院 关爱老人 传承美德，本次活动半场以福建福州市 张先生家所遭遇的“虐童保姆”为案例，968金网继续坚持不懈为新加入家政从业人员培训职业道德和礼仪标准。</p>
+        </div>
+      </div>
+      <div class="col-md-4 wow bounceIn news-list" data-wow-delay=".5s">
+        <div class="hb-info" onClick="location.href=&#39;news_detail.html&#39;">
+          <div class="hb-thumb"> <img src="images/news2.jpg" class="img-responsive" alt=""/>
+            <div class="date-meta"> June<span>02</span>2017 </div>
+          </div>
+          <h4><a href="news_detail.html">968金网：请保姆免中介费第四届对接会圆满结束</a></h4>
+          <p>本活动是由968金网家政服务信息平台举办的“免中介费请保姆第四届现场对接会”，活动将于2017年3月25号在福新中路115号三沙苑举行！</p>
+        </div>
+      </div>
+      <div class="col-md-4 wow bounceInRight news-list" data-wow-delay=".5s">
+        <div class="hb-info" onClick="location.href=&#39;news_detail.html&#39;">
+          <div class="hb-thumb"> <img src="images/news3.jpg" class="img-responsive" alt=""/>
+            <div class="date-meta"> May<span>30</span>2017 </div>
+          </div>
+          <h4><a href="news_detail.html">968金网：请保姆免中介费第四届对接会圆满结束</a></h4>
+          <p>本活动是由968金网家政服务信息平台举办的“免中介费请保姆第四届现场对接会”，活动将于2017年3月25号在福新中路115号三沙苑举行！</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="recommend">
+  <div class="container">
+    <div class="section-heading">
+      <div class="section-title">平台推荐</div>
+      <div class="section-subtitle">某某家政实时更新最优质的家政人员供您筛选，让您在忙碌的生活工作多一份清闲！</div>
+    </div>
+    <div class="filter-wrap"> <span class="filter active">保姆</span> <span class="filter">月嫂</span> <span class="filter">短期钟点工</span> <span class="filter">长期钟点工</span> <span class="filter">护工</span> <span class="filter">家电清洗</span> </div>
+    <div class="filter-tab">
+      <div class="col-sm-3 wow bounceInLeft" data-wow-delay="800">
+        <div class="re-info"> <a href="book_info.html"> <img src="images/rec1.jpg" alt=""/>
+          <p class="name-age"> <span class="name">易兰英（保姆）</span> <span class="age">45岁</span> </p>
+          <p class="skill">能力特长：做家务，辅助带孩子</p>
+          </a> </div>
+      </div>
+      <div class="col-sm-3 wow bounceInUp" data-wow-delay="1000">
+        <div class="re-info"> <a href="book_info.html"> <img src="images/rec1.jpg" alt=""/>
+          <p class="name-age"> <span class="name">易兰英（保姆）</span> <span class="age">45岁</span> </p>
+          <p class="skill">能力特长：做家务，辅助带孩子</p>
+          </a> </div>
+      </div>
+      <div class="col-sm-3 wow bounceInDown" data-wow-delay="1200">
+        <div class="re-info"> <a href="book_info.html"> <img src="images/rec1.jpg" alt=""/>
+          <p class="name-age"> <span class="name">易兰英（保姆）</span> <span class="age">45岁</span> </p>
+          <p class="skill">能力特长：做家务，辅助带孩子</p>
+          </a> </div>
+      </div>
+      <div class="col-sm-3 wow  bounceInRight" data-wow-delay="1400">
+        <div class="re-info"> <a href="book_info.html"> <img src="images/rec1.jpg" alt=""/>
+          <p class="name-age"> <span class="name">易兰英（保姆）</span> <span class="age">45岁</span> </p>
+          <p class="skill">能力特长：做家务，辅助带孩子</p>
+          </a> </div>
+      </div>
+    </div>
+    <div class="filter-tab">
+      <div class="col-sm-3">
+        <div class="re-info"> <a href="book_info.html"> <img src="images/rec2.jpg" alt=""/>
+          <p class="name-age"> <span class="name">夏会珍（月嫂）</span> <span class="age">45岁</span> </p>
+          <p class="skill">能力特长：月子护理、催乳师、汗蒸师</p>
+          </a> </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="re-info"> <a href="book_info.html"> <img src="images/rec2.jpg" alt=""/>
+          <p class="name-age"> <span class="name">夏会珍（月嫂）</span> <span class="age">45岁</span> </p>
+          <p class="skill">能力特长：月子护理、催乳师、汗蒸师</p>
+          </a> </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="re-info" data-wow-delay="1200"> <a href="book_info.html"> <img src="images/rec2.jpg" alt=""/>
+          <p class="name-age"> <span class="name">夏会珍（月嫂）</span> <span class="age">45岁</span> </p>
+          <p class="skill">能力特长：月子护理、催乳师、汗蒸师</p>
+          </a> </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="re-info" data-wow-delay="1400"> <a href="book_info.html"> <img src="images/rec2.jpg" alt=""/>
+          <p class="name-age"> <span class="name">夏会珍（月嫂）</span> <span class="age">45岁</span> </p>
+          <p class="skill">能力特长：月子护理、催乳师、汗蒸师</p>
+          </a> </div>
+      </div>
+    </div>
+    <div class="filter-tab">
+      <div class="col-sm-3">
+        <div class="re-info"> <a href="book_info.html"> <img src="images/rec2.jpg" alt=""/>
+          <p class="name-age"> <span class="name">易兰英（短期钟点工）</span> <span class="age">45岁</span> </p>
+          <p class="skill">能力特长：长相清楚，开朗，踏实肯干，心细，有责任心</p>
+          </a> </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="re-info"> <a href="book_info.html"> <img src="images/rec2.jpg" alt=""/>
+          <p class="name-age"> <span class="name">易兰英（短期钟点工）</span> <span class="age">45岁</span> </p>
+          <p class="skill">能力特长：长相清楚，开朗，踏实肯干，心细，有责任心</p>
+          </a> </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="re-info"> <a href="book_info.html"> <img src="images/rec2.jpg" alt=""/>
+          <p class="name-age"> <span class="name">易兰英（短期钟点工）</span> <span class="age">45岁</span> </p>
+          <p class="skill">能力特长：长相清楚，开朗，踏实肯干，心细，有责任心</p>
+          </a> </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="re-info"> <a href="book_info.html"> <img src="images/rec2.jpg" alt=""/>
+          <p class="name-age"> <span class="name">易兰英（短期钟点工）</span> <span class="age">45岁</span> </p>
+          <p class="skill">能力特长：长相清楚，开朗，踏实肯干，心细，有责任心</p>
+          </a> </div>
+      </div>
+    </div>
+    <div class="filter-tab">
+      <div class="col-sm-3">
+        <div class="re-info"> <a href="book_info.html"> <img src="images/rec3.jpg" alt=""/>
+          <p class="name-age"> <span class="name">易六清（长期钟点工）</span> <span class="age">45岁</span> </p>
+          <p class="skill">能力特长：踏实吃苦耐劳 好沟通 细节到位</p>
+          </a> </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="re-info"> <a href="book_info.html"> <img src="images/rec3.jpg" alt=""/>
+          <p class="name-age"> <span class="name">易六清（长期钟点工）</span> <span class="age">45岁</span> </p>
+          <p class="skill">能力特长：踏实吃苦耐劳 好沟通 细节到位</p>
+          </a> </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="re-info"> <a href="book_info.html"> <img src="images/rec3.jpg" alt=""/>
+          <p class="name-age"> <span class="name">易六清（长期钟点工）</span> <span class="age">45岁</span> </p>
+          <p class="skill">能力特长：踏实吃苦耐劳 好沟通 细节到位</p>
+          </a> </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="re-info"> <a href="book_info.html"> <img src="images/rec3.jpg" alt=""/>
+          <p class="name-age"> <span class="name">易六清（长期钟点工）</span> <span class="age">45岁</span> </p>
+          <p class="skill">能力特长：踏实吃苦耐劳 好沟通 细节到位</p>
+          </a> </div>
+      </div>
+    </div>
+    <div class="filter-tab">
+      <div class="col-sm-3">
+        <div class="re-info"> <a href="no_date.html"> <img src="images/rec4.jpg" alt=""/>
+          <p class="name-age"> <span class="name">易兰英（护工）</span> <span class="age">45岁</span> </p>
+          <p class="skill">能力特长：做家务，辅助带孩子</p>
+          </a> </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="re-info"> <a href="no_date.html"> <img src="images/rec4.jpg" alt=""/>
+          <p class="name-age"> <span class="name">易兰英（护工）</span> <span class="age">45岁</span> </p>
+          <p class="skill">能力特长：做家务，辅助带孩子</p>
+          </a> </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="re-info"> <a href="no_date.html"> <img src="images/rec4.jpg" alt=""/>
+          <p class="name-age"> <span class="name">易兰英（护工）</span> <span class="age">45岁</span> </p>
+          <p class="skill">能力特长：做家务，辅助带孩子</p>
+          </a> </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="re-info"> <a href="no_date.html"> <img src="images/rec4.jpg" alt=""/>
+          <p class="name-age"> <span class="name">易兰英（护工）</span> <span class="age">45岁</span> </p>
+          <p class="skill">能力特长：做家务，辅助带孩子</p>
+          </a> </div>
+      </div>
+    </div>
+    <div class="filter-tab">
+      <div class="col-sm-3">
+        <div class="re-info"> <a href="jiadian.html"> <img src="images/rec5.jpg" alt=""/>
+          <p class="name-age"> <span class="name">易兰英（家电清洗）</span> <span class="age">45岁</span> </p>
+          <p class="skill">能力特长：做家务，辅助带孩子</p>
+          </a> </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="re-info"> <a href="jiadian.html"> <img src="images/rec5.jpg" alt=""/>
+          <p class="name-age"> <span class="name">易兰英（家电清洗）</span> <span class="age">45岁</span> </p>
+          <p class="skill">能力特长：做家务，辅助带孩子</p>
+          </a> </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="re-info"> <a href="jiadian.html"> <img src="images/rec5.jpg" alt=""/>
+          <p class="name-age"> <span class="name">易兰英（家电清洗）</span> <span class="age">45岁</span> </p>
+          <p class="skill">能力特长：做家务，辅助带孩子</p>
+          </a> </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="re-info"> <a href="jiadian.html"> <img src="images/rec5.jpg" alt=""/>
+          <p class="name-age"> <span class="name">易兰英（家电清洗）</span> <span class="age">45岁</span> </p>
+          <p class="skill">能力特长：做家务，辅助带孩子</p>
+          </a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="container">
+    <div class="footer-text" id="footer-text">
+      <ul class="other-contact text-float text-ul">
+        <h5>部门客服</h5>
+        <li><a href="service_alert.html">鼓楼区客服</a></li>
+        <li><a href="service_alert.html">晋安区客服</a></li>
+        <li><a href="service_alert.html">月嫂部客服</a></li>
+        <li><a href="service_alert.html">保姆部客服</a></li>
+        <li><a href="service_alert.html">钟点工客服</a></li>
+      </ul>
+      <ul class="friendly-link text-ul" >
+        <h5>友情链接</h5>
+      </ul>
+      <ul class="contact-us text-ul">
+        <h5>联系我们</h5>
+        <li>客服热线：XXX</li>
+        <li>总公司地址：XXX　<br/>
+          联系电话： XXX</li>
+        <li>南平分公司地址：XXX　<br/>
+          联系电话:XXX</li>
+      </ul>
+    </div>
+    <div class="bottom-code"> <img src="images/code.jpg" alt=""/>
+      <p>扫码关注某某家政公众号，更多好礼期待你的关注</p>
+    </div>
+  </div>
+</div>
+<p class="address">家政综合信息服务平台 XXX分享 XXX</p>
+<div class="fix-service">
+  <ul class="servise-list">
+    <li class="weixin-item fix-item"> <span class="weixin-code code"></span>
+      <div class="icon"> <img src="images/weixin.png" class="weixin"/> </div>
+    </li>
+    <li class="weibo-item fix-item"> <span class="weibo-code code"></span>
+      <div class="icon"> <img src="images/weibo.png" class="weibo"/> </div>
+    </li>
+    <li class="service-item fix-item"> <span class="service-code code"></span>
+      <div class="icon" onClick="location.href=&#39;service_alert.html&#39;"> <img src="images/qq.png" class="service"/> </div>
+    </li>
+    <li id="btn" class="top-item fix-item">
+      <div class="icon"> <img src="images/top.png" class="top"/> </div>
+    </li>
+  </ul>
+</div>
+<script src="js/jquery-2.0.0.min.js"></script> 
+<script src="js/owl.carousel.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.touchSwipe.min.js"></script> 
+<script src="js/bootstrap-touch-slider.js"></script> 
+<script src="js/wow.min.js"></script> 
+<script src="js/cityData.js"></script> 
+<script src="js/cityPicker.js"></script> 
+<script>
+
+	$('#bootstrap-touch-slider').bsTouchSlider();<!--轮播-->
+
+	new WOW().init();<!--动画延迟加载-->
+
+	</script> 
+<script>
+
+	$(".search-input li").hide().first().show();
+
+	$(".filter-tab").hide().first().show();
+
+	$(document).ready(function(e) {
+
+		$(".nav-more").click(function(){
+
+			$(".hide-nav").slideToggle();	
+
+		});
+
+		$(".drop-menu").click(function(){
+
+			$(".header-nav").slideToggle();	
+
+		});
+
+		$(".three li").click(function(){
+
+			$(this).addClass("current").siblings().removeClass("current");
+
+			$(".search-input li").hide().eq($(this).index()).show();
+
+		});
+
+		$(".filter-wrap span").click(function(){
+
+			$(this).addClass("active").siblings().removeClass("active");
+
+			$(".filter-tab").hide().eq($(this).index()).show();
+
+		});
+
+		//返回顶部
+
+		$(".top-item").click(function(){
+
+			$('body,html').animate({ scrollTop: 0 }, 500);
+
+			return false;
+
+		});
+
+		$(".phone-refer").click(function(){
+
+			$(".public-dom").css("display","block");
+
+		});
+
+		$(".close-alert,.cancel").click(function(){
+
+			$(".public-dom").fadeOut('fast');
+
+		});
+
+	});
+
+	</script> 
+<script>
+
+		var cityPicker = new IIInsomniaCityPicker({
+
+			data: cityData,
+
+			target: '#cityChoice',
+
+			valType: 'k-v',
+
+			hideCityInput: '#city',
+
+			hideProvinceInput: '#province',
+
+			callback: function(city_id){
+
+			}
+
+		});
+
+		cityPicker.init();
+
+	</script> 
+<script>
+
+	<!--套餐滚动-->
+
+	$(document).ready(function(){
+
+	  $('.owl-carousel').owlCarousel({
+
+		loop:true,
+
+		margin:10,
+
+		nav:true,
+
+		navigation:true,
+
+		responsive:{
+
+				0:{
+
+					items:1
+
+				},
+
+				600:{
+
+					items:3
+
+				},
+
+				1000:{
+
+					items:5
+
+				}
+
+			}
+
+		});
+
+	});
+
+	</script>
+</body>
+</html>

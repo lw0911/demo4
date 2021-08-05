@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>XXX,打赏,打赏软件-XXX官网</title>
+    <meta name="keywords" content="XXX|打赏|打赏软件|XXX官网">
+    <meta name="description" content="XXX是一款针对线下服务行业的打赏评价营销系统，符合未来市场需求，迎合当下打赏经济热潮、思维模式、产品形态和商业模式，是一次巨大的创新。其主要功能在于提升顾客的消费体验，促进员工的服务热情，服务积极性，帮助商家有效的管理员工，增加源源不断的生意。">
+    <link rel="stylesheet" href="css\newbase.css">
+    <link rel="stylesheet" href="css\newstyle.css">
+    <link rel="stylesheet" href="css\iconfont.css">
+    <link rel="stylesheet" href="css\homeball.css">
+    <link rel="stylesheet" href="css\2018style.css">
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script> 
+    <script type="text/javascript" src="https://api.map.baidu.com/api?ak=dZjnRr2t8nBpGswyCB731AFD&v=2.0&s=1"></script>
+   <style>
+        .service-content.p-content-bg-01 {
+            background: url('./images/service--bg.jpg') center center no-repeat !important;
+            background-size: contain !important;
+            margin-top: 0 !important;
+            height: 740px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="navigation animated">
+            <script type="text/javascript" src="https://api.map.baidu.com/api?ak=dZjnRr2t8nBpGswyCB731AFD&v=2.0&s=1"></script>
+            <div id="allmap" style="display:none;"></div>
+            <div class="nav-wrap">
+                <h1 class="logo">
+                    <a href="javascript:;">
+                        <img src="images\logo.png" height="75px">
+                    </a>
+                </h1>
+                <div class="nav">
+                    <ul class="nav-list clearfix">
+                        <li>
+                            <a href="index.html" title="首页">首页</a>
+                        </li>
+                        <li>
+                            <a href="server.html" title="服务介绍">服务介绍</a>
+                        </li>
+                        <li>
+                            <a href="cooperation.html" title="合作加盟">合作加盟</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" title="联系XXX">联系XXX</a>
+                        </li>
+                    </ul>
+                    <div style="clear:both;"></div>
+                </div>
+                <div class="button-group">
+                    <ul id="nologin" class="button-list">
+                        <li class="nav-header-city select-city">
+                            <span id="selectCity" class="cityname">定位中...</span>
+                            <img src="images\header-map-icon.png" alt="map">
+                        </li>
+                        <li>
+                            <a href="./login-list.shtml" class="button regist" target="_blank">管理员登陆</a>
+                        </li>
+                    </ul>
+                    <ul class="button-list welcome" id="userinfo" style="display: none;">
+                        <li>
+                            <a href="#" class="port fl">
+                                <img src="images\port.png" width="26" height="26" alt="UU用户">
+                            </a>
+                            <p class="username fl">欢迎您，
+                                <span id="userMobile"></span>
+                            </p>
+                        </li>
+                        <li>
+                            <a class="loginout" href="javascript:order.loginOut()">退出</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 主体部分 -->
+        <div class="subnav">
+            <div class="concat-banner" id="addressmap">
+              <!--   <div class="concat-tip">
+                    <img src="images\concat-tip.png" alt="tip">
+                    <div class="concat-tip-txt">
+                        <dl>
+                            <dt>公司</dt>
+                            <dd>浙江瀚洋信息科技有限公司</dd>
+                        </dl>
+                        <dl class="concat-tip-down">
+                            <dt>地址</dt>
+                            <dd>浙江省绍兴市袍江区华欣大厦12楼</dd>
+                        </dl>
+                    </div>
+                </div>
+                 -->
+            </div>
+            <script type="text/javascript">
+                // 百度地图API功能
+                var map = new BMap.Map("addressmap");
+                var point = new BMap.Point(113.666202, 34.868885);
+                map.centerAndZoom(point, 15);
+                //地图事件
+                map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+                map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+                map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+                map.enableKeyboard();//启用键盘上下左右键移动地图
+                //向地图中添加缩放控件
+                var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+                map.addControl(ctrl_nav);
+                //向地图中添加比例尺控件
+                var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+                map.addControl(ctrl_sca);
+                //创建标点
+                var pt = new BMap.Point(113.666202, 34.868885);
+                var myIcon = new BMap.Icon("http://map.baidu.com/image/us_mk_icon.png", new BMap.Size(21,21));
+                var marker = new BMap.Marker(pt,{icon:myIcon});  // 创建标注
+                var opts = {    
+                    width : 250,     // 信息窗口宽度    
+                    height: 200,     // 信息窗口高度    
+                    title : "郑州数立方信息技术有限公司"// 信息窗口标题                                    
+                }  
+                info = new BMap.InfoWindow('<div class="concat-tip"><img src="images\concat-tip.png" alt="tip"><div class="concat-tip-txt"><dl><dt>公司</dt><dd>浙江瀚洋信息科技有限公司</dd></dl><dl class="concat-tip-down"><dt>地址</dt><dd>浙江省绍兴市袍江区华欣大厦12楼</dd></dl></div></div>', opts);  // 创建信息窗口对象 
+                map.openInfoWindow(info,map); 
+                map.addOverlay(marker); // 将标注添加到地图中
+              
+            </script>
+            <div class="concat-foot">
+                <ul class="clearfix" style="margin-left: 100px;">
+                    <li>
+                        <h1>
+                            <b></b>合作加盟</h1>
+                        <p class="concat-foot-en">Usage Method</p>
+                        <p class="concat-foot-zh">邮箱：XXX</p>
+                        <p class="concat-foot-zh">电话：XXX</p>
+                    </li>
+                    <li>
+                        <h1>
+                            <b></b>市场合作</h1>
+                        <p class="concat-foot-en">Market cooperation</p>
+                        <p class="concat-foot-zh">邮箱：marketing@hanyangkeji.cn</p>
+                        <p class="concat-foot-zh">
+                    </p></li>
+                    <li>
+                        <h1>
+                            <b></b>品牌公关</h1>
+                        <p class="concat-foot-en">Brand public relations</p>
+                        <p class="concat-foot-zh">邮箱：pr@hanyangkeji.cn</p>
+                        <p class="concat-foot-zh">
+                    </p></li>
+                    <li>
+                        <h1>
+                            <b></b>人力资源</h1>
+                        <p class="concat-foot-en">human resources</p>
+                        <p class="concat-foot-zh">邮箱：hr@hanyangkeji.cn</p>
+                        <p class="concat-foot-zh">
+                    </p></li>
+                    <li>
+                        <h1>
+                            <b></b>客服帮助</h1>
+                        <p class="concat-foot-en">Customer service</p>
+                        <p class="concat-foot-zh">电话：XXX</p>
+                        <p class="concat-foot-zh">客服QQ：3134199198</p>
+                    </li>
+                </ul>
+                <div style="clear:both"></div>
+            </div>
+        </div>
+        <!-- 主体部分结束 -->
+        <div class="footer">
+            <div class="foot">
+                <dl class="dl-nav">
+                    <dt>友情链接</dt>
+                    <dd>
+                        
+                    </dd>
+                </dl>
+                <dl class="dl-nav">
+                    <dt>关于我们</dt>
+                    <dd>
+                        <a href="Contact.htm" title="联系XXX">联系XXX</a>
+                    </dd>
+                </dl>
+                <dl class="dl-nav">
+                    <dt>网站导航</dt>
+                    <dd>
+                        <a href="Introduction.htm" title="服务介绍">服务介绍</a>
+                    </dd>
+                    <dd>
+                        <a href="Cooperation.htm" title="合作加盟">合作加盟</a>
+                    </dd>
+                    <dd>
+                </dl>
+                <dl class="dl-contact">
+                    <dt>工作日客服热线</dt>
+                    <dd class="tel">XXX</dd>
+                    <dt>电子邮箱</dt>
+                    <dd class="email">XXX</dd>
+                </dl>
+                <dl class="dl-ewm">
+                    <dt>官方微信</dt>
+                    <dd>
+                        <img alt="" src="images\uuewm.jpg">
+                    </dd>
+                    <dd class="icon-foot-weixin">
+                        <img class="weixin" src="images\weixin.png" alt="UU微信"> 关注微信
+                    </dd>
+                </dl>
+                <dl class="dl-ewm fr">
+                    <dt>市场顾问</dt>
+                    <dd>
+                        <img alt="uu" src="images\ewmsina.jpg">
+                    </dd>
+                    <dd class="icon-foot-sina">
+                        关注顾问微信
+                    </dd>
+                </dl>
+            </div>
+            <div class="copy">
+                <p>
+                    XXX&nbsp;
+                    
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+$(function(){
+    // var timer;
+    //     $(".ul_t").on("hover", "li", function () {
+    //         $(this).toggleClass("active").toggleClass("actie");
+    //     })
+})
+</script>
+</html>

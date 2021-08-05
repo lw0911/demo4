@@ -1,0 +1,20 @@
+.cpstat-box {
+	padding-right: 60px
+}
+
+.cpstat-box h1 {
+	font: 700 20px/50px "Microsoft Yahei";
+	text-align: center;
+	color: #3d5480
+}
+
+.cpstat-box .info {
+	padding-top: 40px;
+	font-size: 16px;
+	color: #757575
+}
+
+.cpstat-box .info p {
+	line-height: 32px;
+	margin-bottom: 20px
+}

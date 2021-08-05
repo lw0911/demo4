@@ -1,0 +1,793 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head> 
+  <meta content="no-transform " http-equiv="Cache-Control" /> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" /> 
+  <link href="images/favicon.ico" type="image/x-icon" rel="shortcut icon" /> 
+  <title>新闻列表</title> 
+  <!--JS文件--> 
+  <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script> 
+  <script src="js/layer.min.js" type="text/javascript"></script> 
+  <link type="text/css" rel="stylesheet" href="css/layer.css" id="skinlayercss" /> 
+  <script src="js/jquery.cookie.js" type="text/javascript"></script> 
+  
+  
+  <script src="js/style.js" type="text/javascript"></script> 
+  <script src="js/a.js" type="text/javascript"></script> 
+  <link type="text/css" rel="stylesheet" href="css/style.css" /> 
+  <link type="text/css" rel="stylesheet" href="css/xz.css" /> 
+  <link type="text/css" rel="stylesheet" href="css/xz_style.css" /> 
+  <meta content="教育行业资讯" name="Keywords" /> 
+  <meta content="XXX行业资讯频道为用户提供最新的在线教育行业资讯、中国教育行业最新动态、职业岗位教育行业专家分析、职业教育行业新闻。" name="Description" /> 
+  <link rel="canonical" href="http://www.yingsheng.com/pxjg-it/" /> 
+ </head> 
+ <body> 
+  <!--头部--------------> 
+  <div style="height: 69px;" class="global_top_login"> 
+   <!--sso头部开始------------------------> 
+   <!--CSS文件--> 
+   <link href="css/global.css?rnd=201510061603" type="text/css" rel="stylesheet" /> 
+   <!--头部开始--> 
+   <div id="YingShengSSOTopDIV" class="global_nav"> 
+    <div id="yS_tOp_LoGinbaR" class="box_1200"> 
+     <div style="cursor: pointer;" onclick="window.location='http://www.yingsheng.com';" class="top_logo"></div> 
+     <div class="company"> 
+      <a title="企业入口" target="_blank" href="http://b.yingsheng.com">企业入口</a> 
+     </div> 
+     <!--未登录框--> 
+     <div class="TopBarLoginBox hidden"> 
+      <div class="nav_login _sso"> 
+       <a class="btn-login" href="javascript:void(0)" title="登录" rel="nofollow">登录</a> 
+      </div> 
+      <div class="nav_reg _sso"> 
+       <a class="btn-reg" href="javascript:void(0)" title="注册" rel="nofollow">注册</a> 
+       <span></span> 
+      </div> 
+     </div> 
+     <!--登录成功框--> 
+     <div class="global_name TopBarHasLoginBox"> 
+      <dl> 
+       <dt class="name_img"> 
+        <a target="_blank" href="member_index.html" > <img class="user-face m1" alt="头像" id="global_top_UserFace" src="images/101925_100_100.jpg" /></a> 
+       </dt> 
+       <dd class="global_name_dd"> 
+        <a target="_blank" href="member_index.html" >管理中心<i class="ico"></i></a> 
+       </dd> 
+      </dl> 
+      <div style="display: none;" class="member_div"> 
+       <div class="triangle_ico"> 
+        <span></span> 
+       </div> 
+       <h3><span class="user-name">adou416148489</span></h3> 
+       <dl> 
+        <dt> 
+         <span class="s2 user-fen"><b>0</b>Y币</span> 
+        </dt> 
+        <dd class="max_2"> 
+         <a rel="nofollow" href="http://i.yingsheng.com/" title="进入个人中心" target="_blank">进入个人中心</a> 
+        </dd> 
+        <dd class="red"> 
+         <a href="http://order.yingsheng.com/Order?source=1" title="购物车" target="_blank"><i class="iconfont"></i>购物车</a> 
+        </dd> 
+        <dd> 
+         <a href="http://i.yingsheng.com/Exchange" title="开卡/兑换" target="_blank">开卡/兑换</a> 
+        </dd> 
+        <dd> 
+         <a href="http://i.yingsheng.com/courselist-1.html" title="已 购 买" target="_blank">我的课程</a> 
+        </dd> 
+        <dd> 
+         <a href="http://i.yingsheng.com/orderlist-1.html" title="我的订单" target="_blank">我的订单</a> 
+        </dd> 
+        <dd> 
+         <a href="http://i.yingsheng.com/courseview.html" title="观看历史" target="_blank">播放记录</a> 
+        </dd> 
+        <dd> 
+         <a href="http://i.yingsheng.com/collect.html" title="我的收藏" target="_blank">我的收藏</a> 
+        </dd> 
+        <dd class="max"> 
+         <a onclick="return confirm('确认要退出?');" rel="nofollow" href="http://sso.yingsheng.com/logout.aspx?from=http%3a%2f%2fwww.yingsheng.com" title="退出" id="action_logout">退出</a> 
+        </dd> 
+       </dl> 
+      </div> 
+     </div> 
+     <!--搜索框--> 
+     <div class="search"> 
+      <i class="iconfont close"></i> 
+      <form target="_blank" action="search_course.html" method="get" name="search_js1" id="Form1"> 
+       <input type="text" name="kw" id="search_text" class="search_text" placeholder="搜索课程、老师、问题" autocomplete="off" /> 
+       <span onclick="$('#btnHidSubmit').click();" class="search_go"><i></i></span> 
+       <input type="submit" style="border: 0px; background: none; width: 0px; height: 0px;" value="" id="btnHidSubmit" /> 
+      </form> 
+      <div style="display: none;" class="search_lick"> 
+       <dl> 
+        <dd>
+          微营销 
+        </dd> 
+        <dd>
+          领导力 
+        </dd> 
+        <dd>
+          团队管理 
+        </dd> 
+        <dd>
+          Excel 
+        </dd> 
+        <dd>
+          面试技巧 
+        </dd> 
+       </dl> 
+      </div> 
+     </div> 
+     <!--菜单栏--> 
+     <div class="nav_list"> 
+      <ul> 
+       <li class="on" id="ys_top_index"><a href="index.html" title="XXX">首页</a></li> 
+       <li id="ys_top_performance"><a href="classes.html" title="岗位系统班">岗位系统班</a> 
+        <!--岗位分类开始--> 
+        <div id="performance_list" class="category_v3"> 
+         <div class="triangle_ico"> 
+          <span></span> 
+         </div> 
+         <ul> 
+          <li> <h3>基础岗位</h3> 
+           <div class="c_desc"> 
+            <span><a href="http://www.yingsheng.com/performance/list-1" title="董事长" target="_blank">董事长</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-4" title="总经理" target="_blank">总经理</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-5" title="总监" target="_blank">总监</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-6" title="经理" target="_blank">经理</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-7" title="主管" target="_blank">主管</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-8" title="基层员工" target="_blank">基层员工</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-130" title="副总经理" target="_blank">副总经理</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-131" title="储备干部" target="_blank">储备干部</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-175" title="职场新手" target="_blank">职场新手</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-176" title="创业者" target="_blank">创业者</a></span> 
+           </div> 
+           <div class="cat_shadow"></div> </li> 
+          <li> <h3>人力资源</h3> 
+           <div class="c_desc"> 
+            <span><a href="http://www.yingsheng.com/performance/list-12" title="人力资源经理" target="_blank">人力资源经理</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-13" title="人力资源总监" target="_blank">人力资源总监</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-14" title="培训师" target="_blank">培训师</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-15" title="培训经理" target="_blank">培训经理</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-96" title="员工关系专员" target="_blank">员工关系专员</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-97" title="薪资福利专员" target="_blank">薪资福利专员</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-98" title="招聘专员" target="_blank">招聘专员</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-103" title="绩效专员" target="_blank">绩效专员</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-104" title="人事专员" target="_blank">人事专员</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-132" title="企业文化专员" target="_blank">企业文化专员</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-133" title="人事助理" target="_blank">人事助理</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-134" title="培训专员" target="_blank">培训专员</a></span> 
+           </div> 
+           <div class="cat_shadow"></div> </li> 
+          <li> <h3>行政管理</h3> 
+           <div class="c_desc"> 
+            <span><a href="http://www.yingsheng.com/performance/list-9" title="行政总监" target="_blank">行政总监</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-10" title="行政经理" target="_blank">行政经理</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-11" title="行政助理" target="_blank">行政助理</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-129" title="总经理助理" target="_blank">总经理助理</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-136" title="前台" target="_blank">前台</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-137" title="董事长秘书" target="_blank">董事长秘书</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-138" title="办公室文员" target="_blank">办公室文员</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-139" title="办公室主任" target="_blank">办公室主任</a></span> 
+           </div> 
+           <div class="cat_shadow"></div> </li> 
+          <li> <h3>生产管理</h3> 
+           <div class="c_desc"> 
+            <span><a href="http://www.yingsheng.com/performance/list-24" title="班组长" target="_blank">班组长</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-25" title="生产主管" target="_blank">生产主管</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-26" title="生产总监" target="_blank">生产总监</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-27" title="质量部经理" target="_blank">质量部经理</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-28" title="生产过程品管员" target="_blank">生产过程品管员</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-29" title="车间主任" target="_blank">车间主任</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-31" title="跟单员" target="_blank">跟单员</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-34" title="仓库主管" target="_blank">仓库主管</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-140" title="厂长" target="_blank">厂长</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-141" title="生产助理" target="_blank">生产助理</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-142" title="仓管员" target="_blank">仓管员</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-143" title="生产部经理" target="_blank">生产部经理</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-144" title="设备员" target="_blank">设备员</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-145" title="设备主管" target="_blank">设备主管</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-146" title="现场督导员" target="_blank">现场督导员</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-147" title="物控经理" target="_blank">物控经理</a></span> 
+           </div> 
+           <div class="cat_shadow"></div> </li> 
+          <li> <h3>市场营销</h3> 
+           <div class="c_desc"> 
+            <span><a href="http://www.yingsheng.com/performance/list-16" title="营销总监" target="_blank">营销总监</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-17" title="市场经理" target="_blank">市场经理</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-18" title="销售经理" target="_blank">销售经理</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-19" title="渠道经理" target="_blank">渠道经理</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-20" title="品牌经理" target="_blank">品牌经理</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-21" title="销售代表" target="_blank">销售代表</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-22" title="客服专员" target="_blank">客服专员</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-23" title="店长" target="_blank">店长</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-30" title="外贸经理" target="_blank">外贸经理</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-127" title="项目经理" target="_blank">项目经理</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-148" title="市场总监" target="_blank">市场总监</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-149" title="门店运营总监" target="_blank">门店运营总监</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-152" title="销售助理" target="_blank">销售助理</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-153" title="导购员" target="_blank">导购员</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-154" title="客服经理" target="_blank">客服经理</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-155" title="大客户经理" target="_blank">大客户经理</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-156" title="大客户总监" target="_blank">大客户总监</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-157" title="市场调查员" target="_blank">市场调查员</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-158" title="电话营销员" target="_blank">电话营销员</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-159" title="电话营销经理" target="_blank">电话营销经理</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-160" title="外贸专员" target="_blank">外贸专员</a></span> 
+           </div> 
+           <div class="cat_shadow"></div> </li> 
+          <li> <h3>财务管理</h3> 
+           <div class="c_desc"> 
+            <span><a href="http://www.yingsheng.com/performance/list-35" title="财务总监" target="_blank">财务总监</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-36" title="财务经理" target="_blank">财务经理</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-37" title="会计" target="_blank">会计</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-38" title="出纳" target="_blank">出纳</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-161" title="会计主管" target="_blank">会计主管</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-162" title="财务主管" target="_blank">财务主管</a></span> 
+           </div> 
+           <div class="cat_shadow"></div> </li> 
+          <li> <h3>采购物流</h3> 
+           <div class="c_desc"> 
+            <span><a href="http://www.yingsheng.com/performance/list-32" title="物流经理" target="_blank">物流经理</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-33" title="采购经理" target="_blank">采购经理</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-163" title="采购专员" target="_blank">采购专员</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-164" title="物流专员" target="_blank">物流专员</a></span> 
+           </div> 
+           <div class="cat_shadow"></div> </li> 
+          <li> <h3>电子商务</h3> 
+           <div class="c_desc"> 
+            <span><a href="http://www.yingsheng.com/performance/list-39" title="网络营销专员" target="_blank">网络营销专员</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-40" title="电子商务员" target="_blank">电子商务员</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-81" title="网络运营总监" target="_blank">网络运营总监</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-166" title="在线客服" target="_blank">在线客服</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-167" title="电子商务经理" target="_blank">电子商务经理</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-168" title="网络推广" target="_blank">网络推广</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-169" title="网站编辑" target="_blank">网站编辑</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-170" title="网络运营专员" target="_blank">网络运营专员</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-171" title="网站编辑主管" target="_blank">网站编辑主管</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-177" title="微信专员" target="_blank">微信专员</a></span> 
+            <span><a href="http://www.yingsheng.com/performance/list-178" title="淘宝店长" target="_blank">淘宝店长</a></span> 
+           </div> 
+           <div class="cat_shadow"></div> </li> 
+         </ul> 
+        </div> 
+        <!--岗位分类结束--> </li> 
+       <li id="ys_top_afree"><a href="day.html" title="每日一课">每日一课</a><img class="mf_ico" src="images/mf.gif" /></li> 
+       <li id="ys_top_college"><a href="course.html" title="找课程">找课程</a></li> 
+       <li id="ys_top_ask"><a href="live.html" title="直播" target="_blank">直播</a></li> 
+      </ul> 
+      <ol> 
+       <li class="more"><a href="#"><i class="iconfont"></i><span style="display: none;" class="s1"></span></a> 
+        <div style="display: none;" class="more_div"> 
+         <div class="triangle_ico"> 
+          <span></span> 
+         </div> 
+         <h3>分类目录</h3> 
+         <dl> 
+          <dd> 
+           <a href="http://www.yingsheng.com/springsale/" title="抢 特 惠">抢 特 惠</a> 
+          </dd> 
+          <dd> 
+           <a href="day.html" title="享 免 费">享 免 费</a> 
+          </dd> 
+          <dd> 
+           <a href="answer.html" title="问吧">问吧</a> 
+          </dd> 
+          <dd> 
+           <a href="http://www.yingsheng.com/news/" title="行业资讯">行业资讯</a> 
+          </dd> 
+          <dd> 
+           <a href="http://www.yingsheng.com/kjxz/" title="课件下载">课件下载</a> 
+          </dd> 
+          <dd> 
+           <a href="http://zone.yingsheng.com" title="讲师空间">讲师空间</a> 
+          </dd> 
+          <dd> 
+           <a href="http://hd.yingsheng.com/" title="积分兑换" target="_blank">积分兑换</a> 
+          </dd> 
+         </dl> 
+         <h3>会员尊享权益</h3> 
+         <ul> 
+          <li><i class="iconfont"></i>免费观看所有课程</li> 
+          <li><i class="iconfont"></i>365位讲师在线解答</li> 
+          <li><i class="iconfont"></i>APP无限量离线下载</li> 
+          <li><i class="iconfont"></i>加入会员专属QQ群</li> 
+         </ul> 
+         <a class="nav_vip_btn" title="开通VIP" href="http://www.yingsheng.com/vip/"><i class="iconfont"></i>开通VIP</a> 
+        </div> </li> 
+       <li class="app_down"><a href="http://www.yingsheng.com/app" title="手机APP" target="_blank" rel="nofollow"><i class="iconfont"></i></a></li> 
+      </ol> 
+     </div> 
+     <!--验证手机邮箱窗口--> 
+     <div class="global_top_tips hidden"> 
+      <a class="tips_close" href="javascript:void(0);"><i class="iconfont"></i></a> 
+      <ul> 
+       <li class="global_top_tips_phonemail hidden">您尚未验证手机或邮箱，<a href="#" bpfilter="main" suda-data="key=yellowtag_remind_click&amp;value=friends_remind" target="_blank" class="link-verify">查看</a></li> 
+       <li class="global_top_tips_invite hidden">收到<font color="red"><span class="global_top_tips_invite_count">-</span></font>个企业的邀请，<a href="http://i.qy.yingsheng.com/applyjoincorplist-1.html" target="_blank" class="link-verify">查看</a></li> 
+      </ul> 
+     </div> 
+     <!--隐藏字段--> 
+     <div id="ys_top_Msg" style="display: none;"></div> 
+     <div class="msg_div" style="display: none;"></div> 
+     <div class="avatar" style="display: none;"></div> 
+     <div class="vip" style="display: none;"></div> 
+    </div> 
+   </div> 
+   <div class="clear"></div> 
+   <!--sso头部结束------------------------> 
+  </div> 
+  <!--JS文件--> 
+  <script src="js/global.js" type="text/javascript"></script> 
+  <!--CSS文件--> 
+  <link href="css/global.css?rnd=201510061603" type="text/css" rel="stylesheet" /> 
+  <!--头部结束--------------> 
+  <form id="form1" action="./?classid=72" method="post"> 
+   <div class="aspNetHidden"> 
+    <input type="hidden" value="/wEPDwULLTE4MjkwNjk4MjFkZBxpeVdqX3Q0XY4aHUuYbM0VzuFoMOF02xqkRSHyzgdJ" id="__VIEWSTATE" name="__VIEWSTATE" /> 
+   </div> 
+   <div class="aspNetHidden"> 
+    <input type="hidden" value="8C13DF87" id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" /> 
+   </div> 
+   <!--中间内容-----> 
+   <!--标题----------> 
+   <div class="title_menu2 clearfix"> 
+    <div class="wrap_1180"> 
+     <ul class="c"> 
+      <li><a href="/news/">资讯首页</a></li> 
+      <li><a href="/pxjg-it/">行业资讯</a></li> 
+      <li><a href="/pxzx-pxgl/">职场法则</a></li> 
+      <li><a href="/pxzx-glzh/">管 理 学</a></li> 
+      <li><a href="/pxzx-zjlbd/">创业项目</a></li> 
+      <li><a href="/pxzx-zjwz/">专家文章</a></li> 
+      <li><a href="/pxzx-hr/">HR管理</a></li> 
+      <li><a href="/pxzx-glgy/">励志故事</a></li> 
+      <li><a href="/pxzx-cwzx/">销售技巧</a></li> 
+      <!--<li><a href="/fanwen/">范文</a></li>--> 
+     </ul> 
+    </div> 
+   </div> 
+   <div class="index_container"> 
+    <div class="wrap wrap_space s20 clearfix"> 
+     <div class="nav">
+       当前位置： 
+      <a href="index.html">首页</a> &gt; 
+      <strong>行业资讯</strong> 
+     </div> 
+    </div> 
+    <div class="wrap wrap_space clearfix"> 
+     <div class="Layout_800 mright"> 
+      <div class="item clearfix s20"> 
+       <div class="newslist_box"> 
+        <div style="position:relative;" class="newslist_box_title"> 
+         <h1> 行业资讯 </h1> 
+        </div> 
+        <div class="newslist_box_list clearfix"> 
+         <div class="newsList2 clearfix"> 
+          <ul> 
+           <li> <h3><a target="_blank" href="/pxjg-it/76018.html" title="赵普辞职后做公益，为安徽学生免费送午餐">赵普辞职后做公益，为安徽学生免费送午餐</a> 
+             <!--<a href="#" class="a1 jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"><img src="images/share.jpg" style="border:0" /></a>--> </h3> 
+            <div class="tag"> 
+             <span class="News_meta"><a target="blank" href="http://www.yingsheng.com/topic/1252">辞职</a> </span> 
+            </div> <p>“我是安徽人，请我家乡的孩子吃顿免费午餐！”为了兑现数月前的一个承诺,央视名嘴赵普辞职后将首次公益献给家乡。11月16日，赵普携手家乡爱心企业凯翼汽车为安徽石台县的孩子们送去至少两年的免费午餐。赵普辞职后首次回乡做公益：陪石台县孩子们吃#免费午餐#[赞]】16日中午，@赵普 回到家乡安徽，参加在石台..<span><a rel="nofollow" target="_blank" href="/pxjg-it/76018.html" title="[全文]">[全文]</a></span></p> 
+            <div class="msg">
+              2015年11月18日 16时47分40秒更新 已浏览 
+             <span>143</span>次 
+            </div> </li> 
+           <li> <h3><a target="_blank" href="/pxjg-it/76016.html" title="骗子收96万巨款被吓尿，不义之财不敢动">骗子收96万巨款被吓尿，不义之财不敢动</a> 
+             <!--<a href="#" class="a1 jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"><img src="images/share.jpg" style="border:0" /></a>--> </h3> 
+            <div class="tag"></div> <p>【骗子收到96万巨款 掉下馅饼不敢捡】天上掉馅饼这种事情可不常遇到，等遇到你还不一定敢捡。骗子最开心的事情是什么?一定是骗到钱吧!今天要讲的这个骗子，卡里多处了一笔近百万的巨款，他吓得一分都不敢取!网友不禁吐槽“给跪了，就这心理素质还当骗子呢”。 <span><a rel="nofollow" target="_blank" href="/pxjg-it/76016.html" title="[全文]">[全文]</a></span></p> 
+            <div class="msg">
+              2015年11月18日 15时39分49秒更新 已浏览 
+             <span>136</span>次 
+            </div> </li> 
+           <li> <h3><a target="_blank" href="/pxjg-it/75886.html" title="出纳岗位职责">出纳岗位职责</a> 
+             <!--<a href="#" class="a1 jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"><img src="images/share.jpg" style="border:0" /></a>--> </h3> 
+            <div class="tag"> 
+             <span class="News_meta"><a target="blank" href="http://www.yingsheng.com/topic/1695">岗位职责</a> <a target="blank" href="http://www.yingsheng.com/topic/1205">出纳</a> </span> 
+            </div> <p>在企业中每个 岗位都有岗位职责的。其中出纳是每个企业必不可少的岗位之一，它涉及到部分资金的正常运作。出纳岗位职责你了解多少呢？出纳是财务管理中的重要的一部分，法律对其有一定的约束，所以对此岗位有从业意向的求职者就必须了解清楚它的岗位职责，以免触犯法律。下面为大家讲一下出纳岗位职责。<span><a rel="nofollow" target="_blank" href="/pxjg-it/75886.html" title="[全文]">[全文]</a></span></p> 
+            <div class="msg">
+              2015年10月26日 15时11分59秒更新 已浏览 
+             <span>177</span>次 
+            </div> </li> 
+           <li> <h3><a target="_blank" href="/pxjg-it/75820.html" title="动作心理学的介绍">动作心理学的介绍</a> 
+             <!--<a href="#" class="a1 jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"><img src="images/share.jpg" style="border:0" /></a>--> </h3> 
+            <div class="tag"></div> <p>在日常生活中不知不觉的我们一些小习惯、小动作透漏出内心的想法，动作心理学就是让我们通过别人的肢体语言、表情动作识别他人内心语言，帮助人们理解他人的内心活动以便更好的进行人际沟通。下面来看看动作心理学的介绍。除了语言沟通之外，有时候一个动作一个表情，是一个人内心的流露与掩饰，平常无意识的动作也可以表现..<span><a rel="nofollow" target="_blank" href="/pxjg-it/75820.html" title="[全文]">[全文]</a></span></p> 
+            <div class="msg">
+              2015年10月10日 17时57分22秒更新 已浏览 
+             <span>337</span>次 
+            </div> </li> 
+           <li> <h3><a target="_blank" href="/pxjg-it/75790.html" title="国税和地税的区别">国税和地税的区别</a> 
+             <!--<a href="#" class="a1 jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"><img src="images/share.jpg" style="border:0" /></a>--> </h3> 
+            <div class="tag"></div> <p>国税和地税的区别是什么？从内容来看，国税是国家增收的税务，地税是地方增收的税务。国税和地税有什么区别？ 按照税收收入归属和征管管辖权限的不同，可分为中央（收入）税和地方（收入）税，分别同国税系统和地税系统征收。<span><a rel="nofollow" target="_blank" href="/pxjg-it/75790.html" title="[全文]">[全文]</a></span></p> 
+            <div class="msg">
+              2015年10月8日 11时24分00秒更新 已浏览 
+             <span>232</span>次 
+            </div> </li> 
+           <li> <h3><a target="_blank" href="/pxjg-it/75751.html" title="社保基数怎么算？">社保基数怎么算？</a> 
+             <!--<a href="#" class="a1 jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"><img src="images/share.jpg" style="border:0" /></a>--> </h3> 
+            <div class="tag"></div> <p>社保是关于每个人的人生大事，也是万众关注的焦点。社保是我们无论在工作中还是在生活中的一种有力的保障，对于这些社保的事情我们还是有必要做些相关的了解。那么社保基数怎么算的呢?我们可以从当地的社保局中查询到最近的社保基数，一般来说企业帮员工缴纳的都是基数最低的社保。社保基数是以社会平均工资的60%到30..<span><a rel="nofollow" target="_blank" href="/pxjg-it/75751.html" title="[全文]">[全文]</a></span></p> 
+            <div class="msg">
+              2015年9月26日 17时39分48秒更新 已浏览 
+             <span>256</span>次 
+            </div> </li> 
+           <li> <h3><a target="_blank" href="/pxjg-it/75745.html" title="有关战争的名言大全">有关战争的名言大全</a> 
+             <!--<a href="#" class="a1 jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"><img src="images/share.jpg" style="border:0" /></a>--> </h3> 
+            <div class="tag"></div> <p>战争是很多人不希望看到的，然而古往今来，战争似乎一直萦绕在人们身边，我们都不希望发生战争，但是战争的身影却好像总是形影不离。在19到20世纪，战争与和平成为人们时常提到的话题，即使进入21世纪，战争的身影在世界的很多地方还存在，战争年代很多军事家、战略家也提到很多有关战争的名言，下面分享有关战争的名..<span><a rel="nofollow" target="_blank" href="/pxjg-it/75745.html" title="[全文]">[全文]</a></span></p> 
+            <div class="msg">
+              2015年9月26日 00时48分12秒更新 已浏览 
+             <span>244</span>次 
+            </div> </li> 
+           <li> <h3><a target="_blank" href="/pxjg-it/75744.html" title="研究生面试自我介绍方法">研究生面试自我介绍方法</a> 
+             <!--<a href="#" class="a1 jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"><img src="images/share.jpg" style="border:0" /></a>--> </h3> 
+            <div class="tag"> 
+             <span class="News_meta"><a target="blank" href="http://www.yingsheng.com/topic/1674">面试</a> <a target="blank" href="http://www.yingsheng.com/topic/187">自我介绍</a> </span> 
+            </div> <p>研究生面试自我介绍方法是怎样的？很多将要参加研究生复试的同学对于研究生面试阶段感觉有些无助。因此，如果对于有来自研究生面试老师的建议，对于参加面试的考生来说将是一个非常好的指导。下面分享来自从事研究生面试工作的老师给学生面试的建议：<span><a rel="nofollow" target="_blank" href="/pxjg-it/75744.html" title="[全文]">[全文]</a></span></p> 
+            <div class="msg">
+              2015年9月26日 00时45分13秒更新 已浏览 
+             <span>183</span>次 
+            </div> </li> 
+           <li> <h3><a target="_blank" href="/pxjg-it/75742.html" title="跟单员是做什么的">跟单员是做什么的</a> 
+             <!--<a href="#" class="a1 jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"><img src="images/share.jpg" style="border:0" /></a>--> </h3> 
+            <div class="tag"> 
+             <span class="News_meta"><a target="blank" href="http://www.yingsheng.com/topic/2002">跟单员</a> </span> 
+            </div> <p>跟单员是做什么的？在了解跟单员工作内容，先来了解下什么是跟单员？一般来说，企业在日常经营过程当中，会产生订单，我们称那些负责跟进客户订单完成进度，对整个订单交易过程进行追踪、管理、提供服务的专业人员为跟单员。一般来说，跟单员不能是兼职的，特别是在外贸领域，外贸跟单员需要对货物交接、出货期等负责。<span><a rel="nofollow" target="_blank" href="/pxjg-it/75742.html" title="[全文]">[全文]</a></span></p> 
+            <div class="msg">
+              2015年9月26日 00时17分14秒更新 已浏览 
+             <span>183</span>次 
+            </div> </li> 
+           <li> <h3><a target="_blank" href="/pxjg-it/75734.html" title="行政助理的工作内容">行政助理的工作内容</a> 
+             <!--<a href="#" class="a1 jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"><img src="images/share.jpg" style="border:0" /></a>--> </h3> 
+            <div class="tag"> 
+             <span class="News_meta"><a target="blank" href="http://www.yingsheng.com/topic/1990">行政助理</a> </span> 
+            </div> <p>行政助理的工作内容有哪些？行政助理一般被人们所熟知的就是负责在企业里面日常的行政管理工作，包括访客接待，处理日常信息，数据表格制定、打印，日常考勤安排，办公用品购买，节假日礼品购买，有时候还需要和人力资源、财务部门做好配合，包括人员招聘等这些工作也会接触到。相对来说，行政助理工作内容主要是协助行政主..<span><a rel="nofollow" target="_blank" href="/pxjg-it/75734.html" title="[全文]">[全文]</a></span></p> 
+            <div class="msg">
+              2015年9月25日 18时13分13秒更新 已浏览 
+             <span>178</span>次 
+            </div> </li> 
+           <li> <h3><a target="_blank" href="/pxjg-it/75725.html" title="个人性格描述怎么写">个人性格描述怎么写</a> 
+             <!--<a href="#" class="a1 jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"><img src="images/share.jpg" style="border:0" /></a>--> </h3> 
+            <div class="tag"> 
+             <span class="News_meta"><a target="blank" href="http://www.yingsheng.com/topic/1224">性格</a> </span> 
+            </div> <p>个人性格描述怎么写？对于人物性格的描述，根据不同的人物特点，性格描述的具体用词也不同。一般来说，可以从一个人的内向、外向，对人，对事等方面来描述一个人的性格。比如，一个人性格沉稳，对人友好热情，做事踏实，诚实守信，关心集体，学习努力，不怕吃苦等，是一个品学兼优的好学生、好同志、好伙伴。<span><a rel="nofollow" target="_blank" href="/pxjg-it/75725.html" title="[全文]">[全文]</a></span></p> 
+            <div class="msg">
+              2015年9月24日 21时09分46秒更新 已浏览 
+             <span>189</span>次 
+            </div> </li> 
+           <li> <h3><a target="_blank" href="/pxjg-it/75724.html" title="2015公务员涨工资最新消息">2015公务员涨工资最新消息</a> 
+             <!--<a href="#" class="a1 jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"><img src="images/share.jpg" style="border:0" /></a>--> </h3> 
+            <div class="tag"> 
+             <span class="News_meta"><a target="blank" href="http://www.yingsheng.com/topic/1240">工资</a> <a target="blank" href="http://www.yingsheng.com/topic/776">公务员</a> </span> 
+            </div> <p>2015公务员涨工资最新消息，今年全国两会期间，各地人大代表纷纷提出提升基层公务员工资水平，公务员涨工资的讨论非常激烈。那么对于公务员薪资调整，目前的一个改革方案是怎样的，下面分享2015公务员涨工资最新消息。<span><a rel="nofollow" target="_blank" href="/pxjg-it/75724.html" title="[全文]">[全文]</a></span></p> 
+            <div class="msg">
+              2015年9月24日 21时07分57秒更新 已浏览 
+             <span>164</span>次 
+            </div> </li> 
+           <li> <h3><a target="_blank" href="/pxjg-it/75721.html" title="专升本和本科的区别">专升本和本科的区别</a> 
+             <!--<a href="#" class="a1 jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"><img src="images/share.jpg" style="border:0" /></a>--> </h3> 
+            <div class="tag"></div> <p>专升本和本科的区别有哪些？专升本之后和本科毕业生有没有差别对待？这对于很多专科学生，想通过升学考试成为本科生来说，存在很多疑问。其实，总的来说，如果你是统招的专科生，等到可以考试升为本科之后，一般是和统招本科的大三学生在一个班，一起学习的，没有什么区别。毕业之后毕业证上会加一个专科起点本科，学位证上..<span><a rel="nofollow" target="_blank" href="/pxjg-it/75721.html" title="[全文]">[全文]</a></span></p> 
+            <div class="msg">
+              2015年9月24日 19时14分59秒更新 已浏览 
+             <span>170</span>次 
+            </div> </li> 
+           <li> <h3><a target="_blank" href="/pxjg-it/75720.html" title="一分钟个性自我介绍">一分钟个性自我介绍</a> 
+             <!--<a href="#" class="a1 jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"><img src="images/share.jpg" style="border:0" /></a>--> </h3> 
+            <div class="tag"> 
+             <span class="News_meta"><a target="blank" href="http://www.yingsheng.com/topic/187">自我介绍</a> </span> 
+            </div> <p>一分钟个性自我介绍怎么说？在求职面试，学校班级社团等干部竞聘选拔方面都需要涉及到自我介绍，而且时间要求短，如何在一分钟内进行个性自我介绍，让面试者、听众能够留下深刻印象是介绍者需要思考的问题。<span><a rel="nofollow" target="_blank" href="/pxjg-it/75720.html" title="[全文]">[全文]</a></span></p> 
+            <div class="msg">
+              2015年9月24日 19时12分05秒更新 已浏览 
+             <span>156</span>次 
+            </div> </li> 
+           <li> <h3><a target="_blank" href="/pxjg-it/75719.html" title="就业形势最好的专业">就业形势最好的专业</a> 
+             <!--<a href="#" class="a1 jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"><img src="images/share.jpg" style="border:0" /></a>--> </h3> 
+            <div class="tag"></div> <p>就业形势最好的专业是什么？每年的毕业季都免了一个尴尬的情况是：很多大学毕业生找不到工作。面对这种尴尬的情况，问题来了，什么专业好就业，就业形势最好的专业是什么专业？对于这个问题，在如今互联网 的背景下，估计很多小伙伴已经想到了，那就是计算机专业。<span><a rel="nofollow" target="_blank" href="/pxjg-it/75719.html" title="[全文]">[全文]</a></span></p> 
+            <div class="msg">
+              2015年9月24日 19时09分50秒更新 已浏览 
+             <span>128</span>次 
+            </div> </li> 
+           <li> <h3><a target="_blank" href="/pxjg-it/75718.html" title="工作调动申请书格式">工作调动申请书格式</a> 
+             <!--<a href="#" class="a1 jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"><img src="images/share.jpg" style="border:0" /></a>--> </h3> 
+            <div class="tag"></div> <p>工作调动申请书格式怎么写？很多人对于这个问题感到不解。其实，只要涉及到申请书、报告、总结等这些书面形式的写作文体，道理都是一样的，只是形式内容有区别。无外乎：标题，称谓，内容，结尾等这些。对于工作调动申请书格式也一样，下面举例给大家写工作调动申请书的格式。<span><a rel="nofollow" target="_blank" href="/pxjg-it/75718.html" title="[全文]">[全文]</a></span></p> 
+            <div class="msg">
+              2015年9月24日 19时07分34秒更新 已浏览 
+             <span>120</span>次 
+            </div> </li> 
+           <li> <h3><a target="_blank" href="/pxjg-it/75717.html" title="软件工程专业就业前景">软件工程专业就业前景</a> 
+             <!--<a href="#" class="a1 jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"><img src="images/share.jpg" style="border:0" /></a>--> </h3> 
+            <div class="tag"></div> <p>软件工程专业就业前景如何？如今大学生面临越来越严峻的就业压力，因此，很多即将上大学的高中生，在选择大学专业的时候也是非常谨慎。随着互联网的快速发展，人们对于软件行业也是非常关注，那么软件工程专业就业前景如何呢？下面给大家详细介绍软件工程专业前景。<span><a rel="nofollow" target="_blank" href="/pxjg-it/75717.html" title="[全文]">[全文]</a></span></p> 
+            <div class="msg">
+              2015年9月24日 19时05分13秒更新 已浏览 
+             <span>121</span>次 
+            </div> </li> 
+           <li> <h3><a target="_blank" href="/pxjg-it/75716.html" title="关于读书的名人名言大全">关于读书的名人名言大全</a> 
+             <!--<a href="#" class="a1 jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"><img src="images/share.jpg" style="border:0" /></a>--> </h3> 
+            <div class="tag"> 
+             <span class="News_meta"><a target="blank" href="http://www.yingsheng.com/topic/1171">读书</a> </span> 
+            </div> <p>从古至今，文人墨客，国内国外，关于读书的名人名言数不胜数。陶渊明说过：盛年不再来，一日难再晨，及时当勉励，岁月不待人。告诉人们要珍惜时间多读书。读书破万卷，下笔如有神。培根也曾经说过：读书给人以快乐、给人以光彩、给人以才干。可以看到读书对于一个人的成长是多么的重要。下面整理分享关于读书的名人名言大全..<span><a rel="nofollow" target="_blank" href="/pxjg-it/75716.html" title="[全文]">[全文]</a></span></p> 
+            <div class="msg">
+              2015年9月24日 18时11分30秒更新 已浏览 
+             <span>116</span>次 
+            </div> </li> 
+           <li> <h3><a target="_blank" href="/pxjg-it/75715.html" title="国家奖学金申请理由有哪些？">国家奖学金申请理由有哪些？</a> 
+             <!--<a href="#" class="a1 jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"><img src="images/share.jpg" style="border:0" /></a>--> </h3> 
+            <div class="tag"></div> <p>国家奖学金申请理由有哪些？对于很多学生来说，申请到奖学金是一件非常光荣的事情，而如果申请到国家奖学金，那更是莫大的荣耀。那么，对于大学生来说，想申请国家奖学金，需要具备哪些条件呢？国家奖学金申请理由有哪些？本文给到国家奖学金申请介绍。<span><a rel="nofollow" target="_blank" href="/pxjg-it/75715.html" title="[全文]">[全文]</a></span></p> 
+            <div class="msg">
+              2015年9月24日 18时09分20秒更新 已浏览 
+             <span>465</span>次 
+            </div> </li> 
+           <li> <h3><a target="_blank" href="/pxjg-it/75712.html" title="运动会口号大全">运动会口号大全</a> 
+             <!--<a href="#" class="a1 jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"><img src="images/share.jpg" style="border:0" /></a>--> </h3> 
+            <div class="tag"></div> <p>一般来说，在召开运动会的时候都会有相应的口号，运动会口号的作用一方面在于激励运动员积极参与运动会，发挥顽强拼搏，友好协作的精神，增强团队凝聚力。同时，运动会口号还可以宣传活动精神，让更多的人感受到活动的魅力。不管是作为运动员还是作为观众，通过运动会口号，能让大家有激情参与到运动会这样的活动中来。<span><a rel="nofollow" target="_blank" href="/pxjg-it/75712.html" title="[全文]">[全文]</a></span></p> 
+            <div class="msg">
+              2015年9月23日 18时31分22秒更新 已浏览 
+             <span>124</span>次 
+            </div> </li> 
+           <li> <h3><a target="_blank" href="/pxjg-it/75711.html" title="报到证有什么用">报到证有什么用</a> 
+             <!--<a href="#" class="a1 jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"><img src="images/share.jpg" style="border:0" /></a>--> </h3> 
+            <div class="tag"></div> <p>报到证有什么用？对于很多毕业生来说，就业面临档案、户口迁移等相关问题。报到证就是派遣证，派遣证是原来的叫法，现在统一都是报到证，分上下两联，分别叫报到证，和就业通知书。一联单位留存，一联存放在个人人事档案里。学校相关部门依据“报到证”为毕业生办理档案投递、组织关系转移和户籍迁移等手续，就业单位所在地..<span><a rel="nofollow" target="_blank" href="/pxjg-it/75711.html" title="[全文]">[全文]</a></span></p> 
+            <div class="msg">
+              2015年9月23日 18时25分35秒更新 已浏览 
+             <span>126</span>次 
+            </div> </li> 
+           <li> <h3><a target="_blank" href="/pxjg-it/75710.html" title="关于环保的名言大全">关于环保的名言大全</a> 
+             <!--<a href="#" class="a1 jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"><img src="images/share.jpg" style="border:0" /></a>--> </h3> 
+            <div class="tag"></div> <p>关于环保的名言大全有哪些？如今随着建设美丽中国的理念提出，环保已经成为全国人民关注的焦点，环境问题不仅关系到人们的生产生活，也关系到每个人的身体健康。因此，不管是政府还是普通百姓纷纷提出了很多关于环保的名言警句，下面给大家详细介绍关于环保的名言大全。<span><a rel="nofollow" target="_blank" href="/pxjg-it/75710.html" title="[全文]">[全文]</a></span></p> 
+            <div class="msg">
+              2015年9月23日 18时22分59秒更新 已浏览 
+             <span>112</span>次 
+            </div> </li> 
+           <li> <h3><a target="_blank" href="/pxjg-it/75709.html" title="签订劳动合同注意事项">签订劳动合同注意事项</a> 
+             <!--<a href="#" class="a1 jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"><img src="images/share.jpg" style="border:0" /></a>--> </h3> 
+            <div class="tag"> 
+             <span class="News_meta"><a target="blank" href="http://www.yingsheng.com/topic/303">注意事项</a> <a target="blank" href="http://www.yingsheng.com/topic/235">劳动合同</a> </span> 
+            </div> <p>对于很多刚步入职场的人来说，对于劳动合同的签订感觉不是很熟悉。因此有必要提醒大家签订劳动合同注意事项，在签订合同的时候应该了解哪些东西。下面以小明务工记，给出关于签订劳动合同注意事项。<span><a rel="nofollow" target="_blank" href="/pxjg-it/75709.html" title="[全文]">[全文]</a></span></p> 
+            <div class="msg">
+              2015年9月23日 18时20分26秒更新 已浏览 
+             <span>108</span>次 
+            </div> </li> 
+           <li> <h3><a target="_blank" href="/pxjg-it/75708.html" title="文科生可以报哪些大学">文科生可以报哪些大学</a> 
+             <!--<a href="#" class="a1 jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"><img src="images/share.jpg" style="border:0" /></a>--> </h3> 
+            <div class="tag"></div> <p>文科生可以报哪些大学呢？对于很多文科考生来说这是一个头疼的问题。长期以来，文科生无论是在招生数量上还是在就业情况来看，相比理科生都要少些。文科生一般招生人数有限，但是种种原因学习文科的人数还是相对较多的，因此文科生考大学的竞争更大，而且文科生毕业之后找工作相对来说对口的比较少，就业压力也相对大些。因..<span><a rel="nofollow" target="_blank" href="/pxjg-it/75708.html" title="[全文]">[全文]</a></span></p> 
+            <div class="msg">
+              2015年9月23日 18时18分38秒更新 已浏览 
+             <span>173</span>次 
+            </div> </li> 
+           <li> <h3><a target="_blank" href="/pxjg-it/75707.html" title="工作转正申请怎么做？">工作转正申请怎么做？</a> 
+             <!--<a href="#" class="a1 jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"><img src="images/share.jpg" style="border:0" /></a>--> </h3> 
+            <div class="tag"></div> <p>工作转正申请怎么做？很多人对于转正申请感觉不知道怎么写？工作转正申请和其他转正申请类似，主要还是写出自己在工作当中的表现情况，好的地方，做的不足的地方，以及转正的决心，对今后工作的一个积极态度。<span><a rel="nofollow" target="_blank" href="/pxjg-it/75707.html" title="[全文]">[全文]</a></span></p> 
+            <div class="msg">
+              2015年9月23日 18时15分47秒更新 已浏览 
+             <span>107</span>次 
+            </div> </li> 
+          </ul> 
+          <div class="pager pagingbar"> 
+           <span>上一页</span> 
+           <span class="current-page">1</span> 
+           <a href="/pxjg-it/index_2.html">2</a> 
+           <a href="/pxjg-it/index_3.html">3</a> 
+           <a href="/pxjg-it/index_4.html">4</a> 
+           <a href="/pxjg-it/index_5.html">5</a> 
+           <a href="/pxjg-it/index_6.html">6</a> 
+           <a href="/pxjg-it/index_7.html">7</a> 
+           <a href="/pxjg-it/index_8.html">8</a> 
+           <a href="/pxjg-it/index_9.html">9</a> 
+           <a href="/pxjg-it/index_10.html">...</a> 
+           <a href="/pxjg-it/index_747.html">747</a> 
+           <a href="/pxjg-it/index_2.html">下一页</a> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="Layout_360"> 
+      <!--内容-----> 
+      <div class="news_right_box clearfix s20"> 
+       <div class="newsTitleRight"> 
+        <h3>课程学习</h3> 
+       </div> 
+       <!--课程学习列表-----> 
+       <div class="clearfix item"> 
+        <ul> 
+         <li class="spic"> <a target="_blank" href="http://www.yingsheng.com/zhuanti-141103.html" rel="nofollow"> <img width="300" style="border: 0;" src="images/7d4da11b9d3d46ff91e1479cceff775b_611.jpg" /></a> <a target="_blank" href="http://www.yingsheng.com/course-1418.html" rel="nofollow"> <img width="300" style="border: 0;" src="images/3a5b9c4329fb4a3184eaa0509995ee93_600.jpg" /></a> <a target="_blank" href="http://www.yingsheng.com/course-1451.html" rel="nofollow"> <img width="300" style="border: 0;" src="images/53375442bc1d45538327c3fc9a55f88f_604.jpg" /></a> <a target="_blank" href="http://www.yingsheng.com/course-1413.html	" rel="nofollow"> <img width="300" style="border: 0;" src="images/ecf64a4eae6147cbb00d36e58dbe58bb_603.jpg" /></a> <a target="_blank" href="http://www.yingsheng.com/course-1414.html" rel="nofollow"> <img width="300" style="border: 0;" src="images/7a6cf70017984d8abb210d571ce79110_602.jpg" /></a> <a target="_blank" href="http://www.yingsheng.com/course-1026.html" rel="nofollow"> <img width="300" style="border: 0;" src="images/0fdcbc02f1a34d508a0e42ee8c23a662_601.jpg" /></a> </li> 
+        </ul> 
+       </div> 
+       <!--课程学习列表结束-----> 
+      </div> 
+      <!--内容结束-----> 
+      <!--内容-----> 
+      <div class="news_right_box clearfix s20"> 
+       <div class="newsTitleRight"> 
+        <h3>本月热点</h3> 
+       </div> 
+       <!--文章列表-----> 
+       <div class="clearfix item"> 
+        <ul class="newsList"> 
+         <li><a target="_blank" href="/pxzx-zjwz/91449.html">成功创业者需要哪些资源——创业资源获取之..</a></li> 
+         <li><a target="_blank" href="/pxzx-zjwz/93691.html">揭秘阿里巴巴的企业文化-为什么阿里的员工..</a></li> 
+         <li><a target="_blank" href="/pxzx-zjwz/88517.html">如何做好网络客服?在线客服沟通技巧提升秘..</a></li> 
+         <li><a target="_blank" href="/pxzx-zjwz/96174.html">网站诊断分析:如何分析竞争对手网站?</a></li> 
+         <li><a target="_blank" href="/pxzx-zjwz/93713.html">大数据时代,企业转型升级之路如何走</a></li> 
+         <li><a target="_blank" href="/pxzx-zjwz/91439.html">如何利用微信做营销?微信营销巧布局提升销..</a></li> 
+         <li><a target="_blank" href="/pxzx-zjwz/103500.html">企业网络营销怎么做？这些误区你该认识！</a></li> 
+         <li><a target="_blank" href="/pxzx-zjwz/110672.html">善用大数据思维，做好企业管理决策</a></li> 
+         <li><a target="_blank" href="/pxzx-zjwz/110768.html">货源渠道分析：开网店怎么找货源？</a></li> 
+         <li><a target="_blank" href="/pxzx-zjwz/105894.html">企业微营销怎么做?</a></li> 
+        </ul> 
+       </div> 
+       <!--文章列表结束-----> 
+      </div> 
+      <!--内容结束-----> 
+      <!--内容-----> 
+      <div class="news_right_box clearfix s20"> 
+       <div class="newsTitleRight"> 
+        <h3>最新发布</h3> 
+       </div> 
+       <!--文章列表-----> 
+       <div class="clearfix item"> 
+        <ul class="newsList"> 
+         <li> <a target="_blank" href="/pxjg-it/76018.html">赵普辞职后做公益，为安徽..</a> <span style="float:right;color: #999;font-size: 12px;margin: 0px 7px;">2015年11月18日</span> </li> 
+         <li> <a target="_blank" href="/pxjg-it/76016.html">骗子收96万巨款被吓尿，..</a> <span style="float:right;color: #999;font-size: 12px;margin: 0px 7px;">2015年11月18日</span> </li> 
+         <li> <a target="_blank" href="/pxjg-it/75886.html">出纳岗位职责</a> <span style="float:right;color: #999;font-size: 12px;margin: 0px 7px;">2015年10月26日</span> </li> 
+         <li> <a target="_blank" href="/pxjg-it/75820.html">动作心理学的介绍</a> <span style="float:right;color: #999;font-size: 12px;margin: 0px 7px;">2015年10月10日</span> </li> 
+         <li> <a target="_blank" href="/pxjg-it/75790.html">国税和地税的区别</a> <span style="float:right;color: #999;font-size: 12px;margin: 0px 7px;">2015年10月8日</span> </li> 
+         <li> <a target="_blank" href="/pxjg-it/75751.html">社保基数怎么算？</a> <span style="float:right;color: #999;font-size: 12px;margin: 0px 7px;">2015年9月26日</span> </li> 
+         <li> <a target="_blank" href="/pxjg-it/75745.html">有关战争的名言大全</a> <span style="float:right;color: #999;font-size: 12px;margin: 0px 7px;">2015年9月26日</span> </li> 
+         <li> <a target="_blank" href="/pxjg-it/75744.html">研究生面试自我介绍方法</a> <span style="float:right;color: #999;font-size: 12px;margin: 0px 7px;">2015年9月26日</span> </li> 
+         <li> <a target="_blank" href="/pxjg-it/75742.html">跟单员是做什么的</a> <span style="float:right;color: #999;font-size: 12px;margin: 0px 7px;">2015年9月26日</span> </li> 
+         <li> <a target="_blank" href="/pxjg-it/75734.html">行政助理的工作内容</a> <span style="float:right;color: #999;font-size: 12px;margin: 0px 7px;">2015年9月25日</span> </li> 
+         <li> <a target="_blank" href="/pxjg-it/75725.html">个人性格描述怎么写</a> <span style="float:right;color: #999;font-size: 12px;margin: 0px 7px;">2015年9月24日</span> </li> 
+         <li> <a target="_blank" href="/pxjg-it/75724.html">2015公务员涨工资最新..</a> <span style="float:right;color: #999;font-size: 12px;margin: 0px 7px;">2015年9月24日</span> </li> 
+         <li> <a target="_blank" href="/pxjg-it/75721.html">专升本和本科的区别</a> <span style="float:right;color: #999;font-size: 12px;margin: 0px 7px;">2015年9月24日</span> </li> 
+         <li> <a target="_blank" href="/pxjg-it/75720.html">一分钟个性自我介绍</a> <span style="float:right;color: #999;font-size: 12px;margin: 0px 7px;">2015年9月24日</span> </li> 
+         <li> <a target="_blank" href="/pxjg-it/75719.html">就业形势最好的专业</a> <span style="float:right;color: #999;font-size: 12px;margin: 0px 7px;">2015年9月24日</span> </li> 
+         <li> <a target="_blank" href="/pxjg-it/75718.html">工作调动申请书格式</a> <span style="float:right;color: #999;font-size: 12px;margin: 0px 7px;">2015年9月24日</span> </li> 
+         <li> <a target="_blank" href="/pxjg-it/75717.html">软件工程专业就业前景</a> <span style="float:right;color: #999;font-size: 12px;margin: 0px 7px;">2015年9月24日</span> </li> 
+         <li> <a target="_blank" href="/pxjg-it/75716.html">关于读书的名人名言大全</a> <span style="float:right;color: #999;font-size: 12px;margin: 0px 7px;">2015年9月24日</span> </li> 
+         <li> <a target="_blank" href="/pxjg-it/75715.html">国家奖学金申请理由有哪些..</a> <span style="float:right;color: #999;font-size: 12px;margin: 0px 7px;">2015年9月24日</span> </li> 
+         <li> <a target="_blank" href="/pxjg-it/75712.html">运动会口号大全</a> <span style="float:right;color: #999;font-size: 12px;margin: 0px 7px;">2015年9月23日</span> </li> 
+        </ul> 
+       </div> 
+       <!--文章列表结束-----> 
+      </div> 
+      <!--内容结束-----> 
+      <!--内容-----> 
+      <div class="news_right_box clearfix s20"> 
+       <div class="newsTitleRight"> 
+        <h3>小编推荐</h3> 
+       </div> 
+       <!--文章列表-----> 
+       <div class="clearfix item"> 
+        <ul class="dl2"> 
+         <li> <a target="_blank" href="/pxzx-zjwz/144087.html">互联网时代，运用大数据思..</a> </li> 
+         <li> <a target="_blank" href="/pxzx-zjwz/138705.html">微博信息传播特点分析，传..</a> </li> 
+         <li> <a target="_blank" href="/pxzx-zjwz/131532.html">有效沟通技巧培训:职场中..</a> </li> 
+         <li> <a target="_blank" href="/pxzx-zjwz/126729.html">掌握企业数据分析，让数据..</a> </li> 
+         <li> <a target="_blank" href="/pxzx-zjwz/121921.html">面试技巧培训:霸道面试秘..</a> </li> 
+         <li> <a target="_blank" href="/pxzx-zjwz/117344.html">企业转型升级之路—企业如..</a> </li> 
+         <li> <a target="_blank" href="/pxzx-zjwz/112986.html">如何做好企业信息化建设</a> </li> 
+         <li> <a target="_blank" href="/pxzx-zjwz/110768.html">货源渠道分析：开网店怎么..</a> </li> 
+         <li> <a target="_blank" href="/pxzx-zjwz/110672.html">善用大数据思维，做好企业..</a> </li> 
+         <li> <a target="_blank" href="/pxzx-zjwz/105894.html">企业微营销怎么做?</a> </li> 
+         <li> <a target="_blank" href="/pxzx-zjwz/103500.html">企业网络营销怎么做？这些..</a> </li> 
+         <li> <a target="_blank" href="/pxzx-zjwz/96174.html">网站诊断分析:如何分析竞..</a> </li> 
+         <li> <a target="_blank" href="/pxzx-zjwz/93713.html">大数据时代,企业转型升级..</a> </li> 
+         <li> <a target="_blank" href="/pxzx-zjwz/93691.html">揭秘阿里巴巴的企业文化-..</a> </li> 
+         <li> <a target="_blank" href="/pxzx-zjwz/91449.html">成功创业者需要哪些资源—..</a> </li> 
+        </ul> 
+       </div> 
+       <!--文章列表结束-----> 
+      </div> 
+      <!--内容结束-----> 
+     </div> 
+     <!--wrap--> 
+    </div> 
+    <!--友情链接--> 
+    <div class="global_friend"> 
+     <div class="box"> 
+      <strong class="s1">友情链接：</strong> 
+      <div class="desc"> 
+       <a href="http://chengdu.liebiao.com/peixun/" target="_blank">成都教育培训</a> 
+       <a href="http://www.qeo.cn/141/" target="_blank">企业内训</a> 
+       <a href="http://www.bdkssc.com/quanguo/" target="_blank">全国职称计算机考试</a> 
+      </div> 
+     </div> 
+     <div class="clear"></div> 
+    </div> 
+    <!--中间内容结束-----> 
+    <!--跟随广告--> 
+    <script src="js/index_scroll_ad.js" type="text/javascript"></script> 
+    <!--底部--------------> 
+    <!--右边悬浮--> 
+    <div class="fd_float"> 
+     <div class="fd_box"> 
+      <a target="_blank" href="http://www.yingsheng.com/app" class="fd_a fd_app" title="英盛APP下载" rel="nofollow"><span class="fd_ck"><span class="fk_ckcont"> <img alt="英盛APP下载" src="images/code.png" /></span></span></a> 
+      <!--<a rel="nofollow" title="客服" target="_blank" rel="nofollow" href="http://wpa.qq.com/msgrd?v=3&uin=475855150&site=qq&menu=yes" class="fd_a fd_qq"></a>--> 
+      <a href="http://order.yingsheng.com/Order?source=1" class="fd_car" target="_blank" title="购物车" rel="nofollow"></a> 
+      <script src="js/feedback.js" type="text/javascript"></script> 
+      <a href="javascript:;" class="fd_feedback" title="反馈" id="fd_feedback" rel="nofollow"></a> 
+      <a id="J_Feedback" href="javascript:;" class="fd_a fd_totop" title="返回页首" rel="nofollow"></a> 
+     </div> 
+    </div> 
+    <!--底部footer--> 
+    <div class="bottom_nav"> 
+     <div class="left_logo"> 
+      <a href="index.html" title="XXX"> <img border="0" src="images/bottom_logo.png" alt="XXX" /></a> 
+     </div> 
+     <div class="bottom_about"> 
+      <dl id="c"> 
+       <dt> 
+        <a target="_blank" href="http://www.yingsheng.com/zhuanti-150704.html">关于我们</a> 
+       </dt> 
+       <dd> 
+        <a title="XXX简介" href="http://www.yingsheng.com/forme-intro.html" target="_blank" rel="nofollow">XXX简介</a> 
+       </dd> 
+       <dd> 
+        <a title="免责声明" href="http://www.yingsheng.com/forme-exemption.html" target="_blank" rel="nofollow">免责声明</a> 
+       </dd> 
+       <dd> 
+        <a title="联系方式" href="http://www.yingsheng.com/forme-contact.html" target="_blank" rel="nofollow">联系方式</a> 
+       </dd> 
+       <dd> 
+        <a title="推广联盟" href="http://u.yingsheng.com" target="_blank" rel="nofollow">推广联盟</a> 
+       </dd> 
+      </dl> 
+      <dl> 
+       <dt> 
+        <a>帮助中心</a> 
+       </dt> 
+       <dd> 
+        <a title="会员权益" href="http://www.yingsheng.com/forme-member.html" target="_blank" rel="nofollow">会员权益</a> 
+       </dd> 
+       <dd> 
+        <a title="如何观看" href="http://www.yingsheng.com/forme-watch.html" target="_blank" rel="nofollow">如何观看</a> 
+       </dd> 
+       <dd> 
+        <a title="忘记密码" href="http://www.yingsheng.com/forme-forgetpass.html" target="_blank" rel="nofollow">忘记密码</a> 
+       </dd> 
+       <dd> 
+        <a title="常见问题" href="http://www.yingsheng.com/forme-question.html" target="_blank" rel="nofollow">常见问题</a> 
+       </dd> 
+      </dl> 
+      <dl class="dl_03"> 
+       <dt> 
+        <a>商务合作</a> 
+       </dt> 
+       <dd> 
+        <img src="images/tel.png" alt="电话" />客服热线：400-666-4343 
+       </dd> 
+       <dd> 
+        <a class="serviceqq" href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzkzODA2NDI0NV8yODA2NjZfNDAwNjY2NDM0M18yXw" target="_blank" rel="nofollow"> <img border="0" title="点击这里给我发消息" alt="点击这里给我发消息" src="images/QQ_contact.png" /></a> 
+       </dd> 
+      </dl> 
+     </div> 
+     <div class="bottom_contact"> 
+      <dl> 
+       <dt> 
+        <img src="images/bottom_code.png" alt="关注微信公众号" /> 
+       </dt> 
+       <dd>
+         关注微信公众号 
+       </dd> 
+      </dl> 
+      <ul> 
+       <li><a href="http://www.yingsheng.com/link.htm?linkurl=http://weibo.com/609878960" target="_blank" rel="nofollow" title="立即关注"> <img src="images/sina.png" alt="立即关注" /></a></li> 
+       <li><a href="http://www.yingsheng.com/link.htm?linkurl=http%3A%2F%2Flist.qq.com%2Fcgi-bin%2Fqf_invite%3Fid%3D3a8775ed4e5158814ede881a7540fa5385994870dacb95d0" target="_blank" rel="nofollow" title="立即订阅"> <img src="images/e-mail.png" alt="立即订阅" /></a></li> 
+      </ul> 
+     </div> 
+    </div> 
+    <div class="clear"></div> 
+    <div class="footer"> 
+     <div class="certification"> 
+      <!--<a target="_blank" title="经营性网站备案信息" href="http://www.yingsheng.com/link.htm?linkurl=https://ss.knet.cn/verifyseal.dll?sn=e14111144030056156pfd9000000&ct=df&a=1&pa=0.5873584735672921" id="kx_verify" tabindex="-1" target="_blank" kx_type="图标式" style="display: inline-block;" rel="nofollow">--> 
+      <a rel="nofollow" style="display: inline-block;" kx_type="图标式" tabindex="-1" id="A1" href="http://www.yingsheng.com/link.htm?linkurl=http://www.anquan.org/authenticate/cert/?site=yingsheng.com&amp;sn=None&amp;type=gj" title="经营性网站备案信息" target="_blank"> <img src="images/certification_1.png" alt="安全联盟" /></a> 
+      <img src="images/certification_2.png" alt="支付宝" /> 
+      <img src="images/certification_3.png" alt="网络警察" /> 
+      <a href="http://www.yingsheng.com/link.htm?linkurl=http://www.baidu.com/s?wd=www.yingsheng.com%40v&amp;tn=baidu&amp;ie=utf-8&amp;bs=www.xsteach.com%40v&amp;f=8&amp;rsv_bp=1&amp;rsv_sug3=13&amp;rsv_sug4=767&amp;rsv_sug1=1&amp;rsv_sug2=0&amp;inputT=4221&amp;rsv_sug=1&amp;qh=360" title="百度信誉" target="_blank" rel="nofollow"> <img src="images/certification_4.png" alt="百度信誉" /></a> 
+      <img src="images/certification_5.png" alt="经营性网站备案信息" /> 
+      <script src="http://kxlogo.knet.cn/seallogo.dll?sn=e14111144030056156pfd9000000&amp;size=0"></script> 
+     </div> 
+    </div> 
+   </div> 
+  </form>  
+ </body>
+</html>

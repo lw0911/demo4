@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head> 
+        <meta charset="utf-8" /> 
+        <title>首页</title> 
+        <meta name="renderer" content="webkit" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+        <meta name="keywords" content="XXX,XXX旅游" /> 
+        <meta name="description" content="XXX旅游是一家提供专业导游、伴游、同游的服务平台，方便您找到志同道合的朋友一起旅行，一起快乐旅游，结伴旅游，同行之路，有你才有意义。" /> 
+        <meta http-equiv="Cache-Control" content="no-transform" /> 
+        <link rel="shortcut icon" href="images/favicon.ico" /> 
+        <link rel="canonical" href="index.html" /> 
+        <link rel="stylesheet" type="text/css" href="css/common.css" /> 
+        <link rel="stylesheet" type="text/css" href="css/index.css" /> 
+        <script type="text/javascript">
+            var TU = {
+                wwwUrl: 'http://www.liantu.cn',
+                myUrl: 'http://my.liantu.cn',
+                imageUrl: 'http://static.liantu.cn/image/',
+                domain: 'liantu.cn',
+                today: '2016-03-08',
+                mobile_agent: ''
+            };
+            var isMobi = (function() {
+                var u = navigator.userAgent.toLowerCase();
+                return  u.indexOf("mobi") > 0 || u.indexOf("nexus 7") > 0 || u.indexOf("480") > 0;
+            })();
+            if (isMobi && TU.mobile_agent != '') {
+                location.href = TU.mobile_agent;
+            }
+        </script> 
+        <script type="text/javascript" id="js-prelogin" src="js/cas.js"></script> 
+        <script type="text/javascript" src="js/jquery.seajs.js" id="seajsnode"></script> 
+        <!--[if lte IE 8]>
+      <script type="text/javascript">
+      $(function(){
+      var $body=$('body');
+      var $window =  $(window);
+      $window.resize(function() {
+      var width = $window.width();
+      if(width<768){
+      $body.addClass("media-small").removeClass("media-medium");
+      }else if(width<1300){
+      $body.addClass("media-medium").removeClass("media-small");
+      }else{
+      $body.removeClass("media-small").removeClass("media-medium");
+      }
+      }).resize();
+      });
+      </script>
+      <![endif]--> 
+    </head> 
+    <body> 
+        <div class="wrapper"> 
+            <div class="header"> 
+                <div class="mod-head"> 
+                    <div class="box"> 
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo.png" alt="XXX" /></a>
+                        </div> 
+                        <div class="login pl-login-info" id="pl-login-info"></div> 
+                    </div> 
+                </div> 
+                <div class="mod-mhead"> 
+                    <div class="box"> 
+                        <a class="icon-menu" href="javascript:;" rel="nofollow">菜单</a> 
+                        <a class="logo" href="index.html"><img src="images/logo.png" alt="XXX" /></a> 
+                    </div> 
+                    <div class="sidebar"> 
+                        <div class="mask"></div> 
+                        <div class="panel pl-login-info"></div> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="container"> 
+                <div class="full-column"> 
+                    <div class="mod-bg"> 
+                        <img class="fixed" src="images/bg.jpg" /> 
+                        <img class="static" src="images/bg.jpg" /> 
+                    </div> 
+                    <div class="mod-search"> 
+                        <div class="core"> 
+                            <h1><a href="/banyou/" target="_blank">伴游</a> &middot; <a href="/daoyou/" target="_blank">导游</a> &middot; <a href="/tongyou/" target="_blank">同游</a></h1> 
+                            <p>同行之路，有你才有意义</p> 
+                        </div> 
+                        <div class="mcore"> 
+                            <p>来这里，<br />换一种旅游方式</p> 
+                        </div> 
+                        <div class="J_search search"> 
+                            <div class="box-bg"></div> 
+                            <div class="sbox"> 
+                                <input type="text" class="input-text" placeholder="输入想去的地方(例如:北京)" id="search_text" /> 
+                                <span class="ico"><span></span></span> 
+                            </div> 
+                        </div> 
+                    </div> 
+                </div> 
+                <div class="inner"> 
+                    <div class="main"> 
+                        <div class="mod-step"> 
+                            <dl class="d1"> 
+                                <dt>
+                                <i></i>
+                                </dt> 
+                                <dd> 
+                                    <p><span>预约当地向导</span>他们是比导游更懂得导游的人，<br />真正体验当地风土人情。</p> 
+                                </dd> 
+                            </dl> 
+                            <dl class="d2"> 
+                                <dt>
+                                <i></i>
+                                </dt> 
+                                <dd> 
+                                    <p><span>伴你同行，一路上有你</span>我不愿让你一个人，<br />这趟旅途让我陪你一起走。</p> 
+                                </dd> 
+                            </dl> 
+                            <dl class="d3"> 
+                                <dt>
+                                <i></i>
+                                </dt> 
+                                <dd> 
+                                    <p><span>旅途乐趣，也许不由风景决定</span>人生总是不断的在走走停停，<br />在这里你总能找到和你一起的。</p> 
+                                </dd> 
+                            </dl> 
+                        </div> 
+                        <div class="module mod-destination"> 
+                            <div class="hd"> 
+                                <span class="title">热门城市</span> 
+                                <span class="subtitle">Hot City</span> 
+                            </div> 
+                            <div class="bd"> 
+                                <ul> 
+                                    <li class="J_blocklink big"> 
+                                        <div class="pic"> 
+                                            <a href="http://www.liantu.cn/daoyou/xiamen/" target="_blank"> <img src="images/201507301606111559.jpeg" alt="厦门" width="100%" /> </a> 
+                                        </div> 
+                                        <div class="text"> 
+                                            <div class="cover"></div> 
+                                            <p> <span class="title">厦门</span> <span class="english">Xiamen</span> <span class="subtitle">在风姿绰约的海上花园漫步， 聆听鼓浪屿的天籁， 骑行在沿海环岛， 感受最美校园</span> </p> 
+                                        </div> </li> 
+                                    <li class="J_blocklink"> 
+                                        <div class="pic"> 
+                                            <a href="http://www.liantu.cn/daoyou/beijing/" target="_blank"> <img src="images/201511021401022091.jpeg" alt="北京" width="100%" /> </a> 
+                                        </div> 
+                                        <div class="text"> 
+                                            <div class="cover"></div> 
+                                            <p> <span class="title">北京</span> <span class="english">Beijing</span> <span class="subtitle">探访帝王的痕迹，抚摸北海的碧幽，漫步在北京胡同，领略798的艺术气氛</span> </p> 
+                                        </div> </li> 
+                                    <li class="J_blocklink"> 
+                                        <div class="pic"> 
+                                            <a href="http://www.liantu.cn/daoyou/wuhan/" target="_blank"> <img src="images/201511021401391496.jpeg" alt="武汉" width="100%" /> </a> 
+                                        </div> 
+                                        <div class="text"> 
+                                            <div class="cover"></div> 
+                                            <p> <span class="title">武汉</span> <span class="english">Wuhan</span> <span class="subtitle">武大的樱花烂漫、黄鹤楼的千古绝唱、户部港的繁华溢彰、热干面的乡情弥漫</span> </p> 
+                                        </div> </li> 
+                                    <li class="J_blocklink"> 
+                                        <div class="pic"> 
+                                            <a href="http://www.liantu.cn/daoyou/zhangjiajie/" target="_blank"> <img src="images/201511021401519527.jpeg" alt="张家界" width="100%" /> </a> 
+                                        </div> 
+                                        <div class="text"> 
+                                            <div class="cover"></div> 
+                                            <p> <span class="title">张家界</span> <span class="english">Zhangjiajie</span> <span class="subtitle">三千奇峰 秀水八百</span> </p> 
+                                        </div> </li> 
+                                    <li class="J_blocklink"> 
+                                        <div class="pic"> 
+                                            <a href="http://www.liantu.cn/daoyou/guilin/" target="_blank"> <img src="images/201511021402011356.jpeg" alt="桂林" width="100%" /> </a> 
+                                        </div> 
+                                        <div class="text"> 
+                                            <div class="cover"></div> 
+                                            <p> <span class="title">桂林</span> <span class="english">Guilin</span> <span class="subtitle">桂林山水 富甲天下</span> </p> 
+                                        </div> </li> 
+                                    <li class="J_blocklink big"> 
+                                        <div class="pic"> 
+                                            <a href="http://www.liantu.cn/daoyou/xianggang/" target="_blank"> <img src="images/201511021402117369.jpeg" alt="香港" width="100%" /> </a> 
+                                        </div> 
+                                        <div class="text"> 
+                                            <div class="cover"></div> 
+                                            <p> <span class="title">香港</span> <span class="english">Xianggang</span> <span class="subtitle">华洋交错 东方明珠</span> </p> 
+                                        </div> </li> 
+                                </ul> 
+                            </div> 
+                        </div> 
+                        <div class="module mod-person"> 
+                            <div class="hd"> 
+                                <span class="title">精选导游</span> 
+                                <span class="subtitle">Selected Guide</span> 
+                            </div> 
+                            <div class="bd"> 
+                                <ul class="list"> 
+                                    <li> 
+                                        <div class="item"> 
+                                            <div class="pic"> 
+                                                <a href="/daoyou/65548.html" target="_blank"><img src="images/65548.jpg" alt="陈艳" /></a> 
+                                            </div> 
+                                            <div class="text"> 
+                                                <div class="bg"></div> 
+                                                <div class="name"> 
+                                                    <a href="/daoyou/65548.html" target="_blank"> 陈艳 </a> 
+                                                </div> 
+                                                <p>厦门小雨车队六十多台车均是一年以内的新车！驾驶员向导驾龄均在五年以上，路线熟悉！所有一日游自由行路线都是一对一专车专员，选择我们犹如亲人陪伴左右！我们为您提供帆船游玩、向导伴游、带车司机向导、厦门一日游用车、鼓浪屿一日游用车、集美大嶝岛一日游用车、土楼云水谣一日游等用车服务！纯粹的自由行，不进任何购物点也与定点消费！司机兼向导带您深度厦门游</p> 
+                                            </div> 
+                                        </div> </li> 
+                                    <li> 
+                                        <div class="item"> 
+                                            <div class="pic"> 
+                                                <a href="/daoyou/1.html" target="_blank"><img src="images/1.png" alt="你是白痴吗" /></a> 
+                                            </div> 
+                                            <div class="text"> 
+                                                <div class="bg"></div> 
+                                                <div class="name"> 
+                                                    <a href="/daoyou/1.html" target="_blank"> 你是白痴吗 </a> 
+                                                </div> 
+                                                <p>清迈momo 1968微酒店副老板。目前长居清迈，接清迈旅拍／旅行mv制作。全球旅拍人，可全球旅拍预约。... 清迈属于泰北城市，特色好吃的泰北菜餐厅，只有清迈最多。像宛若梦境的风车餐厅，环境优雅的艺术品餐厅，更有在山间遥望美景的纯天然有机餐厅。 清迈周边的天然美景更让人陶醉。像是距城区仅一个小时车程的湖区，就像一副大师笔下的画作。再往远走，是一个叫做清道的小镇，它原始古朴，到处是望不尽的原野以及连绵不绝的公路，想来一场真真切切的公路旅行，清道比美国更适合。清道是一个没有开发的小镇，它保留的纯朴民风以及自然风光得到无数外国人的青睐，那里的交通不够发达，很多人会选择包车过去，经常有客人会包我和我先生的复古甲壳虫坐骑游玩清道，他们说，那是人生里最好的体验之一了。 我和我先生总会在闲暇时开着我们那辆是如珍宝的复古甲壳虫去清迈周边旅行，热爱拍照的我，也拍了很多人物和风景的照片，也有不少客人找到我，希望我能用相机记录他们在清迈旅行的点点滴滴。我和我先生在闲暇时间里走走拍拍，这几年间，我们发现了很多游人少却十分有趣的旅行目的地。我们时而住酒店，时而在可以望见星星的野外搭帐篷，时而睡在我们的车里。每每我们走到陌生的环境中，都被泰国本地人民的热情所感动，被不一样的风景所吸引，我们希望能渐渐让更多的人知道那些绝好却隐秘的旅行之地，于是我开始把我的所见所闻写下来，让更多的人看见，把我们自己的复古甲壳虫也拿出来供给客人包车游玩。不断的旅行，不断的分享，不停的把我们在清迈的家－清迈MoMo1968微酒店做的越来越好，就是我和我先生最大的人生追求。</p> 
+                                            </div> 
+                                        </div> </li> 
+                                    <li> 
+                                        <div class="item"> 
+                                            <div class="pic"> 
+                                                <a href="/daoyou/3.html" target="_blank"><img src="images/3.jpg" alt="楠楠" /></a> 
+                                            </div> 
+                                            <div class="text"> 
+                                                <div class="bg"></div> 
+                                                <div class="name"> 
+                                                    <a href="/daoyou/3.html" target="_blank"> 楠楠 </a> 
+                                                </div> 
+                                                <p>萨瓦迪卡！欢迎大家来微笑之国：泰国！我是楠楠，冯勍[q&iacute;ng]楠。我是道地的桂林女孩，四年前来到普吉岛，不小心成为了泰国媳妇儿，便在这里落地生根成为岛民，喜欢摄影，出海浮潜，寻找美食，享受spa。慢慢地，内心就在酝酿着：独乐了不如众乐乐，为什么不做个旅行代理呢，把自己美好的体验传播给更多人。现在跟先生经营一家旅游代理中心，楠楠就是大家的普吉岛旅行规划师，定制您的专属行程。</p> 
+                                            </div> 
+                                        </div> </li> 
+                                </ul> 
+                            </div> 
+                        </div> 
+                        <div class="module mod-travel"> 
+                            <div class="hd"> 
+                                <span class="title">最新同游</span> 
+                                <span class="subtitle">Newest Travel Peer</span> 
+                            </div> 
+                            <div class="bd"> 
+                                <ul> 
+                                    <li class="J_blocklink"> 
+                                        <div class="pic"> 
+                                            <a href="http://www.liantu.cn/tongyou/4.html" target="_blank"><img src="images/201507211603061831.png" alt="杭州到上海旅游 08月20日 3日游 求结伴同游" /></a> 
+                                        </div> 
+                                        <div class="text"> 
+                                            <div class="avatar"> 
+                                                <img src="images/1.png" alt="你是白痴吗" /> 
+                                                <span>你是白痴吗</span> 
+                                            </div> 
+                                            <p>杭州到上海旅游 08月20日 3日游 求结伴同游</p> 
+                                        </div> </li> 
+                                    <li class="J_blocklink"> 
+                                        <div class="pic"> 
+                                            <a href="http://www.liantu.cn/tongyou/3.html" target="_blank"><img src="images/201507211603182952.png" alt="绍兴出发 8月13日 拉萨 7日游 求结伴" /></a> 
+                                        </div> 
+                                        <div class="text"> 
+                                            <div class="avatar"> 
+                                                <img src="images/1.png" alt="你是白痴吗" /> 
+                                                <span>你是白痴吗</span> 
+                                            </div> 
+                                            <p>绍兴出发 8月13日 拉萨 7日游 求结伴</p> 
+                                        </div> </li> 
+                                    <li class="J_blocklink"> 
+                                        <div class="pic"> 
+                                            <a href="http://www.liantu.cn/tongyou/1.html" target="_blank"><img src="images/201507211603301856.png" alt="厦门到丽江旅游 10月01日 5日游 求结伴同游" /></a> 
+                                        </div> 
+                                        <div class="text"> 
+                                            <div class="avatar"> 
+                                                <img src="images/1.png" alt="你是白痴吗" /> 
+                                                <span>你是白痴吗</span> 
+                                            </div> 
+                                            <p>厦门到丽江旅游 10月01日 5日游 求结伴同游</p> 
+                                        </div> </li> 
+                                </ul> 
+                            </div> 
+                        </div> 
+                        <div class="mod-raiders mod-hot"> 
+                            <div class="hd"> 
+                                <span class="tit">热门<a href="gonglue.html" target="_blank">旅游攻略</a></span> 
+                                <span>/</span> 
+                                <a href="gonglue.html" class="hmore" target="_blank" title="旅游攻略">更多</a> 
+                            </div> 
+                            <div class="bd"> 
+                                <div class="raiders"> 
+                                    <ul> 
+                                        <li> <p><a href="/gonglue/zhusu/" class="tag" target="_blank">[住宿攻略]</a> <a href="/gonglue/3255.htm" target="_blank">五大道住宿推荐 去天津五大道旅游住哪里好</a> </p> <span>目的地：天津,和平区,五大道</span> </li> 
+                                        <li> <p><a href="/gonglue/meishi/" class="tag" target="_blank">[美食攻略]</a> <a href="/gonglue/3254.htm" target="_blank">天津五大道美食指南 五大道附近有吃饭的地方吗</a> </p> <span>目的地：天津,和平区,五大道</span> </li> 
+                                        <li> <p><a href="/gonglue/gouwu/" class="tag" target="_blank">[购物攻略]</a> <a href="/gonglue/3253.htm" target="_blank">天津五大道特产有什么值得带 五大道购物指南</a> </p> <span>目的地：天津,和平区,五大道</span> </li> 
+                                        <li> <p><a href="/gonglue/zizhuyou/" class="tag" target="_blank">[自助游攻略]</a> <a href="/gonglue/3252.htm" target="_blank">天津五大道怎么去 天津站到五大道乘车指南</a> </p> <span>目的地：天津,和平区,五大道</span> </li> 
+                                        <li> <p><a href="/gonglue/gouwu/" class="tag" target="_blank">[购物攻略]</a> <a href="/gonglue/3251.htm" target="_blank">扬州宋夹城景区周边有什么特产 宋夹城周边购物推荐</a> </p> <span>目的地：江苏省,扬州市,邗江区,扬州宋夹城</span> </li> 
+                                        <li> <p><a href="/gonglue/zhusu/" class="tag" target="_blank">[住宿攻略]</a> <a href="/gonglue/3250.htm" target="_blank">扬州宋夹城附近酒店哪家好 宋夹城住宿推荐</a> </p> <span>目的地：江苏省,扬州市,邗江区,扬州宋夹城</span> </li> 
+                                        <li> <p><a href="/gonglue/meishi/" class="tag" target="_blank">[美食攻略]</a> <a href="/gonglue/3249.htm" target="_blank">宋夹城体育休闲公园附近有什么好吃的</a> </p> <span>目的地：江苏省,扬州市,邗江区,扬州宋夹城</span> </li> 
+                                        <li> <p><a href="/gonglue/zijiayou/" class="tag" target="_blank">[自驾游攻略]</a> <a href="/gonglue/3248.htm" target="_blank">宋夹城体育休闲公园自驾路线</a> </p> <span>目的地：江苏省,扬州市,邗江区,扬州宋夹城</span> </li> 
+                                    </ul> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="mod-spot mod-hot"> 
+                            <div class="hd"> 
+                                <span class="tit">热门<a href="jingdian.html" target="_blank">旅游景点</a></span> 
+                                <span>/</span> 
+                                <a href="jingdian.html" class="hmore" target="_blank" title="旅游景点">更多</a> 
+                            </div> 
+                            <div class="bd"> 
+                                <div class="spot"> 
+                                    <ul> 
+                                        <li> <a href="/jingdian/1910.htm" target="_blank">扬州宋夹城</a> <span class="address">扬州市邗江区长春路48号（近瘦西湖天沐温泉度假村）</span> </li> 
+                                        <li> <a href="/jingdian/1909.htm" target="_blank">大阳山国家森林公园</a> <span class="address">苏州市高新区浒关经济开发区山神湾路</span> </li> 
+                                        <li> <a href="/jingdian/1908.htm" target="_blank">宿迁三台山森林公园</a> <span class="address">江苏省宿迁市宿豫区249省道</span> </li> 
+                                        <li> <a href="/jingdian/1907.htm" target="_blank">东台西溪景区</a> <span class="address">盐城市东台市惠阳路</span> </li> 
+                                    </ul> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="footer"> 
+                <div class="mod-back"> 
+                    <span class="qrcode"> <span class="ico"></span> <img src="images/qrcode.jpg" alt="XXX微信二维码" width="200" height="200" />官方微信服务号 </span> 
+                    <a href="javascript:" class="code" id="code"></a> 
+                    <a href="index.html" class="customer"></a> 
+                    <a href="#" class="goback"></a> 
+                </div> 
+                <div class="mod-foot"> 
+                    <div class="info"> 
+                        <div class="contact"> 
+                            <p class="logo"> <a href="index.html"><img src="images/logo.png" alt="XXX" width="136" height="50" /></a> <span>同行之路，有你才有意义</span> </p> 
+                            <p class="tell">XXX</p> 
+                            <p>24小时服务热线</p> 
+                        </div> 
+                        <dl> 
+                            <dt>
+                            公司信息
+                            </dt> 
+                            <dd>
+                                <a href="about.html" target="_blank" rel="nofollow">关于我们</a>
+                            </dd> 
+                            <dd>
+                                <a href="copyright.html" target="_blank" rel="nofollow">免责声明</a>
+                            </dd> 
+                            <dd>
+                                <a href="contact.html" target="_blank" rel="nofollow">联系我们</a>
+                            </dd> 
+                            <dd>
+                                <a href="join.html" target="_blank" rel="nofollow">加入我们</a>
+                            </dd> 
+                        </dl> 
+                        <dl> 
+                            <dt>
+                            帮助中心
+                            </dt> 
+                            <dd>
+                                <a href="xieyi.html" target="_blank" rel="nofollow">用户协议</a>
+                            </dd> 
+                            <dd>
+                                <a href="safe.html" target="_blank" rel="nofollow">安全保障</a>
+                            </dd> 
+                            <dd>
+                                <a href="process.html" target="_blank" rel="nofollow">预定流程</a>
+                            </dd> 
+                        </dl> 
+                        <dl class="app"> 
+                            <dt>
+                            发现
+                            </dt> 
+                            <dd>
+                                <a href="/app/" target="_blank">Android客户端</a>
+                            </dd> 
+                            <dd>
+                                <a href="/app/" target="_blank">iOS客户端</a>
+                            </dd> 
+                            <dd>
+                                <a href="/app/huilv/" target="_blank">XXX汇率</a>
+                            </dd> 
+                            <dd>
+                                <a href="/app/tongyou/" target="_blank">XXX同游</a>
+                            </dd> 
+                        </dl> 
+                    </div> 
+                    <div class="linker">
+                        友情链接： 
+                        
+                    </div> 
+                    <div class="copyright"> 
+                         Copyright &copy; 2020 All Rights Reserved <a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a> stat 
+                    </div> 
+                </div> 
+                <div class="mod-mfoot"> 
+                    <div class="info"> 
+                        <ul> 
+                            <li><a href="about.html" target="_blank" rel="nofollow">关于我们</a></li> 
+                            <li><a href="apply.html" target="_blank" rel="nofollow">申请成为向导</a></li> 
+                            <li><a href="/app/" target="_blank" rel="nofollow">APP下载</a></li> 
+                        </ul> 
+                        <div class="contact"> 
+                            <p class="logo"> <a href="index.html"><img src="images/logo.png" alt="XXX" width="100" /></a> </p> 
+                            <p class="tell">XXX</p> 
+                        </div> 
+                    </div> 
+                    <div class="copyright">
+                        Copyright &copy; 2020 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+        <script type="text/javascript">
+            (function() {
+                var $info3 = $('.pl-login-info');
+                PL.init({
+                    domain: 'http://my.liantu.cn',
+                    callback: function(nickName, html) {
+                        !PL.MID ? (function() {
+                            html.push('<div class="info"><a href="javascript:;" onclick="TU.login();">登录</a></div>');
+                        })() : (function() {
+                            var num = PL.type ? (PL.merchantlaunchordernum + PL.merchantordernum) : PL.memberordernum;
+                            html.push('<div class="user">' + (num > 0 ? '<span class="num"><span>' + num + '</span></span>' : '') + '<img src="' + PL.avatar + '" alt="' + nickName + '" width="40" height="40"/><span class="name">' + nickName + '</span><span class="ico"></span></div>');
+                            if (PL.type) {
+                                html.push('\
+      <div class="list">\
+      <div class="ico"></div>\
+      <ul>\
+      <li class="d-pc"><a href="http://my.liantu.cn/merchant/">商户信息</a></li>\
+      <li><a href="http://my.liantu.cn/merchant/order/reserve/">' + (PL.merchantlaunchordernum ? '<span class="num"><span>' + PL.merchantlaunchordernum + '</span></span>' : '') + '预约管理</a></li>\
+      <li><a href="http://my.liantu.cn/merchant/order/">' + (PL.merchantordernum ? '<span class="num"><span>' + PL.merchantordernum + '</span></span>' : '') + '订单管理</a></li>\
+      <li class="d-m"><a href="http://my.liantu.cn/merchant/account/">我的钱包</a></li>\
+      <li class="d-m"><a href="/banyou/">伴游</a></li>\
+      <li class="d-m"><a href="/daoyou/">导游</a></li>\
+      <li class="d-m"><a href="/tongyou/">同游</a></li>\
+      <li class="d-pc"><a href="javascript:;" onclick="TU.logout();">退出</a></li>\
+      </ul>\
+      </div>');
+                            } else {
+                                html.push('\
+      <div class="list">\
+      <div class="ico"></div>\
+      <ul>\
+      <li class="d-pc"><a href="member_info.html">个人信息</a></li>\
+      <li><a href="member_order.html">' + (PL.memberordernum > 0 ? '<span class="num"><span>' + PL.memberordernum + '</span></span>' : '') + '我的订单</a></li>\
+      <li><a href="member_tongyou.html">我的同游</a></li>\
+      <li class="d-m"><a href="http://my.liantu.cnmember_withdraw.html">我的钱包</a></li>\
+      <li class="d-m"><a href="/banyou/">伴游</a></li>\
+      <li class="d-m"><a href="/daoyou/">导游</a></li>\
+      <li class="d-m"><a href="/tongyou/">同游</a></li>\
+      <li class="d-pc"><a href="javascript:" onclick="TU.logout();">退出</a></li>\
+      </ul>\
+      </div>');
+                            }
+                        })();
+                        if (!pl_status && !PL.type) {
+                            var div = document.createElement('div');
+                            div.className = 'link';
+                            div.innerHTML = '<a href="apply.html" target="_blank">申请成为向导</a>';
+                            var $info = document.getElementById('pl-login-info');
+                            if ($info) {
+                                $info.parentNode.insertBefore(div, $info);
+                            }
+                        }
+                        pl_status = 1;
+                    }
+                });
+            })();
+            var pl_status = 0;
+        </script> 
+        
+        <script type="text/javascript">
+seajs.config({
+base: 'http://static.liantu.cn/script/dist',
+paths: {
+'modules': 'http://static.liantu.cn/script/dist'
+},
+map: [
+[/^(.*?\/script\/(?:src|dist)\/.*?\/.*?\.js$)(?:.*)$/i, '$1?version=v1']
+],
+charset: 'utf-8'
+});
+seajs.use('modules/www/public/common.js');
+seajs.use('modules/www/index/index.js');
+</script>
+        <div class="hide"> 
+        </div>
+    </body>
+</html>

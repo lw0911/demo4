@@ -1,0 +1,212 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-width: 1200px) {
+    .navbar-style .nav > li > a {
+        padding: 10px 15px;
+    }
+
+    .navbar-style .nav > li {
+        padding: 15px 0;
+    }
+
+    .navbar-style .navbar-brand {
+        height: 60px;
+    }
+
+    .navbar-style .navbar-brand > img {
+        width: 60%;
+    }
+
+    .navbar-style .navbar-toggle {
+        margin-top: 12px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-style .navbar-toggle {
+        border: 1px solid #fff;
+    }
+
+    #innerHeader .navbar-style .navbar-toggle{
+        border: 1px solid #438f64;
+    }
+
+    .navbar-style .navbar-toggle .icon-bar {
+        background: #fff;
+    }
+
+    #innerHeader .navbar-style .navbar-toggle .icon-bar {
+        background: #438f64;
+    }
+
+    .navbar-style .nav .dropdown-menu > li > a {
+        color: #fff;
+    }
+
+    .navbar-style .nav > li {
+        padding: 0;
+        border-bottom: 1px solid #819f98;
+    }
+
+    #footer .footer-erwei {
+        justify-content: center;
+    }
+
+    #culture .culture-right {
+        background-size: 100%;
+        margin: 0;
+        padding: 18% 10% 80% 26%
+    }
+
+    .newsList .paddR {
+        padding-right: 15px;
+    }
+
+    .newsList .newsItem .newsTxt{
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+
+    #myTab{
+        text-align: center;
+    }
+
+    .indeDevelopment .appContent .ftaApp .appDownLoad{
+        text-align: center;
+    }
+
+    .indeDevelopment .appContent{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #about .about-text h1 {
+        font-size: 24px;
+    }
+
+    #about .about-text h4 {
+        font-size: 15px;
+    }
+
+    #about .about-text p {
+        font-size: 13px;
+    }
+
+    #about .about-text a {
+        padding: .6em 1.2em;
+    }
+
+    #case .case-hover .case-text h2 {
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    #case .case-hover .case-text h4 {
+        font-size: 14px;
+        margin: 15px auto
+    }
+
+    #case .case-hover .case-text p {
+        -webkit-line-clamp: 2;
+        font-size: 12px;
+    }
+
+    #case .case-hover .case-text a {
+        padding: .3em .9em
+    }
+
+    .indeDevelopment .appContent .indeTitle h4:before{
+        left: -100px;
+        width: 100px;
+    }
+
+    .indeDevelopment .appContent .indeTitle h4:after{
+        right: -100px;
+        width: 100px;
+    }
+
+    .piblicBanner .breadcrumb_part .breadcrumb .guide h2{
+        font-size: 20px;
+    }
+
+    .aboutHighDao .breadcrumb h3{
+        font-size: 18px;
+    }
+
+    .indeDevelopment .appContent .ftaApp .appTxt h2{
+        font-size: 24px;
+    }
+
+    .contact .contactInfo .contactTxt h4{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .title h2:before {
+        left: -70px;
+        width: 65px;
+    }
+
+    .title h2:after {
+        right: -70px;
+        width: 65px;
+    }
+
+    .title h2 {
+        font-size: 18px;
+    }
+
+    #banner .carousel-control {
+        width: 3em;
+    }
+
+    #banner .carousel-control div {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+    }
+
+    #culture .culture-left {
+        padding: 1% 10% 20% 10%;
+    }
+
+    #culture .culture-left .culture-text h2 {
+        font-size: 20px;
+    }
+
+    #culture .culture-right {
+        padding: 14% 10% 60% 26%
+    }
+
+    #culture .culture-right .culture-text h2 {
+        font-size: 20px;
+    }
+
+    #culture .culture-right .culture-text span {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .navbar-style .navbar-brand {
+        padding: 15px 0;
+    }
+
+    .navbar-style .navbar-brand > img {
+        margin-left: 9px;
+    }
+
+    #culture .culture-left {
+        padding: 1% 10% 14% 10%;
+    }
+
+    #case .case-hover .case-text h4 {
+        font-size: 12px;
+    }
+}

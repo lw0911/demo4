@@ -1,0 +1,858 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>某某国际 - 美国移民</title>
+
+
+<link href="css/daohang.css" rel="stylesheet" type="text/css" />
+<link href="css/banner.css" rel="stylesheet" type="text/css" />
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.touchSlider.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/ks-switch.pack.js"></script>
+
+
+
+
+</head>
+
+<body>
+<div class="top">
+	<div class="top_blank">
+   		<a href="index.html"><div class="logo"><img src="images/logo.jpg" /></div></a>
+   		<div class="top_tel"><img src="images/tele.jpg" /></div>
+   	</div>
+</div>
+
+<!-- 导航开始  -->
+<nav class="nav pr">
+<div class="nav-in">
+	<!-- -------菜单html代码---------begin------- -->
+    <div class="menuDiv">
+        <ul>
+            <li>
+                <a href="index.html" >首页</a>
+            </li> 
+            <li>
+                <a href="USA_ym.html">美国移民</a>
+                <ul>
+                    <li><a href="USA_ym.html" >美国EB1A移民</a></li>
+                </ul>
+            </li> 
+            <li>
+                <a href="USA_lx.html" target="_blank">美国留学</a>
+                <ul>
+                    <li><a href="USA_lx_gz.html" >美国高中</a></li>
+                    <li><a href="USA_lx_gz.html" >美国本科</a></li>
+                    <li><a href="USA_lx_gz.html" >美国研究生</a></li>
+                </ul>
+            </li> 
+            <li>
+                <a href="England_lx.html">英国留学</a>
+                <ul>
+                    <li><a href="England_lx_gz.html" >英国高中</a></li>
+                    <li><a href="England_lx_gz.html" >英国本科</a></li>
+                    <li><a href="England_lx_gz.html" >英国研究生</a></li>
+                </ul>
+            </li> 
+            <li>
+                <a href="ajzy.html" >海外服务</a>
+                <ul>
+                    <li><a href="ajzy.html" >安家置业</a></li>
+                    <li><a href="hwfc.html" >海外房产</a></li>
+                    <li><a href="cwgh.html" >财务规划</a></li>
+                </ul>
+            </li> 
+            <li>
+                <a href="hdjz.html" >活动讲座</a>
+            </li> 
+            <li>
+                <a href="about.html" >关于移民</a>
+                <ul>
+                    <li><a href="about.html">移民介绍</a></li>
+                    <li><a href="jytd.html" >精英团队</a></li>
+                </ul>
+            </li> 
+        </ul>
+    </div>
+    <!-- -------菜单html代码---------end------- -->
+    </div>
+</nav>
+<!-- 导航结束  -->
+
+<!--banner-->
+<div class="main_visual_mg">
+	<div class="flicking_con_mg">
+		<a href="#">1</a>
+		<a href="#">2</a>
+		<a href="#">3</a>
+	</div>
+	<div class="main_image_mg">
+		<ul>
+			<a href="#"><li><span class="img_10"></span></li></a>
+			<a href="#"><li><span class="img_11"></span></li></a>
+			<a href="#"><li><span class="img_12"></span></li></a>
+		</ul>
+		<a href="javascript:;" id="btn_prev_mg"></a>
+		<a href="javascript:;" id="btn_next_mg"></a>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".main_visual_mg").hover(function(){
+		$("#btn_prev_mg,#btn_next_mg").fadeIn()
+	},function(){
+		$("#btn_prev_mg,#btn_next_mg").fadeOut()
+	});
+	
+	$dragBln = false;
+	
+	$(".main_image_mg").touchSlider({
+		flexible : true,
+		speed : 200,
+		btn_prev : $("#btn_prev_mg"),
+		btn_next : $("#btn_next_mg"),
+		paging : $(".flicking_con_mg a"),
+		counter : function (e){
+			$(".flicking_con_mg a").removeClass("on").eq(e.current-1).addClass("on");
+		}
+	});
+	
+	$(".main_image_mg").bind("mousedown", function() {
+		$dragBln = false;
+	});
+	
+	$(".main_image_mg").bind("dragstart", function() {
+		$dragBln = true;
+	});
+	
+	$(".main_image_mg a").click(function(){
+		if($dragBln) {
+			return false;
+		}
+	});
+	
+	timer = setInterval(function(){
+		$("#btn_next_mg").click();
+	}, 5000);
+	
+	$(".main_visual_mg").hover(function(){
+		clearInterval(timer);
+	},function(){
+		timer = setInterval(function(){
+			$("#btn_next_mg").click();
+		},5000);
+	});
+	
+	$(".main_image_mg").bind("touchstart",function(){
+		clearInterval(timer);
+	}).bind("touchend", function(){
+		timer = setInterval(function(){
+			$("#btn_next_mg").click();
+		}, 5000);
+	});
+	
+});
+</script>
+<!--banner end-->
+
+<!-- 介绍 -->
+<div class="USA_YM_jj">
+	<img src="images/USA_img1.jpg" />
+    <p><strong>EB-1A项目介绍</strong></p>
+    <p>EB-1A : 属于美国职业移民第一类优先，又被称为“<span>杰出人才移民</span>”。是美国政府吸引全国优秀人才的重要移民政策。</p>
+	<p>每年美国颁发大约<span>67万5千张绿卡</span>给全球申请人，其中14万张给职业移民相关人士，自从1990年开始，美国在职业移民绿卡种类里划分了五个档次，而杰出人才EB-1A为第一优先，每年有约4万张绿卡可以颁发。</p>
+	<p>EB-1A的移民政策主要面向在科学、商业、教育、艺术或者体育运动方面有杰出能力、取得一定成就的外国申请人，并需向美国移民局(USCIS)证明自己在专业领域的成就和贡献即可顺利通过获得<span>永久居留权</span>。</p>
+</div>
+<!-- 介绍 end -->
+
+<!-- 适用人群 -->
+<div class="USA_YM_rq">
+	<div class="USA_YM_rq_line">适用人群</div>
+    <div class="USA_YM_rq_linea">FOR PEOPLE</div>
+    <div class="USA_YM_rqli">
+    	<li>
+        	<img src="images/USA_img3.png" />
+            <p>企业家</p>
+        </li>
+        <li>
+        	<img src="images/USA_img4.png" />
+            <p>教育家</p>
+        </li>
+        <li>
+        	<img src="images/USA_img5.png" />
+            <p>运动员</p>
+        </li>
+        <li>
+        	<img src="images/USA_img6.png" />
+            <p>科学家</p>
+        </li>
+        <li>
+        	<img src="images/USA_img7.png" />
+            <p>艺术家</p>
+        </li>
+    </div>
+</div>
+<!-- 适用人群 end -->
+
+<div class="USA_YM_rqld_top">项目亮点</div>
+<div class="USA_YM_rqld_img"><img src="images/USA_img9.jpg" /></div>
+
+<!-- 申请条件 -->
+<div class="USA_YM_tj">
+	<div class="USA_YM_tj_top">
+    	<div class="USA_YM_tj_top_bg"></div>
+        申请条件
+    </div>
+    <div class="USA_YM_tj_nr">
+    	<li>
+        	<div class="USA_YM_tj_nr_img">01</div>
+            <p><span>奖项：</span>在全国性或国家性奖项在其领域内，曾获得一些国家级或者国际认可奖项，证明在该领域具有优异成就。</p>
+        </li>
+        <li>
+        	<div class="USA_YM_tj_nr_img">02</div>
+            <p><span>协会成员：</span>专业协会的会员资格、此类专业协会由该领域的国家或国际专家评定具有杰出成就人士才能加入为会员</p>
+        </li>
+        <li>
+        	<div class="USA_YM_tj_nr_img">03</div>
+            <p><span>媒体报道：</span>专业刊物及主要商业出版物，或主要媒体发表过关于此申请人及其相关的报道。</p>
+        </li>
+        <li>
+        	<div class="USA_YM_tj_nr_img">04</div>
+            <p><span>评委：</span>在其领域内，曾以个人或者委员会员成员身份担任评委，对其专业领域或其他相关领域的其他人作品进行评审鉴定。</p>
+        </li>
+        <li>
+        	<div class="USA_YM_tj_nr_img">05</div>
+            <p><span>原创性贡献:</span>在其领域内，曾经做出过学术研究或者艺术上的独创、原创性的重要贡献。</p>
+        </li>
+        <li>
+        	<div class="USA_YM_tj_nr_img">06</div>
+            <p><span>学术文章：</span>在所属专业领域内的国内、国际刊物、期刊或其他重要媒体上发表过的专业作品，如学术论文、书籍、学术文章等。</p>
+        </li>
+        <li>
+        	<div class="USA_YM_tj_nr_img">07</div>
+            <p><span>艺术展览：</span>在国家级、具有较高声誉、较大影响力的艺术展会、其他场所上举办作品展览或其他展示活动。</p>
+        </li>
+        <li>
+        	<div class="USA_YM_tj_nr_img">08</div>
+            <p><span>组织机构的领导或重要成员：</span>在工作机构、重要专业组织、团体担任主要领导或者其他重要职务。</p>
+        </li>
+        <li>
+        	<div class="USA_YM_tj_nr_img">09</div>
+            <p><span>高薪资：</span>在该专业领域的薪资、报酬或待遇远远高于其他同行。</p>
+        </li>
+        <li>
+        	<div class="USA_YM_tj_nr_img">10</div>
+            <p><span>商业成就：</span>在表演、艺术上获得商业方面的成功，并通过票房收入、影像、录像带、DVD等销售量得到反映。</p>
+        </li>
+    </div>
+</div>
+<!-- 申请条件 end-->
+
+<div class="USA_YM_ys">
+	<p><strong>某某国际独家优势</strong></p>
+    <p>专业团队为您量身定制杰出人才方案，通过15年成功经验证明，EB-1A并非高不可攀</p>
+</div>
+<div class="USA_YM_ys_img"><img src="images/USA_img12.jpg" /></div>
+
+<!-- 中美律师团队保驾 -->
+<div class="USA_YM_ls" style="margin-top:20px">
+	<div class="USA_YM_ls_title">中美律师团队保驾</div>
+	<span><a href="#">更多+</a></span>
+	
+</div>
+<div class="USA_YM_ls_nr">
+    <li>
+    	<img src="images/USA_img13.jpg" />
+        <div class="USA_YM_ls_nra">
+        	<strong>Jessie  Pan 潘洁律师</strong>
+            <p>- 1986年获得首批全国律师资格执照</p>
+			<p>- 在美工作15年，曾工作于美国沃尔沃北美信息技术集团</p>
+			<p>- 2011年至今，与美国王欣律师行无间隙合作</p>
+			<p>- 提供专业的境外投资及移民法律服务</p>
+        </div>
+        
+    </li>
+    <li>
+    	<img src="images/USA_img14.jpg" />
+        <div class="USA_YM_ls_nra">
+        	<strong>Xin Wang  王欣律师</strong>
+            <p>－先后担任多家纳斯达克上市公司及世界500强企业在美国本土的移民法务顾问</p>
+			<p>－其创办的Wang Associates LLC律师行在美国本土的EB-1A领域，拥有极高的口碑</p>
+			<p>－迄今为止超过千起成功EB-1A递案经验</p>
+			<p>－EB-1A最快2天获批记录保持者</p>
+        </div>
+    </li>
+    <li>
+    	<img src="images/USA_img15.jpg" />
+        <div class="USA_YM_ls_nra">
+        	<strong>Edward Wilke 律师</strong>
+            <p>- 2005年取得华盛顿州的律师执照</p>
+			<p>- 擅长处理专业人才和企业家移民</p>
+			<p>- EB-1A申请成功率超过98%</p>
+        </div>
+    </li>
+    <li>
+    	<img src="images/USA_img16.jpg" />
+        <div class="USA_YM_ls_nra">
+        	<strong>Andrew Van Ness 律师</strong>
+            <p>- 2006取得内华达州律师执业执照</p>
+			<p>-- 专注于EB-1A领域的申请和研究</p>
+			<p>-- EB-1A案件的成功率高达97%</p>
+        </div>
+    </li>
+</div>
+<!-- 中美律师团队保驾 end-->
+
+
+
+<!-- 成功案例  -->
+<div class="HL_rdzx">
+	<span><a href="#">更多+</a></span>
+	<div class="HL_rdzx_title">成功案例</div>
+</div>
+
+<div class="Box">
+    	<div class="content">
+    		
+    		<div class="Box_con clearfix">
+    			<span class="btnl btn" id="btnl"></span>
+    			<span class="btnr btn" id="btnr"></span>
+    			
+    			<div class="conboxA" id="BoxUl">
+	    			<ul>
+	    				<li>
+                        	<a href="#">
+                            <div class="Box_nrA">
+                            	<img src="images/USA_img17.jpg" alt=""/>
+                                <div class="Box_bgB">
+                                    <p>学历很重要？初中毕业的裁缝铺老板逆袭成为杰出人才移民美国！</p>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+	    				
+	    				<li>
+                        	<a href="#">
+                            <div class="Box_nrA">
+                            	<img src="images/USA_img18.jpg" alt=""/>
+                                <div class="Box_bgB">
+                                    <p>真正的“起死回生”！被拒签之后，看民间股神如何重修美国梦！</p>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        
+                        <li>
+                       		<a href="#">
+                        	<div class="Box_nrA">
+                            	<img src="images/USA_img19.jpg" alt=""/>
+                                <div class="Box_bgB">
+                                    <p>因忍不了雾霾，科技工程师逆袭成美国杰出人才，仅8天获批全家移民</p>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        
+                        <li>
+                        	<a href="#">
+                            <div class="Box_nrA">
+                            	<img src="images/USA_img20.jpg" alt=""/>
+                                <div class="Box_bgB">
+                                    <p>为了向移民官证明一位中医的“杰出”，我们做了1600页的案子！</p>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+	    				
+	    				<li>
+                        	<a href="#">
+                        	<div class="Box_nrA">
+                            	<img src="images/USA_img18.jpg" alt=""/>
+                                <div class="Box_bgB">
+                                    <p>为了向移民官证明一位中医的“杰出”，我们做了1600页的案子！</p>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+    				</ul>
+    			</div>
+    		</div>
+    		
+    	</div>
+    </div>
+
+<script type="text/javascript">
+// 过滚动
+function LbMove(boxID,btn_left,btn_right,btnBox,Car,direction,way,moveLengh,speed,Interval,number){
+				var        _ID   = $("#"+boxID+"");
+				var  _btn_left   = $("#"+btn_left+"");
+				var _btn_right   = $("#"+btn_right+"");
+				var    _btnBox   = $("#"+btnBox+"");
+				var        jsq   = 0
+				var      timer     ;
+				var         cj     ;
+				var     no_way   = 0;
+				var  no_wayGet   = 0;
+				var       fade   = 0;
+				var   new_time   = new Date;
+				
+				var ID_liLen , ID_liheight , cbtmBtn ;
+				ID_liLen    = _ID.find("li").length;
+				ID_liheight = _ID.find("li").innerHeight();
+				
+				if(direction == "left" || direction == "right"){
+					_ID.find("ul").width(ID_liLen*moveLengh);
+					}else if(direction == "top" || direction == "bottom"){
+						_ID.find("ul").height(ID_liLen*moveLengh);
+						_btnBox.hide()
+						}else if(direction == "fade"){
+							_ID.find("ul").width(moveLengh).height(ID_liheight);
+							_ID.find("li").eq(0).show().siblings().hide();
+							_ID.find("li").css({"position":"absolute","left":0,"top":0});
+							}
+				_btnBox.empty();
+				for(i=0;i<ID_liLen;i++){
+					_btnBox.append("<span></span>");
+					};
+				_btnBox.find("span").eq(0).addClass("cur");
+
+				if(way == false){
+						_btn_left.hide();
+						_btn_right.hide();
+						_btnBox.hide();
+						}
+				
+				
+				function Carousel(){
+					if(way == false){
+						no_way++;
+						
+						if(direction == "left"){
+							_ID.find("ul").css({"left":-no_way});	
+							no_wayGet = parseInt(_ID.find("ul").css("left"));
+							if(no_wayGet == -moveLengh){
+								no_way = 0
+								_ID.find("li:first").insertAfter(_ID.find("li:last"));
+								_ID.find("ul").css({"left":0});
+								}
+						}
+
+						if(direction == "right"){
+								
+							no_wayGet = parseInt(_ID.find("ul").css("left"));
+							if(no_wayGet == 0){
+								no_way = -moveLengh
+								_ID.find("li:last").insertBefore(_ID.find("li:first"));
+								_ID.find("ul").css({"left":0});
+								}
+							_ID.find("ul").css({"left":no_way});
+						}
+						
+						if(direction == "top"){
+							_ID.find("ul").css({"top":-no_way});	
+							no_wayGet = parseInt(_ID.find("ul").css("top"));
+							if(no_wayGet == -moveLengh){
+								no_way = 0
+								_ID.find("li:first").insertAfter(_ID.find("li:last"));
+								_ID.find("ul").css({"top":0});
+								}
+						}
+						
+						if(direction == "bottom"){
+								
+							no_wayGet = parseInt(_ID.find("ul").css("top"));
+							if(no_wayGet == 0){
+								no_way = -moveLengh
+								_ID.find("li:last").insertBefore(_ID.find("li:first"));
+								_ID.find("ul").css({"top":0});
+								}
+							_ID.find("ul").css({"top":no_way});
+						}
+						
+						
+						}else if(way == true){
+
+						if(direction == "left"){
+							_ID.find("ul").animate({left:-moveLengh},speed,function(){
+								_ID.find("li:first").insertAfter(_ID.find("li:last"));
+								_ID.find("ul").css({"left":0});
+								});	
+							if(jsq<ID_liLen-1){
+								jsq++;
+								_btnBox.find("span").eq(jsq).addClass("cur").siblings().removeClass("cur");
+								}else{
+									jsq = 0;
+									_btnBox.find("span").eq(jsq).addClass("cur").siblings().removeClass("cur");
+									}
+							
+						}
+						
+						if(direction == "right"){
+							_ID.find("li:last").insertBefore(_ID.find("li:first"));
+							_ID.find("ul").css({"left":-moveLengh});
+							_ID.find("ul").stop().animate({left:0},speed);
+							if(jsq>0){
+								jsq--;
+								_btnBox.find("span").eq(jsq).addClass("cur").siblings().removeClass("cur");
+								}else{
+									jsq = ID_liLen-1;
+									_btnBox.find("span").eq(jsq).addClass("cur").siblings().removeClass("cur");
+									}
+							
+						}
+						
+						if(direction == "top"){
+							_ID.find("ul").animate({top:-moveLengh},speed,function(){
+								_ID.find("li:first").insertAfter(_ID.find("li:last"));
+								_ID.find("ul").css({"top":0});
+								});	
+						}
+						
+						if(direction == "bottom"){
+							_ID.find("li:last").insertBefore(_ID.find("li:first"));
+							_ID.find("ul").css({"top":-moveLengh});
+							_ID.find("ul").stop().animate({top:0},speed);
+								
+						}
+						if(direction == "fade"){
+							
+							if(fade<ID_liLen-1){
+								fade++;
+								}else{fade = 0}
+							_ID.find("li").eq(fade).fadeIn(speed).siblings().fadeOut(speed);
+							_btnBox.find("span").eq(fade).addClass("cur").siblings().removeClass("cur");
+							
+						}
+					
+					}
+					}
+					
+					
+				if(Car == true){
+						
+					if(ID_liLen>number){
+						timer =	setInterval(Carousel,Interval);
+						}else{
+							clearInterval(timer);
+							_btn_left.hide();
+							_btn_right.hide();
+							_btnBox.hide();
+							}
+					}else{
+						clearInterval(timer);
+						}
+				_ID.find("li").hover(function(){
+					clearInterval(timer);
+					},function(){
+						if(Car == true){
+							if(ID_liLen>number){
+								timer =	setInterval(Carousel,Interval);
+								}else{
+									clearInterval(timer);
+									_btn_left.hide();
+									_btn_right.hide();
+									_btnBox.hide();
+									}
+							}else{
+								clearInterval(timer);
+								}
+						});
+					
+					
+				_btn_right.hover(function(){
+					clearInterval(timer);
+					},function(){
+						if(Car == true){
+							if(ID_liLen>number){
+								timer =	setInterval(Carousel,Interval);
+								}else{
+									clearInterval(timer);
+									_btn_left.hide();
+									_btn_right.hide();
+									_btnBox.hide();
+									}
+							}else{
+								clearInterval(timer);
+								}
+						
+						}).click(function(){
+							if(new Date - new_time>500){
+								new_time = new Date;
+							
+							if(direction == "left" || direction == "right"){
+								_ID.find("ul").animate({left:-moveLengh},speed,function(){
+									_ID.find("li:first").insertAfter(_ID.find("li:last"));
+									_ID.find("ul").css({"left":0});
+									});	
+								}
+							
+							
+							if(direction == "top" || direction == "bottom"){
+								_ID.find("ul").animate({top:-moveLengh},speed,function(){
+									_ID.find("li:first").insertAfter(_ID.find("li:last"));
+									_ID.find("ul").css({"top":0});
+									});	
+								}
+							if(direction == "fade"){
+							
+							if(fade>0){
+								fade--;
+								}else{fade = ID_liLen-1}
+									_ID.find("li").stop(true,true).eq(fade).fadeIn(speed).siblings().fadeOut(speed);
+									
+								}
+							if(jsq<ID_liLen-1){
+								jsq++;
+								_btnBox.find("span").eq(jsq).addClass("cur").siblings().removeClass("cur");
+								}else{
+									jsq = 0;
+									_btnBox.find("span").eq(jsq).addClass("cur").siblings().removeClass("cur");
+									};
+							
+								
+								}else{};
+							});
+				_btn_left.hover(function(){
+					clearInterval(timer);
+					},function(){
+						if(Car == true){
+							if(ID_liLen>number){
+								timer =	setInterval(Carousel,Interval);
+								}else{
+									clearInterval(timer);
+									_btn_left.hide();
+									_btn_right.hide();
+									_btnBox.hide();
+									}
+							}else{
+								clearInterval(timer);
+								}
+						}).click(function(){
+							if(new Date - new_time>500){
+								new_time = new Date;
+
+							if(direction == "left" || direction == "right"){
+								_ID.find("li:last").insertBefore(_ID.find("li:first"));
+								_ID.find("ul").css({"left":-moveLengh});
+								_ID.find("ul").stop().animate({left:0},speed);
+								}
+							
+							if(direction == "top" || direction == "bottom"){
+								_ID.find("li:last").insertBefore(_ID.find("li:first"));
+								_ID.find("ul").css({"top":-moveLengh});
+								_ID.find("ul").stop().animate({top:0},speed);
+									
+								}
+							if(direction == "fade"){
+							
+							if(fade<ID_liLen-1){
+								fade++;
+								}else{fade = 0}
+									_ID.find("li").stop(true,true).eq(fade).fadeIn(speed).siblings().fadeOut(speed);
+									
+								}
+							if(jsq>0){
+								jsq--;
+								_btnBox.find("span").eq(jsq).addClass("cur").siblings().removeClass("cur");
+								}else{
+									jsq = ID_liLen-1;
+									_btnBox.find("span").eq(jsq).addClass("cur").siblings().removeClass("cur");
+									};
+								}else{};
+							});
+					
+				_btnBox.find("span").hover(function(){
+					clearInterval(timer);
+
+					},function(){
+						if(Car == true){
+							if(ID_liLen>number){
+								timer =	setInterval(Carousel,Interval);
+								}else{
+									clearInterval(timer);
+									_btn_left.hide();
+									_btn_right.hide();
+									_btnBox.hide();
+									}
+							}else{
+								clearInterval(timer);
+								}
+						}).click(function(){
+							if(new Date - new_time>500){
+								new_time = new Date;
+							cbtmBtn = $(this).index();
+							$(this).addClass("cur").siblings().removeClass("cur");
+							if(direction == "fade"){
+											_ID.find("li").eq(cbtmBtn).fadeIn(speed).siblings().fadeOut(speed);
+										}else{
+							if(cbtmBtn>jsq){
+								cj =cbtmBtn - jsq;
+								jsq = cbtmBtn;
+								
+								_ID.find("ul").stop().animate({left:-moveLengh*cj},speed,function(){
+									for(i=0;i<cj;i++){
+										_ID.find("ul").css({"left":0})
+										_ID.find("li:first").insertAfter(_ID.find("li:last"));
+										};
+									});
+								}else{
+									cj = jsq - cbtmBtn;
+									jsq = cbtmBtn;
+									_ID.find("ul").css({"left":-moveLengh*cj});
+									for(i=0;i<cj;i++){
+										_ID.find("ul").stop().animate({left:0},speed);
+										_ID.find("li:last").insertBefore(_ID.find("li:first"));
+										};
+									};
+									};
+								}else{};
+							});
+}
+    //滚动元素id，左切换按钮，右切换按钮，切换元素个数id,滚动方式，切换方向，是否自动滚动，滚动距离，滚动时间，滚动间隔，显示个数
+    LbMove('BoxUl','btnl','btnr','BoxSwitch',true,'left',true,258,1000,5000,4);
+</script>
+<!-- 成功案例 end  -->
+
+
+<!-- 底部评估表 -->
+<div class="HL_pgb_bottom">
+	<div class="HL_pgb">
+	<div class="item">
+			<div class="filter-box2">
+				<div class="filter-text">
+					<input class="filter-title" type="text" readonly placeholder="移民留学国家" />
+					<i class="icon icon-filter-arrow"></i>
+				</div>
+				<select name="filter">
+                	<option value="-1"></option>
+					<option value="1">美国EB1A移民</option>
+					<option value="2">美国留学</option>
+					<option value="3">英国留学</option>
+					<option value="4">海外投资</option>
+					<option value="5">其它</option>
+				</select>
+			</div>
+	</div>
+    <div class="item" style="margin-left:20px">
+			<div class="filter-box3">
+				<div class="filter-text">
+					<input class="filter-title" type="text" readonly placeholder="预算" />
+					<i class="icon icon-filter-arrow"></i>
+				</div>
+				<select name="filter">
+                	<option value="-1"></option>
+					<option value="1">50万-100万</option>
+					<option value="2">100万-200万</option>
+					<option value="3">300万-500万</option>
+					<option value="4">500万-800万</option>
+					<option value="5">1000万以上</option>
+                    <option value="5">其他</option>
+				</select>
+              </div>
+	</div>
+    <div class="item" style="margin-left:20px">
+    	<input class="input" placeholder="联系方式" />
+    </div>
+    <div class="pgbButton" style="margin-left:20px">
+        <input type="reset"  value="立即评估"/>
+    </div>
+</div>
+
+</div>
+<!-- 底部评估表 end  -->
+
+
+<!-- 底部信息开始 -->
+<div class="HL_gj">
+	<div class="HL_gj_nr">
+    	<li>
+        	<a href="#"><p>美国移民</p></a>
+            <a href="#"><p>美国EB1A移民</p></a>
+        </li>
+        <li>
+        	<a href="#"><p>美国留学</p></a>
+            <a href="#"><p>美国高中</p></a>
+            <a href="#"><p>美国本科</p></a>
+            <a href="#"><p>美国研究生</p></a>
+        </li>
+        <li>
+        	<a href="#"><p>英国留学</p></a>
+            <a href="#"><p>英国高中</p></a>
+            <a href="#"><p>英国本科</p></a>
+            <a href="#"><p>英国研究生</p></a>
+        </li>
+        <li>
+        	<a href="#"><p>海外服务</p></a>
+            <a href="#"><p>安家置业</p></a>
+            <a href="#"><p>海外房产</p></a>
+            <a href="#"><p>财务规划</p></a>
+        </li>
+        <li>
+        	<a href="#"><p>关于移民</p></a>
+            <a href="#"><p>移民介绍</p></a>
+            <a href="#"><p>精英团队</p></a>
+            <a href="#"><p>活动讲座</p></a>
+        </li>
+        <li><img src="images/HL_logo.png" alt=""></li>
+    </div>
+</div>
+
+<div class="HL_bottom">
+	<div class="HL_bottom_nr">
+    	<li>
+        	<img src="images/HL_fwh.jpg" alt="">
+            <div class="HL_bottom_title">关注官方服务号</div>
+        </li>
+        <li>
+        	<img src="images/HL_dyh.jpg" alt="">
+            <div class="HL_bottom_title">关注官方订阅号</div>
+        </li>
+        <li>
+        	<p><span>VIP免费热线：400-888-8888</span></p>
+            <p>地址：南京市玄武区玄武湖10号</p>
+            <p>版权所有 ©2020 XXX <a href="http://www.adminbuy.cn" target="_blank">网站模板</a></p>
+            <p>XXX</p>
+        </li>
+    </div>
+</div>
+<!-- 底部信息结束 -->
+
+<script type="text/javascript" src="js/selectFilter.js"></script>
+<script type="text/javascript">
+			//本小插件支持移动端哦
+			
+			//这里是初始化
+			$('.filter-box').selectFilter({
+				callBack : function (val){
+					//返回选择的值
+					console.log(val+'-是返回的值')
+				}
+			});
+			$('.filter-box1').selectFilter({
+				callBack : function (val){
+					//返回选择的值
+					console.log(val+'-是返回的值')
+				}
+			});
+			$('.filter-box2').selectFilter({
+				callBack : function (val){
+					//返回选择的值
+					console.log(val+'-是返回的值')
+				}
+			});
+			$('.filter-box3').selectFilter({
+				callBack : function (val){
+					//返回选择的值
+					console.log(val+'-是返回的值')
+				}
+			});
+</script>
+
+</body>
+</html>

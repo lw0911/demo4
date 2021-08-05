@@ -1,0 +1,113 @@
+@charset "utf-8";
+.contact-head {
+	width: 100%;
+	height: 908px;
+	margin: 0 auto;
+	background: url(../images/contactbg.jpg) no-repeat center;
+	overflow: hidden;
+}
+.contact-con {
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 424px;
+}
+.contact-left{
+	width: 463px;
+	height: 430px;
+	float: left;
+	border-right: 1px dashed #5d6269;
+	padding: 0 68px;
+}
+.contact-right{
+	width: 600px;
+	height: 430px;
+	float: right;
+}
+.contact-p1 {
+	font-size: 16px;
+	color: #999;
+	line-height: 28px;
+}
+.contact-p2 {
+	font-size: 18px;
+	color: #fff;
+	font-weight: bold;
+	line-height: 28px;
+}
+.contact-span1 {
+	display:inline-block;
+	width: 198px;
+	height: 46px;
+	background: #3aade2;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 46px;
+	color: #fff;
+	margin: 10px 0;
+}
+.contact-p3 {
+	font-size: 18px;
+	color: #fff;
+	font-weight: bold;
+	line-height: 28px;
+	margin-top: 42px;
+}
+.form-p {
+	margin:14px 0 14px 112px;
+} 
+.form-p input {
+	width: 338px;
+	height: 44px;
+	border-radius: 2px;
+	border: 1px solid #3aade2;
+	outline: none;
+	background: none;
+	padding-left: 26px;
+	color: #fff;
+}
+.pad-p {
+	padding-left:112px;
+}
+.form-p textarea {
+	width: 338px;
+	height: 90px;
+	border-radius: 2px;
+	border: 1px solid #3aade2;
+	outline: none;
+	background: none;
+	padding-left: 26px;
+	color: #fff;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	line-height: 28px;
+}
+.form-p button {
+	width: 368px;
+	height: 44px;
+	border-radius: 2px;
+	background:  #3aade2;
+	border: none;
+	outline: none;
+	text-align: center;
+	line-height: 44px;
+	color: #fff;
+	cursor: pointer;
+}
+.form-p button:hover {
+	background: #39bcf9;
+	transition: linear 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

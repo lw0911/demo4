@@ -1,0 +1,466 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+@font-face {
+	font-family: "Gotham Bold";
+	src: url("../other/Gotham-Bold.otf");
+}
+
+@font-face {
+	font-family: "Gotham-Black";
+	src: url("../other/Gotham-Black.otf");
+}
+
+@font-face {
+	font-family: "Gotham-Book";
+	src: url("../other/Gotham-Book.otf");
+}
+
+@font-face {
+	font-family: "Gotham-Light";
+	src: url("../other/Gotham-Light.otf");
+}
+
+body {
+	font-family: "微软雅黑", "冬青黑", "苹方", "宋体", sans-serif, GothamlightRegular;
+	font-size: 12px;
+	background-color: #fff;
+	overflow-x: hidden;
+	-webkit-user-select: none;
+	/* Chrome/Safari/Opera */
+	-moz-user-select: none;
+	/* Firefox */
+	-ms-user-select: none;
+	/* Internet Explorer/Edge */
+}
+body,
+html {
+	position: relative;
+}
+
+a {
+	color: #232323;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+input,
+textarea {
+	outline: none;
+	padding: 0;
+}
+
+input[type="button"],
+input[type="submit"] {
+	cursor: pointer;
+	text-align: center;
+}
+
+button {
+	cursor: pointer;
+}
+
+
+/* public */
+
+.hrforce-container {
+	min-width: 1000px;
+	margin: 0 auto;
+}
+
+@font-face {
+	font-family: 'iconfont';  /* project id 905350 */
+	src: url('../other/font_905350_prm8xdryr2.eot');
+	src: url('../other/font_905350_prm8xdryr2.eot?#iefix') format('embedded-opentype'),
+	url('../other/font_905350_prm8xdryr2.woff2') format('woff2'),
+	url('../other/font_905350_prm8xdryr2.woff') format('woff'),
+	url('../other/font_905350_prm8xdryr2.ttf') format('truetype'),
+	url('../other/font_905350_prm8xdryr2.svg#iconfont') format('svg');
+  }
+
+  
+i.icons{
+	font-family:"iconfont" !important;
+	font-size:20px;
+	font-style:normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;
+	vertical-align:top;
+	margin-right:5px;
+	margin-left:5px
+  }
+  
+
+
+
+
+
+  /* insidePages header */
+
+.insidePages-header {
+	background: #fff;
+	width: 100%;
+	height: 80px;
+	box-shadow: 0 0 3px 3px #e8e8e8;
+	-moz-box-shadow: 0 0 3px 3px #e8e8e8;
+	-ms-box-shadow: 0 0 3px 3px #e8e8e8;
+}
+
+.insidePages-header .hrforce-h-l {
+	float: left;
+	height: 80px;
+	line-height: 80px;
+}
+
+.insidePages-header .hrforce-green-log {
+	display: inline-block;
+	width: 300px;
+    height: 53px;
+    margin: 2px 0 0 30px;
+    background: url("../images/hrforce-green-log.png") no-repeat;
+	vertical-align: middle;
+}
+
+.insidePages-header .verticalLine {
+	display: inline-block;
+	width: 1px;
+	vertical-align: middle;
+}
+
+.insidePages-header .greenLine {
+	height: 31px;
+	background: #0e4d92;
+	margin: 0 18px;
+}
+
+.insidePages-header .grayLine {
+	height: 14px;
+	background: #cdcdcd;
+	margin: 0 30px;
+}
+
+.insidePages-header .hrforce-title {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.insidePages-header .hrforce-title span {
+	display: block;
+	color: #232323;
+	height: 40px;
+}
+
+.insidePages-header .hrforce-title span.t-title {
+	font-size: 12px;
+	line-height: 60px;
+	font-family: "Gotham-Light";
+}
+
+.insidePages-header .hrforce-title span.b-title {
+	font-size: 14px;
+	line-height: 15px;
+}
+
+.insidePages-header .hrforce-h-r {
+	float: right;
+	height: 80px;
+	line-height: 80px;
+}
+
+.insidePages-header .goIndex {
+	float: left;
+	font-size: 14px;
+	color: #232323;
+}
+
+.insidePages-header .header-nav-list ul>li {
+	float: left;
+	height: 80px;
+	line-height: 80px;
+}
+
+.insidePages-header .header-nav-list ul li a {
+	font-size: 14px;
+	color: #232323;
+}
+
+.insidePages-header .header-nav-list ul li span {
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background: #999;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 8px;
+	transition:transform 1s;
+	-webkit-transition: -webkit-transform 0.5s;
+	-moz-transition: -moz-transform 0.5s;
+	-ms-transition: -ms-transform 0.5s;
+}
+
+.insidePages-header .inside-nav-list ul li span {
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background: #0e4d92;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 8px;
+	transition:transform 1s;
+	-webkit-transition: -webkit-transform 0.5s;
+	-moz-transition: -moz-transform 0.5s;
+	-ms-transition: -ms-transform 0.5s;
+}
+
+.insidePages-header .header-nav-list ul li.active a {
+	color: #0e4d92;
+}
+
+.header-nav-list ul li div.proService {
+	font-size: 14px;
+	margin-left: 25px;
+	color: #0e4d92;
+	cursor: pointer;
+}
+.header-nav-list ul li div span.triangle {
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 5px solid #999;
+	background: none;
+	border-radius: inherit;
+	margin-top: -3px;
+}
+.header-nav-list ul li div span.active{
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+}
+.header-nav-list ul li {
+	position: relative;
+}
+#dropDownList {
+	position: absolute;
+	z-index: 999;
+	left: 50%;
+	margin-left: -70px;
+	top: 80px;
+	display: none;
+}
+
+#dropDownList ul {
+	background: #fff;
+	overflow: hidden;
+	padding: 15px 20px;
+	box-shadow: 1px 1px 3px #8a8a8a;
+}
+
+#dropDownList ul li {
+	width: 110px;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid #e9e9e9;
+	box-sizing: border-box;
+}
+
+#dropDownList ul li:last-child {
+	border: none;
+}
+
+#dropDownList ul li a {
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #232323;
+}
+#dropDownList div{
+	position: relative;
+	height: 10px;
+}
+#dropDownList div span.triangle {
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-bottom: 5px solid #fff;
+	border-top: 0;
+	position: absolute;
+	bottom:0;
+	left: 50%;
+	margin-left: -4px;
+}
+
+
+/* insidePages footer */
+
+.insidePages-footer {
+	height: 68px;
+	line-height: 68px;
+}
+
+.blank-footer {
+	position: fixed;
+	bottom: 0;
+	background: #353535;
+	width: 100%;
+}
+
+.transparent-footer {
+	background: none;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	z-index: 9999;
+}
+
+.insidePages-footer p {
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+	height: 68px;
+	line-height: 68px;
+	text-align: center;
+}
+
+.insidePages-footer p span {
+	display: inline-block;
+	width: 45px;
+}
+
+.insidePages-footer .footer-link{
+	float: left;
+	font-size: 12px;
+}
+.insidePages-footer .footer-link span{
+	color: #fff;
+	display: inline-block;
+	width: 25px;
+	text-align: center;
+}
+.insidePages-footer .footer-link a{
+	color: #fff;
+}
+.insidePages-footer .footer-copyright p{
+	color: #fff;
+}

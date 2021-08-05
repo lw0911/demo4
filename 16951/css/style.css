@@ -1,0 +1,213 @@
+@charset "utf-8";
+/*!
+ * 米维建站  一建轻松建站
+ * 详尽信息请看官网：http://www.miwinfo.com/
+ *
+ * Copyright 2014 米维建站
+ *
+ * 请尊重原创，保留头部版权
+ * 仅供学习参考使用，不可用于任何商业用途
+ *
+ * 客服QQ 974837117
+ */
+.content { max-width:1200px; height: auto; margin: 0 auto; padding:0 10px; box-sizing:border-box;}
+img {max-width: 100%;}
+.page-down {width: 30px;height: 30px;background: #999;position: fixed;bottom: 30px;right: 30px;text-align: center;line-height: 30px;font-size: 18px;color: #fff;cursor: pointer;display: none;z-index: 99999;}
+.page-down:hover {background: #434343;}/* 回到顶部 */
+.table{ display:table; width:100%; height:100%;}
+.table .cell{ display:table-cell; text-align:center; vertical-align:middle;}
+.smallest-screen {position: fixed;z-index: 999999;width: 100%;height: 100%;background: url(../images/displaynone.png) no-repeat center #666;display: none;}
+@media only screen and (max-width : 319px) {
+.smallest-screen {display: block;} /*判断屏幕小于319px隐藏显示网站*/
+}
+.white{ color:#fff !important;}
+.webmain{ width:100%; overflow:hidden;}
+
+.middle_holder { display: inline-block; font-size: 0; width: 0; height: 50px;vertical-align: middle;}
+.middle {display: inline-block;vertical-align: middle; width: 100%;}
+.nav_handle { display: none; position: relative; width: 27px; padding: 0 15px; cursor: pointer; float: right; }
+.nav_handle b { width: 27px; height: 10px; position: relative; }
+.nav_handle b i { display: block; position: absolute; left: 0; right: 0; height: 2px; background-color: #fff; top: 0; -webkit-transform-origin: 29% 50%; transform-origin: 29% 50%;  transition: all .3s ease; -webkit-transition: all .3s ease; }
+.nav_handle b .l_2 { top: auto; bottom: 0; }
+.nav_handle.on b i{transform: rotate(45deg); background: #8cd635;}
+.nav_handle.on b .l_2 { transform: rotate(-45deg); }
+
+#container { overflow: hidden; position: absolute;  top: 0; left: 0; right: 0; bottom: 0; }
+#background_video { position: absolute;top: 50%; left: 50%; transform: translate(-50%, -50%);object-fit: cover; height: 100%; width: 100%;}
+#video_cover { position: absolute; width: 100%; height: 100%; background: url('../images/video_cover.jpg') no-repeat; background-size: cover; background-position: center; }
+#video_controls {  position: absolute; left: 50%; transform: translate(-50%, 0);}
+#play img { width: 100px; }
+#pause img { width: 90px; }
+#pause { display: none;}
+#video_controls{ display: none; }
+
+.header{ position: absolute; width: 100%; left: 0; top: 0; background: rgba(0,0,0,.6); padding: 20px 0; z-index: 9999;}
+.header .logo{ float: left; }
+.header .inmuen{ float: right; line-height: 35px; padding: 10px 0; }
+.header .inmuen ul li{ float: left; position: relative;}
+.header .inmuen ul li > a{ display: block; padding: 0 25px; border-radius: 5px; color: #fff; font-size: 14px; }
+.header .inmuen ul li > a:hover{ background: #8cd635; }
+.header .inmuen ul li > a.on{ background: #8cd635; }
+.header .inmuen ul li:hover .erji{ display: block; }
+.header .inmuen ul li .erji{ display: none; position: absolute; width: 120px; background: #fff; border: 1px solid #8cd635; left: 50%; top: 35px; margin-left: -60px; }
+.header .inmuen ul li .erji .li{ display: block; line-height: 35px; text-align: center; }
+
+.banner{ position: relative; height: 720px; overflow: hidden; }
+.banner .fgc{ position: absolute; width: 100%; height: 100%; left: 0; top: 0; z-index: 999; }
+.banner .fgc .nr{ min-height: 211px; max-width: 869px; background: url(../images/line.png) no-repeat center; margin: 45px auto 0; color: #fff; }
+.banner .fgc .nr .tit{ font-size: 45px; color: #fff; font-weight: bold; line-height: 70px; position: relative; top: -35px; }
+.banner .fgc .nr a{ display: inline-block; font-weight: bold; font-size: 30px; color: #8cd635; font-family: Times New Roman; margin-top: 60px; }
+
+.wapbanner{ display: none; }
+
+.inadvyu{ padding: 70px 0 70px 740px; position: relative; min-height: 420px; }
+.inadvyu .pic{ width: 700px; height: 420px; position: absolute; left: 0; top: 70px; background: url(../images/index_01.jpg) no-repeat left bottom; }
+.inadvyu .pic .nr{ position: absolute; width: 520px; height: 350px; position: absolute; right: 0; top: 0; overflow: hidden; }
+.inadvyu .tit{ line-height: 40px; font-size: 25px; color: #333; margin-bottom: 20px; }
+.inadvyu .jj{ font-size: 14px; line-height: 30px; color: #666; max-height: 150px; overflow: hidden; margin-bottom: 20px; }
+.inadvyu .more{ width: 130px; height: 50px; background: #8cd635; font-size: 14px; display: block; color: #fff; line-height: 50px; text-align: center; border-radius: 5px; }
+
+.inyous{ padding: 70px 0; background: url(../images/pic01.jpg) no-repeat center #000; }
+.inyous ul li{ display: block; width: 21%; margin: 10px 2%; float: left; }
+.inyous ul li .sz{ width: 125px; height: 125px; border-radius: 50%; border: 1px solid #ccc; line-height: 125px; text-align: center; font-size: 35px; font-weight: bold; color: #fff; margin: 0 auto 20px; }
+.inyous ul li .tit{ font-size: 20px; height: 35px; line-height: 35px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: center; color: #fff; margin-bottom: 10px; }
+.inyous ul li .jj{ font-size: 14px; line-height: 22px; height: 44px; overflow: hidden; color: #f3f3f3; text-align: center;}
+
+.inservice{ padding: 50px 0 70px; background: #f8f7f1; }
+.inservice .lmtit{ font-size: 40px; color: #222; text-align: center; margin-bottom: 40px; }
+.inservice .shang{ height: 300px; background: url(../images/pic_bg.png) no-repeat center; }
+.inservice .shang .pic{ width: 40%; height: 300px; position: relative; float: left; }
+.inservice .shang .pic .fgc{ background: rgba(102, 102, 102, 0.4); position: absolute; width: 100%; height: 100%; left: 0; top: 0; transition: all .5s; opacity: 0;}
+.inservice .shang .pic .fgc .ico{ width: 42px; height: 42px; margin: 0 auto; }
+.inservice .shang .pic:hover .fgc{opacity: 1;}
+.inservice .shang .li{ position: relative; width: 30%; height: 300px; float: left; }
+.inservice .shang .li .fgc{ position: absolute; width: 100%; height: 100%; left: 0; top: 0; }
+.inservice .shang .li .ico{ width: 90px; height: 90px; margin: 0 auto 20px; }
+.inservice .shang .li .tit{ margin-bottom: 10px; padding: 0 20px; height: 25px; line-height: 25px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #fff; font-size: 24px; }
+.inservice .shang .li .jj{ height: 60px; line-height: 30px; font-size: 14px; color: #fff; overflow: hidden; padding: 0 20px; }
+.inservice .shang .li.bclv{ background: #8cd635; }
+.inservice .shang .li.bcbai{ background: #fff; }
+.inservice .shang .li.bcbai .tit{ color: #333; }
+.inservice .shang .li.bcbai .jj{ color: #333; }
+.inservice .xia{ height: 300px; background: url(../images/pic_bg02.png) no-repeat center; }
+.inservice .xia .pic{ width: 40%; height: 300px; position: relative; float: right; }
+.inservice .xia .pic .fgc{ background: rgba(102, 102, 102, 0.4); position: absolute; width: 100%; height: 100%; left: 0; top: 0; transition: all .5s; opacity: 0;}
+.inservice .xia .pic .fgc .ico{ width: 42px; height: 42px; margin: 0 auto; }
+.inservice .xia .pic:hover .fgc{opacity: 1;}
+.inservice .xia .li{ position: relative; width: 30%; height: 300px; float: left; }
+.inservice .xia .li .fgc{ position: absolute; width: 100%; height: 100%; left: 0; top: 0; }
+.inservice .xia .li .ico{ width: 90px; height: 90px; margin: 0 auto 20px; }
+.inservice .xia .li .tit{ margin-bottom: 10px; padding: 0 20px; height: 25px; line-height: 25px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #fff; font-size: 24px; }
+.inservice .xia .li .jj{ height: 60px; line-height: 30px; font-size: 14px; color: #fff; overflow: hidden; padding: 0 20px; }
+.inservice .xia .li.bclv{ background: #8cd635; }
+.inservice .xia .li.bcbai{ background: #fff; }
+.inservice .xia .li.bcbai .tit{ color: #333; }
+.inservice .xia .li.bcbai .jj{ color: #333; }
+
+.inabout{ padding: 70px 0; background-attachment: fixed !important; }
+.inabout .lmtit{ font-size: 40px; color: #fff; text-align: center; margin-bottom: 40px; }
+.inabout .nr{ line-height: 30px; font-size: 14px; color: #f2f2f2; margin-bottom: 40px; }
+.inabout .an{ text-align: center; }
+.inabout .an1{ width: 130px; height: 50px; border: 1px solid #8cd635; background: #8cd635; font-size: 14px; display: inline-block; color: #fff; line-height: 50px; text-align: center; border-radius: 5px; margin: 0 10px; }
+.inabout .an2{ width: 130px; height: 50px; border: 1px solid #8cd635; font-size: 14px; display: inline-block; color: #8cd635; line-height: 50px; text-align: center; border-radius: 5px; margin: 0 10px; }
+
+.innews{ padding: 70px 0; background: #f8f7f1; }
+.innews .lmtit{ font-size: 40px; color: #222; text-align: center; margin-bottom: 40px; }
+.innews .nr ul li{ display: block; width: 31.333333%; margin: 0 1%; float: left; background: #fff; border-radius: 10px; overflow: hidden; }
+.innews .nr ul li .wz{ padding: 25px 15px; }
+.innews .nr ul li .wz .tit{ height: 35px; line-height: 35px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 16px; font-weight: bold; color: #333; }
+.innews .nr ul li .wz .date{ height: 25px; line-height: 25px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; color: #999; }
+.innews .nr ul li .wz .jj{ font-size: 14px; line-height: 22px; color: #666; overflow: hidden; height: 110px; }
+.innews .nr ul li:hover{ box-shadow: 0 0 20px rgba(0,0,0,.1); }
+.innews .more{ width: 130px; height: 50px; border: 1px solid #8cd635; background: #8cd635; font-size: 14px; display: block; color: #fff; line-height: 50px; text-align: center; border-radius: 5px; margin: 40px auto 0; }
+
+.insearch{ padding: 40px 0; background: #8cd635; line-height: 55px; text-align: center;}
+.insearch span{ font-size: 22px; color: #fff; }
+.insearch .nr{ margin-left: 20px; width: 100%; max-width: 430px; display: inline-block; background: #fff; height: 55px; line-height: 55px; padding-right: 55px; position: relative; box-sizing: border-box; }
+.insearch .nr .text{ font-size: 14px; padding: 0 15px; height: 55px; line-height: 55px; width: 100%; box-sizing: border-box; }
+.insearch .nr .sub{ position: absolute; width: 55px; height: 55px; line-height: 55px; right: 0; top: 0; outline: none; font-size: 25px; }
+
+.footer{ background: #1c1d1e; padding: 40px 0 0;}
+.footer .flogo{ text-align: center; }
+.footer .fnav{ line-height: 30px; padding: 30px 0; text-align: center;}
+.footer .fnav a{ display: inline-block; padding: 0 20px; font-size: 14px; color: #f2f2f2; }
+.footer .banq{ padding: 30px 0; border-top: 1px solid #444; text-align: center; line-height: 25px; color: #f2f2f2; }
+.footer .banq a{ font-weight: bold; color: #8cd635; }
+
+.weizhi{ height: 50px; line-height: 50px; font-size: 14px; color: #666; border-bottom: 1px solid #dfdfdf; }
+.weizhi a{ color: #666; }
+.weizhi span{ font-weight: bold; color: #8cd635; }
+
+.nynav{ text-align: center; padding: 30px 0; }
+.nynav ul li{ display: inline-block; height: 40px; line-height: 40px; padding: 0 20px; margin: 5px; background: #f1f1f1; color: #333; border-radius: 5px; font-size: 14px; }
+.nynav ul li:hover{ background: #8cd635; color: #fff; }
+.nynav ul li.on{ background: #8cd635; color: #fff; }
+
+.nyabout{ padding-bottom: 30px; line-height: 30px; font-size: 14px; color: #333; }
+
+.page{ text-align:center; padding: 30px 0; }
+.page a{ display:block; height:30px; width:30px; overflow:hidden;  background: #f5f5f5; display:inline-block; line-height:30px; color:#666; margin-right: -3px;}
+.page a:hover{ color:#fff; background:#333;}
+.page a.on{ background:#dfdfdf;}
+.page a.on:hover{ color:#666;}
+.page a i{ line-height:30px;}
+
+.nypro ul li{ display: block; width: 31.33333%; margin: 5px 1%; float: left; }
+.nypro ul li .pic{ overflow: hidden; margin: 5px;}
+.nypro ul li .pic img{ width: 100%; height: auto; transition: all .5s;}
+.nypro ul li .tit{ height: 30px; line-height: 30px; overflow: hidden; color: #333; text-overflow: ellipsis; white-space: nowrap; text-align: center; font-weight: bold; font-size: 16px; }
+.nypro ul li .fenl{ font-size: 14px; text-align: center; color: #8cd635; }
+.nypro ul li:hover img{ transform: scale(1.1,1.1); }
+
+.showpro{ padding: 30px 0; }
+.showpro .info{ position: relative; padding-left: 560px; min-height: 366px; margin-bottom: 20px;}
+.showpro .info .pic{ position: absolute; width: 530px; height: 366px; overflow: hidden; left: 0 ; top: 0; }
+.showpro .info .tit{ font-size: 18px; font-weight: bold; line-height: 30px; margin-bottom: 20px; }
+.showpro .info .jj{ line-height: 30px; font-size: 14px; color: #666; margin-bottom: 20px; }
+.showpro .info .an{ width: 130px; height: 40px; border: 1px solid #8cd635; background: #8cd635; font-size: 14px; display: block; color: #fff; line-height: 40px; text-align: center; border-radius: 5px; }
+.showpro .lmtit{ padding: 0 10px; line-height: 40px; font-size: 16px; font-weight: bold; background: #f1f1f1; border: 1px solid #dfdfdf; }
+.showpro .detail{ padding: 10px 0; font-size: 14px; line-height: 30px; color: #555; }
+.showpro .sxp a{ display: block; padding: 0 20px; border: 1px solid #8cd635; display:block; clear: both; max-width: 400px; margin: 10px 0; height: 30px; line-height: 30px; font-size: 14px; color: #8cd635;}
+.showpro .sxp a:hover{ background: #8cd635; color: #fff; }
+
+.nynews ul li{ display: block; padding: 30px 240px 30px 320px; min-height: 200px; position: relative; border-bottom: 1px solid #e5e5e5; background: #fff; transition: all 0.5s;}
+.nynews ul li .pic{ width: 270px; overflow: hidden; position: absolute; left: 30px; top: 30px; }
+.nynews ul li .date{ padding: 0 40px; position: absolute; border-left: 1px solid #e5e5e5; right: 0; top: 50%; margin-top: -59px;}
+.nynews ul li .date span{ font-size: 40px; color: #727272; font-weight: bold; display: block;}
+.nynews ul li .date em{ display: block; font-size: 12px; color: #727272; line-height: 20px; margin-bottom: 10px;}
+.nynews ul li .date .more{ color: #000000; line-height: 35px; border-top: 1px solid #e5e5e5; text-align: center; font-size: 14px; }
+.nynews ul li .tit{ font-size: 18px; color: #141414; height: 55px; line-height: 55px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.nynews ul li .jj{ font-size: 14px; color: #999999; line-height: 30px; height: 120px; overflow: hidden; }
+.nynews ul li:hover{ box-shadow: 0 0 30px rgba(0, 0, 0, .1); border-bottom: 1px solid #fff ; z-index: 99;}
+
+.shownews{ padding: 30px 0; }
+.shownews .tit{ font-size: 30px; color: #333333; text-align: center; margin-bottom: 20px;}
+.shownews .date{ height: 16px; line-height: 16px; text-align: center; font-size: 14px; color: #b7b7b7;}
+.shownews .date span{ display: inline-block; padding: 0 20px; border-right: 1px solid #b7b7b7; }
+.shownews .nr{ padding: 30px 0; font-size: 14px; line-height: 30px; color: #666;}
+.shownews .nr a{ color: #cf0b2c; text-decoration: underline; }
+.shownews .pic{ text-align: center; padding: 0 100px; position: relative; max-width: 600px; margin: 0 auto 20px;}
+.shownews .pic img{ width: 100%; height: auto; }
+.shownews .pic .prev, .shownews .pic .next{display: block; width: 60px; height: 60px; line-height: 60px; background: rgba(0,0,0,.3); color: #fff; text-align: center; position: absolute; font-size: 22px; transition: all 0.5s;}
+.shownews .pic .prev{ top: 50%; margin-top: -30px; left: 0; }
+.shownews .pic .next{ top: 50%; margin-top: -30px; right: 0; }
+.shownews .pic .prev:hover, .shownews .pic .next:hover{ background: rgba(0,0,0,.7); }
+.shownews .sxp a{ display: block; padding: 0 20px; border: 1px solid #8cd635; display:block; clear: both; max-width: 400px; margin: 10px 0; height: 30px; line-height: 30px; font-size: 14px; color: #8cd635;}
+.shownews .sxp a:hover{ background: #8cd635; color: #fff; }
+
+.nycase ul li {display: block; width: 31.3333333%; margin: 5px 1%; float: left;}
+.nycase ul li .nyholipic {width: 100%; background-color: #f4f4f4; box-sizing: border-box; padding: 30px;}
+.nycase ul li .tit {display: block; height: 50px; overflow: hidden; box-sizing: border-box; padding: 0 10px; font-size: 14px; text-align: center; color: #6f6f6f; line-height: 50px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.nycase ul li .tit:hover {text-decoration: underline;}
+
+.nymess{ padding: 0 0 30px; }
+.nymess .cntit{ font-size: 30px; color: #000; text-align: center; margin-bottom: 5px;}
+.nymess .entit{ color: #bcbcbc; font-size: 14px; text-align: center; margin-bottom: 20px;}
+.nymess .nr{ max-width: 850px; box-sizing: border-box; position: relative; margin: 0 auto; }
+.nymess .nr .li{ display: block; height: 45px; width: 50%; box-sizing: border-box; float: left; padding: 0 55px 0 35px; position: relative; margin: 10px 0;}
+.nymess .nr .li .text{ width: 100%; height: 45px; line-height: 45px; box-sizing: border-box; background: #f3f3f3; padding: 0 20px; font-size: 14px; color: #999;}
+.nymess .nr .li span{ width: 35px; height: 45px; text-align: center; line-height: 45px; position: absolute; left: 0; top: 0; display: block; color: #d70b1b;}
+.nymess .nr .li1{ display: block; height: auto; width: 100%; box-sizing: border-box; float: left; padding: 0 55px 0 35px; position: relative; margin: 10px 0;}
+.nymess .nr .li1 .textarea{ color: #999; font-size: 14px; width: 100%; height: 120px; background: #f3f3f3; line-height: 25px; padding: 10px 20px; box-sizing: border-box; border: 0px; }
+.nymess .nr .tijiao{ width: 200px; height: 50px; font-size: 18px; color: #fff; display: block; background: #8cd635; border-radius: 25px; text-align: center;line-height: 50px; transition: all 0.5s; margin: 10px auto;}
+.nymess .nr .tijiao:hover{ background: #8cd635; }

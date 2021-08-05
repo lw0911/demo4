@@ -1,0 +1,183 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>造型设计, 化妆美容-山东某某艺术造型培训学校</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.fixed.1.5.1.js"></script>
+<!--[if IE 6]>
+    <script src="js/DD_belatedPNG_0.0.8a.js"></script>
+    <script>
+        /* EXAMPLE */
+        DD_belatedPNG.fix('*');
+
+        /* string argument can be any CSS selector */
+        /* .png_bg example is unnecessary */
+        /* change it to what suits you! */
+    </script>
+    <![endif]-->
+</head>
+<body>
+<div id="header">
+  <div class="head_box">
+    <div class="logo"><img src="images/logo.png" alt="" width="350" height="100" /></div>
+    <div class="tel">服务热线：400-000-000</div>
+    <div class="menu">
+      <ul>
+        <li  class="current"><a href="index.html">网站首页</a>
+          <div class="block"></div>
+        </li>
+		<li  ><a href="product.html">案例展示</a></li>
+		<li  ><a href="">服务项目</a></li>
+        <li  ><a href="about.html">关于我们</a></li>
+        <li  ><a href="news.html">新闻中心</a></li>
+        <li  ><a href="">客户留言</a></li>
+        <li  ><a href="">联系我们</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--banner-->
+<div class="vbanner"><img src="images/banner1.jpg" width="100%" height="400"></div>
+
+<div id="content">
+  <div class="title"> <span>服务项目</span>
+    <h2>SERVICE</h2>
+    <h3>专业造型设计   打造完美形象</h3>
+  </div>
+  <div class="con_title">当前位置：<a href="">首页</a>><a style=" color:#d80011; text-decoration:underline;">案例展示</a> </div>
+  <div class="show_fen"> <a  href="">复古新娘造型</a> <a  href="">花想容</a> <a  href="">复古妆容</a> <a  href="">古装人物塑造</a> <a href="">花样新娘</a></div>
+  <div class="clear"></div>
+  <div class="case_list">
+    <ul>
+      <li><a href="">
+        <div class="photo"><img src="images/c1.jpg" width="233" height="265"></div>
+        <div class="rsp" style="display: block; opacity: 0;"></div>
+        <div class="text" style="left: -300px;">
+          <h3>花想容</h3></div>
+        </a> </li>
+      <li><a href="">
+        <div class="photo"><img src="images/c2.jpg" width="233" height="265"></div>
+        <div class="rsp" style="display: block; opacity: 0;"></div>
+        <div class="text" style="left: -300px;">
+          <h3>复古新娘造型</h3></div>
+        </a> </li>
+      <li><a href="">
+        <div class="photo"><img src="images/c3.jpg" width="233" height="265"></div>
+        <div class="rsp" style="display: block; opacity: 0;"></div>
+        <div class="text" style="left: -300px;">
+          <h3>花样新娘</h3></div>
+        </a> </li>
+      <li><a href="">
+        <div class="photo"><img src="images/c4.jpg" width="233" height="265"></div>
+        <div class="rsp" style="display: block; opacity: 0;"></div>
+        <div class="text" style="left: -300px;">
+          <h3>复古妆容</h3></div>
+        </a> </li>
+      <li class="zpwu"><a href="">
+        <div class="photo"><img src="images/c5.jpg" width="233" height="265"></div>
+        <div class="rsp" style="display: block; opacity: 0;"></div>
+        <div class="text" style="left: -300px;">
+          <h3>古装人物塑造</h3></div>
+        </a> </li>
+      <li><a href="">
+        <div class="photo"><img src="images/c3.jpg" width="233" height="265"></div>
+        <div class="rsp" style="display: block; opacity: 0;"></div>
+        <div class="text" style="left: -300px;">
+          <h3>花样新娘</h3></div>
+        </a> </li>
+      <li><a href="">
+        <div class="photo"><img src="images/c5.jpg" width="233" height="265"></div>
+        <div class="rsp" style="display: block; opacity: 0;"></div>
+        <div class="text" style="left: -300px;">
+          <h3>古装人物塑造</h3></div>
+        </a> </li>
+      <li><a href="">
+        <div class="photo"><img src="images/c4.jpg" width="233" height="265"></div>
+        <div class="rsp" style="display: block; opacity: 0;"></div>
+        <div class="text" style="left: -300px;">
+          <h3>复古妆容</h3></div>
+        </a> </li>
+      <li><a href="">
+        <div class="photo"><img src="images/c1.jpg" width="233" height="265"></div>
+        <div class="rsp" style="display: block; opacity: 0;"></div>
+        <div class="text" style="left: -300px;">
+          <h3>花想容</h3></div>
+        </a> </li>
+      <li class="zpwu"><a href="">
+        <div class="photo"><img src="images/c2.jpg" width="233" height="265"></div>
+        <div class="rsp" style="display: block; opacity: 0;"></div>
+        <div class="text" style="left: -300px;">
+          <h3>复古新娘造型</h3></div>
+        </a> </li>
+    </ul>
+	<script>
+$(function(){
+	$(".case_list ul li .rsp").hide();	
+	$(".case_list ul li").hover(function(){
+		$(this).find(".rsp").stop().fadeTo(500,0.5)
+		$(this).find(".text").stop().animate({left:'0'}, {duration: 500})
+	},
+	function(){
+		$(this).find(".rsp").stop().fadeTo(500,0)
+		$(this).find(".text").stop().animate({left:'300'}, {duration: "fast"})
+		$(this).find(".text").animate({left:'-300'}, {duration: 0})
+	});
+});
+</script>
+    <div class="clear"></div>
+	<div class="Page clearfix"> <span>46 条记录 1/6 页</span> <a href="">下一页</a> <span class="current">1</span> <a href="">&nbsp;2&nbsp;</a> <a href="">&nbsp;3&nbsp;</a> <a href="">&nbsp;4&nbsp;</a> <a href="">&nbsp;5&nbsp;</a> <a href="">下5页</a> <a href="">末页</a> </div>
+  </div>
+</div>
+<div class="clear"></div>
+<!--底部-->
+<div id="footerhei">
+  <div class="ftheinav">
+    <img src="images/logofoot.png" width="350" height="67">
+    <ul>
+      <li><a href="">网站首页<em>HOME</em></a></li>
+      <li><a href="">关于我们<em>ABOUT</em></a></li>
+      <li><a href="">服务项目<em>SERVICE</em></a></li>
+      <li><a href="">新闻中心<em>NEWS</em></a></li>
+      <li><a href="">案例展示<em>CASE</em></a></li>
+      <li><a href="">荣誉资质<em>HONOR</em></a></li>
+      <li><a href="">客户留言<em>MESSAGE</em></a></li>
+      <li><a href="">联系我们<em>CONTACT</em></a></li>
+	  <li><a href="">联系我们<em>CONTACT</em></a></li>
+    </ul>
+  </div>
+  <div class="indaddl">版权所有：山东某某艺术造型培训学校&nbsp;&nbsp;&nbsp;&nbsp;备案号：********<br>联系地址：山东某某市某某大街&nbsp;&nbsp;&nbsp;&nbsp;电话：0000-00000000&nbsp;&nbsp;&nbsp;&nbsp;手机：12341234123&nbsp;&nbsp;&nbsp;&nbsp;联系人：牛经理</div>
+</div>
+<script language="javascript">
+    //must window loading,don't use the document loading
+    $(window).load(function(){
+
+        //悬浮客服
+        $("#fixedBox2").fix({
+            position 		: "right",	//悬浮位置 - left或right
+            horizontal  	: 0,		//水平方向的位置 - 默认为数字
+            vertical    	: null,		//垂直方向的位置 - 默认为null
+            halfTop     	: false,	//是否垂直居中位置
+            minStatue 		: false,	//是否最小化
+            hideCloseBtn 	: false,	//是否隐藏关闭按钮
+            skin 			: "gray",	//皮肤
+            showBtnWidth 	: 28,       //show_btn_width
+            contentBoxWidth : 154, 		//side_content_width
+            durationTime 	: 600		//完成时间
+        });
+
+    });
+</script>
+<div class="fixed_box" id="fixedBox2">
+  <div class="content_box">
+    <div class="content_inner">
+      <div class="content_list"> <img src="images/weixin.png" alt="" /> </div>
+      <div class="content_bottom"><a href="#top"><img src="images/fudong_top_03.png"></a></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

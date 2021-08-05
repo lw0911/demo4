@@ -1,0 +1,60 @@
+.container .main,.header .hd-box,.linker .lk-box,footer .ft-box{width:960px}
+.breadcrumb{padding:10px 0;line-height:36px;font-size:16px;color:#666;overflow:hidden}
+.breadcrumb .breadcrumb-box{float:left}
+.breadcrumb .breadcrumb-box a{color:#666}
+.breadcrumb .breadcrumb-box span{margin:0 3px;font-family:simsun}
+.breadcrumb .breadcrumb-box strong{font-weight:400}
+.breadcrumb .share{float:right}
+.breadcrumb .share .popup_sqq{background-position:0 -2652px}
+.breadcrumb .share .popup_weixin{background-position:0 -1612px}
+
+.area{padding:12px 24px 16px 24px;margin-bottom:22px;background:#fff;box-shadow:0 0 3px #d0cfcf;border:1px #e1e1e1 solid;}
+.area .bw {width: 100%;display: inline-block;}
+.area .box {float: left;width: 50%;overflow: hidden;}
+.area .box .hd{line-height:36px;font-size:18px;}
+.area .box .shd {line-height: 25px;font-size: 16px;color: #666;border-bottom: 1px dotted #ddd;margin: 0 0 5px 0;font-weight:bold;}
+.area .box .bd{overflow:hidden;zoom:1;padding: 10px 0;}
+.area .box .bd a {float: left;display: inline;white-space: nowrap;height: 24px;line-height: 24px;padding: 0 10px;margin: 0 4px 4px 0}
+.area .box .bd a:hover {color:#fff;background:#03a9f4;border-radius:2px}
+.area2 .box {float: none;width: auto;}
+.area .jdlist {width: 100%;display: inline-block;}
+.area .jdlist li {float: left;height: 30px;line-height: 30px;width: 33%;overflow: hidden;}
+
+.tabs{padding:15px 25px 5px;margin-bottom:15px;background:#fff;box-shadow:0 0 3px #d0cfcf;border:1px #e1e1e1 solid;font-size:16px;zoom:1}
+.tabs .hd{height:16px;padding-bottom:10px;line-height:16px;}
+.tabs .bd{overflow:hidden;}
+.tabs .bd .bd-box{margin-top:-5px}
+.tabs .ld{width:100%;font-size:14px;overflow:hidden;padding: 10px 0;display: none;}
+.tabs .ld ul{margin:0 -51px;position:relative;overflow:hidden;zoom:1}
+.tabs .ld li{float:left;display:inline;width:230px;height:28px;line-height:28px;padding:0 50px;overflow:hidden;border-right:1px solid #ebebeb}
+.tabs .ld a{display:block;width:100%;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
+
+.recommend{padding:10px 20px 16px 20px;margin-bottom:15px;background:#fff;box-shadow:0 0 3px #d0cfcf;border:1px #e1e1e1 solid;zoom:1}
+.recommend .hd{height:40px;line-height:40px;font-size:18px;overflow:hidden;zoom:1}
+.recommend .hd span{float:left}
+.recommend .hd span a{float:none;color:#333;font-size:18px}
+.recommend .hd a{float:right;font-size:14px;color:#9a9a9a}
+.recommend .bd{width:100%;font-size:14px;overflow:hidden}
+.recommend .bd ul{margin:0 -51px;position:relative;overflow:hidden;zoom:1}
+.recommend .bd li{float:left;display:inline;width:230px;height:28px;line-height:28px;padding:0 50px;overflow:hidden;border-right:1px solid #ebebeb}
+.recommend .bd a{display:block;width:100%;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
+.list{padding:12px 24px 16px 24px;margin-bottom:22px;background:#fff;box-shadow:0 0 3px #d0cfcf;border:1px #e1e1e1 solid}
+.list .hd{line-height:36px;font-size:18px}
+.list .bd{overflow:hidden;zoom:1}
+.list .bd ul{margin-top:-1px;padding:12px 0;overflow:hidden;zoom:1;border-top:1px #f4f4f4 dashed}
+.list .bd li{float: left;width: 50%;height:32px;line-height:32px;font-size:16px;overflow:hidden;position:relative}
+.list .bd li span{font-size: 12px;color: #999;margin:0 0 0 10px;}
+.list .ft{padding:20px 0}
+
+@media screen and (max-width:1000px){
+.container .main,.header .hd-box,footer .ft-box{width:auto}
+.area .box {float: none;width: auto;display: block;}
+.area .jdlist li {width: 50%;}
+.tabs .ld ul:before{display:none}
+.tabs .ld ul:after{display:none}
+.tabs .ld li{float:none;width:auto;display:block}
+.recommend .bd ul:before{display:none}
+.recommend .bd ul:after{display:none}
+.recommend .bd li{float:none;width:auto;display:block}
+.breadcrumb .share {display: none;}
+}
