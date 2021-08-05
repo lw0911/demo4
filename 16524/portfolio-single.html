@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8" />
+	<title>Rubigo</title>
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<!-- CSS
+	  ================================================== -->
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/skeleton.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	
+	<!--[if lt IE 9]>
+	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<script src="js/jquery-1.7.1.min.js"></script>
+	
+	<!-- Tooltip 
+	  ================================================== -->
+	<link href="css/tipTip.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery.tipTip.minified.js"></script>
+	
+	
+	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+	
+	<!-- Script
+    ================================================== -->
+    <script type="text/javascript" src="js/scripts.js"></script>
+	
+	<!-- FlexSlider
+    ================================================== -->
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+    <script src="js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript">
+		$(window).load(function() {
+			$('.flexslider').flexslider({
+				prevText: "",
+			    nextText: "",
+			    controlNav: false,
+			    start : function (){
+				    adjustPole();
+			    }
+			});
+		});
+	</script>
+	
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<div class="container">
+    
+    	<div class="sixteen columns clearfix">
+		    <div class="header-bg clearfix">
+		        <div class="three columns offset-by-one">
+		            <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Rubigo" /></a></div>
+		        </div>
+		        <div class="four offset-by-seven socialRight">
+		            <div class="socialIconSprites">
+		                <a href="#" class="facebook tooltip" title="Facebook"></a>
+		                <a href="#" class="twitter tooltip" title="Twitter"></a>
+		                <a href="#" class="youtube tooltip" title="YouTube"></a>
+		                <a href="#" class="linkedin tooltip" title="LinkedIn"></a>
+		                <a href="#" class="rss tooltip" title="RSS"></a>
+		                <div class="clear"></div>
+		            </div>
+		        </div>
+		    </div><!-- header-bg -->
+		</div>
+		<div class="clear"></div>
+        
+        <div class="two columns offset-by-one">
+		    <div class="ribbonBg">
+		        <ul>
+		            <li><a href="index.html" class="home" title="Home"></a></li>
+		            <li><a href="about.html" class="about" title="About us"></a></li>
+		            <li><a href="portfolio.html" class="portfolio active" title="Portfolio"></a></li>
+		            <li><a href="blog.html" class="blog" title="Blog"></a></li>
+		            <li><a href="contact.html" class="contact" title="Contact us"></a></li>
+		        </ul>
+		    </div>
+		</div>
+        
+        <div class="sixteen columns">
+        	<div class="contant-area">
+            	<div class="thirteen columns offset-left">
+             		<h1>Portfolio Single</h1>
+                    <div class="blank"></div>
+                    <div class="wrappadd clearfix"> 
+                       <h2 class="alignLeft">Aliquam luctus</h2>
+                        <div class="carousel-arrow alignRight">                        	
+                            <a href="portfolio-single.html" class="carousel_pre"></a>
+                            <a href="portfolio-single.html" class="carousel_next"></a>
+                            <div class="clear"></div>
+                        </div>
+                     </div>
+                    <div class="clear"></div>
+                    <div class="border"></div>  
+                </div>
+                <div class="clear"></div>
+                
+                <div class="single-post-wrap offset-left">
+                	<div class="eight columns">
+                    	<div class="sliderInner">
+                        	
+                            <div class="flexslider">
+			                    <ul class="slides">
+			                        <li>
+			                            <img src="images/portfolio-image-1.jpg" alt="slider 1" />
+			                        </li>
+			                        <li>
+			                            <img src="images/portfolio-image-2.jpg" alt="slider 2" />
+			                        </li>
+			                        <li>
+				                        <img src="images/portfolio-image-3.jpg" alt="slider 3" />
+			                        </li>
+			                        
+			                    </ul>
+			                </div>
+                            
+                        </div>
+                    </div>
+                    <div class="five columns">
+                    	<div class="rightsidebar">
+                        	<h2>About Project</h2>
+                            <div class="border"></div> 
+                            <p>Duis cursus, ipsum a fringilla commodo, neque massa tempus augue, vel fringilla nisl sem ac arcu. Suspendisse at velit et nulla </p>
+                        	
+                            <h2>Description</h2>
+                            <div class="border"></div> 
+                            <ul class="orderList">
+                            	<li>Sed laoreet faucibus mi</li>
+                                <li>Aliquam at erat purus, at </li>
+                                <li>Vivamus ligula massa</li>
+                                <li>vulputate ultricies nibh</li>
+                            </ul>
+                            
+                            <a href="#" class="btn_light">Launch Project</a>
+                        </div>
+                    
+                    </div>
+                    <div class="clear"></div>
+               </div>
+               <div class="blank"></div>
+               
+               <div class="thirteen columns offset-left">
+               		<div class="wrappadd">
+                        <h2>Reated Projects</h2>
+                        <a href="portfolio.html" class="view-all">View All</a>
+                        <div class="clear"></div>
+                        <div class="border"></div>
+                    </div>
+                    <div class="portfolio_Wrapper">
+                        <ul>
+                        	<li class="remove-left port-hover">
+                            	<a href="portfolio-single.html"><img src="images/portfolio-1.jpg" alt="" /></a>
+                            	<h4><a href="portfolio-single.html">Morbi sit amet nulla risus</a></h4>
+                                <p>Nam sit amet orci vitae felis bibendum </p>
+                                <div class="display-link">
+	                                <a href="portfolio-single.html"><img src="images/link.png" alt="Link Image" /></a>
+                                </div>
+                            </li>
+                            <li class="port-hover">
+                            	<a href="portfolio-single.html"><img src="images/portfolio-2.jpg" alt="" /></a>
+                            	<h4><a href="portfolio-single.html">Cras eu tortor ut est eui</a></h4>
+                                <p>Nam sit amet orci vitae felis bibendum </p>
+                                <div class="display-link">
+	                                <a href="portfolio-single.html"><img src="images/link.png" alt="Link Image" /></a>
+                                </div>
+                            </li>
+                            <li class="remove-right port-hover">
+                            	<a href="portfolio-single.html"><img src="images/portfolio-3.jpg" alt="" /></a>
+                            	<h4><a href="portfolio-single.html">Praesent iaculis mollis</a></h4>
+                                <p>Nam sit amet orci vitae felis bibendum </p>
+                                <div class="display-link">
+	                                <a href="portfolio-single.html"><img src="images/link.png" alt="Link Image" /></a>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+               </div>
+               <div class="clear"></div>
+                
+                
+                <div class="blank"></div>
+             </div><!--contant-area-->
+        </div>
+    </div><!-- container -->
+    
+    
+    
+    <div class="footerWrap">
+		(&copy;)Copyright  2020  |  <a href="#">Terms &amp; Conditions</a>   |  Collect from  
+	</div>
+    
+
+<!-- End Document
+================================================== -->
+
+</body>
+</html>

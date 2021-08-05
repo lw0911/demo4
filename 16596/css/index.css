@@ -1,0 +1,264 @@
+/*中间分类*/
+.grid {
+	height: 480px;
+}
+.grid-l {
+    margin-top: 10px;
+    width: 190px;
+    height: 470px;
+    background-color: #fefefe;
+    color: #636363;
+    position: relative;
+}
+.add {
+	width: 250px;
+	height: 470px;
+	position: absolute;
+	top: 0px;
+	left: -250px;
+}
+.add-r {
+	width: 0px;
+	height: 470px;
+    position: absolute;
+	top: 0px;
+	left: 250px;
+	z-index: 999;
+	transition: all 0.5s;
+}
+.add:hover .add-r {
+	width: 790px;
+}
+.grid-c {
+	margin: 10px 10px 0 10px;
+    width: 790px;
+	height: 470px;
+}
+.grid-r {
+	width: 190px;
+	height: 100%;
+	background-color: #fefefe;	
+}
+.grid-l ul {
+	margin-top: 5px;
+
+}
+.grid-l  a {
+	padding: 0px 2px;
+	font-size: 14px;
+	color: #636363;
+}
+.grid-l ul li a:hover {
+	color: #c81623;
+	
+}
+.grid-l ul li:hover {
+	background-color: #d9d9d9;
+}
+.grid-l li {
+	height: 26px;
+	line-height: 26px;
+	padding-left: 18px;	
+}
+.grid-pic-l {
+	float: left;
+	width: 590px;
+	position: relative;
+}
+.grid-pic-r {
+	float: right;
+}
+.grid-pic-r div {
+	margin-bottom: 6px;
+}
+/*banner  按钮*/
+.banner-butt {
+    line-height: 40px;
+    font-family: 'icomoon';
+    width: 25px;
+    height: 40px;
+    position: absolute;
+    top: 215px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.banner-butt a {
+	font-size: 35px;
+    color: #eaeaea;
+}
+.banner-butt:hover {
+    background-color: rgba(0,0,0,.5);
+}
+.banner-butt-r {
+    line-height: 40px;	
+	font-family: 'icomoon';
+	width: 25px;
+	height: 40px;
+    background-color: #aeb5ad;
+    position: absolute;
+    top:215px;
+    right: 0px; 
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.banner-butt-r a {
+    font-size: 35px;
+    color: #eaeaea;
+    margin-left: -11px;
+}
+.banner-butt-r:hover {
+    background-color: rgba(0,0,0,.5);
+}
+/*小圆点*/
+.circle {
+	width: 150px;
+	height: 20px;
+    position: absolute;
+    left: 10%;
+    bottom: -388px;
+}
+.circle li {
+    margin: 6px 7px 0 0;
+    float: left;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1.5px solid #eaeaea;
+}
+.circle li:hover {
+	background-color: #fff;
+}
+/*<!-- 登陆模块 -->*/
+.login {
+	height: 151px;
+	position: relative;
+	text-align: center;
+	font-size: 14px;
+	color: #888;
+}
+.aaa {
+	height: 68px;
+
+}
+.login-user {
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	border: 7px solid #e3e1df;
+	overflow: hidden;
+	position: absolute;
+	top: -16px;
+	left: 50%;
+	transform: translateX(-50%);
+	box-shadow: 3px 6px 25px #c3c3c3;
+}
+.login-user img {
+	margin-left: -2px;
+	width: 100%;
+	height: 100%;
+}
+.new {
+	padding: 9px 9px 0;
+	height: 129px;
+	
+}
+.expand {
+	padding-top: 18px;
+	height: 185px;
+	box-sizing: border-box;
+	position: relative;
+}
+.login p {
+	margin: 0px;
+	line-height: 10px;
+}
+.login p a {
+	line-height: 25px;
+	color: #888;
+}
+ .login p a:hover {
+	color: #c81623;
+}
+.login-vip {
+	
+}
+.login-vip a {
+    border-radius: 15px;
+    line-height: 25px;
+    width: 70px;
+    color: #c81623;
+    display: inline-block;
+    background-color: #fff;
+    margin-top: 7px;
+    box-shadow: 6px 10px 25px #c3c3c3;
+}
+.login-vip a:last-child {
+	background-color: #363634;
+	color: #e5d790;
+}
+.login-vip a:hover {
+	background-color: #c81623;
+	color: #fff;
+	transition: all 0.3s;
+}
+/*新闻模块*/
+.new-shop {
+	margin-top: -6px;
+	position: relative;
+}
+.new-shopcu {
+    width: 37px;
+    border-right: 1px solid #ccc;
+    display: inline-block;
+}
+.new-more {
+	margin-top: 2px;
+	float: right;
+}
+.new-border {
+	width: 28px;
+	height: 2px;
+	background-color: red;
+	position: absolute;
+    top: 21px;
+    left: 2px;
+}
+.new-p {
+	margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 12px;
+}
+.new-p p a {
+	font-size: 12px;
+}
+.new-p p a:hover {
+	color: #c81623;
+}
+.expand li {
+    padding: 0px;
+    width: 46.5px;
+    height: 49px;
+    float: left;
+}
+.expand li a {
+	font-size: 12px;
+	color: #bea68d;
+	display: block;
+	width: 46.5px;
+    height: 49px;
+    text-align: center;
+}
+.expand a img {
+	display: block;
+    margin-left: 8px;
+}
+.expand a:hover {
+	background-color: #fff;
+}
+.expand-jj {
+	position: absolute;
+    top: 13px;
+    left: 76px;
+}
+
+
+

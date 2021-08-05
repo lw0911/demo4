@@ -1,0 +1,42 @@
+.coright h2{width:100%;height:38px;line-height:38px;background:#f4f4f5;border:1px solid #ddd;color:#676767;font-weight:normal;font-size:14px;}
+.coright h2 span{display:block;float:left;}
+.coright .h2bottom .kjrq a,.coright .h2bottom .cz a{display:block;float:left;font-size:12px;color:#787879;width:28%;border:1px solid #ccc;background:#fafafa;height:28px;line-height:28px;text-align:center;margin:14px 3% 0px 1%;}
+.coright .h2bottom .kjrq a:hover,.coright .h2bottom .cz a:hover{background:#f4f4f4;}
+.kjrq,.kssj,.jssj,.cx,.surch,.coright .cz{margin-left:12px;}
+.kjrq,.kssj,.jssj,.cx,.surch,.surch .wb,.surch .tj,.coright .cz{float:left;}
+.coright .kjrq{width:20%;}
+.coright .kssj{width:17%;}
+.coright .jssj{width:17%;}
+.coright .cx{width:10%;}
+.coright .surch{width:16%;}
+.coright .cz{width:12%;}
+.coright .h2bottom .cz a{width:44%;margin:14px 2% 0px 2%;}
+.coright .surch .wb{height:28px;width:76%;margin-top:14px;border:1px solid #ccc;}
+.coright .surch .tj{height:30px;width:22%;text-align:center;margin-top:14px;background:#ccc;color:#000;border:none;font-family:"微软雅黑";}
+.coright .cx select{width:100%;height:28px;line-height:28px;margin-top:14px;font-size:12px;font-family:"微软雅黑";border:1px solid #ccc;}
+
+.coright .nav1{width:100%;font-size:13px;height:38px;background:#1560bd;margin:14px auto; position:relative;}
+.coright .nav1 ul{width:95%;float:left;height:38px;overflow:hidden;}
+.coright .nav1 ul li{float:left;line-height:38px;padding:0px 16px;}
+.coright .nav1 ul li a{display:block;color:#fff;}
+.coright .nav1 ul .li1{background:#0b3161;}
+.coright .nav1 .aa{float:right;}
+.coright .nav1 .aa .xl{position:absolute;width:12%;background:#11509e;left:86%;font-size:12px;top:38px;line-height:28px;padding:1% 1% 2% 1%;}
+.coright .nav1 .aa .xl a{color:#fff;background:url(../../images/blue/indexicon2.png) no-repeat left;padding-left:15px;}
+ /*---coright news1---*/
+.coright .news1{width:100%;margin:18px auto;border-bottom:1px dotted #989898;padding-bottom:14px;font-size:12px;}
+.coright .news1 h3{font-size:12px;color:#515151;font-weight:normal;padding:0px 10px;height:38px;line-height:38px;background:#f3f3f3;}
+.coright .news1 h3 .left{width:85%;}
+.coright .news1 h3 span{display:block;float:left;}
+.coright .news1 h3 img{display:block;margin:12px 0px 0px 6px;}
+.coright .news1 h3 .right{display:block;float:right;height:18px;line-height:18px;width:41px;margin-right:10px; background:url(../../images/blue/xxlist_03_03.png) no-repeat;text-align:center;color:#fff;margin-top:11px;}
+.coright .news1 .h3bottom{width:98%;margin:6px auto;line-height:28px;}
+.coright .news1 .h3bottom span{margin-right:8px;}
+.coright .news1 .h3bottom1{width:98%;color:#afafaf;margin:0px auto;line-height:24px;}
+.coright .news1 .butt{width:98%;margin:0px auto;}
+.coright .news1 .butt a{display:block;float:right;margin:0px 4px;}
+.coright .fy{width:98%;margin:50px auto;}
+.coright .fy li{float:left;height:28px;line-height:28px;padding:0px 1.5%;border:1px solid #ccc;margin-right:7px;font-size:12px;color:#787879;}
+.coright .fy li a{color:#787879;}
+.coright .fy li:hover{background:#1560bd;border:1px solid #fff;}
+.coright .fy li:hover a{color:#fff;}

@@ -1,0 +1,32 @@
+/*
+Copyright (c) 2003-2014, CKSource - Frederico Knabben. All Rights Reserved <a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a>.
+For licensing, see LICENSE.md or http://ckeditor.com/license
+*/
+
+/* "Source" button label */
+.cke_button__source_label,
+.cke_button__sourcedialog_label {
+    display: inline;
+}
+
+/* "Font Size" combo width */
+.cke_combo__fontsize .cke_combo_text {
+    width: 30px;
+}
+
+/* "Font Size" panel size */
+.cke_combopanel__fontsize {
+    width: 120px;
+}
+
+/* Editable regions */
+.cke_source {
+    font-family: 'Courier New' , Monospace;
+    font-size: small;
+    background-color: #fff;
+    white-space: pre;
+}
+
+.cke_wysiwyg_frame, .cke_wysiwyg_div {
+    background-color: #fff;
+}

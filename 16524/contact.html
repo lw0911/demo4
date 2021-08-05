@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8" />
+	<title>Rubigo</title>
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<!-- CSS
+	  ================================================== -->
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/skeleton.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	
+	<!--[if lt IE 9]>
+	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<script src="js/jquery-1.7.1.min.js"></script>
+	
+	<!-- Tooltip 
+	  ================================================== -->
+	<link href="css/tipTip.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery.tipTip.minified.js"></script>
+	
+	
+	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+	
+    <!--[if IE]>
+    <style type="text/css">
+    input {
+    filter:chroma(color=#000000);
+    border:none;
+    }
+    </style>
+    <![endif]-->
+    
+    <!-- Script
+    ================================================== -->
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+    <!-- Map Api
+    ================================================== -->
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script>
+      function initialize() {
+        var myLatlng = new google.maps.LatLng(22.714364,75.874068);
+        var mapOptions = {
+          zoom: 16,
+          center: myLatlng,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title: 'Hello World!'
+        });
+      }
+    google.maps.event.addDomListener(window , 'load' , function() { 
+    	initialize();
+    });
+    google.maps.event.addDomListener(window , "resize" , function() { 
+    	initialize();
+    })
+    </script>
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- Delete everything in this .container and get started on your own site! -->
+
+    <div class="container">
+    
+    	<div class="sixteen columns clearfix">
+		    <div class="header-bg clearfix">
+		        <div class="three columns offset-by-one">
+		            <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Rubigo" /></a></div>
+		        </div>
+		        <div class="four offset-by-seven socialRight">
+		            <div class="socialIconSprites">
+		                <a href="#" class="facebook tooltip" title="Facebook"></a>
+		                <a href="#" class="twitter tooltip" title="Twitter"></a>
+		                <a href="#" class="youtube tooltip" title="YouTube"></a>
+		                <a href="#" class="linkedin tooltip" title="LinkedIn"></a>
+		                <a href="#" class="rss tooltip" title="RSS"></a>
+		                <div class="clear"></div>
+		            </div>
+		        </div>
+		    </div><!-- header-bg -->
+		</div>
+		<div class="clear"></div>
+        
+        <div class="two columns offset-by-one">
+		    <div class="ribbonBg">
+		        <ul>
+		            <li><a href="index.html" class="home" title="Home"></a></li>
+		            <li><a href="about.html" class="about" title="About us"></a></li>
+		            <li><a href="portfolio.html" class="portfolio" title="Portfolio"></a></li>
+		            <li><a href="blog.html" class="blog" title="Blog"></a></li>
+		            <li><a href="contact.html" class="contact active" title="Contact us"></a></li>
+		        </ul>
+		    </div>
+		</div>
+        
+        <div class="sixteen columns">
+        	<div class="contant-area">
+            	<div class="thirteen columns offset-left">
+             		<h1>Contact with us</h1>
+                    </div>
+                <div class="clear"></div>
+                
+                <div class="contact_wrap offset-left">
+                	<div class="eight columns">
+                    	<div class="map" id="map_canvas">
+                    		
+                        </div>
+                    </div>
+                    <div class="five columns">
+                    	<div class="contacts">
+                        	<p>504 President Tower <br />
+                            Madhumilan Square<br />
+                            Indore, India - 452001 </p>
+                            
+                            <p><strong>E-mail :</strong> <a href="mailto:contact@luutaa.com">contact@luutaa.com</a> <br />
+                            <strong>Office :</strong> +91-731-4237606</p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                
+                <div class="thirteen columns offset-left">
+                	<div class="formwrapper">
+                	
+                		<div class="alert alert-success hide"> Your mail was successfully sent. We will contact you shortly </div>
+                		<div class="alert alert-error hide"> Something went wrong. Your mail was not delivered. Please try again later. </div>
+
+                    	<form method="post" id="contactForm" />
+                    	
+                        	<input type="text" name="name" id="name" value="Name" onFocus="if(this.value=='Name'){this.value=''}" onBlur="if(this.value==''){this.value='Name'}" />
+                            <div class="name_error error_show"><img src="images/error.gif" alt="" /></div>
+                            <div class="clear"></div>
+                            
+                            <input type="text" name="email" id="email" value="Email" onFocus="if(this.value=='Email'){this.value=''}" onBlur="if(this.value==''){this.value='Email'}" />
+                            <div class="email_error error_show"><img src="images/error.gif" alt="" /></div>
+                            <div class="clear"></div>
+                            
+                            <textarea name="message" onFocus="if(this.value=='Message'){this.value=''}" id="message" onBlur="if(this.value==''){this.value='Message'}">Message</textarea>
+                            <div class="clear"></div>
+                            
+                            <input type="submit" value="Send" id="contactSubmit" />
+                        </form>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                
+            </div><!--contant-area-->
+            
+        </div>
+    </div><!-- container -->
+    
+    
+    
+    <div class="footerWrap">
+		(&copy;)Copyright  2020  |  <a href="#">Terms &amp; Conditions</a>   |  Collect from  
+	</div>
+    
+
+<!-- End Document
+================================================== -->
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+/* CSS Document */
+*{margin:0px;padding:0px;}
+img{border:none;}
+ul li{list-style:none;}
+a{ text-decoration:none;blr:expression(this.onFocus=this.blur());outline:none;}
+input[type=button]:focus,input[type=submit]:focus{outline:none;}
+input:focus,textarea:focus,select{outline:none;}
+textarea{overflow:hidden;resize:none;}
+body{font-family:"微软雅黑"; background:#fcfcfc;}
+.clear{clear:both;}
+.feb900{color:#feb900;}
+.red{color:#00ba8b; text-decoration:underline;}
+.hs{color:#797979;}
+.ls{color:#00ba8b;}
+/*---header---*/
+.dw{width:100%;position:fixed;top:0px;right:0px;_position:absolute; _top: expression(eval(document.documentElement.scrollTop));z-index:12000;}
+.header{width:auto;height:73px;background:#00ba8b;padding:0px 3%;overflow:hidden;}
+.header .logo{font-size:24px;color:#fff;float:left;line-height:73px;}
+.header .nav{float:right;font-size:14px;}
+.header ul{width:100%;}
+.header ul li{float:left;line-height:73px;padding:0px 15px;}
+.header ul li a{display:block;color:#fff;}
+.header ul .li1{background:#008866;}
+/*---headerb---*/
+.headerb{background:#fff;height:40px;line-height:40px;border-bottom:1px solid #ebebeb;font-size:12px;padding:0px 60px;}
+.headerb .hleft{float:left;color:#6b6b6b;}
+.headerb .hleft .margin{margin-right:10px;}
+.headerb .hbutton{float:right;}
+.headerb .hbutton a{display:block;float:left;padding-left:27px;color:#969696;margin-right:14px;}
+.headerb .hbutton .fk{background:url(../../images/blue/headerb_03.png) no-repeat left;}
+.headerb .hbutton .xgmm{background:url(../../images/blue/headerb_05.png) no-repeat left;}
+.headerb .hbutton .zx{background:url(../../images/blue/headerb_07.png) no-repeat left;}
+.headerb .hbutton .about{background:url(../../images/blue/headerb_09.png) no-repeat left;}
+/*---------footer---------*/
+.footer{text-align:center;background:#00ba8b;color:#fff;font-size:14px;margin-top:40px;height:75px;line-height:70px;} 
+
+/* 所有下级的菜单 */
+.lightTreeview ul,.lightTreeview ol {margin: 0;	padding: 0;	list-style: none;display: block;}
+/* 所有的li */
+.lightTreeview li {	font-size: 12px;line-height:14px;margin:0;}
+
+/* 图标支持  * Download by http://www.codefans.net*/
+.treeview-file {padding-left:16px;	background:url(../../images/blue/qst_11.png) no-repeat;}
+.treeview-folder {padding-left:16px;background:url(../../images/blue/qst_0311.png) no-repeat;}
+.treeview-folder-close {padding-left:16px;background:url(../../images/blue/qst_031.png) no-repeat;}
+
+/*-----左侧-----*/
+.menu_list{width:200px;float:left;border:1px solid #e3e3e3;margin-left:35px;}
+.menu_head{line-height:38px;padding-left:38px;font-size:14px;color:#525252;cursor:pointer;position:relative;background:#f1f1f1 url(../../images/blue/qst_031.png) no-repeat 20px;border-bottom:1px solid #e3e3e3;}
+.menu_head1{line-height:38px;padding-left:43px;font-size:14px;color:#525252;cursor:pointer;position:relative;background:url(../../images/blue/xxlist1_03.png) no-repeat 25px;color:#7e7a7a;border-bottom:1px solid #e3e3e3;}
+.menu_list .current{background:#f1f1f1 url(../../images/blue/qst_0311.png) no-repeat 20px;color:#7e7a7a;}
+.menu_list .current1{background:url(../../images/blue/qst_11.png) no-repeat 25px;font-size:14px;}
+.menu_body{height:auto;overflow:hidden;line-height:38px;}
+.menu_body ul li a{display:block;height:38px;line-height:38px;padding-left:38px;color:#777777;background:url(../../images/blue/qst_11.png) no-repeat 20px;font-size:12px;color:#7e7a7a;}
+.menu_body ul li{margin-left:18px;}
+.menu_body a:hover{text-decoration:none;}
+
+.coright{width:96%;float:left;margin-left:1%;margin-right:35px;padding-bottom:35px;}
+
+/*---弹出框---*/
+/*tip*/
+.tip,.tip1{width:485px; height:280px; position:fixed;top:13%; left:26%;background:#fcfdfd;box-shadow:1px 6px 8px 1px #9b9b9b;border-radius:1px;behavior:url(../js/pie.htc); display:none; z-index:111111;border:4px solid #00ba8b;}
+.tiptop{height:40px; line-height:40px; background:#00ba8b; cursor:pointer;}
+.tiptop span{font-size:14px; font-weight:bold; color:#fff;float:left; text-indent:20px;}
+.tiptop a{display:block; background:url(../../images/blue/close.png) no-repeat; width:22px; height:22px;float:right;margin-right:7px; margin-top:10px; cursor:pointer;}
+.tiptop a:hover{background:url(../../images/blue/close1.png) no-repeat;}
+.tipinfo{padding-top:30px;margin-left:65px; height:95px;}
+.tipinfo span{width:95px; height:95px;float:left;}
+.tipright{float:left;padding-top:10px; padding-left:10px;}
+.tipright p{font-size:14px; font-weight:bold; line-height:35px;}
+.tipright cite{color:#858686;}
+.tipbtn{margin-top:10px; margin-left:115px;}
+.sure,.cancel{width:96px; height:35px; line-height:35px; color:#fff; background:#00ba8b; font-size:14px; font-weight:bold;border:none;cursor:pointer;margin:0px 15px;}
+
+#g{border:none; background:url(../../images/blue/xxlist2an_03.png) no-repeat; cursor:pointer;}

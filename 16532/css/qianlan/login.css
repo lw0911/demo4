@@ -1,0 +1,33 @@
+/* CSS Document */
+body{background:#fff;}
+.lheader{height:50px;line-height:50px;padding:0px 6%;}
+.lheader .logo{padding-top:12px;}
+.slide-main{height:540px;position:relative;}
+.prev,.next{display:block;width:44px;height:44px;position:absolute;z-index:222;top:267px;overflow:hidden;cursor:pointer;opacity:0.7;-moz-opacity:0.7;filter:alpha(opacity=70);_border:1px solid none;}
+.prev{left:70px;}
+.next{right:70px;}
+.prev:hover,.next:hover,.nav-main a:hover,.nav-main a.cur{opacity:1;-moz-opacity:1;filter:alpha(opacity=100);}
+.item{display:block;width:100%;height:5px;position:absolute;z-index:124;top:500px;left:0;text-align:center;}
+.item a{display:inline-block;width:24px;height:5px;margin-right:11px;background:#333;opacity:0.6;-moz-opacity:0.6;filter:alpha(opacity=60);overflow:hidden;}
+.item a.cur{background:#fff;}
+.slide-box,.slide{display:block;width:100%;height:540px;overflow:hidden;text-align:center;}
+.slide-box{position:relative;}
+.slide{display:none;width:100%;height:540px;margin:0px auto;z-index:8;}
+#bgstylea{background:#5ebefa;}
+#bgstylec{background:#5ebefa;}
+.slide a{display:block;width:100%;height:540px;margin:0px auto;}
+.obj-a,.obj-e{z-index:9;text-align:center;}
+.obj-a{text-align:center;}
+.obj-a{display:block;}
+.obj-e{z-index:12;}
+
+.loginbd{background:#e7f5fe;width:346px;position:absolute;top:165px;left:58%;height:380px;}
+.loginbd h2{width:88%;padding:0px 6%;font-size:16px;color:#919191;font-weight:normal;border-bottom:1px solid #dfdfdf;height:36px;line-height:36px;margin-top:8px;}
+.loginbd form {padding:12px 25px;}
+.loginbd form span{font-size:14px;color:#666666;}
+.loginbd form input{border:1px solid #d6d6d6;height:34px;line-height:34px;padding:0px 4px;color:#9c9c9c;font-family:"微软雅黑";}
+.name,.mm,.yzm{margin-top:25px;}
+.name input,.mm input{width:230px;margin-left:5px;}
+.yzm input{margin-left:5px;}
+.button{width:98%;margin:30px auto;height:40px;line-height:40px;background:#feb900;display:block;text-align:center;color:#fff;}
+.lfooter{text-align:center;padding:15px 0px 30px 0px;font-size:14px;color:#474747;}

@@ -1,0 +1,99 @@
+@media screen and (max-width:1230px){
+.header .head,.i_main,.foot,.i_main .bg_a,.scd{width:960px;}
+.head .nav_m{ width:700px;}
+.head .nav li a{ padding:0 17px;}
+.i_main .i_m{ width:100%;}
+.i_ma .i_mam,.i_ma .i_mam .tu,.i_ma .i_mam .tu img,.i_ma .i_mam .wz{ width:424px; height:214px;}
+.i_ma .i_mam .wz{ padding-top:60px; height:154px;}
+.i_mb .i_mbm{ width:444px;}
+.i_mbm .b_m{ width:414px;}
+.b_ml dd{ width:241px;}
+.b_ml dd .des span{ display:none;}
+.b_mr img{ width:414px; height:96px;}
+.i_main .bg_a{ left:0;}
+.scd .scd_r{ width:750px;}
+.scd_r .scd_m{ width:690px;}
+.news dl dd{ width:440px;}
+.response .resp dl dd{ width:535px;}
+.contact dl dt{ margin-right:0;}
+.contact dl dd{ margin-left:0; width:470px; margin-top:20px; font-size:14px;}
+
+}
+@media screen and (max-width:980px){
+.header .head,.i_main,.foot,.i_main .bg_a,.scd{width:740px; margin:0px auto;}
+.header .head{ position:relative;}
+.head .logo img,.head .logo{ width:211px; height:40px;}
+.head .logo{ position:absolute; left:0; top:5px;}
+.head .nav_m{ width:100%; height:89px; line-height:89px;}
+.nav_m .n_icon{ display:block;}
+.head .nav{ display:none; width:100%; background:#DEDEDE; position:absolute; left:0; top:89px; z-index:99999; text-align:left;}
+.head .nav li a{ padding:0 22px;}
+.i_ma .i_mam{ border-width:5px; margin-left:15px;}
+.i_ma .i_mam, .i_ma .i_mam .tu, .i_ma .i_mam .tu img, .i_ma .i_mam .wz{ width:338px; height:170px;}
+.i_ma .i_mal .wz img{ width:138px; height:55px;}
+.i_ma .i_mar .wz img{ width:148px; height:65px;}
+.i_ma .i_mam .wz{ height:80px; padding-top:90px;}
+.i_mb .i_mbm{ margin-left:15px; width:348px;}
+.i_mbm .b_m{ width:328px;}
+.b_ml dl dt, .b_ml dl dt img{ width:135px; height:87px;}
+.b_ml dd{ width:185px;}
+.b_ml dd .des{ line-height:175%;}
+.b_mr img{ width:328px; height:76px;}
+.scd .scd_r{ width:530px;}
+.scd_r .scd_m{ width:490px;}
+.news dl dt, .news dl dt img{ width:200px; height:115px;}
+.news dl dd{ width:280px;}
+.news dl dd .more{ display:none;}
+.response .resp dl dd{ width:340px;}
+.contact dl dt,.contact dl dt img{ width:162px; height:132px;}
+.contact dl dd{ width:320px; line-height:175%;}
+.contact dl dd p{ margin-bottom:8px;}
+}
+@media screen and (max-width:770px) {
+.header .head,.i_main,.foot,.i_main .bg_a,.scd{width:480px; margin:0px auto;}
+.head .nav{ text-align:center;}
+.head .nav li{ height:30px; line-height:30px;}
+.head .nav li a{ height:30px; line-height:30px; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; margin:0 5px;}
+.i_ma .i_mam{ border-width:10px;}
+.i_ma .i_mam, .i_ma .i_mam .tu, .i_ma .i_mam .tu img, .i_ma .i_mam .wz{ width:431px; height:216px;}
+.i_ma .i_mam .wz{ height:156px;}
+.i_mb .i_mbm{ width:451px;}
+.i_mbm .b_m{ width:431px;}
+.b_ml dd{ width:285px;}
+.i_mbm2{ margin-top:20px;}
+.i_mb .i_mbm{ height:auto;}
+.scd .scd_l{ width:100%; background-position:right 80px; min-height:auto;}
+.scd .scd_r{ width:95%; margin-right:2.5%;}
+.scd_r .pst,.scd_r .scd_m{ width:100%;}
+.news dl dd{ width:250px;}
+.response .resp dl dd{ width:305px;}
+.contact dl dd{ width:290px;}
+}
+@media screen and (max-width:510px) {
+.header .head,.i_main,.foot,.i_main .bg_a,.scd{width:320px; margin:0px auto;}
+.head .nav li{ width:100%;}
+.head .nav li a{ width:90%; padding:0 5%; height:35px; line-height:35px; text-align:left; margin:0; border-radius:0;}
+.i_ma .i_mam{ border-width:5px; margin-left:10px;}
+.i_ma .i_mam, .i_ma .i_mam .tu, .i_ma .i_mam .tu img, .i_ma .i_mam .wz{ width:291px; height:145px;}
+.i_ma .i_mam .wz{ height:100px; padding-top:45px;}
+.i_mb .i_mbm{ margin-left:10px; width:301px;}
+.i_mbm .b_m{ width:291px;}
+.b_ml dd{ width:150px;}
+.b_mr img{ width:291px; height:67px;}
+.foot{ font-size:12px;}
+.news dl dd{ width:100%;}
+.news dl dd .more{ display:block;}
+.news dl dt, .news dl dt img{ width:304px; height:174px;}
+.response .resp dl dt, .response .resp dl dt img{ width:117px; height:92px;}
+.response .resp dl dd{ width:178px;}
+.response .resp dl dd .more{ display:none;}
+.response .resp dl dd .des{ height:65px; line-height:165%; text-indent:0;}
+.scd_r .pst{ height:auto; line-height:165%; padding:5px 0;}
+.scd_r .pst a{ display:inline-block; *display:inline; zoom:1; vertical-align:top;}
+.relation li em{ font-size:12px;}
+.pages{ height:auto;}
+.pages a.bg{ width:60px; font-size:12px;}
+.contact dl dt{ width:100%; text-align:center;}
+.contact dl dt img{ margin:0px auto; float:none;}
+.contact dl dd{ width:100%;}
+}

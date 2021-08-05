@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="stylesheet" type="text/css" href="css/blue/common.css"/>
+<link rel="stylesheet" type="text/css" href="css/blue/form.css"/>
+<link rel="stylesheet" type="text/css" href="css/blue/rq.css"/>
+<script type="text/javascript" src="js/blue/rq.js"></script>
+<script type="text/javascript" src="js/blue/jquery2.js"></script>
+<script type="text/javascript" src="js/blue/jquery.min.js"></script>
+<script type="text/javascript" src="js/blue/layer.js"></script>
+<title>表单页</title>
+</head>
+<body>
+<!---cont start--->  
+   <div class="coright"> 
+      <h2>
+         <span class="left">关键词设置</span>
+         <p>
+            <span>当前位置:</span>
+            <a href="###">系统管理>></a>
+            <a href="###">关键词设置</a>
+         </p>
+      </h2>
+      <div class="ributton">
+         <a href="###" class="tj"><span>添加</span></a>
+         <a href="###" class="xg"><span>修改</span></a>
+         <a href="###" class="sc"><span>删除</span></a>
+         <div class="clear"></div>
+      </div>
+      <form method="post" action="###"> 
+          <div class="xh">
+             <span>序 　　号:</span><input type="text" />
+          </div>
+          <div class="name">
+             <span>名 　　称:</span><input type="text" />
+          </div>
+          <div class="flsx">
+             <span>分类属性:</span>
+             <select name="">
+                <option>政府信息</option>
+                <option>网络信息</option>
+                <option>政府信息1</option>
+                <option>政府信息2</option>
+                <option>政府信息3</option>
+             </select>
+          </div>               
+          <div class="kssj">
+             <span>开始时间:</span>
+             <input class="laydate-icon" onclick="laydate()">
+          </div>
+          <div class="ppfs">
+             <span>匹配方式:</span>
+             <input name="aa" type="radio" value="" /><span>按照标题</span>
+             <input name="aa" type="radio" value="" /><span>按照内容</span>
+             <input name="aa" type="radio" value="" /><span>标题或内容</span>
+             <input name="aa" type="radio" value="" /><span>发布人</span>
+          </div>
+          <div class="ppgjc">
+             <span>匹配关键词:</span>
+             <textarea name="" cols="" rows=""></textarea>
+          </div>
+          <div class="ppgjc">
+             <span>过滤关键词:</span>
+             <textarea name="" cols="" rows=""></textarea>
+          </div>
+          <div class="xzmb">
+             <span>选择目标:</span>             
+             <a class="item"><input type="button" id="g" value="" onclick="a()"/></a>
+          </div>
+          <div class="syxs">
+             <span>首页显示:</span>
+             <input name="" type="checkbox" value="" />
+          </div>
+          <div class="syxs">
+             <span>生效状态:</span>
+             <input name="" type="checkbox" value="" />
+          </div>
+          <a href="###" class="click">保存</a>
+       </form>
+   </div>
+   <div class="tip">
+    	<div class="tiptop"><span>提示信息</span><a></a></div>        
+      <div class="tipinfo">
+        <div class="tipright">
+        <p>是否确认对信息的修改 ？</p>
+        <cite>如果是请点击确定按钮 ，否则请点取消。</cite>
+        </div>
+        </div>        
+        <div class="tipbtn">
+        <input name="" type="button"  class="sure" value="确定" />
+        <input name="" type="button"  class="cancel" value="取消" />
+        </div>    
+    </div> 
+    <script type="text/javascript">
+function a(){
+layer.open({
+    type: 2,
+    title: '弹出框',
+    shadeClose: true,
+    shade: 0.2,
+    area: ['480px', '90%'],
+    content: 'win1.html' //iframe的url
+});}
+</script>    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="stylesheet" type="text/css" href="css/blue/common.css"/>
+<link rel="stylesheet" type="text/css" href="css/blue/win1.css"/>
+<link rel="stylesheet" type="text/css" href="css/blue/rq.css"/>
+<script type="text/javascript" src="js/blue/rq.js"></script>
+<script type="text/javascript" src="js/blue/jquery2.js"></script>
+<script type="text/javascript" src="js/blue/jquery.min.js"></script>
+<script type="text/javascript" src="js/blue/wtree.js"></script>
+<title>表单页</title>
+
+</head>
+<body>           
+      <div id="systree">
+      </div>
+<script type="text/javascript">
+	function sel(){
+		var selids=d.getCheckedNodes();
+		var str="";
+		for(var n=0; n<selids.length; n++){
+			str+=selids[n]+";";
+		}
+		alert(str);
+	}
+	
+	var d = new dTree('d','images/blue/');
+		d.config.check=true;
+		
+		
+		
+		d.add(0,-1,'港澳台',"javascript:;",'');	
+		
+		//港澳台
+		d.add(1,0,'香港',"javascript:;",'');
+		d.add(2,0,'澳门',"javascript:;",'');
+		d.add(3,0,'台湾',"javascript:;",'');
+		
+		d.add(4,1,'香港',"javascript:;",'');
+		d.add(5,2,'澳门',"javascript:;",'');
+		d.add(6,3,'台湾',"javascript:;",'');
+		
+		d.add(7,0,'香港',"javascript:;",'');
+		d.add(8,0,'澳门',"javascript:;",'');
+		d.add(9,0,'台湾',"javascript:;",'');
+		
+		d.add(10,7,'香港',"javascript:;",'');
+		d.add(11,8,'澳门',"javascript:;",'');
+		d.add(12,9,'台湾',"javascript:;",'');
+        
+		document.getElementById('systree').innerHTML = d;
+
+</script>
+</body>
+</html>

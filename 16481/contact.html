@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XXX</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
+    <style>
+     .slider{max-width:1920px;text-align:center;}
+	 .heights{height:70px;}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="heads">
+     <div class="top">
+      
+     </div><!--top/-->
+    </div><!--heads/-->
+    <h1 class="xlogo">
+     <a href="index.html"><img src="images/logo.png" width="210" height="77" /></a>
+    </h1>
+    <nav class="nav-collapse">
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="recommend.html">推荐车源</a>
+         <div class="chilNav">
+          <div class="row chilNavCar">
+          <div class="col-sm-6 col-md-2">
+            <div class="thumbnail">
+              <img data-src="holder.js/300x300" src="images/car1.jpg" alt="...">
+              <div class="caption">
+                <h3>43.8万</h3>
+                <p>魅•力之承 2014捷豹城市巡展”</p>
+                <p><a href="proinfo.html" class="more">查看更多&gt;&gt;</a></p>
+              </div>
+             </div>
+            </div><!--col-sm-6 col-md-2/-->
+           
+            <div class="col-sm-6 col-md-2">
+            <div class="thumbnail">
+              <img data-src="holder.js/300x300" src="images/car1.jpg" alt="...">
+              <div class="caption">
+                <h3>43.8万</h3>
+                <p>魅•力之承 2014捷豹城市巡展”</p>
+                <p><a href="proinfo.html" class="more">查看更多&gt;&gt;</a></p>
+              </div>
+             </div>
+            </div><!--col-sm-6 col-md-2/-->
+            <div class="col-sm-6 col-md-2">
+            <div class="thumbnail">
+              <img data-src="holder.js/300x300" src="images/car1.jpg" alt="...">
+              <div class="caption">
+                <h3>43.8万</h3>
+                <p>魅•力之承 2014捷豹城市巡展”</p>
+                <p><a href="proinfo.html" class="more">查看更多&gt;&gt;</a></p>
+              </div>
+             </div>
+            </div><!--col-sm-6 col-md-2/-->
+            <div class="col-sm-6 col-md-2">
+            <div class="thumbnail">
+              <img data-src="holder.js/300x300" src="images/car1.jpg" alt="...">
+              <div class="caption">
+                <h3>43.8万</h3>
+                <p>魅•力之承 2014捷豹城市巡展”</p>
+                <p><a href="proinfo.html" class="more">查看更多&gt;&gt;</a></p>
+              </div>
+             </div>
+            </div><!--col-sm-6 col-md-2/-->
+            <div class="col-sm-6 col-md-2">
+            <div class="thumbnail">
+              <img data-src="holder.js/300x300" src="images/car1.jpg" alt="...">
+              <div class="caption">
+                <h3>43.8万</h3>
+                <p>魅•力之承 2014捷豹城市巡展”</p>
+                <p><a href="proinfo.html" class="more">查看更多&gt;&gt;</a></p>
+              </div>
+             </div>
+            </div><!--col-sm-6 col-md-2/-->
+          </div><!--row/-->
+         </div><!--chilNav/-->
+        </li>
+        <li><a href="select.html">选车中心</a></li>
+        <li><a href="service.html">金融服务</a>
+         <div class="chilNav" id="chilNav">
+          <div class="chiNava"><a href="service.html">信贷</a></div>
+          <div class="chiNava"><a href="service.html">车险</a></div>
+         </div><!--chilNav/-->
+        </li>
+        <li><a href="business.html">买卖流程</a></li>
+        <li class="navCur"><a href="contact.html">联系我们</a></li>
+      </ul>
+     </nav>
+    <div class="heights">&nbsp;</div>
+    <!--contact-->
+    <div class="contact">
+     <div class="contactLeft">
+      <style type="text/css">
+    html,body{margin:0;padding:0;}
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<div id="dituContent"></div>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(121.385411,31.180767);//定义一个中心点坐标
+        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+	map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+	map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+	map.addControl(ctrl_sca);
+    }
+    
+    //标注点数组
+    var markerArr = [{title:"我的标记",content:"我的备注",point:"121.384055|31.180628",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+		 ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+			var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+			var iw = createInfoWindow(i);
+			var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+			marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+			
+			(function(){
+				var index = i;
+				var _iw = createInfoWindow(i);
+				var _marker = marker;
+				_marker.addEventListener("click",function(){
+				    this.openInfoWindow(_iw);
+			    });
+			    _iw.addEventListener("open",function(){
+				    _marker.getLabel().hide();
+			    })
+			    _iw.addEventListener("close",function(){
+				    _marker.getLabel().show();
+			    })
+				label.addEventListener("click",function(){
+				    _marker.openInfoWindow(_iw);
+			    })
+				if(!!json.isOpen){
+					label.hide();
+					_marker.openInfoWindow(_iw);
+				}
+			})()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+    
+    initMap();//创建和初始化地图
+</script>
+     </div><!--contactLeft/-->
+     <div class="contactRight">
+      <h3>上海XXX</h3>
+      <div class="address">
+       公司地址：XXX<br />
+电话：XXX <br />
+联系人：某某某<br />
+      </div><!--address/-->
+     </div><!--contactRight/-->
+     <div class="clearfix"></div>
+    </div><!--contact/-->
+    <!--contact-->
+    <div class="footer">
+     <p>
+      <a href="index.html">首页</a>
+      <a href="recommend.html">推荐车源</a>
+      <a href="select.html">选车中心</a>
+      <a href="service.html">金融服务</a>
+      <a href="business.html">买卖流程</a>
+      <a href="job.html">人才招聘</a>
+      <a href="contact.html" style="border:0;">联系我们</a>
+     </p>
+     <p>CopyRight © 2020 All Rights Reserved <a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a>.</p>
+    
+     
+    </div><!--footer/-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/js.js"></script>
+    <!--响应式导航-->
+    <script>
+      var navigation = responsiveNav(".nav-collapse", {
+        animate: true,                    // Boolean: Use CSS3 transitions, true or false
+        transition: 284,                  // Integer: Speed of the transition, in milliseconds
+        label: "Menu",                    // String: Label for the navigation toggle
+        insert: "after",                  // String: Insert the toggle before or after the navigation
+        customToggle: "",                 // Selector: Specify the ID of a custom toggle
+        closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+        openPos: "relative",              // String: Position of the opened nav, relative or static
+        navClass: "nav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
+        navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+        jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
+        init: function(){},               // Function: Init callback
+        open: function(){},               // Function: Open callback
+        close: function(){}               // Function: Close callback
+      });
+    </script>
+  </body>
+</html>
